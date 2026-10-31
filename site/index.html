@@ -105,11 +105,12 @@ footer{margin-top:40px;padding-top:40px;border-top:1px solid var(--line);font-si
       else if (k.indexOf("on") === 0) n.addEventListener(k.slice(2), v);
       else n.setAttribute(k, v);
     });
-    for (var i = 2; i < arguments.length; i++) {
-      var kid = arguments[i];
-      if (kid == null) continue;
+    function add(kid) {
+      if (kid == null) return;
+      if (Array.isArray(kid)) { kid.forEach(add); return; }
       n.append(kid.nodeType ? kid : document.createTextNode(String(kid)));
     }
+    for (var i = 2; i < arguments.length; i++) add(arguments[i]);
     return n;
   }
   function heartIcon(filled) {
