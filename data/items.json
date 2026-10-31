@@ -12,9 +12,9 @@
   "product_type": "",
   "tags": [],
   "first_seen": "2026-10-31T03:12:54+00:00",
-  "category": "Sortie produit",
   "colors": [],
-  "silhouette": "haut en maille"
+  "type": "Hauts",
+  "has_vision": false
  },
  {
   "id": "reformation:1321177BLK",
@@ -29,9 +29,9 @@
   "product_type": "",
   "tags": [],
   "first_seen": "2026-10-31T03:12:54+00:00",
-  "category": "Sortie produit",
   "colors": [],
-  "silhouette": ""
+  "type": "Robes",
+  "has_vision": false
  },
  {
   "id": "reformation:1321165POQ",
@@ -46,9 +46,9 @@
   "product_type": "",
   "tags": [],
   "first_seen": "2026-10-31T03:12:54+00:00",
-  "category": "Sortie produit",
   "colors": [],
-  "silhouette": "robe en maille"
+  "type": "Robes",
+  "has_vision": false
  },
  {
   "id": "reformation:1321129IVC",
@@ -63,9 +63,9 @@
   "product_type": "",
   "tags": [],
   "first_seen": "2026-10-31T03:12:54+00:00",
-  "category": "Sortie produit",
   "colors": [],
-  "silhouette": ""
+  "type": "Hauts",
+  "has_vision": false
  },
  {
   "id": "reformation:1312627OKZ",
@@ -80,9 +80,9 @@
   "product_type": "",
   "tags": [],
   "first_seen": "2026-10-31T03:12:54+00:00",
-  "category": "Sortie produit",
   "colors": [],
-  "silhouette": "haut en maille"
+  "type": "Hauts",
+  "has_vision": false
  },
  {
   "id": "reformation:1312652FFC",
@@ -97,9 +97,9 @@
   "product_type": "",
   "tags": [],
   "first_seen": "2026-10-31T03:12:54+00:00",
-  "category": "Sortie produit",
   "colors": [],
-  "silhouette": "cardigan en cachemire"
+  "type": "Hauts",
+  "has_vision": false
  },
  {
   "id": "reformation:1320481KEK",
@@ -114,9 +114,20 @@
   "product_type": "",
   "tags": [],
   "first_seen": "2026-10-31T03:12:54+00:00",
-  "category": "Sortie produit",
-  "colors": [],
-  "silhouette": ""
+  "colors": [
+   "noir"
+  ],
+  "type": "Accessoires",
+  "material": "cuir",
+  "length": "",
+  "cut": "",
+  "neckline": "",
+  "details": [
+   "finition vernie",
+   "rabat"
+  ],
+  "has_vision": true,
+  "attrs_v": 2
  },
  {
   "id": "reformation:1319019VRQ",
@@ -131,9 +142,9 @@
   "product_type": "",
   "tags": [],
   "first_seen": "2026-10-31T03:12:54+00:00",
-  "category": "Sortie produit",
   "colors": [],
-  "silhouette": "jupe en soie genou"
+  "type": "Jupes",
+  "has_vision": false
  },
  {
   "id": "reformation:1308597OPR",
@@ -148,9 +159,9 @@
   "product_type": "",
   "tags": [],
   "first_seen": "2026-10-31T03:12:54+00:00",
-  "category": "Sortie produit",
   "colors": [],
-  "silhouette": "robe en soie"
+  "type": "Robes",
+  "has_vision": false
  },
  {
   "id": "reformation:1321049BFK",
@@ -165,9 +176,9 @@
   "product_type": "",
   "tags": [],
   "first_seen": "2026-10-31T03:12:54+00:00",
-  "category": "Sortie produit",
   "colors": [],
-  "silhouette": "mule à talon"
+  "type": "Accessoires",
+  "has_vision": false
  },
  {
   "id": "reformation:1320656BKH",
@@ -182,9 +193,9 @@
   "product_type": "",
   "tags": [],
   "first_seen": "2026-10-31T03:12:54+00:00",
-  "category": "Sortie produit",
   "colors": [],
-  "silhouette": "trench coat Marlene"
+  "type": "Manteaux",
+  "has_vision": false
  },
  {
   "id": "reformation:1319667TGT",
@@ -199,9 +210,9 @@
   "product_type": "",
   "tags": [],
   "first_seen": "2026-10-31T03:12:54+00:00",
-  "category": "Sortie produit",
   "colors": [],
-  "silhouette": "jupe midi en soie taille basse"
+  "type": "Jupes",
+  "has_vision": false
  },
  {
   "id": "reformation:1321184ALO",
@@ -216,9 +227,20 @@
   "product_type": "",
   "tags": [],
   "first_seen": "2026-10-31T03:12:54+00:00",
-  "category": "Sortie produit",
-  "colors": [],
-  "silhouette": "robe en velours"
+  "colors": [
+   "beige"
+  ],
+  "type": "Robes",
+  "material": "velours",
+  "length": "mini",
+  "cut": "ajustée",
+  "neckline": "col rond",
+  "details": [
+   "drapé",
+   "manches drapées"
+  ],
+  "has_vision": true,
+  "attrs_v": 2
  },
  {
   "id": "reformation:1321049CIJ",
@@ -233,9 +255,9 @@
   "product_type": "",
   "tags": [],
   "first_seen": "2026-10-31T03:12:54+00:00",
-  "category": "Sortie produit",
   "colors": [],
-  "silhouette": "mule à talon"
+  "type": "Accessoires",
+  "has_vision": false
  },
  {
   "id": "reformation:1316556ROW",
@@ -250,9 +272,9 @@
   "product_type": "",
   "tags": [],
   "first_seen": "2026-10-31T03:12:54+00:00",
-  "category": "Sortie produit",
   "colors": [],
-  "silhouette": "collants premium"
+  "type": "Autres",
+  "has_vision": false
  },
  {
   "id": "reformation:1318893GHF",
@@ -267,9 +289,9 @@
   "product_type": "",
   "tags": [],
   "first_seen": "2026-10-31T03:12:54+00:00",
-  "category": "Sortie produit",
   "colors": [],
-  "silhouette": "robe en soie"
+  "type": "Robes",
+  "has_vision": false
  },
  {
   "id": "dissh:15206267191664",
@@ -332,11 +354,9 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
-  "colors": [
-   "ivoire"
-  ],
-  "silhouette": "jupe midi en dentelle"
+  "colors": [],
+  "type": "Jupes",
+  "has_vision": false
  },
  {
   "id": "dissh:15273205105008",
@@ -386,11 +406,9 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
-  "colors": [
-   "noir"
-  ],
-  "silhouette": "short bermuda"
+  "colors": [],
+  "type": "Pantalons",
+  "has_vision": false
  },
  {
   "id": "bec-bridge:7446971646007",
@@ -424,11 +442,21 @@
    "x-styleCode:H26-22248"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
   "colors": [
    "ivoire"
   ],
-  "silhouette": ""
+  "type": "Hauts",
+  "material": "jersey",
+  "length": "cropped",
+  "cut": "ajustée",
+  "neckline": "décolleté plongeant",
+  "details": [
+   "drapé",
+   "épaulettes",
+   "froncé à la taille"
+  ],
+  "has_vision": true,
+  "attrs_v": 2
  },
  {
   "id": "bec-bridge:7509104033847",
@@ -466,11 +494,9 @@
    "x-styleCode:H26-40980"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
-  "colors": [
-   "noir"
-  ],
-  "silhouette": ""
+  "colors": [],
+  "type": "Pantalons",
+  "has_vision": false
  },
  {
   "id": "bec-bridge:7446972760119",
@@ -503,11 +529,9 @@
    "x-styleCode:H26-30914"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
-  "colors": [
-   "ivoire"
-  ],
-  "silhouette": "jupe drapée"
+  "colors": [],
+  "type": "Jupes",
+  "has_vision": false
  },
  {
   "id": "kookai:7132406480968",
@@ -549,11 +573,9 @@
    "WK17-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
-  "colors": [
-   "marron"
-  ],
-  "silhouette": "haut col cowl"
+  "colors": [],
+  "type": "Hauts",
+  "has_vision": false
  },
  {
   "id": "kookai:7132406579272",
@@ -599,11 +621,9 @@
    "WK17-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
-  "colors": [
-   "marron"
-  ],
-  "silhouette": "robe dentelle soirée"
+  "colors": [],
+  "type": "Robes",
+  "has_vision": false
  },
  {
   "id": "bec-bridge:7473399267383",
@@ -631,11 +651,9 @@
    "x-styleCode:BM-13814"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
-  "colors": [
-   "ivoire"
-  ],
-  "silhouette": "robe maxi asymétrique"
+  "colors": [],
+  "type": "Robes",
+  "has_vision": false
  },
  {
   "id": "bec-bridge:7446966829111",
@@ -667,11 +685,9 @@
    "x-styleCode:H26-13748"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
-  "colors": [
-   "argent"
-  ],
-  "silhouette": "robe mini fendue"
+  "colors": [],
+  "type": "Robes",
+  "has_vision": false
  },
  {
   "id": "bec-bridge:7462569279543",
@@ -707,11 +723,9 @@
    "x-styleCode:H26-13561"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
-  "colors": [
-   "argent"
-  ],
-  "silhouette": "robe maxi bustier"
+  "colors": [],
+  "type": "Robes",
+  "has_vision": false
  },
  {
   "id": "kookai:7138296660040",
@@ -764,11 +778,9 @@
    "WK17-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
-  "colors": [
-   "marron"
-  ],
-  "silhouette": "jupe-short ceinturée mini"
+  "colors": [],
+  "type": "Jupes",
+  "has_vision": false
  },
  {
   "id": "kookai:7132406841416",
@@ -814,11 +826,20 @@
    "WK16-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
   "colors": [
    "beige"
   ],
-  "silhouette": "jupe mini"
+  "type": "Jupes",
+  "material": "",
+  "length": "mini",
+  "cut": "droite",
+  "neckline": "",
+  "details": [
+   "taille basse",
+   "coutures apparentes"
+  ],
+  "has_vision": true,
+  "attrs_v": 2
  },
  {
   "id": "kookai:7138296856648",
@@ -862,9 +883,9 @@
    "WK16-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
   "colors": [],
-  "silhouette": "jupe midi"
+  "type": "Jupes",
+  "has_vision": false
  },
  {
   "id": "kookai:7132407136328",
@@ -917,9 +938,9 @@
    "WK15-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
   "colors": [],
-  "silhouette": "jupe-short ceinturée mini"
+  "type": "Jupes",
+  "has_vision": false
  },
  {
   "id": "kookai:7132406743112",
@@ -976,11 +997,9 @@
    "WK15-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
-  "colors": [
-   "bleu"
-  ],
-  "silhouette": "robe mini manches courtes"
+  "colors": [],
+  "type": "Robes",
+  "has_vision": false
  },
  {
   "id": "bec-bridge:7446967058487",
@@ -1011,11 +1030,9 @@
    "x-styleCode:H26-13745"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
-  "colors": [
-   "argent"
-  ],
-  "silhouette": "robe maxi licou"
+  "colors": [],
+  "type": "Robes",
+  "has_vision": false
  },
  {
   "id": "bec-bridge:7446972235831",
@@ -1042,11 +1059,9 @@
    "x-styleCode:H26-13657"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
-  "colors": [
-   "argent"
-  ],
-  "silhouette": "robe maxi"
+  "colors": [],
+  "type": "Robes",
+  "has_vision": false
  },
  {
   "id": "bec-bridge:7446967648311",
@@ -1079,11 +1094,9 @@
    "x-styleCode:H26-13734"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
-  "colors": [
-   "argent"
-  ],
-  "silhouette": "robe maxi"
+  "colors": [],
+  "type": "Robes",
+  "has_vision": false
  },
  {
   "id": "kookai:7125381873736",
@@ -1146,11 +1159,9 @@
    "work"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
-  "colors": [
-   "beige"
-  ],
-  "silhouette": "débardeur col montant"
+  "colors": [],
+  "type": "Hauts",
+  "has_vision": false
  },
  {
   "id": "dissh:15396097130864",
@@ -1201,11 +1212,9 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
-  "colors": [
-   "noir"
-  ],
-  "silhouette": "chemise en soie"
+  "colors": [],
+  "type": "Hauts",
+  "has_vision": false
  },
  {
   "id": "kookai:7125381414984",
@@ -1261,9 +1270,9 @@
    "WK15-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
   "colors": [],
-  "silhouette": "tee-shirt col V"
+  "type": "Hauts",
+  "has_vision": false
  },
  {
   "id": "kookai:7132406087752",
@@ -1311,11 +1320,9 @@
    "WK16-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
-  "colors": [
-   "vert"
-  ],
-  "silhouette": "jupe midi"
+  "colors": [],
+  "type": "Jupes",
+  "has_vision": false
  },
  {
   "id": "kookai:7132407103560",
@@ -1370,11 +1377,9 @@
    "WK15-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
-  "colors": [
-   "bleu"
-  ],
-  "silhouette": "tee-shirt épaules dénudées"
+  "colors": [],
+  "type": "Hauts",
+  "has_vision": false
  },
  {
   "id": "kookai:7125382070344",
@@ -1422,11 +1427,21 @@
    "WK15-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
   "colors": [
    "marron"
   ],
-  "silhouette": "robe midi"
+  "type": "Robes",
+  "material": "maille",
+  "length": "midi",
+  "cut": "ajustée",
+  "neckline": "asymétrique",
+  "details": [
+   "encolure croisée",
+   "sans manches",
+   "maille côtelée"
+  ],
+  "has_vision": true,
+  "attrs_v": 2
  },
  {
   "id": "kookai:7129848414280",
@@ -1481,11 +1496,9 @@
    "WK15-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
-  "colors": [
-   "noir"
-  ],
-  "silhouette": ""
+  "colors": [],
+  "type": "Hauts",
+  "has_vision": false
  },
  {
   "id": "dissh:15396096409968",
@@ -1537,11 +1550,9 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
-  "colors": [
-   "blanc"
-  ],
-  "silhouette": "robe mini dentelle"
+  "colors": [],
+  "type": "Robes",
+  "has_vision": false
  },
  {
   "id": "dissh:15396096999792",
@@ -1594,11 +1605,9 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
-  "colors": [
-   "blanc"
-  ],
-  "silhouette": "robe midi dentelle"
+  "colors": [],
+  "type": "Robes",
+  "has_vision": false
  },
  {
   "id": "dissh:15291642413424",
@@ -1646,12 +1655,9 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
-  "colors": [
-   "marron",
-   "beige"
-  ],
-  "silhouette": "veste fausse fourrure"
+  "colors": [],
+  "type": "Manteaux",
+  "has_vision": false
  },
  {
   "id": "kookai:7132407201864",
@@ -1701,11 +1707,9 @@
    "WK17-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
-  "colors": [
-   "bleu"
-  ],
-  "silhouette": "jean bootleg"
+  "colors": [],
+  "type": "Pantalons",
+  "has_vision": false
  },
  {
   "id": "kookai:7132406349896",
@@ -1751,11 +1755,9 @@
    "WK17-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
-  "colors": [
-   "marron"
-  ],
-  "silhouette": "jupe midi"
+  "colors": [],
+  "type": "Jupes",
+  "has_vision": false
  },
  {
   "id": "kookai:7132406186056",
@@ -1802,11 +1804,20 @@
    "WK15-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
   "colors": [
    "gris"
   ],
-  "silhouette": "pantalon taille basse"
+  "type": "Pantalons",
+  "material": "",
+  "length": "long",
+  "cut": "évasée",
+  "neckline": "",
+  "details": [
+   "rayures fines",
+   "taille basse"
+  ],
+  "has_vision": true,
+  "attrs_v": 2
  },
  {
   "id": "kookai:7132406218824",
@@ -1847,11 +1858,9 @@
    "WK17-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
-  "colors": [
-   "blanc"
-  ],
-  "silhouette": "top plissé"
+  "colors": [],
+  "type": "Hauts",
+  "has_vision": false
  },
  {
   "id": "kookai:7132406284360",
@@ -1894,11 +1903,9 @@
    "WK17-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
-  "colors": [
-   "marron"
-  ],
-  "silhouette": "top court"
+  "colors": [],
+  "type": "Hauts",
+  "has_vision": false
  },
  {
   "id": "kookai:7138296758344",
@@ -1941,11 +1948,9 @@
    "WK17-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
-  "colors": [
-   "rouge"
-  ],
-  "silhouette": "top col cowl"
+  "colors": [],
+  "type": "Hauts",
+  "has_vision": false
  },
  {
   "id": "kookai:7138296922184",
@@ -1988,11 +1993,9 @@
    "wrap skirt"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
-  "colors": [
-   "multicolore"
-  ],
-  "silhouette": "jupe réversible"
+  "colors": [],
+  "type": "Jupes",
+  "has_vision": false
  },
  {
   "id": "kookai:7138297184328",
@@ -2037,9 +2040,9 @@
    "WK17-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
   "colors": [],
-  "silhouette": "jupe midi"
+  "type": "Jupes",
+  "has_vision": false
  },
  {
   "id": "dissh:15398727909744",
@@ -2088,11 +2091,9 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
-  "colors": [
-   "noir"
-  ],
-  "silhouette": "pantalon wrap boutonné"
+  "colors": [],
+  "type": "Pantalons",
+  "has_vision": false
  },
  {
   "id": "kookai:7125381808200",
@@ -2140,11 +2141,9 @@
    "WK14-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
-  "colors": [
-   "rouge"
-  ],
-  "silhouette": "débardeur basique"
+  "colors": [],
+  "type": "Hauts",
+  "has_vision": false
  },
  {
   "id": "kookai:7125382135880",
@@ -2200,9 +2199,9 @@
    "wrap top"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
   "colors": [],
-  "silhouette": "top portefeuille satin"
+  "type": "Hauts",
+  "has_vision": false
  },
  {
   "id": "kookai:7129848021064",
@@ -2245,11 +2244,9 @@
    "WK14-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
-  "colors": [
-   "blanc"
-  ],
-  "silhouette": "top contrasté"
+  "colors": [],
+  "type": "Hauts",
+  "has_vision": false
  },
  {
   "id": "kookai:7129848348744",
@@ -2307,9 +2304,9 @@
    "WK14-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
   "colors": [],
-  "silhouette": "top col V manches courtes"
+  "type": "Hauts",
+  "has_vision": false
  },
  {
   "id": "kookai:7129848676424",
@@ -2377,11 +2374,9 @@
    "WK14-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
-  "colors": [
-   "beige"
-  ],
-  "silhouette": "body col plongeant"
+  "colors": [],
+  "type": "Hauts",
+  "has_vision": false
  },
  {
   "id": "kookai:7132406251592",
@@ -2427,11 +2422,19 @@
    "WK14-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
   "colors": [
-   "beige"
+   "blanc"
   ],
-  "silhouette": "jupe mini"
+  "type": "Jupes",
+  "material": "",
+  "length": "mini",
+  "cut": "droite",
+  "neckline": "",
+  "details": [
+   "taille basse"
+  ],
+  "has_vision": true,
+  "attrs_v": 2
  },
  {
   "id": "kookai:7125381906504",
@@ -2480,12 +2483,9 @@
    "WK13-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
-  "colors": [
-   "marron",
-   "rouge"
-  ],
-  "silhouette": "débardeur basique"
+  "colors": [],
+  "type": "Hauts",
+  "has_vision": false
  },
  {
   "id": "kookai:7125381316680",
@@ -2533,11 +2533,9 @@
    "WK13-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
-  "colors": [
-   "noir"
-  ],
-  "silhouette": "jupe midi en mousseline"
+  "colors": [],
+  "type": "Jupes",
+  "has_vision": false
  },
  {
   "id": "kookai:7129848152136",
@@ -2593,11 +2591,9 @@
    "workwear-edit"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
-  "colors": [
-   "noir"
-  ],
-  "silhouette": "pantalon évasé taille basse"
+  "colors": [],
+  "type": "Pantalons",
+  "has_vision": false
  },
  {
   "id": "sir:8702399938752",
@@ -2627,11 +2623,22 @@
    "SIR426-EARRING07"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
   "colors": [
-   "argent"
+   "argent",
+   "marron"
   ],
-  "silhouette": "boucles d'oreilles empilées"
+  "type": "Accessoires",
+  "material": "",
+  "length": "",
+  "cut": "",
+  "neckline": "",
+  "details": [
+   "disque texturé",
+   "pendentif rectangulaire",
+   "pierre marron"
+  ],
+  "has_vision": true,
+  "attrs_v": 2
  },
  {
   "id": "sir:8702399578304",
@@ -2662,11 +2669,22 @@
    "SIR426-EARRING04"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
   "colors": [
-   "argent"
+   "argent",
+   "marron"
   ],
-  "silhouette": "boucles d'oreilles pendantes longues"
+  "type": "Accessoires",
+  "material": "synthétique",
+  "length": "",
+  "cut": "",
+  "neckline": "",
+  "details": [
+   "boule argentée",
+   "plaque écaille",
+   "goutte fumée"
+  ],
+  "has_vision": true,
+  "attrs_v": 2
  },
  {
   "id": "sir:8702399283392",
@@ -2697,11 +2715,22 @@
    "SIR426-EARRING02"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
   "colors": [
-   "argent"
+   "argent",
+   "rose"
   ],
-  "silhouette": "boucles d'oreilles pendantes"
+  "type": "Accessoires",
+  "material": "",
+  "length": "",
+  "cut": "",
+  "neckline": "",
+  "details": [
+   "boule métallique",
+   "pendentif pierre",
+   "pierre rectangulaire"
+  ],
+  "has_vision": true,
+  "attrs_v": 2
  },
  {
   "id": "kookai:7138296889416",
@@ -2752,11 +2781,9 @@
    "WK17-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
-  "colors": [
-   "noir"
-  ],
-  "silhouette": "robe midi cocktail"
+  "colors": [],
+  "type": "Robes",
+  "has_vision": false
  },
  {
   "id": "bec-bridge:7506976440375",
@@ -2790,11 +2817,9 @@
    "x-styleCode:H26-13523"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
-  "colors": [
-   "jaune"
-  ],
-  "silhouette": "robe maxi col V"
+  "colors": [],
+  "type": "Robes",
+  "has_vision": false
  },
  {
   "id": "bec-bridge:7486861574199",
@@ -2829,11 +2854,9 @@
    "x-styleCode:H26-13523"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
-  "colors": [
-   "crème"
-  ],
-  "silhouette": "robe maxi col V"
+  "colors": [],
+  "type": "Robes",
+  "has_vision": false
  },
  {
   "id": "bec-bridge:7458300231735",
@@ -2866,11 +2889,9 @@
    "x-styleCode:H26-13741A"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
-  "colors": [
-   "crème"
-  ],
-  "silhouette": "robe maxi col V"
+  "colors": [],
+  "type": "Robes",
+  "has_vision": false
  },
  {
   "id": "dissh:15291705950576",
@@ -2919,11 +2940,9 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
-  "colors": [
-   "bleu"
-  ],
-  "silhouette": "jupe maxi coupe biais"
+  "colors": [],
+  "type": "Jupes",
+  "has_vision": false
  },
  {
   "id": "bec-bridge:7458300330039",
@@ -2958,11 +2977,9 @@
    "x-styleCode:H26-13671"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
-  "colors": [
-   "noir"
-  ],
-  "silhouette": "robe maxi"
+  "colors": [],
+  "type": "Robes",
+  "has_vision": false
  },
  {
   "id": "bec-bridge:7446967124023",
@@ -2993,12 +3010,9 @@
    "x-styleCode:H26-30951"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
-  "colors": [
-   "beige",
-   "noir"
-  ],
-  "silhouette": "jupe maxi drapée"
+  "colors": [],
+  "type": "Jupes",
+  "has_vision": false
  },
  {
   "id": "dissh:15185411539312",
@@ -3042,9 +3056,9 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
   "colors": [],
-  "silhouette": "robe midi"
+  "type": "Robes",
+  "has_vision": false
  },
  {
   "id": "bec-bridge:7446970761271",
@@ -3074,11 +3088,9 @@
    "x-styleCode:H26-13685"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
-  "colors": [
-   "vert d'eau"
-  ],
-  "silhouette": "robe maxi"
+  "colors": [],
+  "type": "Robes",
+  "has_vision": false
  },
  {
   "id": "bec-bridge:7446969778231",
@@ -3107,11 +3119,9 @@
    "x-styleCode:H26-40914"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
-  "colors": [
-   "noir"
-  ],
-  "silhouette": "legging"
+  "colors": [],
+  "type": "Pantalons",
+  "has_vision": false
  },
  {
   "id": "bec-bridge:7446969548855",
@@ -3139,11 +3149,9 @@
    "x-styleCode:H26-13707"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
-  "colors": [
-   "noir"
-  ],
-  "silhouette": "robe mini"
+  "colors": [],
+  "type": "Robes",
+  "has_vision": false
  },
  {
   "id": "bec-bridge:7446969385015",
@@ -3174,11 +3182,9 @@
    "x-styleCode:H26-22268"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
-  "colors": [
-   "argenté"
-  ],
-  "silhouette": "top"
+  "colors": [],
+  "type": "Hauts",
+  "has_vision": false
  },
  {
   "id": "bec-bridge:7446968598583",
@@ -3212,11 +3218,9 @@
    "x-styleCode:H26-13724"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
-  "colors": [
-   "noir"
-  ],
-  "silhouette": "robe maxi drapée"
+  "colors": [],
+  "type": "Robes",
+  "has_vision": false
  },
  {
   "id": "bec-bridge:7446967582775",
@@ -3248,11 +3252,9 @@
    "x-styleCode:H26-30948"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
-  "colors": [
-   "argenté"
-  ],
-  "silhouette": "jupe maxi"
+  "colors": [],
+  "type": "Jupes",
+  "has_vision": false
  },
  {
   "id": "bec-bridge:7446967189559",
@@ -3283,12 +3285,9 @@
    "x-styleCode:H26-22291"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
-  "colors": [
-   "ivoire",
-   "noir"
-  ],
-  "silhouette": "top drapé"
+  "colors": [],
+  "type": "Hauts",
+  "has_vision": false
  },
  {
   "id": "dissh:15287284728176",
@@ -3337,12 +3336,9 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
-  "colors": [
-   "crème",
-   "blanc"
-  ],
-  "silhouette": "pantalon portefeuille boutonné"
+  "colors": [],
+  "type": "Pantalons",
+  "has_vision": false
  },
  {
   "id": "dissh:15287280402800",
@@ -3392,11 +3388,9 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
-  "colors": [
-   "jaune"
-  ],
-  "silhouette": "short à rayures"
+  "colors": [],
+  "type": "Pantalons",
+  "has_vision": false
  },
  {
   "id": "dissh:15287284040048",
@@ -3450,11 +3444,9 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
-  "colors": [
-   "jaune"
-  ],
-  "silhouette": "chemise à rayures"
+  "colors": [],
+  "type": "Hauts",
+  "has_vision": false
  },
  {
   "id": "dissh:15287285645680",
@@ -3513,11 +3505,9 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
-  "colors": [
-   "noir"
-  ],
-  "silhouette": "chemise à fines rayures"
+  "colors": [],
+  "type": "Hauts",
+  "has_vision": false
  },
  {
   "id": "dissh:15287287218544",
@@ -3565,11 +3555,9 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
-  "colors": [
-   "noir"
-  ],
-  "silhouette": "short tailleur"
+  "colors": [],
+  "type": "Pantalons",
+  "has_vision": false
  },
  {
   "id": "dissh:15287289446768",
@@ -3620,11 +3608,9 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
-  "colors": [
-   "noir"
-  ],
-  "silhouette": "top sans col à peplum"
+  "colors": [],
+  "type": "Hauts",
+  "has_vision": false
  },
  {
   "id": "dissh:15287287972208",
@@ -3674,11 +3660,9 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
-  "colors": [
-   "noir"
-  ],
-  "silhouette": "blazer court"
+  "colors": [],
+  "type": "Manteaux",
+  "has_vision": false
  },
  {
   "id": "dissh:15287282663792",
@@ -3730,11 +3714,9 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
-  "colors": [
-   "noir"
-  ],
-  "silhouette": "robe mini"
+  "colors": [],
+  "type": "Robes",
+  "has_vision": false
  },
  {
   "id": "dissh:15287283417456",
@@ -3781,11 +3763,9 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
-  "colors": [
-   "noir"
-  ],
-  "silhouette": "top sans manches à nouer"
+  "colors": [],
+  "type": "Hauts",
+  "has_vision": false
  },
  {
   "id": "dissh:15291705885040",
@@ -3836,9 +3816,9 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
   "colors": [],
-  "silhouette": "top sans manches à nouer"
+  "type": "Hauts",
+  "has_vision": false
  },
  {
   "id": "dissh:15287279583600",
@@ -3891,11 +3871,21 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
   "colors": [
    "blanc"
   ],
-  "silhouette": "robe mini en voile"
+  "type": "Robes",
+  "material": "coton",
+  "length": "mini",
+  "cut": "fluide",
+  "neckline": "carré",
+  "details": [
+   "dentelle",
+   "taille basse",
+   "volants"
+  ],
+  "has_vision": true,
+  "attrs_v": 2
  },
  {
   "id": "dissh:15244934119792",
@@ -3940,11 +3930,9 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
-  "colors": [
-   "olive"
-  ],
-  "silhouette": "pantalon en soie"
+  "colors": [],
+  "type": "Pantalons",
+  "has_vision": false
  },
  {
   "id": "dissh:15290254885232",
@@ -3995,11 +3983,9 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
-  "colors": [
-   "blanc"
-  ],
-  "silhouette": "top sans manches"
+  "colors": [],
+  "type": "Hauts",
+  "has_vision": false
  },
  {
   "id": "dissh:15287290790256",
@@ -4054,11 +4040,21 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
   "colors": [
    "noir"
   ],
-  "silhouette": "robe mini organza"
+  "type": "Robes",
+  "material": "soie",
+  "length": "mini",
+  "cut": "droite",
+  "neckline": "col haut",
+  "details": [
+   "organza transparent",
+   "doublure",
+   "sans manches"
+  ],
+  "has_vision": true,
+  "attrs_v": 2
  },
  {
   "id": "bec-bridge:7470149959735",
@@ -4089,11 +4085,9 @@
    "x-styleCode:H26-30974"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
-  "colors": [
-   "noir"
-  ],
-  "silhouette": "jupe maxi"
+  "colors": [],
+  "type": "Jupes",
+  "has_vision": false
  },
  {
   "id": "kookai:7129848709192",
@@ -4138,9 +4132,9 @@
    "WK14-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
   "colors": [],
-  "silhouette": "top imprimé"
+  "type": "Hauts",
+  "has_vision": false
  },
  {
   "id": "sir:8702398890176",
@@ -4175,11 +4169,9 @@
    "Two Piece Sets"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
-  "colors": [
-   "beige"
-  ],
-  "silhouette": "blazer dos ouvert"
+  "colors": [],
+  "type": "Manteaux",
+  "has_vision": false
  },
  {
   "id": "sir:8702398857408",
@@ -4215,11 +4207,9 @@
    "Wedding Guest"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
-  "colors": [
-   "orange"
-  ],
-  "silhouette": "robe épaules nouées"
+  "colors": [],
+  "type": "Robes",
+  "has_vision": false
  },
  {
   "id": "sir:8702398824640",
@@ -4251,11 +4241,9 @@
    "Two Piece Sets"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
-  "colors": [
-   "noir"
-  ],
-  "silhouette": "jupe midi sequins"
+  "colors": [],
+  "type": "Jupes",
+  "has_vision": false
  },
  {
   "id": "sir:8702400331968",
@@ -4288,11 +4276,9 @@
    "Wool"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
-  "colors": [
-   "noir"
-  ],
-  "silhouette": "pantalon capri dentelle"
+  "colors": [],
+  "type": "Pantalons",
+  "has_vision": false
  },
  {
   "id": "sir:8702400168128",
@@ -4330,11 +4316,9 @@
    "Wedding Guest"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
-  "colors": [
-   "noir"
-  ],
-  "silhouette": "robe longue"
+  "colors": [],
+  "type": "Robes",
+  "has_vision": false
  },
  {
   "id": "sir:8702399905984",
@@ -4366,11 +4350,9 @@
    "Swim One Piece"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
-  "colors": [
-   "noir"
-  ],
-  "silhouette": "maillot une pièce"
+  "colors": [],
+  "type": "Autres",
+  "has_vision": false
  },
  {
   "id": "sir:8702399873216",
@@ -4404,11 +4386,9 @@
    "yellow"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
-  "colors": [
-   "jaune"
-  ],
-  "silhouette": "jupe midi"
+  "colors": [],
+  "type": "Jupes",
+  "has_vision": false
  },
  {
   "id": "sir:8702399840448",
@@ -4443,11 +4423,9 @@
    "Swim Tops"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
-  "colors": [
-   "multicolore"
-  ],
-  "silhouette": "haut bikini triangle"
+  "colors": [],
+  "type": "Hauts",
+  "has_vision": false
  },
  {
   "id": "sir:8702399807680",
@@ -4484,11 +4462,9 @@
    "Two Piece Sets"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
-  "colors": [
-   "noir"
-  ],
-  "silhouette": "chemise ample"
+  "colors": [],
+  "type": "Hauts",
+  "has_vision": false
  },
  {
   "id": "sir:8702399709376",
@@ -4522,11 +4498,9 @@
    "yellow"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
-  "colors": [
-   "jaune"
-  ],
-  "silhouette": "blouson bomber"
+  "colors": [],
+  "type": "Manteaux",
+  "has_vision": false
  },
  {
   "id": "sir:8702399643840",
@@ -4559,11 +4533,9 @@
    "yellow"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
-  "colors": [
-   "jaune"
-  ],
-  "silhouette": "jupe mini froncée"
+  "colors": [],
+  "type": "Jupes",
+  "has_vision": false
  },
  {
   "id": "sir:8702399611072",
@@ -4601,11 +4573,9 @@
    "Tops"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
-  "colors": [
-   "gris"
-  ],
-  "silhouette": "débardeur décolleté"
+  "colors": [],
+  "type": "Hauts",
+  "has_vision": false
  },
  {
   "id": "sir:8702399545536",
@@ -4638,11 +4608,9 @@
    "SIR426-7038"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
-  "colors": [
-   "orange"
-  ],
-  "silhouette": "veste en maille"
+  "colors": [],
+  "type": "Manteaux",
+  "has_vision": false
  },
  {
   "id": "sir:8702399512768",
@@ -4676,11 +4644,9 @@
    "Two Piece Sets"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
-  "colors": [
-   "noir"
-  ],
-  "silhouette": "jupe midi"
+  "colors": [],
+  "type": "Jupes",
+  "has_vision": false
  },
  {
   "id": "sir:8702399480000",
@@ -4714,11 +4680,9 @@
    "Two Piece Sets"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
-  "colors": [
-   "chocolat"
-  ],
-  "silhouette": "pantalon en soie"
+  "colors": [],
+  "type": "Pantalons",
+  "has_vision": false
  },
  {
   "id": "sir:8702399447232",
@@ -4753,11 +4717,9 @@
    "Two Piece Sets"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
-  "colors": [
-   "orange"
-  ],
-  "silhouette": "pantalon en soie"
+  "colors": [],
+  "type": "Pantalons",
+  "has_vision": false
  },
  {
   "id": "sir:8702399381696",
@@ -4789,9 +4751,9 @@
    "Two Piece Sets"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
   "colors": [],
-  "silhouette": "tunique à capuche"
+  "type": "Hauts",
+  "has_vision": false
  },
  {
   "id": "sir:8702399348928",
@@ -4825,11 +4787,9 @@
    "Wedding Guest"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
-  "colors": [
-   "bleu"
-  ],
-  "silhouette": "robe longue col halter"
+  "colors": [],
+  "type": "Robes",
+  "has_vision": false
  },
  {
   "id": "sir:8702399316160",
@@ -4865,11 +4825,21 @@
    "Tops"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
   "colors": [
    "multicolore"
   ],
-  "silhouette": "t-shirt ajusté maille"
+  "type": "Hauts",
+  "material": "maille",
+  "length": "cropped",
+  "cut": "ajustée",
+  "neckline": "col rond",
+  "details": [
+   "imprimé floral",
+   "bordure contrastée",
+   "manches courtes"
+  ],
+  "has_vision": true,
+  "attrs_v": 2
  },
  {
   "id": "sir:8702399250624",
@@ -4899,9 +4869,9 @@
    "Tops"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
   "colors": [],
-  "silhouette": "top manches longues dentelle"
+  "type": "Hauts",
+  "has_vision": false
  },
  {
   "id": "sir:8702399217856",
@@ -4937,11 +4907,9 @@
    "Swim Bottoms"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
-  "colors": [
-   "multicolore"
-  ],
-  "silhouette": "culotte de bikini ruchée"
+  "colors": [],
+  "type": "Autres",
+  "has_vision": false
  },
  {
   "id": "sir:8702399152320",
@@ -4976,11 +4944,20 @@
    "Tops"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
   "colors": [
    "ivoire"
   ],
-  "silhouette": "t-shirt côtelé"
+  "type": "Hauts",
+  "material": "coton",
+  "length": "cropped",
+  "cut": "ajustée",
+  "neckline": "col rond",
+  "details": [
+   "côtes",
+   "manches courtes"
+  ],
+  "has_vision": true,
+  "attrs_v": 2
  },
  {
   "id": "sir:8702399119552",
@@ -5017,11 +4994,9 @@
    "Wedding Guest"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
-  "colors": [
-   "rose"
-  ],
-  "silhouette": "robe midi slip"
+  "colors": [],
+  "type": "Robes",
+  "has_vision": false
  },
  {
   "id": "sir:8702399086784",
@@ -5059,11 +5034,9 @@
    "stitch:daisy-snood-black"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
-  "colors": [
-   "neutre"
-  ],
-  "silhouette": "snood accessoire"
+  "colors": [],
+  "type": "Accessoires",
+  "has_vision": false
  },
  {
   "id": "sir:8702399054016",
@@ -5098,11 +5071,9 @@
    "Wedding Guest"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
-  "colors": [
-   "rayé"
-  ],
-  "silhouette": "robe midi superposée"
+  "colors": [],
+  "type": "Robes",
+  "has_vision": false
  },
  {
   "id": "sir:8702399021248",
@@ -5134,11 +5105,9 @@
    "Swim Bottoms"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
-  "colors": [
-   "marron"
-  ],
-  "silhouette": "culotte de bikini"
+  "colors": [],
+  "type": "Autres",
+  "has_vision": false
  },
  {
   "id": "sir:8702398988480",
@@ -5175,11 +5144,9 @@
    "Wedding Guest"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
-  "colors": [
-   "multicolore"
-  ],
-  "silhouette": "robe maxi portefeuille"
+  "colors": [],
+  "type": "Robes",
+  "has_vision": false
  },
  {
   "id": "sir:8702398955712",
@@ -5212,11 +5179,9 @@
    "Two Piece Sets"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
-  "colors": [
-   "neutre"
-  ],
-  "silhouette": "blouson bomber"
+  "colors": [],
+  "type": "Manteaux",
+  "has_vision": false
  },
  {
   "id": "sir:8702398922944",
@@ -5252,11 +5217,9 @@
    "SIR426-1005"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
-  "colors": [
-   "multicolore"
-  ],
-  "silhouette": "robe maxi volantée"
+  "colors": [],
+  "type": "Robes",
+  "has_vision": false
  },
  {
   "id": "sir:8702399971520",
@@ -5288,11 +5251,20 @@
    "stitch:the-microcat-burgundy"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
   "colors": [
    "noir"
   ],
-  "silhouette": ""
+  "type": "Accessoires",
+  "material": "synthétique",
+  "length": "",
+  "cut": "",
+  "neckline": "",
+  "details": [
+   "verres fumés",
+   "monture ovale"
+  ],
+  "has_vision": true,
+  "attrs_v": 2
  },
  {
   "id": "sir:8702400299200",
@@ -5325,11 +5297,9 @@
    "stitch:the-microcat-black"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
-  "colors": [
-   "rouge"
-  ],
-  "silhouette": ""
+  "colors": [],
+  "type": "Accessoires",
+  "has_vision": false
  },
  {
   "id": "dissh:15281604821360",
@@ -5388,11 +5358,9 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
-  "colors": [
-   "bleu poussiéreux"
-  ],
-  "silhouette": "pull col rond"
+  "colors": [],
+  "type": "Hauts",
+  "has_vision": false
  },
  {
   "id": "dissh:15273485336944",
@@ -5444,11 +5412,9 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
-  "colors": [
-   "noir"
-  ],
-  "silhouette": "haut col cheminée"
+  "colors": [],
+  "type": "Hauts",
+  "has_vision": false
  },
  {
   "id": "dissh:15273482912112",
@@ -5503,11 +5469,9 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
-  "colors": [
-   "olive"
-  ],
-  "silhouette": "robe midi slip soie"
+  "colors": [],
+  "type": "Robes",
+  "has_vision": false
  },
  {
   "id": "dissh:15273482649968",
@@ -5558,11 +5522,9 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
-  "colors": [
-   "noir"
-  ],
-  "silhouette": "short satiné"
+  "colors": [],
+  "type": "Pantalons",
+  "has_vision": false
  },
  {
   "id": "dissh:15273483043184",
@@ -5614,11 +5576,9 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
-  "colors": [
-   "noir"
-  ],
-  "silhouette": "robe midi satinée"
+  "colors": [],
+  "type": "Robes",
+  "has_vision": false
  },
  {
   "id": "dissh:15273486188912",
@@ -5668,11 +5628,9 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
-  "colors": [
-   "noir"
-  ],
-  "silhouette": "jupe midi satinée"
+  "colors": [],
+  "type": "Jupes",
+  "has_vision": false
  },
  {
   "id": "kookai:7129848119368",
@@ -5719,11 +5677,9 @@
    "WK14-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
-  "colors": [
-   "multicolore"
-  ],
-  "silhouette": "jupe midi"
+  "colors": [],
+  "type": "Jupes",
+  "has_vision": false
  },
  {
   "id": "dissh:15222709125488",
@@ -5784,11 +5740,9 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
-  "colors": [
-   "camel"
-  ],
-  "silhouette": "trench-coat léger"
+  "colors": [],
+  "type": "Manteaux",
+  "has_vision": false
  },
  {
   "id": "kookai:7132406513736",
@@ -5827,11 +5781,9 @@
    "WK16-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
-  "colors": [
-   "beige"
-  ],
-  "silhouette": ""
+  "colors": [],
+  "type": "Hauts",
+  "has_vision": false
  },
  {
   "id": "kookai:7132406448200",
@@ -5878,11 +5830,20 @@
    "WK15-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
   "colors": [
    "marron"
   ],
-  "silhouette": "jupe mini"
+  "type": "Jupes",
+  "material": "cuir",
+  "length": "mini",
+  "cut": "droite",
+  "neckline": "",
+  "details": [
+   "effet croco",
+   "taille basse"
+  ],
+  "has_vision": true,
+  "attrs_v": 2
  },
  {
   "id": "dissh:15244934054256",
@@ -5936,11 +5897,9 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
-  "colors": [
-   "gris pierre"
-  ],
-  "silhouette": "veste mi-longue"
+  "colors": [],
+  "type": "Manteaux",
+  "has_vision": false
  },
  {
   "id": "dissh:15262646894960",
@@ -5994,11 +5953,9 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
-  "colors": [
-   "noir"
-  ],
-  "silhouette": "pantalon ballon"
+  "colors": [],
+  "type": "Pantalons",
+  "has_vision": false
  },
  {
   "id": "dissh:15273290236272",
@@ -6047,11 +6004,9 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
-  "colors": [
-   "beige"
-  ],
-  "silhouette": "blazer oversize"
+  "colors": [],
+  "type": "Manteaux",
+  "has_vision": false
  },
  {
   "id": "bec-bridge:7389426090039",
@@ -6085,12 +6040,9 @@
    "x-styleCode:S26-13508"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
-  "colors": [
-   "bleu azur",
-   "vert jade"
-  ],
-  "silhouette": "robe maxi décolleté échancré"
+  "colors": [],
+  "type": "Robes",
+  "has_vision": false
  },
  {
   "id": "dissh:15244934087024",
@@ -6148,11 +6100,9 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
-  "colors": [
-   "olive"
-  ],
-  "silhouette": "top slip soyeux"
+  "colors": [],
+  "type": "Hauts",
+  "has_vision": false
  },
  {
   "id": "bec-bridge:7389423665207",
@@ -6185,11 +6135,9 @@
    "x-styleCode:S26-13553"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
-  "colors": [
-   "ivoire"
-  ],
-  "silhouette": "robe maxi bloussante"
+  "colors": [],
+  "type": "Robes",
+  "has_vision": false
  },
  {
   "id": "dissh:15253707063664",
@@ -6243,11 +6191,9 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
-  "colors": [
-   "noir"
-  ],
-  "silhouette": "top sans manches noué"
+  "colors": [],
+  "type": "Hauts",
+  "has_vision": false
  },
  {
   "id": "kookai:7111698055240",
@@ -6290,11 +6236,9 @@
    "WK15-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
-  "colors": [
-   "blanc"
-  ],
-  "silhouette": "débardeur basique"
+  "colors": [],
+  "type": "Hauts",
+  "has_vision": false
  },
  {
   "id": "kookai:7125381742664",
@@ -6333,9 +6277,9 @@
    "WK13-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
   "colors": [],
-  "silhouette": "short sport"
+  "type": "Pantalons",
+  "has_vision": false
  },
  {
   "id": "kookai:7125380989000",
@@ -6381,9 +6325,9 @@
    "WK13-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
   "colors": [],
-  "silhouette": "gilet sport"
+  "type": "Hauts",
+  "has_vision": false
  },
  {
   "id": "kookai:7111697432648",
@@ -6434,11 +6378,9 @@
    "WK15-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
-  "colors": [
-   "rouge cerise"
-  ],
-  "silhouette": "jupe midi"
+  "colors": [],
+  "type": "Jupes",
+  "has_vision": false
  },
  {
   "id": "kookai:7111697596488",
@@ -6495,11 +6437,9 @@
    "WK10-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
-  "colors": [
-   "rouge cerise"
-  ],
-  "silhouette": "top col v"
+  "colors": [],
+  "type": "Hauts",
+  "has_vision": false
  },
  {
   "id": "bec-bridge:7389424779319",
@@ -6527,12 +6467,9 @@
    "x-styleCode:S26-13528"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
-  "colors": [
-   "chocolat foncé",
-   "espresso"
-  ],
-  "silhouette": "robe maxi"
+  "colors": [],
+  "type": "Robes",
+  "has_vision": false
  },
  {
   "id": "dissh:15222710894960",
@@ -6600,11 +6537,9 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
-  "colors": [
-   "gris chiné"
-  ],
-  "silhouette": "cardigan cintré"
+  "colors": [],
+  "type": "Hauts",
+  "has_vision": false
  },
  {
   "id": "bec-bridge:7424298844215",
@@ -6639,11 +6574,9 @@
    "x-styleCode:BM-30920"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
-  "colors": [
-   "ivoire"
-  ],
-  "silhouette": "jupe maxi"
+  "colors": [],
+  "type": "Jupes",
+  "has_vision": false
  },
  {
   "id": "bec-bridge:7424298221623",
@@ -6678,11 +6611,9 @@
    "x-styleCode:S26-30928"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
-  "colors": [
-   "chocolat foncé"
-  ],
-  "silhouette": "jupe maxi"
+  "colors": [],
+  "type": "Jupes",
+  "has_vision": false
  },
  {
   "id": "bec-bridge:7424298188855",
@@ -6717,11 +6648,9 @@
    "x-styleCode:BM-22259"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
-  "colors": [
-   "ivoire"
-  ],
-  "silhouette": "top licou dos nu"
+  "colors": [],
+  "type": "Hauts",
+  "has_vision": false
  },
  {
   "id": "bec-bridge:7424297664567",
@@ -6756,11 +6685,9 @@
    "x-styleCode:S26-22253"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
-  "colors": [
-   "chocolat foncé"
-  ],
-  "silhouette": "top col drapé"
+  "colors": [],
+  "type": "Hauts",
+  "has_vision": false
  },
  {
   "id": "dissh:15206271779184",
@@ -6830,11 +6757,9 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
-  "colors": [
-   "noir"
-  ],
-  "silhouette": "cardigan cintré"
+  "colors": [],
+  "type": "Hauts",
+  "has_vision": false
  },
  {
   "id": "dissh:15206269059440",
@@ -6900,11 +6825,9 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
-  "colors": [
-   "blanc cassé"
-  ],
-  "silhouette": "pull maille texturée"
+  "colors": [],
+  "type": "Hauts",
+  "has_vision": false
  },
  {
   "id": "dissh:15206269747568",
@@ -6965,11 +6888,9 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
-  "colors": [
-   "blanc cassé"
-  ],
-  "silhouette": "jupe maxi maille"
+  "colors": [],
+  "type": "Jupes",
+  "has_vision": false
  },
  {
   "id": "bec-bridge:7389424091191",
@@ -7003,11 +6924,9 @@
    "x-styleCode:S26-13535P"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
-  "colors": [
-   "bleu denim"
-  ],
-  "silhouette": "robe maxi fleurie"
+  "colors": [],
+  "type": "Robes",
+  "has_vision": false
  },
  {
   "id": "bec-bridge:7389421174839",
@@ -7040,11 +6959,9 @@
    "x-styleCode:S26-13609P"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
-  "colors": [
-   "bleu denim"
-  ],
-  "silhouette": "robe mini fleurie"
+  "colors": [],
+  "type": "Robes",
+  "has_vision": false
  },
  {
   "id": "bec-bridge:7441158078519",
@@ -7077,11 +6994,9 @@
    "x-styleCode:S26-13684"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
-  "colors": [
-   "argenté"
-  ],
-  "silhouette": "robe mini col haut"
+  "colors": [],
+  "type": "Robes",
+  "has_vision": false
  },
  {
   "id": "bec-bridge:7389422944311",
@@ -7116,11 +7031,21 @@
    "x-styleCode:S26-13587"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
   "colors": [
-   "argenté"
+   "argent"
   ],
-  "silhouette": "robe maxi"
+  "type": "Robes",
+  "material": "satin",
+  "length": "maxi",
+  "cut": "fluide",
+  "neckline": "col haut",
+  "details": [
+   "drapé",
+   "fronces latérales",
+   "sans manches"
+  ],
+  "has_vision": true,
+  "attrs_v": 2
  },
  {
   "id": "dissh:15129406275952",
@@ -7175,11 +7100,21 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Sortie produit",
   "colors": [
-   "gris pierre"
+   "beige"
   ],
-  "silhouette": "veste batwing légère"
+  "type": "Manteaux",
+  "material": "",
+  "length": "court",
+  "cut": "oversize",
+  "neckline": "col haut",
+  "details": [
+   "manches chauve-souris",
+   "col montant",
+   "poignets élastiqués"
+  ],
+  "has_vision": true,
+  "attrs_v": 2
  },
  {
   "id": "sir:8633608175808",
@@ -7220,11 +7155,9 @@
    "Wedding Guest"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
-  "colors": [
-   "noir"
-  ],
-  "silhouette": "robe maxi"
+  "colors": [],
+  "type": "Robes",
+  "has_vision": false
  },
  {
   "id": "sir:8624344039616",
@@ -7262,11 +7195,9 @@
    "yellow"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
-  "colors": [
-   "jaune"
-  ],
-  "silhouette": "jupe midi en soie"
+  "colors": [],
+  "type": "Jupes",
+  "has_vision": false
  },
  {
   "id": "sir:8624440606912",
@@ -7303,11 +7234,9 @@
    "stitch:sola-pant-camel"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
-  "colors": [
-   "ivoire"
-  ],
-  "silhouette": "pantalon en coton"
+  "colors": [],
+  "type": "Pantalons",
+  "has_vision": false
  },
  {
   "id": "sir:8624343941312",
@@ -7345,11 +7274,9 @@
    "Tops"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
-  "colors": [
-   "neutre"
-  ],
-  "silhouette": "débardeur cami"
+  "colors": [],
+  "type": "Hauts",
+  "has_vision": false
  },
  {
   "id": "sir:8624343908544",
@@ -7385,11 +7312,9 @@
    "stitch:sola-bloomer-skirt-camel"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
-  "colors": [
-   "noir"
-  ],
-  "silhouette": "jupe bloomer ample"
+  "colors": [],
+  "type": "Jupes",
+  "has_vision": false
  },
  {
   "id": "bec-bridge:7308087951415",
@@ -7427,11 +7352,9 @@
    "x-styleCode:BM-13280"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
-  "colors": [
-   "crème"
-  ],
-  "silhouette": "robe longue drapée"
+  "colors": [],
+  "type": "Robes",
+  "has_vision": false
  },
  {
   "id": "bec-bridge:7389425958967",
@@ -7461,11 +7384,9 @@
    "x-styleCode:S26-50256"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
-  "colors": [
-   "noir"
-  ],
-  "silhouette": "veste courte cropped"
+  "colors": [],
+  "type": "Manteaux",
+  "has_vision": false
  },
  {
   "id": "bec-bridge:7358503288887",
@@ -7493,11 +7414,9 @@
    "x-styleCode:W26-50233"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
-  "colors": [
-   "noir"
-  ],
-  "silhouette": "veste longue"
+  "colors": [],
+  "type": "Manteaux",
+  "has_vision": false
  },
  {
   "id": "bec-bridge:7411729858615",
@@ -7532,11 +7451,21 @@
    "x-styleCode:W26-22084"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
   "colors": [
-   "anthracite"
+   "gris"
   ],
-  "silhouette": "pull court cropped"
+  "type": "Hauts",
+  "material": "maille",
+  "length": "cropped",
+  "cut": "oversize",
+  "neckline": "col haut",
+  "details": [
+   "zip",
+   "maille côtelée",
+   "manches ballon"
+  ],
+  "has_vision": true,
+  "attrs_v": 2
  },
  {
   "id": "bec-bridge:7358500732983",
@@ -7566,11 +7495,9 @@
    "x-styleCode:W26-50254"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
-  "colors": [
-   "chocolat foncé"
-  ],
-  "silhouette": "manteau en laine"
+  "colors": [],
+  "type": "Manteaux",
+  "has_vision": false
  },
  {
   "id": "bec-bridge:7415912071223",
@@ -7601,11 +7528,9 @@
    "x-styleCode:W26-13328"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
-  "colors": [
-   "noir"
-  ],
-  "silhouette": "robe maxi drapée"
+  "colors": [],
+  "type": "Robes",
+  "has_vision": false
  },
  {
   "id": "bec-bridge:7358499618871",
@@ -7640,11 +7565,9 @@
    "x-styleCode:W26-13471"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
-  "colors": [
-   "noir"
-  ],
-  "silhouette": "robe maxi"
+  "colors": [],
+  "type": "Robes",
+  "has_vision": false
  },
  {
   "id": "sir:8502196076736",
@@ -7676,10 +7599,8 @@
    "wide leg pants"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "category": "Collection",
-  "colors": [
-   "bleu denim"
-  ],
-  "silhouette": "jean droit"
+  "colors": [],
+  "type": "Pantalons",
+  "has_vision": false
  }
 ]

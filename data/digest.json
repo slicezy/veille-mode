@@ -1,34 +1,24 @@
 {
- "title": "Neutres sensuels : dentelle, soie et jupes fluides",
- "summary": "Les jupes dominent chez Kookaï (minis, midis, skort), Dissh (dentelle ivoire) et Bec + Bridge (jupe drapée), aux côtés de robes longues ou midi en soie chez Reformation et Bec + Bridge (Parma, Neva, Nalu, Drift). La palette reste sobre, entre marron, beige, ivoire et noir, avec des touches d'argent métallisé chez Bec + Bridge. Les matières travaillent la douceur et la transparence : dentelle, soie, maille, cachemire, velours et fausse fourrure chez Dissh.",
+ "title": "Robes et hauts dominent, détails encore rares",
+ "summary": "Les robes (29 %) et les hauts (24 %) forment plus de la moitié des nouveautés, devant les accessoires et les jupes (18 % chacun), tandis que les manteaux et les autres pièces ne pèsent que 6 % chacun. L'échantillon vient presque entièrement de Reformation, et Dissh n'y figure qu'avec une jupe midi. Les attributs visibles sur les photos restent très épars : une pochette en cuir noir à finition vernie et rabat, et une robe mini en velours beige aux manches drapées, soit 6 % chacun, ce qui ne permet pas de dégager une tendance de couleur ou de matière.",
  "tags": [
-  "jupes",
-  "dentelle",
-  "soie",
-  "neutres"
+  "robes",
+  "hauts",
+  "Reformation",
+  "velours drapé"
  ],
  "palette": [
   {
-   "name": "Ivoire",
-   "hex": "#F3EEDF"
-  },
-  {
-   "name": "Beige sable",
-   "hex": "#D8C3A5"
-  },
-  {
-   "name": "Marron chocolat",
-   "hex": "#6B4A3A"
-  },
-  {
    "name": "Noir",
-   "hex": "#1A1A1A"
+   "hex": "#1F1E1C",
+   "share": 50
   },
   {
-   "name": "Argent",
-   "hex": "#C0C0C8"
+   "name": "Beige",
+   "hex": "#D8C8AE",
+   "share": 50
   }
  ],
  "week_label": "Semaine du 26 octobre",
- "generated_at": "2026-10-31T03:29:57+00:00"
+ "generated_at": "2026-10-31T03:48:58+00:00"
 }

@@ -1,0 +1,144 @@
+{
+ "generated_at": "2026-10-31T03:48:58+00:00",
+ "window_days": 7,
+ "total": 17,
+ "with_photo_analysis": 2,
+ "types": [
+  {
+   "name": "Robes",
+   "count": 5,
+   "share": 29,
+   "brands": 1
+  },
+  {
+   "name": "Hauts",
+   "count": 4,
+   "share": 24,
+   "brands": 1
+  },
+  {
+   "name": "Accessoires",
+   "count": 3,
+   "share": 18,
+   "brands": 1
+  },
+  {
+   "name": "Jupes",
+   "count": 3,
+   "share": 18,
+   "brands": 2
+  },
+  {
+   "name": "Manteaux",
+   "count": 1,
+   "share": 6,
+   "brands": 1
+  },
+  {
+   "name": "Autres",
+   "count": 1,
+   "share": 6,
+   "brands": 1
+  }
+ ],
+ "colors": [
+  {
+   "name": "noir",
+   "count": 1,
+   "share": 6
+  },
+  {
+   "name": "beige",
+   "count": 1,
+   "share": 6
+  }
+ ],
+ "materials": [
+  {
+   "name": "cuir",
+   "count": 1,
+   "share": 6
+  },
+  {
+   "name": "velours",
+   "count": 1,
+   "share": 6
+  }
+ ],
+ "lengths": [
+  {
+   "name": "mini",
+   "count": 1,
+   "share": 6
+  }
+ ],
+ "cuts": [
+  {
+   "name": "ajustée",
+   "count": 1,
+   "share": 6
+  }
+ ],
+ "necklines": [
+  {
+   "name": "col rond",
+   "count": 1,
+   "share": 6
+  }
+ ],
+ "details": [
+  {
+   "name": "finition vernie",
+   "count": 1,
+   "share": 6
+  },
+  {
+   "name": "rabat",
+   "count": 1,
+   "share": 6
+  },
+  {
+   "name": "drapé",
+   "count": 1,
+   "share": 6
+  },
+  {
+   "name": "manches drapées",
+   "count": 1,
+   "share": 6
+  }
+ ],
+ "palette": [
+  {
+   "name": "Noir",
+   "hex": "#1F1E1C",
+   "share": 50
+  },
+  {
+   "name": "Beige",
+   "hex": "#D8C8AE",
+   "share": 50
+  }
+ ],
+ "color_hex": {
+  "noir": "#1F1E1C",
+  "blanc": "#F7F6F2",
+  "ivoire": "#EFE8D8",
+  "beige": "#D8C8AE",
+  "camel": "#B58B5A",
+  "marron": "#6B4A36",
+  "gris": "#9A9A98",
+  "bleu": "#4A6FA5",
+  "bleu marine": "#1F2D4A",
+  "vert": "#5E7F5A",
+  "kaki": "#7A7650",
+  "rouge": "#A62B2B",
+  "bordeaux": "#6D1F2E",
+  "rose": "#E5A9B5",
+  "jaune": "#E3C65A",
+  "orange": "#D9803A",
+  "violet": "#7A5C99",
+  "argent": "#C0C0C4",
+  "or": "#C9A24B"
+ }
+}
