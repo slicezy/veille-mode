@@ -1,17 +1,17 @@
 {
- "title": "Noir dominant, mini et drapés fluides",
- "summary": "Les hauts (41 %) et les robes (23 %) concentrent les nouveautés, dans une palette dominée par le noir (24 %), l'ivoire (14 %) et le blanc (13 %), avec le marron et le bleu présents chez 10 marques sur 11. Les coupes fluides et droites ressortent chez 10 marques, la mini chez 10 également, et le col rond chez 9, tandis que la maille (13 %) mène les matières. Dans l'échantillon, le drapé et la transparence reviennent chez Bec + Bridge et VRG GRL, et la mini apparaît chez Kookaï et Venroy ; les robes ont un prix médian de 265 CAD et les manteaux de 333 CAD.",
+ "title": "Noir, ivoire et maille : le minimalisme sensuel domine",
+ "summary": "Les hauts (44 %) et les robes (23 %) dominent les nouveautés, avec une palette où le noir (23 %) devance l'ivoire (14 %), le blanc, le bleu et le marron (11 % chacun). La maille arrive en tête des matières (17 %), devant le jersey (9 %) et le satin (8 %), et le col rond (15 %) est l'encolure la plus fréquente. Côté longueurs, cropped, maxi et mini se tiennent (12-13 %), et l'échantillon montre aussi des transparences et des drapés chez Bec + Bridge, VRG GRL et Reformation, avec des robes à 265 CAD de prix médian.",
  "tags": [
-  "noir",
-  "mini",
+  "noir et ivoire",
   "maille",
-  "drapé"
+  "cropped et mini",
+  "transparence"
  ],
  "palette": [
   {
    "name": "Noir",
    "hex": "#1F1E1C",
-   "share": 24
+   "share": 23
   },
   {
    "name": "Ivoire",
@@ -21,19 +21,19 @@
   {
    "name": "Blanc",
    "hex": "#F7F6F2",
-   "share": 13
-  },
-  {
-   "name": "Marron",
-   "hex": "#6B4A36",
    "share": 11
   },
   {
    "name": "Bleu",
    "hex": "#4A6FA5",
-   "share": 8
+   "share": 11
+  },
+  {
+   "name": "Marron",
+   "hex": "#6B4A36",
+   "share": 11
   }
  ],
  "week_label": "Semaine du 26 octobre",
- "generated_at": "2026-10-31T14:03:57+00:00"
+ "generated_at": "2026-10-31T14:31:19+00:00"
 }
