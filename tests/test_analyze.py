@@ -64,6 +64,27 @@ class NormalizeTests(unittest.TestCase):
         self.assertEqual(analyze.normalize(None, item(1, name="Dress"), False)["type"], "Robes")
 
 
+class ExtractJsonTests(unittest.TestCase):
+    def test_tolerates_prose_brackets_fences_and_trailers(self):
+        text = 'Voici [le résultat] :\n```json\n{\n "type": "Robes",\n "colors": ["noir"]\n}\n```\nNote {facultative}'
+        self.assertEqual(analyze.extract_json(text, dict), {"type": "Robes", "colors": ["noir"]})
+
+    def test_wants_dict_skips_arrays(self):
+        self.assertEqual(analyze.extract_json('["a"] puis {"x": 1}', dict), {"x": 1})
+        self.assertEqual(analyze.extract_json('["a"] puis {"x": 1}'), ["a"])
+
+    def test_no_json(self):
+        for text in ["", "Désolé, je ne peux pas.", "{pas du json", "[1, 2"]:
+            with self.assertRaises(ValueError):
+                analyze.extract_json(text, dict)
+
+    def test_unreadable_reply_is_logged_with_start_of_text(self):
+        items = [item(1)]
+        client = FakeClient(["Je ne peux pas décrire cette image."])
+        analyze.analyze_items(client, items, loader=lambda u: IMG, sleep=lambda s: None)
+        self.assertNotIn("attrs_v", items[0])
+
+
 class AnalyzeItemsTests(unittest.TestCase):
     def run_items(self, items, replies, loader=lambda url: IMG, limit=80):
         client = FakeClient(replies)

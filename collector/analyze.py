@@ -101,14 +101,22 @@ def heuristic_type(item: dict) -> str:
     return "Autres"
 
 
-def extract_json(text: str):
-    """Extrait le premier bloc JSON (objet ou tableau) d'une réponse du modèle."""
-    starts = [i for i in (text.find("["), text.find("{")) if i != -1]
-    if not starts:
-        raise ValueError("pas de JSON dans la réponse")
-    start = min(starts)
-    end = max(text.rfind("]"), text.rfind("}"))
-    return json.loads(text[start : end + 1])
+def extract_json(text: str, want: type | None = None):
+    """Premier bloc JSON valide d'une réponse du modèle (objet ou tableau).
+
+    Tolère du texte avant ou après, des blocs ```json et des crochets dans la prose.
+    `want` limite à un type (dict ou list).
+    """
+    decoder = json.JSONDecoder()
+    for i, ch in enumerate(text):
+        if ch in "{[":
+            try:
+                obj, _ = decoder.raw_decode(text, i)
+            except ValueError:
+                continue
+            if want is None or isinstance(obj, want):
+                return obj
+    raise ValueError("pas de JSON dans la réponse")
 
 
 def ask(client, model: str, prompt: str, max_tokens: int, image: dict | None = None) -> str:
@@ -233,8 +241,13 @@ def build_item_prompt(item: dict, has_vision: bool) -> str:
 
 def analyze_item(client, item: dict, image: dict | None) -> dict:
     has_vision = image is not None
-    text = ask(client, ATTR_MODEL, build_item_prompt(item, has_vision), 400, image)
-    return normalize(extract_json(text), item, has_vision)
+    text = ask(client, ATTR_MODEL, build_item_prompt(item, has_vision), 600, image)
+    try:
+        raw = extract_json(text, dict)
+    except ValueError:
+        # Garde le début de la réponse dans le journal pour comprendre ce qui ne va pas.
+        raise ValueError(f"réponse illisible : {text[:160]!r}") from None
+    return normalize(raw, item, has_vision)
 
 
 def analyze_items(client, items: list[dict], loader=load_image, limit: int = MAX_PER_RUN, sleep=time.sleep) -> int:
@@ -397,7 +410,7 @@ def build_digest(client, items: list[dict], stats: dict) -> dict:
         '- "tags" : 4 mots-clés courts en français\n'
     )
     try:
-        data = extract_json(ask(client, DIGEST_MODEL, prompt, 900))
+        data = extract_json(ask(client, DIGEST_MODEL, prompt, 900), dict)
         if isinstance(data.get("title"), str):
             digest["title"] = data["title"].strip()
         if isinstance(data.get("summary"), str):
