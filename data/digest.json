@@ -1,39 +1,39 @@
 {
- "title": "Noir, maille et coupes fluides dominent les nouveautés",
- "summary": "Les hauts (41 %) et les robes (24 %) pèsent l'essentiel des nouveautés, dans une palette dominée par le noir (26 %), le blanc (15 %) et l'ivoire (14 %). Le col rond (7 marques), la coupe fluide, la coupe droite et le mini (7 marques chacun) sont les tendances les plus partagées, tandis que la maille est la matière la plus citée (16 %, 6 marques). Dans l'échantillon, le drapé et les bretelles fines reviennent souvent, notamment chez Bec + Bridge et VRG GRL, avec des prix médians allant de 126 CAD pour les hauts à 333 CAD pour les manteaux.",
+ "title": "Noir, ivoire et fluidité : une silhouette épurée",
+ "summary": "Les hauts (41 %) et les robes (24 %) dominent les nouveautés, avec une palette de noir (25 %), de blanc (16 %) et d'ivoire (12 %) ; le noir et l'ivoire reviennent chacun chez 7 marques sur 11. La coupe fluide est la tendance la plus partagée (9 marques), devant le col rond, le cropped et le mini (8 marques chacun), et la maille est la matière la plus présente (17 %). Dans l'échantillon, Bec + Bridge décline l'ivoire et l'argent en drapés, et le prix médian des robes est de 255 CAD contre 126 CAD pour les hauts.",
  "tags": [
-  "noir",
-  "maille",
-  "col rond",
-  "mini"
+  "coupe fluide",
+  "noir et ivoire",
+  "cropped et mini",
+  "maille"
  ],
  "palette": [
   {
    "name": "Noir",
    "hex": "#1F1E1C",
-   "share": 26
+   "share": 25
   },
   {
    "name": "Blanc",
    "hex": "#F7F6F2",
-   "share": 15
+   "share": 16
   },
   {
    "name": "Ivoire",
    "hex": "#EFE8D8",
-   "share": 14
-  },
-  {
-   "name": "Gris",
-   "hex": "#9A9A98",
-   "share": 8
+   "share": 12
   },
   {
    "name": "Marron",
    "hex": "#6B4A36",
-   "share": 8
+   "share": 11
+  },
+  {
+   "name": "Bleu",
+   "hex": "#4A6FA5",
+   "share": 7
   }
  ],
  "week_label": "Semaine du 26 octobre",
- "generated_at": "2026-10-31T16:04:01+00:00"
+ "generated_at": "2026-10-31T16:19:10+00:00"
 }

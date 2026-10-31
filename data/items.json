@@ -6258,25 +6258,29 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false,
-  "material": "",
+  "colors": [
+   "noir"
+  ],
+  "has_vision": true,
+  "material": "maille",
   "length": "",
-  "cut": "",
-  "neckline": "",
+  "cut": "ajustée",
+  "neckline": "col rond",
   "details": [
-   "dos racer"
+   "dos nageur",
+   "maille côtelée"
   ],
   "compare_at_price": "46.00",
   "description": "The Cindy Racerback Tank is designed with a scoop neckline and a close fit through the body. The racerback shape creates a narrow finish through the shoulders, with fine ribbing throughout. Scoop neckline Racerback design Sleeveless Fitted through the body",
   "on_sale": false,
   "fibre": "",
   "composition": "",
-  "shape": "",
+  "shape": "ajusté",
   "rise": "",
-  "style": "",
+  "style": "décontracté",
   "closure": "",
-  "photo_tries": 0
+  "photo_tries": 0,
+  "attrs_v": 3
  },
  {
   "id": "bayse:8053798502570",
@@ -6300,26 +6304,30 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false,
-  "material": "",
-  "length": "",
-  "cut": "",
-  "neckline": "",
+  "colors": [
+   "blanc"
+  ],
+  "has_vision": true,
+  "material": "maille",
+  "length": "cropped",
+  "cut": "ajustée",
+  "neckline": "col rond",
   "details": [
    "dos nageur",
-   "sans manches"
+   "maille côtelée",
+   "encolure ronde"
   ],
   "compare_at_price": "46.00",
   "description": "The Cindy Racerback Tank is designed with a scoop neckline and a close fit through the body. The racerback shape creates a narrow finish through the shoulders, with fine ribbing throughout. Scoop neckline Racerback design Sleeveless Fitted through the body",
   "on_sale": false,
   "fibre": "",
   "composition": "",
-  "shape": "",
+  "shape": "ajusté",
   "rise": "",
-  "style": "",
+  "style": "décontracté",
   "closure": "",
-  "photo_tries": 0
+  "photo_tries": 0,
+  "attrs_v": 3
  },
  {
   "id": "bayse:8266986160298",
@@ -6417,17 +6425,28 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "marron"
+  ],
+  "has_vision": true,
   "material": "synthétique",
   "length": "",
-  "cut": "",
-  "neckline": "",
-  "details": [],
+  "cut": "fluide",
+  "neckline": "col haut",
+  "details": [
+   "col drapé",
+   "couture centrale",
+   "sans manches"
+  ],
   "description": "Made from a crease resistant stretch fabric, the Margot Top is inspired by minimalist evening dressing. A high cowl neckline drapes softly, while an invisible zip at the back and full lining create a sleek finish. Complete the look with the matching Fleur short for your next occasion.",
   "on_sale": false,
   "fibre": "",
-  "composition": ""
+  "composition": "",
+  "shape": "drapé",
+  "rise": "",
+  "style": "habillé",
+  "closure": "",
+  "attrs_v": 3
  },
  {
   "id": "dissh:15396097130864",
@@ -6478,23 +6497,30 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "noir"
+  ],
   "type": "Hauts",
-  "has_vision": false,
+  "has_vision": true,
   "material": "soie",
   "length": "",
-  "cut": "",
-  "neckline": "",
-  "details": [],
+  "cut": "oversize",
+  "neckline": "col chemise",
+  "details": [
+   "col revers",
+   "manches courtes",
+   "encolure v"
+  ],
   "description": "Short sleeve 100% silk shirt Collared neckline Concealed button closure at centre front Designed for a relaxed longline silhouette",
   "on_sale": false,
   "fibre": "soie",
   "composition": "soie 100 %",
-  "shape": "",
+  "shape": "oversize",
   "rise": "",
-  "style": "",
+  "style": "décontracté",
   "closure": "",
-  "photo_tries": 0
+  "photo_tries": 0,
+  "attrs_v": 3
  },
  {
   "id": "vrg-grl:8034712715307",
@@ -6538,22 +6564,30 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Pantalons",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "noir",
+   "jaune"
+  ],
+  "has_vision": true,
   "material": "",
   "length": "court",
-  "cut": "",
+  "cut": "fluide",
   "neckline": "",
-  "details": [],
+  "details": [
+   "bande jaune latérale",
+   "taille élastique",
+   "coupe ample"
+  ],
   "description": "The Benny Shorts are cut in black with a yellow side panel and an athletic-inspired shape. Sitting high on the waist, they’re finished with an elastic waistband for a comfortable fit. Sporty in shape, a little bolder in colour.",
   "on_sale": false,
   "fibre": "",
   "composition": "",
-  "shape": "",
-  "rise": "",
-  "style": "",
-  "closure": "",
-  "photo_tries": 0
+  "shape": "large",
+  "rise": "moyenne",
+  "style": "décontracté",
+  "closure": "pull-on",
+  "photo_tries": 0,
+  "attrs_v": 3
  },
  {
   "id": "vrg-grl:8034712256555",
@@ -6602,19 +6636,29 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Pantalons",
-  "colors": [],
-  "has_vision": false,
-  "material": "",
+  "colors": [
+   "vert",
+   "rose"
+  ],
+  "has_vision": true,
+  "material": "coton",
   "length": "court",
-  "cut": "",
+  "cut": "droite",
   "neckline": "",
   "details": [
-   "imprimé carreaux"
+   "taille élastique",
+   "motif carreaux",
+   "coupe boxer"
   ],
   "description": "The Helena Shorts are cut from 100% cotton in a fresh mint check with a simple, easy shape. Sitting between mid and high rise, they’re finished with an elastic waist for a comfortable fit. An easy one to keep in rotation.",
   "on_sale": false,
   "fibre": "coton",
-  "composition": "coton 100 %"
+  "composition": "coton 100 %",
+  "shape": "large",
+  "rise": "moyenne",
+  "style": "décontracté",
+  "closure": "pull-on",
+  "attrs_v": 3
  },
  {
   "id": "elka-collective:15382120726841",
@@ -6666,17 +6710,28 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Robes",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "marron"
+  ],
+  "has_vision": true,
   "material": "synthétique",
   "length": "mini",
-  "cut": "",
-  "neckline": "",
-  "details": [],
+  "cut": "droite",
+  "neckline": "col haut",
+  "details": [
+   "col drapé",
+   "ceinture noire",
+   "dos échancré"
+  ],
   "description": "Made from a stretch fabric, the Margot Mini Dress is inspired by minimalist evening dressing. A sleeveless cowl neckline drapes softly, while a fixed waistline with belt loops allows for multiple styling options. Complete the look with strappy heels and delicate jewellery for your next occasion.",
   "on_sale": false,
   "fibre": "",
-  "composition": ""
+  "composition": "",
+  "shape": "",
+  "rise": "",
+  "style": "habillé",
+  "closure": "",
+  "attrs_v": 3
  },
  {
   "id": "elka-collective:15380956873017",
@@ -6809,22 +6864,29 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Jupes",
-  "colors": [],
-  "has_vision": false,
-  "material": "",
+  "colors": [
+   "noir"
+  ],
+  "has_vision": true,
+  "material": "synthétique",
   "length": "mini",
-  "cut": "",
+  "cut": "droite",
   "neckline": "",
-  "details": [],
+  "details": [
+   "appliqués perlés",
+   "voile transparent",
+   "ourlet superposé"
+  ],
   "description": "Crafted from a linen blend, the Annelise Mini Skirt is inspired by our love of statement beading. Feature beading adds texture to the mini length, while the sheer lining peeks out at the hem for a delicate finish. Complete the look with delicate jewellery for your next occasion.",
   "on_sale": false,
   "fibre": "",
   "composition": "",
-  "shape": "",
-  "rise": "",
-  "style": "",
+  "shape": "trapèze",
+  "rise": "moyenne",
+  "style": "habillé",
   "closure": "",
-  "photo_tries": 0
+  "photo_tries": 0,
+  "attrs_v": 3
  },
  {
   "id": "elka-collective:15382121087289",
@@ -6878,17 +6940,28 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Robes",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "marron"
+  ],
+  "has_vision": true,
   "material": "synthétique",
   "length": "maxi",
-  "cut": "",
-  "neckline": "",
-  "details": [],
+  "cut": "ajustée",
+  "neckline": "col V",
+  "details": [
+   "fronces",
+   "découpe trou de serrure",
+   "texture plissée"
+  ],
   "description": "Crafted from a textured lyocell blend, the Marina Dress is inspired by modern minimalism. A crew neck with keyhole detail adds subtle interest, while the maxi length and full lining create an elegant line. Complete the look with strappy heels and delicate jewellery for your next occasion.",
   "on_sale": false,
   "fibre": "",
-  "composition": ""
+  "composition": "",
+  "shape": "",
+  "rise": "",
+  "style": "habillé",
+  "closure": "",
+  "attrs_v": 3
  },
  {
   "id": "elka-collective:15380956610873",
@@ -6942,22 +7015,29 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Pantalons",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "marron"
+  ],
+  "has_vision": true,
   "material": "synthétique",
-  "length": "",
-  "cut": "",
+  "length": "long",
+  "cut": "fluide",
   "neckline": "",
-  "details": [],
+  "details": [
+   "pinces",
+   "poches latérales",
+   "taille élastiquée"
+  ],
   "description": "Crafted from a lightweight fabrication, the Tori Pant is cut to a wide leg with functional side pockets to elevate everyday styling. Fully lined for a fit that holds its shape, it fastens with a zip-through front for a considered finish, from day through to evening.",
   "on_sale": false,
   "fibre": "",
   "composition": "",
-  "shape": "",
-  "rise": "",
-  "style": "",
-  "closure": "",
-  "photo_tries": 0
+  "shape": "large",
+  "rise": "moyenne",
+  "style": "habillé",
+  "closure": "pull-on",
+  "photo_tries": 0,
+  "attrs_v": 3
  },
  {
   "id": "elka-collective:15382120857913",
@@ -7009,22 +7089,29 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "marron"
+  ],
+  "has_vision": true,
   "material": "synthétique",
   "length": "",
-  "cut": "",
-  "neckline": "",
-  "details": [],
+  "cut": "fluide",
+  "neckline": "col rond",
+  "details": [
+   "transparence",
+   "sans manches",
+   "longueur tunique"
+  ],
   "description": "Crafted from a sheer fabrication, the Leni Top is inspired by the longline tunic silhouette. Open sides and custom Elka silver-tone hardware make a statement, while a keyhole at the centre back adds a considered detail. Style effortlessly with tailored pants or denim for desk to dinner styling.",
   "on_sale": false,
   "fibre": "",
   "composition": "",
-  "shape": "",
+  "shape": "boxy",
   "rise": "",
-  "style": "",
+  "style": "décontracté",
   "closure": "",
-  "photo_tries": 0
+  "photo_tries": 0,
+  "attrs_v": 3
  },
  {
   "id": "elka-collective:15382120759609",
@@ -7074,8 +7161,10 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Pantalons",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "kaki"
+  ],
+  "has_vision": true,
   "material": "synthétique",
   "length": "court",
   "cut": "droite",
@@ -7088,7 +7177,12 @@
   "description": "Made from vegan leather, the Emerson Short is inspired by the season's leather trend. A mini length is paired with an adjustable drawcord waist for a comfortable fit, while functional side pockets keep it practical. Style effortlessly with a fitted knit top for laidback weekends.",
   "on_sale": false,
   "fibre": "",
-  "composition": ""
+  "composition": "",
+  "shape": "droit",
+  "rise": "moyenne",
+  "style": "décontracté",
+  "closure": "noué",
+  "attrs_v": 3
  },
  {
   "id": "elka-collective:15382120825145",
@@ -7141,21 +7235,28 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "marron"
+  ],
+  "has_vision": true,
   "description": "Tailored from a stretch fabric, the Margot Vest is inspired by modern layering. A cropped length and crew neckline with zip placket sharpen the shape, while a subtle bubble hem and double zip offer multiple ways to style. Style effortlessly with tailored pants for desk to dinner styling.",
   "material": "synthétique",
   "length": "court",
   "cut": "oversize",
   "neckline": "col rond",
   "details": [
-   "fermeture zippée",
-   "ourlet froncé",
+   "zip frontal",
+   "ourlet élastiqué",
    "sans manches"
   ],
   "on_sale": false,
   "fibre": "",
-  "composition": ""
+  "composition": "",
+  "shape": "boxy",
+  "rise": "",
+  "style": "décontracté",
+  "closure": "",
+  "attrs_v": 3
  },
  {
   "id": "elka-collective:10332543320377",
@@ -7205,21 +7306,29 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Jupes",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "ivoire",
+   "camel"
+  ],
+  "has_vision": true,
   "description": "Crafted from a soft, flowy fabrication, the Sloane Mini Skirt is inspired by relaxed resort dressing and features our custom Elka print. The fluid fabric drapes beautifully and is fully lined for a considered finish. Style effortlessly with the matching Sloane Top for your next occasion.",
   "material": "",
   "length": "mini",
-  "cut": "fluide",
+  "cut": "droite",
   "neckline": "",
   "details": [
-   "rayures fines",
-   "panneau diagonal",
-   "ourlet noir"
+   "rayures",
+   "empiècement diagonal",
+   "liseré noir"
   ],
   "on_sale": false,
   "fibre": "",
-  "composition": ""
+  "composition": "",
+  "shape": "plissée",
+  "rise": "moyenne",
+  "style": "décontracté",
+  "closure": "",
+  "attrs_v": 3
  },
  {
   "id": "elka-collective:10332543680825",
@@ -7273,8 +7382,11 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "camel",
+   "ivoire"
+  ],
+  "has_vision": true,
   "description": "Crafted from a soft, flowy fabrication, the Sloane Top is inspired by relaxed resort dressing and features our custom Elka print. The fluid fabric drapes beautifully and is fully lined for a considered finish. Style effortlessly with the matching Sloane Mini Skirt for your next occasion.",
   "material": "",
   "length": "",
@@ -7283,11 +7395,16 @@
   "details": [
    "rayures",
    "sans manches",
-   "encolure drapée"
+   "col drapé"
   ],
   "on_sale": false,
   "fibre": "",
-  "composition": ""
+  "composition": "",
+  "shape": "drapé",
+  "rise": "",
+  "style": "habillé",
+  "closure": "",
+  "attrs_v": 3
  },
  {
   "id": "elka-collective:10333239411001",
@@ -7343,22 +7460,29 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "kaki"
+  ],
+  "has_vision": true,
   "description": "A transeasonal staple, the Penny Knit Cardigan is made of a fine gauge knit blend with a ribbed texture. Cut to a cropped fit, this cardigan is finished with silver buttons. Style with everyday go-to pieces like denim and tailored pants.",
   "material": "maille",
-  "length": "",
-  "cut": "",
-  "neckline": "",
-  "details": [],
+  "length": "cropped",
+  "cut": "ajustée",
+  "neckline": "col rond",
+  "details": [
+   "boutons",
+   "bord côtelé",
+   "manches longues"
+  ],
   "on_sale": false,
   "fibre": "",
   "composition": "",
-  "shape": "",
+  "shape": "ajusté",
   "rise": "",
-  "style": "",
+  "style": "décontracté",
   "closure": "",
-  "photo_tries": 0
+  "photo_tries": 0,
+  "attrs_v": 3
  },
  {
   "id": "elka-collective:15382120431929",
@@ -7414,22 +7538,29 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "argent"
+  ],
+  "has_vision": true,
   "description": "Crafted from a viscose blend knit, the Solara Knit Top is inspired by the season's metallic trend, with statement chrome detailing. A scoop neckline and sleeveless cut keep the shape clean. Style effortlessly with tailored pants for desk to dinner styling.",
   "material": "maille",
   "length": "",
-  "cut": "",
-  "neckline": "",
-  "details": [],
+  "cut": "ajustée",
+  "neckline": "col rond",
+  "details": [
+   "côtes",
+   "effet métallisé",
+   "sans manches"
+  ],
   "on_sale": false,
   "fibre": "",
   "composition": "",
-  "shape": "",
+  "shape": "ajusté",
   "rise": "",
-  "style": "",
+  "style": "décontracté",
   "closure": "",
-  "photo_tries": 0
+  "photo_tries": 0,
+  "attrs_v": 3
  },
  {
   "id": "elka-collective:15382120694073",
@@ -7480,19 +7611,29 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Robes",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "bleu",
+   "bleu marine"
+  ],
+  "has_vision": true,
   "description": "Crafted from sheer organza, the Jade Dress is inspired by romantic florals and features our custom Elka print. The maxi length is lined through the body for a delicate finish, with a keyhole button back. Complete the look with strappy heels and delicate jewellery for your next occasion.",
-  "material": "synthétique",
+  "material": "mousseline",
   "length": "maxi",
-  "cut": "",
-  "neckline": "",
+  "cut": "fluide",
+  "neckline": "bretelles fines",
   "details": [
-   "imprimé floral"
+   "imprimé fleuri",
+   "transparence",
+   "bretelles fines"
   ],
   "on_sale": false,
   "fibre": "",
-  "composition": ""
+  "composition": "",
+  "shape": "",
+  "rise": "",
+  "style": "habillé",
+  "closure": "",
+  "attrs_v": 3
  },
  {
   "id": "elka-collective:15382120923449",
@@ -7547,22 +7688,29 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "bleu"
+  ],
+  "has_vision": true,
   "description": "Crafted from a sheer fabrication, the Leni Top is inspired by the longline tunic silhouette. Open sides and custom Elka silver-tone hardware make a statement, while a keyhole at the centre back adds a considered detail. Style effortlessly with tailored pants or denim for desk to dinner styling.",
   "material": "synthétique",
   "length": "",
-  "cut": "",
-  "neckline": "",
-  "details": [],
+  "cut": "fluide",
+  "neckline": "col rond",
+  "details": [
+   "transparence",
+   "sans manches",
+   "superposition"
+  ],
   "on_sale": false,
   "fibre": "",
   "composition": "",
   "shape": "",
   "rise": "",
-  "style": "",
+  "style": "décontracté",
   "closure": "",
-  "photo_tries": 0
+  "photo_tries": 0,
+  "attrs_v": 3
  },
  {
   "id": "elka-collective:15382121054521",
@@ -7620,22 +7768,28 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "bleu"
+  ],
+  "has_vision": true,
   "description": "Made from a fine crepe knit, the Elena Knit Top is inspired by minimalist wardrobe staples. A scoop neckline and sleeveless cut keep the shape clean, while a subtle cut-out detail on the strap adds quiet interest and a dry, smooth handle. Pair with tailored pants for desk to dinner styling.",
   "material": "maille",
   "length": "",
-  "cut": "",
-  "neckline": "",
-  "details": [],
+  "cut": "ajustée",
+  "neckline": "col rond",
+  "details": [
+   "bordure perlée",
+   "débardeur"
+  ],
   "on_sale": false,
   "fibre": "",
   "composition": "",
-  "shape": "",
+  "shape": "ajusté",
   "rise": "",
-  "style": "",
+  "style": "décontracté",
   "closure": "",
-  "photo_tries": 0
+  "photo_tries": 0,
+  "attrs_v": 3
  },
  {
   "id": "elka-collective:15382121120057",
@@ -7690,8 +7844,10 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Robes",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "bleu"
+  ],
+  "has_vision": true,
   "description": "Crafted from a textured lyocell blend, the Marina Dress is inspired by modern minimalism. A crew neck with keyhole detail adds subtle interest, while the maxi length and full lining create an elegant line. Complete the look with strappy heels and delicate jewellery for your next occasion.",
   "material": "synthétique",
   "length": "maxi",
@@ -7699,12 +7855,17 @@
   "neckline": "col V",
   "details": [
    "fronces",
-   "découpe",
-   "plissé"
+   "échancrure",
+   "texture plissée"
   ],
   "on_sale": false,
   "fibre": "",
-  "composition": ""
+  "composition": "",
+  "shape": "",
+  "rise": "",
+  "style": "habillé",
+  "closure": "",
+  "attrs_v": 3
  },
  {
   "id": "elka-collective:15382120661305",
@@ -7758,22 +7919,28 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "bleu"
+  ],
+  "has_vision": true,
   "description": "Made from a crease resistant stretch fabric, the Margot Top is inspired by minimalist evening dressing. A high cowl neckline drapes softly, while an invisible zip at the back and full lining create a sleek finish. Complete the look with the matching Fleur short for your next occasion.",
   "material": "synthétique",
   "length": "",
-  "cut": "",
-  "neckline": "",
-  "details": [],
+  "cut": "fluide",
+  "neckline": "col haut",
+  "details": [
+   "sans manches",
+   "col drapé"
+  ],
   "on_sale": false,
   "fibre": "",
   "composition": "",
-  "shape": "",
+  "shape": "drapé",
   "rise": "",
-  "style": "",
+  "style": "habillé",
   "closure": "",
-  "photo_tries": 0
+  "photo_tries": 0,
+  "attrs_v": 3
  },
  {
   "id": "elka-collective:15382120497465",
@@ -7827,24 +7994,30 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "blanc",
+   "gris"
+  ],
+  "has_vision": true,
   "description": "Crafted from a cotton silk blend, the Onyx Shirt is inspired by the classic check shirt, with a subtle sheer check detail. Relaxed in fit, it features a collared neckline, adjustable button cuffs and an adjustable back tie to cinch the waist. Style effortlessly with denim for laidback weekends.",
   "material": "coton",
   "length": "",
-  "cut": "",
-  "neckline": "",
+  "cut": "oversize",
+  "neckline": "col chemise",
   "details": [
-   "motif à carreaux"
+   "carreaux",
+   "transparence",
+   "manches longues"
   ],
   "on_sale": false,
   "fibre": "",
   "composition": "",
-  "shape": "",
+  "shape": "oversize",
   "rise": "",
-  "style": "",
+  "style": "décontracté",
   "closure": "",
-  "photo_tries": 0
+  "photo_tries": 0,
+  "attrs_v": 3
  },
  {
   "id": "elka-collective:15382120530233",
@@ -7899,22 +8072,29 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "blanc"
+  ],
+  "has_vision": true,
   "description": "Crafted from a textured lyocell blend, the Marina Top is inspired by modern minimalism. A crew neck with keyhole detail adds subtle interest, while an invisible zip at the back and full lining create a refined, considered fit. Pair with tailored pants for desk to dinner styling.",
   "material": "synthétique",
   "length": "",
-  "cut": "",
-  "neckline": "",
-  "details": [],
+  "cut": "cintrée",
+  "neckline": "col haut",
+  "details": [
+   "fronces",
+   "découpe",
+   "col croisé"
+  ],
   "on_sale": false,
   "fibre": "",
   "composition": "",
-  "shape": "",
+  "shape": "ajusté",
   "rise": "",
-  "style": "",
+  "style": "habillé",
   "closure": "",
-  "photo_tries": 0
+  "photo_tries": 0,
+  "attrs_v": 3
  },
  {
   "id": "elka-collective:15382120333625",
@@ -7967,22 +8147,28 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Pantalons",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "blanc"
+  ],
+  "has_vision": true,
   "description": "Tailored from a cotton blend, the Lakyn Pant is inspired by classic tailoring. A slim leg falls to an ankle length, while a fixed waistline with belt loops and functional side pockets keep the look polished and practical. Style effortlessly with tailored separates for desk to dinner styling.",
-  "material": "",
-  "length": "",
-  "cut": "",
+  "material": "coton",
+  "length": "cropped",
+  "cut": "droite",
   "neckline": "",
-  "details": [],
+  "details": [
+   "coutures marquées",
+   "jambe arrondie"
+  ],
   "on_sale": false,
   "fibre": "",
   "composition": "",
-  "shape": "",
-  "rise": "",
-  "style": "",
-  "closure": "",
-  "photo_tries": 0
+  "shape": "barrel",
+  "rise": "haute",
+  "style": "tailleur",
+  "closure": "zippé ou boutonné",
+  "photo_tries": 0,
+  "attrs_v": 3
  },
  {
   "id": "elka-collective:15382120792377",
@@ -8034,22 +8220,29 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Pantalons",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "blanc"
+  ],
+  "has_vision": true,
   "description": "Made from a breathable linen blend, the Halston Pant is inspired by relaxed resort dressing. Cut to a full length, it features an adjustable drawcord waist for a comfortable, customisable fit that moves with you. Style effortlessly with a fitted knit top for laidback weekends.",
-  "material": "",
-  "length": "",
-  "cut": "",
+  "material": "lin",
+  "length": "long",
+  "cut": "fluide",
   "neckline": "",
-  "details": [],
+  "details": [
+   "taille élastique",
+   "cordon de serrage",
+   "jambes larges"
+  ],
   "on_sale": false,
   "fibre": "",
   "composition": "",
-  "shape": "",
-  "rise": "",
-  "style": "",
-  "closure": "",
-  "photo_tries": 0
+  "shape": "large",
+  "rise": "moyenne",
+  "style": "décontracté",
+  "closure": "pull-on",
+  "photo_tries": 0,
+  "attrs_v": 3
  },
  {
   "id": "elka-collective:15382120890681",
@@ -8101,22 +8294,29 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Pantalons",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "ivoire"
+  ],
+  "has_vision": true,
   "description": "Made from a mid-weight fabrication, the Ford Short is inspired by relaxed tailored shorts. A subtle pleat at the front adds shape to the knee length, while belt loops and functional side pockets offer styling versatility. Style effortlessly with tailored separates for desk to dinner.",
   "material": "coton",
-  "length": "",
-  "cut": "",
+  "length": "court",
+  "cut": "droite",
   "neckline": "",
-  "details": [],
+  "details": [
+   "plis",
+   "ceinture",
+   "ourlet revers"
+  ],
   "on_sale": false,
   "fibre": "",
   "composition": "",
-  "shape": "",
-  "rise": "",
-  "style": "",
-  "closure": "",
-  "photo_tries": 0
+  "shape": "large",
+  "rise": "haute",
+  "style": "décontracté",
+  "closure": "zippé ou boutonné",
+  "photo_tries": 0,
+  "attrs_v": 3
  },
  {
   "id": "elka-collective:15382121152825",
@@ -8171,22 +8371,29 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "blanc"
+  ],
+  "has_vision": true,
   "description": "Crafted from pure cotton, the Arlo Crop Shirt is a fresh take on the classic white shirt, cut to a cropped length. Adjustable button cuffs finish the long sleeves, while a button closure at the back allows you to style it multiple ways. Pair with tailored pants for desk to dinner styling.",
   "material": "coton",
   "length": "cropped",
-  "cut": "",
-  "neckline": "",
-  "details": [],
+  "cut": "oversize",
+  "neckline": "col chemise",
+  "details": [
+   "manches volumineuses",
+   "boutonnage",
+   "bas court"
+  ],
   "on_sale": false,
   "fibre": "",
   "composition": "",
-  "shape": "",
+  "shape": "boxy",
   "rise": "",
-  "style": "",
+  "style": "décontracté",
   "closure": "",
-  "photo_tries": 0
+  "photo_tries": 0,
+  "attrs_v": 3
  },
  {
   "id": "elka-collective:15382120464697",
@@ -8241,24 +8448,30 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "ivoire",
+   "gris"
+  ],
+  "has_vision": true,
   "description": "Crafted from a sheer fabrication, the Vesper Top is inspired by romantic florals and features our custom Elka print. A subtle mock neck and sleeveless cut sit over a detachable inner camisole, offering multiple ways to style. Pair with tailored pants for desk to dinner styling.",
   "material": "synthétique",
   "length": "",
-  "cut": "",
-  "neckline": "",
+  "cut": "fluide",
+  "neckline": "col haut",
   "details": [
-   "imprimé floral"
+   "imprimé floral",
+   "sans manches",
+   "transparence"
   ],
   "on_sale": false,
   "fibre": "",
   "composition": "",
-  "shape": "",
+  "shape": "drapé",
   "rise": "",
-  "style": "",
+  "style": "décontracté",
   "closure": "",
-  "photo_tries": 0
+  "photo_tries": 0,
+  "attrs_v": 3
  },
  {
   "id": "elka-collective:15384074355001",
@@ -8308,24 +8521,30 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Robes",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "blanc",
+   "gris"
+  ],
+  "has_vision": true,
   "description": "Crafted from sheer organza, the Vesper Dress is inspired by romantic florals and features our custom Elka print. The maxi length is lined through the body for a delicate finish, with a keyhole button back. Complete the look with strappy heels and delicate jewellery for your next occasion.",
-  "material": "",
+  "material": "mousseline",
   "length": "maxi",
-  "cut": "",
-  "neckline": "",
+  "cut": "fluide",
+  "neckline": "bretelles fines",
   "details": [
-   "imprimé floral"
+   "imprimé floral",
+   "transparence",
+   "bretelles fines"
   ],
   "on_sale": false,
   "fibre": "",
   "composition": "",
   "shape": "",
   "rise": "",
-  "style": "",
+  "style": "habillé",
   "closure": "",
-  "photo_tries": 0
+  "photo_tries": 0,
+  "attrs_v": 3
  },
  {
   "id": "elka-collective:15382120628537",
@@ -8377,22 +8596,28 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Robes",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "ivoire"
+  ],
+  "has_vision": true,
   "description": "Made from a mid-weight fabrication, the Olive Mini Dress is inspired by our signature fitted mini silhouette. A square neckline frames the shoulders, while cross back detailing adds subtle interest. Style effortlessly with strappy heels and delicate jewellery for your next occasion.",
   "material": "synthétique",
   "length": "mini",
-  "cut": "",
-  "neckline": "",
-  "details": [],
+  "cut": "droite",
+  "neckline": "dos nu",
+  "details": [
+   "bretelles croisées",
+   "dos ouvert"
+  ],
   "on_sale": false,
   "fibre": "",
   "composition": "",
   "shape": "",
   "rise": "",
-  "style": "",
+  "style": "habillé",
   "closure": "",
-  "photo_tries": 0
+  "photo_tries": 0,
+  "attrs_v": 3
  },
  {
   "id": "kookai:7125381414984",
@@ -8448,23 +8673,30 @@
    "WK15-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "blanc"
+  ],
   "type": "Hauts",
-  "has_vision": false,
-  "material": "",
+  "has_vision": true,
+  "material": "coton",
   "length": "",
-  "cut": "",
-  "neckline": "",
-  "details": [],
+  "cut": "oversize",
+  "neckline": "col V",
+  "details": [
+   "encolure v bordée",
+   "épaules tombantes",
+   "manches courtes"
+  ],
   "description": "Easy but considered, the Lani Vee Tee takes the everyday tee somewhere squarer and more deliberate. A deep vee sits within a wide flat band while dropped shoulders fall to a turned-back cuff, the weight of the fabric holding the shape square through the body to a straight hem. The tee that makes the rest of the outfit look intentional. Model height: 178cm / 5’10” | Model wears AU 6 / UK 6 / US 2 / EUR 34 Please note that the sunglasses and bag showcased are the stylists own, which were used for styling purposes.",
   "on_sale": false,
   "fibre": "",
   "composition": "",
-  "shape": "",
+  "shape": "boxy",
   "rise": "",
-  "style": "",
+  "style": "décontracté",
   "closure": "",
-  "photo_tries": 0
+  "photo_tries": 0,
+  "attrs_v": 3
  },
  {
   "id": "kookai:7132406087752",
@@ -8512,23 +8744,28 @@
    "WK16-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "kaki"
+  ],
   "type": "Jupes",
-  "has_vision": false,
-  "material": "",
+  "has_vision": true,
+  "material": "cuir",
   "length": "midi",
-  "cut": "",
+  "cut": "ajustée",
   "neckline": "",
-  "details": [],
+  "details": [
+   "coutures apparentes"
+  ],
   "description": "Refined and quietly luxurious, the Dylan Midi Skirt brings a soft, tactile edge to considered dressing. Crafted from a sumptuous faux Suede fabrication in a deep olive tone, the clean high-waisted silhouette features panelled seam detailing that falls to a knee-grazing midi length. Model height: 178cm / 5’10” | Model wears AU 6 / UK 6 / US 2 / EUR 34 Model height: 162cm / 5’4” | Model wears AU 4 / UK 4 / US 0 / EUR 32 Please note that the sunglasses and bag showcased are the stylists own, which were used for styling purposes.",
   "on_sale": false,
   "fibre": "",
   "composition": "",
-  "shape": "",
-  "rise": "",
-  "style": "",
+  "shape": "crayon",
+  "rise": "moyenne",
+  "style": "décontracté",
   "closure": "",
-  "photo_tries": 0
+  "photo_tries": 0,
+  "attrs_v": 3
  },
  {
   "id": "kookai:7132407103560",
@@ -8583,22 +8820,29 @@
    "WK15-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "bleu"
+  ],
   "type": "Hauts",
-  "has_vision": false,
+  "has_vision": true,
   "material": "jersey",
   "length": "",
   "cut": "ajustée",
   "neckline": "asymétrique",
   "details": [
+   "épaule dénudée",
    "fronces latérales",
-   "manches courtes",
-   "épaule dénudée"
+   "manche courte"
   ],
   "description": "Introduce a modern twist to your basics with the Nova Off Shoulder Tee. Crafted from a soft stretch-cotton blend, this style features an asymmetric neckline that sits elegantly off one shoulder. Designed with subtle rouching through the waist, it creates a flattering, form-fitting silhouette while offering everyday comfort. Model height: 178cm / 5’10” | Model wears AU 6 / UK 6 / US 2 / EUR 34 Please note that the bag showcased is the stylists own, which was used for styling purposes.",
   "on_sale": false,
   "fibre": "",
-  "composition": ""
+  "composition": "",
+  "shape": "ajusté",
+  "rise": "",
+  "style": "décontracté",
+  "closure": "",
+  "attrs_v": 3
  },
  {
   "id": "kookai:7125382070344",
@@ -8646,23 +8890,30 @@
    "WK15-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "marron"
+  ],
   "type": "Robes",
-  "material": "",
+  "material": "maille",
   "length": "midi",
-  "cut": "",
-  "neckline": "",
-  "details": [],
-  "has_vision": false,
+  "cut": "ajustée",
+  "neckline": "asymétrique",
+  "details": [
+   "encolure croisée",
+   "côtes",
+   "sans manches"
+  ],
+  "has_vision": true,
   "description": "A single asymmetric seam travels the front of the Violet Midi Dress, drawn from one shoulder across to the opposite underarm. Sleeveless and close through the body, the dress falls to mid-calf and finishes high and clean at the back. Wear with a heeled mule for evening, or flat leather through the day. Model height: 178cm / 5’10” | Model wears AU 6 / UK 6 / US 2 / EUR 34 Please note that the bag showcased is the stylists own, which was used for styling purposes.",
   "on_sale": false,
   "fibre": "",
   "composition": "",
   "shape": "",
   "rise": "",
-  "style": "",
+  "style": "décontracté",
   "closure": "",
-  "photo_tries": 0
+  "photo_tries": 0,
+  "attrs_v": 3
  },
  {
   "id": "kookai:7129848414280",
@@ -8717,23 +8968,30 @@
    "WK15-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "noir"
+  ],
   "type": "Hauts",
-  "has_vision": false,
-  "material": "",
-  "length": "",
-  "cut": "",
-  "neckline": "",
-  "details": [],
+  "has_vision": true,
+  "material": "jersey",
+  "length": "cropped",
+  "cut": "ajustée",
+  "neckline": "col rond",
+  "details": [
+   "licou",
+   "dos nu",
+   "transparence"
+  ],
   "description": "A halter band loops over the neck to hold the Larson Top, with a mesh panel running from the band across each shoulder. The neckline curves into a deep scoop at the front, and the body sits close through to a hem just below the waist. Cut in Pima 200, a fine cotton with a smooth finish. Model height: 178cm / 5’10” | Model wears AU 6 / UK 6 / US 2 / EUR 34 Please note that the sunglasses showcased are the stylists own, which were used for styling purposes.",
   "on_sale": false,
   "fibre": "",
   "composition": "",
-  "shape": "",
+  "shape": "ajusté",
   "rise": "",
-  "style": "",
+  "style": "décontracté",
   "closure": "",
-  "photo_tries": 0
+  "photo_tries": 0,
+  "attrs_v": 3
  },
  {
   "id": "benni:10408838594840",
@@ -8754,22 +9012,29 @@
   "source": "shopify",
   "first_seen": "2026-10-31T13:36:40+00:00",
   "type": "Jupes",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "vert"
+  ],
+  "has_vision": true,
   "description": "The Anastasia Skirt is an asymmetric wrap style crafted from a soft suiting fabric. The asymmetric hem falls from a micro length at the front and longer at the side for a high-low silhouette. Fastened with adjustable buttons at the waistline for an adjustable waist.",
   "material": "",
-  "length": "",
-  "cut": "",
+  "length": "mini",
+  "cut": "fluide",
   "neckline": "",
-  "details": [],
+  "details": [
+   "drapé asymétrique",
+   "découpe taille",
+   "anneau métal"
+  ],
   "on_sale": false,
   "fibre": "",
   "composition": "",
-  "shape": "",
-  "rise": "",
-  "style": "",
-  "closure": "",
-  "photo_tries": 0
+  "shape": "drapée",
+  "rise": "basse",
+  "style": "habillé",
+  "closure": "zippé ou boutonné",
+  "photo_tries": 0,
+  "attrs_v": 3
  },
  {
   "id": "benni:10408837972248",
@@ -8790,22 +9055,29 @@
   "source": "shopify",
   "first_seen": "2026-10-31T13:36:40+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "vert"
+  ],
+  "has_vision": true,
   "description": "The Anastasia Top is cut in a soft suiting fabrication. It features a high, square wide neckline with a low open side seam. The relaxed upper is cinched into at the gathered waistband for a soft, fitted finish. Fastened with a full-length open-end side seam zip.",
   "material": "",
-  "length": "",
-  "cut": "",
-  "neckline": "",
-  "details": [],
+  "length": "cropped",
+  "cut": "fluide",
+  "neckline": "asymétrique",
+  "details": [
+   "drapé",
+   "encolure asymétrique",
+   "sans manches"
+  ],
   "on_sale": false,
   "fibre": "",
   "composition": "",
-  "shape": "",
+  "shape": "drapé",
   "rise": "",
-  "style": "",
+  "style": "habillé",
   "closure": "",
-  "photo_tries": 0
+  "photo_tries": 0,
+  "attrs_v": 3
  },
  {
   "id": "dissh:15396096409968",
@@ -8857,21 +9129,29 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "blanc"
+  ],
   "type": "Robes",
-  "has_vision": false,
+  "has_vision": true,
   "material": "coton",
   "length": "mini",
-  "cut": "droite",
+  "cut": "fluide",
   "neckline": "col V",
   "details": [
-   "broderie",
-   "bordure dentelle"
+   "broderie plastron",
+   "bordure dentelle",
+   "ourlet brodé"
   ],
   "description": "Sleeveless mini dress Deep V neckline Wide shoulder straps Lace panel detail at front bodice Lace trim at hem Designed for a relaxed A-line silhouette",
   "on_sale": false,
   "fibre": "",
-  "composition": ""
+  "composition": "",
+  "shape": "",
+  "rise": "",
+  "style": "décontracté",
+  "closure": "",
+  "attrs_v": 3
  },
  {
   "id": "dissh:15396096999792",
@@ -8924,22 +9204,29 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "blanc"
+  ],
   "type": "Robes",
-  "has_vision": false,
-  "material": "coton",
-  "length": "long",
+  "has_vision": true,
+  "material": "dentelle",
+  "length": "midi",
   "cut": "fluide",
   "neckline": "col V",
   "details": [
-   "broderie",
-   "bordure dentelle",
+   "dentelle",
+   "bordure brodée",
    "sans manches"
   ],
   "description": "Sleeveless midi dress Deep V neckline at front and back Wide shoulder straps Lace panel detail at front bodice Lace trim at hem Designed for a relaxed A-line silhouette",
   "on_sale": false,
   "fibre": "",
-  "composition": ""
+  "composition": "",
+  "shape": "",
+  "rise": "",
+  "style": "décontracté",
+  "closure": "",
+  "attrs_v": 3
  },
  {
   "id": "dissh:15291642413424",
@@ -8987,22 +9274,29 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "marron"
+  ],
   "type": "Manteaux",
-  "has_vision": false,
+  "has_vision": true,
   "material": "synthétique",
   "length": "cropped",
   "cut": "oversize",
-  "neckline": "col chemise",
+  "neckline": "",
   "details": [
    "col large",
    "manches amples",
-   "fausse fourrure"
+   "poils longs"
   ],
   "description": "Long sleeve cropped faux fur jacket Oversized collar Centre front zip closure with DISSH metal puller Front pockets Designed for a relaxed silhouette",
   "on_sale": false,
   "fibre": "",
-  "composition": ""
+  "composition": "",
+  "shape": "oversize",
+  "rise": "",
+  "style": "décontracté",
+  "closure": "",
+  "attrs_v": 3
  },
  {
   "id": "kookai:7132407201864",
@@ -9052,22 +9346,29 @@
    "WK17-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "bleu"
+  ],
   "type": "Pantalons",
-  "has_vision": false,
+  "has_vision": true,
   "material": "denim",
   "length": "long",
   "cut": "évasée",
   "neckline": "",
   "details": [
    "délavage",
-   "ceinture",
-   "poches"
+   "5 poches",
+   "bas évasé"
   ],
   "description": "Soft through the thigh and clean at the waist, the Knox Bootleg Jean sits high and runs straight before opening into a gentle bootleg from the knee. Classic five-pocket construction keeps it familiar, finished with a branded patch at the back waistband. Cut long enough to fall over a heel. For a relaxed fit, we recommend sizing up. Please note fit may vary slightly between washes. Model height: 178cm / 5’10” | Model wears AU 6 / UK 6 / US 2 / EUR 34 Designed to sit full-length through the leg. Size 6: Inseam: approx. 85cm. Outseam: approx. 108cm.",
   "on_sale": false,
   "fibre": "",
-  "composition": ""
+  "composition": "",
+  "shape": "évasé",
+  "rise": "haute",
+  "style": "décontracté",
+  "closure": "zippé ou boutonné",
+  "attrs_v": 3
  },
  {
   "id": "kookai:7132406349896",
@@ -9113,23 +9414,29 @@
    "WK17-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "marron"
+  ],
   "type": "Jupes",
-  "has_vision": false,
-  "material": "",
+  "has_vision": true,
+  "material": "satin",
   "length": "midi",
-  "cut": "",
+  "cut": "ajustée",
   "neckline": "",
-  "details": [],
+  "details": [
+   "brillance satinée",
+   "coupe fuselée"
+  ],
   "description": "Smooth and uninterrupted, the Amber Midi Skirt falls from a flat waist to a hem below the knee without a seam to break the line. Cut in Amber, a fabrication with a satin-like surface that shifts softly in the light. Fully lined, finished with a deep hem that lets it hang straight. Model height: 178cm / 5’10” | Model wears AU 6 / UK 6 / US 2 / EUR 34",
   "on_sale": false,
   "fibre": "",
   "composition": "",
-  "shape": "",
-  "rise": "",
-  "style": "",
+  "shape": "crayon",
+  "rise": "haute",
+  "style": "habillé",
   "closure": "",
-  "photo_tries": 0
+  "photo_tries": 0,
+  "attrs_v": 3
  },
  {
   "id": "kookai:7132406186056",
@@ -9176,23 +9483,29 @@
    "WK15-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "gris"
+  ],
   "type": "Pantalons",
   "material": "",
   "length": "long",
-  "cut": "",
+  "cut": "évasée",
   "neckline": "",
-  "details": [],
-  "has_vision": false,
+  "details": [
+   "rayures fines",
+   "taille basse"
+  ],
+  "has_vision": true,
   "description": "A fine pinstripe runs the length of the Nevada Low Rise Core Pant, sitting low and flat at the waist before holding close through the hip. From the knee it releases into a soft flare. The front is left completely clean, with nothing to interrupt the line to a full-length hem. Model height: 178cm / 5’10” | Model wears AU 6 / UK 6 / US 2 / EUR 34 Designed to sit full-length through the leg. Size 6: Inseam: approx. 85cm. Outseam: approx. 107cm.",
   "on_sale": false,
   "fibre": "",
   "composition": "",
-  "shape": "",
-  "rise": "",
-  "style": "",
-  "closure": "",
-  "photo_tries": 0
+  "shape": "évasé",
+  "rise": "basse",
+  "style": "tailleur",
+  "closure": "pull-on",
+  "photo_tries": 0,
+  "attrs_v": 3
  },
  {
   "id": "kookai:7132406218824",
@@ -9233,25 +9546,30 @@
    "WK17-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "blanc"
+  ],
   "type": "Hauts",
-  "has_vision": false,
+  "has_vision": true,
   "material": "",
   "length": "",
-  "cut": "",
-  "neckline": "",
+  "cut": "ajustée",
+  "neckline": "bustier",
   "details": [
-   "plissé"
+   "plis",
+   "péplum",
+   "bustier structuré"
   ],
   "description": "Small pleats kick out at the neckline and again at the hem of the Ariel Pleat Top, softening the clean panel lines that run through the body. Cut in Ariel, the panels draw in at the waist before the hem falls just below it with a slight flare. Strapless, with a zip running the full length of the centre back. Model height: 178cm / 5’10” | Model wears AU 6 / UK 6 / US 2 / EUR 34",
   "on_sale": false,
   "fibre": "",
   "composition": "",
-  "shape": "",
+  "shape": "ajusté",
   "rise": "",
-  "style": "",
+  "style": "habillé",
   "closure": "",
-  "photo_tries": 0
+  "photo_tries": 0,
+  "attrs_v": 3
  },
  {
   "id": "kookai:7132406284360",
@@ -9294,23 +9612,30 @@
    "WK17-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "marron"
+  ],
   "type": "Hauts",
-  "has_vision": false,
-  "material": "",
+  "has_vision": true,
+  "material": "satin",
   "length": "cropped",
-  "cut": "",
-  "neckline": "",
-  "details": [],
+  "cut": "ajustée",
+  "neckline": "bretelles fines",
+  "details": [
+   "bonnets structurés",
+   "coutures princesse",
+   "bretelles fines"
+  ],
   "description": "Cut straight across the bust and finishing high at the ribcage, the Amber Cropped Top is shaped by a single curved seam that runs beneath the bust. Fine straps hold it at the shoulder. Cut in Amber, a fabrication with a satin-like surface that catches the light as it moves. Complete the set with the Amber Midi Skirt. Model height: 178cm / 5’10” | Model wears AU 6 / UK 6 / US 2 / EUR 34",
   "on_sale": false,
   "fibre": "",
   "composition": "",
-  "shape": "",
+  "shape": "ajusté",
   "rise": "",
-  "style": "",
+  "style": "habillé",
   "closure": "",
-  "photo_tries": 0
+  "photo_tries": 0,
+  "attrs_v": 3
  },
  {
   "id": "kookai:7138296758344",
@@ -9353,25 +9678,30 @@
    "WK17-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "rouge"
+  ],
   "type": "Hauts",
-  "has_vision": false,
-  "material": "",
-  "length": "",
-  "cut": "",
-  "neckline": "",
+  "has_vision": true,
+  "material": "jersey",
+  "length": "cropped",
+  "cut": "ajustée",
+  "neckline": "col V",
   "details": [
-   "col bénitier"
+   "encolure cowl",
+   "fronces latérales",
+   "bretelles nouées"
   ],
   "description": "A cowl falls deep and soft at the front of the Heidi Cowl Top, gathered into a band at the waist. The back is left completely open, with a long tie wrapping to knot at the centre and the tails left to hang. Cut in Rayon Jersey, a fluid fabrication that drapes without weight. Complete the set with the Heidi Reversible Skirt. Model height: 178cm / 5’10” | Model wears AU 6 / UK 6 / US 2 / EUR 34 Please note that the bag showcased is the stylists own, which was used for styling purposes.",
   "on_sale": false,
   "fibre": "",
   "composition": "",
-  "shape": "",
+  "shape": "drapé",
   "rise": "",
-  "style": "",
+  "style": "habillé",
   "closure": "",
-  "photo_tries": 0
+  "photo_tries": 0,
+  "attrs_v": 3
  },
  {
   "id": "kookai:7138296922184",
@@ -9414,25 +9744,29 @@
    "wrap skirt"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "rouge"
+  ],
   "type": "Jupes",
-  "has_vision": false,
-  "material": "",
-  "length": "",
-  "cut": "",
+  "has_vision": true,
+  "material": "jersey",
+  "length": "midi",
+  "cut": "fluide",
   "neckline": "",
   "details": [
-   "réversible"
+   "nœud latéral",
+   "effet portefeuille"
   ],
   "description": "The Heidi Reversible Skirt wears either way round — red on one side, chocolate on the other, with the tie in red whichever way it’s worn. It wraps at the waist and fastens with a long self-fabric tie that knots at the front and hangs long. The wrap edge opens into a soft split down the side, falling to a knee-length hem. Model height: 178cm / 5'10” | Model wears AU 6 / UK 6 / US 2 / EUR 34 Please note that the bag showcased is the stylists own, which was used for styling purposes.",
   "on_sale": false,
   "fibre": "",
   "composition": "",
-  "shape": "",
-  "rise": "",
-  "style": "",
-  "closure": "",
-  "photo_tries": 0
+  "shape": "portefeuille",
+  "rise": "basse",
+  "style": "décontracté",
+  "closure": "noué",
+  "photo_tries": 0,
+  "attrs_v": 3
  },
  {
   "id": "kookai:7138297184328",
@@ -9477,23 +9811,29 @@
    "WK17-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "ivoire"
+  ],
   "type": "Jupes",
-  "has_vision": false,
+  "has_vision": true,
   "material": "",
   "length": "midi",
-  "cut": "",
+  "cut": "fluide",
   "neckline": "",
-  "details": [],
+  "details": [
+   "franges",
+   "rayures diagonales"
+  ],
   "description": "Rows of cut fringe run diagonally across the Demi Midi Skirt, building a raised texture over the whole surface. The skirt sits close through the hip and falls to a hemmed finish below the knee. A smooth lining sits beneath the fringe, keeping the line clean underneath. Model height: 178cm / 5’10” | Model wears AU 6 / UK 6 / US 2 / EUR 34 Please note that the bag showcased is the stylists own, which was used for styling purposes.",
   "on_sale": false,
   "fibre": "",
   "composition": "",
-  "shape": "",
-  "rise": "",
-  "style": "",
-  "closure": "",
-  "photo_tries": 0
+  "shape": "évasée",
+  "rise": "moyenne",
+  "style": "décontracté",
+  "closure": "pull-on",
+  "photo_tries": 0,
+  "attrs_v": 3
  },
  {
   "id": "dissh:15398727909744",
@@ -9542,26 +9882,29 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "noir"
+  ],
   "type": "Pantalons",
-  "has_vision": false,
+  "has_vision": true,
   "material": "",
-  "length": "",
-  "cut": "",
+  "length": "long",
+  "cut": "fluide",
   "neckline": "",
   "details": [
-   "boutons",
-   "effet croisé"
+   "effet portefeuille",
+   "boutons"
   ],
   "description": "Mid rise pant wrap pant Fixed mini skirt overlay featuring side split Narrow encased elasticated waistband Button closure and narrow tie at side waist Designed for a relaxed straight leg silhouette",
   "on_sale": false,
   "fibre": "",
   "composition": "",
-  "shape": "",
+  "shape": "large",
   "rise": "",
-  "style": "",
-  "closure": "",
-  "photo_tries": 0
+  "style": "habillé",
+  "closure": "noué",
+  "photo_tries": 0,
+  "attrs_v": 3
  },
  {
   "id": "kookai:7125381808200",
@@ -9609,25 +9952,29 @@
    "WK14-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "rouge"
+  ],
   "type": "Hauts",
-  "has_vision": false,
-  "material": "",
-  "length": "",
-  "cut": "",
-  "neckline": "",
+  "has_vision": true,
+  "material": "maille",
+  "length": "cropped",
+  "cut": "ajustée",
+  "neckline": "col rond",
   "details": [
-   "sans manches"
+   "côtes",
+   "dos nageur"
   ],
   "description": "Clean and quietly refined, the Austin Tank reworks the everyday tank with a high scooped neckline and a contrast binding trim at the neck and arms. The fitted silhouette skims the body cleanly to the hem in a deep red. Layer beneath a tailored blazer with denim, or pair with wide-leg trousers for an easy, refined finish. Model height: 178cm / 5’10” | Model wears AU 6 / UK 6 / US 2 / EUR 34",
   "on_sale": false,
   "fibre": "",
   "composition": "",
-  "shape": "",
+  "shape": "ajusté",
   "rise": "",
-  "style": "",
+  "style": "décontracté",
   "closure": "",
-  "photo_tries": 0
+  "photo_tries": 0,
+  "attrs_v": 3
  },
  {
   "id": "kookai:7125382135880",
@@ -9683,22 +10030,29 @@
    "wrap top"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "blanc"
+  ],
   "type": "Hauts",
-  "has_vision": false,
+  "has_vision": true,
   "material": "satin",
   "length": "cropped",
-  "cut": "cintrée",
+  "cut": "ajustée",
   "neckline": "col haut",
   "details": [
-   "dos ouvert",
+   "col licou",
    "bande à la taille",
-   "drapé"
+   "drapé buste"
   ],
   "description": "A halter band fastens the Palermo Wrap Top at the neck, leaving the back bare through to the waist. Soft gathers fall from the neckband into the bodice, where wide ties wrap and knot, their tails left long. Cut in Palermo, the fabric holds a quiet lustre that shifts with movement. Wear with a tailored trouser, or a column skirt for evening. Model height: 178cm / 5’10” | Model wears AU 6 / UK 6 / US 2 / EUR 34",
   "on_sale": false,
   "fibre": "",
-  "composition": ""
+  "composition": "",
+  "shape": "drapé",
+  "rise": "",
+  "style": "habillé",
+  "closure": "",
+  "attrs_v": 3
  },
  {
   "id": "kookai:7129848021064",
@@ -9741,25 +10095,31 @@
    "WK14-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "blanc",
+   "noir"
+  ],
   "type": "Hauts",
-  "has_vision": false,
+  "has_vision": true,
   "description": "Black piping outlines the Ios Contrast Piping Top — down the vee, along each strap, and around the hem. Ios carries a linen hand, dry and light, worn over a full lining. The straps cross at the back and tie to adjust, with a zip closing the body. Below the bust seam it falls loose to the hem. Model height: 178cm / 5’10” | Model wears AU 6 / UK 6 / US 2 / EUR 34",
-  "material": "",
+  "material": "lin",
   "length": "",
-  "cut": "",
-  "neckline": "",
+  "cut": "cintrée",
+  "neckline": "col V",
   "details": [
-   "passepoil contrasté"
+   "passepoil contrasté",
+   "bretelles fines",
+   "liseré bas"
   ],
   "on_sale": false,
   "fibre": "",
   "composition": "",
-  "shape": "",
+  "shape": "ajusté",
   "rise": "",
-  "style": "",
+  "style": "décontracté",
   "closure": "",
-  "photo_tries": 0
+  "photo_tries": 0,
+  "attrs_v": 3
  },
  {
   "id": "kookai:7129848348744",
@@ -9817,25 +10177,29 @@
    "WK14-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "rouge"
+  ],
   "type": "Hauts",
-  "has_vision": false,
-  "material": "",
+  "has_vision": true,
+  "material": "jersey",
   "length": "",
-  "cut": "",
-  "neckline": "",
+  "cut": "ajustée",
+  "neckline": "col V",
   "details": [
-   "manches 3/4"
+   "manches 3/4",
+   "coupe près du corps"
   ],
   "description": "Understated and effortlessly refined, the Jac Vee Top is a staple that earns its place in every rotation. Crafted from our luxuriously soft Pima 200 fabrication, the fitted silhouette features a delicate V-neckline and three-quarter sleeves for a clean, polished finish that flatters from every angle. Simple in form yet considered in execution. Model height: 178cm / 5’10” | Model wears AU 6 / UK 6 / US 2 / EUR 34",
   "on_sale": false,
   "fibre": "",
   "composition": "",
-  "shape": "",
+  "shape": "ajusté",
   "rise": "",
-  "style": "",
+  "style": "décontracté",
   "closure": "",
-  "photo_tries": 0
+  "photo_tries": 0,
+  "attrs_v": 3
  },
  {
   "id": "kookai:7129848676424",
@@ -9903,21 +10267,27 @@
    "WK14-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "ivoire"
+  ],
   "type": "Hauts",
-  "has_vision": false,
+  "has_vision": true,
   "material": "jersey",
   "length": "",
   "cut": "ajustée",
   "neckline": "décolleté plongeant",
   "details": [
-   "manches courtes",
-   "encolure profonde"
+   "manches courtes"
   ],
   "description": "Sculpted for a smooth, second-skin fit, the Skyla Scoop Bodysuit makes its mark with a deep plunging neckline that lends an effortlessly sensual edge. Crafted from a stretch Poly fabrication, the fitted silhouette skims the body cleanly through short sleeves to a high-cut leg line for an elongating finish. Tuck into tailored trousers or a slip skirt and layer beneath a blazer for an refined evening look. Model height: 178cm / 5’10” | Model wears AU 6 / UK 6 / US 2 / EUR 34",
   "on_sale": false,
   "fibre": "",
-  "composition": ""
+  "composition": "",
+  "shape": "ajusté",
+  "rise": "",
+  "style": "décontracté",
+  "closure": "",
+  "attrs_v": 3
  },
  {
   "id": "kookai:7132406251592",
@@ -9963,23 +10333,29 @@
    "WK14-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "blanc"
+  ],
   "type": "Jupes",
   "material": "",
   "length": "mini",
-  "cut": "",
+  "cut": "droite",
   "neckline": "",
-  "details": [],
-  "has_vision": false,
+  "details": [
+   "taille basse",
+   "coupe mini"
+  ],
+  "has_vision": true,
   "description": "Polish your everyday look with the Oyster Core Mini Skirt. Made with our Oyster fabrication, this tailored skirt will carry you through endless looks season after season. Sitting high on the waist with a fitted waistband, the mini design falls to an A-line silhouette. Model height: 178cm / 5’10” | Model wears AU 6 / UK 6 / US 2 / EUR 34",
   "on_sale": false,
   "fibre": "",
   "composition": "",
   "shape": "",
-  "rise": "",
-  "style": "",
+  "rise": "basse",
+  "style": "habillé",
   "closure": "",
-  "photo_tries": 0
+  "photo_tries": 0,
+  "attrs_v": 3
  },
  {
   "id": "kookai:7125381906504",
@@ -10028,9 +10404,12 @@
    "WK13-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "marron",
+   "rouge"
+  ],
   "type": "Hauts",
-  "has_vision": false,
+  "has_vision": true,
   "material": "jersey",
   "length": "cropped",
   "cut": "ajustée",
@@ -10038,12 +10417,17 @@
   "details": [
    "bordure contrastée",
    "dos nageur",
-   "coupe débardeur"
+   "finitions rouges"
   ],
   "description": "Clean and quietly refined, the Austin Tank reworks the everyday tank with a high scooped neckline and a contrast binding trim at the neck and arms. The fitted silhouette skims the body cleanly to the hem in a rich chocolate tone. Layer beneath a tailored blazer with denim, or pair with wide-leg trousers for an easy, refined finish. Model height: 178cm / 5’10” | Model wears AU 6 / UK 6 / US 2 / EUR 34",
   "on_sale": false,
   "fibre": "",
-  "composition": ""
+  "composition": "",
+  "shape": "ajusté",
+  "rise": "",
+  "style": "décontracté",
+  "closure": "",
+  "attrs_v": 3
  },
  {
   "id": "kookai:7125381316680",
@@ -10091,22 +10475,28 @@
    "WK13-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "noir"
+  ],
   "type": "Jupes",
-  "has_vision": false,
+  "has_vision": true,
   "material": "mousseline",
   "length": "midi",
   "cut": "droite",
   "neckline": "",
   "details": [
-   "ourlet transparent",
-   "taille basse",
-   "superposition"
+   "ourlet voilé",
+   "superposition transparen"
   ],
   "description": "A band of mesh finishes the hem of the Maria Chiffon Midi Skirt, set below a full lining so the sheer sits exactly where it's meant to. Cut straight from the waist to just below the knee, it closes with a zip. A split at the centre back gives the stride room. Cut in Maria, light enough to move without clinging. Model height: 178cm / 5’10” | Model wears AU 6 / UK 6 / US 2 / EUR 34",
   "on_sale": false,
   "fibre": "",
-  "composition": ""
+  "composition": "",
+  "shape": "crayon",
+  "rise": "basse",
+  "style": "habillé",
+  "closure": "pull-on",
+  "attrs_v": 3
  },
  {
   "id": "kookai:7129848152136",
@@ -10162,23 +10552,30 @@
    "workwear-edit"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "noir"
+  ],
   "type": "Pantalons",
-  "has_vision": false,
-  "material": "",
-  "length": "",
-  "cut": "",
+  "has_vision": true,
+  "material": "crêpe",
+  "length": "long",
+  "cut": "évasée",
   "neckline": "",
-  "details": [],
+  "details": [
+   "poches passepoilées",
+   "pli central",
+   "taille basse"
+  ],
   "description": "Low on the waist and close through the hip, the Alto Low Rise Flare Pant releases into a flare below the knee. A natural pleat runs down the front of each leg, keeping the line long without a pressed edge. A zip closes at the front, with two faux pockets set at the hip. Cut in Alto, which holds the flare rather than letting it collapse. Model height: 178cm / 5’10” | Model wears AU 6 / UK 6 / US 2 / EUR 34 Designed to sit full-length through the leg. Size 6: Inseam: approx. 83cm. Outseam: approx. 100cm.",
   "on_sale": false,
   "fibre": "",
   "composition": "",
-  "shape": "",
-  "rise": "",
-  "style": "",
-  "closure": "",
-  "photo_tries": 0
+  "shape": "évasé",
+  "rise": "basse",
+  "style": "tailleur",
+  "closure": "zippé ou boutonné",
+  "photo_tries": 0,
+  "attrs_v": 3
  },
  {
   "id": "sir:8702399938752",
@@ -10369,23 +10766,30 @@
    "WK17-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "noir"
+  ],
   "type": "Robes",
-  "has_vision": false,
-  "material": "",
+  "has_vision": true,
+  "material": "jersey",
   "length": "midi",
-  "cut": "",
-  "neckline": "",
-  "details": [],
+  "cut": "ajustée",
+  "neckline": "décolleté plongeant",
+  "details": [
+   "volants",
+   "dos nu",
+   "col halter"
+  ],
   "description": "A ruffle falls either side of the plunge on the Sam Midi Dress, running from the halter band down to the waist. Cut in Poly, the dress holds close through the body to a hem just below the knee, with a split at the front. The back drops to a deep vee, leaving the shoulders bare. Model height: 178cm / 5’10” | Model wears AU 6 / UK 6 / US 2 / EUR 34",
   "on_sale": false,
   "fibre": "",
   "composition": "",
   "shape": "",
   "rise": "",
-  "style": "",
+  "style": "habillé",
   "closure": "",
-  "photo_tries": 0
+  "photo_tries": 0,
+  "attrs_v": 3
  },
  {
   "id": "bec-bridge:7506976440375",
@@ -10419,23 +10823,30 @@
    "x-styleCode:H26-13523"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "jaune"
+  ],
   "type": "Robes",
-  "has_vision": false,
-  "material": "",
+  "has_vision": true,
+  "material": "jersey",
   "length": "maxi",
-  "cut": "",
-  "neckline": "",
-  "details": [],
+  "cut": "fluide",
+  "neckline": "décolleté plongeant",
+  "details": [
+   "drapé",
+   "nœud torsadé",
+   "encolure halter"
+  ],
   "description": "Xanthi V Neck Maxi Dress in Citron. A yellow backless draped maxi dress with a plunging V-neckline. A dramatic evening look, perfect for parties or formal events. Soft mesh and viscose georgette fabrication Plunging V-neckline Halterneck fastening Backless design Draped silhouette Built-in bodysuit and detachable mesh slip lining for extra coverage Leg split Model is 179 cm / 5'10\" wearing an AU 8 / US 4 Designed in Australia",
   "on_sale": false,
   "fibre": "",
   "composition": "",
   "shape": "",
   "rise": "",
-  "style": "",
+  "style": "habillé",
   "closure": "",
-  "photo_tries": 0
+  "photo_tries": 0,
+  "attrs_v": 3
  },
  {
   "id": "bec-bridge:7486861574199",
@@ -10470,23 +10881,30 @@
    "x-styleCode:H26-13523"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "ivoire"
+  ],
   "type": "Robes",
-  "has_vision": false,
-  "material": "",
+  "has_vision": true,
+  "material": "jersey",
   "length": "maxi",
-  "cut": "",
-  "neckline": "",
-  "details": [],
+  "cut": "fluide",
+  "neckline": "décolleté plongeant",
+  "details": [
+   "drapé",
+   "col halter",
+   "froncé taille"
+  ],
   "description": "Xanthi V Neck Maxi Dress in Buttercream. A cream backless draped maxi dress with a plunging V-neckline. A dramatic evening look, perfect for parties or formal events. Soft mesh and viscose georgette fabrication Plunging V-neckline Halterneck fastening Backless design Draped silhouette Built-in bodysuit and detachable mesh slip lining for extra coverage Leg split Model is 174cm / 5'8.5\" wearing an AU 6 / US 2 Designed in Australia",
   "on_sale": false,
   "fibre": "",
   "composition": "",
   "shape": "",
   "rise": "",
-  "style": "",
+  "style": "habillé",
   "closure": "",
-  "photo_tries": 0
+  "photo_tries": 0,
+  "attrs_v": 3
  },
  {
   "id": "bec-bridge:7458300231735",
@@ -10590,22 +11008,29 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "gris",
+   "bleu"
+  ],
   "type": "Jupes",
-  "has_vision": false,
+  "has_vision": true,
   "material": "lin",
   "length": "maxi",
   "cut": "fluide",
   "neckline": "",
   "details": [
-   "coupe en biais",
-   "nœud à la taille",
-   "ceinture à nouer"
+   "nœud latéral",
+   "coupe en biais"
   ],
   "description": "High rise ramie maxi skirt Narrow encased elasticated waistband Adjustable drawstring tie Designed for a relaxed, bias cut silhouette",
   "on_sale": false,
   "fibre": "",
-  "composition": ""
+  "composition": "",
+  "shape": "drapée",
+  "rise": "",
+  "style": "habillé",
+  "closure": "noué",
+  "attrs_v": 3
  },
  {
   "id": "bec-bridge:7458300330039",
@@ -10640,23 +11065,30 @@
    "x-styleCode:H26-13671"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "noir"
+  ],
   "type": "Robes",
-  "has_vision": false,
+  "has_vision": true,
   "description": "Kira Maxi Dress in Black . A sheer maxi dress, perfect for seamless day-to-night styling. Sheer chiffon maxi dress features contrast suiting mini skirt Halter neckline with low cowl neck Bodice blousons into suiting mini skirt waistband Sheer bias silhouette maxi skirt Low back Adjustable back neck Accessed via invisible zip in side seam Model is 179 cm / 5'10.5\" wearing an AU 8 / US 4 Designed in Australia",
-  "material": "",
+  "material": "mousseline",
   "length": "maxi",
-  "cut": "",
-  "neckline": "",
-  "details": [],
+  "cut": "fluide",
+  "neckline": "décolleté plongeant",
+  "details": [
+   "transparence",
+   "col cascade",
+   "ceinture"
+  ],
   "on_sale": false,
   "fibre": "",
   "composition": "",
   "shape": "",
   "rise": "",
-  "style": "",
+  "style": "habillé",
   "closure": "",
-  "photo_tries": 0
+  "photo_tries": 0,
+  "attrs_v": 3
  },
  {
   "id": "bec-bridge:7446967124023",
@@ -10687,25 +11119,30 @@
    "x-styleCode:H26-30951"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "marron"
+  ],
   "type": "Jupes",
-  "has_vision": false,
+  "has_vision": true,
   "description": "Anaya Drape Maxi Skirt in Latte/Black . A maxi skirt with detached waist and tuck creating high leg split in soft mesh, featuring bodysuit lining with snap button closure. Soft mesh fabrication Detached waist and tuck High leg split Bodysuit lining with snap button closure Styled with the Anaya Drape Top Model is 179 cm / 5'10.5\" wearing an AU 8 / US 4 Designed in Australia",
-  "material": "",
+  "material": "jersey",
   "length": "maxi",
-  "cut": "",
+  "cut": "fluide",
   "neckline": "",
   "details": [
+   "fente",
+   "nœud",
    "drapé"
   ],
   "on_sale": false,
   "fibre": "",
   "composition": "",
-  "shape": "",
-  "rise": "",
-  "style": "",
-  "closure": "",
-  "photo_tries": 0
+  "shape": "drapée",
+  "rise": "basse",
+  "style": "habillé",
+  "closure": "noué",
+  "photo_tries": 0,
+  "attrs_v": 3
  },
  {
   "id": "dissh:15185411539312",
@@ -10749,21 +11186,28 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "bleu"
+  ],
   "type": "Robes",
-  "has_vision": false,
+  "has_vision": true,
   "material": "lin",
   "length": "midi",
   "cut": "évasée",
-  "neckline": "carré",
+  "neckline": "bretelles fines",
   "details": [
-   "plissés au buste",
+   "plissé au buste",
    "bretelles fines"
   ],
   "description": "Sleeveless ramie midi dress Fine pleated straight neckline Narrow adjustable straps Voluminous pleating across bust Designed for a relaxed silhouette",
   "on_sale": false,
   "fibre": "",
-  "composition": ""
+  "composition": "",
+  "shape": "",
+  "rise": "",
+  "style": "décontracté",
+  "closure": "",
+  "attrs_v": 3
  },
  {
   "id": "bec-bridge:7446970761271",
@@ -10793,23 +11237,31 @@
    "x-styleCode:H26-13685"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "bleu",
+   "vert"
+  ],
   "type": "Robes",
-  "has_vision": false,
-  "material": "",
+  "has_vision": true,
+  "material": "satin",
   "length": "maxi",
-  "cut": "",
-  "neckline": "",
-  "details": [],
+  "cut": "fluide",
+  "neckline": "décolleté plongeant",
+  "details": [
+   "encolure licou",
+   "fronces taille",
+   "traîne"
+  ],
   "description": "Wave Maxi Dress in Seafoam. A satin crinkle fabrication, featuring halter neckline, deep v plunge neckline, blouson bodice, gathers at hips, low back and accessed via invisible zip in centre back. Satin crinkle fabrication Halter neckline Deep v plunge neckline Blouson bodice Gathers at hips Low back Accessed via invisible zip in centre back Model is 179 cm / 5'10.5\" wearing an AU 8 / US 4 Designed and made in Australia",
   "on_sale": false,
   "fibre": "",
   "composition": "",
   "shape": "",
   "rise": "",
-  "style": "",
+  "style": "habillé",
   "closure": "",
-  "photo_tries": 0
+  "photo_tries": 0,
+  "attrs_v": 3
  },
  {
   "id": "bec-bridge:7446969778231",
@@ -10838,23 +11290,29 @@
    "x-styleCode:H26-40914"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "noir"
+  ],
   "type": "Pantalons",
-  "has_vision": false,
+  "has_vision": true,
   "description": "Aranya Legging in Black . A low waist legging in stretch jersey, featuring internal elastic waistband and legging extends over foot and hooks over toe. Stretch jersey fabrication Low waist legging Internal elastic waistband Legging extends over foot and hooks over toe Model is 179 cm / 5'10.5\" wearing a size S Designed and made in Australia",
-  "material": "",
-  "length": "",
-  "cut": "",
+  "material": "synthétique",
+  "length": "long",
+  "cut": "ajustée",
   "neckline": "",
-  "details": [],
+  "details": [
+   "sous-pied",
+   "effet brillant"
+  ],
   "on_sale": false,
   "fibre": "",
   "composition": "",
-  "shape": "",
+  "shape": "slim",
   "rise": "",
-  "style": "",
-  "closure": "",
-  "photo_tries": 0
+  "style": "décontracté",
+  "closure": "pull-on",
+  "photo_tries": 0,
+  "attrs_v": 3
  },
  {
   "id": "bec-bridge:7446969548855",
@@ -10991,15 +11449,19 @@
    "x-styleCode:H26-13724"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "noir"
+  ],
   "type": "Robes",
-  "has_vision": false,
-  "material": "",
+  "has_vision": true,
+  "material": "jersey",
   "length": "maxi",
-  "cut": "",
-  "neckline": "",
+  "cut": "ajustée",
+  "neckline": "décolleté plongeant",
   "details": [
-   "drapé"
+   "drapé",
+   "épaulettes",
+   "empiècements transparent"
   ],
   "description": "Isora Drape Maxi Dress in Black. A soft mesh maxi dress, featuring deep plunge v neckline. The perfect wedding guest dress. Soft mesh maxi dress Deep plunge v neckline Blouson into waistband Gathered waist Column skirt silhouette Fully lined Model is 179 cm / 5'10.5\" wearing an AU 8 / US 4 Designed in Australia",
   "on_sale": false,
@@ -11007,9 +11469,10 @@
   "composition": "",
   "shape": "",
   "rise": "",
-  "style": "",
+  "style": "habillé",
   "closure": "",
-  "photo_tries": 0
+  "photo_tries": 0,
+  "attrs_v": 3
  },
  {
   "id": "bec-bridge:7446967582775",
@@ -11041,23 +11504,30 @@
    "x-styleCode:H26-30948"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "argent",
+   "gris"
+  ],
   "type": "Jupes",
-  "has_vision": false,
+  "has_vision": true,
   "description": "Emiko Maxi Skirt in Silver. A silver sequin maxi skirt, perfect for parties and events. Sheer stretch fabrication with silver sequin embellishment Maxi skirt with column silhouette Soft gathers at waist / hips Designed to sit on the low waist Back godet Soft mesh lining Styled with the Emiko Top Model is 178 cm / 5'10\" wearing an AU 8 / US 4 Designed and made in Australia Fit Note: True to size but we recommend sizing up for a lower-waisted fit.",
-  "material": "",
+  "material": "paillettes",
   "length": "maxi",
-  "cut": "",
+  "cut": "ajustée",
   "neckline": "",
-  "details": [],
+  "details": [
+   "fronces",
+   "fente"
+  ],
   "on_sale": false,
   "fibre": "",
   "composition": "",
-  "shape": "",
-  "rise": "",
-  "style": "",
-  "closure": "",
-  "photo_tries": 0
+  "shape": "crayon",
+  "rise": "basse",
+  "style": "habillé",
+  "closure": "pull-on",
+  "photo_tries": 0,
+  "attrs_v": 3
  },
  {
   "id": "bec-bridge:7446967189559",
@@ -11088,23 +11558,30 @@
    "x-styleCode:H26-22291"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "ivoire",
+   "noir"
+  ],
   "type": "Hauts",
-  "has_vision": false,
-  "material": "",
-  "length": "",
-  "cut": "",
-  "neckline": "",
-  "details": [],
+  "has_vision": true,
+  "material": "jersey",
+  "length": "cropped",
+  "cut": "fluide",
+  "neckline": "décolleté plongeant",
+  "details": [
+   "drapé",
+   "bride noire"
+  ],
   "description": "Anaya Drape Top in Ivory/Black . A striking top, perfect for nights out or day-to-night styling. Soft Mesh Fabrication Gathered panel drapes over and under a contrast grosgrain elastic at under-bust Accessed via hook-and-eye at back Model is 179 cm / 5'10.5\" wearing an AU 8 / US 4 Designed in Australia",
   "on_sale": false,
   "fibre": "",
   "composition": "",
-  "shape": "",
+  "shape": "drapé",
   "rise": "",
-  "style": "",
+  "style": "habillé",
   "closure": "",
-  "photo_tries": 0
+  "photo_tries": 0,
+  "attrs_v": 3
  },
  {
   "id": "dissh:15287284728176",
@@ -11153,26 +11630,30 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "ivoire"
+  ],
   "type": "Pantalons",
-  "has_vision": false,
+  "has_vision": true,
   "material": "",
-  "length": "",
-  "cut": "",
+  "length": "long",
+  "cut": "fluide",
   "neckline": "",
   "details": [
+   "superposition wrap",
    "boutons",
-   "taille croisée"
+   "anneau latéral"
   ],
   "description": "Mid rise pant wrap pant Fixed mini skirt overlay featuring side split Narrow encased elasticated waistband Button closure and narrow tie at side waist Designed for a relaxed straight leg silhouette",
   "on_sale": false,
   "fibre": "",
   "composition": "",
-  "shape": "",
-  "rise": "",
-  "style": "",
-  "closure": "",
-  "photo_tries": 0
+  "shape": "large",
+  "rise": "haute",
+  "style": "habillé",
+  "closure": "zippé ou boutonné",
+  "photo_tries": 0,
+  "attrs_v": 3
  },
  {
   "id": "dissh:15287280402800",
@@ -11222,25 +11703,31 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "jaune",
+   "blanc"
+  ],
   "type": "Pantalons",
-  "has_vision": false,
-  "material": "",
+  "has_vision": true,
+  "material": "popeline",
   "length": "court",
-  "cut": "",
+  "cut": "fluide",
   "neckline": "",
   "details": [
-   "rayures"
+   "rayures",
+   "cordon de serrage",
+   "poches"
   ],
   "description": "High rise 100% cotton stripe short Encased elasticated waistband featuring drawstring Narrow binding hem edge detail Functional side pockets Designed for a relaxed silhouette",
   "on_sale": false,
   "fibre": "coton",
   "composition": "coton 100 %",
-  "shape": "",
-  "rise": "",
-  "style": "",
-  "closure": "",
-  "photo_tries": 0
+  "shape": "large",
+  "rise": "moyenne",
+  "style": "décontracté",
+  "closure": "noué",
+  "photo_tries": 0,
+  "attrs_v": 3
  },
  {
   "id": "dissh:15287284040048",
@@ -11376,26 +11863,31 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "noir",
+   "blanc"
+  ],
   "type": "Hauts",
-  "has_vision": false,
+  "has_vision": true,
   "material": "",
   "length": "",
-  "cut": "",
-  "neckline": "",
+  "cut": "oversize",
+  "neckline": "col chemise",
   "details": [
    "rayures fines",
-   "boutonnage"
+   "boutons devant",
+   "manches longues"
   ],
   "description": "Long sleeve pinstripe shirt Standard collar neckline Button placket through centre front Dropped shoulders Wide sleeve cuffs Splits through side seam hems Designed for an oversized longline silhouette",
   "on_sale": false,
   "fibre": "",
   "composition": "",
-  "shape": "",
+  "shape": "oversize",
   "rise": "",
-  "style": "",
+  "style": "tailleur",
   "closure": "",
-  "photo_tries": 0
+  "photo_tries": 0,
+  "attrs_v": 3
  },
  {
   "id": "dissh:15287287218544",
@@ -11443,13 +11935,15 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "noir"
+  ],
   "type": "Pantalons",
-  "has_vision": false,
+  "has_vision": true,
   "description": "Mid rise tailored short Tailored waistband with zip fly closure Front tucks for volume Encased elastication at back waist Designed for a relaxed silhouette",
   "material": "",
   "length": "court",
-  "cut": "",
+  "cut": "droite",
   "neckline": "",
   "details": [],
   "on_sale": false,
@@ -11457,9 +11951,10 @@
   "composition": "",
   "shape": "",
   "rise": "",
-  "style": "",
+  "style": "tailleur",
   "closure": "",
-  "photo_tries": 0
+  "photo_tries": 0,
+  "attrs_v": 3
  },
  {
   "id": "dissh:15287289446768",
@@ -11510,27 +12005,30 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "noir"
+  ],
   "type": "Hauts",
-  "has_vision": false,
+  "has_vision": true,
   "description": "Sleeveless longline vest Deep V neckline Crossover wrap design Concealed button placket Belt loops at side seams featuring removable belt Functional front welt pockets Designed for a cinched, longline silhouette",
   "material": "",
-  "length": "",
-  "cut": "",
-  "neckline": "",
+  "length": "court",
+  "cut": "droite",
+  "neckline": "col V",
   "details": [
-   "basque",
-   "sans col",
-   "sans manches"
+   "ceinture nouée",
+   "poches plaquées",
+   "épaulettes"
   ],
   "on_sale": false,
   "fibre": "",
   "composition": "",
-  "shape": "",
+  "shape": "boxy",
   "rise": "",
-  "style": "",
+  "style": "tailleur",
   "closure": "",
-  "photo_tries": 0
+  "photo_tries": 0,
+  "attrs_v": 3
  },
  {
   "id": "dissh:15287287972208",
@@ -11580,23 +12078,30 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "noir"
+  ],
   "type": "Manteaux",
-  "has_vision": false,
+  "has_vision": true,
   "description": "Long sleeve cropped blazer Stand collar neckline Concealed button closure at centre front Front dart detail Front welt pockets Designed for a tailored silhouette",
   "material": "",
   "length": "cropped",
-  "cut": "",
-  "neckline": "",
-  "details": [],
+  "cut": "droite",
+  "neckline": "col haut",
+  "details": [
+   "col montant",
+   "manches longues",
+   "poches plaquées"
+  ],
   "on_sale": false,
   "fibre": "",
   "composition": "",
-  "shape": "",
+  "shape": "droit",
   "rise": "",
-  "style": "",
+  "style": "tailleur",
   "closure": "",
-  "photo_tries": 0
+  "photo_tries": 0,
+  "attrs_v": 3
  },
  {
   "id": "dissh:15287282663792",
@@ -11648,23 +12153,30 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "noir"
+  ],
   "type": "Robes",
-  "has_vision": false,
-  "material": "",
+  "has_vision": true,
+  "material": "jersey",
   "length": "mini",
-  "cut": "",
-  "neckline": "",
-  "details": [],
+  "cut": "fluide",
+  "neckline": "asymétrique",
+  "details": [
+   "drapé",
+   "épaule dénudée",
+   "nouage latéral"
+  ],
   "description": "Sleeveless off shoulder mini dress Asymmetrical neckline Gathering at shoulder through bust Fixed ties at right side waist for cinching Designed for a relaxed silhouette with a softly cinched waist",
   "on_sale": false,
   "fibre": "",
   "composition": "",
   "shape": "",
   "rise": "",
-  "style": "",
+  "style": "habillé",
   "closure": "",
-  "photo_tries": 0
+  "photo_tries": 0,
+  "attrs_v": 3
  },
  {
   "id": "dissh:15287283417456",
@@ -11711,11 +12223,13 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "noir"
+  ],
   "type": "Hauts",
-  "has_vision": false,
+  "has_vision": true,
   "material": "lin",
-  "length": "court",
+  "length": "",
   "cut": "fluide",
   "neckline": "col rond",
   "details": [
@@ -11726,7 +12240,12 @@
   "description": "Sleeveless sheer ramie top Wide boat neckline with shoulder tuck detail Side tie at front Designed for a relaxed silhouette",
   "on_sale": false,
   "fibre": "",
-  "composition": ""
+  "composition": "",
+  "shape": "drapé",
+  "rise": "",
+  "style": "habillé",
+  "closure": "",
+  "attrs_v": 3
  },
  {
   "id": "dissh:15291705885040",
@@ -11777,22 +12296,29 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "bleu"
+  ],
   "type": "Hauts",
-  "has_vision": false,
+  "has_vision": true,
   "material": "lin",
   "length": "",
   "cut": "fluide",
   "neckline": "col rond",
   "details": [
-   "nœud latéral",
-   "transparence",
-   "sans manches"
+   "nœud",
+   "sans manches",
+   "transparence"
   ],
   "description": "Sleeveless sheer ramie top Wide boat neckline with shoulder tuck detail Side tie at front Designed for a relaxed silhouette",
   "on_sale": false,
   "fibre": "",
-  "composition": ""
+  "composition": "",
+  "shape": "drapé",
+  "rise": "",
+  "style": "décontracté",
+  "closure": "",
+  "attrs_v": 3
  },
  {
   "id": "dissh:15287279583600",
