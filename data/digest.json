@@ -1,24 +1,39 @@
 {
- "title": "Robes et hauts dominent, détails encore rares",
- "summary": "Les robes (29 %) et les hauts (24 %) forment plus de la moitié des nouveautés, devant les accessoires et les jupes (18 % chacun), tandis que les manteaux et les autres pièces ne pèsent que 6 % chacun. L'échantillon vient presque entièrement de Reformation, et Dissh n'y figure qu'avec une jupe midi. Les attributs visibles sur les photos restent très épars : une pochette en cuir noir à finition vernie et rabat, et une robe mini en velours beige aux manches drapées, soit 6 % chacun, ce qui ne permet pas de dégager une tendance de couleur ou de matière.",
+ "title": "Noir, maille et satin sur silhouettes midi-maxi",
+ "summary": "Les robes (29 %) et les hauts (24 %) dominent les nouveautés, devant les accessoires et les jupes (18 % chacun). Le noir mène la palette (24 %), suivi du beige et de l'ivoire (12 % chacun), et la maille et le satin pèsent 18 % chacun côté matières. Les longueurs midi et maxi (12 % chacune) et les franges (12 %) ressortent ; l'échantillon vient presque entièrement de Reformation, avec une seule pièce Dissh, une jupe midi en dentelle ivoire.",
  "tags": [
   "robes",
-  "hauts",
-  "Reformation",
-  "velours drapé"
+  "noir",
+  "maille et satin",
+  "midi-maxi"
  ],
  "palette": [
   {
    "name": "Noir",
    "hex": "#1F1E1C",
-   "share": 50
+   "share": 32
   },
   {
    "name": "Beige",
    "hex": "#D8C8AE",
-   "share": 50
+   "share": 18
+  },
+  {
+   "name": "Ivoire",
+   "hex": "#EFE8D8",
+   "share": 18
+  },
+  {
+   "name": "Bordeaux",
+   "hex": "#6D1F2E",
+   "share": 9
+  },
+  {
+   "name": "Jaune",
+   "hex": "#E3C65A",
+   "share": 9
   }
  ],
  "week_label": "Semaine du 26 octobre",
- "generated_at": "2026-10-31T03:48:58+00:00"
+ "generated_at": "2026-10-31T04:06:09+00:00"
 }

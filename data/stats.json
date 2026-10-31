@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-10-31T03:48:58+00:00",
+ "generated_at": "2026-10-31T04:06:09+00:00",
  "window_days": 7,
  "total": 17,
- "with_photo_analysis": 2,
+ "with_photo_analysis": 11,
  "types": [
   {
    "name": "Robes",
@@ -44,16 +44,61 @@
  "colors": [
   {
    "name": "noir",
+   "count": 4,
+   "share": 24
+  },
+  {
+   "name": "beige",
+   "count": 2,
+   "share": 12
+  },
+  {
+   "name": "ivoire",
+   "count": 2,
+   "share": 12
+  },
+  {
+   "name": "bordeaux",
    "count": 1,
    "share": 6
   },
   {
-   "name": "beige",
+   "name": "marron",
+   "count": 1,
+   "share": 6
+  },
+  {
+   "name": "jaune",
+   "count": 1,
+   "share": 6
+  },
+  {
+   "name": "bleu",
    "count": 1,
    "share": 6
   }
  ],
  "materials": [
+  {
+   "name": "maille",
+   "count": 3,
+   "share": 18
+  },
+  {
+   "name": "satin",
+   "count": 3,
+   "share": 18
+  },
+  {
+   "name": "paillettes",
+   "count": 1,
+   "share": 6
+  },
+  {
+   "name": "laine",
+   "count": 1,
+   "share": 6
+  },
   {
    "name": "cuir",
    "count": 1,
@@ -63,9 +108,34 @@
    "name": "velours",
    "count": 1,
    "share": 6
+  },
+  {
+   "name": "dentelle",
+   "count": 1,
+   "share": 6
   }
  ],
  "lengths": [
+  {
+   "name": "midi",
+   "count": 2,
+   "share": 12
+  },
+  {
+   "name": "maxi",
+   "count": 2,
+   "share": 12
+  },
+  {
+   "name": "court",
+   "count": 1,
+   "share": 6
+  },
+  {
+   "name": "cropped",
+   "count": 1,
+   "share": 6
+  },
   {
    "name": "mini",
    "count": 1,
@@ -75,35 +145,90 @@
  "cuts": [
   {
    "name": "ajustée",
+   "count": 6,
+   "share": 35
+  },
+  {
+   "name": "fluide",
+   "count": 2,
+   "share": 12
+  },
+  {
+   "name": "cintrée",
    "count": 1,
    "share": 6
   }
  ],
  "necklines": [
   {
+   "name": "col haut",
+   "count": 3,
+   "share": 18
+  },
+  {
    "name": "col rond",
+   "count": 3,
+   "share": 18
+  },
+  {
+   "name": "col V",
+   "count": 1,
+   "share": 6
+  },
+  {
+   "name": "bustier",
    "count": 1,
    "share": 6
   }
  ],
  "details": [
   {
-   "name": "finition vernie",
+   "name": "franges",
+   "count": 2,
+   "share": 12
+  },
+  {
+   "name": "maille ajourée",
    "count": 1,
    "share": 6
   },
   {
-   "name": "rabat",
+   "name": "sequins",
    "count": 1,
    "share": 6
   },
   {
-   "name": "drapé",
+   "name": "dos nu",
    "count": 1,
    "share": 6
   },
   {
-   "name": "manches drapées",
+   "name": "manches longues",
+   "count": 1,
+   "share": 6
+  },
+  {
+   "name": "bas évasé",
+   "count": 1,
+   "share": 6
+  },
+  {
+   "name": "silhouette sirène",
+   "count": 1,
+   "share": 6
+  },
+  {
+   "name": "boutons devant",
+   "count": 1,
+   "share": 6
+  },
+  {
+   "name": "manches courtes",
+   "count": 1,
+   "share": 6
+  },
+  {
+   "name": "col montant",
    "count": 1,
    "share": 6
   }
@@ -112,12 +237,27 @@
   {
    "name": "Noir",
    "hex": "#1F1E1C",
-   "share": 50
+   "share": 32
   },
   {
    "name": "Beige",
    "hex": "#D8C8AE",
-   "share": 50
+   "share": 18
+  },
+  {
+   "name": "Ivoire",
+   "hex": "#EFE8D8",
+   "share": 18
+  },
+  {
+   "name": "Bordeaux",
+   "hex": "#6D1F2E",
+   "share": 9
+  },
+  {
+   "name": "Jaune",
+   "hex": "#E3C65A",
+   "share": 9
   }
  ],
  "color_hex": {

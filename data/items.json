@@ -12,9 +12,21 @@
   "product_type": "",
   "tags": [],
   "first_seen": "2026-10-31T03:12:54+00:00",
-  "colors": [],
+  "colors": [
+   "noir"
+  ],
   "type": "Hauts",
-  "has_vision": false
+  "has_vision": true,
+  "material": "paillettes",
+  "length": "court",
+  "cut": "ajustée",
+  "neckline": "col V",
+  "details": [
+   "franges",
+   "maille ajourée",
+   "sequins"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "reformation:1321177BLK",
@@ -29,9 +41,20 @@
   "product_type": "",
   "tags": [],
   "first_seen": "2026-10-31T03:12:54+00:00",
-  "colors": [],
+  "colors": [
+   "noir"
+  ],
   "type": "Robes",
-  "has_vision": false
+  "has_vision": true,
+  "material": "maille",
+  "length": "midi",
+  "cut": "ajustée",
+  "neckline": "col haut",
+  "details": [
+   "franges",
+   "dos nu"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "reformation:1321165POQ",
@@ -46,9 +69,21 @@
   "product_type": "",
   "tags": [],
   "first_seen": "2026-10-31T03:12:54+00:00",
-  "colors": [],
+  "colors": [
+   "bordeaux"
+  ],
   "type": "Robes",
-  "has_vision": false
+  "has_vision": true,
+  "material": "maille",
+  "length": "maxi",
+  "cut": "ajustée",
+  "neckline": "col haut",
+  "details": [
+   "manches longues",
+   "bas évasé",
+   "silhouette sirène"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "reformation:1321129IVC",
@@ -63,9 +98,21 @@
   "product_type": "",
   "tags": [],
   "first_seen": "2026-10-31T03:12:54+00:00",
-  "colors": [],
+  "colors": [
+   "beige"
+  ],
   "type": "Hauts",
-  "has_vision": false
+  "has_vision": true,
+  "material": "satin",
+  "length": "",
+  "cut": "cintrée",
+  "neckline": "col haut",
+  "details": [
+   "boutons devant",
+   "manches courtes",
+   "col montant"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "reformation:1312627OKZ",
@@ -80,9 +127,21 @@
   "product_type": "",
   "tags": [],
   "first_seen": "2026-10-31T03:12:54+00:00",
-  "colors": [],
+  "colors": [
+   "marron",
+   "noir"
+  ],
   "type": "Hauts",
-  "has_vision": false
+  "has_vision": true,
+  "material": "maille",
+  "length": "",
+  "cut": "ajustée",
+  "neckline": "col rond",
+  "details": [
+   "imprimé animal",
+   "sans manches"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "reformation:1312652FFC",
@@ -97,9 +156,21 @@
   "product_type": "",
   "tags": [],
   "first_seen": "2026-10-31T03:12:54+00:00",
-  "colors": [],
+  "colors": [
+   "ivoire"
+  ],
   "type": "Hauts",
-  "has_vision": false
+  "has_vision": true,
+  "material": "laine",
+  "length": "cropped",
+  "cut": "ajustée",
+  "neckline": "col rond",
+  "details": [
+   "col en fausse fourrure",
+   "boutons nacrés",
+   "bords côtelés"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "reformation:1320481KEK",
@@ -255,9 +326,21 @@
   "product_type": "",
   "tags": [],
   "first_seen": "2026-10-31T03:12:54+00:00",
-  "colors": [],
+  "colors": [
+   "jaune"
+  ],
   "type": "Accessoires",
-  "has_vision": false
+  "has_vision": true,
+  "material": "satin",
+  "length": "",
+  "cut": "",
+  "neckline": "",
+  "details": [
+   "bout pointu",
+   "petit talon",
+   "motif jacquard"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "reformation:1316556ROW",
@@ -289,9 +372,21 @@
   "product_type": "",
   "tags": [],
   "first_seen": "2026-10-31T03:12:54+00:00",
-  "colors": [],
+  "colors": [
+   "bleu"
+  ],
   "type": "Robes",
-  "has_vision": false
+  "has_vision": true,
+  "material": "satin",
+  "length": "maxi",
+  "cut": "fluide",
+  "neckline": "bustier",
+  "details": [
+   "bretelles fines",
+   "coupe en biais",
+   "couture bustier"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "dissh:15206267191664",
@@ -354,9 +449,21 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "ivoire"
+  ],
   "type": "Jupes",
-  "has_vision": false
+  "has_vision": true,
+  "material": "dentelle",
+  "length": "midi",
+  "cut": "fluide",
+  "neckline": "",
+  "details": [
+   "transparence",
+   "motifs floraux",
+   "bas festonné"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "dissh:15273205105008",
@@ -494,9 +601,20 @@
    "x-styleCode:H26-40980"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "noir"
+  ],
   "type": "Pantalons",
-  "has_vision": false
+  "has_vision": true,
+  "material": "",
+  "length": "long",
+  "cut": "droite",
+  "neckline": "",
+  "details": [
+   "taille basse",
+   "braguette"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "bec-bridge:7446972760119",
@@ -529,9 +647,21 @@
    "x-styleCode:H26-30914"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "ivoire"
+  ],
   "type": "Jupes",
-  "has_vision": false
+  "has_vision": true,
+  "material": "maille",
+  "length": "maxi",
+  "cut": "fluide",
+  "neckline": "",
+  "details": [
+   "drapé",
+   "nœud latéral",
+   "semi-transparent"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "kookai:7132406480968",
@@ -573,9 +703,21 @@
    "WK17-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "marron"
+  ],
   "type": "Hauts",
-  "has_vision": false
+  "has_vision": true,
+  "material": "jersey",
+  "length": "cropped",
+  "cut": "ajustée",
+  "neckline": "décolleté plongeant",
+  "details": [
+   "col bénitier",
+   "bretelles nouées",
+   "fronces latérales"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "kookai:7132406579272",
@@ -685,9 +827,21 @@
    "x-styleCode:H26-13748"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "argent"
+  ],
   "type": "Robes",
-  "has_vision": false
+  "has_vision": true,
+  "material": "maille",
+  "length": "mini",
+  "cut": "ajustée",
+  "neckline": "col haut",
+  "details": [
+   "découpe diagonale",
+   "drapé",
+   "sans manches"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "bec-bridge:7462569279543",
@@ -723,9 +877,20 @@
    "x-styleCode:H26-13561"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "argent"
+  ],
   "type": "Robes",
-  "has_vision": false
+  "has_vision": true,
+  "material": "satin",
+  "length": "maxi",
+  "cut": "fluide",
+  "neckline": "bustier",
+  "details": [
+   "drapé",
+   "fente latérale"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "kookai:7138296660040",
@@ -778,9 +943,21 @@
    "WK17-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "marron"
+  ],
   "type": "Jupes",
-  "has_vision": false
+  "has_vision": true,
+  "material": "",
+  "length": "mini",
+  "cut": "droite",
+  "neckline": "",
+  "details": [
+   "double ceinture",
+   "boucles métalliques",
+   "fronces"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "kookai:7132406841416",
@@ -883,9 +1060,19 @@
    "WK16-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "blanc"
+  ],
   "type": "Jupes",
-  "has_vision": false
+  "has_vision": true,
+  "material": "",
+  "length": "midi",
+  "cut": "droite",
+  "neckline": "",
+  "details": [
+   "taille élastiquée"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "kookai:7132407136328",
@@ -938,9 +1125,21 @@
    "WK15-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "blanc"
+  ],
   "type": "Jupes",
-  "has_vision": false
+  "has_vision": true,
+  "material": "",
+  "length": "mini",
+  "cut": "droite",
+  "neckline": "",
+  "details": [
+   "double ceinture",
+   "boucles",
+   "taille basse"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "kookai:7132406743112",
@@ -997,9 +1196,21 @@
    "WK15-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "bleu"
+  ],
   "type": "Robes",
-  "has_vision": false
+  "has_vision": true,
+  "material": "jersey",
+  "length": "mini",
+  "cut": "ajustée",
+  "neckline": "col rond",
+  "details": [
+   "fronces latérales",
+   "manches courtes",
+   "coupe t-shirt"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "bec-bridge:7446967058487",
@@ -1094,9 +1305,22 @@
    "x-styleCode:H26-13734"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "gris",
+   "argent"
+  ],
   "type": "Robes",
-  "has_vision": false
+  "has_vision": true,
+  "material": "synthétique",
+  "length": "maxi",
+  "cut": "fluide",
+  "neckline": "col V",
+  "details": [
+   "plissé",
+   "drapé à la taille",
+   "sans manches"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "kookai:7125381873736",
@@ -1159,9 +1383,21 @@
    "work"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "beige"
+  ],
   "type": "Hauts",
-  "has_vision": false
+  "has_vision": true,
+  "material": "maille",
+  "length": "",
+  "cut": "ajustée",
+  "neckline": "col haut",
+  "details": [
+   "côtes",
+   "sans manches",
+   "col roulé"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "dissh:15396097130864",
@@ -1270,9 +1506,21 @@
    "WK15-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "blanc"
+  ],
   "type": "Hauts",
-  "has_vision": false
+  "has_vision": true,
+  "material": "",
+  "length": "",
+  "cut": "oversize",
+  "neckline": "col V",
+  "details": [
+   "manches courtes",
+   "épaules tombantes",
+   "bord de col bordé"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "kookai:7132406087752",
@@ -1377,9 +1625,21 @@
    "WK15-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "bleu"
+  ],
   "type": "Hauts",
-  "has_vision": false
+  "has_vision": true,
+  "material": "jersey",
+  "length": "",
+  "cut": "ajustée",
+  "neckline": "asymétrique",
+  "details": [
+   "fronces latérales",
+   "manches courtes",
+   "épaule dénudée"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "kookai:7125382070344",
@@ -1496,9 +1756,21 @@
    "WK15-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "noir"
+  ],
   "type": "Hauts",
-  "has_vision": false
+  "has_vision": true,
+  "material": "jersey",
+  "length": "cropped",
+  "cut": "ajustée",
+  "neckline": "col rond",
+  "details": [
+   "licol",
+   "empiècements transparent",
+   "dos échancré"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "dissh:15396096409968",
@@ -1550,9 +1822,20 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "blanc"
+  ],
   "type": "Robes",
-  "has_vision": false
+  "has_vision": true,
+  "material": "coton",
+  "length": "mini",
+  "cut": "droite",
+  "neckline": "col V",
+  "details": [
+   "broderie",
+   "bordure dentelle"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "dissh:15396096999792",
@@ -1655,9 +1938,21 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "marron"
+  ],
   "type": "Manteaux",
-  "has_vision": false
+  "has_vision": true,
+  "material": "synthétique",
+  "length": "cropped",
+  "cut": "oversize",
+  "neckline": "col chemise",
+  "details": [
+   "col large",
+   "manches amples",
+   "fausse fourrure"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "kookai:7132407201864",
@@ -1707,9 +2002,21 @@
    "WK17-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "bleu"
+  ],
   "type": "Pantalons",
-  "has_vision": false
+  "has_vision": true,
+  "material": "denim",
+  "length": "long",
+  "cut": "évasée",
+  "neckline": "",
+  "details": [
+   "délavage",
+   "ceinture",
+   "poches"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "kookai:7132406349896",
@@ -1755,9 +2062,19 @@
    "WK17-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "marron"
+  ],
   "type": "Jupes",
-  "has_vision": false
+  "has_vision": true,
+  "material": "satin",
+  "length": "midi",
+  "cut": "droite",
+  "neckline": "",
+  "details": [
+   "taille haute"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "kookai:7132406186056",
@@ -1858,9 +2175,21 @@
    "WK17-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "blanc"
+  ],
   "type": "Hauts",
-  "has_vision": false
+  "has_vision": true,
+  "material": "",
+  "length": "",
+  "cut": "cintrée",
+  "neckline": "bustier",
+  "details": [
+   "plis",
+   "basque",
+   "structuré"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "kookai:7132406284360",
@@ -1903,9 +2232,20 @@
    "WK17-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "marron"
+  ],
   "type": "Hauts",
-  "has_vision": false
+  "has_vision": true,
+  "material": "satin",
+  "length": "cropped",
+  "cut": "ajustée",
+  "neckline": "carré",
+  "details": [
+   "bretelles fines",
+   "coutures structurées"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "kookai:7138296758344",
@@ -1948,9 +2288,21 @@
    "WK17-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "rouge"
+  ],
   "type": "Hauts",
-  "has_vision": false
+  "has_vision": true,
+  "material": "jersey",
+  "length": "cropped",
+  "cut": "ajustée",
+  "neckline": "décolleté plongeant",
+  "details": [
+   "drapé",
+   "dos nu",
+   "effet froncé"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "kookai:7138296922184",
@@ -1993,9 +2345,20 @@
    "wrap skirt"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "rouge"
+  ],
   "type": "Jupes",
-  "has_vision": false
+  "has_vision": true,
+  "material": "jersey",
+  "length": "midi",
+  "cut": "fluide",
+  "neckline": "",
+  "details": [
+   "nœud latéral",
+   "effet portefeuille"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "kookai:7138297184328",
@@ -2040,9 +2403,20 @@
    "WK17-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "ivoire"
+  ],
   "type": "Jupes",
-  "has_vision": false
+  "has_vision": true,
+  "material": "",
+  "length": "midi",
+  "cut": "évasée",
+  "neckline": "",
+  "details": [
+   "rayures diagonales",
+   "effet frangé"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "dissh:15398727909744",
@@ -2141,9 +2515,20 @@
    "WK14-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "rouge"
+  ],
   "type": "Hauts",
-  "has_vision": false
+  "has_vision": true,
+  "material": "maille",
+  "length": "cropped",
+  "cut": "ajustée",
+  "neckline": "col rond",
+  "details": [
+   "côtes apparentes",
+   "dos nageur"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "kookai:7125382135880",
@@ -2199,9 +2584,21 @@
    "wrap top"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "blanc"
+  ],
   "type": "Hauts",
-  "has_vision": false
+  "has_vision": true,
+  "material": "satin",
+  "length": "cropped",
+  "cut": "cintrée",
+  "neckline": "col haut",
+  "details": [
+   "dos ouvert",
+   "bande à la taille",
+   "drapé"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "kookai:7129848021064",
@@ -2304,9 +2701,20 @@
    "WK14-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "rouge"
+  ],
   "type": "Hauts",
-  "has_vision": false
+  "has_vision": true,
+  "material": "jersey",
+  "length": "cropped",
+  "cut": "ajustée",
+  "neckline": "col V",
+  "details": [
+   "manches 3/4",
+   "look basique"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "kookai:7129848676424",
@@ -2374,9 +2782,20 @@
    "WK14-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "ivoire"
+  ],
   "type": "Hauts",
-  "has_vision": false
+  "has_vision": true,
+  "material": "jersey",
+  "length": "",
+  "cut": "ajustée",
+  "neckline": "décolleté plongeant",
+  "details": [
+   "manches courtes",
+   "encolure profonde"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "kookai:7132406251592",
@@ -2483,9 +2902,22 @@
    "WK13-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "marron",
+   "rouge"
+  ],
   "type": "Hauts",
-  "has_vision": false
+  "has_vision": true,
+  "material": "jersey",
+  "length": "cropped",
+  "cut": "ajustée",
+  "neckline": "col rond",
+  "details": [
+   "bordure contrastée",
+   "dos nageur",
+   "coupe débardeur"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "kookai:7125381316680",
@@ -2533,9 +2965,21 @@
    "WK13-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "noir"
+  ],
   "type": "Jupes",
-  "has_vision": false
+  "has_vision": true,
+  "material": "mousseline",
+  "length": "midi",
+  "cut": "droite",
+  "neckline": "",
+  "details": [
+   "ourlet transparent",
+   "taille basse",
+   "superposition"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "kookai:7129848152136",
@@ -2591,9 +3035,21 @@
    "workwear-edit"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "noir"
+  ],
   "type": "Pantalons",
-  "has_vision": false
+  "has_vision": true,
+  "material": "",
+  "length": "long",
+  "cut": "évasée",
+  "neckline": "",
+  "details": [
+   "taille basse",
+   "poches biaises",
+   "pli central"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "sir:8702399938752",
@@ -2781,9 +3237,21 @@
    "WK17-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "noir"
+  ],
   "type": "Robes",
-  "has_vision": false
+  "has_vision": true,
+  "material": "jersey",
+  "length": "midi",
+  "cut": "ajustée",
+  "neckline": "décolleté plongeant",
+  "details": [
+   "volants",
+   "bretelles nouées",
+   "dos nu"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "bec-bridge:7506976440375",
@@ -2817,9 +3285,21 @@
    "x-styleCode:H26-13523"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "jaune"
+  ],
   "type": "Robes",
-  "has_vision": false
+  "has_vision": true,
+  "material": "jersey",
+  "length": "maxi",
+  "cut": "fluide",
+  "neckline": "décolleté plongeant",
+  "details": [
+   "drapé",
+   "nœud à la taille",
+   "encolure halter"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "bec-bridge:7486861574199",
@@ -2854,9 +3334,21 @@
    "x-styleCode:H26-13523"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "ivoire"
+  ],
   "type": "Robes",
-  "has_vision": false
+  "has_vision": true,
+  "material": "jersey",
+  "length": "maxi",
+  "cut": "fluide",
+  "neckline": "décolleté plongeant",
+  "details": [
+   "drapés",
+   "encolure licou",
+   "fronces taille"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "bec-bridge:7458300231735",
@@ -2889,9 +3381,21 @@
    "x-styleCode:H26-13741A"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "ivoire"
+  ],
   "type": "Robes",
-  "has_vision": false
+  "has_vision": true,
+  "material": "jersey",
+  "length": "maxi",
+  "cut": "ajustée",
+  "neckline": "col V",
+  "details": [
+   "drapé",
+   "découpes",
+   "fente"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "dissh:15291705950576",
@@ -2940,9 +3444,22 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "gris",
+   "bleu"
+  ],
   "type": "Jupes",
-  "has_vision": false
+  "has_vision": true,
+  "material": "lin",
+  "length": "maxi",
+  "cut": "fluide",
+  "neckline": "",
+  "details": [
+   "coupe en biais",
+   "nœud à la taille",
+   "ceinture à nouer"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "bec-bridge:7458300330039",
@@ -3056,9 +3573,20 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "bleu"
+  ],
   "type": "Robes",
-  "has_vision": false
+  "has_vision": true,
+  "material": "lin",
+  "length": "midi",
+  "cut": "évasée",
+  "neckline": "carré",
+  "details": [
+   "plissés au buste",
+   "bretelles fines"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "bec-bridge:7446970761271",
@@ -3149,9 +3677,20 @@
    "x-styleCode:H26-13707"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "noir"
+  ],
   "type": "Robes",
-  "has_vision": false
+  "has_vision": true,
+  "material": "",
+  "length": "mini",
+  "cut": "ajustée",
+  "neckline": "carré",
+  "details": [
+   "manches courtes",
+   "couture princesse"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "bec-bridge:7446969385015",
@@ -3182,9 +3721,22 @@
    "x-styleCode:H26-22268"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "argent",
+   "gris"
+  ],
   "type": "Hauts",
-  "has_vision": false
+  "has_vision": true,
+  "material": "maille",
+  "length": "cropped",
+  "cut": "ajustée",
+  "neckline": "col rond",
+  "details": [
+   "découpe",
+   "lien à nouer",
+   "sans manches"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "bec-bridge:7446968598583",
@@ -3218,9 +3770,21 @@
    "x-styleCode:H26-13724"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "noir"
+  ],
   "type": "Robes",
-  "has_vision": false
+  "has_vision": true,
+  "material": "jersey",
+  "length": "maxi",
+  "cut": "ajustée",
+  "neckline": "décolleté plongeant",
+  "details": [
+   "drapé",
+   "épaulettes",
+   "transparence"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "bec-bridge:7446967582775",
@@ -3285,9 +3849,22 @@
    "x-styleCode:H26-22291"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "ivoire",
+   "noir"
+  ],
   "type": "Hauts",
-  "has_vision": false
+  "has_vision": true,
+  "material": "jersey",
+  "length": "cropped",
+  "cut": "fluide",
+  "neckline": "décolleté plongeant",
+  "details": [
+   "drapé",
+   "bande noire",
+   "nœud"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "dissh:15287284728176",
@@ -3505,9 +4082,21 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "noir"
+  ],
   "type": "Hauts",
-  "has_vision": false
+  "has_vision": true,
+  "material": "",
+  "length": "",
+  "cut": "oversize",
+  "neckline": "col chemise",
+  "details": [
+   "rayures fines",
+   "boutonnage devant",
+   "manches longues"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "dissh:15287287218544",
@@ -3714,9 +4303,21 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "noir"
+  ],
   "type": "Robes",
-  "has_vision": false
+  "has_vision": true,
+  "material": "jersey",
+  "length": "mini",
+  "cut": "fluide",
+  "neckline": "asymétrique",
+  "details": [
+   "drapé",
+   "nœud latéral",
+   "manche unique"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "dissh:15287283417456",
@@ -3763,9 +4364,21 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "noir"
+  ],
   "type": "Hauts",
-  "has_vision": false
+  "has_vision": true,
+  "material": "lin",
+  "length": "court",
+  "cut": "fluide",
+  "neckline": "col rond",
+  "details": [
+   "nœud latéral",
+   "transparence",
+   "sans manches"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "dissh:15291705885040",
@@ -3816,9 +4429,21 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "bleu"
+  ],
   "type": "Hauts",
-  "has_vision": false
+  "has_vision": true,
+  "material": "lin",
+  "length": "",
+  "cut": "fluide",
+  "neckline": "col rond",
+  "details": [
+   "nœud latéral",
+   "transparence",
+   "sans manches"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "dissh:15287279583600",
@@ -3930,9 +4555,21 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "kaki"
+  ],
   "type": "Pantalons",
-  "has_vision": false
+  "has_vision": true,
+  "material": "soie",
+  "length": "long",
+  "cut": "fluide",
+  "neckline": "",
+  "details": [
+   "cordon de serrage",
+   "taille élastiquée",
+   "jambe large"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "dissh:15290254885232",
@@ -4085,9 +4722,19 @@
    "x-styleCode:H26-30974"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "noir"
+  ],
   "type": "Jupes",
-  "has_vision": false
+  "has_vision": true,
+  "material": "",
+  "length": "maxi",
+  "cut": "droite",
+  "neckline": "",
+  "details": [
+   "couture centrale"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "kookai:7129848709192",
@@ -4241,9 +4888,21 @@
    "Two Piece Sets"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "noir"
+  ],
   "type": "Jupes",
-  "has_vision": false
+  "has_vision": true,
+  "material": "paillettes",
+  "length": "midi",
+  "cut": "droite",
+  "neckline": "",
+  "details": [
+   "fente",
+   "effet transparent",
+   "perles"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "sir:8702400331968",
@@ -4316,9 +4975,21 @@
    "Wedding Guest"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "noir"
+  ],
   "type": "Robes",
-  "has_vision": false
+  "has_vision": true,
+  "material": "soie",
+  "length": "maxi",
+  "cut": "fluide",
+  "neckline": "col rond",
+  "details": [
+   "découpes taille",
+   "manches longues",
+   "drapé"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "sir:8702399905984",
@@ -4350,9 +5021,21 @@
    "Swim One Piece"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "noir"
+  ],
   "type": "Autres",
-  "has_vision": false
+  "has_vision": true,
+  "material": "",
+  "length": "",
+  "cut": "ajustée",
+  "neckline": "décolleté plongeant",
+  "details": [
+   "bretelles larges",
+   "taille structurée",
+   "coupe échancrée"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "sir:8702399873216",
@@ -4386,9 +5069,20 @@
    "yellow"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "marron",
+   "jaune"
+  ],
   "type": "Jupes",
-  "has_vision": false
+  "has_vision": true,
+  "material": "soie",
+  "length": "midi",
+  "cut": "fluide",
+  "neckline": "",
+  "details": [
+   "rayures diagonales"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "sir:8702399840448",
@@ -4462,9 +5156,22 @@
    "Two Piece Sets"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "noir",
+   "blanc"
+  ],
   "type": "Hauts",
-  "has_vision": false
+  "has_vision": true,
+  "material": "coton",
+  "length": "",
+  "cut": "oversize",
+  "neckline": "col chemise",
+  "details": [
+   "rayures fines",
+   "poche poitrine",
+   "manchettes"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "sir:8702399709376",
@@ -4608,9 +5315,22 @@
    "SIR426-7038"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "orange",
+   "marron"
+  ],
   "type": "Manteaux",
-  "has_vision": false
+  "has_vision": true,
+  "material": "maille",
+  "length": "cropped",
+  "cut": "droite",
+  "neckline": "col V",
+  "details": [
+   "effet poil long",
+   "manches longues",
+   "coupe courte"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "sir:8702399512768",
@@ -4680,9 +5400,19 @@
    "Two Piece Sets"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "marron"
+  ],
   "type": "Pantalons",
-  "has_vision": false
+  "has_vision": true,
+  "material": "soie",
+  "length": "long",
+  "cut": "fluide",
+  "neckline": "",
+  "details": [
+   "jambes larges"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "sir:8702399447232",
@@ -4751,9 +5481,22 @@
    "Two Piece Sets"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "noir",
+   "ivoire"
+  ],
   "type": "Hauts",
-  "has_vision": false
+  "has_vision": true,
+  "material": "soie",
+  "length": "",
+  "cut": "fluide",
+  "neckline": "col V",
+  "details": [
+   "rayures obliques",
+   "manches longues",
+   "transparence"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "sir:8702399348928",
@@ -4787,9 +5530,21 @@
    "Wedding Guest"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "bleu"
+  ],
   "type": "Robes",
-  "has_vision": false
+  "has_vision": true,
+  "material": "",
+  "length": "maxi",
+  "cut": "ajustée",
+  "neckline": "décolleté plongeant",
+  "details": [
+   "col halter",
+   "drapé latéral",
+   "fente"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "sir:8702399316160",
@@ -4869,9 +5624,22 @@
    "Tops"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "beige",
+   "gris"
+  ],
   "type": "Hauts",
-  "has_vision": false
+  "has_vision": true,
+  "material": "dentelle",
+  "length": "",
+  "cut": "ajustée",
+  "neckline": "col rond",
+  "details": [
+   "transparence",
+   "liseré contrasté",
+   "ourlet festonné"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "sir:8702399217856",
@@ -5034,9 +5802,20 @@
    "stitch:daisy-snood-black"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "ivoire"
+  ],
   "type": "Accessoires",
-  "has_vision": false
+  "has_vision": true,
+  "material": "laine",
+  "length": "",
+  "cut": "",
+  "neckline": "",
+  "details": [
+   "texture bouclée",
+   "effet volumineux"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "sir:8702399054016",
@@ -5144,9 +5923,22 @@
    "Wedding Guest"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "ivoire",
+   "orange"
+  ],
   "type": "Robes",
-  "has_vision": false
+  "has_vision": true,
+  "material": "soie",
+  "length": "maxi",
+  "cut": "fluide",
+  "neckline": "col V",
+  "details": [
+   "manches longues",
+   "ourlet asymétrique",
+   "imprimé floral"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "sir:8702398955712",
@@ -5179,9 +5971,21 @@
    "Two Piece Sets"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "ivoire"
+  ],
   "type": "Manteaux",
-  "has_vision": false
+  "has_vision": true,
+  "material": "",
+  "length": "cropped",
+  "cut": "oversize",
+  "neckline": "col haut",
+  "details": [
+   "poches plaquées",
+   "fermeture zippée",
+   "manches bouffantes"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "sir:8702398922944",
@@ -5297,9 +6101,22 @@
    "stitch:the-microcat-black"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "bordeaux",
+   "marron"
+  ],
   "type": "Accessoires",
-  "has_vision": false
+  "has_vision": true,
+  "material": "synthétique",
+  "length": "",
+  "cut": "",
+  "neckline": "",
+  "details": [
+   "monture ovale",
+   "verres teintés",
+   "monture épaisse"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "dissh:15281604821360",
@@ -5358,9 +6175,21 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "bleu"
+  ],
   "type": "Hauts",
-  "has_vision": false
+  "has_vision": true,
+  "material": "maille",
+  "length": "",
+  "cut": "oversize",
+  "neckline": "col rond",
+  "details": [
+   "bords côtes",
+   "épaules tombantes",
+   "manches longues"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "dissh:15273485336944",
@@ -5412,9 +6241,21 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "noir"
+  ],
   "type": "Hauts",
-  "has_vision": false
+  "has_vision": true,
+  "material": "maille",
+  "length": "",
+  "cut": "ajustée",
+  "neckline": "col haut",
+  "details": [
+   "manches courtes",
+   "effet côtelé",
+   "épaules tombantes"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "dissh:15273482912112",
@@ -5576,9 +6417,22 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "noir",
+   "blanc"
+  ],
   "type": "Robes",
-  "has_vision": false
+  "has_vision": true,
+  "material": "satin",
+  "length": "midi",
+  "cut": "fluide",
+  "neckline": "bretelles fines",
+  "details": [
+   "bordure en dentelle",
+   "coupe en biais",
+   "décolleté en v"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "dissh:15273486188912",
@@ -5628,9 +6482,21 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "noir",
+   "blanc"
+  ],
   "type": "Jupes",
-  "has_vision": false
+  "has_vision": true,
+  "material": "satin",
+  "length": "midi",
+  "cut": "fluide",
+  "neckline": "",
+  "details": [
+   "bordure dentelle",
+   "coupe combinaison"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "kookai:7129848119368",
@@ -5897,9 +6763,21 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "beige"
+  ],
   "type": "Manteaux",
-  "has_vision": false
+  "has_vision": true,
+  "material": "coton",
+  "length": "midi",
+  "cut": "oversize",
+  "neckline": "col haut",
+  "details": [
+   "boutons pression",
+   "poches plaquées",
+   "manches amples"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "dissh:15262646894960",
@@ -5953,9 +6831,21 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "noir"
+  ],
   "type": "Pantalons",
-  "has_vision": false
+  "has_vision": true,
+  "material": "satin",
+  "length": "long",
+  "cut": "fluide",
+  "neckline": "",
+  "details": [
+   "coupe ballon",
+   "taille froncée",
+   "bas resserré"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "dissh:15273290236272",
@@ -6100,9 +6990,21 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "kaki"
+  ],
   "type": "Hauts",
-  "has_vision": false
+  "has_vision": true,
+  "material": "soie",
+  "length": "",
+  "cut": "fluide",
+  "neckline": "col V",
+  "details": [
+   "bretelles fines",
+   "coupe slip",
+   "finition satinée"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "bec-bridge:7389423665207",
@@ -6135,9 +7037,21 @@
    "x-styleCode:S26-13553"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "ivoire"
+  ],
   "type": "Robes",
-  "has_vision": false
+  "has_vision": true,
+  "material": "satin",
+  "length": "maxi",
+  "cut": "fluide",
+  "neckline": "bretelles fines",
+  "details": [
+   "col cowl drapé",
+   "fronces latérales",
+   "fines bretelles"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "dissh:15253707063664",
@@ -6191,9 +7105,21 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "noir"
+  ],
   "type": "Hauts",
-  "has_vision": false
+  "has_vision": true,
+  "material": "satin",
+  "length": "",
+  "cut": "fluide",
+  "neckline": "col haut",
+  "details": [
+   "nœud latéral",
+   "drapé",
+   "sans manches"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "kookai:7111698055240",
@@ -6277,9 +7203,22 @@
    "WK13-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "marron",
+   "noir"
+  ],
   "type": "Pantalons",
-  "has_vision": false
+  "has_vision": true,
+  "material": "synthétique",
+  "length": "mini",
+  "cut": "droite",
+  "neckline": "",
+  "details": [
+   "taille élastiquée",
+   "passepoil crème",
+   "doublure contrastée"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "kookai:7125380989000",
@@ -6378,9 +7317,20 @@
    "WK15-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "rouge"
+  ],
   "type": "Jupes",
-  "has_vision": false
+  "has_vision": true,
+  "material": "satin",
+  "length": "midi",
+  "cut": "fluide",
+  "neckline": "",
+  "details": [
+   "coupe en biais",
+   "ourlet droit"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "kookai:7111697596488",
