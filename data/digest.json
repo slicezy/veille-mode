@@ -1,11 +1,11 @@
 {
- "title": "Noir et ivoire : robes drapées et maille fluide",
- "summary": "Hauts (29 %) et robes (27 %) dominent les nouveautés, dans une palette où le noir (25 %) et l'ivoire (15 %) devancent nettement le marron (12 %). Maille et satin (13 % chacun) sont les matières les plus relevées, avec le drapé comme détail principal (11 %) et le maxi comme longueur la plus fréquente (17 %). Dans l'échantillon, le drapé se retrouve surtout chez Bec + Bridge, tandis que Kookaï propose beaucoup de jupes mini et midi et de hauts cropped.",
+ "title": "Noir, maille et coupes fluides dominent les nouveautés",
+ "summary": "Sur les nouveautés de 11 marques, les hauts (41 %) et les robes (24 %) concentrent l'offre. Le noir mène la palette (25 %), suivi de l'ivoire (13 %) et du marron (11 %), et la maille est la matière la plus citée (11 %), avec noir, maille, marron, cropped et col haut repérés chez 7 marques. Les coupes ajustée, fluide et droite coexistent aussi chez 7 marques, et l'échantillon montre, chez BENNI, beaucoup de robes maxi et mini drapées, tandis que Henne mise sur des hauts en maille fine à manches longues.",
  "tags": [
-  "noir et ivoire",
-  "drapé",
-  "maille et satin",
-  "maxi"
+  "maille",
+  "noir et marron",
+  "coupes fluides",
+  "robes drapées"
  ],
  "palette": [
   {
@@ -16,24 +16,24 @@
   {
    "name": "Ivoire",
    "hex": "#EFE8D8",
-   "share": 15
+   "share": 13
   },
   {
    "name": "Marron",
    "hex": "#6B4A36",
-   "share": 12
+   "share": 11
   },
   {
    "name": "Blanc",
    "hex": "#F7F6F2",
-   "share": 9
+   "share": 10
   },
   {
    "name": "Bleu",
    "hex": "#4A6FA5",
-   "share": 7
+   "share": 9
   }
  ],
  "week_label": "Semaine du 26 octobre",
- "generated_at": "2026-10-31T11:55:06+00:00"
+ "generated_at": "2026-10-31T13:30:00+00:00"
 }

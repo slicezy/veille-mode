@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-31T11:47:11+00:00",
+ "generated_at": "2026-10-31T13:20:12+00:00",
  "brands": {
   "reformation": {
    "ok": true,
@@ -45,6 +45,57 @@
     "Désactivée : le site (AU et US) bloque les accès automatiques avec Cloudflare (403). À suivre autrement, par exemple par infolettre."
    ],
    "new": 0
+  },
+  "venroy": {
+   "ok": true,
+   "strategy": "sitemap",
+   "count": 40,
+   "errors": [
+    "shopify: aucun produit",
+    "jsonld: 404 Client Error: Not Found for url: https://venroy.com.au/collections/new-arrivals"
+   ],
+   "new": 40
+  },
+  "henne": {
+   "ok": true,
+   "strategy": "sitemap",
+   "count": 40,
+   "errors": [
+    "shopify: aucun produit",
+    "jsonld: 404 Client Error: Not Found for url: https://www.henne.com.au/collections/new-arrivals"
+   ],
+   "new": 40
+  },
+  "elka-collective": {
+   "ok": true,
+   "strategy": "shopify",
+   "count": 40,
+   "errors": [],
+   "new": 40
+  },
+  "vrg-grl": {
+   "ok": true,
+   "strategy": "shopify",
+   "count": 40,
+   "errors": [],
+   "new": 40
+  },
+  "bayse": {
+   "ok": true,
+   "strategy": "shopify",
+   "count": 40,
+   "errors": [],
+   "new": 40
+  },
+  "benni": {
+   "ok": true,
+   "strategy": "sitemap",
+   "count": 40,
+   "errors": [
+    "shopify: aucun produit",
+    "jsonld: 404 Client Error: Not Found for url: https://benni.com.au/collections/new-arrivals"
+   ],
+   "new": 40
   }
  }
 }

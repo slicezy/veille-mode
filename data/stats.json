@@ -1,292 +1,286 @@
 {
- "generated_at": "2026-10-31T11:55:06+00:00",
- "window_days": 7,
- "total": 176,
- "with_photo_analysis": 144,
+ "generated_at": "2026-10-31T13:30:00+00:00",
+ "window_days": null,
+ "total": 399,
+ "with_photo_analysis": 185,
  "types": [
   {
    "name": "Hauts",
-   "count": 51,
-   "share": 29,
-   "brands": 5
+   "count": 163,
+   "share": 41,
+   "brands": 11
   },
   {
    "name": "Robes",
-   "count": 48,
-   "share": 27,
-   "brands": 5
-  },
-  {
-   "name": "Jupes",
-   "count": 31,
-   "share": 18,
-   "brands": 5
+   "count": 95,
+   "share": 24,
+   "brands": 10
   },
   {
    "name": "Pantalons",
-   "count": 19,
-   "share": 11,
-   "brands": 4
+   "count": 63,
+   "share": 16,
+   "brands": 10
+  },
+  {
+   "name": "Jupes",
+   "count": 46,
+   "share": 12,
+   "brands": 10
   },
   {
    "name": "Manteaux",
-   "count": 14,
-   "share": 8,
-   "brands": 4
-  },
-  {
-   "name": "Accessoires",
-   "count": 9,
+   "count": 21,
    "share": 5,
-   "brands": 2
+   "brands": 7
   },
   {
    "name": "Autres",
-   "count": 4,
-   "share": 2,
-   "brands": 2
+   "count": 11,
+   "share": 3,
+   "brands": 5
   }
  ],
  "colors": [
   {
    "name": "noir",
-   "count": 40,
-   "share": 23
+   "count": 51,
+   "share": 13
   },
   {
    "name": "ivoire",
-   "count": 25,
-   "share": 14
-  },
-  {
-   "name": "marron",
-   "count": 22,
-   "share": 12
-  },
-  {
-   "name": "blanc",
-   "count": 15,
-   "share": 9
-  },
-  {
-   "name": "bleu",
-   "count": 12,
+   "count": 27,
    "share": 7
   },
   {
-   "name": "argent",
-   "count": 10,
+   "name": "marron",
+   "count": 25,
    "share": 6
   },
   {
-   "name": "beige",
-   "count": 9,
+   "name": "blanc",
+   "count": 21,
    "share": 5
   },
   {
-   "name": "gris",
-   "count": 7,
+   "name": "bleu",
+   "count": 18,
+   "share": 5
+  },
+  {
+   "name": "beige",
+   "count": 15,
    "share": 4
+  },
+  {
+   "name": "gris",
+   "count": 12,
+   "share": 3
+  },
+  {
+   "name": "jaune",
+   "count": 10,
+   "share": 3
   }
  ],
  "materials": [
   {
    "name": "maille",
-   "count": 23,
-   "share": 13
+   "count": 42,
+   "share": 11
+  },
+  {
+   "name": "jersey",
+   "count": 29,
+   "share": 7
   },
   {
    "name": "satin",
    "count": 23,
-   "share": 13
-  },
-  {
-   "name": "jersey",
-   "count": 22,
-   "share": 12
+   "share": 6
   },
   {
    "name": "soie",
-   "count": 14,
-   "share": 8
-  },
-  {
-   "name": "synthétique",
-   "count": 9,
-   "share": 5
+   "count": 16,
+   "share": 4
   },
   {
    "name": "coton",
    "count": 9,
-   "share": 5
-  },
-  {
-   "name": "cuir",
-   "count": 4,
    "share": 2
   },
   {
-   "name": "lin",
-   "count": 4,
+   "name": "denim",
+   "count": 6,
    "share": 2
+  },
+  {
+   "name": "synthétique",
+   "count": 6,
+   "share": 2
+  },
+  {
+   "name": "laine",
+   "count": 5,
+   "share": 1
   }
  ],
  "lengths": [
   {
    "name": "maxi",
-   "count": 30,
-   "share": 17
-  },
-  {
-   "name": "midi",
-   "count": 22,
-   "share": 12
-  },
-  {
-   "name": "cropped",
-   "count": 20,
+   "count": 42,
    "share": 11
   },
   {
    "name": "mini",
-   "count": 16,
-   "share": 9
-  },
-  {
-   "name": "long",
-   "count": 13,
+   "count": 28,
    "share": 7
   },
   {
+   "name": "cropped",
+   "count": 27,
+   "share": 7
+  },
+  {
+   "name": "long",
+   "count": 26,
+   "share": 7
+  },
+  {
+   "name": "midi",
+   "count": 24,
+   "share": 6
+  },
+  {
    "name": "court",
-   "count": 9,
-   "share": 5
+   "count": 12,
+   "share": 3
   }
  ],
  "cuts": [
   {
-   "name": "fluide",
-   "count": 49,
-   "share": 28
+   "name": "ajustée",
+   "count": 65,
+   "share": 16
   },
   {
-   "name": "ajustée",
-   "count": 40,
-   "share": 23
+   "name": "fluide",
+   "count": 53,
+   "share": 13
   },
   {
    "name": "droite",
-   "count": 21,
-   "share": 12
-  },
-  {
-   "name": "oversize",
-   "count": 14,
+   "count": 32,
    "share": 8
   },
   {
-   "name": "cintrée",
-   "count": 6,
-   "share": 3
+   "name": "oversize",
+   "count": 18,
+   "share": 5
   },
   {
    "name": "évasée",
-   "count": 5,
-   "share": 3
+   "count": 8,
+   "share": 2
+  },
+  {
+   "name": "cintrée",
+   "count": 7,
+   "share": 2
   }
  ],
  "necklines": [
   {
    "name": "col rond",
-   "count": 20,
-   "share": 11
+   "count": 29,
+   "share": 7
   },
   {
    "name": "décolleté plongeant",
-   "count": 18,
-   "share": 10
+   "count": 22,
+   "share": 6
   },
   {
    "name": "col haut",
-   "count": 17,
-   "share": 10
+   "count": 21,
+   "share": 5
   },
   {
    "name": "col V",
-   "count": 15,
-   "share": 9
-  },
-  {
-   "name": "col chemise",
-   "count": 5,
-   "share": 3
+   "count": 16,
+   "share": 4
   },
   {
    "name": "asymétrique",
-   "count": 5,
+   "count": 10,
    "share": 3
   },
   {
    "name": "carré",
-   "count": 5,
-   "share": 3
+   "count": 8,
+   "share": 2
   },
   {
-   "name": "bretelles fines",
-   "count": 5,
-   "share": 3
+   "name": "col chemise",
+   "count": 7,
+   "share": 2
+  },
+  {
+   "name": "bustier",
+   "count": 6,
+   "share": 2
   }
  ],
  "details": [
   {
    "name": "drapé",
-   "count": 19,
-   "share": 11
-  },
-  {
-   "name": "sans manches",
-   "count": 14,
-   "share": 8
-  },
-  {
-   "name": "taille basse",
-   "count": 12,
+   "count": 27,
    "share": 7
   },
   {
    "name": "manches longues",
-   "count": 11,
-   "share": 6
-  },
-  {
-   "name": "manches courtes",
-   "count": 10,
-   "share": 6
-  },
-  {
-   "name": "transparence",
-   "count": 8,
+   "count": 19,
    "share": 5
   },
   {
-   "name": "bretelles fines",
-   "count": 6,
+   "name": "taille basse",
+   "count": 17,
+   "share": 4
+  },
+  {
+   "name": "sans manches",
+   "count": 16,
+   "share": 4
+  },
+  {
+   "name": "transparence",
+   "count": 13,
+   "share": 3
+  },
+  {
+   "name": "manches courtes",
+   "count": 13,
    "share": 3
   },
   {
    "name": "nœud latéral",
-   "count": 6,
-   "share": 3
+   "count": 9,
+   "share": 2
   },
   {
-   "name": "fronces latérales",
-   "count": 6,
-   "share": 3
+   "name": "côtes",
+   "count": 8,
+   "share": 2
   },
   {
-   "name": "imprimé floral",
-   "count": 6,
-   "share": 3
+   "name": "taille haute",
+   "count": 8,
+   "share": 2
+  },
+  {
+   "name": "fronces",
+   "count": 7,
+   "share": 2
   }
  ],
  "palette": [
@@ -298,22 +292,342 @@
   {
    "name": "Ivoire",
    "hex": "#EFE8D8",
-   "share": 15
+   "share": 13
   },
   {
    "name": "Marron",
    "hex": "#6B4A36",
-   "share": 12
+   "share": 11
   },
   {
    "name": "Blanc",
    "hex": "#F7F6F2",
-   "share": 9
+   "share": 10
   },
   {
    "name": "Bleu",
    "hex": "#4A6FA5",
+   "share": 9
+  }
+ ],
+ "trends": [
+  {
+   "kind": "coupe",
+   "value": "ajustée",
+   "brands": 7,
+   "brand_names": [
+    "BENNI",
+    "Bec + Bridge",
+    "Dissh",
+    "Henne",
+    "Kookaï",
+    "Reformation",
+    "Sir."
+   ],
+   "count": 65,
+   "share": 30
+  },
+  {
+   "kind": "coupe",
+   "value": "fluide",
+   "brands": 7,
+   "brand_names": [
+    "BENNI",
+    "Bec + Bridge",
+    "Dissh",
+    "Henne",
+    "Kookaï",
+    "Reformation",
+    "Sir."
+   ],
+   "count": 53,
+   "share": 25
+  },
+  {
+   "kind": "couleur",
+   "value": "noir",
+   "brands": 7,
+   "brand_names": [
+    "BENNI",
+    "Bec + Bridge",
+    "Dissh",
+    "Henne",
+    "Kookaï",
+    "Reformation",
+    "Sir."
+   ],
+   "count": 51,
+   "share": 24
+  },
+  {
+   "kind": "matière",
+   "value": "maille",
+   "brands": 7,
+   "brand_names": [
+    "BENNI",
+    "Bec + Bridge",
+    "Dissh",
+    "Henne",
+    "Kookaï",
+    "Reformation",
+    "Sir."
+   ],
+   "count": 42,
+   "share": 20
+  },
+  {
+   "kind": "coupe",
+   "value": "droite",
+   "brands": 7,
+   "brand_names": [
+    "BENNI",
+    "Bec + Bridge",
+    "Dissh",
+    "Henne",
+    "Kookaï",
+    "Reformation",
+    "Sir."
+   ],
+   "count": 32,
+   "share": 15
+  },
+  {
+   "kind": "longueur",
+   "value": "cropped",
+   "brands": 7,
+   "brand_names": [
+    "BENNI",
+    "Bec + Bridge",
+    "Dissh",
+    "Henne",
+    "Kookaï",
+    "Reformation",
+    "Sir."
+   ],
+   "count": 27,
+   "share": 13
+  },
+  {
+   "kind": "couleur",
+   "value": "marron",
+   "brands": 7,
+   "brand_names": [
+    "BENNI",
+    "Bec + Bridge",
+    "Dissh",
+    "Henne",
+    "Kookaï",
+    "Reformation",
+    "Sir."
+   ],
+   "count": 25,
+   "share": 12
+  },
+  {
+   "kind": "encolure",
+   "value": "col haut",
+   "brands": 7,
+   "brand_names": [
+    "BENNI",
+    "Bec + Bridge",
+    "Dissh",
+    "Henne",
+    "Kookaï",
+    "Reformation",
+    "Sir."
+   ],
+   "count": 21,
+   "share": 10
+  },
+  {
+   "kind": "couleur",
+   "value": "bleu",
+   "brands": 7,
+   "brand_names": [
+    "BENNI",
+    "Bec + Bridge",
+    "Dissh",
+    "Henne",
+    "Kookaï",
+    "Reformation",
+    "Sir."
+   ],
+   "count": 18,
+   "share": 8
+  },
+  {
+   "kind": "détail",
+   "value": "taille basse",
+   "brands": 7,
+   "brand_names": [
+    "BENNI",
+    "Bec + Bridge",
+    "Dissh",
+    "Henne",
+    "Kookaï",
+    "Reformation",
+    "Sir."
+   ],
+   "count": 17,
+   "share": 8
+  },
+  {
+   "kind": "détail",
+   "value": "sans manches",
+   "brands": 7,
+   "brand_names": [
+    "BENNI",
+    "Bec + Bridge",
+    "Dissh",
+    "Henne",
+    "Kookaï",
+    "Reformation",
+    "Sir."
+   ],
+   "count": 16,
    "share": 7
+  },
+  {
+   "kind": "couleur",
+   "value": "beige",
+   "brands": 7,
+   "brand_names": [
+    "BENNI",
+    "Dissh",
+    "Henne",
+    "Kookaï",
+    "Reformation",
+    "Sir.",
+    "Venroy"
+   ],
+   "count": 15,
+   "share": 7
+  },
+  {
+   "kind": "encolure",
+   "value": "col rond",
+   "brands": 6,
+   "brand_names": [
+    "Bec + Bridge",
+    "Dissh",
+    "Henne",
+    "Kookaï",
+    "Reformation",
+    "Sir."
+   ],
+   "count": 29,
+   "share": 14
+  },
+  {
+   "kind": "longueur",
+   "value": "mini",
+   "brands": 6,
+   "brand_names": [
+    "BENNI",
+    "Bec + Bridge",
+    "Dissh",
+    "Kookaï",
+    "Reformation",
+    "Sir."
+   ],
+   "count": 28,
+   "share": 13
+  },
+  {
+   "kind": "détail",
+   "value": "drapé",
+   "brands": 6,
+   "brand_names": [
+    "BENNI",
+    "Bec + Bridge",
+    "Dissh",
+    "Kookaï",
+    "Reformation",
+    "Sir."
+   ],
+   "count": 27,
+   "share": 13
+  }
+ ],
+ "brands": [
+  {
+   "name": "Bec + Bridge",
+   "count": 40,
+   "currency": "AUD",
+   "median_price": 360.0,
+   "min_price": 180.0,
+   "max_price": 750.0
+  },
+  {
+   "name": "Dissh",
+   "count": 40,
+   "currency": "AUD",
+   "median_price": 193.0,
+   "min_price": 102.0,
+   "max_price": 396.0
+  },
+  {
+   "name": "Elka Collective",
+   "count": 40,
+   "currency": "AUD",
+   "median_price": 229.0,
+   "min_price": 149.0,
+   "max_price": 349.0
+  },
+  {
+   "name": "Kookaï",
+   "count": 40,
+   "currency": "AUD",
+   "median_price": 150.0,
+   "min_price": 70.0,
+   "max_price": 220.0
+  },
+  {
+   "name": "Venroy",
+   "count": 40,
+   "currency": "AUD"
+  },
+  {
+   "name": "BENNI",
+   "count": 39,
+   "currency": "AUD"
+  },
+  {
+   "name": "VRG GRL",
+   "count": 39,
+   "currency": "AUD",
+   "median_price": 109.0,
+   "min_price": 39.0,
+   "max_price": 219.0
+  },
+  {
+   "name": "Bayse",
+   "count": 38,
+   "currency": "AUD",
+   "median_price": 77.5,
+   "min_price": 55.0,
+   "max_price": 173.0
+  },
+  {
+   "name": "Henne",
+   "count": 37,
+   "currency": "AUD"
+  },
+  {
+   "name": "Sir.",
+   "count": 34,
+   "currency": "AUD",
+   "median_price": 375.0,
+   "min_price": 90.0,
+   "max_price": 890.0
+  },
+  {
+   "name": "Reformation",
+   "count": 12,
+   "currency": "CAD",
+   "median_price": 273.0,
+   "min_price": 78.0,
+   "max_price": 1248.0
   }
  ],
  "color_hex": {
