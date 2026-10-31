@@ -1,39 +1,39 @@
 {
- "title": "Noir, maille et satin sur silhouettes midi-maxi",
- "summary": "Les robes (29 %) et les hauts (24 %) dominent les nouveautés, devant les accessoires et les jupes (18 % chacun). Le noir mène la palette (24 %), suivi du beige et de l'ivoire (12 % chacun), et la maille et le satin pèsent 18 % chacun côté matières. Les longueurs midi et maxi (12 % chacune) et les franges (12 %) ressortent ; l'échantillon vient presque entièrement de Reformation, avec une seule pièce Dissh, une jupe midi en dentelle ivoire.",
+ "title": "Noir et ivoire : robes drapées et maille fluide",
+ "summary": "Hauts (29 %) et robes (27 %) dominent les nouveautés, dans une palette où le noir (25 %) et l'ivoire (15 %) devancent nettement le marron (12 %). Maille et satin (13 % chacun) sont les matières les plus relevées, avec le drapé comme détail principal (11 %) et le maxi comme longueur la plus fréquente (17 %). Dans l'échantillon, le drapé se retrouve surtout chez Bec + Bridge, tandis que Kookaï propose beaucoup de jupes mini et midi et de hauts cropped.",
  "tags": [
-  "robes",
-  "noir",
+  "noir et ivoire",
+  "drapé",
   "maille et satin",
-  "midi-maxi"
+  "maxi"
  ],
  "palette": [
   {
    "name": "Noir",
    "hex": "#1F1E1C",
-   "share": 32
-  },
-  {
-   "name": "Beige",
-   "hex": "#D8C8AE",
-   "share": 18
+   "share": 25
   },
   {
    "name": "Ivoire",
    "hex": "#EFE8D8",
-   "share": 18
+   "share": 15
   },
   {
-   "name": "Bordeaux",
-   "hex": "#6D1F2E",
+   "name": "Marron",
+   "hex": "#6B4A36",
+   "share": 12
+  },
+  {
+   "name": "Blanc",
+   "hex": "#F7F6F2",
    "share": 9
   },
   {
-   "name": "Jaune",
-   "hex": "#E3C65A",
-   "share": 9
+   "name": "Bleu",
+   "hex": "#4A6FA5",
+   "share": 7
   }
  ],
  "week_label": "Semaine du 26 octobre",
- "generated_at": "2026-10-31T04:06:09+00:00"
+ "generated_at": "2026-10-31T11:55:06+00:00"
 }

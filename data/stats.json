@@ -1,263 +1,319 @@
 {
- "generated_at": "2026-10-31T04:06:09+00:00",
+ "generated_at": "2026-10-31T11:55:06+00:00",
  "window_days": 7,
- "total": 17,
- "with_photo_analysis": 11,
+ "total": 176,
+ "with_photo_analysis": 144,
  "types": [
   {
-   "name": "Robes",
-   "count": 5,
-   "share": 29,
-   "brands": 1
-  },
-  {
    "name": "Hauts",
-   "count": 4,
-   "share": 24,
-   "brands": 1
+   "count": 51,
+   "share": 29,
+   "brands": 5
   },
   {
-   "name": "Accessoires",
-   "count": 3,
-   "share": 18,
-   "brands": 1
+   "name": "Robes",
+   "count": 48,
+   "share": 27,
+   "brands": 5
   },
   {
    "name": "Jupes",
-   "count": 3,
+   "count": 31,
    "share": 18,
-   "brands": 2
+   "brands": 5
+  },
+  {
+   "name": "Pantalons",
+   "count": 19,
+   "share": 11,
+   "brands": 4
   },
   {
    "name": "Manteaux",
-   "count": 1,
-   "share": 6,
-   "brands": 1
+   "count": 14,
+   "share": 8,
+   "brands": 4
+  },
+  {
+   "name": "Accessoires",
+   "count": 9,
+   "share": 5,
+   "brands": 2
   },
   {
    "name": "Autres",
-   "count": 1,
-   "share": 6,
-   "brands": 1
+   "count": 4,
+   "share": 2,
+   "brands": 2
   }
  ],
  "colors": [
   {
    "name": "noir",
-   "count": 4,
-   "share": 24
-  },
-  {
-   "name": "beige",
-   "count": 2,
-   "share": 12
+   "count": 40,
+   "share": 23
   },
   {
    "name": "ivoire",
-   "count": 2,
-   "share": 12
-  },
-  {
-   "name": "bordeaux",
-   "count": 1,
-   "share": 6
+   "count": 25,
+   "share": 14
   },
   {
    "name": "marron",
-   "count": 1,
-   "share": 6
+   "count": 22,
+   "share": 12
   },
   {
-   "name": "jaune",
-   "count": 1,
-   "share": 6
+   "name": "blanc",
+   "count": 15,
+   "share": 9
   },
   {
    "name": "bleu",
-   "count": 1,
+   "count": 12,
+   "share": 7
+  },
+  {
+   "name": "argent",
+   "count": 10,
    "share": 6
+  },
+  {
+   "name": "beige",
+   "count": 9,
+   "share": 5
+  },
+  {
+   "name": "gris",
+   "count": 7,
+   "share": 4
   }
  ],
  "materials": [
   {
    "name": "maille",
-   "count": 3,
-   "share": 18
+   "count": 23,
+   "share": 13
   },
   {
    "name": "satin",
-   "count": 3,
-   "share": 18
+   "count": 23,
+   "share": 13
   },
   {
-   "name": "paillettes",
-   "count": 1,
-   "share": 6
+   "name": "jersey",
+   "count": 22,
+   "share": 12
   },
   {
-   "name": "laine",
-   "count": 1,
-   "share": 6
+   "name": "soie",
+   "count": 14,
+   "share": 8
+  },
+  {
+   "name": "synthétique",
+   "count": 9,
+   "share": 5
+  },
+  {
+   "name": "coton",
+   "count": 9,
+   "share": 5
   },
   {
    "name": "cuir",
-   "count": 1,
-   "share": 6
+   "count": 4,
+   "share": 2
   },
   {
-   "name": "velours",
-   "count": 1,
-   "share": 6
-  },
-  {
-   "name": "dentelle",
-   "count": 1,
-   "share": 6
+   "name": "lin",
+   "count": 4,
+   "share": 2
   }
  ],
  "lengths": [
   {
-   "name": "midi",
-   "count": 2,
-   "share": 12
-  },
-  {
    "name": "maxi",
-   "count": 2,
-   "share": 12
+   "count": 30,
+   "share": 17
   },
   {
-   "name": "court",
-   "count": 1,
-   "share": 6
+   "name": "midi",
+   "count": 22,
+   "share": 12
   },
   {
    "name": "cropped",
-   "count": 1,
-   "share": 6
+   "count": 20,
+   "share": 11
   },
   {
    "name": "mini",
-   "count": 1,
-   "share": 6
+   "count": 16,
+   "share": 9
+  },
+  {
+   "name": "long",
+   "count": 13,
+   "share": 7
+  },
+  {
+   "name": "court",
+   "count": 9,
+   "share": 5
   }
  ],
  "cuts": [
   {
-   "name": "ajustée",
-   "count": 6,
-   "share": 35
+   "name": "fluide",
+   "count": 49,
+   "share": 28
   },
   {
-   "name": "fluide",
-   "count": 2,
+   "name": "ajustée",
+   "count": 40,
+   "share": 23
+  },
+  {
+   "name": "droite",
+   "count": 21,
    "share": 12
   },
   {
+   "name": "oversize",
+   "count": 14,
+   "share": 8
+  },
+  {
    "name": "cintrée",
-   "count": 1,
-   "share": 6
+   "count": 6,
+   "share": 3
+  },
+  {
+   "name": "évasée",
+   "count": 5,
+   "share": 3
   }
  ],
  "necklines": [
   {
-   "name": "col haut",
-   "count": 3,
-   "share": 18
+   "name": "col rond",
+   "count": 20,
+   "share": 11
   },
   {
-   "name": "col rond",
-   "count": 3,
-   "share": 18
+   "name": "décolleté plongeant",
+   "count": 18,
+   "share": 10
+  },
+  {
+   "name": "col haut",
+   "count": 17,
+   "share": 10
   },
   {
    "name": "col V",
-   "count": 1,
-   "share": 6
+   "count": 15,
+   "share": 9
   },
   {
-   "name": "bustier",
-   "count": 1,
-   "share": 6
+   "name": "col chemise",
+   "count": 5,
+   "share": 3
+  },
+  {
+   "name": "asymétrique",
+   "count": 5,
+   "share": 3
+  },
+  {
+   "name": "carré",
+   "count": 5,
+   "share": 3
+  },
+  {
+   "name": "bretelles fines",
+   "count": 5,
+   "share": 3
   }
  ],
  "details": [
   {
-   "name": "franges",
-   "count": 2,
-   "share": 12
+   "name": "drapé",
+   "count": 19,
+   "share": 11
   },
   {
-   "name": "maille ajourée",
-   "count": 1,
-   "share": 6
+   "name": "sans manches",
+   "count": 14,
+   "share": 8
   },
   {
-   "name": "sequins",
-   "count": 1,
-   "share": 6
-  },
-  {
-   "name": "dos nu",
-   "count": 1,
-   "share": 6
+   "name": "taille basse",
+   "count": 12,
+   "share": 7
   },
   {
    "name": "manches longues",
-   "count": 1,
-   "share": 6
-  },
-  {
-   "name": "bas évasé",
-   "count": 1,
-   "share": 6
-  },
-  {
-   "name": "silhouette sirène",
-   "count": 1,
-   "share": 6
-  },
-  {
-   "name": "boutons devant",
-   "count": 1,
+   "count": 11,
    "share": 6
   },
   {
    "name": "manches courtes",
-   "count": 1,
+   "count": 10,
    "share": 6
   },
   {
-   "name": "col montant",
-   "count": 1,
-   "share": 6
+   "name": "transparence",
+   "count": 8,
+   "share": 5
+  },
+  {
+   "name": "bretelles fines",
+   "count": 6,
+   "share": 3
+  },
+  {
+   "name": "nœud latéral",
+   "count": 6,
+   "share": 3
+  },
+  {
+   "name": "fronces latérales",
+   "count": 6,
+   "share": 3
+  },
+  {
+   "name": "imprimé floral",
+   "count": 6,
+   "share": 3
   }
  ],
  "palette": [
   {
    "name": "Noir",
    "hex": "#1F1E1C",
-   "share": 32
-  },
-  {
-   "name": "Beige",
-   "hex": "#D8C8AE",
-   "share": 18
+   "share": 25
   },
   {
    "name": "Ivoire",
    "hex": "#EFE8D8",
-   "share": 18
+   "share": 15
   },
   {
-   "name": "Bordeaux",
-   "hex": "#6D1F2E",
+   "name": "Marron",
+   "hex": "#6B4A36",
+   "share": 12
+  },
+  {
+   "name": "Blanc",
+   "hex": "#F7F6F2",
    "share": 9
   },
   {
-   "name": "Jaune",
-   "hex": "#E3C65A",
-   "share": 9
+   "name": "Bleu",
+   "hex": "#4A6FA5",
+   "share": 7
   }
  ],
  "color_hex": {
