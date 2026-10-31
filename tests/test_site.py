@@ -29,6 +29,8 @@ DIGEST = {
         {"name": "Bordeaux", "hex": "#6D1F2E", "share": 8},
     ],
     "week_label": "Semaine du 26 octobre",
+    "week_label_en": "Week of October 26",
+    "en": {"title": "Black, ivory and silver", "summary": "Test summary.", "tags": ["lace", "silk", "silver", "maxi"]},
     "generated_at": "2026-10-30T22:00:00+00:00",
 }
 
@@ -38,6 +40,7 @@ STATS = {
     "window_days": None,
     "total": 12,
     "with_photo_analysis": 12,
+    "labels_en": {"volants": "ruffles"},
     "color_hex": {"noir": "#1F1E1C", "ivoire": "#EFE8D8", "beige": "#D8C8AE"},
     "types": [
         {"name": "Robes", "count": 6, "share": 50, "brands": 3},
@@ -204,7 +207,7 @@ def main():
         check("Accessoires" not in body.replace("Les accessoires ne sont pas comptés", ""), "accessoires comptés dans les chiffres")
         check(page.locator("#types .bar-row").count() == 2, "2 types (sans accessoires) attendus")
         check("départ" in page.inner_text("#evolution").lower() and "en cours" in page.inner_text("#evolution").lower(), "colonnes départ et semaine en cours attendues")
-        check(page.locator("#evolution tbody tr").count() == 7, "6 types + ligne des produits attendus")
+        check(page.locator("#evolution tbody tr").count() == 10, "9 types + ligne des produits attendus")
         check("satin" in page.inner_text("#trends") and "+12 pts" in page.inner_text("#trends"), "tendance et écart attendus")
         check("nouveau" in page.inner_text("#trends"), "tendance nouvelle attendue")
         check("Kookaï, Sir." in page.inner_text("#trends") or "Dissh, Kookaï, Sir." in page.inner_text("#trends"), "marques de la tendance attendues")
@@ -224,6 +227,28 @@ def main():
         check(page.evaluate("window.__pwned") is None, "chiffres : code injecté exécuté")
         check(page.locator(".nav a[aria-current=page]").inner_text() == "Chiffres", "page courante attendue")
         check(not errors, f"erreurs JavaScript (chiffres) : {errors}")
+
+        # Anglais : l'interface, les types, les valeurs et la synthèse changent, et le choix est gardé d'une page à l'autre
+        page.goto(url)
+        page.wait_for_selector(".card")
+        check(page.locator(".lang button").count() == 2, "boutons FR / EN attendus")
+        page.locator(".lang button[data-lang=en]").click()
+        check("new arrivals" in page.inner_text(".nav").lower() and "insights" in page.inner_text(".nav").lower(), "navigation en anglais attendue")
+        check("black, ivory and silver" in page.inner_text("#hero").lower() and "week of october 26" in page.inner_text("#meta").lower(), "synthèse et semaine en anglais attendues")
+        check("lace" in page.inner_text(".tags") and "Skirts" in page.inner_text("#types") and "All" in page.inner_text("#brands"), "filtres en anglais attendus")
+        check("brand" in page.inner_text(".filters").lower() and "ruffles" in page.inner_text(".grid"), "libellés et détails en anglais attendus")
+        check("midi" in page.inner_text(".grid") and "satin" in page.inner_text(".grid"), "attributs attendus")
+        check("black" in page.inner_text("#hero").lower(), "couleurs de la palette en anglais attendues")
+        check(page.locator("html").get_attribute("lang") == "en", "attribut lang de la page")
+        page.goto(url + "chiffres.html")
+        page.wait_for_selector(".trend")
+        body = page.inner_text("body")
+        check("Breakdown by type" in body and "Pace and prices by brand" in body, "chiffres en anglais attendus")
+        check("Dresses" in page.inner_text("#types") and "brands" in page.inner_text("#types"), "types en anglais attendus")
+        check("new" in page.inner_text("#trends").lower() and "Répartition" not in body, "tendances en anglais attendues")
+        page.locator(".lang button[data-lang=fr]").click()
+        check("Répartition par type" in page.inner_text("body"), "retour au français attendu")
+        check(not errors, f"erreurs JavaScript (langue) : {errors}")
         browser.close()
 
     server.shutdown()

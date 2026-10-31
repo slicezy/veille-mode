@@ -11,6 +11,14 @@ on:
         description: "Mot en filigrane à droite du bandeau (facultatif)"
         required: false
         default: ""
+      langue:
+        description: "Langue des sous-titres des diapos"
+        required: true
+        type: choice
+        options:
+          - fr
+          - en
+        default: fr
       jours:
         description: "Produits repérés sur les N derniers jours (0 = tout l'historique)"
         required: true
@@ -40,7 +48,8 @@ jobs:
           TITRE: ${{ inputs.titre }}
           FILIGRANE: ${{ inputs.filigrane }}
           JOURS: ${{ inputs.jours }}
-        run: python collector/board.py --title "$TITRE" --watermark "$FILIGRANE" --days "$JOURS" --out planche.pptx
+          LANGUE: ${{ inputs.langue }}
+        run: python collector/board.py --title "$TITRE" --watermark "$FILIGRANE" --days "$JOURS" --lang "$LANGUE" --out planche.pptx
 
       - name: Publier le fichier
         uses: actions/upload-artifact@v4

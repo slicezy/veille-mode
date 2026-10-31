@@ -24,7 +24,7 @@ Outil de veille pour une designer de mode (manager) : suivre les nouveautés de 
 - Le réseau de l'environnement de développement n'atteint pas les sites des marques : tout ce qui touche aux vrais sites se vérifie via GitHub Actions.
 
 ## Analyse (collector/analyze.py)
-- Par produit (Haiku, avec la photo réduite par Pillow) : type (Robes, Hauts, Pantalons, Jupes, Manteaux, Accessoires, Autres), couleurs (1-2), matière, longueur, coupe, encolure, détails. Vocabulaire fermé : tout ce qui n'en fait pas partie est écarté (`normalize`). Coupe et encolure seulement si la photo a été lue (`has_vision`).
+- Par produit (Haiku, avec la photo réduite par Pillow) : type (Robes, Hauts, Pantalons, Jeans, Shorts, Jupes, Blazers, Manteaux, Accessoires, Autres), couleurs (1-2), matière, longueur (liste propre à chaque type : `LENGTHS_BY_TYPE`), coupe, encolure, forme précise (`SHAPES` par type : crayon, trapèze, barrel, skinny…), taille, style, fermeture, détails (en français et en anglais : `details_en`). Vocabulaire fermé : tout ce qui n'en fait pas partie est écarté (`normalize`). Coupe et encolure seulement si la photo a été lue (`has_vision`).
 - Changer le vocabulaire : incrémenter `ATTRS_VERSION`, les produits sont réanalysés. Au plus `MAX_PER_RUN` (80) produits par exécution, le reste le lendemain. Sans clé ou en cas d'erreur : type déduit de règles simples, repris plus tard.
 - `data/stats.json` : chiffres calculés sans IA (types, couleurs, matières, longueurs, palette avec parts en %). Fenêtre de 7 jours (hors catalogue de départ) si au moins `MIN_WINDOW_ITEMS` (24) produits, sinon tout. La palette vient des couleurs vues sur les photos, pas des noms. La synthèse Sonnet s'appuie sur ces chiffres ; elle ne fixe pas la palette.
 - Réponses coupées ou vides : `ATTR_MAX_TOKENS` = 2000 ; le journal dit « réponse incomplète : arrêt=…, blocs=…, jetons=… » (arrêt=max_tokens : budget trop court).
@@ -49,10 +49,17 @@ Outil de veille pour une designer de mode (manager) : suivre les nouveautés de 
 
 ## Planches (board)
 - `collector/board.py` : une diapo par groupe de produits proches, au format de l'exemple de la designer (bandeau titre + filigrane, sous-titre, 11 photos : 1 grande + 2 x 5, numérotées). Sortie `.pptx` (à importer dans Google Slides). Photos des marques seulement (pas de street style).
-- Attributs ajoutés à l'analyse (`ATTRS_VERSION = 3`) : `shape` (forme selon le type : `SHAPES`), `rise` (taille, pantalons/jupes), `style` (décontracté, habillé, tailleur), `closure` (pull-on, zippé ou boutonné, noué). Seuls les produits analysés en v3 avec photo lue entrent dans une planche.
+- Attributs ajoutés à l'analyse (`ATTRS_VERSION = 4`) : `shape` (forme selon le type : `SHAPES`), `rise` (taille, pantalons/jupes), `style` (décontracté, habillé, tailleur), `closure` (pull-on, zippé ou boutonné, noué). Seuls les produits analysés en v3 avec photo lue entrent dans une planche.
 - Regroupement (`DIMS` par type) : groupes complets de 11 avec toutes les dimensions, puis élargis en retirant la dimension la moins importante ; le reste forme une diapo incomplète (3 produits minimum, indiquée « Groupe incomplet »). Marques alternées dans une diapo. Plus de 11 produits dans un même groupe : diapos (1/2), (2/2).
 - Workflow manuel « Créer une planche » : titre, filigrane, période (jours) ; le fichier est à télécharger dans les artefacts de l'exécution (non enregistré dans le dépôt). Lien vers la fiche produit sur chaque photo, liste dans les notes de la diapo.
 - Tests : `tests/test_board.py` (hors ligne, photos fictives).
+
+## Français / anglais
+- Les données restent en français. `site/labels.json` (une seule source) traduit : `values` (types, couleurs, matières, longueurs, formes, tailles, styles, fibres, genres de tendances) et `ui` (textes de l'interface, clés = texte français avec `{paramètres}`). Le test `test_labels_cover_the_whole_vocabulary` échoue si un mot du vocabulaire n'y est pas : à ajouter dans les deux langues à chaque nouveau mot.
+- `site/i18n.js` : `t()` (interface), `v()` (valeurs ; « Jupes · midi » traduit chaque partie), `d()` (détails libres : `labels_en` de `stats.json`, puis `details_en` de chaque produit). Boutons FR / EN dans l'en-tête, choix gardé dans le navigateur (`veille:lang`).
+- `digest.json` : `en` (titre, synthèse, mots-clés) et `week_label_en`, rédigés par Sonnet dans le même appel que la version française.
+- Planches : `board.py --lang en`, ou l'option « langue » du workflow ; les traductions viennent de `labels.json`.
+- Tendances : longueur et forme sont qualifiées par le type (« Jupes · midi »).
 
 ## Prochaines étapes
 1. Laisser tourner 2 semaines pour avoir un historique, vérifier que les photos s'affichent (certains CDN bloquent le hotlinking) sinon télécharger les images dans le dépôt.

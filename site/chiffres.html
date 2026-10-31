@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr">
+<html lang="fr" data-title="Veille mode · Chiffres">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,9 +10,9 @@
 <body>
 <div class="wrap">
   <header>
-    <div class="logo">Veille</div>
+    <div class="logo" data-i18n="Veille">Veille</div>
     <div class="head-right">
-      <nav class="nav"><a href="index.html">Nouveautés</a><a href="chiffres.html" aria-current="page">Chiffres</a></nav>
+      <nav class="nav"><a href="index.html" data-i18n="Nouveautés">Nouveautés</a><a href="chiffres.html" aria-current="page" data-i18n="Chiffres">Chiffres</a></nav>
       <div class="meta" id="meta"></div>
     </div>
   </header>
@@ -32,10 +32,13 @@
   <footer id="footer"></footer>
 </div>
 
+<script src="i18n.js"></script>
 <script>
 (function () {
+  var t = I18N.t, v = I18N.v;
   // Toutes les données viennent de fichiers produits par la collecte : elles sont écrites avec textContent uniquement.
-  var TYPES = ["Robes", "Hauts", "Pantalons", "Jupes", "Manteaux", "Autres"];
+  var TYPES = ["Robes", "Hauts", "Pantalons", "Jeans", "Shorts", "Jupes", "Blazers", "Manteaux", "Autres"];
+  var PRICE_TYPES = ["Robes", "Hauts", "Pantalons", "Jeans", "Shorts", "Jupes", "Blazers", "Manteaux"];
   var MAX_WEEKS = 8;
 
   function h(tag, props) {
@@ -58,73 +61,73 @@
   function num(x) { return Number(x) || 0; }
   function fmtDate(iso) {
     var d = new Date(iso);
-    return isNaN(d) ? "" : d.toLocaleDateString("fr-CA", { day: "numeric", month: "short" });
+    return isNaN(d) ? "" : d.toLocaleDateString(I18N.locale(), { day: "numeric", month: "short" });
   }
   function money(v, cur) {
     if (typeof v !== "number") return "—";
     try {
-      return new Intl.NumberFormat("fr-CA", { style: "currency", currency: /^[A-Z]{3}$/.test(cur || "") ? cur : "USD", currencyDisplay: "code", maximumFractionDigits: 0 }).format(v);
+      return new Intl.NumberFormat(I18N.locale(), { style: "currency", currency: /^[A-Z]{3}$/.test(cur || "") ? cur : "USD", currencyDisplay: "code", maximumFractionDigits: 0 }).format(v);
     } catch (e) { return String(Math.round(v)); }
   }
   function panel(id, title, hint) {
     var el = document.getElementById(id);
-    el.replaceChildren(h("h2", {}, title), hint ? h("p", { class: "hint" }, hint) : null);
+    el.replaceChildren(h("h2", {}, t(title)), hint ? h("p", { class: "hint" }, t(hint)) : null);
     return el;
   }
-  function empty(el, text) { el.append(h("div", { class: "empty-panel" }, text)); }
+  function empty(el, text) { el.append(h("div", { class: "empty-panel" }, t(text))); }
 
   function renderHead(stats, weekly) {
     var weeksCount = weekly && Array.isArray(weekly.weeks) ? weekly.weeks.length : 0;
     var scope = stats.window_days
-      ? "Les " + stats.window_days + " derniers jours : " + stats.total + " nouveautés repérées (hors catalogue de départ)."
-      : "Pour l'instant, tous les produits suivis (" + stats.total + "), faute d'assez de nouveautés sur 7 jours. La vue passera d'elle-même à la semaine.";
+      ? t("Les {days} derniers jours : {n} nouveautés repérées (hors catalogue de départ).", { days: stats.window_days, n: stats.total })
+      : t("Pour l'instant, tous les produits suivis ({n}), faute d'assez de nouveautés sur 7 jours. La vue passera d'elle-même à la semaine.", { n: stats.total });
     document.getElementById("head").replaceChildren(
-      h("div", { class: "eyebrow" }, "Chiffres"),
-      h("h1", {}, "Ce qui sort, et à quel rythme"),
-      h("p", {}, scope + " " + (stats.with_photo_analysis || 0) + " ont été décrits à partir de leur photo. Les accessoires ne sont pas comptés."),
-      weeksCount ? null : h("p", {}, "Historique en construction : l'évolution d'une semaine à l'autre apparaîtra à partir de la deuxième semaine de suivi.")
+      h("div", { class: "eyebrow" }, t("Chiffres")),
+      h("h1", {}, t("Ce qui sort, et à quel rythme")),
+      h("p", {}, scope + " " + t("{n} ont été décrits à partir de leur photo. Les accessoires ne sont pas comptés.", { n: stats.with_photo_analysis || 0 })),
+      weeksCount ? null : h("p", {}, t("Historique en construction : l'évolution d'une semaine à l'autre apparaîtra à partir de la deuxième semaine de suivi."))
     );
-    document.getElementById("meta").textContent = stats.generated_at ? "Mise à jour " + fmtDate(stats.generated_at) : "";
+    document.getElementById("meta").textContent = stats.generated_at ? t("Mise à jour {d}", { d: fmtDate(stats.generated_at) }) : "";
   }
 
   function renderTypes(stats) {
     var el = panel("types", "Répartition par type", "Part de chaque type dans les produits de la période.");
     var rows = (stats.types || []).filter(function (t) { return t.name !== "Accessoires"; });
     if (!rows.length) { empty(el, "Pas encore de données."); return; }
-    el.append(h("div", { class: "bars" }, rows.map(function (t) {
+    el.append(h("div", { class: "bars" }, rows.map(function (ty) {
       return h("div", { class: "bar-row" },
-        h("span", {}, t.name),
-        h("div", { class: "bar-track" }, h("div", { class: "bar-fill", style: "width:" + pct(t.share) + "%" })),
-        h("span", { class: "bar-val" }, num(t.count) + " · " + num(t.share) + " %" + (t.brands ? " · " + t.brands + " marques" : "")));
+        h("span", {}, v(ty.name)),
+        h("div", { class: "bar-track" }, h("div", { class: "bar-fill", style: "width:" + pct(ty.share) + "%" })),
+        h("span", { class: "bar-val" }, num(ty.count) + " · " + num(ty.share) + " %" + (ty.brands ? " · " + ty.brands + " " + t("marques") : "")));
     })));
   }
 
   function bucketTotal(b) {
-    return TYPES.reduce(function (sum, t) { return sum + num((b.types || {})[t]); }, 0);
+    return TYPES.reduce(function (sum, ty) { return sum + num((b.types || {})[ty]); }, 0);
   }
 
   function renderEvolution(weekly) {
     var el = panel("evolution", "Évolution d'une semaine à l'autre",
       "Part de chaque type parmi les nouveautés repérées chaque semaine. Le « départ » est le catalogue existant le premier jour de suivi : c'est un état des lieux, pas une semaine de sorties.");
     var buckets = [];
-    if (weekly && weekly.depart) buckets.push({ label: "Départ", sub: weekly.depart.label, data: weekly.depart });
+    if (weekly && weekly.depart) buckets.push({ label: t("Départ"), sub: weekly.depart.label, data: weekly.depart });
     var weeks = weekly && Array.isArray(weekly.weeks) ? weekly.weeks.slice(-MAX_WEEKS) : [];
-    weeks.forEach(function (w) { buckets.push({ label: w.label, sub: w.current ? "en cours" : "", data: w }); });
+    weeks.forEach(function (w) { buckets.push({ label: w.label, sub: w.current ? t("en cours") : "", data: w }); });
     if (!buckets.length) { empty(el, "Pas encore de données."); return; }
-    var head = h("tr", {}, h("th", {}, "Type"), buckets.map(function (b) {
+    var head = h("tr", {}, h("th", {}, t("Type")), buckets.map(function (b) {
       return h("th", {}, b.label, b.sub ? h("div", { class: "note" }, b.sub) : null);
     }));
-    var body = TYPES.map(function (t) {
-      return h("tr", {}, h("td", {}, t), buckets.map(function (b) {
+    var body = TYPES.map(function (ty) {
+      return h("tr", {}, h("td", {}, v(ty)), buckets.map(function (b) {
         var total = bucketTotal(b.data);
         if (!total) return h("td", {}, "—");
-        var share = Math.round(100 * num((b.data.types || {})[t]) / total);
+        var share = Math.round(100 * num((b.data.types || {})[ty]) / total);
         return h("td", {}, h("div", { class: "cell" }, h("i", { style: "width:" + pct(share) + "%" }), h("span", {}, share + " %")));
       }));
     });
-    var totals = h("tr", {}, h("td", { class: "note" }, "Produits"), buckets.map(function (b) { return h("td", { class: "note" }, bucketTotal(b.data)); }));
+    var totals = h("tr", {}, h("td", { class: "note" }, t("Produits")), buckets.map(function (b) { return h("td", { class: "note" }, bucketTotal(b.data)); }));
     el.append(h("div", { class: "tablewrap" }, h("table", {}, h("thead", {}, head), h("tbody", {}, body, totals))));
-    if (!weeks.length) el.append(h("p", { class: "hint" }, "Un seul relevé pour l'instant. Les semaines suivantes s'ajouteront ici."));
+    if (!weeks.length) el.append(h("p", { class: "hint" }, t("Un seul relevé pour l'instant. Les semaines suivantes s'ajouteront ici.")));
   }
 
   function renderBrands(stats, weekly) {
@@ -143,14 +146,14 @@
         ? h("div", { class: "mini", title: series.join(" · ") }, series.map(function (v) { return h("i", { style: "height:" + Math.max(6, Math.round(100 * v / maxNew)) + "%" }); }))
         : "—";
       return h("tr", {}, h("td", {}, r.name), h("td", { class: "num" }, num(r.count)),
-        h("td", {}, rhythm, avg == null ? null : h("div", { class: "note" }, "moy. " + avg + " / sem.")),
+        h("td", {}, rhythm, avg == null ? null : h("div", { class: "note" }, t("moy. {n} / sem.", { n: avg }))),
         h("td", { class: "num" }, cad(r.median_cad)),
         h("td", { class: "num" }, typeof r.min_cad === "number" ? cad(r.min_cad) + " – " + cad(r.max_cad) : "—"));
     });
     el.append(h("div", { class: "tablewrap" }, h("table", {},
-      h("thead", {}, h("tr", {}, h("th", {}, "Marque"), h("th", { class: "num" }, "Produits"), h("th", {}, "Rythme (4 sem.)"), h("th", { class: "num" }, "Prix médian"), h("th", { class: "num" }, "Fourchette"))),
+      h("thead", {}, h("tr", {}, h("th", {}, t("Marque")), h("th", { class: "num" }, t("Produits")), h("th", {}, t("Rythme (4 sem.)")), h("th", { class: "num" }, t("Prix médian")), h("th", { class: "num" }, t("Fourchette")))),
       h("tbody", {}, body))));
-    if (!weeks.length) el.append(h("p", { class: "hint" }, "Le rythme se calcule à partir de la deuxième semaine de suivi."));
+    if (!weeks.length) el.append(h("p", { class: "hint" }, t("Le rythme se calcule à partir de la deuxième semaine de suivi.")));
   }
 
 
@@ -160,9 +163,12 @@
     var fx = stats.fx || {};
     var rates = fx.rates || {};
     var parts = Object.keys(rates).map(function (c) { return "1 " + c + " = " + Number(rates[c]).toFixed(3) + " CAD"; });
-    var text = parts.length ? "Taux " + (fx.date ? "du " + fmtDate(fx.date) : "") + " (" + (fx.source || "Banque du Canada") + ") : " + parts.join(" · ") + "." : "Aucun taux de change disponible pour l'instant.";
-    if (fx.stale) text += " Attention : le dernier taux connu est utilisé, la source n'a pas répondu.";
-    if ((fx.missing || []).length) text += " Sans taux, exclues des montants en CAD : " + fx.missing.join(", ") + ".";
+    var src = t(fx.source || "Banque du Canada");
+    var text = parts.length
+      ? (fx.date ? t("Taux du {d} ({s}) : {r}.", { d: fmtDate(fx.date), s: src, r: parts.join(" · ") }) : t("Taux ({s}) : {r}.", { s: src, r: parts.join(" · ") }))
+      : t("Aucun taux de change disponible pour l'instant.");
+    if (fx.stale) text += t(" Attention : le dernier taux connu est utilisé, la source n'a pas répondu.");
+    if ((fx.missing || []).length) text += t(" Sans taux, exclues des montants en CAD : {c}.", { c: fx.missing.join(", ") });
     return text;
   }
 
@@ -174,29 +180,29 @@
     if (!rows.length) { empty(el, "Pas encore de données."); return; }
     var body = rows.map(function (r) {
       if (!r.enough) {
-        return h("tr", {}, h("td", {}, r.type), h("td", { class: "num" }, num(r.n)),
-          h("td", { colspan: "3", class: "note" }, "Trop peu de produits pour une médiane fiable"));
+        return h("tr", {}, h("td", {}, v(r.type)), h("td", { class: "num" }, num(r.n)),
+          h("td", { colspan: "3", class: "note" }, t("Trop peu de produits pour une médiane fiable")));
       }
-      return h("tr", {}, h("td", {}, r.type), h("td", { class: "num" }, num(r.n)), h("td", { class: "num" }, cad(r.median_cad)),
+      return h("tr", {}, h("td", {}, v(r.type)), h("td", { class: "num" }, num(r.n)), h("td", { class: "num" }, cad(r.median_cad)),
         h("td", { class: "num" }, cad(r.mean_cad)), h("td", { class: "num" }, cad(r.p25_cad) + " – " + cad(r.p75_cad)));
     });
     el.append(h("div", { class: "tablewrap" }, h("table", {},
-      h("thead", {}, h("tr", {}, h("th", {}, "Type"), h("th", { class: "num" }, "Produits"), h("th", { class: "num" }, "Médiane"),
-        h("th", { class: "num" }, "Moyenne"), h("th", { class: "num" }, "Fourchette typique"))),
+      h("thead", {}, h("tr", {}, h("th", {}, t("Type")), h("th", { class: "num" }, t("Produits")), h("th", { class: "num" }, t("Médiane")),
+        h("th", { class: "num" }, t("Moyenne")), h("th", { class: "num" }, t("Fourchette typique")))),
       h("tbody", {}, body))));
     var enough = rows.filter(function (r) { return r.enough && r.bands; });
     if (enough.length) {
-      el.append(h("h3", { class: "sub" }, "Répartition par tranche de prix (CAD)"));
-      var labels = enough[0].bands.map(function (b) { return b.label; });
+      el.append(h("h3", { class: "sub" }, t("Répartition par tranche de prix (CAD)")));
+      var labels = enough[0].bands.map(function (b) { return t(b.label); });
       el.append(h("div", { class: "tablewrap" }, h("table", {},
-        h("thead", {}, h("tr", {}, h("th", {}, "Type"), labels.map(function (l) { return h("th", {}, l); }))),
+        h("thead", {}, h("tr", {}, h("th", {}, t("Type")), labels.map(function (l) { return h("th", {}, l); }))),
         h("tbody", {}, enough.map(function (r) {
-          return h("tr", {}, h("td", {}, r.type), r.bands.map(function (b) {
+          return h("tr", {}, h("td", {}, v(r.type)), r.bands.map(function (b) {
             return h("td", {}, h("div", { class: "cell" }, h("i", { style: "width:" + pct(b.share) + "%" }), h("span", {}, num(b.share) + " %")));
           }));
         })))));
     }
-    el.append(h("p", { class: "hint" }, fxNote(stats) + (P.on_sale_excluded ? " " + P.on_sale_excluded + " produits soldés ne sont pas comptés." : "")));
+    el.append(h("p", { class: "hint" }, fxNote(stats) + (P.on_sale_excluded ? t(" {n} produits soldés ne sont pas comptés.", { n: P.on_sale_excluded }) : "")));
   }
 
   function renderMatrix(stats) {
@@ -206,11 +212,11 @@
     var brands = M.brands || [], types = M.types || [];
     if (!brands.length) { empty(el, "Pas encore de données."); return; }
     el.append(h("div", { class: "tablewrap" }, h("table", {},
-      h("thead", {}, h("tr", {}, h("th", {}, "Marque"), types.map(function (t) { return h("th", { class: "num" }, t); }))),
+      h("thead", {}, h("tr", {}, h("th", {}, t("Marque")), types.map(function (ty) { return h("th", { class: "num" }, v(ty)); }))),
       h("tbody", {}, brands.map(function (b) {
-        return h("tr", {}, h("td", {}, b), types.map(function (t) {
-          var c = ((M.cells || {})[b] || {})[t] || {};
-          return h("td", { class: "num", title: (c.n || 0) + " produits" }, typeof c.median_cad === "number" ? cad(c.median_cad) : "—");
+        return h("tr", {}, h("td", {}, b), types.map(function (ty) {
+          var c = ((M.cells || {})[b] || {})[ty] || {};
+          return h("td", { class: "num", title: t("{n} produits", { n: c.n || 0 }) }, typeof c.median_cad === "number" ? cad(c.median_cad) : "—");
         }));
       })))));
   }
@@ -223,23 +229,23 @@
     el.append(h("div", { class: "bars" }, rows.map(function (r) {
       return h("div", { class: "bar-row" }, h("span", {}, r.name),
         h("div", { class: "bar-track" }, h("div", { class: "bar-fill", style: "width:" + pct(r.share) + "%" })),
-        h("span", { class: "bar-val" }, num(r.on_sale) + " sur " + num(r.n) + " · " + num(r.share) + " %"));
+        h("span", { class: "bar-val" }, t("{a} sur {b}", { a: num(r.on_sale), b: num(r.n) }) + " · " + num(r.share) + " %"));
     })));
   }
 
   function renderAttrByType(id, title, hint, data, emptyText) {
     var el = panel(id, title, hint);
-    var known = (data || []).reduce(function (s, t) { return s + num(t.known); }, 0);
-    var of = (data || []).reduce(function (s, t) { return s + num(t.of); }, 0);
+    var known = (data || []).reduce(function (s, x) { return s + num(x.known); }, 0);
+    var of = (data || []).reduce(function (s, x) { return s + num(x.of); }, 0);
     if (!known) { empty(el, emptyText); return; }
-    el.append(h("p", { class: "hint" }, known + " produits sur " + of + " renseignés."));
-    el.append(h("div", { class: "blocks" }, data.filter(function (t) { return t.rows && t.rows.length; }).map(function (t) {
+    el.append(h("p", { class: "hint" }, t("{k} produits sur {o} renseignés.", { k: known, o: of })));
+    el.append(h("div", { class: "blocks" }, data.filter(function (x) { return x.rows && x.rows.length; }).map(function (blk) {
       return h("div", { class: "block" },
-        h("h3", {}, t.type, h("span", { class: "kind" }, t.known + " / " + t.of)),
-        h("div", { class: "bars" }, t.rows.map(function (r) {
-          var extra = num(r.count) + " · " + num(r.share) + " % · " + num(r.brands) + (r.brands > 1 ? " marques" : " marque") +
+        h("h3", {}, v(blk.type), h("span", { class: "kind" }, blk.known + " / " + blk.of)),
+        h("div", { class: "bars" }, blk.rows.map(function (r) {
+          var extra = num(r.count) + " · " + num(r.share) + " % · " + num(r.brands) + " " + t(r.brands > 1 ? "marques" : "marque") +
             (typeof r.median_cad === "number" ? " · " + cad(r.median_cad) : "");
-          return h("div", { class: "bar-row wide" }, h("span", {}, r.name),
+          return h("div", { class: "bar-row wide" }, h("span", {}, v(r.name)),
             h("div", { class: "bar-track" }, h("div", { class: "bar-fill", style: "width:" + pct(r.share) + "%" })),
             h("span", { class: "bar-val" }, extra));
         })));
@@ -250,21 +256,21 @@
     var el = panel("priceevo", "Évolution des prix par type",
       "Prix médian en CAD des produits repérés chaque semaine, au taux actuel pour toutes les semaines : ainsi une variation du change n'est pas prise pour une hausse de prix. Soldes exclus, au moins 3 produits par case.");
     var buckets = [];
-    if (weekly && weekly.depart) buckets.push({ label: "Départ", sub: weekly.depart.label, data: weekly.depart });
+    if (weekly && weekly.depart) buckets.push({ label: t("Départ"), sub: weekly.depart.label, data: weekly.depart });
     (weekly && Array.isArray(weekly.weeks) ? weekly.weeks.slice(-MAX_WEEKS) : []).forEach(function (w) {
-      buckets.push({ label: w.label, sub: w.current ? "en cours" : "", data: w });
+      buckets.push({ label: w.label, sub: w.current ? t("en cours") : "", data: w });
     });
     if (!buckets.length) { empty(el, "Pas encore de données."); return; }
-    var types = ["Robes", "Hauts", "Pantalons", "Jupes", "Manteaux"];
+    var types = PRICE_TYPES;
     el.append(h("div", { class: "tablewrap" }, h("table", {},
-      h("thead", {}, h("tr", {}, h("th", {}, "Type"), buckets.map(function (b) { return h("th", { class: "num" }, b.label, b.sub ? h("div", { class: "note" }, b.sub) : null); }))),
-      h("tbody", {}, types.map(function (t) {
-        return h("tr", {}, h("td", {}, t), buckets.map(function (b) {
-          var c = (b.data.price_by_type || {})[t];
+      h("thead", {}, h("tr", {}, h("th", {}, t("Type")), buckets.map(function (b) { return h("th", { class: "num" }, b.label, b.sub ? h("div", { class: "note" }, b.sub) : null); }))),
+      h("tbody", {}, types.map(function (ty) {
+        return h("tr", {}, h("td", {}, v(ty)), buckets.map(function (b) {
+          var c = (b.data.price_by_type || {})[ty];
           return h("td", { class: "num" }, c ? cad(c.median_cad) : "—");
         }));
       })))));
-    if (buckets.length < 2) el.append(h("p", { class: "hint" }, "Un seul relevé pour l'instant : les semaines suivantes s'ajouteront ici."));
+    if (buckets.length < 2) el.append(h("p", { class: "hint" }, t("Un seul relevé pour l'instant : les semaines suivantes s'ajouteront ici.")));
   }
 
   function renderTrends(stats) {
@@ -272,17 +278,17 @@
       "Une couleur, matière, longueur, coupe, encolure ou un détail qu'on retrouve chez au moins 3 marques différentes sur la période, et sur au moins 3 produits.");
     var rows = stats.trends || [];
     if (!rows.length) { empty(el, "Aucune tendance pour l'instant : il faut le même attribut chez 3 marques et sur 3 produits."); return; }
-    el.append(h("div", {}, rows.map(function (t) {
+    el.append(h("div", {}, rows.map(function (tr) {
       var delta = "";
-      if (typeof t.delta === "number") delta = t.new ? "nouveau" : (t.delta > 0 ? "+" : "") + t.delta + " pts";
+      if (typeof tr.delta === "number") delta = tr.new ? t("nouveau") : (tr.delta > 0 ? "+" : "") + tr.delta + " pts";
       return h("div", { class: "trend" },
-        h("h3", {}, h("span", { class: "kind" }, t.kind), t.value),
-        h("div", { class: "num" }, num(t.brands) + " marques · " + num(t.count) + " produits · " + num(t.share) + " %",
+        h("h3", {}, h("span", { class: "kind" }, v(tr.kind)), tr.kind === "détail" ? I18N.d(tr.value) : v(tr.value)),
+        h("div", { class: "num" }, t("{b} marques · {c} produits · {s} %", { b: num(tr.brands), c: num(tr.count), s: num(tr.share) }),
           delta ? h("span", { class: "delta" }, " · " + delta) : null),
-        h("div", { class: "who" }, (t.brand_names || []).join(", ")));
+        h("div", { class: "who" }, (tr.brand_names || []).join(", ")));
     })));
     if (!rows.some(function (t) { return typeof t.delta === "number"; })) {
-      el.append(h("p", { class: "hint" }, "Pour l'instant, ce sont les attributs les plus répandus chez les marques suivies. L'écart avec la semaine précédente (points, ou « nouveau ») apparaîtra dès la deuxième semaine, et c'est lui qui signale une vraie tendance."));
+      el.append(h("p", { class: "hint" }, t("Pour l'instant, ce sont les attributs les plus répandus chez les marques suivies. L'écart avec la semaine précédente (points, ou « nouveau ») apparaîtra dès la deuxième semaine, et c'est lui qui signale une vraie tendance.")));
     }
   }
 
@@ -290,13 +296,19 @@
     return fetch(path, { cache: "no-store" }).then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; });
   }
 
-  Promise.all([load("data/stats.json"), load("data/weekly.json")]).then(function (res) {
+  Promise.all([load("data/stats.json"), load("data/weekly.json"), I18N.load()]).then(function (res) {
     var stats = res[0], weekly = res[1];
-    document.getElementById("footer").textContent = "Les chiffres sont calculés à chaque mise à jour à partir des produits suivis. Les dates sont celles où chaque produit a été repéré.";
+    I18N.onChange(function () { paint(stats, weekly); });
+    paint(stats, weekly);
+  });
+
+  function paint(stats, weekly) {
+    document.getElementById("footer").textContent = t("Les chiffres sont calculés à chaque mise à jour à partir des produits suivis. Les dates sont celles où chaque produit a été repéré.");
     if (!stats) {
-      document.getElementById("head").replaceChildren(h("h1", {}, "Chiffres"), h("p", {}, "Aucune donnée pour l'instant. Lance le workflow « Veille quotidienne »."));
+      document.getElementById("head").replaceChildren(h("h1", {}, t("Chiffres")), h("p", {}, t("Aucune donnée pour l'instant. Lance le workflow « Veille quotidienne ».")));
       return;
     }
+    I18N.setExtra(stats.labels_en);
     renderHead(stats, weekly);
     renderTypes(stats);
     renderEvolution(weekly);
@@ -312,7 +324,7 @@
       stats.fibres_by_type, "Aucune composition lue pour l'instant : elle sera relevée à la prochaine collecte.");
     renderPriceEvolution(weekly);
     renderTrends(stats);
-  });
+  }
 })();
 </script>
 </body>

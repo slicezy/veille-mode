@@ -23,6 +23,9 @@ h1{margin:0;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-si
 .sw-color{height:96px;border-radius:14px;border:1px solid rgba(31,30,28,.08)}
 .sw-name{font-size:12px;color:var(--muted)}
 .filters{display:flex;flex-direction:column;gap:14px;padding:36px 0 8px}
+.lang{display:inline-flex;gap:2px;border:1px solid var(--line,#D9D4C9);border-radius:999px;padding:2px}
+.lang button{height:28px;min-width:36px;padding:0 10px;border:0;border-radius:999px;background:transparent;color:var(--muted);font:500 12px 'Inter',system-ui,sans-serif;letter-spacing:.06em;cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--accent);color:#fff}
 .filters-top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 16px}
 .top-right{display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px}
 .filter-group{display:grid;grid-template-columns:64px 1fr;gap:12px;align-items:center}

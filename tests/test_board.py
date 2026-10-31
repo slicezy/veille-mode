@@ -144,5 +144,71 @@ class VocabularyTests(unittest.TestCase):
         self.assertEqual(wrong["shape"], "")  # forme d'un autre type : écartée
 
 
+class NewVocabularyTests(unittest.TestCase):
+    def test_types_and_lengths_depend_on_type(self):
+        short = analyze.normalize({"type": "Shorts", "length": "bermuda", "shape": "crayon"}, {"name": "x"}, True)
+        self.assertEqual((short["type"], short["length"], short["shape"]), ("Shorts", "bermuda", ""))  # « crayon » n'est pas une forme de short
+        pant = analyze.normalize({"type": "Pantalons", "length": "7/8", "shape": "palazzo"}, {"name": "x"}, True)
+        self.assertEqual((pant["length"], pant["shape"]), ("7/8", "palazzo"))
+        skirt = analyze.normalize({"type": "Jupes", "length": "bermuda", "shape": "crayon", "rise": "haute"}, {"name": "x"}, True)
+        self.assertEqual((skirt["length"], skirt["shape"], skirt["rise"]), ("", "crayon", "haute"))  # bermuda n'existe pas pour une jupe
+        jeans = analyze.normalize({"type": "Jeans", "shape": "baggy", "length": "traînant", "closure": "zippé ou boutonné"}, {"name": "x"}, True)
+        self.assertEqual((jeans["shape"], jeans["length"], jeans["closure"]), ("baggy", "traînant", "zippé ou boutonné"))
+        blazer = analyze.normalize({"type": "Blazers", "shape": "croisé", "rise": "haute"}, {"name": "x"}, True)
+        self.assertEqual((blazer["shape"], blazer["rise"]), ("croisé", ""))
+
+    def test_fallback_rules_split_the_big_categories(self):
+        rules = {"Denim Short": "Shorts", "Linen Bermuda": "Shorts", "Short Sleeve Top": "Hauts", "Straight Leg Jeans": "Jeans",
+                 "Tailored Blazer": "Blazers", "Wool Coat": "Manteaux", "Wide Leg Pant": "Pantalons", "Denim Jacket": "Manteaux"}
+        for name, expected in rules.items():
+            self.assertEqual(analyze.heuristic_type({"name": name}), expected, name)
+
+    def test_details_have_english_twins(self):
+        out = analyze.normalize({"type": "Robes", "details": ["Volants", "fente"], "details_en": ["Ruffles"]}, {"name": "x"}, True)
+        self.assertEqual((out["details"], out["details_en"]), (["volants", "fente"], ["ruffles", ""]))
+
+    def test_labels_cover_the_whole_vocabulary(self):
+        import json
+
+        data = json.loads((Path(__file__).resolve().parent.parent / "site" / "labels.json").read_text(encoding="utf-8"))["values"]
+        words = set(analyze.TYPES) | set(analyze.COLORS) | set(analyze.MATERIALS) | set(analyze.CUTS) | set(analyze.NECKLINES)
+        words |= set(analyze.RISES) | set(analyze.STYLES) | set(analyze.CLOSURES) | set(analyze.FIBRE_WORDS.values()) | {"mélange"}
+        for vals in list(analyze.LENGTHS_BY_TYPE.values()) + list(analyze.SHAPES.values()):
+            words |= set(vals)
+        words |= {kind for kind, _ in analyze.TREND_KINDS}
+        self.assertEqual(sorted(w for w in words if w not in data), [])
+
+    def test_typed_trends(self):
+        items = [{"id": f"{b}{n}", "brand": b, "type": "Jupes", "length": "midi", "shape": "crayon", "attrs_v": analyze.ATTRS_VERSION}
+                 for b in "ABC" for n in range(2)]
+        rows = analyze.compute_trends(items)
+        self.assertIn("Jupes · midi", {r["value"] for r in rows if r["kind"] == "longueur"})
+        self.assertIn("Jupes · crayon", {r["value"] for r in rows if r["kind"] == "forme"})
+
+    def test_english_board_labels(self):
+        board.LANG = "en"
+        try:
+            self.assertEqual(board.group_label("Jupes", ("crayon", "midi", "haute", "")), "SKIRTS · PENCIL · MIDI · HIGH-RISE")
+            self.assertEqual(board.tu("Groupe incomplet : {n}/{m} produits. ", n=5, m=11), "Incomplete group: 5/11 products. ")
+        finally:
+            board.LANG = "fr"
+        self.assertEqual(board.group_label("Jupes", ("crayon", "midi", "haute", "")), "JUPES · CRAYON · LONGUEUR MIDI · TAILLE HAUTE")
+
+    def test_digest_has_english_version(self):
+        class Client:
+            class messages:
+                @staticmethod
+                def create(**kw):
+                    class R:
+                        stop_reason = "end_turn"
+                        content = [type("B", (), {"type": "text", "text": '{"title":"Noir","summary":"Texte.","tags":["a"],"title_en":"Black","summary_en":"Text.","tags_en":["b"]}'})()]
+                    return R
+        stats = {"types": [], "palette": [], "materials": [], "lengths": [], "necklines": [], "details": [], "prices": {}, "trends": []}
+        items = [{"brand": "A", "name": "x", "type": "Robes", "colors": [], "details": []}]
+        digest = analyze.build_digest(Client, items, stats, items)
+        self.assertEqual((digest["title"], digest["en"]["title"], digest["en"]["tags"]), ("Noir", "Black", ["b"]))
+        self.assertEqual(analyze.week_label_en(__import__("datetime").date(2026, 10, 30)), "Week of October 26")
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr">
+<html lang="fr" data-title="Veille mode">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,9 +11,9 @@
 <body>
 <div class="wrap">
   <header>
-    <div class="logo">Veille</div>
+    <div class="logo" data-i18n="Veille">Veille</div>
     <div class="head-right">
-      <nav class="nav"><a href="index.html" aria-current="page">Nouveautés</a><a href="chiffres.html">Chiffres</a></nav>
+      <nav class="nav"><a href="index.html" aria-current="page" data-i18n="Nouveautés">Nouveautés</a><a href="chiffres.html" data-i18n="Chiffres">Chiffres</a></nav>
       <div class="meta" id="meta"></div>
     </div>
   </header>
@@ -22,11 +22,11 @@
 
   <section class="filters">
     <div class="filters-top">
-      <h2>Nouveautés</h2>
+      <h2 data-i18n="Nouveautés">Nouveautés</h2>
       <div class="top-right"><span class="meta" id="count"></span><span id="favs"></span></div>
     </div>
-    <div class="filter-group"><span class="filter-label">Marque</span><div class="row" id="brands"></div></div>
-    <div class="filter-group"><span class="filter-label">Type</span><div class="row" id="types"></div></div>
+    <div class="filter-group"><span class="filter-label" data-i18n="Marque">Marque</span><div class="row" id="brands"></div></div>
+    <div class="filter-group"><span class="filter-label" data-i18n="Type">Type</span><div class="row" id="types"></div></div>
   </section>
 
   <section id="grid-area"></section>
@@ -34,9 +34,11 @@
   <footer id="footer"></footer>
 </div>
 
+<script src="i18n.js"></script>
 <script>
 (function () {
-  var TYPES = ["Robes", "Hauts", "Pantalons", "Jupes", "Manteaux", "Autres"];
+  var t = I18N.t, v = I18N.v;
+  var TYPES = ["Robes", "Hauts", "Pantalons", "Jeans", "Shorts", "Jupes", "Blazers", "Manteaux", "Autres"];
   var HIDDEN_TYPES = ["Accessoires"];
   var TONES = ["#D6CFC3", "#BDB5A8", "#E9E5DD", "#A39B8D", "#DDD8CE", "#8E8679", "#CEC7BA", "#E4DFD6"];
   var HEART = '<svg width="20" height="20" viewBox="0 0 24 24" fill="FILL" stroke="STROKE" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.35-8.5-8.6C2.6 8.6 4.1 6 6.8 6c1.7 0 3.1.9 4 2.3.4.6.9.6 1.3 0C13 6.9 14.4 6 16.1 6c2.7 0 4.2 2.6 3.3 5.4C18 15.65 12 20 12 20z"/></svg>';
@@ -57,13 +59,13 @@
   function dateLabel(i) {
     // « mis en ligne » : date donnée par la marque ; « repéré » : jour où notre outil l'a vu pour la première fois
     var pub = i.published_at ? fmtDate(i.published_at) : "";
-    if (pub) return "Mis en ligne " + pub;
+    if (pub) return t("Mis en ligne {d}", { d: pub });
     var seen = fmtDate(i.first_seen);
-    return seen ? "Repéré " + seen : "";
+    return seen ? t("Repéré {d}", { d: seen }) : "";
   }
   function fmtDate(iso) {
     var d = new Date(iso);
-    return isNaN(d) ? "" : d.toLocaleDateString("fr-CA", { day: "numeric", month: "short" });
+    return isNaN(d) ? "" : d.toLocaleDateString(I18N.locale(), { day: "numeric", month: "short" });
   }
   function h(tag, props) {
     var n = document.createElement(tag);
@@ -106,51 +108,57 @@
     }));
   }
   function attrLine(i) {
-    var parts = [i.material, i.length, i.cut, i.neckline].filter(function (x) { return typeof x === "string" && x; });
+    var parts = [i.material, i.length, i.cut, i.neckline].filter(function (x) { return typeof x === "string" && x; }).map(v);
     return parts.join(" · ");
+  }
+  function detailsLine(i) {
+    var en = I18N.lang() === "en" && Array.isArray(i.details_en) ? i.details_en : [];
+    return (i.details || []).map(function (x, n) { return en[n] || I18N.d(x); }).join(", ");
   }
 
   function renderHero() {
     var d = state.digest || {};
+    var en = I18N.lang() === "en" && d.en ? d.en : null;
     var palette = Array.isArray(d.palette) ? d.palette : [];
     var main = h("div", { class: "hero-main" },
-      h("div", { class: "eyebrow" }, "Tendance de la semaine"),
-      h("h1", {}, d.title || "Nouveautés de la semaine"),
-      h("p", { class: "summary" }, d.summary || "La synthèse apparaîtra après la première analyse."),
-      h("div", { class: "tags" }, (d.tags || []).map(function (t) { return h("span", { class: "tag" }, t); }))
+      h("div", { class: "eyebrow" }, t("Tendance de la semaine")),
+      h("h1", {}, (en && en.title) || d.title || t("Nouveautés de la semaine")),
+      h("p", { class: "summary" }, (en && en.summary) || d.summary || t("La synthèse apparaîtra après la première analyse.")),
+      h("div", { class: "tags" }, ((en && en.tags) || d.tags || []).map(function (x) { return h("span", { class: "tag" }, x); }))
     );
     var swatches = h("div", { class: "swatches" }, palette.map(function (p) {
       var hex = /^#[0-9A-Fa-f]{6}$/.test(p.hex || "") ? p.hex : "#D6CFC3";
       var share = typeof p.share === "number" ? " " + p.share + " %" : "";
-      return h("div", { class: "sw" }, h("div", { class: "sw-color", style: "background:" + hex }), h("div", { class: "sw-name" }, p.name || "", h("b", {}, share)));
+      return h("div", { class: "sw" }, h("div", { class: "sw-color", style: "background:" + hex }), h("div", { class: "sw-name" }, v(p.name || ""), h("b", {}, share)));
     }));
     var st = state.stats || {};
-    var basis = st.with_photo_analysis ? "Couleurs relevées sur " + st.with_photo_analysis + " photos." : "Couleurs déduites des noms des produits.";
-    var card = h("div", { class: "palette-card" }, h("div", { class: "eyebrow" }, "Palette de la semaine"), swatches, h("div", { class: "note" }, basis));
+    var basis = st.with_photo_analysis ? t("Couleurs relevées sur {n} photos.", { n: st.with_photo_analysis }) : t("Couleurs déduites des noms des produits.");
+    var card = h("div", { class: "palette-card" }, h("div", { class: "eyebrow" }, t("Palette de la semaine")), swatches, h("div", { class: "note" }, basis));
     var hero = document.getElementById("hero");
     hero.replaceChildren(main, card);
-    document.getElementById("meta").textContent = (d.week_label || "") + (d.generated_at ? " · mise à jour " + fmtDate(d.generated_at) : "");
+    document.getElementById("meta").textContent = ((en && d.week_label_en) || d.week_label || "") + (d.generated_at ? " · " + t("mise à jour {d}", { d: fmtDate(d.generated_at) }) : "");
   }
 
   function countItems(pred) { return state.items.filter(pred).length; }
 
   function renderFilters() {
     var brands = ["Toutes"];
+    var brandLabel = function (b) { return b === "Toutes" ? t("Toutes") : b; };
     state.items.forEach(function (i) { if (brands.indexOf(i.brand) === -1) brands.push(i.brand); });
     document.getElementById("brands").replaceChildren.apply(
       document.getElementById("brands"),
-      brands.map(function (b) { return pill(b, state.brand === b, function () { state.brand = b; render(); }, null, null, "brand"); })
+      brands.map(function (b) { return pill(brandLabel(b), state.brand === b, function () { state.brand = b; render(); }, null, null, "brand"); })
     );
     var inBrand = function (i) { return state.brand === "Toutes" || i.brand === state.brand; };
     var favCount = Object.keys(state.favs).filter(function (k) { return state.favs[k]; }).length;
-    var typePills = [pill("Tout", state.type === "Tout", function () { state.type = "Tout"; render(); }, null, countItems(inBrand))];
+    var typePills = [pill(t("Tout"), state.type === "Tout", function () { state.type = "Tout"; render(); }, null, countItems(inBrand))];
     TYPES.forEach(function (t) {
       var n = countItems(function (i) { return inBrand(i) && i.type === t; });
-      if (n || state.type === t) typePills.push(pill(t, state.type === t, function () { state.type = t; render(); }, null, n));
+      if (n || state.type === t) typePills.push(pill(v(t), state.type === t, function () { state.type = t; render(); }, null, n));
     });
     document.getElementById("types").replaceChildren.apply(document.getElementById("types"), typePills);
     document.getElementById("favs").replaceChildren(
-      pill("Favoris (" + favCount + ")", state.onlyFavs, function () { state.onlyFavs = !state.onlyFavs; render(); }, heartIcon(false), null, "fav"));
+      pill(t("Favoris ({n})", { n: favCount }), state.onlyFavs, function () { state.onlyFavs = !state.onlyFavs; render(); }, heartIcon(false), null, "fav"));
   }
 
   function visibleItems() {
@@ -163,10 +171,10 @@
 
   function renderGrid() {
     var items = visibleItems();
-    document.getElementById("count").textContent = items.length + (items.length > 1 ? " nouveautés" : " nouveauté");
+    document.getElementById("count").textContent = t(items.length > 1 ? "{n} nouveautés" : "{n} nouveauté", { n: items.length });
     var area = document.getElementById("grid-area");
     if (!items.length) {
-      area.replaceChildren(h("div", { class: "empty" }, state.items.length ? "Aucune nouveauté pour cette sélection." : "Aucune donnée pour l'instant. Lance le workflow « Veille quotidienne »."));
+      area.replaceChildren(h("div", { class: "empty" }, state.items.length ? t("Aucune nouveauté pour cette sélection.") : t("Aucune donnée pour l'instant. Lance le workflow « Veille quotidienne ».")));
       return;
     }
     var cards = items.slice(0, MAX_CARDS).map(function (i) {
@@ -181,10 +189,10 @@
       photo.append(
         h("button", {
           type: "button", class: "heart", "aria-pressed": String(fav),
-          "aria-label": (fav ? "Retirer des favoris : " : "Ajouter aux favoris : ") + i.name,
+          "aria-label": t(fav ? "Retirer des favoris : " : "Ajouter aux favoris : ") + i.name,
           onclick: function () { state.favs[i.id] = !state.favs[i.id]; saveFavs(); render(); }
         }, heartIcon(fav)),
-        i.type ? h("span", { class: "badge" }, i.type) : null
+        i.type ? h("span", { class: "badge" }, v(i.type)) : null
       );
       var src = safeUrl(i.url);
       var date = dateLabel(i);
@@ -194,8 +202,8 @@
           h("h3", {}, i.name),
           (i.colors && i.colors.length) ? dots(i.colors) : null,
           attrLine(i) ? h("div", { class: "attrs" }, attrLine(i)) : null,
-          (Array.isArray(i.details) && i.details.length) ? h("div", { class: "attrs" }, i.details.join(", ")) : null,
-          src ? h("a", { href: src, target: "_blank", rel: "noopener noreferrer" }, "Voir la source") : null
+          (Array.isArray(i.details) && i.details.length) ? h("div", { class: "attrs" }, detailsLine(i)) : null,
+          src ? h("a", { href: src, target: "_blank", rel: "noopener noreferrer" }, t("Voir la source")) : null
         ));
     });
     area.replaceChildren(h("div", { class: "grid" }, cards));
@@ -207,13 +215,18 @@
     return fetch(path, { cache: "no-store" }).then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; });
   }
 
-  Promise.all([load("data/digest.json"), load("data/items.json"), load("data/stats.json")]).then(function (res) {
+  Promise.all([load("data/digest.json"), load("data/items.json"), load("data/stats.json"), I18N.load()]).then(function (res) {
     state.digest = res[0];
     state.items = (Array.isArray(res[1]) ? res[1] : []).filter(function (i) { return HIDDEN_TYPES.indexOf(i.type) === -1; });
     state.stats = res[2];
-    document.getElementById("footer").textContent = "Mise à jour automatique chaque matin. Les photos et les liens viennent des sites des marques.";
-    renderHero();
-    render();
+    I18N.setExtra(state.stats && state.stats.labels_en);
+    function paint() {
+      document.getElementById("footer").textContent = t("Mise à jour automatique chaque matin. Les photos et les liens viennent des sites des marques.");
+      renderHero();
+      render();
+    }
+    I18N.onChange(paint);
+    paint();
   });
 })();
 </script>

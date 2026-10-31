@@ -29,7 +29,7 @@ DATA = ROOT / "data"
 
 ATTR_MODEL = "claude-haiku-5-5"
 DIGEST_MODEL = "claude-sonnet-5-5"
-ATTRS_VERSION = 3  # change quand le vocabulaire change : les produits sont réanalysés
+ATTRS_VERSION = 4  # change quand le vocabulaire change : les produits sont réanalysés
 MAX_PER_RUN = 80  # produits analysés par exécution ; le reste est repris le lendemain
 ATTR_MAX_TOKENS = 2000  # marge : une réponse coupée donnait un JSON illisible
 PHOTO_ATTEMPTS = 3  # essais de téléchargement par photo (erreurs temporaires seulement)
@@ -46,7 +46,7 @@ TREND_MIN_ITEMS = 3
 MIN_PREV_ITEMS = 12  # produits nécessaires la semaine précédente pour comparer
 MIN_VISION_ITEMS = 10  # en dessous, la palette utilise aussi les couleurs déduites du texte
 
-TYPES = ["Robes", "Hauts", "Pantalons", "Jupes", "Manteaux", "Accessoires", "Autres"]
+TYPES = ["Robes", "Hauts", "Pantalons", "Jeans", "Shorts", "Jupes", "Blazers", "Manteaux", "Accessoires", "Autres"]
 # nom -> hex (None : pas de pastille de palette)
 COLORS = {
     "noir": "#1F1E1C", "blanc": "#F7F6F2", "ivoire": "#EFE8D8", "beige": "#D8C8AE",
@@ -60,7 +60,18 @@ MATERIALS = [
     "crêpe", "laine", "jersey", "tulle", "mousseline", "paillettes", "popeline", "tweed",
     "synthétique",
 ]
-LENGTHS = ["mini", "court", "midi", "long", "maxi", "cropped"]
+# Longueurs selon le type (ce que veut dire « long » change d'un vêtement à l'autre)
+LENGTHS_BY_TYPE = {
+    "Robes": ["mini", "genou", "midi", "maxi"],
+    "Jupes": ["mini", "genou", "midi", "maxi"],
+    "Pantalons": ["cropped", "7/8", "long", "traînant"],
+    "Jeans": ["cropped", "7/8", "long", "traînant"],
+    "Shorts": ["micro", "court", "mi-cuisse", "bermuda"],
+    "Hauts": ["cropped", "taille", "hanches", "tunique"],
+    "Blazers": ["court", "hanches", "mi-cuisse", "long"],
+    "Manteaux": ["court", "hanches", "mi-cuisse", "long"],
+}
+LENGTHS = sorted({v for vals in LENGTHS_BY_TYPE.values() for v in vals})  # tous types confondus (autres types, anciennes données)
 CUTS = ["ajustée", "droite", "fluide", "évasée", "oversize", "cintrée"]
 NECKLINES = [
     "col rond", "col V", "carré", "bustier", "bretelles fines", "dos nu", "col haut",
@@ -68,16 +79,19 @@ NECKLINES = [
 ]
 # Attributs pour les planches (board) : forme selon le type, hauteur de taille, style, fermeture
 SHAPES = {
-    "Pantalons": ["slim", "droit", "large", "évasé", "barrel", "utility", "jogger"],
-    "Jupes": ["crayon", "trapèze", "évasée", "portefeuille", "plissée", "drapée"],
-    "Hauts": ["ajusté", "boxy", "oversize", "dolman", "drapé"],
-    "Manteaux": ["droit", "oversize", "cintré", "croisé", "cape"],
+    "Pantalons": ["slim", "droit", "large", "évasé", "barrel", "cargo", "jogger", "palazzo", "legging"],
+    "Jeans": ["skinny", "slim", "droit", "évasé", "large", "barrel", "baggy"],
+    "Shorts": ["ajusté", "droit", "large", "cargo", "tailleur"],
+    "Jupes": ["crayon", "droite", "trapèze", "évasée", "portefeuille", "plissée", "biais", "drapée", "volants", "cargo"],
+    "Hauts": ["ajusté", "droit", "boxy", "oversize", "dolman", "drapé", "cache-cœur"],
+    "Blazers": ["ajusté", "droit", "oversize", "croisé", "cintré"],
+    "Manteaux": ["trench", "caban", "doudoune", "cape", "perfecto", "bomber", "droit", "oversize", "croisé"],
 }
 RISES = ["basse", "moyenne", "haute"]  # pantalons et jupes
 STYLES = ["décontracté", "habillé", "tailleur"]
 CLOSURES = ["pull-on", "zippé ou boutonné", "noué"]  # pantalons et jupes ; pull-on = élastique ou cordon
-RISE_TYPES = ("Pantalons", "Jupes")
-PRICE_TYPES = ["Robes", "Hauts", "Pantalons", "Jupes", "Manteaux"]  # types pour lesquels on compare les prix
+RISE_TYPES = ("Pantalons", "Jeans", "Shorts", "Jupes")
+PRICE_TYPES = ["Robes", "Hauts", "Pantalons", "Jeans", "Shorts", "Jupes", "Blazers", "Manteaux"]  # types pour lesquels on compare les prix
 BANDS = [(0, 100, "moins de 100"), (100, 200, "100 à 200"), (200, 400, "200 à 400"), (400, None, "400 et plus")]  # en CAD
 MIN_TYPE_ITEMS = 8  # en dessous, pas de médiane par type
 MIN_CELL_ITEMS = 3  # en dessous, pas de médiane pour une marque dans un type
@@ -86,6 +100,7 @@ MIN_SALE_ITEMS = 5
 FX_SOURCE = "Banque du Canada"
 FX_URL = "https://www.bankofcanada.ca/valet/observations/FX{cur}CAD/json?recent=1"
 MONTHS_SHORT = ["janv.", "févr.", "mars", "avr.", "mai", "juin", "juil.", "août", "sept.", "oct.", "nov.", "déc."]
+MONTHS_EN = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
 MONTHS = [
     "janvier", "février", "mars", "avril", "mai", "juin",
     "juillet", "août", "septembre", "octobre", "novembre", "décembre",
@@ -103,8 +118,11 @@ HEX_RE = re.compile(r"^#[0-9A-Fa-f]{6}$")
 TYPE_RULES = [
     ("Robes", r"dress(es)?|gown|robe(s)?|jumpsuit|playsuit|romper|combinaison"),
     ("Jupes", r"skirt(s)?|skort|jupe(s)?"),
-    ("Manteaux", r"coat(s)?|jacket(s)?|blazer(s)?|trench|parka|puffer|outerwear|manteau(x)?|veste(s)?|gilet"),
-    ("Pantalons", r"pant(s)?|trouser(s)?|jean(s)?|short(s)?|legging(s)?|denim|pantalon(s)?"),
+    ("Blazers", r"blazer(s)?"),
+    ("Manteaux", r"coat(s)?|jacket(s)?|trench|parka|puffer|outerwear|manteau(x)?|veste(s)?|gilet"),
+    ("Shorts", r"short(s)?(?!\s+sleeve)|bermuda(s)?"),
+    ("Jeans", r"jean(s)?"),
+    ("Pantalons", r"pant(s)?|trouser(s)?|legging(s)?|denim|pantalon(s)?"),
     (
         "Accessoires",
         r"bag(s)?|clutch(es)?|tote|belt(s)?|scarf|scarves|hat(s)?|caps|shoe(s)?|boot(s)?|sandal(s)?|"
@@ -247,15 +265,18 @@ def normalize(raw: dict, item: dict, has_vision: bool) -> dict:
         if name in COLORS and name not in colors:
             colors.append(name)
     details: list[str] = []
-    for d in raw.get("details", []) if isinstance(raw.get("details"), list) else []:
+    details_en: list[str] = []
+    en_raw = raw.get("details_en") if isinstance(raw.get("details_en"), list) else []
+    for n, d in enumerate(raw.get("details", []) if isinstance(raw.get("details"), list) else []):
         text = re.sub(r"\s+", " ", str(d or "")).strip().lower()[:24]
         if text and text not in details:
             details.append(text)
+            details_en.append(re.sub(r"\s+", " ", str(en_raw[n] if n < len(en_raw) else "")).strip().lower()[:30])
     return {
         "type": kind,
         "colors": colors[:2],
         "material": _pick(raw.get("material"), MATERIALS),
-        "length": _pick(raw.get("length"), LENGTHS),
+        "length": _pick(raw.get("length"), LENGTHS_BY_TYPE.get(kind, LENGTHS)),
         # coupe et encolure se jugent sur la photo : sans photo, on ne devine pas
         "cut": _pick(raw.get("cut"), CUTS) if has_vision else "",
         "neckline": _pick(raw.get("neckline"), NECKLINES) if has_vision else "",
@@ -264,6 +285,7 @@ def normalize(raw: dict, item: dict, has_vision: bool) -> dict:
         "style": _pick(raw.get("style"), STYLES) if has_vision else "",
         "closure": _pick(raw.get("closure"), CLOSURES) if has_vision and kind in RISE_TYPES else "",
         "details": details[:3],
+        "details_en": details_en[:3],
         "has_vision": has_vision,
         "attrs_v": ATTRS_VERSION,
     }
@@ -283,17 +305,28 @@ def build_item_prompt(item: dict, has_vision: bool) -> str:
         + json.dumps(info, ensure_ascii=False)
         + "\n\nRéponds uniquement par un objet JSON compact (sans bloc de code, sans explication) avec ces clés. Si une valeur n'est pas évidente, "
         'laisse "" (ou []) plutôt que deviner.\n'
-        f'- "type" : un parmi {TYPES}\n'
+        f'- "type" : un parmi {TYPES}. Jeans = pantalon en denim ; Shorts = tout short ou bermuda ; '
+        "Blazers = veste de tailleur ou blazer ; Manteaux = manteau, trench, caban, doudoune, perfecto, bomber, cape ; "
+        "Pantalons = les autres pantalons (y compris tailleur, cargo, legging) ; robes et combinaisons = Robes\n"
         f'- "colors" : 1 ou 2 couleurs dominantes du vêtement lui-même (pas du fond), parmi {list(COLORS)}\n'
         f'- "material" : un parmi {MATERIALS}\n'
-        f'- "length" : un parmi {LENGTHS} (longueur de la robe, jupe, manteau ou pantalon)\n'
-        f'- "cut" : un parmi {CUTS}\n'
-        f'- "neckline" : un parmi {NECKLINES}\n'
-        f'- "shape" : forme générale, selon le type : {SHAPES} (clé absente pour Robes : laisse "")\n'
-        f'- "rise" : hauteur de taille, seulement pour pantalons et jupes : {RISES}\n'
+        f'- "length" : une valeur de la liste du type choisi, jugée sur la photo : {LENGTHS_BY_TYPE}. '
+        "Repères : jupes et robes (mini = haut de cuisse, genou, midi = mi-mollet, maxi = cheville ou sol) ; "
+        "pantalons et jeans (cropped = mollet ou au-dessus de la cheville, 7/8 = cheville dégagée, long = effleure la cheville ou la chaussure, "
+        "traînant = couvre le pied ou traîne au sol) ; shorts (micro = sous les fesses, court = haut de cuisse, mi-cuisse, bermuda = au genou) ; "
+        "hauts (cropped = au-dessus de la taille, taille, hanches, tunique = sous les hanches) ; blazers et manteaux (court, hanches, mi-cuisse, long = sous le genou)\n"
+        f'- "cut" : un parmi {CUTS} (silhouette générale)\n'
+        f'- "neckline" : un parmi {NECKLINES} (hauts et robes)\n'
+        f'- "shape" : la forme précise, une valeur de la liste du type choisi : {SHAPES} (laisse "" pour Robes et Autres). '
+        "Pour les jupes : crayon = ajustée, étroite jusqu'au bas ; droite = coupe droite non serrée ; trapèze = s'évase régulièrement ; "
+        "évasée = très ample (cloche, cercle) ; en biais = coupée dans le biais, fluide. Ne classe pas une jupe crayon dans droite ou trapèze\n"
+        f'- "rise" : hauteur de taille, seulement pour pantalons, jeans, shorts et jupes : {RISES}\n'
         f'- "style" : un parmi {STYLES} (décontracté = casual, habillé = dressy, tailleur = tailored)\n'
-        f'- "closure" : seulement pour pantalons et jupes : {CLOSURES}\n'
+        f'- "closure" : seulement pour pantalons, jeans, shorts et jupes : {CLOSURES}\n'
         '- "details" : jusqu\'à 3 détails de design, 1 à 3 mots en français (ex. "volants", "fente", "nœud", "broderie")\n'
+        '- "details_en" : les mêmes détails traduits en anglais, dans le même ordre (ex. "ruffles", "slit", "bow", "embroidery")\n'
+        "Le nom et le type du site sont des indices fiables pour le type et la forme (ex. « Pencil Skirt », « Bermuda »), "
+        "mais la photo l'emporte pour la longueur et la taille.\n"
     )
 
 
@@ -654,7 +687,9 @@ def attribute_by_type(scope: list[dict], key: str, fx: dict | None, size: int = 
 TREND_KINDS = [
     ("couleur", "colors"), ("matière", "material"), ("longueur", "length"),
     ("coupe", "cut"), ("encolure", "neckline"), ("détail", "details"),
+    ("forme", "shape"), ("style", "style"),
 ]
+TYPED_KEYS = ("length", "shape")  # « long » ou « droit » n'ont de sens qu'avec le type : « Jupes · midi »
 
 
 def _values(item: dict, key: str) -> list[str]:
@@ -670,6 +705,8 @@ def attribute_counts(items: list[dict]) -> tuple[dict, dict]:
             continue
         for kind, key in TREND_KINDS:
             for value in set(_values(item, key)):
+                if key in TYPED_KEYS:
+                    value = f"{item.get('type')} · {value}"
                 count[(kind, value)] += 1
                 brands.setdefault((kind, value), set()).add(item.get("brand"))
     return count, brands
@@ -718,6 +755,11 @@ def compute_stats(items: list[dict], now: dt.datetime, baseline=frozenset(), fx:
     cuts = Counter(i["cut"] for i in scope if i.get("cut"))
     necklines = Counter(i["neckline"] for i in scope if i.get("neckline"))
     details = Counter(d for i in scope for d in i.get("details", []))
+    labels_en: dict = {}
+    for i in scope:
+        for fr, en in zip(i.get("details", []), i.get("details_en", [])):
+            if en and fr not in labels_en:
+                labels_en[fr] = en
     vision = sum(1 for i in scope if i.get("has_vision"))
     return {
         "generated_at": now.isoformat(timespec="seconds"),
@@ -733,6 +775,7 @@ def compute_stats(items: list[dict], now: dt.datetime, baseline=frozenset(), fx:
         "cuts": ranked(cuts, n),
         "necklines": ranked(necklines, n),
         "details": ranked(details, n, 10),
+        "labels_en": labels_en,
         "palette": compute_palette(scope),
         "trends": compute_trends(scope, prev),
         "brands": brand_rows(scope, fx),
@@ -852,11 +895,17 @@ def week_label(today: dt.date) -> str:
     return f"Semaine du {monday.day} {MONTHS[monday.month - 1]}"
 
 
+def week_label_en(today: dt.date) -> str:
+    monday = today - dt.timedelta(days=today.weekday())
+    return f"Week of {MONTHS_EN[monday.month - 1]} {monday.day}"
+
+
 def fallback_digest(stats: dict) -> dict:
     return {
         "title": "Nouveautés de la semaine",
         "summary": "La synthèse rédigée apparaîtra ici dès que la clé API Claude sera configurée.",
         "tags": [],
+        "en": {"title": "This week's new arrivals", "summary": "The written summary will appear here once the Claude API key is set up.", "tags": []},
         "palette": stats.get("palette") or DEFAULT_PALETTE,
     }
 
@@ -899,15 +948,23 @@ def build_digest(client, items: list[dict], stats: dict, scope: list[dict] | Non
         '- "summary" : 2 à 3 phrases en français, concrètes, qui s\'appuient sur les chiffres ci-dessus '
         "(n'affirme rien qu'ils ne soutiennent pas ; cite les marques seulement si l'échantillon le montre), sans superlatifs creux\n"
         '- "tags" : 4 mots-clés courts en français\n'
+        '- "title_en", "summary_en", "tags_en" : les mêmes en anglais (traduction fidèle, même sens et mêmes chiffres, vocabulaire de mode usuel)\n'
     )
     try:
-        data = extract_json(ask(client, DIGEST_MODEL, prompt, 900), dict)
+        data = extract_json(ask(client, DIGEST_MODEL, prompt, 1800), dict)
         if isinstance(data.get("title"), str):
             digest["title"] = data["title"].strip()
         if isinstance(data.get("summary"), str):
             digest["summary"] = data["summary"].strip()
         if isinstance(data.get("tags"), list):
             digest["tags"] = [str(t) for t in data["tags"]][:4]
+        en = digest["en"]
+        if isinstance(data.get("title_en"), str):
+            en["title"] = data["title_en"].strip()
+        if isinstance(data.get("summary_en"), str):
+            en["summary"] = data["summary_en"].strip()
+        if isinstance(data.get("tags_en"), list):
+            en["tags"] = [str(t) for t in data["tags_en"]][:4]
     except Exception as exc:
         print(f"Synthèse par l'API impossible ({exc}), texte par défaut utilisé.")
     return digest
@@ -954,6 +1011,7 @@ def main() -> None:
 
     digest = build_digest(client, items, stats, select_scope(items, now, baseline)[0])
     digest["week_label"] = week_label(dt.date.today())
+    digest["week_label_en"] = week_label_en(dt.date.today())
     digest["generated_at"] = now.isoformat(timespec="seconds")
     (DATA / "digest.json").write_text(json.dumps(digest, ensure_ascii=False, indent=1), encoding="utf-8")
 

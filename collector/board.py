@@ -21,19 +21,49 @@ DATA = ROOT / "data"
 
 SLOTS = 11
 MIN_PARTIAL = 3  # en dessous, un groupe n'obtient pas de diapo
-BOARD_TYPES = ["Pantalons", "Hauts", "Robes", "Jupes", "Manteaux"]
+BOARD_TYPES = ["Pantalons", "Jeans", "Shorts", "Jupes", "Hauts", "Robes", "Blazers", "Manteaux"]
 # Dimensions de regroupement, de la plus importante à la moins importante.
 # Si un groupe précis n'a pas assez de produits, on retire la dernière dimension pour l'élargir.
 DIMS = {
-    "Pantalons": ["shape", "rise", "style", "closure"],
-    "Jupes": ["shape", "length", "style", "rise"],
+    "Pantalons": ["shape", "length", "rise", "style", "closure"],
+    "Jeans": ["shape", "length", "rise"],
+    "Shorts": ["shape", "length", "rise"],
+    "Jupes": ["shape", "length", "rise", "style"],
     "Hauts": ["shape", "length", "style", "neckline"],
     "Robes": ["cut", "length", "style", "neckline"],
+    "Blazers": ["shape", "length", "style"],
     "Manteaux": ["shape", "length", "style"],
 }
-FIRST_REQUIRED = {"Pantalons": "shape", "Jupes": "shape", "Hauts": "shape", "Robes": "cut", "Manteaux": "shape"}
+FIRST_REQUIRED = {t: "shape" for t in BOARD_TYPES}
+FIRST_REQUIRED["Robes"] = "cut"
 IMAGE_DELAY = 1.0
-TYPE_LABEL = {"Pantalons": "pantalons", "Jupes": "jupes", "Hauts": "hauts", "Robes": "robes", "Manteaux": "manteaux"}
+LABELS_PATH = ROOT / "site" / "labels.json"
+LANG = "fr"
+_labels: dict | None = None
+
+
+def labels() -> dict:
+    """Traductions du site (site/labels.json) : une seule source pour le site et les planches."""
+    global _labels
+    if _labels is None:
+        try:
+            _labels = json.loads(LABELS_PATH.read_text(encoding="utf-8"))
+        except (OSError, ValueError):
+            _labels = {"values": {}, "ui": {}}
+    return _labels
+
+
+def tv(value: str) -> str:
+    return labels().get("values", {}).get(value, value) if LANG == "en" else value
+
+
+def tu(text: str, **params) -> str:
+    s = labels().get("ui", {}).get(text, text) if LANG == "en" else text
+    for k, val in params.items():
+        s = s.replace("{" + k + "}", str(val))
+    return s
+
+
 DIM_LABEL = {"rise": lambda v: f"taille {v}", "length": lambda v: f"longueur {v}"}
 
 # Mise en page, en pouces (diapo 16:9 de 10 x 5,625, comme Google Slides)
@@ -97,10 +127,10 @@ def interleave(items: list[dict]) -> list[dict]:
 
 
 def group_label(kind: str, key: tuple) -> str:
-    parts = [TYPE_LABEL[kind]]
+    parts = [tv(kind)]
     for dim, value in zip(DIMS[kind], key):
         if value:
-            parts.append(DIM_LABEL.get(dim, lambda v: v)(value))
+            parts.append(tv(value) if LANG == "en" else DIM_LABEL.get(dim, lambda x: x)(value))
     return " · ".join(parts).upper()
 
 
@@ -286,7 +316,7 @@ def build_deck(slides_cells: list[tuple[dict, list[tuple[dict, bytes]]]], title:
         brands = sorted({c[0].get("brand", "") for c in cells if c[0].get("brand")})
         foot = ", ".join(brands)
         if meta["partial"]:
-            foot = f"Groupe incomplet : {len(cells)}/{SLOTS} produits. " + foot
+            foot = tu("Groupe incomplet : {n}/{m} produits. ", n=len(cells), m=SLOTS) + foot
         text(slide, MARGIN, GRID_Y + GRID_H + 0.08, SLIDE_W - 2 * MARGIN, 0.22, foot, 10, MUTED, name="Marques")
         slide.notes_slide.notes_text_frame.text = "\n".join(notes)
     prs.save(str(out))
@@ -315,7 +345,10 @@ def main() -> None:
     parser.add_argument("--watermark", default="")
     parser.add_argument("--days", type=int, default=30, help="période (jours) ; 0 = tout l'historique gardé")
     parser.add_argument("--out", default="board.pptx")
+    parser.add_argument("--lang", choices=["fr", "en"], default="fr", help="langue des sous-titres des diapos")
     args = parser.parse_args()
+    global LANG
+    LANG = args.lang
     items_path = DATA / "items.json"
     if not items_path.exists():
         sys.exit("data/items.json introuvable")
