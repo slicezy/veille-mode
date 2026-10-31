@@ -1,39 +1,39 @@
 {
- "title": "Noir, ivoire et maille : le minimalisme sensuel domine",
- "summary": "Les hauts (44 %) et les robes (23 %) dominent les nouveautés, avec une palette où le noir (23 %) devance l'ivoire (14 %), le blanc, le bleu et le marron (11 % chacun). La maille arrive en tête des matières (17 %), devant le jersey (9 %) et le satin (8 %), et le col rond (15 %) est l'encolure la plus fréquente. Côté longueurs, cropped, maxi et mini se tiennent (12-13 %), et l'échantillon montre aussi des transparences et des drapés chez Bec + Bridge, VRG GRL et Reformation, avec des robes à 265 CAD de prix médian.",
+ "title": "Noir et blanc, maille et mini dominent",
+ "summary": "Les hauts (44 %) et les robes (23 %) pèsent le plus dans les nouveautés, avec une palette très neutre : noir et blanc à 25 % chacun, puis gris (17 %) et beige (11 %). La maille est la matière la plus citée (15 %, 4 marques) et le mini la tendance de longueur la plus partagée (6 marques), devant le midi (4 marques) ; l'échantillon montre des minis chez Kookaï, Venroy et Bec + Bridge. Côté prix, les robes ont une médiane de 265 CAD et les manteaux de 373 CAD, tandis que les hauts restent à 134 CAD.",
  "tags": [
-  "noir et ivoire",
+  "neutres",
+  "mini",
   "maille",
-  "cropped et mini",
-  "transparence"
+  "ivoire"
  ],
  "palette": [
   {
    "name": "Noir",
    "hex": "#1F1E1C",
-   "share": 23
-  },
-  {
-   "name": "Ivoire",
-   "hex": "#EFE8D8",
-   "share": 14
+   "share": 25
   },
   {
    "name": "Blanc",
    "hex": "#F7F6F2",
+   "share": 25
+  },
+  {
+   "name": "Gris",
+   "hex": "#9A9A98",
+   "share": 17
+  },
+  {
+   "name": "Beige",
+   "hex": "#D8C8AE",
    "share": 11
   },
   {
-   "name": "Bleu",
-   "hex": "#4A6FA5",
-   "share": 11
-  },
-  {
-   "name": "Marron",
-   "hex": "#6B4A36",
-   "share": 11
+   "name": "Argent",
+   "hex": "#C0C0C4",
+   "share": 8
   }
  ],
  "week_label": "Semaine du 26 octobre",
- "generated_at": "2026-10-31T14:31:19+00:00"
+ "generated_at": "2026-10-31T15:28:49+00:00"
 }

@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-10-31T14:31:19+00:00",
+ "generated_at": "2026-10-31T15:28:49+00:00",
  "window_days": null,
  "total": 398,
- "with_photo_analysis": 264,
+ "with_photo_analysis": 18,
  "types": [
   {
    "name": "Hauts",
@@ -44,28 +44,28 @@
  "colors": [
   {
    "name": "noir",
-   "count": 94,
-   "share": 24
+   "count": 90,
+   "share": 23
   },
   {
    "name": "ivoire",
-   "count": 51,
-   "share": 13
+   "count": 49,
+   "share": 12
   },
   {
    "name": "blanc",
-   "count": 47,
+   "count": 46,
    "share": 12
   },
   {
    "name": "bleu",
-   "count": 45,
+   "count": 44,
    "share": 11
   },
   {
    "name": "marron",
-   "count": 42,
-   "share": 11
+   "count": 41,
+   "share": 10
   },
   {
    "name": "gris",
@@ -74,44 +74,44 @@
   },
   {
    "name": "beige",
-   "count": 19,
+   "count": 18,
    "share": 5
   },
   {
    "name": "multicolore",
-   "count": 13,
-   "share": 3
+   "count": 14,
+   "share": 4
   }
  ],
  "materials": [
   {
    "name": "maille",
-   "count": 67,
-   "share": 17
+   "count": 58,
+   "share": 15
   },
   {
    "name": "jersey",
-   "count": 35,
-   "share": 9
-  },
-  {
-   "name": "satin",
-   "count": 30,
+   "count": 33,
    "share": 8
   },
   {
-   "name": "coton",
+   "name": "soie",
    "count": 28,
    "share": 7
   },
   {
-   "name": "synthétique",
-   "count": 26,
+   "name": "coton",
+   "count": 27,
    "share": 7
   },
   {
-   "name": "soie",
+   "name": "synthétique",
    "count": 25,
+   "share": 6
+  },
+  {
+   "name": "satin",
+   "count": 24,
    "share": 6
   },
   {
@@ -128,13 +128,8 @@
  "lengths": [
   {
    "name": "maxi",
-   "count": 51,
-   "share": 13
-  },
-  {
-   "name": "cropped",
-   "count": 50,
-   "share": 13
+   "count": 47,
+   "share": 12
   },
   {
    "name": "mini",
@@ -142,82 +137,87 @@
    "share": 12
   },
   {
-   "name": "midi",
-   "count": 34,
-   "share": 9
+   "name": "cropped",
+   "count": 44,
+   "share": 11
   },
   {
-   "name": "long",
-   "count": 30,
+   "name": "midi",
+   "count": 33,
    "share": 8
   },
   {
+   "name": "long",
+   "count": 26,
+   "share": 7
+  },
+  {
    "name": "court",
-   "count": 25,
+   "count": 24,
    "share": 6
   }
  ],
  "cuts": [
   {
-   "name": "ajustée",
-   "count": 86,
-   "share": 22
+   "name": "fluide",
+   "count": 72,
+   "share": 18
   },
   {
-   "name": "fluide",
-   "count": 83,
-   "share": 21
+   "name": "ajustée",
+   "count": 69,
+   "share": 17
   },
   {
    "name": "droite",
-   "count": 45,
-   "share": 11
-  },
-  {
-   "name": "oversize",
-   "count": 35,
+   "count": 37,
    "share": 9
   },
   {
+   "name": "oversize",
+   "count": 28,
+   "share": 7
+  },
+  {
    "name": "cintrée",
-   "count": 8,
+   "count": 7,
    "share": 2
   },
   {
    "name": "évasée",
-   "count": 7,
-   "share": 2
+   "count": 5,
+   "share": 1
   }
  ],
  "necklines": [
   {
    "name": "col rond",
-   "count": 60,
-   "share": 15
+   "count": 44,
+   "share": 11
   },
   {
    "name": "col haut",
-   "count": 31,
-   "share": 8
-  },
-  {
-   "name": "col V",
-   "count": 28,
-   "share": 7
-  },
-  {
-   "name": "décolleté plongeant",
    "count": 24,
    "share": 6
   },
   {
-   "name": "asymétrique",
-   "count": 14,
-   "share": 4
+   "name": "col V",
+   "count": 23,
+   "share": 6
+  },
+  {
+   "name": "décolleté plongeant",
+   "count": 23,
+   "share": 6
   },
   {
    "name": "col chemise",
-   "count": 11,
+   "count": 12,
+   "share": 3
+  },
+  {
+   "name": "asymétrique",
+   "count": 12,
    "share": 3
   },
   {
@@ -227,25 +227,25 @@
   },
   {
    "name": "bretelles fines",
-   "count": 8,
+   "count": 7,
    "share": 2
   }
  ],
  "details": [
   {
    "name": "manches courtes",
-   "count": 36,
-   "share": 9
-  },
-  {
-   "name": "sans manches",
    "count": 31,
    "share": 8
   },
   {
-   "name": "drapé",
-   "count": 26,
+   "name": "sans manches",
+   "count": 27,
    "share": 7
+  },
+  {
+   "name": "drapé",
+   "count": 22,
+   "share": 6
   },
   {
    "name": "manches longues",
@@ -253,23 +253,13 @@
    "share": 5
   },
   {
-   "name": "taille basse",
-   "count": 15,
-   "share": 4
-  },
-  {
    "name": "transparence",
    "count": 15,
    "share": 4
   },
   {
-   "name": "rayures",
+   "name": "taille basse",
    "count": 12,
-   "share": 3
-  },
-  {
-   "name": "bretelles fines",
-   "count": 11,
    "share": 3
   },
   {
@@ -278,332 +268,216 @@
    "share": 3
   },
   {
-   "name": "côtes",
+   "name": "rayures",
    "count": 10,
    "share": 3
+  },
+  {
+   "name": "encolure halter",
+   "count": 9,
+   "share": 2
+  },
+  {
+   "name": "cordon de serrage",
+   "count": 9,
+   "share": 2
   }
  ],
  "palette": [
   {
    "name": "Noir",
    "hex": "#1F1E1C",
-   "share": 23
-  },
-  {
-   "name": "Ivoire",
-   "hex": "#EFE8D8",
-   "share": 14
+   "share": 25
   },
   {
    "name": "Blanc",
    "hex": "#F7F6F2",
+   "share": 25
+  },
+  {
+   "name": "Gris",
+   "hex": "#9A9A98",
+   "share": 17
+  },
+  {
+   "name": "Beige",
+   "hex": "#D8C8AE",
    "share": 11
   },
   {
-   "name": "Bleu",
-   "hex": "#4A6FA5",
-   "share": 11
-  },
-  {
-   "name": "Marron",
-   "hex": "#6B4A36",
-   "share": 11
+   "name": "Argent",
+   "hex": "#C0C0C4",
+   "share": 8
   }
  ],
  "trends": [
   {
-   "kind": "couleur",
-   "value": "noir",
-   "brands": 11,
+   "kind": "longueur",
+   "value": "mini",
+   "brands": 6,
    "brand_names": [
-    "BENNI",
-    "Bayse",
     "Bec + Bridge",
-    "Dissh",
     "Elka Collective",
-    "Henne",
     "Kookaï",
     "Reformation",
-    "Sir.",
     "VRG GRL",
     "Venroy"
    ],
-   "count": 94,
-   "share": 25
-  },
-  {
-   "kind": "coupe",
-   "value": "fluide",
-   "brands": 11,
-   "brand_names": [
-    "BENNI",
-    "Bayse",
-    "Bec + Bridge",
-    "Dissh",
-    "Elka Collective",
-    "Henne",
-    "Kookaï",
-    "Reformation",
-    "Sir.",
-    "VRG GRL",
-    "Venroy"
-   ],
-   "count": 83,
-   "share": 22
-  },
-  {
-   "kind": "encolure",
-   "value": "col rond",
-   "brands": 11,
-   "brand_names": [
-    "BENNI",
-    "Bayse",
-    "Bec + Bridge",
-    "Dissh",
-    "Elka Collective",
-    "Henne",
-    "Kookaï",
-    "Reformation",
-    "Sir.",
-    "VRG GRL",
-    "Venroy"
-   ],
-   "count": 60,
-   "share": 16
-  },
-  {
-   "kind": "couleur",
-   "value": "ivoire",
-   "brands": 11,
-   "brand_names": [
-    "BENNI",
-    "Bayse",
-    "Bec + Bridge",
-    "Dissh",
-    "Elka Collective",
-    "Henne",
-    "Kookaï",
-    "Reformation",
-    "Sir.",
-    "VRG GRL",
-    "Venroy"
-   ],
-   "count": 51,
+   "count": 11,
    "share": 14
   },
   {
-   "kind": "longueur",
-   "value": "cropped",
-   "brands": 11,
-   "brand_names": [
-    "BENNI",
-    "Bayse",
-    "Bec + Bridge",
-    "Dissh",
-    "Elka Collective",
-    "Henne",
-    "Kookaï",
-    "Reformation",
-    "Sir.",
-    "VRG GRL",
-    "Venroy"
-   ],
-   "count": 50,
-   "share": 13
-  },
-  {
-   "kind": "longueur",
-   "value": "mini",
-   "brands": 11,
-   "brand_names": [
-    "BENNI",
-    "Bayse",
-    "Bec + Bridge",
-    "Dissh",
-    "Elka Collective",
-    "Henne",
-    "Kookaï",
-    "Reformation",
-    "Sir.",
-    "VRG GRL",
-    "Venroy"
-   ],
-   "count": 46,
-   "share": 12
-  },
-  {
    "kind": "couleur",
-   "value": "bleu",
-   "brands": 11,
+   "value": "noir",
+   "brands": 5,
    "brand_names": [
-    "BENNI",
     "Bayse",
     "Bec + Bridge",
-    "Dissh",
     "Elka Collective",
-    "Henne",
-    "Kookaï",
     "Reformation",
-    "Sir.",
-    "VRG GRL",
-    "Venroy"
-   ],
-   "count": 45,
-   "share": 12
-  },
-  {
-   "kind": "coupe",
-   "value": "droite",
-   "brands": 11,
-   "brand_names": [
-    "BENNI",
-    "Bayse",
-    "Bec + Bridge",
-    "Dissh",
-    "Elka Collective",
-    "Henne",
-    "Kookaï",
-    "Reformation",
-    "Sir.",
-    "VRG GRL",
-    "Venroy"
-   ],
-   "count": 45,
-   "share": 12
-  },
-  {
-   "kind": "couleur",
-   "value": "marron",
-   "brands": 11,
-   "brand_names": [
-    "BENNI",
-    "Bayse",
-    "Bec + Bridge",
-    "Dissh",
-    "Elka Collective",
-    "Henne",
-    "Kookaï",
-    "Reformation",
-    "Sir.",
-    "VRG GRL",
-    "Venroy"
-   ],
-   "count": 42,
-   "share": 11
-  },
-  {
-   "kind": "coupe",
-   "value": "ajustée",
-   "brands": 10,
-   "brand_names": [
-    "BENNI",
-    "Bayse",
-    "Bec + Bridge",
-    "Dissh",
-    "Elka Collective",
-    "Henne",
-    "Kookaï",
-    "Reformation",
-    "Sir.",
     "VRG GRL"
    ],
-   "count": 86,
-   "share": 23
+   "count": 18,
+   "share": 22
   },
   {
    "kind": "matière",
    "value": "maille",
-   "brands": 10,
+   "brands": 4,
    "brand_names": [
-    "BENNI",
     "Bayse",
-    "Bec + Bridge",
-    "Dissh",
     "Elka Collective",
-    "Henne",
-    "Kookaï",
     "Reformation",
-    "Sir.",
     "VRG GRL"
    ],
-   "count": 67,
+   "count": 14,
    "share": 18
   },
   {
-   "kind": "longueur",
-   "value": "maxi",
-   "brands": 10,
+   "kind": "coupe",
+   "value": "ajustée",
+   "brands": 4,
    "brand_names": [
-    "BENNI",
     "Bayse",
-    "Bec + Bridge",
-    "Dissh",
-    "Elka Collective",
-    "Henne",
+    "Kookaï",
     "Reformation",
-    "Sir.",
-    "VRG GRL",
-    "Venroy"
+    "VRG GRL"
    ],
-   "count": 51,
+   "count": 11,
    "share": 14
   },
   {
-   "kind": "coupe",
-   "value": "oversize",
-   "brands": 10,
+   "kind": "couleur",
+   "value": "ivoire",
+   "brands": 4,
    "brand_names": [
-    "BENNI",
     "Bayse",
     "Bec + Bridge",
     "Dissh",
-    "Elka Collective",
-    "Henne",
-    "Kookaï",
-    "Sir.",
-    "VRG GRL",
-    "Venroy"
+    "VRG GRL"
    ],
-   "count": 35,
-   "share": 9
+   "count": 11,
+   "share": 14
+  },
+  {
+   "kind": "couleur",
+   "value": "blanc",
+   "brands": 4,
+   "brand_names": [
+    "Bayse",
+    "Elka Collective",
+    "Kookaï",
+    "VRG GRL"
+   ],
+   "count": 10,
+   "share": 12
   },
   {
    "kind": "longueur",
-   "value": "long",
-   "brands": 10,
+   "value": "midi",
+   "brands": 4,
    "brand_names": [
-    "BENNI",
-    "Bayse",
-    "Bec + Bridge",
     "Dissh",
-    "Elka Collective",
-    "Henne",
     "Kookaï",
-    "Sir.",
-    "VRG GRL",
-    "Venroy"
+    "Reformation",
+    "VRG GRL"
    ],
-   "count": 30,
+   "count": 8,
+   "share": 10
+  },
+  {
+   "kind": "couleur",
+   "value": "marron",
+   "brands": 4,
+   "brand_names": [
+    "Bayse",
+    "Elka Collective",
+    "Kookaï",
+    "VRG GRL"
+   ],
+   "count": 6,
    "share": 8
   },
   {
-   "kind": "encolure",
-   "value": "col V",
-   "brands": 10,
+   "kind": "couleur",
+   "value": "bleu",
+   "brands": 4,
    "brand_names": [
-    "BENNI",
-    "Bayse",
-    "Bec + Bridge",
-    "Dissh",
     "Elka Collective",
-    "Henne",
+    "Kookaï",
+    "VRG GRL",
+    "Venroy"
+   ],
+   "count": 5,
+   "share": 6
+  },
+  {
+   "kind": "encolure",
+   "value": "col rond",
+   "brands": 3,
+   "brand_names": [
+    "Bayse",
+    "Kookaï",
+    "Reformation"
+   ],
+   "count": 8,
+   "share": 10
+  },
+  {
+   "kind": "couleur",
+   "value": "beige",
+   "brands": 3,
+   "brand_names": [
     "Kookaï",
     "Reformation",
-    "Sir.",
     "VRG GRL"
    ],
-   "count": 28,
-   "share": 7
+   "count": 4,
+   "share": 5
+  },
+  {
+   "kind": "matière",
+   "value": "dentelle",
+   "brands": 3,
+   "brand_names": [
+    "Dissh",
+    "Kookaï",
+    "VRG GRL"
+   ],
+   "count": 3,
+   "share": 4
+  },
+  {
+   "kind": "coupe",
+   "value": "fluide",
+   "brands": 3,
+   "brand_names": [
+    "Bayse",
+    "Bec + Bridge",
+    "VRG GRL"
+   ],
+   "count": 3,
+   "share": 4
   }
  ],
  "brands": [
@@ -1216,75 +1090,75 @@
   {
    "type": "Robes",
    "of": 92,
-   "known": 67,
+   "known": 62,
    "rows": [
     {
      "name": "satin",
-     "count": 14,
-     "share": 21,
-     "brands": 6,
+     "count": 11,
+     "share": 18,
+     "brands": 5,
      "median_cad": 353.27
+    },
+    {
+     "name": "soie",
+     "count": 10,
+     "share": 16,
+     "brands": 4,
+     "median_cad": 471.02
     },
     {
      "name": "jersey",
      "count": 10,
-     "share": 15,
+     "share": 16,
      "brands": 4,
      "median_cad": 402.33
     },
     {
-     "name": "maille",
-     "count": 9,
-     "share": 13,
-     "brands": 6,
-     "median_cad": 294.39
-    },
-    {
      "name": "coton",
      "count": 9,
-     "share": 13,
+     "share": 15,
      "brands": 3,
      "median_cad": 141.31
     },
     {
-     "name": "soie",
-     "count": 8,
-     "share": 12,
-     "brands": 3,
-     "median_cad": 529.9
+     "name": "maille",
+     "count": 7,
+     "share": 11,
+     "brands": 6,
+     "median_cad": 372.89
     }
    ]
   },
   {
    "type": "Hauts",
    "of": 174,
-   "known": 124,
+   "known": 112,
    "rows": [
     {
      "name": "maille",
-     "count": 51,
-     "share": 41,
+     "count": 45,
+     "share": 40,
      "brands": 10,
-     "median_cad": 146.21
+     "median_cad": 163.88
     },
     {
      "name": "jersey",
-     "count": 22,
+     "count": 20,
      "share": 18,
      "brands": 4,
      "median_cad": 80.47
     },
     {
      "name": "coton",
-     "count": 11,
+     "count": 10,
      "share": 9,
-     "brands": 6,
-     "median_cad": 117.76
+     "brands": 5,
+     "median_cad": 136.89
     },
     {
      "name": "synthétique",
      "count": 10,
-     "share": 8,
+     "share": 9,
      "brands": 5,
      "median_cad": 173.69
     },
@@ -1300,35 +1174,28 @@
   {
    "type": "Pantalons",
    "of": 57,
-   "known": 38,
+   "known": 37,
    "rows": [
     {
      "name": "denim",
      "count": 11,
-     "share": 29,
+     "share": 30,
      "brands": 6,
      "median_cad": 186.45
     },
     {
      "name": "synthétique",
      "count": 5,
-     "share": 13,
+     "share": 14,
      "brands": 2,
      "median_cad": 195.28
     },
     {
      "name": "coton",
      "count": 5,
-     "share": 13,
+     "share": 14,
      "brands": 4,
      "median_cad": 195.28
-    },
-    {
-     "name": "satin",
-     "count": 4,
-     "share": 11,
-     "brands": 2,
-     "median_cad": 150.14
     },
     {
      "name": "laine",
@@ -1336,44 +1203,50 @@
      "share": 11,
      "brands": 2,
      "median_cad": 179.58
+    },
+    {
+     "name": "satin",
+     "count": 3,
+     "share": 8,
+     "brands": 2
     }
    ]
   },
   {
    "type": "Jupes",
    "of": 50,
-   "known": 27,
+   "known": 26,
    "rows": [
     {
-     "name": "satin",
-     "count": 7,
-     "share": 26,
-     "brands": 4,
-     "median_cad": 176.63
+     "name": "soie",
+     "count": 8,
+     "share": 31,
+     "brands": 3,
+     "median_cad": 188.79
     },
     {
-     "name": "soie",
-     "count": 7,
-     "share": 26,
+     "name": "satin",
+     "count": 6,
+     "share": 23,
      "brands": 3,
-     "median_cad": 179.58
+     "median_cad": 176.63
     },
     {
      "name": "jersey",
      "count": 3,
-     "share": 11,
-     "brands": 2
-    },
-    {
-     "name": "maille",
-     "count": 2,
-     "share": 7,
+     "share": 12,
      "brands": 2
     },
     {
      "name": "cuir",
      "count": 2,
-     "share": 7,
+     "share": 8,
+     "brands": 1
+    },
+    {
+     "name": "coton",
+     "count": 2,
+     "share": 8,
      "brands": 1
     }
    ]
