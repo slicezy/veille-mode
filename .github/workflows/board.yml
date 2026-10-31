@@ -1,0 +1,50 @@
+name: Créer une planche
+
+on:
+  workflow_dispatch:
+    inputs:
+      titre:
+        description: "Titre du bandeau"
+        required: true
+        default: "BIG IDEAS - Q2 2027"
+      filigrane:
+        description: "Mot en filigrane à droite du bandeau (facultatif)"
+        required: false
+        default: ""
+      jours:
+        description: "Produits repérés sur les N derniers jours (0 = tout l'historique)"
+        required: true
+        default: "30"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: veille
+  cancel-in-progress: false
+
+jobs:
+  board:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install -r requirements.txt
+
+      - name: Générer la planche
+        env:
+          TITRE: ${{ inputs.titre }}
+          FILIGRANE: ${{ inputs.filigrane }}
+          JOURS: ${{ inputs.jours }}
+        run: python collector/board.py --title "$TITRE" --watermark "$FILIGRANE" --days "$JOURS" --out planche.pptx
+
+      - name: Publier le fichier
+        uses: actions/upload-artifact@v4
+        with:
+          name: planche
+          path: planche.pptx
+          retention-days: 14

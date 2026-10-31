@@ -29,7 +29,7 @@ DATA = ROOT / "data"
 
 ATTR_MODEL = "claude-haiku-5-5"
 DIGEST_MODEL = "claude-sonnet-5-5"
-ATTRS_VERSION = 2  # change quand le vocabulaire change : les produits sont réanalysés
+ATTRS_VERSION = 3  # change quand le vocabulaire change : les produits sont réanalysés
 MAX_PER_RUN = 80  # produits analysés par exécution ; le reste est repris le lendemain
 IMAGE_DELAY = 2.0  # secondes entre deux téléchargements de photos
 IMAGE_MAX_SIDE = 640
@@ -62,6 +62,17 @@ NECKLINES = [
     "col rond", "col V", "carré", "bustier", "bretelles fines", "dos nu", "col haut",
     "col chemise", "asymétrique", "décolleté plongeant",
 ]
+# Attributs pour les planches (board) : forme selon le type, hauteur de taille, style, fermeture
+SHAPES = {
+    "Pantalons": ["slim", "droit", "large", "évasé", "barrel", "utility", "jogger"],
+    "Jupes": ["crayon", "trapèze", "évasée", "portefeuille", "plissée", "drapée"],
+    "Hauts": ["ajusté", "boxy", "oversize", "dolman", "drapé"],
+    "Manteaux": ["droit", "oversize", "cintré", "croisé", "cape"],
+}
+RISES = ["basse", "moyenne", "haute"]  # pantalons et jupes
+STYLES = ["décontracté", "habillé", "tailleur"]
+CLOSURES = ["pull-on", "zippé ou boutonné", "noué"]  # pantalons et jupes ; pull-on = élastique ou cordon
+RISE_TYPES = ("Pantalons", "Jupes")
 PRICE_TYPES = ["Robes", "Hauts", "Pantalons", "Jupes", "Manteaux"]  # types pour lesquels on compare les prix
 BANDS = [(0, 100, "moins de 100"), (100, 200, "100 à 200"), (200, 400, "200 à 400"), (400, None, "400 et plus")]  # en CAD
 MIN_TYPE_ITEMS = 8  # en dessous, pas de médiane par type
@@ -230,6 +241,10 @@ def normalize(raw: dict, item: dict, has_vision: bool) -> dict:
         # coupe et encolure se jugent sur la photo : sans photo, on ne devine pas
         "cut": _pick(raw.get("cut"), CUTS) if has_vision else "",
         "neckline": _pick(raw.get("neckline"), NECKLINES) if has_vision else "",
+        "shape": _pick(raw.get("shape"), SHAPES.get(kind, [])) if has_vision else "",
+        "rise": _pick(raw.get("rise"), RISES) if has_vision and kind in RISE_TYPES else "",
+        "style": _pick(raw.get("style"), STYLES) if has_vision else "",
+        "closure": _pick(raw.get("closure"), CLOSURES) if has_vision and kind in RISE_TYPES else "",
         "details": details[:3],
         "has_vision": has_vision,
         "attrs_v": ATTRS_VERSION,
@@ -256,6 +271,10 @@ def build_item_prompt(item: dict, has_vision: bool) -> str:
         f'- "length" : un parmi {LENGTHS} (longueur de la robe, jupe, manteau ou pantalon)\n'
         f'- "cut" : un parmi {CUTS}\n'
         f'- "neckline" : un parmi {NECKLINES}\n'
+        f'- "shape" : forme générale, selon le type : {SHAPES} (clé absente pour Robes : laisse "")\n'
+        f'- "rise" : hauteur de taille, seulement pour pantalons et jupes : {RISES}\n'
+        f'- "style" : un parmi {STYLES} (décontracté = casual, habillé = dressy, tailleur = tailored)\n'
+        f'- "closure" : seulement pour pantalons et jupes : {CLOSURES}\n'
         '- "details" : jusqu\'à 3 détails de design, 1 à 3 mots en français (ex. "volants", "fente", "nœud", "broderie")\n'
     )
 

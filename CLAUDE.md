@@ -45,6 +45,13 @@ Outil de veille pour une designer de mode (manager) : suivre les nouveautés de 
 - `stats.json` > `materials_by_type` (matière vue sur la photo) et `fibres_by_type` (fibre principale lue dans la composition de la fiche). La composition est lue par des règles (`parse_composition`), pas par Claude : « 95 % viscose, 5 % élasthanne » donne viscose ; aucune fibre à 50 % ou plus donne « mélange ». Seules les marques Shopify fournissent la description (`description` dans items.json, 700 caractères, texte brut).
 - `weekly.json` : `price_by_type` en CAD au taux actuel pour toutes les semaines (la variation du change ne fausse pas l'évolution) et `materials_by_type` par semaine.
 
+## Planches (board)
+- `collector/board.py` : une diapo par groupe de produits proches, au format de l'exemple de la designer (bandeau titre + filigrane, sous-titre, 11 photos : 1 grande + 2 x 5, numérotées). Sortie `.pptx` (à importer dans Google Slides). Photos des marques seulement (pas de street style).
+- Attributs ajoutés à l'analyse (`ATTRS_VERSION = 3`) : `shape` (forme selon le type : `SHAPES`), `rise` (taille, pantalons/jupes), `style` (décontracté, habillé, tailleur), `closure` (pull-on, zippé ou boutonné, noué). Seuls les produits analysés en v3 avec photo lue entrent dans une planche.
+- Regroupement (`DIMS` par type) : groupes complets de 11 avec toutes les dimensions, puis élargis en retirant la dimension la moins importante ; le reste forme une diapo incomplète (3 produits minimum, indiquée « Groupe incomplet »). Marques alternées dans une diapo. Plus de 11 produits dans un même groupe : diapos (1/2), (2/2).
+- Workflow manuel « Créer une planche » : titre, filigrane, période (jours) ; le fichier est à télécharger dans les artefacts de l'exécution (non enregistré dans le dépôt). Lien vers la fiche produit sur chaque photo, liste dans les notes de la diapo.
+- Tests : `tests/test_board.py` (hors ligne, photos fictives).
+
 ## Prochaines étapes
 1. Laisser tourner 2 semaines pour avoir un historique, vérifier que les photos s'affichent (certains CDN bloquent le hotlinking) sinon télécharger les images dans le dépôt.
 2. Format de présentation des tendances à valider avec la designer (présentations, planches, fiches techniques). Vérifier que les 6 nouvelles marques se collectent.
