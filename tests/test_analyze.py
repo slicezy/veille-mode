@@ -104,12 +104,23 @@ class AnalyzeItemsTests(unittest.TestCase):
         self.assertNotIn("category", items[0])
         self.assertNotIn("silhouette", items[0])
 
-    def test_unreadable_photo_falls_back_to_text(self):
+    def test_unreadable_photo_is_retried_then_falls_back_to_text(self):
         items = [item(1)]
+        client, done = self.run_items(items, [], loader=lambda u: None)
+        self.assertEqual((done, items[0]["photo_tries"]), (0, 1))
+        self.assertNotIn("attrs_v", items[0])  # pas figé : repris la prochaine fois
+        items[0]["photo_tries"] = analyze.PHOTO_MAX_TRIES
         client, _ = self.run_items(items, [json.dumps({"type": "Hauts", "cut": "fluide"})], loader=lambda u: None)
         self.assertEqual(client.calls[0]["messages"][0]["content"][0]["type"], "text")
         self.assertFalse(items[0]["has_vision"])
         self.assertEqual(items[0]["cut"], "")
+
+    def test_old_text_only_analysis_is_requeued_once(self):
+        old = item(1, attrs_v=analyze.ATTRS_VERSION, type="Hauts", colors=["noir"], has_vision=False)
+        acc = item(2, attrs_v=analyze.ATTRS_VERSION, type="Accessoires", colors=[], has_vision=False)
+        client, done = self.run_items([old, acc], [json.dumps({"type": "Hauts", "cut": "fluide"})])
+        self.assertEqual((done, old["has_vision"], old["photo_tries"]), (1, True, 0))
+        self.assertEqual(acc["attrs_v"], analyze.ATTRS_VERSION)  # accessoires : jamais repris
 
     def test_api_error_does_not_block_others_and_is_retried_later(self):
         items = [item(1, name="Wrap Dress"), item(2)]

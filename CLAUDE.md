@@ -27,6 +27,8 @@ Outil de veille pour une designer de mode (manager) : suivre les nouveautés de 
 - Par produit (Haiku, avec la photo réduite par Pillow) : type (Robes, Hauts, Pantalons, Jupes, Manteaux, Accessoires, Autres), couleurs (1-2), matière, longueur, coupe, encolure, détails. Vocabulaire fermé : tout ce qui n'en fait pas partie est écarté (`normalize`). Coupe et encolure seulement si la photo a été lue (`has_vision`).
 - Changer le vocabulaire : incrémenter `ATTRS_VERSION`, les produits sont réanalysés. Au plus `MAX_PER_RUN` (80) produits par exécution, le reste le lendemain. Sans clé ou en cas d'erreur : type déduit de règles simples, repris plus tard.
 - `data/stats.json` : chiffres calculés sans IA (types, couleurs, matières, longueurs, palette avec parts en %). Fenêtre de 7 jours (hors catalogue de départ) si au moins `MIN_WINDOW_ITEMS` (24) produits, sinon tout. La palette vient des couleurs vues sur les photos, pas des noms. La synthèse Sonnet s'appuie sur ces chiffres ; elle ne fixe pas la palette.
+- Réponses coupées ou vides : `ATTR_MAX_TOKENS` = 2000 ; le journal dit « réponse incomplète : arrêt=…, blocs=…, jetons=… » (arrêt=max_tokens : budget trop court).
+- Photo indisponible : 3 essais (erreurs temporaires), puis le produit est repris aux 2 exécutions suivantes (`photo_tries`) avant d'être analysé sans photo. Les journaux disent « photo illisible (type d'erreur, code) ».
 - Les adresses de photos sont refusées si ce n'est pas du http(s) public.
 - À vérifier après une exécution : répartition des types, part de produits avec photo lue, palette plausible.
 
