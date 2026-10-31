@@ -1,20 +1,20 @@
 {
- "title": "Décontracté et habillé, en noir et ivoire",
- "summary": "Les hauts (41 %) et les robes (24 %) dominent les nouveautés des 11 marques, avec le noir en tête de palette (25 %), devant le blanc (16 %) et l'ivoire (11 %). La maille est la matière la plus relevée (18 %), le maxi la longueur la plus fréquente (14 %) et le col rond l'encolure principale (16 %). Côté style, le décontracté et le fluide ressortent chez les 11 marques, l'habillé chez 10, avec un prix médian de 255 CAD pour les robes.",
+ "title": "Noir, maille et hauts ajustés dominent les nouveautés",
+ "summary": "Les hauts (42 %) et les robes (24 %) concentrent l'essentiel des nouveautés, avec une palette dominée par le noir (25 %), le blanc (15 %), puis le marron et l'ivoire (11 % chacun). La maille arrive en tête des matières (19 %), devant le jersey (12 %), le coton et le satin (10 % chacun), et le col rond est l'encolure la plus fréquente (19 %). Côté style, l'opposition décontracté/habillé et les coupes ajustées, fluides et droites se retrouvent chez les 11 marques ; dans l'échantillon, les robes en satin maxi à bretelles fines ou drapé (Reformation, Bec + Bridge) côtoient des hauts en dentelle et mousseline (VRG GRL).",
  "tags": [
   "noir",
-  "ivoire",
   "maille",
-  "fluide"
+  "col rond",
+  "robes maxi"
  ],
  "en": {
-  "title": "Casual meets dressy, in black and ivory",
-  "summary": "Tops (41%) and dresses (24%) dominate the new arrivals from the 11 brands, with black leading the palette (25%), ahead of white (16%) and ivory (11%). Knit is the most frequently spotted material (18%), maxi the most common length (14%) and the crew neck the main neckline (16%). On style, casual and fluid stand out across all 11 brands and dressy across 10, with a median price of 255 CAD for dresses.",
+  "title": "Black, knitwear and fitted tops lead new arrivals",
+  "summary": "Tops (42%) and dresses (24%) make up most of the new arrivals, with a palette led by black (25%), white (15%), then brown and ivory (11% each). Knit ranks first among fabrics (19%), ahead of jersey (12%), cotton and satin (10% each), and the crew neck is the most common neckline (19%). In terms of style, the casual/dressy split and fitted, fluid and straight cuts appear across all 11 brands; in the sample, satin maxi dresses with thin straps or draping (Reformation, Bec + Bridge) sit alongside lace and sheer-chiffon tops (VRG GRL).",
   "tags": [
    "black",
-   "ivory",
-   "knit",
-   "fluid"
+   "knitwear",
+   "crew neck",
+   "maxi dresses"
   ]
  },
  "palette": [
@@ -26,7 +26,12 @@
   {
    "name": "Blanc",
    "hex": "#F7F6F2",
-   "share": 16
+   "share": 15
+  },
+  {
+   "name": "Marron",
+   "hex": "#6B4A36",
+   "share": 11
   },
   {
    "name": "Ivoire",
@@ -34,17 +39,12 @@
    "share": 11
   },
   {
-   "name": "Marron",
-   "hex": "#6B4A36",
-   "share": 10
-  },
-  {
    "name": "Bleu",
    "hex": "#4A6FA5",
-   "share": 8
+   "share": 10
   }
  ],
  "week_label": "Semaine du 26 octobre",
  "week_label_en": "Week of October 26",
- "generated_at": "2026-10-31T18:03:15+00:00"
+ "generated_at": "2026-10-31T18:31:18+00:00"
 }
