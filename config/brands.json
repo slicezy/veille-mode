@@ -178,7 +178,7 @@
     {
       "id": "bayse",
       "name": "Bayse",
-      "site": "",
+      "site": "https://www.baysebrand.com",
       "currency": "AUD",
       "strategies": [
         "shopify",
@@ -193,13 +193,12 @@
         "latest"
       ],
       "new_path": "/collections/new-arrivals",
-      "enabled": false,
-      "note": "Désactivée : adresse officielle du site à confirmer (non trouvée avec certitude). Renseigner « site » puis retirer « enabled »."
+      "note": "Ajoutée d'après la liste « Brands We Love ». Adresse donnée par Clem. Plateforme à confirmer par data/status.json."
     },
     {
       "id": "benni",
       "name": "BENNI",
-      "site": "",
+      "site": "https://benni.com.au",
       "currency": "AUD",
       "strategies": [
         "shopify",
@@ -214,8 +213,7 @@
         "latest"
       ],
       "new_path": "/collections/new-arrivals",
-      "enabled": false,
-      "note": "Désactivée : adresse officielle du site à confirmer (non trouvée avec certitude). Renseigner « site » puis retirer « enabled »."
+      "note": "Ajoutée d'après la liste « Brands We Love ». Site australien (devise AUD) ; il existe aussi benni.us (USD), non suivi pour éviter les doublons. Plateforme à confirmer par data/status.json."
     }
   ]
 }
