@@ -1,34 +1,34 @@
 {
- "title": "Neutres satinés, dentelle et jupes fluides",
- "summary": "Les jupes dominent la veille, en midi et en mini : Reformation les décline en soie (Layla, Helen taille basse), Kookaï en versions plissées ou réversibles (Dylan, Amber, Heidi) et Dissh en dentelle ivoire. Les robes longues et asymétriques, souvent drapées ou bustier chez Bec + Bridge, jouent l'ivoire et l'argent, tandis que Dissh travaille la dentelle blanche et la soie noire. Côté palette, Kookaï s'appuie sur le marron, le beige et le noir, avec des touches de rouge et de bleu ; Reformation mise sur la maille, le cachemire, le velours et la soie.",
+ "title": "Neutres sensuels : dentelle, soie et jupes fluides",
+ "summary": "Les jupes dominent chez Kookaï (minis, midis, skort), Dissh (dentelle ivoire) et Bec + Bridge (jupe drapée), aux côtés de robes longues ou midi en soie chez Reformation et Bec + Bridge (Parma, Neva, Nalu, Drift). La palette reste sobre, entre marron, beige, ivoire et noir, avec des touches d'argent métallisé chez Bec + Bridge. Les matières travaillent la douceur et la transparence : dentelle, soie, maille, cachemire, velours et fausse fourrure chez Dissh.",
  "tags": [
-  "jupes midi",
+  "jupes",
   "dentelle",
-  "ivoire et argent",
-  "soie et maille"
+  "soie",
+  "neutres"
  ],
  "palette": [
   {
    "name": "Ivoire",
-   "hex": "#F3EEDC"
+   "hex": "#F3EEDF"
+  },
+  {
+   "name": "Beige sable",
+   "hex": "#D8C3A5"
+  },
+  {
+   "name": "Marron chocolat",
+   "hex": "#6B4A3A"
   },
   {
    "name": "Noir",
    "hex": "#1A1A1A"
   },
   {
-   "name": "Marron chocolat",
-   "hex": "#6B4332"
-  },
-  {
-   "name": "Beige sable",
-   "hex": "#D2B999"
-  },
-  {
    "name": "Argent",
-   "hex": "#C0C0C4"
+   "hex": "#C0C0C8"
   }
  ],
  "week_label": "Semaine du 26 octobre",
- "generated_at": "2026-10-31T03:14:01+00:00"
+ "generated_at": "2026-10-31T03:29:57+00:00"
 }
