@@ -19,7 +19,7 @@ import re
 import time
 from html import unescape
 from pathlib import Path
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlparse
 
 import requests
 
@@ -220,10 +220,123 @@ def strategy_sitemap(brand: dict) -> list[dict]:
     return parse_sitemap(brand, site, xml)
 
 
+# --------------------------------------------------------------------------
+# Stratégie 4 : liste JSON-LD (adresses seulement) + fiches produit
+# Ex. Reformation : /new/this-week annonce les produits par leurs adresses ;
+# le nom, la photo et le prix se lisent sur chaque fiche (JSON-LD Product).
+# --------------------------------------------------------------------------
+def element_url(el) -> str | None:
+    if isinstance(el, str):
+        return el
+    if not isinstance(el, dict):
+        return None
+    if el.get("url"):
+        return str(el["url"])
+    item = el.get("item")
+    if isinstance(item, str):
+        return item
+    if isinstance(item, dict):
+        return item.get("url") or item.get("@id")
+    return None
+
+
+def itemlist_urls(site: str, page: str) -> list[str]:
+    urls: list[str] = []
+    for block in LD_RE.findall(page):
+        try:
+            data = json.loads(unescape(block.strip()))
+        except ValueError:
+            continue
+        for node in walk(data):
+            kinds = node.get("@type")
+            kinds = kinds if isinstance(kinds, list) else [kinds]
+            if "ItemList" not in kinds:
+                continue
+            for el in node.get("itemListElement") or []:
+                url = element_url(el)
+                if url:
+                    url = urljoin(site + "/", str(url))
+                    if url not in urls:
+                        urls.append(url)
+    return urls
+
+
+def _segments(url: str) -> list[str]:
+    return [s for s in urlparse(url).path.split("/") if s]
+
+
+def name_from_url(url: str) -> str:
+    segs = _segments(url)
+    if not segs:
+        return url
+    slug = segs[-2] if segs[-1].endswith(".html") and len(segs) >= 2 else segs[-1]
+    return re.sub(r"[-_]+", " ", slug.removesuffix(".html")).strip().title()
+
+
+def product_id(url: str) -> str:
+    segs = _segments(url)
+    return segs[-1].removesuffix(".html") if segs else url
+
+
+def product_from_jsonld(html: str) -> dict:
+    for block in LD_RE.findall(html):
+        try:
+            data = json.loads(unescape(block.strip()))
+        except ValueError:
+            continue
+        for node in walk(data):
+            kinds = node.get("@type")
+            kinds = kinds if isinstance(kinds, list) else [kinds]
+            if "Product" in kinds and node.get("name"):
+                price, currency = offer_info(node.get("offers"))
+                return {
+                    "name": str(node["name"]).strip(),
+                    "image": first_image(node.get("image")),
+                    "price": price,
+                    "currency": currency,
+                }
+    return {}
+
+
+def strategy_jsonld_pdp(brand: dict) -> list[dict]:
+    site = brand["site"].rstrip("/")
+    page_url = urljoin(site + "/", brand.get("new_path", "/new").lstrip("/"))
+    urls = itemlist_urls(site, get(page_url).text)[:MAX_PER_BRAND]
+    enrich = int(brand.get("max_enrich", 30))
+    items = []
+    for n, url in enumerate(urls):
+        item = {
+            "id": f"{brand['id']}:{product_id(url)}",
+            "brand": brand["name"],
+            "brand_id": brand["id"],
+            "name": name_from_url(url),
+            "url": url,
+            "image": None,
+            "price": None,
+            "currency": brand.get("currency"),
+            "published_at": None,
+            "product_type": "",
+            "tags": [],
+        }
+        if n < enrich:
+            try:
+                extra = product_from_jsonld(get(url).text)
+            except requests.RequestException:
+                extra = {}
+            for key in ("name", "image", "price", "currency"):
+                if extra.get(key):
+                    item[key] = extra[key]
+            if item["image"]:
+                item["image"] = urljoin(url, str(item["image"]))
+        items.append(item)
+    return items
+
+
 STRATEGIES = {
     "shopify": strategy_shopify,
     "jsonld": strategy_jsonld,
     "sitemap": strategy_sitemap,
+    "jsonld_pdp": strategy_jsonld_pdp,
 }
 
 

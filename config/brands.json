@@ -6,10 +6,10 @@
       "name": "Reformation",
       "site": "https://www.thereformation.com",
       "currency": "USD",
-      "strategies": ["shopify", "jsonld", "sitemap"],
-      "collections": ["new-arrivals", "new"],
-      "new_path": "/new-arrivals",
-      "note": "Salesforce Commerce Cloud (pas Shopify) : /new-arrivals renvoie 404, adresse à retrouver avec le diagnostic."
+      "strategies": ["jsonld_pdp"],
+      "new_path": "/new/this-week",
+      "max_enrich": 30,
+      "note": "Salesforce Commerce Cloud (pas Shopify). La liste /new/this-week donne les adresses des produits (JSON-LD ItemList) ; chaque fiche fournit nom, photo et prix. Les produits au-delà de max_enrich gardent le nom tiré de l'adresse, sans photo."
     },
     {
       "id": "dissh",
