@@ -1,31 +1,31 @@
 {
- "generated_at": "2026-10-31T18:31:18+00:00",
+ "generated_at": "2026-10-31T21:21:06+00:00",
  "window_days": null,
  "total": 401,
- "with_photo_analysis": 320,
+ "with_photo_analysis": 400,
  "types": [
   {
    "name": "Hauts",
-   "count": 168,
-   "share": 42,
+   "count": 173,
+   "share": 43,
    "brands": 11
   },
   {
    "name": "Robes",
-   "count": 97,
+   "count": 98,
    "share": 24,
    "brands": 11
   },
   {
    "name": "Jupes",
-   "count": 49,
+   "count": 48,
    "share": 12,
    "brands": 10
   },
   {
    "name": "Pantalons",
-   "count": 29,
-   "share": 7,
+   "count": 26,
+   "share": 6,
    "brands": 9
   },
   {
@@ -41,138 +41,138 @@
    "brands": 8
   },
   {
-   "name": "Autres",
-   "count": 9,
-   "share": 2,
-   "brands": 3
-  },
-  {
    "name": "Jeans",
-   "count": 9,
-   "share": 2,
-   "brands": 5
+   "count": 12,
+   "share": 3,
+   "brands": 6
   },
   {
    "name": "Blazers",
    "count": 5,
    "share": 1,
    "brands": 3
+  },
+  {
+   "name": "Autres",
+   "count": 4,
+   "share": 1,
+   "brands": 2
   }
  ],
  "colors": [
   {
    "name": "noir",
-   "count": 89,
-   "share": 22
+   "count": 106,
+   "share": 26
   },
   {
    "name": "blanc",
-   "count": 56,
-   "share": 14
+   "count": 67,
+   "share": 17
   },
   {
    "name": "marron",
-   "count": 42,
-   "share": 10
+   "count": 55,
+   "share": 14
   },
   {
    "name": "ivoire",
-   "count": 42,
-   "share": 10
+   "count": 53,
+   "share": 13
   },
   {
    "name": "bleu",
-   "count": 39,
-   "share": 10
+   "count": 49,
+   "share": 12
   },
   {
    "name": "gris",
-   "count": 23,
-   "share": 6
+   "count": 28,
+   "share": 7
   },
   {
    "name": "beige",
-   "count": 19,
-   "share": 5
+   "count": 25,
+   "share": 6
   },
   {
    "name": "rouge",
-   "count": 13,
+   "count": 14,
    "share": 3
   }
  ],
  "materials": [
   {
    "name": "maille",
-   "count": 77,
-   "share": 19
+   "count": 86,
+   "share": 21
   },
   {
    "name": "jersey",
-   "count": 48,
-   "share": 12
+   "count": 53,
+   "share": 13
   },
   {
    "name": "coton",
-   "count": 40,
-   "share": 10
+   "count": 43,
+   "share": 11
   },
   {
    "name": "satin",
-   "count": 39,
+   "count": 41,
    "share": 10
   },
   {
    "name": "soie",
-   "count": 26,
-   "share": 6
+   "count": 29,
+   "share": 7
   },
   {
    "name": "synthétique",
-   "count": 23,
+   "count": 25,
    "share": 6
   },
   {
    "name": "lin",
-   "count": 15,
+   "count": 16,
    "share": 4
   },
   {
    "name": "crêpe",
-   "count": 12,
+   "count": 13,
    "share": 3
   }
  ],
  "lengths": [
   {
    "name": "hanches",
+   "count": 77,
+   "share": 19
+  },
+  {
+   "name": "maxi",
+   "count": 61,
+   "share": 15
+  },
+  {
+   "name": "taille",
    "count": 59,
    "share": 15
   },
   {
-   "name": "maxi",
-   "count": 58,
-   "share": 14
-  },
-  {
-   "name": "taille",
-   "count": 46,
-   "share": 11
-  },
-  {
    "name": "mini",
-   "count": 43,
-   "share": 11
+   "count": 51,
+   "share": 13
   },
   {
    "name": "cropped",
-   "count": 42,
-   "share": 10
+   "count": 38,
+   "share": 9
   },
   {
    "name": "long",
-   "count": 30,
-   "share": 7
+   "count": 32,
+   "share": 8
   },
   {
    "name": "midi",
@@ -188,27 +188,27 @@
  "cuts": [
   {
    "name": "ajustée",
-   "count": 130,
-   "share": 32
+   "count": 151,
+   "share": 38
   },
   {
    "name": "fluide",
-   "count": 114,
-   "share": 28
+   "count": 123,
+   "share": 31
   },
   {
    "name": "droite",
-   "count": 60,
-   "share": 15
+   "count": 67,
+   "share": 17
   },
   {
    "name": "oversize",
-   "count": 45,
-   "share": 11
+   "count": 50,
+   "share": 12
   },
   {
    "name": "évasée",
-   "count": 4,
+   "count": 6,
    "share": 1
   },
   {
@@ -220,93 +220,93 @@
  "necklines": [
   {
    "name": "col rond",
-   "count": 76,
-   "share": 19
+   "count": 86,
+   "share": 21
   },
   {
    "name": "col V",
-   "count": 38,
-   "share": 9
+   "count": 41,
+   "share": 10
   },
   {
    "name": "col haut",
-   "count": 37,
-   "share": 9
+   "count": 39,
+   "share": 10
   },
   {
    "name": "décolleté plongeant",
-   "count": 27,
+   "count": 28,
    "share": 7
   },
   {
    "name": "asymétrique",
-   "count": 17,
-   "share": 4
+   "count": 22,
+   "share": 5
   },
   {
    "name": "col chemise",
-   "count": 15,
+   "count": 16,
    "share": 4
   },
   {
    "name": "bretelles fines",
-   "count": 13,
-   "share": 3
+   "count": 15,
+   "share": 4
   },
   {
    "name": "carré",
-   "count": 8,
+   "count": 9,
    "share": 2
   }
  ],
  "details": [
   {
    "name": "drapé",
-   "count": 38,
-   "share": 9
+   "count": 42,
+   "share": 10
   },
   {
    "name": "manches courtes",
-   "count": 27,
+   "count": 28,
    "share": 7
   },
   {
    "name": "sans manches",
-   "count": 25,
+   "count": 24,
    "share": 6
   },
   {
    "name": "transparence",
-   "count": 20,
-   "share": 5
+   "count": 23,
+   "share": 6
   },
   {
    "name": "côtes",
+   "count": 23,
+   "share": 6
+  },
+  {
+   "name": "bretelles fines",
+   "count": 22,
+   "share": 5
+  },
+  {
+   "name": "fronces",
+   "count": 21,
+   "share": 5
+  },
+  {
+   "name": "boutons",
    "count": 19,
    "share": 5
   },
   {
-   "name": "bretelles fines",
-   "count": 18,
-   "share": 4
-  },
-  {
-   "name": "boutons",
-   "count": 17,
-   "share": 4
-  },
-  {
    "name": "col montant",
-   "count": 16,
-   "share": 4
+   "count": 19,
+   "share": 5
   },
   {
-   "name": "fronces",
-   "count": 15,
-   "share": 4
-  },
-  {
-   "name": "manches longues",
+   "name": "rayures",
    "count": 14,
    "share": 3
   }
@@ -622,33 +622,80 @@
   "taille côtelée": "ribbed waistband",
   "bords côtelés": "ribbed trim",
   "fermeture éclair": "zip closure",
-  "manches cape": "cape sleeves"
+  "manches cape": "cape sleeves",
+  "manches chauve-souris": "batwing sleeves",
+  "dentelle appliquée": "appliqué lace",
+  "jupe plissée": "pleated skirt",
+  "panneau transparent": "sheer panel",
+  "bordure appliquée": "applique border",
+  "col chemise": "shirt collar",
+  "poche zippée": "zip pocket",
+  "poches zippées": "zip pockets",
+  "double boutonnage": "double-breasted",
+  "revers pointus": "peaked lapels",
+  "boutons latéraux": "side buttons",
+  "boutons devant": "front buttons",
+  "corset": "corset",
+  "encolure nouée": "tied neckline",
+  "motif fleuri": "floral print",
+  "bretelles nouées": "tied straps",
+  "poignets à patte": "tab cuffs",
+  "taille asymétrique": "asymmetric waistband",
+  "bordure grecque": "greek key border",
+  "motifs urnes": "urn motifs",
+  "pan drapé": "draped panel",
+  "superposition asymétriqu": "asymmetric overlay",
+  "découpe taille": "waist cutout",
+  "manche ample": "wide sleeve",
+  "bas côtelé": "ribbed hem",
+  "col côtelé": "ribbed collar",
+  "finition brossée": "brushed finish",
+  "jambes amples": "wide legs",
+  "poches cinq": "five pockets",
+  "nœud au col": "neck tie",
+  "col à revers": "turn-down collar",
+  "bride licou": "halter neck",
+  "fronces poitrine": "bust gathers",
+  "fentes latérales": "side slits",
+  "poignets fendus": "slit cuffs",
+  "dos drapé": "draped back",
+  "texture froissée": "crinkled texture",
+  "crochet ajouré": "openwork crochet",
+  "bordure festonnée": "scalloped edge",
+  "bord contrasté": "contrast trim",
+  "bustier": "bustier",
+  "drapé au buste": "draped bodice",
+  "ajouré": "eyelet",
+  "crochet": "crochet",
+  "encolure haltère": "halter neckline",
+  "emmanchures échancrées": "cut-out armholes",
+  "col rond": "round neck"
  },
  "palette": [
   {
    "name": "Noir",
    "hex": "#1F1E1C",
-   "share": 25
+   "share": 24
   },
   {
    "name": "Blanc",
    "hex": "#F7F6F2",
-   "share": 15
+   "share": 14
   },
   {
    "name": "Marron",
    "hex": "#6B4A36",
-   "share": 11
+   "share": 12
   },
   {
    "name": "Ivoire",
    "hex": "#EFE8D8",
-   "share": 11
+   "share": 12
   },
   {
    "name": "Bleu",
    "hex": "#4A6FA5",
-   "share": 10
+   "share": 11
   }
  ],
  "trends": [
@@ -669,8 +716,8 @@
     "VRG GRL",
     "Venroy"
    ],
-   "count": 166,
-   "share": 52
+   "count": 214,
+   "share": 54
   },
   {
    "kind": "style",
@@ -689,8 +736,8 @@
     "VRG GRL",
     "Venroy"
    ],
-   "count": 138,
-   "share": 43
+   "count": 164,
+   "share": 41
   },
   {
    "kind": "coupe",
@@ -709,7 +756,7 @@
     "VRG GRL",
     "Venroy"
    ],
-   "count": 123,
+   "count": 151,
    "share": 38
   },
   {
@@ -729,8 +776,8 @@
     "VRG GRL",
     "Venroy"
    ],
-   "count": 102,
-   "share": 32
+   "count": 123,
+   "share": 31
   },
   {
    "kind": "couleur",
@@ -749,8 +796,8 @@
     "VRG GRL",
     "Venroy"
    ],
-   "count": 89,
-   "share": 28
+   "count": 106,
+   "share": 26
   },
   {
    "kind": "encolure",
@@ -769,8 +816,28 @@
     "VRG GRL",
     "Venroy"
    ],
-   "count": 73,
-   "share": 23
+   "count": 86,
+   "share": 22
+  },
+  {
+   "kind": "matière",
+   "value": "maille",
+   "brands": 11,
+   "brand_names": [
+    "BENNI",
+    "Bayse",
+    "Bec + Bridge",
+    "Dissh",
+    "Elka Collective",
+    "Henne",
+    "Kookaï",
+    "Reformation",
+    "Sir.",
+    "VRG GRL",
+    "Venroy"
+   ],
+   "count": 86,
+   "share": 22
   },
   {
    "kind": "forme",
@@ -789,8 +856,8 @@
     "VRG GRL",
     "Venroy"
    ],
-   "count": 70,
-   "share": 22
+   "count": 82,
+   "share": 20
   },
   {
    "kind": "coupe",
@@ -809,8 +876,48 @@
     "VRG GRL",
     "Venroy"
    ],
-   "count": 53,
+   "count": 67,
    "share": 17
+  },
+  {
+   "kind": "longueur",
+   "value": "Hauts · taille",
+   "brands": 11,
+   "brand_names": [
+    "BENNI",
+    "Bayse",
+    "Bec + Bridge",
+    "Dissh",
+    "Elka Collective",
+    "Henne",
+    "Kookaï",
+    "Reformation",
+    "Sir.",
+    "VRG GRL",
+    "Venroy"
+   ],
+   "count": 59,
+   "share": 15
+  },
+  {
+   "kind": "couleur",
+   "value": "marron",
+   "brands": 11,
+   "brand_names": [
+    "BENNI",
+    "Bayse",
+    "Bec + Bridge",
+    "Dissh",
+    "Elka Collective",
+    "Henne",
+    "Kookaï",
+    "Reformation",
+    "Sir.",
+    "VRG GRL",
+    "Venroy"
+   ],
+   "count": 55,
+   "share": 14
   },
   {
    "kind": "couleur",
@@ -829,7 +936,7 @@
     "VRG GRL",
     "Venroy"
    ],
-   "count": 42,
+   "count": 53,
    "share": 13
   },
   {
@@ -849,27 +956,8 @@
     "VRG GRL",
     "Venroy"
    ],
-   "count": 39,
+   "count": 49,
    "share": 12
-  },
-  {
-   "kind": "matière",
-   "value": "maille",
-   "brands": 10,
-   "brand_names": [
-    "BENNI",
-    "Bayse",
-    "Bec + Bridge",
-    "Dissh",
-    "Elka Collective",
-    "Henne",
-    "Kookaï",
-    "Reformation",
-    "Sir.",
-    "VRG GRL"
-   ],
-   "count": 65,
-   "share": 20
   },
   {
    "kind": "longueur",
@@ -887,12 +975,12 @@
     "VRG GRL",
     "Venroy"
    ],
-   "count": 54,
+   "count": 68,
    "share": 17
   },
   {
-   "kind": "longueur",
-   "value": "Hauts · taille",
+   "kind": "coupe",
+   "value": "oversize",
    "brands": 10,
    "brand_names": [
     "BENNI",
@@ -902,49 +990,11 @@
     "Elka Collective",
     "Henne",
     "Kookaï",
-    "Reformation",
-    "VRG GRL",
-    "Venroy"
-   ],
-   "count": 46,
-   "share": 14
-  },
-  {
-   "kind": "couleur",
-   "value": "marron",
-   "brands": 10,
-   "brand_names": [
-    "BENNI",
-    "Bayse",
-    "Bec + Bridge",
-    "Dissh",
-    "Elka Collective",
-    "Kookaï",
-    "Reformation",
     "Sir.",
     "VRG GRL",
     "Venroy"
    ],
-   "count": 42,
-   "share": 13
-  },
-  {
-   "kind": "longueur",
-   "value": "Robes · maxi",
-   "brands": 10,
-   "brand_names": [
-    "BENNI",
-    "Bayse",
-    "Bec + Bridge",
-    "Dissh",
-    "Elka Collective",
-    "Henne",
-    "Reformation",
-    "Sir.",
-    "VRG GRL",
-    "Venroy"
-   ],
-   "count": 40,
+   "count": 50,
    "share": 12
   }
  ],
@@ -1075,12 +1125,12 @@
   "types": [
    {
     "type": "Robes",
-    "n": 91,
+    "n": 92,
     "enough": true,
     "median_cad": 255.14,
-    "mean_cad": 286.51,
-    "p25_cad": 168.29,
-    "p75_cad": 380.74,
+    "mean_cad": 285.13,
+    "p25_cad": 166.82,
+    "p75_cad": 376.82,
     "bands": [
      {
       "label": "moins de 100",
@@ -1088,34 +1138,34 @@
      },
      {
       "label": "100 à 200",
-      "share": 36
+      "share": 37
      },
      {
       "label": "200 à 400",
-      "share": 43
+      "share": 42
      },
      {
       "label": "400 et plus",
-      "share": 19
+      "share": 18
      }
     ]
    },
    {
     "type": "Hauts",
-    "n": 164,
+    "n": 169,
     "enough": true,
-    "median_cad": 126.59,
-    "mean_cad": 139.29,
+    "median_cad": 134.44,
+    "mean_cad": 140.54,
     "p25_cad": 80.47,
     "p75_cad": 181.54,
     "bands": [
      {
       "label": "moins de 100",
-      "share": 38
+      "share": 37
      },
      {
       "label": "100 à 200",
-      "share": 45
+      "share": 47
      },
      {
       "label": "200 à 400",
@@ -1129,12 +1179,12 @@
    },
    {
     "type": "Pantalons",
-    "n": 29,
+    "n": 26,
     "enough": true,
-    "median_cad": 179.58,
-    "mean_cad": 214.87,
-    "p25_cad": 161.91,
-    "p75_cad": 255.14,
+    "median_cad": 197.73,
+    "mean_cad": 216.72,
+    "p25_cad": 166.82,
+    "p75_cad": 252.44,
     "bands": [
      {
       "label": "moins de 100",
@@ -1142,25 +1192,25 @@
      },
      {
       "label": "100 à 200",
-      "share": 52
+      "share": 50
      },
      {
       "label": "200 à 400",
-      "share": 41
+      "share": 42
      },
      {
       "label": "400 et plus",
-      "share": 7
+      "share": 8
      }
     ]
    },
    {
     "type": "Jeans",
-    "n": 9,
+    "n": 12,
     "enough": true,
-    "median_cad": 186.45,
-    "mean_cad": 190.81,
-    "p25_cad": 156.03,
+    "median_cad": 178.11,
+    "mean_cad": 192.83,
+    "p25_cad": 141.31,
     "p75_cad": 220.79,
     "bands": [
      {
@@ -1169,11 +1219,11 @@
      },
      {
       "label": "100 à 200",
-      "share": 56
+      "share": 58
      },
      {
       "label": "200 à 400",
-      "share": 44
+      "share": 42
      },
      {
       "label": "400 et plus",
@@ -1210,12 +1260,12 @@
    },
    {
     "type": "Jupes",
-    "n": 48,
+    "n": 47,
     "enough": true,
     "median_cad": 176.63,
-    "mean_cad": 193.78,
+    "mean_cad": 194.5,
     "p25_cad": 147.19,
-    "p75_cad": 237.72,
+    "p75_cad": 239.93,
     "bands": [
      {
       "label": "moins de 100",
@@ -1223,11 +1273,11 @@
      },
      {
       "label": "100 à 200",
-      "share": 58
+      "share": 57
      },
      {
       "label": "200 à 400",
-      "share": 33
+      "share": 34
      },
      {
       "label": "400 et plus",
@@ -1276,8 +1326,8 @@
     "Bec + Bridge",
     "Kookaï",
     "VRG GRL",
-    "Venroy",
     "Henne",
+    "Venroy",
     "Sir.",
     "BENNI",
     "Reformation"
@@ -1497,48 +1547,14 @@
       "median_cad": null
      }
     },
-    "Venroy": {
-     "Robes": {
-      "n": 12,
-      "median_cad": 147.69
-     },
-     "Hauts": {
-      "n": 13,
-      "median_cad": 103.04
-     },
-     "Pantalons": {
-      "n": 5,
-      "median_cad": 179.58
-     },
-     "Jeans": {
-      "n": 2,
-      "median_cad": null
-     },
-     "Shorts": {
-      "n": 0,
-      "median_cad": null
-     },
-     "Jupes": {
-      "n": 4,
-      "median_cad": 163.39
-     },
-     "Blazers": {
-      "n": 0,
-      "median_cad": null
-     },
-     "Manteaux": {
-      "n": 1,
-      "median_cad": null
-     }
-    },
     "Henne": {
      "Robes": {
       "n": 4,
       "median_cad": 230.61
      },
      "Hauts": {
-      "n": 17,
-      "median_cad": 161.91
+      "n": 22,
+      "median_cad": 181.54
      },
      "Pantalons": {
       "n": 3,
@@ -1565,6 +1581,40 @@
       "median_cad": null
      }
     },
+    "Venroy": {
+     "Robes": {
+      "n": 13,
+      "median_cad": 154.06
+     },
+     "Hauts": {
+      "n": 13,
+      "median_cad": 103.04
+     },
+     "Pantalons": {
+      "n": 3,
+      "median_cad": 179.58
+     },
+     "Jeans": {
+      "n": 4,
+      "median_cad": 141.31
+     },
+     "Shorts": {
+      "n": 0,
+      "median_cad": null
+     },
+     "Jupes": {
+      "n": 3,
+      "median_cad": 166.82
+     },
+     "Blazers": {
+      "n": 0,
+      "median_cad": null
+     },
+     "Manteaux": {
+      "n": 1,
+      "median_cad": null
+     }
+    },
     "Sir.": {
      "Robes": {
       "n": 8,
@@ -1575,11 +1625,11 @@
       "median_cad": 210.98
      },
      "Pantalons": {
-      "n": 4,
-      "median_cad": 363.08
+      "n": 3,
+      "median_cad": 412.15
      },
      "Jeans": {
-      "n": 0,
+      "n": 1,
       "median_cad": null
      },
      "Shorts": {
@@ -1702,7 +1752,7 @@
    },
    {
     "name": "Henne",
-    "n": 33,
+    "n": 38,
     "on_sale": 0,
     "share": 0
    },
@@ -1751,77 +1801,77 @@
  "materials_by_type": [
   {
    "type": "Robes",
-   "of": 97,
-   "known": 83,
+   "of": 98,
+   "known": 94,
    "rows": [
     {
      "name": "satin",
      "count": 18,
-     "share": 22,
+     "share": 19,
      "brands": 7,
      "median_cad": 353.27
     },
     {
      "name": "jersey",
-     "count": 14,
-     "share": 17,
-     "brands": 5,
-     "median_cad": 201.66
+     "count": 17,
+     "share": 18,
+     "brands": 7,
+     "median_cad": 206.07
+    },
+    {
+     "name": "maille",
+     "count": 13,
+     "share": 14,
+     "brands": 7,
+     "median_cad": 276.38
+    },
+    {
+     "name": "soie",
+     "count": 12,
+     "share": 13,
+     "brands": 3,
+     "median_cad": 322.36
     },
     {
      "name": "coton",
      "count": 11,
-     "share": 13,
+     "share": 12,
      "brands": 4,
      "median_cad": 156.03
-    },
-    {
-     "name": "maille",
-     "count": 10,
-     "share": 12,
-     "brands": 6,
-     "median_cad": 286.19
-    },
-    {
-     "name": "soie",
-     "count": 8,
-     "share": 10,
-     "brands": 3,
-     "median_cad": 471.02
     }
    ]
   },
   {
    "type": "Hauts",
-   "of": 168,
-   "known": 149,
+   "of": 173,
+   "known": 164,
    "rows": [
     {
      "name": "maille",
-     "count": 56,
-     "share": 38,
-     "brands": 10,
-     "median_cad": 146.21
+     "count": 66,
+     "share": 40,
+     "brands": 11,
+     "median_cad": 147.11
     },
     {
      "name": "jersey",
-     "count": 29,
+     "count": 31,
      "share": 19,
-     "brands": 6,
+     "brands": 7,
      "median_cad": 80.47
     },
     {
      "name": "coton",
-     "count": 19,
+     "count": 22,
      "share": 13,
-     "brands": 7,
+     "brands": 8,
      "median_cad": 97.15
     },
     {
      "name": "satin",
-     "count": 9,
+     "count": 10,
      "share": 6,
-     "brands": 6,
+     "brands": 7,
      "median_cad": 147.19
     },
     {
@@ -1835,20 +1885,20 @@
   },
   {
    "type": "Pantalons",
-   "of": 29,
-   "known": 19,
+   "of": 26,
+   "known": 18,
    "rows": [
     {
      "name": "laine",
      "count": 4,
-     "share": 21,
+     "share": 22,
      "brands": 2,
      "median_cad": 179.58
     },
     {
      "name": "soie",
      "count": 3,
-     "share": 16,
+     "share": 17,
      "brands": 2
     },
     {
@@ -1873,15 +1923,15 @@
   },
   {
    "type": "Jeans",
-   "of": 9,
-   "known": 9,
+   "of": 12,
+   "known": 12,
    "rows": [
     {
      "name": "denim",
-     "count": 9,
+     "count": 12,
      "share": 100,
-     "brands": 5,
-     "median_cad": 186.45
+     "brands": 6,
+     "median_cad": 178.11
     }
    ]
   },
@@ -1925,22 +1975,22 @@
   },
   {
    "type": "Jupes",
-   "of": 49,
-   "known": 38,
+   "of": 48,
+   "known": 39,
    "rows": [
     {
      "name": "satin",
-     "count": 9,
-     "share": 24,
-     "brands": 6,
+     "count": 10,
+     "share": 26,
+     "brands": 7,
      "median_cad": 196.26
     },
     {
      "name": "soie",
-     "count": 7,
-     "share": 18,
+     "count": 6,
+     "share": 15,
      "brands": 3,
-     "median_cad": 179.58
+     "median_cad": 198.79
     },
     {
      "name": "jersey",
@@ -1956,9 +2006,9 @@
      "brands": 2
     },
     {
-     "name": "maille",
-     "count": 2,
-     "share": 5,
+     "name": "crêpe",
+     "count": 3,
+     "share": 8,
      "brands": 2
     }
    ]
@@ -1979,37 +2029,37 @@
   {
    "type": "Manteaux",
    "of": 16,
-   "known": 11,
+   "known": 13,
    "rows": [
     {
      "name": "synthétique",
-     "count": 4,
-     "share": 36,
-     "brands": 4,
-     "median_cad": 356.21
-    },
-    {
-     "name": "cuir",
-     "count": 2,
-     "share": 18,
-     "brands": 2
+     "count": 7,
+     "share": 54,
+     "brands": 5,
+     "median_cad": 372.89
     },
     {
      "name": "maille",
      "count": 2,
-     "share": 18,
+     "share": 15,
      "brands": 2
     },
     {
      "name": "laine",
      "count": 2,
-     "share": 18,
+     "share": 15,
      "brands": 2
+    },
+    {
+     "name": "cuir",
+     "count": 1,
+     "share": 8,
+     "brands": 1
     },
     {
      "name": "coton",
      "count": 1,
-     "share": 9,
+     "share": 8,
      "brands": 1
     }
    ]
@@ -2018,134 +2068,135 @@
  "fibres_by_type": [
   {
    "type": "Robes",
-   "of": 97,
-   "known": 22,
+   "of": 98,
+   "known": 23,
    "rows": [
     {
      "name": "soie",
-     "count": 6,
-     "share": 27,
+     "count": 7,
+     "share": 30,
      "brands": 2,
-     "median_cad": 232.57
+     "median_cad": 221.77
     },
     {
      "name": "lin",
      "count": 4,
-     "share": 18,
+     "share": 17,
      "brands": 2,
      "median_cad": 179.58
     },
     {
      "name": "coton",
      "count": 4,
-     "share": 18,
+     "share": 17,
      "brands": 2,
      "median_cad": 111.38
     },
     {
      "name": "viscose",
      "count": 4,
-     "share": 18,
+     "share": 17,
      "brands": 2,
      "median_cad": 220.79
     },
     {
      "name": "nylon",
      "count": 3,
-     "share": 14,
+     "share": 13,
      "brands": 1
     }
    ]
   },
   {
    "type": "Hauts",
-   "of": 168,
-   "known": 39,
+   "of": 173,
+   "known": 44,
    "rows": [
     {
      "name": "coton",
      "count": 12,
-     "share": 31,
+     "share": 27,
      "brands": 5,
      "median_cad": 97.15
     },
     {
      "name": "soie",
      "count": 8,
-     "share": 21,
+     "share": 18,
      "brands": 2,
      "median_cad": 197.24
     },
     {
      "name": "viscose",
      "count": 7,
-     "share": 18,
+     "share": 16,
      "brands": 2,
      "median_cad": 117.76
     },
     {
-     "name": "mélange",
-     "count": 4,
-     "share": 10,
+     "name": "lyocell",
+     "count": 7,
+     "share": 16,
      "brands": 1,
-     "median_cad": 161.91
+     "median_cad": 181.54
     },
     {
-     "name": "lyocell",
-     "count": 3,
-     "share": 8,
-     "brands": 1
+     "name": "mélange",
+     "count": 4,
+     "share": 9,
+     "brands": 1,
+     "median_cad": 161.91
     }
    ]
   },
   {
    "type": "Pantalons",
-   "of": 29,
-   "known": 9,
+   "of": 26,
+   "known": 7,
    "rows": [
     {
      "name": "laine",
      "count": 3,
-     "share": 33,
-     "brands": 1
-    },
-    {
-     "name": "coton",
-     "count": 2,
-     "share": 22,
+     "share": 43,
      "brands": 1
     },
     {
      "name": "soie",
      "count": 1,
-     "share": 11,
+     "share": 14,
      "brands": 1
     },
     {
      "name": "polyester",
      "count": 1,
-     "share": 11,
+     "share": 14,
      "brands": 1
     },
     {
      "name": "nylon",
      "count": 1,
-     "share": 11,
+     "share": 14,
+     "brands": 1
+    },
+    {
+     "name": "lyocell",
+     "count": 1,
+     "share": 14,
      "brands": 1
     }
    ]
   },
   {
    "type": "Jeans",
-   "of": 9,
-   "known": 8,
+   "of": 12,
+   "known": 10,
    "rows": [
     {
      "name": "coton",
-     "count": 8,
+     "count": 10,
      "share": 100,
      "brands": 4,
-     "median_cad": 195.28
+     "median_cad": 162.9
     }
    ]
   },
@@ -2176,26 +2227,26 @@
   },
   {
    "type": "Jupes",
-   "of": 49,
-   "known": 8,
+   "of": 48,
+   "known": 7,
    "rows": [
     {
      "name": "soie",
-     "count": 5,
-     "share": 62,
+     "count": 4,
+     "share": 57,
      "brands": 2,
-     "median_cad": 166.82
+     "median_cad": 173.2
     },
     {
      "name": "coton",
      "count": 2,
-     "share": 25,
+     "share": 29,
      "brands": 1
     },
     {
      "name": "polyester",
      "count": 1,
-     "share": 12,
+     "share": 14,
      "brands": 1
     }
    ]

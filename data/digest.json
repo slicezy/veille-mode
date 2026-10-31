@@ -1,50 +1,50 @@
 {
- "title": "Noir, maille et hauts ajustés dominent les nouveautés",
- "summary": "Les hauts (42 %) et les robes (24 %) concentrent l'essentiel des nouveautés, avec une palette dominée par le noir (25 %), le blanc (15 %), puis le marron et l'ivoire (11 % chacun). La maille arrive en tête des matières (19 %), devant le jersey (12 %), le coton et le satin (10 % chacun), et le col rond est l'encolure la plus fréquente (19 %). Côté style, l'opposition décontracté/habillé et les coupes ajustées, fluides et droites se retrouvent chez les 11 marques ; dans l'échantillon, les robes en satin maxi à bretelles fines ou drapé (Reformation, Bec + Bridge) côtoient des hauts en dentelle et mousseline (VRG GRL).",
+ "title": "Noir, maille et col rond dominent les nouveautés",
+ "summary": "Les hauts (43 %) et les robes (24 %) concentrent l'essentiel des nouveautés, dans une palette dominée par le noir (24 %), suivi du blanc (14 %), du marron et de l'ivoire (12 % chacun). La maille arrive en tête des matières (21 %) devant le jersey (13 %), avec le col rond (21 %) comme encolure principale ; ces trois éléments, comme le noir, ressortent chez les 11 marques. Côté prix médians (CAD), les robes se situent à 255, les hauts à 134 et les manteaux à 373. Dans l'échantillon, Bec + Bridge propose plusieurs robes drapées en satin ou maille, tandis que VRG GRL multiplie les hauts en dentelle ou mousseline avec bretelles fines.",
  "tags": [
   "noir",
   "maille",
   "col rond",
-  "robes maxi"
+  "drapé"
  ],
  "en": {
-  "title": "Black, knitwear and fitted tops lead new arrivals",
-  "summary": "Tops (42%) and dresses (24%) make up most of the new arrivals, with a palette led by black (25%), white (15%), then brown and ivory (11% each). Knit ranks first among fabrics (19%), ahead of jersey (12%), cotton and satin (10% each), and the crew neck is the most common neckline (19%). In terms of style, the casual/dressy split and fitted, fluid and straight cuts appear across all 11 brands; in the sample, satin maxi dresses with thin straps or draping (Reformation, Bec + Bridge) sit alongside lace and sheer-chiffon tops (VRG GRL).",
+  "title": "Black, knit and crew necks lead new arrivals",
+  "summary": "Tops (43%) and dresses (24%) make up most of the new arrivals, in a palette led by black (24%), followed by white (14%), brown and ivory (12% each). Knit tops the materials (21%) ahead of jersey (13%), with the crew neck (21%) as the main neckline; these three elements, like black, show up across all 11 brands. Median prices (CAD) stand at 255 for dresses, 134 for tops and 373 for coats. In the sample, Bec + Bridge offers several draped dresses in satin or knit, while VRG GRL stacks up lace or chiffon tops with thin straps.",
   "tags": [
    "black",
-   "knitwear",
+   "knit",
    "crew neck",
-   "maxi dresses"
+   "draping"
   ]
  },
  "palette": [
   {
    "name": "Noir",
    "hex": "#1F1E1C",
-   "share": 25
+   "share": 24
   },
   {
    "name": "Blanc",
    "hex": "#F7F6F2",
-   "share": 15
+   "share": 14
   },
   {
    "name": "Marron",
    "hex": "#6B4A36",
-   "share": 11
+   "share": 12
   },
   {
    "name": "Ivoire",
    "hex": "#EFE8D8",
-   "share": 11
+   "share": 12
   },
   {
    "name": "Bleu",
    "hex": "#4A6FA5",
-   "share": 10
+   "share": 11
   }
  ],
  "week_label": "Semaine du 26 octobre",
  "week_label_en": "Week of October 26",
- "generated_at": "2026-10-31T18:31:18+00:00"
+ "generated_at": "2026-10-31T21:21:06+00:00"
 }

@@ -21560,22 +21560,34 @@
    "x-evergreen:true"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "beige"
+  ],
   "type": "Manteaux",
   "material": "",
-  "length": "court",
+  "length": "hanches",
   "cut": "oversize",
-  "neckline": "col haut",
+  "neckline": "",
   "details": [
-   "manches chauve-souris",
    "col montant",
-   "poignets élastiqués"
+   "manches chauve-souris",
+   "poches plaquées"
   ],
-  "has_vision": false,
+  "has_vision": true,
   "description": "Long sleeve batwing lightweight jacket Tall collar neckline featuring press studs Zip closure through centre front Deep gathering through bodice Internal elasticated cord and stopper Encased elasticated sleeve cuffs Functional inseam pockets",
   "on_sale": false,
   "fibre": "",
-  "composition": ""
+  "composition": "",
+  "shape": "oversize",
+  "rise": "",
+  "style": "décontracté",
+  "closure": "",
+  "details_en": [
+   "stand collar",
+   "batwing sleeves",
+   "patch pockets"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "sir:8633608175808",
@@ -21616,22 +21628,34 @@
    "Wedding Guest"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "noir"
+  ],
   "type": "Robes",
-  "has_vision": false,
+  "has_vision": true,
   "material": "maille",
   "length": "maxi",
   "cut": "ajustée",
   "neckline": "asymétrique",
   "details": [
    "dentelle appliquée",
-   "jupe transparente",
-   "plissé"
+   "jupe plissée",
+   "transparence"
   ],
   "description": "Sleeveless V neckline Delicate lace applique through neckline Fitted style Contrast paneling through skirt Pull over style Midweight compact knit with generous stretch",
   "on_sale": false,
   "fibre": "",
-  "composition": ""
+  "composition": "",
+  "shape": "",
+  "rise": "",
+  "style": "habillé",
+  "closure": "",
+  "details_en": [
+   "appliqué lace",
+   "pleated skirt",
+   "sheer panel"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "sir:8624344039616",
@@ -21669,9 +21693,11 @@
    "yellow"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "ivoire"
+  ],
   "type": "Jupes",
-  "has_vision": false,
+  "has_vision": true,
   "material": "soie",
   "length": "midi",
   "cut": "fluide",
@@ -21679,12 +21705,22 @@
   "details": [
    "dentelle appliquée",
    "panneau transparent",
-   "coupe asymétrique"
+   "coupe en biais"
   ],
   "description": "Mid to low rise Midi length Contrast sheer chiffon panel Lace applique through lower waist Invisible zipper at side seam Lightweight 100% Silk Crepe de Chine No stretch Unlined Sheer throughout",
   "on_sale": false,
   "fibre": "soie",
-  "composition": "soie 100 %"
+  "composition": "soie 100 %",
+  "shape": "biais",
+  "rise": "basse",
+  "style": "habillé",
+  "closure": "pull-on",
+  "details_en": [
+   "lace appliqué",
+   "sheer panel",
+   "bias cut"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "sir:8624440606912",
@@ -21721,9 +21757,11 @@
    "stitch:sola-pant-camel"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "ivoire"
+  ],
   "type": "Pantalons",
-  "has_vision": false,
+  "has_vision": true,
   "material": "coton",
   "length": "long",
   "cut": "droite",
@@ -21736,7 +21774,17 @@
   "description": "Oversized fit Mid-rise waist Balloon shape leg Fly front opening Contrast sporty drawstring Pocket details Summer cotton fabrication No stretch",
   "on_sale": false,
   "fibre": "",
-  "composition": ""
+  "composition": "",
+  "shape": "cargo",
+  "rise": "moyenne",
+  "style": "décontracté",
+  "closure": "noué",
+  "details_en": [
+   "cargo pockets",
+   "drawstring",
+   "patch pockets"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "sir:8624343941312",
@@ -21774,22 +21822,32 @@
    "Tops"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "beige"
+  ],
   "type": "Hauts",
-  "has_vision": false,
+  "has_vision": true,
   "material": "maille",
-  "length": "",
+  "length": "taille",
   "cut": "ajustée",
   "neckline": "col rond",
   "details": [
    "côtes",
-   "bretelles larges",
-   "bas côtelé"
+   "encolure échancrée"
   ],
   "description": "Scooped neckline Low back Designed to sit off the body Midi length Pull over style Rayon knit fabrication with a metallic look Generous stretch",
   "on_sale": false,
   "fibre": "",
-  "composition": ""
+  "composition": "",
+  "shape": "ajusté",
+  "rise": "",
+  "style": "décontracté",
+  "closure": "",
+  "details_en": [
+   "ribbed",
+   "scoop neck"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "sir:8624343908544",
@@ -21825,20 +21883,30 @@
    "stitch:sola-bloomer-skirt-camel"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "noir"
+  ],
   "type": "Jupes",
-  "has_vision": false,
+  "has_vision": true,
   "description": "Bloomer skirt Internal built in short Oversized flounce outer skirt Fully elasticated built in short Invisible side zipper Cotton fabrication No stretch",
   "on_sale": false,
   "fibre": "",
   "composition": "",
   "material": "coton",
-  "length": "",
-  "cut": "",
+  "length": "mini",
+  "cut": "évasée",
   "neckline": "",
   "details": [
-   "short intégré"
-  ]
+   "ourlet évasé"
+  ],
+  "shape": "évasée",
+  "rise": "",
+  "style": "décontracté",
+  "closure": "",
+  "details_en": [
+   "flared hem"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "bec-bridge:7308087951415",
@@ -21876,22 +21944,34 @@
    "x-styleCode:BM-13280"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "ivoire"
+  ],
   "type": "Robes",
-  "has_vision": false,
+  "has_vision": true,
   "material": "jersey",
   "length": "maxi",
   "cut": "fluide",
   "neckline": "décolleté plongeant",
   "details": [
    "drapé",
-   "fente haute",
-   "nœud à la taille"
+   "fente",
+   "nœud"
   ],
   "description": "Leia Drape Gown in Butter Cream. This stunning soft mesh maxi dress features a captivating draped overlay and a dramatic train, creating a sophisticated silhouette perfect for a bridal dress, wedding celebrations, or any grand formal event. Cut from soft mesh fabrication Gathered and twist overlay Front split Back godet/train Finished with a raw hem Lined with built-in bodysuit, with detachable skirt lining, secured with button/loop closure Model is 178 cm / 5’10” wearing an AU 8 / US 4 Designed in Australia",
   "on_sale": false,
   "fibre": "",
-  "composition": ""
+  "composition": "",
+  "shape": "",
+  "rise": "",
+  "style": "habillé",
+  "closure": "",
+  "details_en": [
+   "draped",
+   "slit",
+   "knot"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "venroy:7648786841687",
@@ -21921,21 +22001,34 @@
   "source": "shopify",
   "first_seen": "2026-10-31T13:36:40+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "ivoire",
+   "blanc"
+  ],
+  "has_vision": true,
   "description": "The Appliqué Border Silk Linen Shirt in Off White and Cream is cut from a soft, fluid silk-linen blend. Finished with an appliqué border inspired by the traditional tiled rooftops of Greece, it can be worn open over swim or paired with trousers as the day turns to evening. Relaxed fit Camp collar Mid-length sleeves Chest patch pocket Laser-cut appliqué border with tonal embroidery Unlined 55% Silk, 45% Linen Dry clean only",
   "on_sale": false,
   "fibre": "soie",
   "composition": "soie 55 %, lin 45 %",
   "material": "lin",
-  "length": "",
+  "length": "hanches",
   "cut": "droite",
   "neckline": "col chemise",
   "details": [
-   "broderie",
-   "bordure festonnée",
-   "manches courtes"
-  ]
+   "bordure appliquée",
+   "festons",
+   "boutonnage"
+  ],
+  "shape": "droit",
+  "rise": "",
+  "style": "décontracté",
+  "closure": "",
+  "details_en": [
+   "applique border",
+   "scalloped trim",
+   "button front"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "bec-bridge:7389425958967",
@@ -21965,18 +22058,34 @@
    "x-styleCode:S26-50256"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "noir"
+  ],
   "type": "Manteaux",
-  "has_vision": false,
+  "has_vision": true,
   "description": "Saphira Cropped Jacket in Black. A cropped black faux leather jacket with a matte black zipper and buttons. The perfect, slim fit jacket for an elevated and chic layering piece. Faux leather fabrication Cropped silhouette Matte black zipper and button closure Welt breast pocket Slim fit Model is 178 cm / 5'10\" wearing a size S Designed in Australia",
   "on_sale": false,
   "fibre": "",
   "composition": "",
-  "material": "",
-  "length": "cropped",
-  "cut": "",
+  "material": "synthétique",
+  "length": "court",
+  "cut": "droite",
   "neckline": "",
-  "details": []
+  "details": [
+   "col chemise",
+   "fermeture zippée",
+   "poche zippée"
+  ],
+  "shape": "droit",
+  "rise": "",
+  "style": "décontracté",
+  "closure": "",
+  "details_en": [
+   "shirt collar",
+   "zip closure",
+   "zip pocket"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "bec-bridge:7358503288887",
@@ -22004,13 +22113,15 @@
    "x-styleCode:W26-50233"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "noir"
+  ],
   "type": "Manteaux",
-  "has_vision": false,
+  "has_vision": true,
   "material": "synthétique",
-  "length": "court",
+  "length": "hanches",
   "cut": "oversize",
-  "neckline": "col haut",
+  "neckline": "",
   "details": [
    "col montant",
    "bas élastiqué",
@@ -22019,7 +22130,17 @@
   "description": "Stevie Longline Jacket in Black. A statement faux PU leather jacket perfect for layering. Designed with an oversized silhouette, elasticated waist, and panel seams, it combines structure with comfort, finished with metal snap fastenings and internal wadding for warmth. Faux PU leather fabrication Longline length Oversized fit Elasticated waist Panel seam detailing Metal snap fastenings Internal wadding Model is 176 cm / 5’9.5” wearing a S/M Designed in Australia",
   "on_sale": false,
   "fibre": "",
-  "composition": ""
+  "composition": "",
+  "shape": "bomber",
+  "rise": "",
+  "style": "décontracté",
+  "closure": "",
+  "details_en": [
+   "stand collar",
+   "elastic hem",
+   "zip pockets"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "bec-bridge:7411729858615",
@@ -22054,7 +22175,9 @@
    "x-styleCode:W26-22084"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "gris"
+  ],
   "type": "Hauts",
   "material": "maille",
   "length": "cropped",
@@ -22062,14 +22185,24 @@
   "neckline": "col haut",
   "details": [
    "zip",
-   "maille côtelée",
-   "manches ballon"
+   "col montant",
+   "maille côtelée"
   ],
-  "has_vision": false,
+  "has_vision": true,
   "description": "Torie Cropped Jumper in Charcoal. A cozy, grey wool-blend jumper perfect for layering. Features a high neckline with a quarter metal zip, slightly cropped length, and a relaxed fit for effortless comfort. Wool-blend yarn High neck with quarter metal zip at centre front Slightly cropped length Relaxed fit Long sleeves Model is 180 cm / 5’11” wearing an AU 8 / US 4 Designed in Australia",
   "on_sale": false,
   "fibre": "",
-  "composition": ""
+  "composition": "",
+  "shape": "oversize",
+  "rise": "",
+  "style": "décontracté",
+  "closure": "",
+  "details_en": [
+   "zip",
+   "funnel collar",
+   "ribbed knit"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "bec-bridge:7358500732983",
@@ -22099,9 +22232,11 @@
    "x-styleCode:W26-50254"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "marron"
+  ],
   "type": "Manteaux",
-  "has_vision": false,
+  "has_vision": true,
   "material": "laine",
   "length": "long",
   "cut": "oversize",
@@ -22114,7 +22249,17 @@
   "description": "Ruthe Coat in Dark Chocolate. A 100% wool oversized brown coat. Crafted from brushed wool, it features a double-breasted front, functional pockets, a separate belt for a cinched silhouette, and a back vent for ease of movement, making it ideal for daytime or elevated weekend styling. 100% Wool Brushed wool coating Felted fabric Oversized fit Double-breasted front Functional front pockets Separate belt Back vent Model is 176 cm / 5’9.5” wearing a S Designed in Australia",
   "on_sale": false,
   "fibre": "laine",
-  "composition": "laine 200 %"
+  "composition": "laine 200 %",
+  "shape": "croisé",
+  "rise": "",
+  "style": "tailleur",
+  "closure": "",
+  "details_en": [
+   "double-breasted",
+   "peaked lapels",
+   "structured shoulders"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "benni:10255186592024",
@@ -22136,18 +22281,30 @@
   "source": "shopify",
   "first_seen": "2026-10-31T13:36:40+00:00",
   "type": "Jupes",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "ivoire"
+  ],
+  "has_vision": true,
   "compare_at_price": "122.00",
   "description": "The Aria Skort is designed to pair with the Aria Top, featuring a structured mini-length silhouette with built-in shorts underneath for coverage and comfort. Finished with button detailing at the side for a refined, tailored look.",
   "on_sale": true,
   "fibre": "",
   "composition": "",
-  "material": "",
-  "length": "",
-  "cut": "",
+  "material": "satin",
+  "length": "mini",
+  "cut": "ajustée",
   "neckline": "",
-  "details": []
+  "details": [
+   "boutons latéraux"
+  ],
+  "shape": "droite",
+  "rise": "",
+  "style": "habillé",
+  "closure": "zippé ou boutonné",
+  "details_en": [
+   "side buttons"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "benni:10255186297112",
@@ -22169,18 +22326,34 @@
   "source": "shopify",
   "first_seen": "2026-10-31T13:36:40+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "ivoire"
+  ],
+  "has_vision": true,
   "compare_at_price": "122.00",
   "description": "The Aria Top is a structured satin design featuring a square neckline with micro cap sleeves and a fitted waist. Contoured seam detailing through the body and flared hem adds soft shape to the overall design. Finished with satin-covered buttons through the centre front, this bridal-inspired piece can be paired with the Aria Skort.",
   "on_sale": true,
   "fibre": "",
   "composition": "",
-  "material": "",
-  "length": "",
-  "cut": "",
-  "neckline": "",
-  "details": []
+  "material": "satin",
+  "length": "taille",
+  "cut": "ajustée",
+  "neckline": "carré",
+  "details": [
+   "boutons devant",
+   "manches courtes",
+   "corset"
+  ],
+  "shape": "ajusté",
+  "rise": "",
+  "style": "habillé",
+  "closure": "",
+  "details_en": [
+   "front buttons",
+   "cap sleeves",
+   "corset"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "benni:10255185543448",
@@ -22199,8 +22372,10 @@
   "source": "shopify",
   "first_seen": "2026-10-31T13:36:40+00:00",
   "type": "Robes",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "blanc"
+  ],
+  "has_vision": true,
   "description": "The Aaron Mini Dress features a form-fitting bustier-style bodice with adjustable spaghetti straps and a fully lined construction for a structured fit. The mini-length skirt is designed with draping and a sash detail at the hip for added shape, while subtle hip padding enhances the silhouette. Finished with a side zip closure for ease of wear.",
   "on_sale": false,
   "fibre": "",
@@ -22210,9 +22385,18 @@
   "cut": "ajustée",
   "neckline": "carré",
   "details": [
-   "drapé",
+   "drapé latéral",
    "pan asymétrique"
-  ]
+  ],
+  "shape": "",
+  "rise": "",
+  "style": "habillé",
+  "closure": "",
+  "details_en": [
+   "side draping",
+   "asymmetric panel"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "venroy:7648799391831",
@@ -22280,21 +22464,35 @@
   ],
   "source": "shopify",
   "first_seen": "2026-10-31T13:36:40+00:00",
-  "type": "Jupes",
-  "colors": [],
-  "has_vision": false,
+  "type": "Robes",
+  "colors": [
+   "vert",
+   "blanc"
+  ],
+  "has_vision": true,
   "description": "The Beaded Silk Side Tie Mini Skirt in Ivy Green is cut from a fluid silk and finished with hand-beaded detail. A side-tie mini silhouette — a quietly elevated piece designed for evening wear. Pair it with the matching Beaded Silk Halter Scarf Top. Relaxed fit Mini length Side-tie closure Hand-beaded detail Soft silk with a fluid drape Lined 100% Silk Delicate dry clean only Note: beading is delicate — avoid contact with sharp objects and rough surfaces.",
   "on_sale": false,
   "fibre": "soie",
   "composition": "soie 100 %",
   "material": "soie",
   "length": "mini",
-  "cut": "",
-  "neckline": "",
+  "cut": "fluide",
+  "neckline": "bretelles fines",
   "details": [
    "perlage",
-   "nœud latéral"
-  ]
+   "encolure nouée",
+   "fronces"
+  ],
+  "shape": "",
+  "rise": "",
+  "style": "décontracté",
+  "closure": "",
+  "details_en": [
+   "beading",
+   "tied neckline",
+   "gathers"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "venroy:7648600424535",
@@ -22325,12 +22523,31 @@
   "source": "shopify",
   "first_seen": "2026-10-31T13:36:40+00:00",
   "type": "Robes",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "jaune"
+  ],
+  "has_vision": true,
   "description": "The Asymmetric Ruffle Halter Mini Dress in Pale Yellow is cut from a fluid silk with delicate ruffle detailing through the neckline. An asymmetric halter mini with adjustable ties, crafted for warm-weather occasions and special celebrations. Complete the look with a minimal heel or sandal. Relaxed fit Mini length Asymmetric halter neckline Ruffle detail through the neckline Adjustable halter ties Lined bodice, unlined skirt Soft silk with a fluid drape 100% Silk Delicate dry clean only",
   "on_sale": false,
   "fibre": "soie",
-  "composition": "soie 100 %"
+  "composition": "soie 100 %",
+  "material": "soie",
+  "length": "mini",
+  "cut": "fluide",
+  "neckline": "asymétrique",
+  "shape": "",
+  "rise": "",
+  "style": "habillé",
+  "closure": "",
+  "details": [
+   "volants",
+   "encolure halter"
+  ],
+  "details_en": [
+   "ruffles",
+   "halter neck"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "venroy:7648595771479",
@@ -22363,20 +22580,34 @@
   "source": "shopify",
   "first_seen": "2026-10-31T13:36:40+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "vert",
+   "blanc"
+  ],
+  "has_vision": true,
   "description": "The Beaded Silk Halter Scarf Top in Ivy Green is cut from a fluid silk and finished with hand-beaded detailing across the front. A halter scarf-style top that ties multiple ways at the neck — a quietly elevated piece for evening wear. Relaxed fit Halter scarf-style neckline Hand-beaded detail across the front Tie closure with multiple ways to wear Soft silk with a fluid drape Lined 100% Silk Delicate dry clean only Note: beading is delicate — avoid contact with sharp objects and rough surfaces.",
   "on_sale": false,
   "fibre": "soie",
   "composition": "soie 100 %",
   "material": "soie",
-  "length": "",
-  "cut": "",
-  "neckline": "",
+  "length": "taille",
+  "cut": "ajustée",
+  "neckline": "col haut",
   "details": [
    "perlage",
-   "foulard au cou"
-  ]
+   "motif fleuri",
+   "encolure licou"
+  ],
+  "shape": "drapé",
+  "rise": "",
+  "style": "habillé",
+  "closure": "",
+  "details_en": [
+   "beading",
+   "floral print",
+   "halter neck"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "venroy:7648593150039",
@@ -22407,20 +22638,33 @@
   "source": "shopify",
   "first_seen": "2026-10-31T13:36:40+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "rose"
+  ],
+  "has_vision": true,
   "description": "The Asymmetric Ruffle Halter Top in Pink is cut from a fluid silk with a delicate ruffle detail through the neckline. An asymmetric halter cut with adjustable ties. Works beautifully with our Silk Wrap Skirt, or back with denim for an everyday feel. Relaxed fit Asymmetric halter neckline Ruffle detail through the neckline Adjustable halter ties Lined at the front, unlined at the back Soft silk with a fluid drape 100% Silk Delicate dry clean only",
   "on_sale": false,
   "fibre": "soie",
   "composition": "soie 100 %",
   "material": "soie",
-  "length": "cropped",
+  "length": "taille",
   "cut": "fluide",
   "neckline": "asymétrique",
   "details": [
    "volants",
-   "encolure halter"
-  ]
+   "bretelles nouées",
+   "dos nu"
+  ],
+  "shape": "droit",
+  "rise": "",
+  "style": "habillé",
+  "closure": "",
+  "details_en": [
+   "ruffles",
+   "tied straps",
+   "open back"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "henne:14984744436075",
@@ -22446,19 +22690,33 @@
   "source": "shopify",
   "first_seen": "2026-10-31T13:36:40+00:00",
   "type": "Manteaux",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "noir"
+  ],
+  "has_vision": true,
   "description": "DETAILS - Dropped shoulders - Cropped oversized fit - Slant side pockets - Inverted back pleats - Gun metal stud closure, with internal zip closure - Adjustable button tab at cuffs and back waist - Padded internal lining for extra warmth - Textured pebbled fabrication FABRICATION & CARE Main: 100% Polyurethane Base, Filling, Lining: 100% Polyester Care instructions - Spot clean only - Do not immerse in water or solvents - Do not wash - Do not bleach - Do not tumble dry - Do not iron - Do not dry clean Find out more here",
   "on_sale": false,
   "fibre": "polyester",
   "composition": "polyester 100 %",
-  "material": "cuir",
-  "length": "",
-  "cut": "",
+  "material": "synthétique",
+  "length": "court",
+  "cut": "oversize",
   "neckline": "",
   "details": [
-   "style bomber"
-  ]
+   "zip frontal",
+   "poignets à patte",
+   "col chemise"
+  ],
+  "shape": "bomber",
+  "rise": "",
+  "style": "décontracté",
+  "closure": "",
+  "details_en": [
+   "front zip",
+   "tab cuffs",
+   "shirt collar"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "henne:14961354801515",
@@ -22485,18 +22743,26 @@
   ],
   "source": "shopify",
   "first_seen": "2026-10-31T13:36:40+00:00",
-  "type": "Autres",
-  "colors": [],
-  "has_vision": false,
+  "type": "Hauts",
+  "colors": [
+   "marron"
+  ],
+  "has_vision": true,
   "description": "DETAILS - Ribbed V-neckline, cuffs and hem - Drop shoulder detailing - Lightweight drape knit - Relaxed fit FABRICATION & CARE 57% Lyocell, 19% Nylon, 12% Silk, 12% Wool Care Instructions - Cold hand wash separately with a wool approved detergent - Do not rub, soak or bleach - Roll in towel to remove excess water - Lay flat to dry in shade - Easing back into original shape - Cool iron on reverse side - Dry cleanable - Best stored folded and flat Find out more here",
   "on_sale": false,
   "fibre": "lyocell",
   "composition": "lyocell 57 %, nylon 19 %, soie 12 %",
   "material": "maille",
-  "length": "",
-  "cut": "",
-  "neckline": "",
-  "details": []
+  "length": "hanches",
+  "cut": "droite",
+  "neckline": "col V",
+  "details": [],
+  "shape": "droit",
+  "rise": "",
+  "style": "décontracté",
+  "closure": "",
+  "details_en": [],
+  "attrs_v": 4
  },
  {
   "id": "henne:14961254105451",
@@ -22521,8 +22787,11 @@
   "source": "shopify",
   "first_seen": "2026-10-31T13:36:40+00:00",
   "type": "Pantalons",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "beige",
+   "camel"
+  ],
+  "has_vision": true,
   "description": "DETAILS - High-rise, wide-leg silhouette - Full length - Asymmetric waistband design with belt loops - Zip closure - Pleat detailing at waist - Slant side seam pockets - Tonal faux horn button - Heavy-weight suiting fabrication FABRICATION & CARE 83% Polyester, 15% Viscose, 2% Elastane Care Instructions - Dry Clean Only Find out more here .",
   "on_sale": false,
   "fibre": "polyester",
@@ -22535,7 +22804,17 @@
    "plis",
    "taille asymétrique",
    "poches"
-  ]
+  ],
+  "shape": "large",
+  "rise": "haute",
+  "style": "tailleur",
+  "closure": "zippé ou boutonné",
+  "details_en": [
+   "pleats",
+   "asymmetric waistband",
+   "pockets"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "venroy:7648785432663",
@@ -22566,21 +22845,34 @@
   "source": "shopify",
   "first_seen": "2026-10-31T13:36:40+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "blanc",
+   "vert"
+  ],
+  "has_vision": true,
   "description": "The Beaded Silk Linen Camp Collar Shirt in Off White/Ivy Green is cut from a soft silk-linen blend with a subtle slub. Hand-beaded by our artisans, it carries a placement Greek scene across the front and an ornate beaded border along the hem — a beaded take on our seasonal Sifnos stamp print. Worn with the Tencel Lounge Chino. Relaxed fit Camp collar Mid-length sleeves Hand-beaded placement Greek scene with an ornate hem border Self button loop on lapel Unlined 55% Silk, 45% Linen Gentle dry clean only",
   "on_sale": false,
   "fibre": "soie",
   "composition": "soie 55 %, lin 45 %",
   "material": "soie",
-  "length": "",
+  "length": "hanches",
   "cut": "droite",
   "neckline": "col chemise",
   "details": [
-   "broderie",
-   "motif grec",
-   "manches courtes"
-  ]
+   "bordure grecque",
+   "motifs urnes",
+   "col cubain"
+  ],
+  "shape": "boxy",
+  "rise": "",
+  "style": "décontracté",
+  "closure": "",
+  "details_en": [
+   "greek key border",
+   "urn motifs",
+   "camp collar"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "venroy:7648650526807",
@@ -22608,12 +22900,33 @@
   "source": "shopify",
   "first_seen": "2026-10-31T13:36:40+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "ivoire"
+  ],
+  "has_vision": true,
   "description": "The Bouclé Open Knit Polo in Off White is knitted in an open pointelle stitch from a textured bouclé yarn — lightweight and breathable, with rich surface texture. A regular fit with a three-button placket and ribbed trims, made for laid-back days and coastal drives. Worn with linen or pleated bermuda shorts. Regular fit Polo collar with three-button placket Open pointelle knit Short sleeves Ribbed cuffs and hem 70% Cotton, 30% Nylon Cold machine wash in a protective delicates bag",
   "on_sale": false,
   "fibre": "coton",
-  "composition": "coton 70 %, nylon 30 %"
+  "composition": "coton 70 %, nylon 30 %",
+  "material": "coton",
+  "length": "hanches",
+  "cut": "droite",
+  "neckline": "col chemise",
+  "shape": "droit",
+  "rise": "",
+  "style": "décontracté",
+  "closure": "",
+  "details": [
+   "maille ajourée",
+   "col polo",
+   "manches courtes"
+  ],
+  "details_en": [
+   "open knit",
+   "polo collar",
+   "short sleeves"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "venroy:7648603963479",
@@ -22644,8 +22957,10 @@
   "source": "shopify",
   "first_seen": "2026-10-31T13:36:40+00:00",
   "type": "Jupes",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "bleu"
+  ],
+  "has_vision": true,
   "description": "The Beaded Wrap Mini Skirt in Bright Blue/Beading is cut from a sheer silk georgette, finished with custom glass beading that draws on Greek sun and tree motifs. A mini sarong shape with adjustable ties to sit where you like — made for beach club days and summer parties. Wear it over the Triangle Bikini in White. Relaxed fit Mini length Wrap silhouette with adjustable ties Custom glass bead artwork with an ornate beaded hem Side waist darts for subtle shaping Unlined Sheer 100% Silk Delicate dry clean only",
   "on_sale": false,
   "fibre": "soie",
@@ -22655,10 +22970,20 @@
   "cut": "fluide",
   "neckline": "",
   "details": [
+   "broderie",
    "perles",
-   "nœud latéral",
-   "motif brodé"
-  ]
+   "transparence"
+  ],
+  "shape": "portefeuille",
+  "rise": "moyenne",
+  "style": "décontracté",
+  "closure": "noué",
+  "details_en": [
+   "embroidery",
+   "beads",
+   "sheer"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "benni:10246139642136",
@@ -22677,8 +23002,10 @@
   "source": "shopify",
   "first_seen": "2026-10-31T13:36:40+00:00",
   "type": "Pantalons",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "noir"
+  ],
+  "has_vision": true,
   "description": "The Anastasia Pant is a tailored style, featuring a relaxed-fit silhouette and detachable belt-style skirt overlay. The asymmetric skirt includes a button closure and can be styled on or off for versatile wear.",
   "on_sale": false,
   "fibre": "",
@@ -22688,10 +23015,20 @@
   "cut": "fluide",
   "neckline": "",
   "details": [
-   "drapé asymétrique",
-   "pan superposé",
-   "jambes larges"
-  ]
+   "pan drapé",
+   "superposition asymétriqu",
+   "jambe large"
+  ],
+  "shape": "large",
+  "rise": "moyenne",
+  "style": "habillé",
+  "closure": "",
+  "details_en": [
+   "draped panel",
+   "asymmetric overlay",
+   "wide leg"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "benni:10183951778072",
@@ -22713,18 +23050,34 @@
   "source": "shopify",
   "first_seen": "2026-10-31T13:36:40+00:00",
   "type": "Robes",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "gris"
+  ],
+  "has_vision": true,
   "compare_at_price": "180.00",
   "description": "The Agnes Mini Dress is a long-sleeve mini dress crafted in a speciality rib fabrication. It features a deep plunge neckline with softly gathered bust and cinched waist for shape. The maxi skirt is detached on one side and finished with subtle hip drape detail.",
   "on_sale": true,
   "fibre": "",
   "composition": "",
-  "material": "",
+  "material": "maille",
   "length": "mini",
-  "cut": "",
-  "neckline": "",
-  "details": []
+  "cut": "ajustée",
+  "neckline": "décolleté plongeant",
+  "details": [
+   "côtes",
+   "fronces",
+   "découpe taille"
+  ],
+  "shape": "",
+  "rise": "",
+  "style": "habillé",
+  "closure": "",
+  "details_en": [
+   "ribbing",
+   "ruching",
+   "waist cutout"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "benni:10183950336280",
@@ -22744,8 +23097,11 @@
   "source": "shopify",
   "first_seen": "2026-10-31T13:36:40+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "gris",
+   "bleu"
+  ],
+  "has_vision": true,
   "description": "The Agnes Top is a long-sleeve style, crafted in a specialty rib fabrication. It features a deep plunge neckline with softly gathered bust detail. Long sleeves are finished with a subtle cuff split.",
   "on_sale": false,
   "fibre": "",
@@ -22756,9 +23112,19 @@
   "neckline": "décolleté plongeant",
   "details": [
    "fronces",
-   "côtes",
+   "maille côtelée",
    "manches longues"
-  ]
+  ],
+  "shape": "drapé",
+  "rise": "",
+  "style": "décontracté",
+  "closure": "",
+  "details_en": [
+   "gathers",
+   "ribbed knit",
+   "long sleeves"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "benni:10183945879832",
@@ -22778,17 +23144,32 @@
   "source": "shopify",
   "first_seen": "2026-10-31T13:36:40+00:00",
   "type": "Jupes",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "blanc",
+   "marron"
+  ],
+  "has_vision": true,
   "description": "The Arlo Maxi Skirt has a floor-length silhouette, crafted from a soft crepe jersey. This asymmetric wrap design features a contrast sash and mesh panel that runs vertically down the thigh.",
   "on_sale": false,
   "fibre": "",
   "composition": "",
-  "material": "",
+  "material": "crêpe",
   "length": "maxi",
-  "cut": "",
+  "cut": "fluide",
   "neckline": "",
-  "details": []
+  "details": [
+   "ceinture nouée",
+   "anneau"
+  ],
+  "shape": "drapée",
+  "rise": "haute",
+  "style": "habillé",
+  "closure": "noué",
+  "details_en": [
+   "tied sash",
+   "ring"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "benni:10183876935960",
@@ -22809,8 +23190,10 @@
   "source": "shopify",
   "first_seen": "2026-10-31T13:36:40+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "marron"
+  ],
+  "has_vision": true,
   "description": "The Arlo Tee features a wide boat neckline with dropped shoulders and relaxed, wide sleeves. Crafted from crepe jersey, the bodice falls loosely before gathering at the sides to cinch in at the waist for a flattering shape.",
   "on_sale": false,
   "fibre": "",
@@ -22821,9 +23204,19 @@
   "neckline": "asymétrique",
   "details": [
    "drapé",
-   "manches kimono",
-   "nouage à la taille"
-  ]
+   "épaule dénudée",
+   "manche ample"
+  ],
+  "shape": "drapé",
+  "rise": "",
+  "style": "décontracté",
+  "closure": "",
+  "details_en": [
+   "draped",
+   "bare shoulder",
+   "wide sleeve"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "henne:14959555248491",
@@ -22848,21 +23241,33 @@
   "source": "shopify",
   "first_seen": "2026-10-31T13:36:40+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "marron"
+  ],
+  "has_vision": true,
   "description": "DETAILS - Funnel neck - Dropped shoulder - Long sleeve - Rib detailing at neck, sleeve cuff and hem - Reversed seam detail at shoulder - Oversized fit - Cropped length - Mid-weight wool fabrication FABRICATION & CARE 100% Wool Care Instructions - Cold gentle hand wash using wool friendly detergent - Do not soak, do not bleach - Do not wring, do not tumble dry - Re-shape while damp - Dry flat in shade - Cool iron inside out Find out more here",
   "on_sale": false,
   "fibre": "laine",
   "composition": "laine 100 %",
   "material": "laine",
-  "length": "",
+  "length": "hanches",
   "cut": "oversize",
   "neckline": "col haut",
   "details": [
-   "bords côtes",
+   "côtes",
    "col montant",
-   "coutures raglan"
-  ]
+   "épaules tombantes"
+  ],
+  "shape": "boxy",
+  "rise": "",
+  "style": "décontracté",
+  "closure": "",
+  "details_en": [
+   "ribbing",
+   "funnel neck",
+   "dropped shoulders"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "henne:14959551119723",
@@ -22885,8 +23290,10 @@
   "source": "shopify",
   "first_seen": "2026-10-31T13:36:40+00:00",
   "type": "Robes",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "noir"
+  ],
+  "has_vision": true,
   "description": "DETAILS - High neckline - Capped sleeve - Relaxed fit through the bodice, with a ribbed cinched in waistline - Tapered to a midi length straight skirt - Centre back split detail - Smooth mid weight fabrication - We suggest sizing up for a more slouchy and relaxed fit FABRICATION & CARE 75% Viscose 25% Nylon Care instructions - Cold gentle hand wash with like colours - Do not soak, do not bleach, do not wring - Do not tumble dry - Do not dry clean - Re-shape while damp - Dry flat in shade - Cool iron inside out Find out more here",
   "on_sale": false,
   "fibre": "viscose",
@@ -22896,10 +23303,20 @@
   "cut": "droite",
   "neckline": "col haut",
   "details": [
-   "manches dolman",
    "taille élastiquée",
-   "maille côtelée"
-  ]
+   "col montant",
+   "manches dolman"
+  ],
+  "shape": "",
+  "rise": "",
+  "style": "habillé",
+  "closure": "",
+  "details_en": [
+   "elasticated waist",
+   "mock neck",
+   "dolman sleeves"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "henne:14959549972843",
@@ -22922,18 +23339,32 @@
   ],
   "source": "shopify",
   "first_seen": "2026-10-31T13:36:40+00:00",
-  "type": "Autres",
-  "colors": [],
-  "has_vision": false,
+  "type": "Hauts",
+  "colors": [
+   "marron"
+  ],
+  "has_vision": true,
   "description": "DETAILS - Ribbed V-neckline, cuffs and hem - Drop shoulder detailing - Lightweight drape knit - Relaxed fit FABRICATION & CARE 57% Lyocell, 19% Nylon, 12% Silk, 12% Wool Care Instructions - Cold hand wash separately with a wool approved detergent - Do not rub, soak or bleach - Roll in towel to remove excess water - Lay flat to dry in shade - Easing back into original shape - Cool iron on reverse side - Dry cleanable - Best stored folded and flat Find out more here",
   "on_sale": false,
   "fibre": "lyocell",
   "composition": "lyocell 57 %, nylon 19 %, soie 12 %",
   "material": "maille",
-  "length": "",
-  "cut": "",
-  "neckline": "",
-  "details": []
+  "length": "taille",
+  "cut": "oversize",
+  "neckline": "col V",
+  "details": [
+   "côtes",
+   "épaules tombantes"
+  ],
+  "shape": "oversize",
+  "rise": "",
+  "style": "décontracté",
+  "closure": "",
+  "details_en": [
+   "ribbing",
+   "dropped shoulders"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "henne:14959543714155",
@@ -22957,22 +23388,34 @@
   ],
   "source": "shopify",
   "first_seen": "2026-10-31T13:36:40+00:00",
-  "type": "Autres",
-  "colors": [],
-  "has_vision": false,
+  "type": "Hauts",
+  "colors": [
+   "noir"
+  ],
+  "has_vision": true,
   "description": "DETAILS - Ribbed V-neckline, cuffs and hem - Drop shoulder detailing - Lightweight drape knit - Relaxed fit FABRICATION & CARE 57% Lyocell, 19% Nylon, 12% Silk, 12% Wool Care Instructions - Cold hand wash separately with a wool approved detergent - Do not rub, soak or bleach - Roll in towel to remove excess water - Lay flat to dry in shade - Easing back into original shape - Cool iron on reverse side - Dry cleanable - Best stored folded and flat Find out more here",
   "on_sale": false,
   "fibre": "lyocell",
   "composition": "lyocell 57 %, nylon 19 %, soie 12 %",
   "material": "maille",
-  "length": "",
+  "length": "hanches",
   "cut": "droite",
   "neckline": "col V",
   "details": [
-   "bord-côtes",
-   "manches longues",
+   "bas côtelé",
+   "poignets côtelés",
    "épaules tombantes"
-  ]
+  ],
+  "shape": "droit",
+  "rise": "",
+  "style": "décontracté",
+  "closure": "",
+  "details_en": [
+   "ribbed hem",
+   "ribbed cuffs",
+   "dropped shoulders"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "venroy:7561765912663",
@@ -23001,20 +23444,31 @@
   "source": "shopify",
   "first_seen": "2026-10-31T13:36:40+00:00",
   "type": "Pantalons",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "marron"
+  ],
+  "has_vision": true,
   "description": "The Bias Wool Drawstring Pant in Chocolate is cut on the bias for a natural stretch and fluid drape. Designed in a relaxed silhouette with an elasticated waistband and adjustable rise. Pair with the matching bustier or a simple knit for an effortless look. Bias cut for natural stretch and fluid drape Relaxed skimming fit Elevated wool twill fabrication Elasticated waistband with drawstring Mid rise, can be worn high or low 100% Wool Dry clean only",
   "on_sale": false,
   "fibre": "laine",
   "composition": "laine 100 %",
   "material": "laine",
-  "length": "",
-  "cut": "",
+  "length": "long",
+  "cut": "fluide",
   "neckline": "",
   "details": [
    "cordon de serrage",
-   "coupe biais"
-  ]
+   "taille élastique"
+  ],
+  "shape": "large",
+  "rise": "basse",
+  "style": "décontracté",
+  "closure": "noué",
+  "details_en": [
+   "drawstring",
+   "elastic waist"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "venroy:7561765683287",
@@ -23046,21 +23500,34 @@
   "source": "shopify",
   "first_seen": "2026-10-31T13:36:40+00:00",
   "type": "Robes",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "argent",
+   "gris"
+  ],
+  "has_vision": true,
   "description": "The Bias Satin Tank Dress in Silver/Grey Marl is bias cut from a silk-viscose satin blend with a fine merino wool rib trim at the neckline and armholes. Worn alone for evenings out or layered with a knit for an everyday look. Bias cut for natural stretch and fluid drape Merino wool knitted rib trim at neckline and armholes Scoop neckline Maxi length Main: 64% Viscose 36% Silk, Contrast: 100% Merino Wool Dry clean only",
   "on_sale": false,
   "fibre": "viscose",
   "composition": "laine 100 %, viscose 64 %, soie 36 %",
   "material": "satin",
-  "length": "long",
+  "length": "maxi",
   "cut": "fluide",
   "neckline": "col rond",
   "details": [
-   "bretelles larges",
    "coupe en biais",
+   "bretelles larges",
    "bas évasé"
-  ]
+  ],
+  "shape": "",
+  "rise": "",
+  "style": "habillé",
+  "closure": "",
+  "details_en": [
+   "bias cut",
+   "wide straps",
+   "flared hem"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "venroy:7561765617751",
@@ -23088,19 +23555,33 @@
   "source": "shopify",
   "first_seen": "2026-10-31T13:36:40+00:00",
   "type": "Manteaux",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "marron"
+  ],
+  "has_vision": true,
   "description": "The Boucle Knit Bomber in Chocolate is crafted from a textured two-tone boucle blend with a relaxed dropped shoulder and slightly cropped length. The 2-way zipper allows you to wear it open or adjusted — styled however the day or night calls for it. Boucle wool-camel blend knit Textured two tone knit 2-way open-ended zipper Dropped shoulder, relaxed fit Slightly cropped length Ribbed neck, cuffs and hem 56% Wool 30% Nylon 11% Camel 3% Spandex Dry clean only",
   "on_sale": false,
   "fibre": "laine",
   "composition": "laine 56 %, nylon 30 %, élasthanne 3 %",
   "material": "laine",
-  "length": "",
-  "cut": "",
+  "length": "hanches",
+  "cut": "droite",
   "neckline": "",
   "details": [
-   "maille bouclée"
-  ]
+   "fermeture zippée",
+   "bords côtelés",
+   "col côtelé"
+  ],
+  "shape": "bomber",
+  "rise": "",
+  "style": "décontracté",
+  "closure": "",
+  "details_en": [
+   "zip closure",
+   "ribbed trim",
+   "ribbed collar"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "bec-bridge:7415912071223",
@@ -23131,22 +23612,34 @@
    "x-styleCode:W26-13328"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "noir"
+  ],
   "type": "Robes",
-  "has_vision": false,
-  "material": "maille",
+  "has_vision": true,
+  "material": "jersey",
   "length": "maxi",
   "cut": "fluide",
   "neckline": "décolleté plongeant",
   "details": [
    "drapé",
-   "froncé",
+   "fronces",
    "transparence"
   ],
   "description": "Leia Drape Gown in Black. This stunning soft mesh maxi dress features a captivating draped overlay, creating a sophisticated silhouette. The perfect dress for a party, birthday celebrations, or any grand formal event. Cut from soft mesh fabrication Gathered and twist overlay Front split Finished with a raw hem Lined with built-in bodysuit, with detachable skirt lining, secured with button/loop closure Model is 174 cm / 5’8.5” wearing an AU 8 / US 4 Designed in Australia",
   "on_sale": false,
   "fibre": "",
-  "composition": ""
+  "composition": "",
+  "shape": "",
+  "rise": "",
+  "style": "habillé",
+  "closure": "",
+  "details_en": [
+   "draped",
+   "gathered",
+   "sheer"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "henne:14945164984683",
@@ -23196,21 +23689,31 @@
   "source": "shopify",
   "first_seen": "2026-10-31T13:36:40+00:00",
   "type": "Jeans",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "bleu"
+  ],
+  "has_vision": true,
   "description": "DETAILS - Mid to low-rise - Straight leg profile - Brushed silver hardware - Front fly with zip fastening - Classic 5 pocket design - Signature branded leather patch at the back waistband FABRICATION & CARE 100% Cotton Please use caution as dark colours may transfer to light coloured fabrics and upholstery. This garment is designed to fade. Care Instructions - Cold gentle machine wash inside out with like colours - Do not soak, do not bleach - Do not tumble dry - Do not dry clean - Dry in shade - Cool iron - Do not iron trims Find out more here .",
   "on_sale": false,
   "fibre": "coton",
   "composition": "coton 100 %",
   "material": "denim",
   "length": "long",
-  "cut": "oversize",
+  "cut": "fluide",
   "neckline": "",
   "details": [
-   "taille basse",
-   "jambe large",
-   "ceinture tressée"
-  ]
+   "délavage",
+   "poches avant"
+  ],
+  "shape": "large",
+  "rise": "basse",
+  "style": "décontracté",
+  "closure": "zippé ou boutonné",
+  "details_en": [
+   "faded wash",
+   "front pockets"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "henne:14941411246443",
@@ -23238,21 +23741,34 @@
   ],
   "source": "shopify",
   "first_seen": "2026-10-31T13:36:40+00:00",
-  "type": "Autres",
-  "colors": [],
-  "has_vision": false,
+  "type": "Hauts",
+  "colors": [
+   "ivoire"
+  ],
+  "has_vision": true,
   "description": "DETAILS - Crafted from soft, lightweight merino wool - Semi-sheer for a delicate finish - Relaxed body fit for effortless styling - Ribbed detailing at sleeves, hem, and neckline - Fold-over high turtle neck - Relaxed dropped shoulder - For a closer-to-body fit, we recommend sizing down FABRICATION & CARE 100% Australian Merino Wool. Care Instructions - Cold gentle hand wash using wool friendly detergent - Do not soak, do not bleach - Do not wring - Do not tumble dry - Re-shape while damp - Dry flat in shade - Cool iron inside out Find out more here",
   "on_sale": false,
   "fibre": "laine",
   "composition": "laine 100 %",
   "material": "laine",
-  "length": "cropped",
-  "cut": "droite",
+  "length": "taille",
+  "cut": "ajustée",
   "neckline": "col haut",
   "details": [
-   "effet transparent",
-   "bords côtelés"
-  ]
+   "transparence",
+   "bords côtelés",
+   "col roulé"
+  ],
+  "shape": "droit",
+  "rise": "",
+  "style": "décontracté",
+  "closure": "",
+  "details_en": [
+   "sheer",
+   "ribbed trim",
+   "roll neck"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "henne:14935088202091",
@@ -23278,19 +23794,31 @@
   "source": "shopify",
   "first_seen": "2026-10-31T13:36:40+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "noir"
+  ],
+  "has_vision": true,
   "description": "DETAILS - Crafted from a fluid, drape-rich fabric - Wide boat neckline - Cowl back detailing - Asymmetric shoulder detailing - Asymmetric tucks at side seams - Pull on styling - Fitted Silhouette, true to size - Wear it in reverse for a striking deep cowl neckline Montana wears a size 6 and is 182cm. FABRICATION & CARE 95% Viscose 5% Elastane Care Instructions - Garment must be handled delicately - Cold hand wash separately using mild detergent - Do not soak, bleach or wring - Do not tumble dry - Dry flat out of direct sunlight - Cool iron on reverse side - Dry cleanable Find out more here",
   "on_sale": false,
   "fibre": "viscose",
   "composition": "viscose 95 %, élasthanne 5 %",
-  "material": "",
-  "length": "",
-  "cut": "",
-  "neckline": "",
+  "material": "jersey",
+  "length": "taille",
+  "cut": "ajustée",
+  "neckline": "col rond",
   "details": [
+   "fronces latérales",
    "manches longues"
-  ]
+  ],
+  "shape": "ajusté",
+  "rise": "",
+  "style": "décontracté",
+  "closure": "",
+  "details_en": [
+   "side ruching",
+   "long sleeves"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "venroy:7561762472023",
@@ -23318,17 +23846,31 @@
   "source": "shopify",
   "first_seen": "2026-10-31T13:36:40+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "beige"
+  ],
+  "has_vision": true,
   "description": "The Alpaca Mohair Crew Neck Sweater in Pebble is knitted in a relaxed silhouette from a luxurious alpaca-mohair blend — exceptionally soft, with a lightweight handle and natural warmth. Works over a tee or layered under a jacket. Relaxed fit Jersey stitch knit Crew neck neckline Ribbed cuff and body hem 30% Alpaca 30% Mohair 40% Nylon Dry clean only",
   "on_sale": false,
   "fibre": "nylon",
   "composition": "nylon 40 %",
-  "material": "laine",
-  "length": "",
-  "cut": "",
-  "neckline": "",
-  "details": []
+  "material": "maille",
+  "length": "hanches",
+  "cut": "droite",
+  "neckline": "col rond",
+  "details": [
+   "bords côtelés",
+   "finition brossée"
+  ],
+  "shape": "droit",
+  "rise": "",
+  "style": "décontracté",
+  "closure": "",
+  "details_en": [
+   "ribbed trim",
+   "brushed finish"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "venroy:7561766010967",
@@ -23357,8 +23899,10 @@
   "source": "shopify",
   "first_seen": "2026-10-31T13:36:40+00:00",
   "type": "Pantalons",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "ivoire"
+  ],
+  "has_vision": true,
   "description": "The Bias Wool Drawstring Pant in Off White is cut on the bias for a natural stretch and fluid drape. Designed in a relaxed silhouette with an elasticated waistband and adjustable rise. Pair with the matching bustier or a simple knit for an effortless look. Bias cut for natural stretch and fluid drape Relaxed skimming fit Elevated wool twill fabrication Elasticated waistband with drawstring Mid rise, can be worn high or low 100% Wool Dry clean only",
   "on_sale": false,
   "fibre": "laine",
@@ -23369,9 +23913,17 @@
   "neckline": "",
   "details": [
    "cordon de serrage",
-   "taille basse",
-   "jambes larges"
-  ]
+   "jambes amples"
+  ],
+  "shape": "large",
+  "rise": "basse",
+  "style": "décontracté",
+  "closure": "noué",
+  "details_en": [
+   "drawstring",
+   "wide legs"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "venroy:7561762504791",
@@ -23401,22 +23953,34 @@
   ],
   "source": "shopify",
   "first_seen": "2026-10-31T13:36:40+00:00",
-  "type": "Pantalons",
-  "colors": [],
-  "has_vision": false,
+  "type": "Jeans",
+  "colors": [
+   "bleu"
+  ],
+  "has_vision": true,
   "description": "The Baggy Denim Jean in Dark Vintage Wash is cut from a raw-weight cotton denim with a wide-through-the-leg silhouette and a dark vintage wash. A relaxed wardrobe essential for casual dressing and weekend wear. Baggy fit — high rise, wide through the leg Dark vintage wash Five-pocket construction Button fly closure 100% Cotton 14oz Selvedge Denim Cold machine wash inside out on a delicate cycle",
   "on_sale": false,
   "fibre": "coton",
   "composition": "coton 100 %",
   "material": "denim",
-  "length": "long",
+  "length": "traînant",
   "cut": "oversize",
   "neckline": "",
   "details": [
-   "délavage vintage",
-   "braguette boutonnée",
-   "jambe large"
-  ]
+   "délavage",
+   "poches cinq",
+   "braguette boutonnée"
+  ],
+  "shape": "baggy",
+  "rise": "moyenne",
+  "style": "décontracté",
+  "closure": "zippé ou boutonné",
+  "details_en": [
+   "washed",
+   "five pockets",
+   "button fly"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "bec-bridge:7358499618871",
@@ -23451,22 +24015,32 @@
    "x-styleCode:W26-13471"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "noir"
+  ],
   "type": "Robes",
-  "has_vision": false,
+  "has_vision": true,
   "material": "satin",
   "length": "maxi",
   "cut": "fluide",
   "neckline": "dos nu",
   "details": [
-   "nœud dans le dos",
-   "écharpe drapée",
-   "dos ouvert"
+   "dos ouvert",
+   "nœud au col"
   ],
   "description": "Elias Maxi Dress in Black. A black maxi dress crafted from soft, flowing fabric with a cowl neckline and cap sleeves. Features a back tie across the shoulders and a V-shaped low back, designed for a flattering, backless silhouette. The perfect wedding guest dress. Bias-cut maxi silhouette Soft cowl high neckline Cap sleeves Back tie across shoulders Backless V-shaped low back Maxi dress length Model is 179 cm / 5’10” wearing an AU 8 / US 4 Designed and made in Australia",
   "on_sale": false,
   "fibre": "",
-  "composition": ""
+  "composition": "",
+  "shape": "",
+  "rise": "",
+  "style": "habillé",
+  "closure": "",
+  "details_en": [
+   "open back",
+   "neck tie"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "sir:8502196076736",
@@ -23498,22 +24072,34 @@
    "wide leg pants"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
-  "type": "Pantalons",
-  "has_vision": false,
+  "colors": [
+   "bleu"
+  ],
+  "type": "Jeans",
+  "has_vision": true,
   "material": "denim",
   "length": "long",
   "cut": "droite",
   "neckline": "",
   "details": [
    "délavage",
-   "poches avant",
-   "taille basse"
+   "poches",
+   "passants"
   ],
   "description": "Low rise waist Straight leg Fly front opening Silver hardware throughout Mid-weight rigid denim with vintage inspired wash Organic cotton No stretch",
   "on_sale": false,
   "fibre": "",
-  "composition": ""
+  "composition": "",
+  "shape": "large",
+  "rise": "basse",
+  "style": "décontracté",
+  "closure": "zippé ou boutonné",
+  "details_en": [
+   "wash",
+   "pockets",
+   "belt loops"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "benni:9976561533208",
@@ -23534,22 +24120,34 @@
   "source": "shopify",
   "first_seen": "2026-10-31T13:36:40+00:00",
   "type": "Blazers",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "bleu marine"
+  ],
+  "has_vision": true,
   "compare_at_price": "216.00",
   "description": "The Amalie Blazer is a fully lined blazer with a deep V neckline and a collarless design. It features jett pockets, a two-button centre closure, shoulder pads for structure, and a vent at the back hem for ease of movement.",
   "on_sale": true,
   "fibre": "",
   "composition": "",
   "material": "",
-  "length": "court",
+  "length": "hanches",
   "cut": "cintrée",
-  "neckline": "col V",
+  "neckline": "",
   "details": [
    "boutons",
-   "fines rayures",
-   "manches évasées"
-  ]
+   "poches passepoilées",
+   "rayures fines"
+  ],
+  "shape": "cintré",
+  "rise": "",
+  "style": "tailleur",
+  "closure": "",
+  "details_en": [
+   "buttons",
+   "welt pockets",
+   "pinstripes"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "henne:14907138670955",
@@ -23578,17 +24176,33 @@
   "source": "shopify",
   "first_seen": "2026-10-31T13:36:40+00:00",
   "type": "Manteaux",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "marron"
+  ],
+  "has_vision": true,
   "description": "DETAILS - Dropped shoulders - Cropped oversized fit - Slant side pockets - Inverted back pleats - Gun metal stud closure, with internal zip closure - Adjustable button tab at cuffs and back waist - Padded internal lining for extra warmth - Textured pebbled fabrication FABRICATION & CARE Main: 100% Polyurethane Base, Filling, Lining: 100% Polyester Care instructions - Spot clean only - Do not immerse in water or solvents - Do not wash - Do not bleach - Do not tumble dry - Do not iron - Do not dry clean Find out more here",
   "on_sale": false,
   "fibre": "polyester",
   "composition": "polyester 100 %",
-  "material": "",
-  "length": "",
-  "cut": "",
+  "material": "synthétique",
+  "length": "court",
+  "cut": "oversize",
   "neckline": "",
-  "details": []
+  "details": [
+   "col à revers",
+   "boutons pression",
+   "coutures apparentes"
+  ],
+  "shape": "bomber",
+  "rise": "",
+  "style": "décontracté",
+  "closure": "",
+  "details_en": [
+   "turn-down collar",
+   "snap buttons",
+   "exposed seams"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "henne:14907138703723",
@@ -23615,17 +24229,33 @@
   "source": "shopify",
   "first_seen": "2026-10-31T13:36:40+00:00",
   "type": "Robes",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "camel"
+  ],
+  "has_vision": true,
   "description": "DETAILS - High neckline - Capped sleeve - Relaxed fit through the bodice, with a ribbed cinched in waistline - Tapered to a midi length straight skirt - Centre back split detail - Smooth mid weight fabrication - We suggest sizing up for a more slouchy and relaxed fit Montana wears a size S and is 182cm FABRICATION & CARE 75% Viscose 25% Nylon Care instructions - Cold gentle hand wash with like colours - Do not soak, do not bleach, do not wring - Do not tumble dry - Do not dry clean - Re-shape while damp - Dry flat in shade - Cool iron inside out Find out more here",
   "on_sale": false,
   "fibre": "viscose",
   "composition": "viscose 75 %, nylon 25 %",
-  "material": "",
+  "material": "maille",
   "length": "midi",
-  "cut": "",
-  "neckline": "",
-  "details": []
+  "cut": "droite",
+  "neckline": "col haut",
+  "details": [
+   "manches dolman",
+   "col montant",
+   "taille élastiquée"
+  ],
+  "shape": "",
+  "rise": "",
+  "style": "habillé",
+  "closure": "",
+  "details_en": [
+   "dolman sleeves",
+   "funnel neck",
+   "elasticated waist"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "henne:14889115386219",
@@ -23658,17 +24288,25 @@
   "source": "shopify",
   "first_seen": "2026-10-31T13:36:40+00:00",
   "type": "Jupes",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "marron"
+  ],
+  "has_vision": true,
   "description": "DETAILS - Suede-effect fabrication - Mid-rise fit - Tailored silhouette - On-knee length - Centre-back invisible zip closure - Two back darts for a close, contoured fit FABRICATION & CARE Main: 55% Polyester 45% Polyurethane Lining: 100% Polyester Care Instructions Dry Clean Only Find out more here",
   "on_sale": false,
   "fibre": "polyester",
   "composition": "polyester 155 %",
   "material": "",
-  "length": "midi",
-  "cut": "",
+  "length": "genou",
+  "cut": "ajustée",
   "neckline": "",
-  "details": []
+  "details": [],
+  "shape": "crayon",
+  "rise": "moyenne",
+  "style": "décontracté",
+  "closure": "",
+  "details_en": [],
+  "attrs_v": 4
  },
  {
   "id": "henne:14889127477611",
@@ -23692,21 +24330,33 @@
   "source": "shopify",
   "first_seen": "2026-10-31T13:36:40+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "marron"
+  ],
+  "has_vision": true,
   "description": "DETAILS - Suede-effect fabrication - Halter-style neckline - Structured, on-body fit - Subtle gathering at bust - Cut-away armholes - Side seam invisible zip closure Montana wears a size 8 and is 182cm FABRICATION & CARE Main: 55% Polyester 45% Polyurethane Lining: 100% Polyester Care Instructions Dry Clean Only Find out more here",
   "on_sale": false,
   "fibre": "polyester",
   "composition": "polyester 155 %",
-  "material": "synthétique",
-  "length": "cropped",
+  "material": "",
+  "length": "taille",
   "cut": "ajustée",
   "neckline": "décolleté plongeant",
   "details": [
-   "encolure halter",
+   "bride licou",
    "fronces poitrine",
-   "taille marquée"
-  ]
+   "dos nu"
+  ],
+  "shape": "ajusté",
+  "rise": "",
+  "style": "habillé",
+  "closure": "",
+  "details_en": [
+   "halter neck",
+   "bust gathers",
+   "open back"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "henne:14889120563563",
@@ -23732,17 +24382,25 @@
   "source": "shopify",
   "first_seen": "2026-10-31T13:36:40+00:00",
   "type": "Pantalons",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "noir"
+  ],
+  "has_vision": true,
   "description": "DETAILS - Stretch rib knit fabrication - Internal Elastic waistband - High waisted, straight cut - Pull on style - Subtle flair at hem - Designed to be worn with a pair of heels - Returning best seller, in an improved fabrication for the season ahead Montana wears a size S and is 182cm FABRICATION & CARE 79% Polyamide 21% Elastane Care instructions - Cold gentle machine wash with like colours - Do not soak, bleach or wring - Do not tumble dry - Do not dry clean - Dry flat in shade - Cool iron inside out Find out more here",
   "on_sale": false,
   "fibre": "nylon",
   "composition": "nylon 79 %, élasthanne 21 %",
   "material": "",
-  "length": "",
-  "cut": "",
+  "length": "long",
+  "cut": "évasée",
   "neckline": "",
-  "details": []
+  "details": [],
+  "shape": "évasé",
+  "rise": "",
+  "style": "habillé",
+  "closure": "",
+  "details_en": [],
+  "attrs_v": 4
  },
  {
   "id": "henne:14889127543147",
@@ -23779,8 +24437,10 @@
   "source": "shopify",
   "first_seen": "2026-10-31T13:36:40+00:00",
   "type": "Jeans",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "bleu"
+  ],
+  "has_vision": true,
   "description": "DETAILS - New Heritage indigo wash - Low-rise fit - Designed to sit low on the hips; size down for a higher-waisted fit - Bowed leg silhouette - Forward side seam detail - Long length - Four-pocket styling with square back pockets - Henne signature back pocket detailing - Back yoke detailing - Back darts for an improved, contoured fit - Brushed silver hardware - Branded leather patch at back waistband Montana wears a size 25 and is 182cm FABRICATION & CARE Main: 100% Cotton Pocketing: 65% Polyester, 35% Cotton Care instructions - Cold gentle machine wash inside out with like colours - Do not bleach, soak or rub - Do not tumble dry - Dry inside out, in shade - Warm iron on reverse side - Do n",
   "on_sale": false,
   "fibre": "coton",
@@ -23790,10 +24450,18 @@
   "cut": "oversize",
   "neckline": "",
   "details": [
-   "jambe barrel",
    "délavage",
-   "coutures galbées"
-  ]
+   "coutures apparentes"
+  ],
+  "shape": "barrel",
+  "rise": "basse",
+  "style": "décontracté",
+  "closure": "zippé ou boutonné",
+  "details_en": [
+   "washed effect",
+   "visible seams"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "henne:14889127510379",
@@ -23825,21 +24493,33 @@
   "source": "shopify",
   "first_seen": "2026-10-31T13:36:40+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "bleu"
+  ],
+  "has_vision": true,
   "description": "DETAILS - New Heritage indigo wash - Classic shirt collar - Front button closure - Chest pockets with Henne signature stitching - Buttoned cuff closure - Back yoke detailing - Back body seams for a contoured fit - Tailored fit through the waist - Brushed silver hardware Montana wears a size 8 and is 182cm FABRICATION & CARE 100% Cotton Care instructions - Cold gentle machine wash inside out with like colours - Do not bleach, soak or rub - Do not tumble dry - Dry inside out, in shade - Warm iron on reverse side - Do not iron trims - Do not dry clean - Use caution as dark colours may transfer to light coloured fabrics and upholstery - This garment is designed to fade. Find out more here",
   "on_sale": false,
   "fibre": "coton",
   "composition": "coton 100 %",
   "material": "denim",
-  "length": "",
+  "length": "hanches",
   "cut": "oversize",
   "neckline": "col chemise",
   "details": [
-   "poches poitrine",
+   "poches à rabat",
    "boutons pression",
-   "délavage"
-  ]
+   "surpiqûres"
+  ],
+  "shape": "oversize",
+  "rise": "",
+  "style": "décontracté",
+  "closure": "",
+  "details_en": [
+   "flap pockets",
+   "snap buttons",
+   "topstitching"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "henne:14878830788971",
@@ -23865,20 +24545,31 @@
   "source": "shopify",
   "first_seen": "2026-10-31T13:36:40+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "gris"
+  ],
+  "has_vision": true,
   "description": "DETAILS - Mid-weight yet breathable knit fabrication - Crew neckline with racer-style back - Body-skimming silhouette - Side seam splits - Straight hem Montana wears a size XS and is 182cm FABRICATION & CARE 58% Viscose, 26% Lyocell, 9% Nylon, 7% Acrylic Care Instructions - Cold gentle hand wash with like colours - Do not soak, do not tumble dry - Do not dry clean - Re-shape while damp - Dry flat in shade - Cool iron inside out Find out more here",
   "on_sale": false,
   "fibre": "viscose",
   "composition": "viscose 58 %, lyocell 26 %, nylon 9 %",
   "material": "maille",
-  "length": "",
+  "length": "hanches",
   "cut": "ajustée",
   "neckline": "col rond",
   "details": [
-   "côtes",
-   "fentes latérales"
-  ]
+   "fentes latérales",
+   "dos nageur"
+  ],
+  "shape": "ajusté",
+  "rise": "",
+  "style": "décontracté",
+  "closure": "",
+  "details_en": [
+   "side slits",
+   "racerback"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "benni:9978297516312",
@@ -23899,18 +24590,32 @@
   "source": "shopify",
   "first_seen": "2026-10-31T13:36:40+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "noir"
+  ],
+  "has_vision": true,
   "compare_at_price": "108.00",
   "description": "The Aaron Top is a structured design crafted from mid-weight suiting fabric. Designed with a wide scoop neckline and seam detailing to snatch the waist. This style has adjustable straps and a centre-back zip closure",
   "on_sale": true,
   "fibre": "",
   "composition": "",
-  "material": "",
-  "length": "",
-  "cut": "",
-  "neckline": "",
-  "details": []
+  "material": "jersey",
+  "length": "taille",
+  "cut": "ajustée",
+  "neckline": "col rond",
+  "details": [
+   "bretelles fines",
+   "encolure ronde"
+  ],
+  "shape": "ajusté",
+  "rise": "",
+  "style": "décontracté",
+  "closure": "",
+  "details_en": [
+   "thin straps",
+   "scoop neckline"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "benni:9978298401048",
@@ -23931,18 +24636,30 @@
   "source": "shopify",
   "first_seen": "2026-10-31T13:36:40+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "marron"
+  ],
+  "has_vision": true,
   "compare_at_price": "108.00",
   "description": "The Aaron Top is a structured design crafted from mid-weight suiting fabric. Designed with a wide scoop neckline and seam detailing to snatch the waist. This style has adjustable straps and a centre-back zip closure",
   "on_sale": true,
   "fibre": "",
   "composition": "",
-  "material": "",
-  "length": "",
-  "cut": "",
-  "neckline": "",
-  "details": []
+  "material": "maille",
+  "length": "hanches",
+  "cut": "ajustée",
+  "neckline": "col rond",
+  "details": [
+   "bretelles fines"
+  ],
+  "shape": "ajusté",
+  "rise": "",
+  "style": "décontracté",
+  "closure": "",
+  "details_en": [
+   "thin straps"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "benni:9987938877720",
@@ -23962,22 +24679,34 @@
   "source": "shopify",
   "first_seen": "2026-10-31T13:36:40+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "noir"
+  ],
+  "has_vision": true,
   "compare_at_price": "108.00",
   "description": "The Agnes Top is a long-sleeve style, crafted in a specialty rib fabrication. It features a deep plunge neckline with softly gathered bust detail. Long sleeves are finished with a subtle cuff split.",
   "on_sale": true,
   "fibre": "",
   "composition": "",
   "material": "maille",
-  "length": "cropped",
+  "length": "taille",
   "cut": "ajustée",
   "neckline": "décolleté plongeant",
   "details": [
-   "côtes verticales",
-   "manches longues",
-   "drapé poitrine"
-  ]
+   "fronces",
+   "poignets fendus",
+   "côtes"
+  ],
+  "shape": "drapé",
+  "rise": "",
+  "style": "habillé",
+  "closure": "",
+  "details_en": [
+   "gathering",
+   "slit cuffs",
+   "ribbing"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "henne:14873705644395",
@@ -24006,18 +24735,33 @@
   ],
   "source": "shopify",
   "first_seen": "2026-10-31T13:36:40+00:00",
-  "type": "Autres",
-  "colors": [],
-  "has_vision": false,
+  "type": "Hauts",
+  "colors": [
+   "kaki",
+   "beige"
+  ],
+  "has_vision": true,
   "description": "DETAILS - Ribbed V-neckline, cuffs and hem - Drop shoulder detailing - Lightweight drape knit - Relaxed fit FABRICATION & CARE 57% Lyocell, 19% Nylon, 12% Silk, 12% Wool Care Instructions - Cold hand wash separately with a wool approved detergent - Do not rub, soak or bleach - Roll in towel to remove excess water - Lay flat to dry in shade - Easing back into original shape - Cool iron on reverse side - Dry cleanable - Best stored folded and flat Find out more here",
   "on_sale": false,
   "fibre": "lyocell",
   "composition": "lyocell 57 %, nylon 19 %, soie 12 %",
   "material": "maille",
-  "length": "",
-  "cut": "",
-  "neckline": "",
-  "details": []
+  "length": "hanches",
+  "cut": "oversize",
+  "neckline": "col V",
+  "details": [
+   "bord-côte",
+   "épaules tombantes"
+  ],
+  "shape": "oversize",
+  "rise": "",
+  "style": "décontracté",
+  "closure": "",
+  "details_en": [
+   "ribbed hem",
+   "dropped shoulders"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "henne:14873705054571",
@@ -24042,17 +24786,33 @@
   "source": "shopify",
   "first_seen": "2026-10-31T13:36:40+00:00",
   "type": "Robes",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "kaki"
+  ],
+  "has_vision": true,
   "description": "DETAILS - Boat neckline - Asymmetric shoulder detailing - Lined through the upper body - Fitted silhouette - Asymmetric tucks at side seam - Cowl back detailing - Mini length, finishing above the knee - Pull-on styling - Wear it in reverse for a striking deep cowl neckline Montana wears a size 8 and is 182cm FABRICATION & CARE 95% Viscose 5% Elastane Care Instructions - Dry Clean Only Find out more here",
   "on_sale": false,
   "fibre": "viscose",
   "composition": "viscose 95 %, élasthanne 5 %",
-  "material": "",
+  "material": "jersey",
   "length": "mini",
-  "cut": "",
-  "neckline": "",
-  "details": []
+  "cut": "ajustée",
+  "neckline": "col haut",
+  "details": [
+   "drapé",
+   "fronces",
+   "dos drapé"
+  ],
+  "shape": "",
+  "rise": "",
+  "style": "habillé",
+  "closure": "",
+  "details_en": [
+   "draped",
+   "ruching",
+   "draped back"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "venroy:7538141593687",
@@ -24080,21 +24840,33 @@
   "source": "shopify",
   "first_seen": "2026-10-31T13:36:40+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "bleu"
+  ],
+  "has_vision": true,
   "description": "The Asymmetric Ruffle Halter Top in Bright Blue is an eye‑catching silk top with a ruffled neckline and tie halter. Wear it seaside or let it shine with a skirt from lunch through late‑night aperitivos. Halter neck with ties Asymmetric ruffle detail at neckline Fully lined at front; back single layer 100% Silk Dry clean only",
   "on_sale": false,
   "fibre": "soie",
   "composition": "soie 100 %",
   "material": "soie",
-  "length": "cropped",
+  "length": "taille",
   "cut": "fluide",
   "neckline": "asymétrique",
   "details": [
    "volants",
    "bretelles nouées",
-   "sans manches"
-  ]
+   "dos ouvert"
+  ],
+  "shape": "droit",
+  "rise": "",
+  "style": "habillé",
+  "closure": "",
+  "details_en": [
+   "ruffles",
+   "halter tie",
+   "open back"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "venroy:7538138906711",
@@ -24128,12 +24900,33 @@
   "source": "shopify",
   "first_seen": "2026-10-31T13:36:40+00:00",
   "type": "Robes",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "blanc"
+  ],
+  "has_vision": true,
   "description": "The Asymmetric Draped Jersey Tank Dress in White is made from soft cotton with a tucked drape and asymmetric hem. Designed for warm days and the even warmer evenings that follow. Pull-over tank dress Asymmetric hem with tucked drape at side hip Mini length 100% Cotton Cold machine wash",
   "on_sale": false,
   "fibre": "coton",
-  "composition": "coton 100 %"
+  "composition": "coton 100 %",
+  "material": "jersey",
+  "length": "mini",
+  "cut": "ajustée",
+  "neckline": "col rond",
+  "shape": "",
+  "rise": "",
+  "style": "décontracté",
+  "closure": "",
+  "details": [
+   "drapé",
+   "asymétrique",
+   "débardeur"
+  ],
+  "details_en": [
+   "draped",
+   "asymmetric",
+   "tank top"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "venroy:7538137628759",
@@ -24161,13 +24954,34 @@
   ],
   "source": "shopify",
   "first_seen": "2026-10-31T13:36:40+00:00",
-  "type": "Pantalons",
-  "colors": [],
-  "has_vision": false,
+  "type": "Jeans",
+  "colors": [
+   "bleu"
+  ],
+  "has_vision": true,
   "description": "The Baggy Denim Jean in Light Blue is cut from mid‑weight selvedge denim in a relaxed, full‑leg silhouette. Light distressing at the hem and pockets gives it an easy lived‑in feel — perfect with tees, shirts or just about anything you throw on. Baggy fit Full leg length Button fly fastening Mid‑weight cotton selvedge denim Lightly distressed at hem and pockets Five‑pocket construction Custom denim logo button Custom leather patch 100% Cotton 14oz Selvedge Denim Cold machine wash (inside out)",
   "on_sale": false,
   "fibre": "coton",
-  "composition": "coton 100 %"
+  "composition": "coton 100 %",
+  "material": "denim",
+  "length": "long",
+  "cut": "oversize",
+  "neckline": "",
+  "shape": "baggy",
+  "rise": "moyenne",
+  "style": "décontracté",
+  "closure": "zippé ou boutonné",
+  "details": [
+   "délavage",
+   "braguette boutonnée",
+   "poches cinq"
+  ],
+  "details_en": [
+   "washed effect",
+   "button fly",
+   "five pockets"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "henne:14782036050283",
@@ -24192,12 +25006,33 @@
   "source": "shopify",
   "first_seen": "2026-10-31T13:36:40+00:00",
   "type": "Pantalons",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "kaki"
+  ],
+  "has_vision": true,
   "description": "DETAILS - Textured Sheer fabrication - Mid-rise fit - Adjustable drawstring waist. - Relaxed straight leg silhouette - Full length - Unlined - We suggest wearing nude underwear due to the sheer fabrication Montana wears a size 8 and is 182cm. FABRICATION & CARE 66% Lyocell 34% Nylon Care Instructions - Garment must be handled delicately - Cold gentle machine wash inside out with like colours in a delicate bag - Do not soak, bleach or wring - Do not tumble dry - Hang to dry out of direct sunlight - Cool iron on reverse side - Dry cleanable Find ou t more here",
   "on_sale": false,
   "fibre": "lyocell",
-  "composition": "lyocell 66 %, nylon 34 %"
+  "composition": "lyocell 66 %, nylon 34 %",
+  "material": "lin",
+  "length": "long",
+  "cut": "fluide",
+  "neckline": "",
+  "shape": "large",
+  "rise": "basse",
+  "style": "décontracté",
+  "closure": "pull-on",
+  "details": [
+   "taille élastique",
+   "jambes larges",
+   "texture froissée"
+  ],
+  "details_en": [
+   "elastic waist",
+   "wide legs",
+   "crinkled texture"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "henne:14782035984747",
@@ -24222,12 +25057,34 @@
   "source": "shopify",
   "first_seen": "2026-10-31T13:36:40+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "kaki",
+   "beige"
+  ],
+  "has_vision": true,
   "description": "DETAILS - Asymmetric one-shoulder neckline - Twisted strap detail - Side tuck detail - Asymmetric hem - Textured Sheer fabrication - Unlined - We suggest wearing nude underwear due to the sheer fabrication Montana wears a size 6 and is 182cm. FABRICATION & CARE 66% Lyocell 34% Nylon Care Instructions - Garment must be handled delicately - Cold gentle machine wash inside out with like colours in a delicate bag - Do not soak, bleach or wring - Do not tumble dry - Hang to dry out of direct sunlight Cool iron on reverse side - Dry cleanable Find ou t more here",
   "on_sale": false,
   "fibre": "lyocell",
-  "composition": "lyocell 66 %, nylon 34 %"
+  "composition": "lyocell 66 %, nylon 34 %",
+  "material": "coton",
+  "length": "hanches",
+  "cut": "fluide",
+  "neckline": "asymétrique",
+  "shape": "drapé",
+  "rise": "",
+  "style": "décontracté",
+  "closure": "",
+  "details": [
+   "anneau métallique",
+   "ourlet asymétrique",
+   "drapé"
+  ],
+  "details_en": [
+   "metal ring",
+   "asymmetric hem",
+   "draped"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "benni:9941007073560",
@@ -24251,13 +25108,32 @@
   "source": "shopify",
   "first_seen": "2026-10-31T13:36:40+00:00",
   "type": "Robes",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "ivoire"
+  ],
+  "has_vision": true,
   "compare_at_price": "187.00",
   "description": "The Ariel Mini Dress features a stretch bodysuit with scoop neckline and racerback design. The sequin skirt drapes into a soft cowl, adding texture to the mini-length silhouette.",
   "on_sale": true,
   "fibre": "",
-  "composition": ""
+  "composition": "",
+  "material": "maille",
+  "length": "mini",
+  "cut": "ajustée",
+  "neckline": "col rond",
+  "shape": "",
+  "rise": "",
+  "style": "décontracté",
+  "closure": "",
+  "details": [
+   "crochet ajouré",
+   "bordure festonnée"
+  ],
+  "details_en": [
+   "openwork crochet",
+   "scalloped edge"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "benni:9838930264344",
@@ -24281,13 +25157,35 @@
   "source": "shopify",
   "first_seen": "2026-10-31T13:36:40+00:00",
   "type": "Robes",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "blanc",
+   "rouge"
+  ],
+  "has_vision": true,
   "compare_at_price": "108.00",
   "description": "The Alfie Mini Dress features a high neckline with a racerback design. Knitted in a lightweight cotton nylon yarn. It combines block-panelled rib with a delicate lace bodice and falls to a mini-length silhouette.",
   "on_sale": true,
   "fibre": "",
-  "composition": ""
+  "composition": "",
+  "material": "maille",
+  "length": "mini",
+  "cut": "ajustée",
+  "neckline": "col rond",
+  "shape": "",
+  "rise": "",
+  "style": "décontracté",
+  "closure": "",
+  "details": [
+   "empiècement dentelle",
+   "bord contrasté",
+   "maille côtelée"
+  ],
+  "details_en": [
+   "lace panel",
+   "contrast trim",
+   "ribbed knit"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "benni:9887387058456",
@@ -24309,13 +25207,34 @@
   "source": "shopify",
   "first_seen": "2026-10-31T13:36:40+00:00",
   "type": "Robes",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "vert"
+  ],
+  "has_vision": true,
   "compare_at_price": "187.00",
   "description": "The Alma Maxi Dress is a strapless design crafted from structured fabric. It features side ruching, an asymmetric hemline, and an open back for a flattering and elegant silhouette.",
   "on_sale": true,
   "fibre": "",
-  "composition": ""
+  "composition": "",
+  "material": "",
+  "length": "midi",
+  "cut": "ajustée",
+  "neckline": "bustier",
+  "shape": "",
+  "rise": "",
+  "style": "habillé",
+  "closure": "",
+  "details": [
+   "drapé",
+   "fente",
+   "bustier"
+  ],
+  "details_en": [
+   "draping",
+   "slit",
+   "bustier"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "benni:9887388926232",
@@ -24338,13 +25257,34 @@
   "source": "shopify",
   "first_seen": "2026-10-31T13:36:40+00:00",
   "type": "Robes",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "jaune"
+  ],
+  "has_vision": true,
   "compare_at_price": "173.00",
   "description": "The Alma Mini Dress features a straight neckline with adjustable spaghetti straps and side ruching. Crafted from structured fabric, it is finished with an open tie-up back for a customisable fit.",
   "on_sale": true,
   "fibre": "",
-  "composition": ""
+  "composition": "",
+  "material": "",
+  "length": "mini",
+  "cut": "ajustée",
+  "neckline": "bretelles fines",
+  "shape": "",
+  "rise": "",
+  "style": "habillé",
+  "closure": "",
+  "details": [
+   "fronces",
+   "drapé au buste",
+   "bretelles fines"
+  ],
+  "details_en": [
+   "ruching",
+   "draped bodice",
+   "thin straps"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "benni:9846914646296",
@@ -24369,13 +25309,34 @@
   "source": "shopify",
   "first_seen": "2026-10-31T13:36:40+00:00",
   "type": "Robes",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "rose"
+  ],
+  "has_vision": true,
   "compare_at_price": "187.00",
   "description": "The Ariel Mini Dress features a stretch bodysuit with scoop neckline and racerback design. The sequin skirt drapes into a soft cowl, adding texture to the mini-length silhouette.",
   "on_sale": true,
   "fibre": "",
-  "composition": ""
+  "composition": "",
+  "material": "dentelle",
+  "length": "mini",
+  "cut": "ajustée",
+  "neckline": "col rond",
+  "shape": "",
+  "rise": "",
+  "style": "décontracté",
+  "closure": "",
+  "details": [
+   "drapé",
+   "ajouré",
+   "crochet"
+  ],
+  "details_en": [
+   "draped",
+   "eyelet",
+   "crochet"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "henne:14716246851947",
@@ -24417,12 +25378,31 @@
   "source": "shopify",
   "first_seen": "2026-10-31T13:36:40+00:00",
   "type": "Shorts",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "blanc"
+  ],
+  "has_vision": true,
   "description": "DETAILS - Mid-weight woven suiting fabric - Mid rise - Belt loops - Front pleated detail - Front slant pockets - Waistband with internal hook and eye and button closure - Zip fly - Illusion back welt pockets - Relaxed leg shape - If in-between sizes, we suggest sizing up FABRICATION & CARE 79% Polyester 19% Viscose 2% Elastane Care Instructions - Cold gentle hand machine with like colours - Do not soak, do not bleach, do not wring - Do not tumble dry - Do not dry clean - Dry flat in the shade - Cool iron inside out. Find ou t more here",
   "on_sale": false,
   "fibre": "polyester",
-  "composition": "polyester 79 %, viscose 19 %, élasthanne 2 %"
+  "composition": "polyester 79 %, viscose 19 %, élasthanne 2 %",
+  "material": "",
+  "length": "mi-cuisse",
+  "cut": "droite",
+  "neckline": "",
+  "shape": "droit",
+  "rise": "haute",
+  "style": "tailleur",
+  "closure": "zippé ou boutonné",
+  "details": [
+   "plis",
+   "revers"
+  ],
+  "details_en": [
+   "pleats",
+   "cuffs"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "venroy:7462906363991",
@@ -24455,13 +25435,32 @@
   "source": "shopify",
   "first_seen": "2026-10-31T13:36:40+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "ivoire"
+  ],
+  "has_vision": true,
   "compare_at_price": "98.00",
   "description": "The Boxy Cotton Knit T Shirt in Off White is a lightweight, semi-sheer knit with a true boxy fit and drapey feel. Finished with a self-bind neckline and tubular hem, it’s an easy piece to wear on its own or layered. Straight silhouette Lightweight semi-sheer knit Tubular hem finish Self-bind neckline True boxy fit 100% Cotton Cold machine wash on a delicate cycle Fit tip: For a slimmer fit, we recommend sizing down",
   "on_sale": false,
   "fibre": "coton",
-  "composition": "coton 100 %"
+  "composition": "coton 100 %",
+  "material": "coton",
+  "length": "hanches",
+  "cut": "oversize",
+  "neckline": "col rond",
+  "shape": "boxy",
+  "rise": "",
+  "style": "décontracté",
+  "closure": "",
+  "details": [
+   "épaules tombantes",
+   "manches courtes"
+  ],
+  "details_en": [
+   "dropped shoulders",
+   "short sleeves"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "henne:14742192980331",
@@ -24550,12 +25549,31 @@
   "source": "shopify",
   "first_seen": "2026-10-31T13:36:40+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "bleu"
+  ],
+  "has_vision": true,
   "description": "DETAILS - Milano knit fabrication - Twist back detail - Halter neck style - Mid weight stretch fabrication Liv wears a size S and is 179cm. FABRICATION & CARE 50% Viscose / 50% Nylon Rib Knit Care Instructions - Cold gentle machine wash with like colours - Do not soak, do not bleach, do not wring - Do not tumble dry - Do not dry clean - Dry flat in the shade - Cool iron inside out Find out more here",
   "on_sale": false,
   "fibre": "mélange",
-  "composition": "viscose 50 %, nylon 50 %"
+  "composition": "viscose 50 %, nylon 50 %",
+  "material": "maille",
+  "length": "taille",
+  "cut": "ajustée",
+  "neckline": "dos nu",
+  "shape": "ajusté",
+  "rise": "",
+  "style": "décontracté",
+  "closure": "",
+  "details": [
+   "encolure haltère",
+   "dos nu"
+  ],
+  "details_en": [
+   "halter neckline",
+   "open back"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "venroy:7462965739607",
@@ -24589,13 +25607,34 @@
   "source": "shopify",
   "first_seen": "2026-10-31T13:36:40+00:00",
   "type": "Robes",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "jaune"
+  ],
+  "has_vision": true,
   "compare_at_price": "248.00",
   "description": "The Asymmetric Low Back Silk Ruffle Dress in Yellow Gold is a bias-cut slip with an asymmetric neckline, open back, and cascading off-shoulder ruffle. Fully lined and opaque, it falls to a floor-length skirt with a side-swept back split. Pair with a sandal or heel to elevate the look. Bias-cut silk slip Slip-on style Fully lined for a smooth finish Opaque Asymmetric neckline Open back with fixed adjustable cross-back strap Cascading off-shoulder ruffle Floor length with ruffle panelling Side-swept back split 100% Silk Gentle dry clean only",
   "on_sale": false,
   "fibre": "soie",
-  "composition": "soie 100 %"
+  "composition": "soie 100 %",
+  "material": "soie",
+  "length": "maxi",
+  "cut": "fluide",
+  "neckline": "asymétrique",
+  "shape": "",
+  "rise": "",
+  "style": "habillé",
+  "closure": "",
+  "details": [
+   "volants",
+   "fente",
+   "bretelles fines"
+  ],
+  "details_en": [
+   "ruffles",
+   "slit",
+   "thin straps"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "venroy:7462966231127",
@@ -24632,13 +25671,35 @@
   "source": "shopify",
   "first_seen": "2026-10-31T13:36:40+00:00",
   "type": "Robes",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "noir",
+   "vert"
+  ],
+  "has_vision": true,
   "compare_at_price": "261.00",
   "description": "The Asymmetric Low Back Silk Ruffle Dress in Black/White Lily is a bias-cut slip with an asymmetric neckline, open back, and cascading off-shoulder ruffle. Double layered for printed styles, it falls to a floor-length skirt with a side-swept back split. Pair with a sandal or heel to elevate the look. Bias-cut silk slip Slip-on style Double layers for print styles Asymmetric neckline Open back with fixed adjustable cross-back strap Cascading off-shoulder ruffle Floor length with ruffle panelling Side-swept back split 70s Palm Springs-inspired print 100% Silk Gentle dry clean only",
   "on_sale": false,
   "fibre": "soie",
-  "composition": "soie 100 %"
+  "composition": "soie 100 %",
+  "material": "soie",
+  "length": "maxi",
+  "cut": "fluide",
+  "neckline": "asymétrique",
+  "shape": "",
+  "rise": "",
+  "style": "habillé",
+  "closure": "",
+  "details": [
+   "volants",
+   "dos nu",
+   "imprimé floral"
+  ],
+  "details_en": [
+   "ruffles",
+   "low back",
+   "floral print"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "henne:7937644363925",
@@ -24664,12 +25725,31 @@
   "source": "shopify",
   "first_seen": "2026-10-31T13:36:40+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "blanc"
+  ],
+  "has_vision": true,
   "description": "DETAILS - Mid-weight woven suiting fabric - Fitted shape - Illusion welt front pockets - Adjustable back buckle - Front button closure - Partially lined with a soft twill FABRICATION & CARE 79% Polyester / 16% Rayon / 5% Spandex Care Instructions - Dry clean only Find out more here .",
   "on_sale": false,
   "fibre": "polyester",
-  "composition": "polyester 79 %, viscose 16 %, élasthanne 5 %"
+  "composition": "polyester 79 %, viscose 16 %, élasthanne 5 %",
+  "material": "",
+  "length": "cropped",
+  "cut": "ajustée",
+  "neckline": "col V",
+  "shape": "ajusté",
+  "rise": "",
+  "style": "tailleur",
+  "closure": "",
+  "details": [
+   "boutons",
+   "emmanchures échancrées"
+  ],
+  "details_en": [
+   "buttons",
+   "cut-out armholes"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "henne:8616181432469",
@@ -24716,12 +25796,33 @@
   "source": "shopify",
   "first_seen": "2026-10-31T13:36:40+00:00",
   "type": "Shorts",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "noir"
+  ],
+  "has_vision": true,
   "description": "DETAILS - Mid-weight woven suiting fabric - Relaxed leg shape - Mid rise - Belt loops - Front pleated detail - Front slant pockets - Waistband with internal hook and eye and button closure - Front slant pockets - Belt loops - Zip fly - Illusion back welt pockets - New and improved fit, if in-between sizes, we kindly suggest sizing up FABRICATION & CARE 79% Polyester 19% Viscose 2% Elastane Care Instructions - Cold gentle machine wash with like colours - Do not soak - Do not bleach - Do not wring - Do not tumble dry - Do not dry clean - Dry flat in the shade - Cool iron inside out Find ou t more here",
   "on_sale": false,
   "fibre": "polyester",
-  "composition": "polyester 79 %, viscose 19 %, élasthanne 2 %"
+  "composition": "polyester 79 %, viscose 19 %, élasthanne 2 %",
+  "material": "",
+  "length": "mi-cuisse",
+  "cut": "droite",
+  "neckline": "",
+  "shape": "tailleur",
+  "rise": "haute",
+  "style": "tailleur",
+  "closure": "",
+  "details": [
+   "plis",
+   "poches latérales",
+   "taille haute"
+  ],
+  "details_en": [
+   "pleats",
+   "side pockets",
+   "high waist"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "henne:8089143214229",
@@ -24754,12 +25855,33 @@
   "source": "shopify",
   "first_seen": "2026-10-31T13:36:40+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "marron"
+  ],
+  "has_vision": true,
   "description": "DETAILS - Soft Rib Knit Fabrication - A symmetrical neckline - Press stud button closure - Ribbed Long Sleeve Style FABRICATION & CARE 100% Viscose Care Instructions - Cold gentle hand wash with like colours - Do not soak - Do not bleach - Do not wring - Do not tumble dry - Do not dry clean - Dry flat in the shade - Cool iron inside out - Take care with possible snagging from jewellery or rough surfaces. Find out more here",
   "on_sale": false,
   "fibre": "viscose",
-  "composition": "viscose 100 %"
+  "composition": "viscose 100 %",
+  "material": "maille",
+  "length": "hanches",
+  "cut": "ajustée",
+  "neckline": "asymétrique",
+  "shape": "ajusté",
+  "rise": "",
+  "style": "décontracté",
+  "closure": "",
+  "details": [
+   "boutons",
+   "côtes",
+   "épaule dénudée"
+  ],
+  "details_en": [
+   "buttons",
+   "ribbing",
+   "bare shoulder"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "henne:8150107685013",
@@ -24791,12 +25913,33 @@
   "source": "shopify",
   "first_seen": "2026-10-31T13:36:40+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "noir"
+  ],
+  "has_vision": true,
   "description": "DETAILS - Milano knit fabrication - Twist back detail - Halter neck style - Mid weight stretch fabrication FABRICATION & CARE 50% Viscose / 50% Nylon Rib Knit Care Instructions - Cold gentle machine wash with like colours - Do not soak - Do not bleach - Do not wring - Do not tumble dry - Do not dry clean - Dry flat in the shade - Cool iron inside out. Find out more here",
   "on_sale": false,
   "fibre": "mélange",
-  "composition": "viscose 50 %, nylon 50 %"
+  "composition": "viscose 50 %, nylon 50 %",
+  "material": "maille",
+  "length": "taille",
+  "cut": "ajustée",
+  "neckline": "col rond",
+  "shape": "ajusté",
+  "rise": "",
+  "style": "décontracté",
+  "closure": "",
+  "details": [
+   "dos nu",
+   "bretelles halter",
+   "col rond"
+  ],
+  "details_en": [
+   "open back",
+   "halter straps",
+   "round neck"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "henne:7989978398869",
@@ -24831,12 +25974,33 @@
   "source": "shopify",
   "first_seen": "2026-10-31T13:36:40+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false,
+  "colors": [
+   "blanc"
+  ],
+  "has_vision": true,
   "description": "DETAILS - Milano knit fabrication - Twist back detail - Halter neck style - Mid weight stretch fabrication FABRICATION & CARE 50% Viscose / 50% Nylon Rib Knit Care Instructions - Cold gentle machine wash with like colours - Do not soak - Do not bleach - Do not wring - Do not tumble dry - Do not dry clean - Dry flat in the shade - Cool iron inside out Find out more here",
   "on_sale": false,
   "fibre": "mélange",
-  "composition": "viscose 50 %, nylon 50 %"
+  "composition": "viscose 50 %, nylon 50 %",
+  "material": "maille",
+  "length": "cropped",
+  "cut": "ajustée",
+  "neckline": "col haut",
+  "shape": "ajusté",
+  "rise": "",
+  "style": "décontracté",
+  "closure": "",
+  "details": [
+   "encolure halter",
+   "dos dégagé",
+   "côtes"
+  ],
+  "details_en": [
+   "halter neck",
+   "open back",
+   "ribbed"
+  ],
+  "attrs_v": 4
  },
  {
   "id": "henne:6603271241877",
