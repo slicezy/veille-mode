@@ -70,19 +70,18 @@ class CollectTests(unittest.TestCase):
 
 
 class AnalyzeTests(unittest.TestCase):
-    def test_heuristic_category(self):
-        self.assertEqual(analyze.heuristic_category({"name": "Capsule x Atelier"}), "Collab")
-        self.assertEqual(analyze.heuristic_category({"name": "Lookbook hiver"}), "Collection")
-        self.assertEqual(analyze.heuristic_category({"name": "Robe midi"}), "Sortie produit")
+    def test_heuristic_type(self):
+        self.assertEqual(analyze.heuristic_type({"name": "Pepper Knit Top"}), "Hauts")
+        self.assertEqual(analyze.heuristic_type({"name": "Sandy Knit Dress"}), "Robes")
+        self.assertEqual(analyze.heuristic_type({"name": "Layla Silk Skirt"}), "Jupes")
+        self.assertEqual(analyze.heuristic_type({"name": "Inez Clutch"}), "Accessoires")
+        self.assertEqual(analyze.heuristic_type({"name": "Veda Trench Coat"}), "Manteaux")
+        self.assertEqual(analyze.heuristic_type({"name": "Mystère", "product_type": "Wide Leg Pants"}), "Pantalons")
+        self.assertEqual(analyze.heuristic_type({"name": "Mystère"}), "Autres")
 
     def test_extract_json_with_noise(self):
-        data = analyze.extract_json('Voici :\n```json\n[{"id": "a", "category": "Collab"}]\n```')
-        self.assertEqual(data[0]["category"], "Collab")
-
-    def test_classify_without_client_uses_rules(self):
-        items = [{"id": "a", "name": "Drop automne"}, {"id": "b", "name": "Robe"}]
-        analyze.classify(None, items)
-        self.assertEqual([i["category"] for i in items], ["Collection", "Sortie produit"])
+        data = analyze.extract_json('Voici :\n```json\n[{"id": "a", "type": "Robes"}]\n```')
+        self.assertEqual(data[0]["type"], "Robes")
 
     def test_week_label(self):
         import datetime as dt

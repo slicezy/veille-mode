@@ -28,7 +28,7 @@ h1{margin:0;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-si
 .palette-card{flex:2 1 300px;min-width:0;background:var(--card);border:1px solid var(--line);border-radius:24px;padding:clamp(24px,3vw,36px);display:flex;flex-direction:column;justify-content:space-between;gap:24px}
 .swatches{display:flex;gap:10px}
 .sw{flex:1;min-width:0;display:flex;flex-direction:column;gap:8px}
-.sw-color{height:96px;border-radius:14px}
+.sw-color{height:96px;border-radius:14px;border:1px solid rgba(31,30,28,.08)}
 .sw-name{font-size:12px;color:var(--muted)}
 .filters{display:flex;flex-direction:column;gap:14px;padding:36px 0 8px}
 .filters-top{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px}
@@ -42,6 +42,14 @@ h2{margin:0;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-si
 .photo img{width:100%;height:100%;object-fit:cover;display:block}
 .heart{position:absolute;top:10px;right:10px;width:44px;height:44px;border-radius:50%;border:0;background:var(--card);cursor:pointer;display:flex;align-items:center;justify-content:center}
 .badge{position:absolute;left:12px;bottom:12px;background:var(--card);border-radius:999px;padding:6px 12px;font-size:12px;font-weight:500}
+.dots{display:flex;gap:6px;align-items:center}
+.dot{width:14px;height:14px;border-radius:50%;border:1px solid rgba(31,30,28,.18);display:inline-block}
+.dot.multi{background:conic-gradient(#D6CFC3,#8E8679,#3A3835,#E9E5DD,#D6CFC3)}
+.attrs{font-size:13px;color:var(--muted);line-height:1.4}
+.pill .n{font-weight:400;color:var(--muted)}
+.pill[aria-pressed="true"] .n{color:#CFCAC1}
+.sw-name b{font-weight:500;color:var(--ink)}
+.note{font-size:12px;color:var(--muted)}
 .info{display:flex;flex-direction:column;gap:6px}
 .info-top{display:flex;justify-content:space-between;gap:8px;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
 h3{margin:0;font-size:16px;font-weight:500;line-height:1.35}
@@ -65,7 +73,7 @@ footer{margin-top:40px;padding-top:40px;border-top:1px solid var(--line);font-si
       <span class="meta" id="count"></span>
     </div>
     <div class="row" id="brands"></div>
-    <div class="row" id="cats"></div>
+    <div class="row" id="types"></div>
   </section>
 
   <section id="grid-area"></section>
@@ -75,12 +83,12 @@ footer{margin-top:40px;padding-top:40px;border-top:1px solid var(--line);font-si
 
 <script>
 (function () {
-  var CATS = ["Tout", "Sortie produit", "Collab", "Collection"];
+  var TYPES = ["Robes", "Hauts", "Pantalons", "Jupes", "Manteaux", "Accessoires", "Autres"];
   var TONES = ["#D6CFC3", "#BDB5A8", "#E9E5DD", "#A39B8D", "#DDD8CE", "#8E8679", "#CEC7BA", "#E4DFD6"];
   var HEART = '<svg width="20" height="20" viewBox="0 0 24 24" fill="FILL" stroke="STROKE" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.35-8.5-8.6C2.6 8.6 4.1 6 6.8 6c1.7 0 3.1.9 4 2.3.4.6.9.6 1.3 0C13 6.9 14.4 6 16.1 6c2.7 0 4.2 2.6 3.3 5.4C18 15.65 12 20 12 20z"/></svg>';
   var MAX_CARDS = 48;
 
-  var state = { brand: "Toutes", cat: "Tout", onlyFavs: false, favs: loadFavs(), items: [], digest: null };
+  var state = { brand: "Toutes", type: "Tout", onlyFavs: false, favs: loadFavs(), items: [], digest: null, stats: null };
 
   function loadFavs() {
     try { return JSON.parse(localStorage.getItem("veille:favs") || "{}"); } catch (e) { return {}; }
@@ -119,8 +127,26 @@ footer{margin-top:40px;padding-top:40px;border-top:1px solid var(--line);font-si
     s.innerHTML = HEART.replace("FILL", filled ? "var(--accent)" : "none").replace("STROKE", filled ? "var(--accent)" : "#1F1E1C");
     return s;
   }
-  function pill(label, active, onclick, extra) {
-    return h("button", { type: "button", class: "pill", "aria-pressed": String(active), onclick: onclick }, extra || null, label);
+  function pill(label, active, onclick, extra, count) {
+    return h("button", { type: "button", class: "pill", "aria-pressed": String(active), onclick: onclick }, extra || null, label,
+      count == null ? null : h("span", { class: "n" }, String(count)));
+  }
+  function colorHex(name) {
+    var map = (state.stats && state.stats.color_hex) || {};
+    var hex = map[name];
+    return /^#[0-9A-Fa-f]{6}$/.test(hex || "") ? hex : null;
+  }
+  function dots(colors) {
+    return h("div", { class: "dots" }, (Array.isArray(colors) ? colors : []).slice(0, 2).map(function (c) {
+      var hex = colorHex(c);
+      var el = h("span", { class: hex ? "dot" : "dot multi", title: String(c) });
+      if (hex) el.style.background = hex;
+      return el;
+    }));
+  }
+  function attrLine(i) {
+    var parts = [i.material, i.length, i.cut, i.neckline].filter(function (x) { return typeof x === "string" && x; });
+    return parts.join(" · ");
   }
 
   function renderHero() {
@@ -134,13 +160,18 @@ footer{margin-top:40px;padding-top:40px;border-top:1px solid var(--line);font-si
     );
     var swatches = h("div", { class: "swatches" }, palette.map(function (p) {
       var hex = /^#[0-9A-Fa-f]{6}$/.test(p.hex || "") ? p.hex : "#D6CFC3";
-      return h("div", { class: "sw" }, h("div", { class: "sw-color", style: "background:" + hex }), h("div", { class: "sw-name" }, p.name || ""));
+      var share = typeof p.share === "number" ? " " + p.share + " %" : "";
+      return h("div", { class: "sw" }, h("div", { class: "sw-color", style: "background:" + hex }), h("div", { class: "sw-name" }, p.name || "", h("b", {}, share)));
     }));
-    var card = h("div", { class: "palette-card" }, h("div", { class: "eyebrow" }, "Palette de la semaine"), swatches);
+    var st = state.stats || {};
+    var basis = st.with_photo_analysis ? "Couleurs relevées sur " + st.with_photo_analysis + " photos." : "Couleurs déduites des noms des produits.";
+    var card = h("div", { class: "palette-card" }, h("div", { class: "eyebrow" }, "Palette de la semaine"), swatches, h("div", { class: "note" }, basis));
     var hero = document.getElementById("hero");
     hero.replaceChildren(main, card);
     document.getElementById("meta").textContent = (d.week_label || "") + (d.generated_at ? " · mise à jour " + fmtDate(d.generated_at) : "");
   }
+
+  function countItems(pred) { return state.items.filter(pred).length; }
 
   function renderFilters() {
     var brands = ["Toutes"];
@@ -149,16 +180,21 @@ footer{margin-top:40px;padding-top:40px;border-top:1px solid var(--line);font-si
       document.getElementById("brands"),
       brands.map(function (b) { return pill(b, state.brand === b, function () { state.brand = b; render(); }); })
     );
+    var inBrand = function (i) { return state.brand === "Toutes" || i.brand === state.brand; };
     var favCount = Object.keys(state.favs).filter(function (k) { return state.favs[k]; }).length;
-    var catPills = CATS.map(function (c) { return pill(c, state.cat === c, function () { state.cat = c; render(); }); });
-    catPills.push(pill("Favoris (" + favCount + ")", state.onlyFavs, function () { state.onlyFavs = !state.onlyFavs; render(); }, heartIcon(false)));
-    document.getElementById("cats").replaceChildren.apply(document.getElementById("cats"), catPills);
+    var typePills = [pill("Tout", state.type === "Tout", function () { state.type = "Tout"; render(); }, null, countItems(inBrand))];
+    TYPES.forEach(function (t) {
+      var n = countItems(function (i) { return inBrand(i) && i.type === t; });
+      if (n || state.type === t) typePills.push(pill(t, state.type === t, function () { state.type = t; render(); }, null, n));
+    });
+    typePills.push(pill("Favoris (" + favCount + ")", state.onlyFavs, function () { state.onlyFavs = !state.onlyFavs; render(); }, heartIcon(false)));
+    document.getElementById("types").replaceChildren.apply(document.getElementById("types"), typePills);
   }
 
   function visibleItems() {
     return state.items.filter(function (i) {
       return (state.brand === "Toutes" || i.brand === state.brand) &&
-        (state.cat === "Tout" || i.category === state.cat) &&
+        (state.type === "Tout" || i.type === state.type) &&
         (!state.onlyFavs || state.favs[i.id]);
     });
   }
@@ -186,7 +222,7 @@ footer{margin-top:40px;padding-top:40px;border-top:1px solid var(--line);font-si
           "aria-label": (fav ? "Retirer des favoris : " : "Ajouter aux favoris : ") + i.name,
           onclick: function () { state.favs[i.id] = !state.favs[i.id]; saveFavs(); render(); }
         }, heartIcon(fav)),
-        h("span", { class: "badge" }, i.category || "Sortie produit")
+        i.type ? h("span", { class: "badge" }, i.type) : null
       );
       var src = safeUrl(i.url);
       var date = fmtDate(i.published_at || i.first_seen);
@@ -194,6 +230,9 @@ footer{margin-top:40px;padding-top:40px;border-top:1px solid var(--line);font-si
         h("div", { class: "info" },
           h("div", { class: "info-top" }, h("span", {}, i.brand), h("span", {}, date)),
           h("h3", {}, i.name),
+          (i.colors && i.colors.length) ? dots(i.colors) : null,
+          attrLine(i) ? h("div", { class: "attrs" }, attrLine(i)) : null,
+          (Array.isArray(i.details) && i.details.length) ? h("div", { class: "attrs" }, i.details.join(", ")) : null,
           src ? h("a", { href: src, target: "_blank", rel: "noopener noreferrer" }, "Voir la source") : null
         ));
     });
@@ -206,9 +245,10 @@ footer{margin-top:40px;padding-top:40px;border-top:1px solid var(--line);font-si
     return fetch(path, { cache: "no-store" }).then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; });
   }
 
-  Promise.all([load("data/digest.json"), load("data/items.json")]).then(function (res) {
+  Promise.all([load("data/digest.json"), load("data/items.json"), load("data/stats.json")]).then(function (res) {
     state.digest = res[0];
     state.items = Array.isArray(res[1]) ? res[1] : [];
+    state.stats = res[2];
     document.getElementById("footer").textContent = "Mise à jour automatique chaque matin. Les photos et les liens viennent des sites des marques.";
     renderHero();
     render();
