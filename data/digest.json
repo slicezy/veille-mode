@@ -1,22 +1,22 @@
 {
- "title": "Noir et blanc, maille et mini dominent",
- "summary": "Les hauts (44 %) et les robes (23 %) pèsent le plus dans les nouveautés, avec une palette très neutre : noir et blanc à 25 % chacun, puis gris (17 %) et beige (11 %). La maille est la matière la plus citée (15 %, 4 marques) et le mini la tendance de longueur la plus partagée (6 marques), devant le midi (4 marques) ; l'échantillon montre des minis chez Kookaï, Venroy et Bec + Bridge. Côté prix, les robes ont une médiane de 265 CAD et les manteaux de 373 CAD, tandis que les hauts restent à 134 CAD.",
+ "title": "Noir, blanc et mini : une veille sobre et ajustée",
+ "summary": "Les nouveautés des 11 marques sont dominées par les hauts (41 %) et les robes (23 %), dans une palette très neutre : noir 24 %, blanc 22 % et gris 17 %. Le noir est repéré chez 8 marques, le mini chez 7 et la coupe ajustée chez 6, tandis que la maille (5 marques) et le col rond (5 marques) s'installent. L'échantillon montre aussi de l'ivoire et de l'argent chez Bec + Bridge, ainsi que des jupes midi en soie chez Reformation, avec des prix médians de 353 CAD pour les robes et 152 CAD pour les hauts.",
  "tags": [
-  "neutres",
+  "palette neutre",
   "mini",
   "maille",
-  "ivoire"
+  "ajusté"
  ],
  "palette": [
   {
    "name": "Noir",
    "hex": "#1F1E1C",
-   "share": 25
+   "share": 24
   },
   {
    "name": "Blanc",
    "hex": "#F7F6F2",
-   "share": 25
+   "share": 22
   },
   {
    "name": "Gris",
@@ -26,14 +26,14 @@
   {
    "name": "Beige",
    "hex": "#D8C8AE",
-   "share": 11
+   "share": 7
   },
   {
    "name": "Argent",
    "hex": "#C0C0C4",
-   "share": 8
+   "share": 7
   }
  ],
  "week_label": "Semaine du 26 octobre",
- "generated_at": "2026-10-31T15:28:49+00:00"
+ "generated_at": "2026-10-31T15:49:53+00:00"
 }
