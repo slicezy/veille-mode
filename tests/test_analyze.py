@@ -190,6 +190,13 @@ class StatsTests(unittest.TestCase):
         self.assertEqual((stats["total"], stats["types"], stats["palette"]), (0, [], []))
 
 
+class WindowTests(unittest.TestCase):
+    def test_window_uses_first_seen_even_if_published_long_ago(self):
+        items = [item(i, published_at="2026-03-01T00:00:00+00:00", type="Robes") for i in range(15)]
+        stats = analyze.compute_stats(items, NOW)
+        self.assertEqual((stats["window_days"], stats["total"]), (7, 15))
+
+
 class DigestTests(unittest.TestCase):
     def test_digest_uses_computed_palette_not_model_palette(self):
         items = [item(1, type="Robes", colors=["noir"], has_vision=True, material="satin", length="midi")]
@@ -200,7 +207,9 @@ class DigestTests(unittest.TestCase):
         digest = analyze.build_digest(client, items, stats)
         self.assertEqual(digest["title"], "Noir satiné")
         self.assertEqual(digest["palette"][0]["name"], "Noir")
-        self.assertIn("Robes 100 %", client.calls[0]["messages"][0]["content"][0]["text"])
+        sent = client.calls[0]["messages"][0]["content"][0]["text"]
+        self.assertIn("Robes 100 %", sent)
+        self.assertIn("Palette (part des couleurs relevées sur les photos) : Noir 100 %", sent)
 
     def test_digest_fallback_on_error(self):
         items = [item(1, type="Robes", colors=["noir"], has_vision=True)]
