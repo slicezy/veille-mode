@@ -279,6 +279,17 @@ def main() -> None:
     status = {"generated_at": now_iso, "brands": {}}
 
     for brand in brands:
+        if not brand.get("enabled", True):
+            status["brands"][brand["id"]] = {
+                "ok": False,
+                "disabled": True,
+                "strategy": None,
+                "count": 0,
+                "errors": [brand.get("note", "désactivée dans brands.json")],
+                "new": 0,
+            }
+            print(f"{brand['name']}: désactivée")
+            continue
         found, info = collect_brand(brand)
         new = 0
         for item in found:
