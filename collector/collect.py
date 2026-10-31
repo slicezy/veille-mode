@@ -79,7 +79,9 @@ def strategy_shopify(brand: dict) -> list[dict]:
     last_error: Exception | None = None
     for handle in handles:
         try:
-            data = get(f"{site}/collections/{handle}/products.json?limit={MAX_PER_BRAND}").json()
+            # « all » = tout le catalogue : on le trie par date de création pour avoir les plus récents
+            sort = "&sort_by=created-descending" if handle == "all" else ""
+            data = get(f"{site}/collections/{handle}/products.json?limit={MAX_PER_BRAND}{sort}").json()
         except (requests.RequestException, ValueError) as exc:
             last_error = exc
             continue
@@ -200,7 +202,8 @@ def parse_sitemap(brand: dict, site: str, xml: str) -> list[dict]:
                 "image": img,
                 "price": None,
                 "currency": brand.get("currency"),
-                "published_at": lastmod or None,
+                "published_at": None,  # 'lastmod' = dernière modification, pas une date de mise en ligne
+                "modified_at": lastmod or None,
                 "product_type": "",
                 "tags": [],
             }
@@ -358,6 +361,14 @@ def sort_key(item: dict):
     return parse_dt(item.get("published_at")) or parse_dt(item.get("first_seen")) or floor
 
 
+GIFT_CARD_RE = re.compile(r"gift[\s-]?card|e-?gift|carte[\s-]cadeau", re.I)
+
+
+def is_gift_card(item: dict) -> bool:
+    text = " ".join([item.get("name") or "", item.get("product_type") or "", item.get("url") or ""])
+    return bool(GIFT_CARD_RE.search(text))
+
+
 def collect_brand(brand: dict) -> tuple[list[dict], dict]:
     errors = []
     for name in brand.get("strategies", ["shopify", "jsonld", "sitemap"]):
@@ -366,7 +377,10 @@ def collect_brand(brand: dict) -> tuple[list[dict], dict]:
         except Exception as exc:  # une marque ne doit jamais bloquer les autres
             errors.append(f"{name}: {exc}")
             continue
+        found = [i for i in found if not is_gift_card(i)]
         if found:
+            for item in found:
+                item["source"] = name
             return found, {"ok": True, "strategy": name, "count": len(found), "errors": errors}
         errors.append(f"{name}: aucun produit")
     return [], {"ok": False, "strategy": None, "count": 0, "errors": errors}

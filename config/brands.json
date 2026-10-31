@@ -106,14 +106,16 @@
         "sitemap"
       ],
       "collections": [
+        "womens-new-arrivals",
         "new-arrivals",
         "new",
         "new-in",
         "just-in",
-        "latest"
+        "latest",
+        "all"
       ],
       "new_path": "/collections/new-arrivals",
-      "note": "Ajoutée d'après la liste « Brands We Love ». Adresse trouvée par recherche ; plateforme à confirmer par data/status.json."
+      "note": "Ajoutée d'après la liste « Brands We Love ». Adresse trouvée par recherche ; plateforme à confirmer par data/status.json. Gamme mixte (hommes et femmes) : la collection « all » trie par date de création."
     },
     {
       "id": "henne",
@@ -130,7 +132,8 @@
         "new",
         "new-in",
         "just-in",
-        "latest"
+        "latest",
+        "all"
       ],
       "new_path": "/collections/new-arrivals",
       "note": "Ajoutée d'après la liste « Brands We Love ». Plateforme à confirmer par data/status.json."
@@ -210,7 +213,8 @@
         "new",
         "new-in",
         "just-in",
-        "latest"
+        "latest",
+        "all"
       ],
       "new_path": "/collections/new-arrivals",
       "note": "Ajoutée d'après la liste « Brands We Love ». Site australien (devise AUD) ; il existe aussi benni.us (USD), non suivi pour éviter les doublons. Plateforme à confirmer par data/status.json."

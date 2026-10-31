@@ -14,6 +14,8 @@ Outil de veille pour une designer de mode (manager) : suivre les nouveautés de 
 - Dissh, Kookaï, Sir., Bec + Bridge : Shopify, collecte OK (stratégie `shopify`, 40 produits chacune).
 - Reformation : Salesforce Commerce Cloud (pas Shopify). Stratégie `jsonld_pdp` : la liste `/new/this-week` donne les adresses des produits en JSON-LD (ItemList), puis chaque fiche fournit nom, photo, prix. Écrite à partir d'un rapport de diagnostic ; à confirmer par `data/status.json` après la première exécution.
 - Venroy, Henne, Elka Collective, VRG GRL, Bayse (baysebrand.com), BENNI (benni.com.au, AUD ; benni.us non suivi) : ajoutées d'après la liste « Brands We Love » de la designer (stratégie `shopify` essayée en premier ; plateforme à confirmer par `data/status.json` après la première exécution).
+- Venroy, Henne, BENNI : leurs collections « nouveautés » sont vides ou absentes ; la collection `all` (triée par date de création) sert de repli. Venroy a une gamme mixte (hommes et femmes). Le repli par sitemap ne donne ni prix ni date : à éviter. Les cartes cadeaux sont écartées (`is_gift_card`).
+- Nettoyage d'une marque collectée par erreur : workflow « Nettoyer une marque » (`collector/purge.py`), à lancer avant la collecte suivante.
 - Meshki : désactivée (`"enabled": false`). Cloudflare renvoie 403 sur tout, sites AU et US. Ne pas chercher à contourner. Pistes légitimes : infolettre, flux officiel fourni par la marque, ajout manuel par capture d'écran.
 
 ## Outils de diagnostic
