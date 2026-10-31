@@ -1,0 +1,59 @@
+{
+  "_comment": "Les URL 'site' sont des hypothèses à confirmer au premier lancement (voir data/status.json). 'strategies' : ordre d'essai. 'collections' : handles Shopify à essayer. 'new_path' : page nouveautés pour la stratégie jsonld.",
+  "brands": [
+    {
+      "id": "reformation",
+      "name": "Reformation",
+      "site": "https://www.thereformation.com",
+      "currency": "USD",
+      "strategies": ["shopify", "jsonld", "sitemap"],
+      "collections": ["new-arrivals", "new"],
+      "new_path": "/new-arrivals"
+    },
+    {
+      "id": "dissh",
+      "name": "Dissh",
+      "site": "https://www.dissh.com",
+      "currency": "AUD",
+      "strategies": ["shopify", "jsonld", "sitemap"],
+      "collections": ["new-arrivals", "new"],
+      "new_path": "/collections/new-arrivals"
+    },
+    {
+      "id": "kookai",
+      "name": "Kookaï",
+      "site": "https://www.kookai.com.au",
+      "currency": "AUD",
+      "strategies": ["shopify", "jsonld", "sitemap"],
+      "collections": ["new-arrivals", "new"],
+      "new_path": "/new-arrivals"
+    },
+    {
+      "id": "sir",
+      "name": "Sir.",
+      "site": "https://www.sirthelabel.com",
+      "currency": "AUD",
+      "strategies": ["shopify", "jsonld", "sitemap"],
+      "collections": ["new-arrivals", "new"],
+      "new_path": "/collections/new-arrivals"
+    },
+    {
+      "id": "bec-bridge",
+      "name": "Bec + Bridge",
+      "site": "https://www.becandbridge.com",
+      "currency": "AUD",
+      "strategies": ["shopify", "jsonld", "sitemap"],
+      "collections": ["new-arrivals", "new"],
+      "new_path": "/collections/new-arrivals"
+    },
+    {
+      "id": "meshki",
+      "name": "Meshki",
+      "site": "https://www.meshki.com.au",
+      "currency": "AUD",
+      "strategies": ["shopify", "jsonld", "sitemap"],
+      "collections": ["new-arrivals", "new"],
+      "new_path": "/collections/new-arrivals"
+    }
+  ]
+}

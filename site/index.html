@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille mode</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F4F2EE; --ink:#1F1E1C; --muted:#6B6862; --line:#E1DDD6; --card:#FBFAF8;
+  --hero:#EAE6DF; --hero-ink:#3D3B37; --hero-muted:#5F5C56; --pill-line:#CFCAC1;
+  --accent:#2B2A27;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Inter',system-ui,sans-serif}
+a{color:var(--ink);text-underline-offset:3px}a:hover{color:var(--muted)}
+.wrap{max-width:1240px;margin:0 auto;padding:0 clamp(16px,4vw,56px) 64px}
+header{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:12px;padding:28px 0;border-bottom:1px solid var(--line)}
+.logo{font-family:'Instrument Serif',Georgia,serif;font-size:30px;letter-spacing:-.01em}
+.meta{font-size:13px;color:var(--muted)}
+.hero{display:flex;flex-wrap:wrap;gap:24px;padding:40px 0 16px}
+.hero-main{flex:3 1 420px;min-width:0;background:var(--hero);border-radius:24px;padding:clamp(24px,4vw,44px);display:flex;flex-direction:column;gap:18px}
+.eyebrow{font-size:12px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--hero-muted)}
+h1{margin:0;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(34px,5vw,56px);line-height:1.05;letter-spacing:-.02em}
+.summary{margin:0;font-size:16px;line-height:1.65;color:var(--hero-ink);max-width:56ch}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tag{background:#F7F5F1;border-radius:999px;padding:8px 14px;font-size:13px;color:var(--hero-ink)}
+.palette-card{flex:2 1 300px;min-width:0;background:var(--card);border:1px solid var(--line);border-radius:24px;padding:clamp(24px,3vw,36px);display:flex;flex-direction:column;justify-content:space-between;gap:24px}
+.swatches{display:flex;gap:10px}
+.sw{flex:1;min-width:0;display:flex;flex-direction:column;gap:8px}
+.sw-color{height:96px;border-radius:14px}
+.sw-name{font-size:12px;color:var(--muted)}
+.filters{display:flex;flex-direction:column;gap:14px;padding:36px 0 8px}
+.filters-top{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px}
+h2{margin:0;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:34px;letter-spacing:-.01em}
+.row{display:flex;flex-wrap:wrap;gap:8px}
+.pill{height:44px;padding:0 20px;border-radius:999px;font:500 14px 'Inter',system-ui,sans-serif;cursor:pointer;display:inline-flex;align-items:center;gap:8px;background:transparent;color:var(--ink);border:1px solid var(--pill-line)}
+.pill[aria-pressed="true"]{background:var(--accent);color:#fff;border-color:var(--accent)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:32px 24px;padding:20px 0 8px}
+.card{display:flex;flex-direction:column;gap:14px;min-width:0}
+.photo{position:relative;aspect-ratio:4/5;border-radius:20px;overflow:hidden}
+.photo img{width:100%;height:100%;object-fit:cover;display:block}
+.heart{position:absolute;top:10px;right:10px;width:44px;height:44px;border-radius:50%;border:0;background:var(--card);cursor:pointer;display:flex;align-items:center;justify-content:center}
+.badge{position:absolute;left:12px;bottom:12px;background:var(--card);border-radius:999px;padding:6px 12px;font-size:12px;font-weight:500}
+.info{display:flex;flex-direction:column;gap:6px}
+.info-top{display:flex;justify-content:space-between;gap:8px;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+h3{margin:0;font-size:16px;font-weight:500;line-height:1.35}
+.info a{font-size:13px}
+.empty{padding:64px 0;text-align:center;font-size:15px;color:var(--muted)}
+footer{margin-top:40px;padding-top:40px;border-top:1px solid var(--line);font-size:12px;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">Veille</div>
+    <div class="meta" id="meta"></div>
+  </header>
+
+  <section class="hero" id="hero"></section>
+
+  <section class="filters">
+    <div class="filters-top">
+      <h2>Nouveautés</h2>
+      <span class="meta" id="count"></span>
+    </div>
+    <div class="row" id="brands"></div>
+    <div class="row" id="cats"></div>
+  </section>
+
+  <section id="grid-area"></section>
+
+  <footer id="footer"></footer>
+</div>
+
+<script>
+(function () {
+  var CATS = ["Tout", "Sortie produit", "Collab", "Collection"];
+  var TONES = ["#D6CFC3", "#BDB5A8", "#E9E5DD", "#A39B8D", "#DDD8CE", "#8E8679", "#CEC7BA", "#E4DFD6"];
+  var HEART = '<svg width="20" height="20" viewBox="0 0 24 24" fill="FILL" stroke="STROKE" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.35-8.5-8.6C2.6 8.6 4.1 6 6.8 6c1.7 0 3.1.9 4 2.3.4.6.9.6 1.3 0C13 6.9 14.4 6 16.1 6c2.7 0 4.2 2.6 3.3 5.4C18 15.65 12 20 12 20z"/></svg>';
+  var MAX_CARDS = 48;
+
+  var state = { brand: "Toutes", cat: "Tout", onlyFavs: false, favs: loadFavs(), items: [], digest: null };
+
+  function loadFavs() {
+    try { return JSON.parse(localStorage.getItem("veille:favs") || "{}"); } catch (e) { return {}; }
+  }
+  function saveFavs() {
+    try { localStorage.setItem("veille:favs", JSON.stringify(state.favs)); } catch (e) {}
+  }
+  function safeUrl(u) {
+    try { var x = new URL(u); return (x.protocol === "http:" || x.protocol === "https:") ? x.href : null; } catch (e) { return null; }
+  }
+  function hash(s) { var h = 0; for (var i = 0; i < s.length; i++) { h = (h * 31 + s.charCodeAt(i)) >>> 0; } return h; }
+  function fmtDate(iso) {
+    var d = new Date(iso);
+    return isNaN(d) ? "" : d.toLocaleDateString("fr-CA", { day: "numeric", month: "short" });
+  }
+  function h(tag, props) {
+    var n = document.createElement(tag);
+    Object.keys(props || {}).forEach(function (k) {
+      var v = props[k];
+      if (k === "class") n.className = v;
+      else if (k === "style") n.style.cssText = v;
+      else if (k.indexOf("on") === 0) n.addEventListener(k.slice(2), v);
+      else n.setAttribute(k, v);
+    });
+    for (var i = 2; i < arguments.length; i++) {
+      var kid = arguments[i];
+      if (kid == null) continue;
+      n.append(kid.nodeType ? kid : document.createTextNode(String(kid)));
+    }
+    return n;
+  }
+  function heartIcon(filled) {
+    var s = document.createElement("span");
+    s.style.display = "flex";
+    s.innerHTML = HEART.replace("FILL", filled ? "var(--accent)" : "none").replace("STROKE", filled ? "var(--accent)" : "#1F1E1C");
+    return s;
+  }
+  function pill(label, active, onclick, extra) {
+    return h("button", { type: "button", class: "pill", "aria-pressed": String(active), onclick: onclick }, extra || null, label);
+  }
+
+  function renderHero() {
+    var d = state.digest || {};
+    var palette = Array.isArray(d.palette) ? d.palette : [];
+    var main = h("div", { class: "hero-main" },
+      h("div", { class: "eyebrow" }, "Tendance de la semaine"),
+      h("h1", {}, d.title || "Nouveautés de la semaine"),
+      h("p", { class: "summary" }, d.summary || "La synthèse apparaîtra après la première analyse."),
+      h("div", { class: "tags" }, (d.tags || []).map(function (t) { return h("span", { class: "tag" }, t); }))
+    );
+    var swatches = h("div", { class: "swatches" }, palette.map(function (p) {
+      var hex = /^#[0-9A-Fa-f]{6}$/.test(p.hex || "") ? p.hex : "#D6CFC3";
+      return h("div", { class: "sw" }, h("div", { class: "sw-color", style: "background:" + hex }), h("div", { class: "sw-name" }, p.name || ""));
+    }));
+    var card = h("div", { class: "palette-card" }, h("div", { class: "eyebrow" }, "Palette de la semaine"), swatches);
+    var hero = document.getElementById("hero");
+    hero.replaceChildren(main, card);
+    document.getElementById("meta").textContent = (d.week_label || "") + (d.generated_at ? " · mise à jour " + fmtDate(d.generated_at) : "");
+  }
+
+  function renderFilters() {
+    var brands = ["Toutes"];
+    state.items.forEach(function (i) { if (brands.indexOf(i.brand) === -1) brands.push(i.brand); });
+    document.getElementById("brands").replaceChildren.apply(
+      document.getElementById("brands"),
+      brands.map(function (b) { return pill(b, state.brand === b, function () { state.brand = b; render(); }); })
+    );
+    var favCount = Object.keys(state.favs).filter(function (k) { return state.favs[k]; }).length;
+    var catPills = CATS.map(function (c) { return pill(c, state.cat === c, function () { state.cat = c; render(); }); });
+    catPills.push(pill("Favoris (" + favCount + ")", state.onlyFavs, function () { state.onlyFavs = !state.onlyFavs; render(); }, heartIcon(false)));
+    document.getElementById("cats").replaceChildren.apply(document.getElementById("cats"), catPills);
+  }
+
+  function visibleItems() {
+    return state.items.filter(function (i) {
+      return (state.brand === "Toutes" || i.brand === state.brand) &&
+        (state.cat === "Tout" || i.category === state.cat) &&
+        (!state.onlyFavs || state.favs[i.id]);
+    });
+  }
+
+  function renderGrid() {
+    var items = visibleItems();
+    document.getElementById("count").textContent = items.length + (items.length > 1 ? " nouveautés" : " nouveauté");
+    var area = document.getElementById("grid-area");
+    if (!items.length) {
+      area.replaceChildren(h("div", { class: "empty" }, state.items.length ? "Aucune nouveauté pour cette sélection." : "Aucune donnée pour l'instant. Lance le workflow « Veille quotidienne »."));
+      return;
+    }
+    var cards = items.slice(0, MAX_CARDS).map(function (i) {
+      var fav = !!state.favs[i.id];
+      var img = safeUrl(i.image);
+      var photo = h("div", { class: "photo", style: "background:" + TONES[hash(i.id) % TONES.length] });
+      if (img) {
+        var el = h("img", { src: img, alt: "", loading: "lazy", referrerpolicy: "no-referrer" });
+        el.addEventListener("error", function () { el.remove(); });
+        photo.append(el);
+      }
+      photo.append(
+        h("button", {
+          type: "button", class: "heart", "aria-pressed": String(fav),
+          "aria-label": (fav ? "Retirer des favoris : " : "Ajouter aux favoris : ") + i.name,
+          onclick: function () { state.favs[i.id] = !state.favs[i.id]; saveFavs(); render(); }
+        }, heartIcon(fav)),
+        h("span", { class: "badge" }, i.category || "Sortie produit")
+      );
+      var src = safeUrl(i.url);
+      var date = fmtDate(i.published_at || i.first_seen);
+      return h("article", { class: "card" }, photo,
+        h("div", { class: "info" },
+          h("div", { class: "info-top" }, h("span", {}, i.brand), h("span", {}, date)),
+          h("h3", {}, i.name),
+          src ? h("a", { href: src, target: "_blank", rel: "noopener noreferrer" }, "Voir la source") : null
+        ));
+    });
+    area.replaceChildren(h("div", { class: "grid" }, cards));
+  }
+
+  function render() { renderFilters(); renderGrid(); }
+
+  function load(path) {
+    return fetch(path, { cache: "no-store" }).then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; });
+  }
+
+  Promise.all([load("data/digest.json"), load("data/items.json")]).then(function (res) {
+    state.digest = res[0];
+    state.items = Array.isArray(res[1]) ? res[1] : [];
+    document.getElementById("footer").textContent = "Mise à jour automatique chaque matin. Les photos et les liens viennent des sites des marques.";
+    renderHero();
+    render();
+  });
+})();
+</script>
+</body>
+</html>
