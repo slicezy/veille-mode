@@ -570,8 +570,20 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Robes",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "rose"
+  ],
+  "has_vision": true,
+  "material": "lin",
+  "length": "mini",
+  "cut": "droite",
+  "neckline": "asymétrique",
+  "details": [
+   "drapé",
+   "couture diagonale",
+   "sans manches"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "vrg-grl:8034712813611",
@@ -676,8 +688,19 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "multicolore"
+  ],
+  "has_vision": false,
+  "material": "",
+  "length": "",
+  "cut": "",
+  "neckline": "",
+  "details": [
+   "imprimé",
+   "transparence"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "vrg-grl:8034712682539",
@@ -730,8 +753,20 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Pantalons",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "multicolore"
+  ],
+  "has_vision": true,
+  "material": "mousseline",
+  "length": "long",
+  "cut": "fluide",
+  "neckline": "",
+  "details": [
+   "imprimé peint",
+   "jambes larges",
+   "taille élastiquée"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "vrg-grl:8034712092715",
@@ -777,8 +812,19 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "gris"
+  ],
+  "has_vision": true,
+  "material": "coton",
+  "length": "",
+  "cut": "oversize",
+  "neckline": "col rond",
+  "details": [
+   "manches courtes",
+   "épaules tombantes"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "vrg-grl:8034711601195",
@@ -812,9 +858,21 @@
    "UPLOAD271026"
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
-  "type": "Autres",
-  "colors": [],
-  "has_vision": false
+  "type": "Hauts",
+  "colors": [
+   "noir"
+  ],
+  "has_vision": true,
+  "material": "dentelle",
+  "length": "cropped",
+  "cut": "ajustée",
+  "neckline": "col V",
+  "details": [
+   "bordure en dentelle",
+   "bretelles fines",
+   "bonnets triangle"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "vrg-grl:8034711535659",
@@ -860,8 +918,20 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "noir"
+  ],
+  "has_vision": true,
+  "material": "dentelle",
+  "length": "",
+  "cut": "ajustée",
+  "neckline": "col V",
+  "details": [
+   "bordure en dentelle",
+   "bretelles fines",
+   "finition stretch"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "vrg-grl:8034711470123",
@@ -915,8 +985,20 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "rose",
+   "multicolore"
+  ],
+  "has_vision": false,
+  "material": "",
+  "length": "",
+  "cut": "",
+  "neckline": "",
+  "details": [
+   "imprimé léopard",
+   "transparent"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "vrg-grl:8034711371819",
@@ -957,8 +1039,19 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "gris"
+  ],
+  "has_vision": true,
+  "material": "maille",
+  "length": "cropped",
+  "cut": "ajustée",
+  "neckline": "col rond",
+  "details": [
+   "manches courtes",
+   "bord côtelé"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "vrg-grl:8034711240747",
@@ -1053,8 +1146,19 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "gris",
+   "blanc"
+  ],
+  "has_vision": false,
+  "material": "",
+  "length": "",
+  "cut": "",
+  "neckline": "",
+  "details": [
+   "rayures"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "vrg-grl:8034710716459",
@@ -1106,8 +1210,21 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Robes",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "multicolore",
+   "ivoire"
+  ],
+  "has_vision": true,
+  "material": "mousseline",
+  "length": "maxi",
+  "cut": "fluide",
+  "neckline": "col rond",
+  "details": [
+   "imprimé peint",
+   "coupe biais",
+   "ourlet évasé"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "vrg-grl:8034710585387",
@@ -1154,8 +1271,20 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "rose"
+  ],
+  "has_vision": true,
+  "material": "maille",
+  "length": "",
+  "cut": "oversize",
+  "neckline": "col rond",
+  "details": [
+   "col côtelé",
+   "épaules tombantes",
+   "manches 3/4"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "vrg-grl:8034710519851",
@@ -1188,8 +1317,18 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Autres",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "noir"
+  ],
+  "has_vision": false,
+  "material": "maille",
+  "length": "",
+  "cut": "",
+  "neckline": "",
+  "details": [
+   "transparent"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "vrg-grl:8034710454315",
@@ -1242,8 +1381,21 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "rose",
+   "blanc"
+  ],
+  "has_vision": true,
+  "material": "popeline",
+  "length": "",
+  "cut": "oversize",
+  "neckline": "col chemise",
+  "details": [
+   "rayures",
+   "poche poitrine",
+   "manches larges"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "elka-collective:15380956578105",
@@ -1298,8 +1450,16 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Pantalons",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "noir"
+  ],
+  "has_vision": false,
+  "material": "synthétique",
+  "length": "",
+  "cut": "",
+  "neckline": "",
+  "details": [],
+  "attrs_v": 2
  },
  {
   "id": "elka-collective:15382120366393",
@@ -1352,8 +1512,20 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Manteaux",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "camel"
+  ],
+  "has_vision": true,
+  "material": "synthétique",
+  "length": "",
+  "cut": "oversize",
+  "neckline": "col haut",
+  "details": [
+   "fermeture zippée",
+   "logo appliqué",
+   "épaules tombantes"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "bayse:8477346136234",
@@ -1669,8 +1841,123 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Hauts",
+  "colors": [
+   "rouge",
+   "multicolore"
+  ],
+  "has_vision": false,
+  "material": "",
+  "length": "",
+  "cut": "",
+  "neckline": "",
+  "details": [
+   "rayures",
+   "imprimé"
+  ],
+  "attrs_v": 2
+ },
+ {
+  "id": "venroy:7787978031191",
+  "brand": "Venroy",
+  "brand_id": "venroy",
+  "name": "Asymmetric Ruffle Halter Mini Dress - Orange Gradient",
+  "url": "https://venroy.com.au/products/asymmetric-ruffle-halter-mini-dress-orange-gradient",
+  "image": "https://cdn.shopify.com/s/files/1/2129/8823/files/SU26_-_WOMENS_-_D2_-_47118_-_Asymmetric_Ruffle_Halter_Mini_Dress_-_Orange_Gradient_0823.jpg?v=1792034664",
+  "price": "157.00",
+  "currency": "AUD",
+  "published_at": "2026-10-19T15:26:49+11:00",
+  "product_type": "Dresses",
+  "tags": [
+   "Casual Dresses",
+   "Colour-Orange Gradient",
+   "Coming Soon",
+   "DisplayTag-New In",
+   "Fabric-Silk",
+   "Group-Asymmetric Ruffle Halter Mini Dress Womens",
+   "Mini Dresses",
+   "SizeGuideType–Dress-Sleeveless",
+   "SU26",
+   "SU26 D2",
+   "Vacation Edit Womens",
+   "Womens",
+   "Womens New Arrivals",
+   "Womens Vacation Edit"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Robes",
   "colors": [],
   "has_vision": false
+ },
+ {
+  "id": "venroy:7787986485335",
+  "brand": "Venroy",
+  "brand_id": "venroy",
+  "name": "Beaded Silk Mini Skirt - Sky Blue Tapestry",
+  "url": "https://venroy.com.au/products/beaded-silk-mini-skirt-sky-blue-tapestry",
+  "image": "https://cdn.shopify.com/s/files/1/2129/8823/files/SU26_-_WOMENS_-_D2_-_42027_-_Deep_Cowl_Sheer_Silk_Halter_-_Sky_Blue_-_48011_-_Beaded_Silk_Mini_Skirt_-_Sky_Blue_Tapestry_0367_19ac477d-f9bb-464f-978f-06dd25de91c2.jpg?v=1792036256",
+  "price": "170.00",
+  "currency": "AUD",
+  "published_at": "2026-10-19T15:26:24+11:00",
+  "product_type": "Skirts",
+  "tags": [
+   "Colour-Sky Blue Tapestry",
+   "Coming Soon",
+   "DisplayTag-New In",
+   "Fabric-Silk",
+   "Group-Beaded Silk Mini Skirt Womens",
+   "SizeGuideType–Skirts-Mini",
+   "SU26",
+   "SU26 D2",
+   "Womens",
+   "Womens Event Dressing",
+   "Womens New Arrivals",
+   "Womens Sets"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Jupes",
+  "colors": [
+   "bleu"
+  ],
+  "material": "soie",
+  "length": "mini",
+  "cut": "",
+  "neckline": "",
+  "details": [
+   "perlage",
+   "motif tapisserie"
+  ],
+  "has_vision": false,
+  "attrs_v": 2
+ },
+ {
+  "id": "venroy:7787988975703",
+  "brand": "Venroy",
+  "brand_id": "venroy",
+  "name": "Barcelona Washed Canvas Cap - Washed Blue",
+  "url": "https://venroy.com.au/products/barcelona-washed-canvas-cap-washed-blue",
+  "image": "https://cdn.shopify.com/s/files/1/2129/8823/files/SU26-UNISEX-D2-A2087-BarcelonaWashedCanvasCap-WashedBlue_0189.jpg?v=1792039276",
+  "price": "46.00",
+  "currency": "AUD",
+  "published_at": "2026-10-19T15:26:14+11:00",
+  "product_type": "Hats",
+  "tags": [
+   "Colour-Washed Blue",
+   "Coming Soon",
+   "DisplayTag-New In",
+   "Fabric-Cotton-Cap",
+   "Mens Accessories",
+   "SU26",
+   "SU26 D2",
+   "Womens Accessories"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Accessoires",
+  "colors": [],
+  "has_vision": false,
+  "attrs_v": 2
  },
  {
   "id": "kookai:7132406480968",
@@ -1772,9 +2059,17 @@
    "WK17-AW27"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "marron"
+  ],
   "type": "Robes",
-  "has_vision": false
+  "has_vision": false,
+  "material": "dentelle",
+  "length": "",
+  "cut": "",
+  "neckline": "",
+  "details": [],
+  "attrs_v": 2
  },
  {
   "id": "bec-bridge:7473399267383",
@@ -1802,9 +2097,19 @@
    "x-styleCode:BM-13814"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "ivoire"
+  ],
   "type": "Robes",
-  "has_vision": false
+  "has_vision": false,
+  "material": "",
+  "length": "maxi",
+  "cut": "",
+  "neckline": "",
+  "details": [
+   "asymétrique"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "bec-bridge:7446966829111",
@@ -2315,8 +2620,20 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Pantalons",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "blanc"
+  ],
+  "has_vision": true,
+  "material": "coton",
+  "length": "court",
+  "cut": "droite",
+  "neckline": "",
+  "details": [
+   "bordure en dentelle",
+   "bord festonné",
+   "taille haute"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "vrg-grl:8040387575851",
@@ -2368,8 +2685,21 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "beige",
+   "ivoire"
+  ],
+  "has_vision": true,
+  "material": "lin",
+  "length": "court",
+  "cut": "évasée",
+  "neckline": "col V",
+  "details": [
+   "peplum",
+   "fente",
+   "encolure halter"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "vrg-grl:8040387543083",
@@ -2423,8 +2753,19 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "noir",
+   "camel"
+  ],
+  "has_vision": false,
+  "material": "",
+  "length": "",
+  "cut": "",
+  "neckline": "",
+  "details": [
+   "rayures"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "vrg-grl:8040387510315",
@@ -2525,8 +2866,16 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Pantalons",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "ivoire"
+  ],
+  "has_vision": false,
+  "material": "lin",
+  "length": "",
+  "cut": "",
+  "neckline": "",
+  "details": [],
+  "attrs_v": 2
  },
  {
   "id": "vrg-grl:8040387444779",
@@ -2576,8 +2925,20 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Robes",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "kaki",
+   "noir"
+  ],
+  "has_vision": true,
+  "material": "coton",
+  "length": "mini",
+  "cut": "droite",
+  "neckline": "carré",
+  "details": [
+   "rayures verticales",
+   "bretelles larges"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "vrg-grl:8040387379243",
@@ -2625,8 +2986,20 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Robes",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "blanc"
+  ],
+  "has_vision": true,
+  "material": "coton",
+  "length": "mini",
+  "cut": "évasée",
+  "neckline": "col rond",
+  "details": [
+   "manches volantes",
+   "lacets",
+   "plis"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "vrg-grl:8040387346475",
@@ -2672,9 +3045,22 @@
    "weight_mid"
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
-  "type": "Robes",
-  "colors": [],
-  "has_vision": false
+  "type": "Autres",
+  "colors": [
+   "ivoire",
+   "beige"
+  ],
+  "has_vision": true,
+  "material": "lin",
+  "length": "court",
+  "cut": "oversize",
+  "neckline": "col chemise",
+  "details": [
+   "cordon de serrage",
+   "manches évasées",
+   "boutonnage"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "vrg-grl:8034712879147",
@@ -2727,8 +3113,20 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Pantalons",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "marron",
+   "multicolore"
+  ],
+  "has_vision": false,
+  "material": "",
+  "length": "",
+  "cut": "",
+  "neckline": "",
+  "details": [
+   "imprimé géométrique",
+   "effet transparent"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "vrg-grl:8034712846379",
@@ -2779,8 +3177,18 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Jupes",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "noir"
+  ],
+  "has_vision": false,
+  "material": "",
+  "length": "midi",
+  "cut": "",
+  "neckline": "",
+  "details": [
+   "imprimé carreaux"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "vrg-grl:8034712649771",
@@ -2833,8 +3241,19 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Jupes",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "ivoire"
+  ],
+  "has_vision": true,
+  "material": "satin",
+  "length": "midi",
+  "cut": "fluide",
+  "neckline": "",
+  "details": [
+   "coupe en biais",
+   "ourlet évasé"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "vrg-grl:8034712617003",
@@ -2885,8 +3304,20 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "ivoire"
+  ],
+  "has_vision": true,
+  "material": "dentelle",
+  "length": "cropped",
+  "cut": "droite",
+  "neckline": "col rond",
+  "details": [
+   "manches courtes",
+   "motifs floraux",
+   "transparence"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "vrg-grl:8034712584235",
@@ -2940,8 +3371,20 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Pantalons",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "ivoire"
+  ],
+  "has_vision": true,
+  "material": "denim",
+  "length": "long",
+  "cut": "oversize",
+  "neckline": "",
+  "details": [
+   "coupe barrel",
+   "poches avant",
+   "taille haute"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "vrg-grl:8034712551467",
@@ -2996,8 +3439,20 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Pantalons",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "ivoire"
+  ],
+  "has_vision": true,
+  "material": "satin",
+  "length": "long",
+  "cut": "fluide",
+  "neckline": "",
+  "details": [
+   "taille élastique",
+   "jambes larges",
+   "effet brillant"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "vrg-grl:8034712485931",
@@ -3047,8 +3502,16 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Robes",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "bleu"
+  ],
+  "has_vision": false,
+  "material": "satin",
+  "length": "midi",
+  "cut": "",
+  "neckline": "",
+  "details": [],
+  "attrs_v": 2
  },
  {
   "id": "vrg-grl:8034712453163",
@@ -3099,8 +3562,19 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "noir",
+   "multicolore"
+  ],
+  "has_vision": false,
+  "material": "",
+  "length": "",
+  "cut": "",
+  "neckline": "",
+  "details": [
+   "motif carreaux"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "vrg-grl:8034712420395",
@@ -3153,8 +3627,19 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Jupes",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "ivoire"
+  ],
+  "has_vision": true,
+  "material": "",
+  "length": "midi",
+  "cut": "droite",
+  "neckline": "",
+  "details": [
+   "franges",
+   "macramé"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "vrg-grl:8034712387627",
@@ -3208,8 +3693,19 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "noir"
+  ],
+  "has_vision": false,
+  "material": "",
+  "length": "",
+  "cut": "",
+  "neckline": "",
+  "details": [
+   "carreaux",
+   "transparence"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "vrg-grl:8034712354859",
@@ -3261,8 +3757,16 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Jupes",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "noir"
+  ],
+  "has_vision": false,
+  "material": "satin",
+  "length": "midi",
+  "cut": "",
+  "neckline": "",
+  "details": [],
+  "attrs_v": 2
  },
  {
   "id": "vrg-grl:8034712322091",
@@ -3312,8 +3816,20 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Pantalons",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "noir"
+  ],
+  "has_vision": true,
+  "material": "satin",
+  "length": "court",
+  "cut": "fluide",
+  "neckline": "",
+  "details": [
+   "paillettes",
+   "taille élastique",
+   "bas arrondis"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "vrg-grl:8034712289323",
@@ -3363,9 +3879,22 @@
    "weight_mid"
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
-  "type": "Hauts",
-  "colors": [],
-  "has_vision": false
+  "type": "Robes",
+  "colors": [
+   "noir",
+   "argent"
+  ],
+  "has_vision": true,
+  "material": "paillettes",
+  "length": "mini",
+  "cut": "droite",
+  "neckline": "bustier",
+  "details": [
+   "paillettes en rangs vert",
+   "sans bretelles",
+   "effet métallisé"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "vrg-grl:8034712191019",
@@ -3417,8 +3946,18 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "ivoire"
+  ],
+  "has_vision": false,
+  "material": "",
+  "length": "",
+  "cut": "",
+  "neckline": "",
+  "details": [
+   "bordure dentelle"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "bec-bridge:7446972235831",
@@ -3445,9 +3984,21 @@
    "x-styleCode:H26-13657"
   ],
   "first_seen": "2026-10-31T02:25:17+00:00",
-  "colors": [],
+  "colors": [
+   "argent"
+  ],
   "type": "Robes",
-  "has_vision": false
+  "has_vision": true,
+  "material": "satin",
+  "length": "maxi",
+  "cut": "fluide",
+  "neckline": "bretelles fines",
+  "details": [
+   "dos nu",
+   "coupe en biais",
+   "bretelles fines"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "bec-bridge:7446967648311",
@@ -3627,8 +4178,20 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "noir"
+  ],
+  "has_vision": true,
+  "material": "maille",
+  "length": "cropped",
+  "cut": "ajustée",
+  "neckline": "col V",
+  "details": [
+   "encolure froncée",
+   "détail anneau décoratif",
+   "maille côtelée"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "elka-collective:15380956545337",
@@ -3684,8 +4247,16 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "marron"
+  ],
+  "has_vision": false,
+  "material": "maille",
+  "length": "",
+  "cut": "",
+  "neckline": "",
+  "details": [],
+  "attrs_v": 2
  },
  {
   "id": "elka-collective:15382120399161",
@@ -3740,8 +4311,18 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "bleu"
+  ],
+  "has_vision": false,
+  "material": "maille",
+  "length": "",
+  "cut": "",
+  "neckline": "",
+  "details": [
+   "effet chiné"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "elka-collective:15382120956217",
@@ -3793,8 +4374,21 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Pantalons",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "bleu",
+   "blanc"
+  ],
+  "has_vision": true,
+  "material": "coton",
+  "length": "mini",
+  "cut": "droite",
+  "neckline": "",
+  "details": [
+   "lacets devant",
+   "rayures",
+   "taille haute"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "elka-collective:15382120988985",
@@ -3910,8 +4504,19 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "blanc"
+  ],
+  "has_vision": true,
+  "material": "maille",
+  "length": "",
+  "cut": "ajustée",
+  "neckline": "col rond",
+  "details": [
+   "bretelles larges",
+   "finition contrastée"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "elka-collective:15382120563001",
@@ -3964,8 +4569,19 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "marron"
+  ],
+  "has_vision": true,
+  "material": "maille",
+  "length": "court",
+  "cut": "ajustée",
+  "neckline": "col rond",
+  "details": [
+   "franges",
+   "sans manches"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "bayse:8631388766378",
@@ -3989,8 +4605,19 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "gris"
+  ],
+  "has_vision": true,
+  "material": "coton",
+  "length": "",
+  "cut": "oversize",
+  "neckline": "col rond",
+  "details": [
+   "manches courtes",
+   "épaules tombantes"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "bayse:8631388471466",
@@ -4014,8 +4641,20 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "noir"
+  ],
+  "has_vision": true,
+  "material": "maille",
+  "length": "",
+  "cut": "ajustée",
+  "neckline": "col V",
+  "details": [
+   "sans manches",
+   "encolure v profonde",
+   "maille fine"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "bayse:8631388537002",
@@ -4039,8 +4678,20 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "noir"
+  ],
+  "has_vision": true,
+  "material": "maille",
+  "length": "",
+  "cut": "droite",
+  "neckline": "col haut",
+  "details": [
+   "manches courtes",
+   "col montant",
+   "bord côtelé"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "bayse:8631388602538",
@@ -4064,8 +4715,20 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "ivoire"
+  ],
+  "has_vision": true,
+  "material": "maille",
+  "length": "",
+  "cut": "fluide",
+  "neckline": "col haut",
+  "details": [
+   "manches dolman",
+   "drapé à la taille",
+   "manches courtes"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "bayse:8631388635306",
@@ -4089,8 +4752,18 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "noir"
+  ],
+  "has_vision": false,
+  "material": "",
+  "length": "",
+  "cut": "",
+  "neckline": "",
+  "details": [
+   "manches raglan"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "bayse:8631388668074",
@@ -4114,8 +4787,20 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "gris"
+  ],
+  "has_vision": true,
+  "material": "jersey",
+  "length": "cropped",
+  "cut": "ajustée",
+  "neckline": "col rond",
+  "details": [
+   "ourlet arrondi",
+   "manches longues",
+   "bas incurvé"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "bayse:8631388700842",
@@ -4139,8 +4824,19 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "blanc"
+  ],
+  "has_vision": true,
+  "material": "jersey",
+  "length": "",
+  "cut": "ajustée",
+  "neckline": "col rond",
+  "details": [
+   "manches longues",
+   "ourlet arrondi"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "bayse:8631388831914",
@@ -4164,8 +4860,19 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "blanc"
+  ],
+  "has_vision": true,
+  "material": "",
+  "length": "",
+  "cut": "oversize",
+  "neckline": "col rond",
+  "details": [
+   "manches retroussées",
+   "coutures apparentes"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "bayse:8631388864682",
@@ -4189,8 +4896,19 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "noir"
+  ],
+  "has_vision": true,
+  "material": "",
+  "length": "",
+  "cut": "oversize",
+  "neckline": "col rond",
+  "details": [
+   "manches courtes",
+   "épaules tombantes"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "bayse:8631388962986",
@@ -4215,8 +4933,20 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "marron"
+  ],
+  "has_vision": true,
+  "material": "maille",
+  "length": "",
+  "cut": "ajustée",
+  "neckline": "col rond",
+  "details": [
+   "dos nageur",
+   "liseré contrasté",
+   "maille côtelée"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "bayse:8631388995754",
@@ -4241,8 +4971,18 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "noir"
+  ],
+  "has_vision": false,
+  "material": "",
+  "length": "",
+  "cut": "",
+  "neckline": "",
+  "details": [
+   "manches courtes"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "bayse:8631389126826",
@@ -4266,8 +5006,18 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "gris"
+  ],
+  "has_vision": true,
+  "material": "jersey",
+  "length": "cropped",
+  "cut": "ajustée",
+  "neckline": "col rond",
+  "details": [
+   "sans manches"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "bayse:8631389159594",
@@ -4291,8 +5041,20 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "noir"
+  ],
+  "has_vision": true,
+  "material": "jersey",
+  "length": "cropped",
+  "cut": "ajustée",
+  "neckline": "asymétrique",
+  "details": [
+   "fronces latérales",
+   "manches courtes",
+   "épaule dénudée"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "bayse:8631389192362",
@@ -4316,8 +5078,20 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "blanc"
+  ],
+  "has_vision": true,
+  "material": "jersey",
+  "length": "",
+  "cut": "ajustée",
+  "neckline": "asymétrique",
+  "details": [
+   "fronces",
+   "épaule dénudée",
+   "manche courte"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "bayse:8631389225130",
@@ -4341,8 +5115,20 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "blanc"
+  ],
+  "has_vision": true,
+  "material": "maille",
+  "length": "cropped",
+  "cut": "ajustée",
+  "neckline": "col rond",
+  "details": [
+   "côtes",
+   "manches courtes",
+   "encolure large"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "bayse:8631389257898",
@@ -4366,8 +5152,20 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "noir"
+  ],
+  "has_vision": true,
+  "material": "maille",
+  "length": "",
+  "cut": "ajustée",
+  "neckline": "col rond",
+  "details": [
+   "côtes apparentes",
+   "manches courtes",
+   "encolure échancrée"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "bayse:8631390011562",
@@ -4391,8 +5189,20 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "gris"
+  ],
+  "has_vision": true,
+  "material": "maille",
+  "length": "cropped",
+  "cut": "ajustée",
+  "neckline": "col rond",
+  "details": [
+   "côtes",
+   "manches courtes",
+   "fronces latérales"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "bayse:8631390044330",
@@ -4416,8 +5226,19 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "marron"
+  ],
+  "has_vision": true,
+  "material": "maille",
+  "length": "",
+  "cut": "ajustée",
+  "neckline": "col rond",
+  "details": [
+   "manches courtes",
+   "coupe près du corps"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "bayse:8631390077098",
@@ -4441,8 +5262,18 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "blanc"
+  ],
+  "has_vision": true,
+  "material": "coton",
+  "length": "cropped",
+  "cut": "ajustée",
+  "neckline": "col rond",
+  "details": [
+   "manches courtes"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "bayse:8631390175402",
@@ -4466,8 +5297,19 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "noir"
+  ],
+  "has_vision": true,
+  "material": "maille",
+  "length": "",
+  "cut": "ajustée",
+  "neckline": "col rond",
+  "details": [
+   "manches courtes",
+   "bord-côte"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "bayse:8053798600874",
@@ -4491,8 +5333,20 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "noir"
+  ],
+  "has_vision": true,
+  "material": "maille",
+  "length": "cropped",
+  "cut": "ajustée",
+  "neckline": "col rond",
+  "details": [
+   "dos nageur",
+   "côtes",
+   "sans manches"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "bayse:8053798502570",
@@ -4516,8 +5370,20 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "blanc"
+  ],
+  "has_vision": true,
+  "material": "maille",
+  "length": "",
+  "cut": "ajustée",
+  "neckline": "col rond",
+  "details": [
+   "dos nageur",
+   "maille côtelée",
+   "finitions contrastées"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "bayse:8266986160298",
@@ -4541,8 +5407,19 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "gris"
+  ],
+  "has_vision": true,
+  "material": "maille",
+  "length": "cropped",
+  "cut": "ajustée",
+  "neckline": "col haut",
+  "details": [
+   "manches courtes",
+   "effet chiné"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "elka-collective:15382120595769",
@@ -4595,8 +5472,16 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "beige"
+  ],
+  "has_vision": false,
+  "material": "synthétique",
+  "length": "",
+  "cut": "",
+  "neckline": "",
+  "details": [],
+  "attrs_v": 2
  },
  {
   "id": "dissh:15396097130864",
@@ -4704,8 +5589,16 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Pantalons",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "noir"
+  ],
+  "has_vision": false,
+  "material": "",
+  "length": "court",
+  "cut": "",
+  "neckline": "",
+  "details": [],
+  "attrs_v": 2
  },
  {
   "id": "vrg-grl:8034712256555",
@@ -4754,8 +5647,19 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Pantalons",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "vert",
+   "multicolore"
+  ],
+  "has_vision": false,
+  "material": "",
+  "length": "court",
+  "cut": "",
+  "neckline": "",
+  "details": [
+   "imprimé carreaux"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "elka-collective:15382120726841",
@@ -4807,8 +5711,16 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Robes",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "beige"
+  ],
+  "has_vision": false,
+  "material": "synthétique",
+  "length": "mini",
+  "cut": "",
+  "neckline": "",
+  "details": [],
+  "attrs_v": 2
  },
  {
   "id": "elka-collective:15380956873017",
@@ -4869,8 +5781,20 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "bordeaux"
+  ],
+  "has_vision": true,
+  "material": "maille",
+  "length": "cropped",
+  "cut": "ajustée",
+  "neckline": "col rond",
+  "details": [
+   "sans manches",
+   "encolure échancrée",
+   "maille côtelée"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "elka-collective:15382121185593",
@@ -4922,8 +5846,20 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Jupes",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "noir"
+  ],
+  "has_vision": true,
+  "material": "",
+  "length": "mini",
+  "cut": "droite",
+  "neckline": "",
+  "details": [
+   "appliques perlées",
+   "fleurs brodées",
+   "jupon transparent"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "elka-collective:15382121087289",
@@ -4977,8 +5913,16 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Robes",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "bordeaux"
+  ],
+  "has_vision": false,
+  "material": "synthétique",
+  "length": "maxi",
+  "cut": "",
+  "neckline": "",
+  "details": [],
+  "attrs_v": 2
  },
  {
   "id": "elka-collective:15380956610873",
@@ -5032,8 +5976,20 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Pantalons",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "marron"
+  ],
+  "has_vision": true,
+  "material": "synthétique",
+  "length": "long",
+  "cut": "fluide",
+  "neckline": "",
+  "details": [
+   "pinces",
+   "poches latérales",
+   "jambe large"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "elka-collective:15382120857913",
@@ -5085,8 +6041,20 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Hauts",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "marron"
+  ],
+  "has_vision": true,
+  "material": "synthétique",
+  "length": "",
+  "cut": "fluide",
+  "neckline": "col rond",
+  "details": [
+   "transparence",
+   "sans manches",
+   "bas arrondi"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "elka-collective:15382120759609",
@@ -5136,8 +6104,20 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Pantalons",
-  "colors": [],
-  "has_vision": false
+  "colors": [
+   "kaki"
+  ],
+  "has_vision": true,
+  "material": "synthétique",
+  "length": "court",
+  "cut": "droite",
+  "neckline": "",
+  "details": [
+   "cordon de serrage",
+   "poches plaquées",
+   "taille élastique"
+  ],
+  "attrs_v": 2
  },
  {
   "id": "elka-collective:15382120825145",
@@ -6508,6 +7488,50 @@
    "dos échancré"
   ],
   "attrs_v": 2
+ },
+ {
+  "id": "benni:10408838594840",
+  "brand": "BENNI",
+  "brand_id": "benni",
+  "name": "Anastasia Skirt",
+  "url": "https://benni.com.au/products/anastasia-skirt-apple",
+  "image": "https://cdn.shopify.com/s/files/1/0745/4831/4392/files/NEWAnastasiaSkirt8.png?v=1791894508",
+  "price": "115.00",
+  "currency": "AUD",
+  "published_at": "2026-10-01T16:05:26+10:00",
+  "product_type": "Skirts",
+  "tags": [
+   "badge-coming soon",
+   "Nov-26",
+   "sets-and-coords"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Jupes",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "benni:10408837972248",
+  "brand": "BENNI",
+  "brand_id": "benni",
+  "name": "Anastasia Top",
+  "url": "https://benni.com.au/products/anastasia-top-apple",
+  "image": "https://cdn.shopify.com/s/files/1/0745/4831/4392/files/NEWAnastasiaSkirt9_c9e7a9cb-cb97-4230-8ea0-dcff829b682f.png?v=1791894559",
+  "price": "108.00",
+  "currency": "AUD",
+  "published_at": "2026-10-01T16:05:14+10:00",
+  "product_type": "Tops",
+  "tags": [
+   "badge-coming soon",
+   "Nov-26",
+   "sets-and-coords"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Hauts",
+  "colors": [],
+  "has_vision": false
  },
  {
   "id": "dissh:15396096409968",
@@ -9506,6 +10530,260 @@
   "attrs_v": 2
  },
  {
+  "id": "venroy:7787942412375",
+  "brand": "Venroy",
+  "brand_id": "venroy",
+  "name": "Baggy Denim Jean - Super Vintage Blue",
+  "url": "https://venroy.com.au/products/baggy-denim-jean-super-vintage-blue",
+  "image": "https://cdn.shopify.com/s/files/1/2129/8823/files/SU26_-_MENS_-_D1_-_35067_-_Baggy_Denim_Jean_-_Super_Vintage_Blue_0303.jpg?v=1790218512",
+  "price": "144.00",
+  "currency": "AUD",
+  "published_at": "2026-09-25T17:17:02+10:00",
+  "product_type": "Pants",
+  "tags": [
+   "Colour-Super Vintage Blue",
+   "DisplayTag-New In",
+   "Fabric-Cotton",
+   "Group-Baggy Denim Jean Mens",
+   "Mens",
+   "Mens Bottoms",
+   "Mens Denim",
+   "Mens New Arrivals",
+   "SizeGuideType–Pant-Fixed-Waist",
+   "SU26",
+   "SU26 D1"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Pantalons",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "venroy:7787943919703",
+  "brand": "Venroy",
+  "brand_id": "venroy",
+  "name": "Applique Border Silk Linen Shirt - Stone Green/Cream",
+  "url": "https://venroy.com.au/products/applique-border-silk-linen-shirt-stone-green-cream",
+  "image": "https://cdn.shopify.com/s/files/1/2129/8823/files/SU26_-_MENS_-_D1_-_32208_-_Applique_Border_Silk_Linen_Shirt_-_Stone_Green_Cream_0075.jpg?v=1790217779",
+  "price": "209.00",
+  "currency": "AUD",
+  "published_at": "2026-09-25T17:16:31+10:00",
+  "product_type": "Shirts",
+  "tags": [
+   "Colour-Stone Green/Cream",
+   "DisplayTag-New In",
+   "Fabric-Silk",
+   "Group-Applique Border Silk Linen Shirt Mens",
+   "Linen",
+   "Mens",
+   "Mens Best Sellers WK 37",
+   "Mens Linen Essentials",
+   "Mens Linen Tops",
+   "Mens New Arrivals",
+   "Mens Shirts",
+   "Mens Tops",
+   "SizeGuideType–Shirt-M-Short-Sleeve",
+   "SU26",
+   "SU26 D1"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Hauts",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "venroy:7787949129815",
+  "brand": "Venroy",
+  "brand_id": "venroy",
+  "name": "Baby Tee Mini Dress - Diada de Sant Jordi",
+  "url": "https://venroy.com.au/products/baby-tee-mini-dress-diada-de-sant-jordi",
+  "image": "https://cdn.shopify.com/s/files/1/2129/8823/files/SU26_-_WOMENS_-_D1_-_47126_-_Baby_Tee_Mini_Dress_-_Diada_de_Sant_Jordi_0008.jpg?v=1790169436",
+  "price": "98.00",
+  "currency": "AUD",
+  "published_at": "2026-09-25T17:16:15+10:00",
+  "product_type": "Dresses",
+  "tags": [
+   "Casual Dresses",
+   "Colour-Diada de Sant Jordi",
+   "DisplayTag-New In",
+   "Fabric-Cotton",
+   "Mini Dresses",
+   "SizeGuideType–Dress-Sleeved",
+   "SU26",
+   "SU26 D1",
+   "Womens",
+   "Womens Best Sellers WK 37",
+   "Womens New Arrivals",
+   "Womens Vacation Edit"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Robes",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "venroy:7787952439383",
+  "brand": "Venroy",
+  "brand_id": "venroy",
+  "name": "Beaded Lightweight Rolled Sleeve Tee - White/Barcelona",
+  "url": "https://venroy.com.au/products/beaded-lightweight-rolled-sleeve-tee-white-barcelona",
+  "image": "https://cdn.shopify.com/s/files/1/2129/8823/files/SU26_-_WOMENS_-_D1_-_42155_-_Beaded_Lightweight_Rolled_Sleeve_Tee_-_White_Barcelona_-_43109_-_Terry_Knit_Tie_Short_-_Cobalt_White_0084.jpg?v=1790168293",
+  "price": "85.00",
+  "currency": "AUD",
+  "published_at": "2026-09-25T17:16:04+10:00",
+  "product_type": "T-Shirts",
+  "tags": [
+   "Colour-White/Barcelona",
+   "DisplayTag-New In",
+   "Fabric-Cotton",
+   "SizeGuideType–T-Shirts-W",
+   "SU26",
+   "SU26 D1",
+   "Womens",
+   "Womens New Arrivals",
+   "Womens Tops",
+   "Womens Vacation Edit"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Hauts",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "venroy:7787975934039",
+  "brand": "Venroy",
+  "brand_id": "venroy",
+  "name": "Bias Halter Linen Maxi Dress - Black",
+  "url": "https://venroy.com.au/products/bias-halter-linen-maxi-dress-black",
+  "image": "https://cdn.shopify.com/s/files/1/2129/8823/files/SU26_-_WOMENS_-_D1_-_47141_-_Bias_Halter_Linen_Maxi_Dress_-_Black_0690.jpg?v=1790169567",
+  "price": "183.00",
+  "currency": "AUD",
+  "published_at": "2026-09-25T17:14:32+10:00",
+  "product_type": "Dresses",
+  "tags": [
+   "Casual Dresses",
+   "Colour-Black",
+   "DisplayTag-New In",
+   "Fabric-Linen",
+   "Full Length Dresses",
+   "Group-Bias Halter Linen Maxi Dress Womens",
+   "Linen",
+   "SizeGuideType–Dress-Sleeveless-Long",
+   "SU26",
+   "SU26 D1",
+   "Vacation Edit Womens",
+   "Womens",
+   "Womens Best Sellers WK 37",
+   "Womens Linen Collection",
+   "Womens New Arrivals",
+   "Womens Vacation Edit"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Robes",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "venroy:7787976196183",
+  "brand": "Venroy",
+  "brand_id": "venroy",
+  "name": "Bias Halter Linen Maxi Dress - White",
+  "url": "https://venroy.com.au/products/bias-halter-linen-maxi-dress-white",
+  "image": "https://cdn.shopify.com/s/files/1/2129/8823/files/SU26_-_WOMENS_-_D1_-_47141_-_Bias_Halter_Linen_Maxi_Dress_-_White_0644.jpg?v=1790169607",
+  "price": "183.00",
+  "currency": "AUD",
+  "published_at": "2026-09-25T17:14:29+10:00",
+  "product_type": "Dresses",
+  "tags": [
+   "Casual Dresses",
+   "Colour-White",
+   "DisplayTag-New In",
+   "Fabric-Linen",
+   "Full Length Dresses",
+   "Group-Bias Halter Linen Maxi Dress Womens",
+   "Linen",
+   "SizeGuideType–Dress-Sleeveless-Long",
+   "SU26",
+   "SU26 D1",
+   "Vacation Edit Womens",
+   "Womens",
+   "Womens Linen Collection",
+   "Womens New Arrivals",
+   "Womens Vacation Edit"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Robes",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "venroy:7787982520407",
+  "brand": "Venroy",
+  "brand_id": "venroy",
+  "name": "Beaded Silk Mini Skirt - Pastel Yellow Rose",
+  "url": "https://venroy.com.au/products/beaded-silk-mini-skirt-pastel-yellow-rose",
+  "image": "https://cdn.shopify.com/s/files/1/2129/8823/files/SU26_-_WOMENS_-_D1_-_42135_-_Silk_Twist_Plunge_Top_-_Pastel_Yellow_-_48011_-_Beaded_Silk_Mini_Skirt_-_Pastel_Yellow_Rose_0062_e93e8b62-649d-40df-9b3f-0cf0af95aae0.jpg?v=1790169995",
+  "price": "183.00",
+  "currency": "AUD",
+  "published_at": "2026-09-25T17:14:15+10:00",
+  "product_type": "Skirts",
+  "tags": [
+   "Colour-Pastel Yellow Rose",
+   "DisplayTag-New In",
+   "Fabric-Silk",
+   "Group-Beaded Silk Mini Skirt Womens",
+   "SizeGuideType–Skirts-Mini",
+   "SU26",
+   "SU26 D1",
+   "Womens",
+   "Womens Best Sellers WK 37",
+   "Womens Event Dressing",
+   "Womens New Arrivals",
+   "Womens Sets"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Jupes",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "venroy:7787988156503",
+  "brand": "Venroy",
+  "brand_id": "venroy",
+  "name": "Barcelona Cursive Canvas Cap - Washed Black",
+  "url": "https://venroy.com.au/products/barcelona-cursive-canvas-cap-washed-black",
+  "image": "https://cdn.shopify.com/s/files/1/2129/8823/files/SU26-UNISEX-D1-A2091-BarcelonaCursiveCanvasCap-WashedBlack_0347.jpg?v=1790220864",
+  "price": "46.00",
+  "currency": "AUD",
+  "published_at": "2026-09-25T17:13:56+10:00",
+  "product_type": "Hats",
+  "tags": [
+   "Colour-Washed Black",
+   "DisplayTag-New In",
+   "Fabric-Cotton-Cap",
+   "Mens",
+   "Mens Accessories",
+   "Mens Vacation Edit",
+   "SU26",
+   "SU26 D1",
+   "Womens",
+   "Womens Accessories"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Accessoires",
+  "colors": [],
+  "has_vision": false,
+  "attrs_v": 2
+ },
+ {
   "id": "bec-bridge:7470149959735",
   "brand": "Bec + Bridge",
   "brand_id": "bec-bridge",
@@ -11520,6 +12798,98 @@
   "has_vision": false
  },
  {
+  "id": "henne:15217709187435",
+  "brand": "Henne",
+  "brand_id": "henne",
+  "name": "Aiden Jean",
+  "url": "https://henne.com.au/products/aiden-jean-white",
+  "image": "https://cdn.shopify.com/s/files/1/0483/8778/4853/files/HE-1485-AIDEN-JEAN-WHITE-8.jpg?v=1787554269",
+  "price": "225.00",
+  "currency": "AUD",
+  "published_at": "2026-09-16T14:20:52+10:00",
+  "product_type": "Denim Jean",
+  "tags": [
+   "Collection: Monochrome",
+   "Collection_Bowery",
+   "Colour_White",
+   "Countdown_Test",
+   "inc",
+   "Launch_Date:21\\10\\2026",
+   "occasion_collection_2026",
+   "October_Marketing_Focus_Product",
+   "October_Marketing_Focus_Product_And_Key_Looks",
+   "pfs-label-Restocking Soon",
+   "Style_Filter:Jeans_Denim",
+   "Style_Filter:Lowrise_Denim",
+   "Style_Filter:Midrise_Denim",
+   "Style_Filter:Neutral_Denim",
+   "Style_Filter:Standard_Denim",
+   "Style_Filter:Straight_Denim",
+   "Style_Filter:White_Denim",
+   "Style_Filter:Zipper_Denim"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Pantalons",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "henne:15217709089131",
+  "brand": "Henne",
+  "brand_id": "henne",
+  "name": "Amaya Dress",
+  "url": "https://henne.com.au/products/amaya-dress-black",
+  "image": "https://cdn.shopify.com/s/files/1/0483/8778/4853/files/HE-1020-AMAYA-DRESS-BLACK-6.jpg?v=1787554553",
+  "price": "360.00",
+  "currency": "AUD",
+  "published_at": "2026-09-16T14:20:47+10:00",
+  "product_type": "Maxi Dress",
+  "tags": [
+   "Collection: Monochrome",
+   "Collection_Bowery",
+   "Colour_Black",
+   "inc",
+   "Launch_Date:21\\10\\2026",
+   "Model_ Annalise",
+   "occasion_collection_2026",
+   "October_Marketing_Focus_Product_And_Key_Looks",
+   "pfs-label-New Arrival",
+   "Style_Filter:Maxi_Dresses"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Robes",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "henne:15143863255403",
+  "brand": "Henne",
+  "brand_id": "henne",
+  "name": "Anya Polo",
+  "url": "https://henne.com.au/products/anya-polo-cream",
+  "image": "https://cdn.shopify.com/s/files/1/0483/8778/4853/files/HE-1621-ANYA-POLO-CREAM-5.jpg?v=1786930478",
+  "price": "185.00",
+  "currency": "AUD",
+  "published_at": "2026-09-16T14:20:32+10:00",
+  "product_type": "Tops",
+  "tags": [
+   "Collection_Bowery",
+   "Colour_White",
+   "inc",
+   "Launch_Date:30/09/2026",
+   "Model_ Annalise",
+   "pfs-label-New Arrival",
+   "Style_Filter:Polo_Tops"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Hauts",
+  "colors": [],
+  "has_vision": false
+ },
+ {
   "id": "kookai:7132406513736",
   "brand": "Kookaï",
   "brand_id": "kookai",
@@ -11619,6 +12989,116 @@
   ],
   "has_vision": true,
   "attrs_v": 2
+ },
+ {
+  "id": "benni:10383963160856",
+  "brand": "BENNI",
+  "brand_id": "benni",
+  "name": "Adriana Mini Skirt",
+  "url": "https://benni.com.au/products/adriana-mini-skirt-lemon-check",
+  "image": "https://cdn.shopify.com/s/files/1/0745/4831/4392/files/PDP-Adriana-Nadia.jpg?v=1792978694",
+  "price": "115.00",
+  "currency": "AUD",
+  "published_at": "2026-09-15T18:15:54+10:00",
+  "product_type": "Skirts",
+  "tags": [
+   "badge-new",
+   "Oct-26",
+   "REPLEN",
+   "sets-and-coords"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Jupes",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "benni:10383963029784",
+  "brand": "BENNI",
+  "brand_id": "benni",
+  "name": "Anastasia Top",
+  "url": "https://benni.com.au/products/anastasia-top-black",
+  "image": "https://cdn.shopify.com/s/files/1/0745/4831/4392/files/BEN830-ANASTASIATOP-BLACK_Detail-4.jpg?v=1791894533",
+  "price": "108.00",
+  "currency": "AUD",
+  "published_at": "2026-09-15T18:15:52+10:00",
+  "product_type": "Tops",
+  "tags": [
+   "badge-new",
+   "Oct-26"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Hauts",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "benni:10383962997016",
+  "brand": "BENNI",
+  "brand_id": "benni",
+  "name": "Alta Top",
+  "url": "https://benni.com.au/products/alta-top-retro-stripe",
+  "image": "https://cdn.shopify.com/s/files/1/0745/4831/4392/files/Alta-Ana-55-Image-_-Full-Body-Crop-_-1720-x-2284-px.jpg?v=1789623536",
+  "price": "94.00",
+  "currency": "AUD",
+  "published_at": "2026-09-15T18:15:50+10:00",
+  "product_type": "Tops",
+  "tags": [
+   "badge-new",
+   "Oct-26",
+   "sets-and-coords"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Hauts",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "benni:10383962439960",
+  "brand": "BENNI",
+  "brand_id": "benni",
+  "name": "Anastasia Skirt",
+  "url": "https://benni.com.au/products/anastasia-skirt-retro-stripe",
+  "image": "https://cdn.shopify.com/s/files/1/0745/4831/4392/files/Alta-Ana--Image-_-Full-Body-Crop-_-1720-x-2284-px.jpg?v=1789623535",
+  "price": "122.00",
+  "currency": "AUD",
+  "published_at": "2026-09-15T18:15:34+10:00",
+  "product_type": "Skirts",
+  "tags": [
+   "badge-new",
+   "Oct-26",
+   "sets-and-coords"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Jupes",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "benni:10383962407192",
+  "brand": "BENNI",
+  "brand_id": "benni",
+  "name": "Alex Mini Dress",
+  "url": "https://benni.com.au/products/alex-mini-dress-onda-stripe",
+  "image": "https://cdn.shopify.com/s/files/1/0745/4831/4392/files/Alex-Image-_-Full-Body-Crop-_-1720-x-2284-px_5ba8a708-9894-43a3-bf2b-6b46817e04ad.jpg?v=1791779087",
+  "price": "165.00",
+  "currency": "AUD",
+  "published_at": "2026-09-15T18:15:33+10:00",
+  "product_type": "Dresses",
+  "tags": [
+   "badge-new",
+   "mini-dress",
+   "Oct-26"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Robes",
+  "colors": [],
+  "has_vision": false
  },
  {
   "id": "bayse:8593349902506",
@@ -11868,6 +13348,33 @@
   "first_seen": "2026-10-31T02:25:17+00:00",
   "colors": [],
   "type": "Robes",
+  "has_vision": false
+ },
+ {
+  "id": "henne:14716246425963",
+  "brand": "Henne",
+  "brand_id": "henne",
+  "name": "Anella Top",
+  "url": "https://henne.com.au/products/anella-top-6",
+  "image": "https://cdn.shopify.com/s/files/1/0483/8778/4853/files/ANELLA-TOP-LIGHT-KHAKI_321.jpg?v=1756087824",
+  "price": "165.00",
+  "currency": "AUD",
+  "published_at": "2026-09-11T12:36:38+10:00",
+  "product_type": "Tops",
+  "tags": [
+   "Collection: Sept/Oct",
+   "Collection: Transeasonal Layers '25",
+   "HS_CODE",
+   "inc",
+   "Launch_Date:WK11.5_2026",
+   "Launch_Date:WK14_2026",
+   "Model: Liv",
+   "pfs-label-Coming Soon"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Hauts",
+  "colors": [],
   "has_vision": false
  },
  {
@@ -12329,6 +13836,221 @@
   "first_seen": "2026-10-31T02:25:17+00:00",
   "colors": [],
   "type": "Hauts",
+  "has_vision": false
+ },
+ {
+  "id": "venroy:7717236801623",
+  "brand": "Venroy",
+  "brand_id": "venroy",
+  "name": "Braided Strap Halter Top - Chocolate Chip",
+  "url": "https://venroy.com.au/products/braided-strap-halter-top-chocolate-chip",
+  "image": "https://cdn.shopify.com/s/files/1/2129/8823/files/SP26_-_D2_-_Womens_-_42177_-_Braided_Strap_Halter_Top_-_Chocolate_Chip_-_45060_-_Relaxed_Pleat_Front_Tencel_Pant_-_Off_White_1392_R.jpg?v=1788420438",
+  "price": "79.00",
+  "currency": "AUD",
+  "published_at": "2026-09-04T17:31:42+10:00",
+  "product_type": "Tops",
+  "tags": [
+   "Colour-Chocolate Chip",
+   "Fabric-Rayon",
+   "Group-Braided Strap Halter Top Womens",
+   "SizeGuide-Womens",
+   "SizeGuideType–Top-Sleeveless",
+   "SP26",
+   "SP26 D2",
+   "Womens",
+   "Womens New Arrivals",
+   "Womens Tops"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Hauts",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "venroy:7717236834391",
+  "brand": "Venroy",
+  "brand_id": "venroy",
+  "name": "Braided Strap Halter Top - Off White",
+  "url": "https://venroy.com.au/products/braided-strap-halter-top-off-white",
+  "image": "https://cdn.shopify.com/s/files/1/2129/8823/files/SP26_-_D2_-_Womens_-_42177_-_Braided_Strap_Halter_Top_-_Off_White_-_45039_-_Wool_Paperbag_Pant_-_Mocha_1327.jpg?v=1788420360",
+  "price": "79.00",
+  "currency": "AUD",
+  "published_at": "2026-09-04T17:31:38+10:00",
+  "product_type": "Tops",
+  "tags": [
+   "Colour-Off White",
+   "Fabric-Rayon",
+   "Group-Braided Strap Halter Top Womens",
+   "SizeGuide-Womens",
+   "SizeGuideType–Top-Sleeveless",
+   "SP26",
+   "SP26 D2",
+   "Womens",
+   "Womens New Arrivals",
+   "Womens Sets",
+   "Womens Tops"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Hauts",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "venroy:7717236867159",
+  "brand": "Venroy",
+  "brand_id": "venroy",
+  "name": "Braided Strap Halter Top - Black",
+  "url": "https://venroy.com.au/products/braided-strap-halter-top-black",
+  "image": "https://cdn.shopify.com/s/files/1/2129/8823/files/SP26_-_D2_-_Womens_-_42177_-_Braided_Strap_Halter_Top_-_Black_-_44043_-_Wool_Lace_Trim_Short_-_Mocha_1296.jpg?v=1788420548",
+  "price": "79.00",
+  "currency": "AUD",
+  "published_at": "2026-09-04T17:31:36+10:00",
+  "product_type": "Tops",
+  "tags": [
+   "Colour-Black",
+   "Fabric-Rayon",
+   "Group-Braided Strap Halter Top Womens",
+   "SizeGuide-Womens",
+   "SizeGuideType–Top-Sleeveless",
+   "SP26",
+   "SP26 D2",
+   "Womens",
+   "Womens Best Sellers WK 37",
+   "Womens New Arrivals",
+   "Womens Tops"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Hauts",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "venroy:7717237260375",
+  "brand": "Venroy",
+  "brand_id": "venroy",
+  "name": "Braided Strap Halter Mini Dress - Chocolate Chip",
+  "url": "https://venroy.com.au/products/braided-strap-halter-mini-dress-chocolate-chip",
+  "image": "https://cdn.shopify.com/s/files/1/2129/8823/files/SP26_-_D2_-_Womens_-_47125_-_Braided_Strap_Halter_Mini_Dress_-_Chocolate_Chip_0952.jpg?v=1788420262",
+  "price": "105.00",
+  "currency": "AUD",
+  "published_at": "2026-09-04T17:30:59+10:00",
+  "product_type": "Dresses",
+  "tags": [
+   "Colour-Chocolate Chip",
+   "Event Dresses",
+   "Fabric-Cotton",
+   "Group-Braided Strap Halter Mini Dress Womens",
+   "Mini Dresses",
+   "SizeGuide-Womens",
+   "SizeGuideType–Dress-Sleeveless",
+   "SP26",
+   "SP26 D2",
+   "Womens",
+   "Womens Dresses",
+   "Womens Event Dressing",
+   "Womens New Arrivals"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Robes",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "venroy:7717237325911",
+  "brand": "Venroy",
+  "brand_id": "venroy",
+  "name": "Braided Strap Halter Mini Dress - Off White",
+  "url": "https://venroy.com.au/products/braided-strap-halter-mini-dress-off-white",
+  "image": "https://cdn.shopify.com/s/files/1/2129/8823/files/SP26_-_D2_-_Womens_-_47125_-_Braided_Strap_Halter_Mini_Dress_-_Off_White_1024.jpg?v=1788419927",
+  "price": "105.00",
+  "currency": "AUD",
+  "published_at": "2026-09-04T17:30:55+10:00",
+  "product_type": "Dresses",
+  "tags": [
+   "Colour-Off White",
+   "Event Dresses",
+   "Fabric-Cotton",
+   "Group-Braided Strap Halter Mini Dress Womens",
+   "Mini Dresses",
+   "SizeGuide-Womens",
+   "SizeGuideType–Dress-Sleeveless",
+   "SP26",
+   "SP26 D2",
+   "Womens",
+   "Womens Dresses",
+   "Womens Event Dressing",
+   "Womens New Arrivals"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Robes",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "venroy:7717237424215",
+  "brand": "Venroy",
+  "brand_id": "venroy",
+  "name": "Braided Strap Halter Maxi Dress - Off White",
+  "url": "https://venroy.com.au/products/braided-strap-halter-maxi-dress-off-white",
+  "image": "https://cdn.shopify.com/s/files/1/2129/8823/files/SP26_-_D2_-_Womens_-_47131_-_Braided_Strap_Halter_Maxi_Dress_-_Off_White_0929.jpg?v=1788420059",
+  "price": "144.00",
+  "currency": "AUD",
+  "published_at": "2026-09-04T17:30:50+10:00",
+  "product_type": "Dresses",
+  "tags": [
+   "Colour-Off White",
+   "Event Dresses",
+   "Fabric-Cotton",
+   "Full Length Dresses",
+   "Group-Braided Strap Halter Maxi Dress Womens",
+   "SizeGuide-Womens",
+   "SizeGuideType–Dress-Sleeveless",
+   "SP26",
+   "SP26 D2",
+   "Womens",
+   "Womens Dresses",
+   "Womens Event Dressing",
+   "Womens New Arrivals"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Robes",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "venroy:7717244371031",
+  "brand": "Venroy",
+  "brand_id": "venroy",
+  "name": "Baggy Denim Cargo - Washed Black",
+  "url": "https://venroy.com.au/products/baggy-denim-cargo-washed-black",
+  "image": "https://cdn.shopify.com/s/files/1/2129/8823/files/SP26_-_D2_-_Mens_-_32072_-_Supersized_T_Shirt_-_Black_Marseille_Doily_-_35082_-_Baggy_Denim_Cargo_-_Washed_Black_0224.jpg?v=1788236475",
+  "price": "144.00",
+  "currency": "AUD",
+  "published_at": "2026-09-04T17:28:46+10:00",
+  "product_type": "Jeans",
+  "tags": [
+   "Colour-Washed Black",
+   "Fabric-Cotton",
+   "Group-Baggy Denim Cargo Mens",
+   "Mens",
+   "Mens Bottoms",
+   "Mens Denim",
+   "Mens New Arrivals",
+   "Mens Pants",
+   "SizeGuideType–Pant-Fixed-Waist",
+   "SP26",
+   "SP26 D2"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Pantalons",
+  "colors": [],
   "has_vision": false
  },
  {
@@ -12838,6 +14560,29 @@
   "attrs_v": 2
  },
  {
+  "id": "benni:10374964773144",
+  "brand": "BENNI",
+  "brand_id": "benni",
+  "name": "Aaron Mini Dress",
+  "url": "https://benni.com.au/products/aaron-mini-dress-pear",
+  "image": "https://cdn.shopify.com/s/files/1/0745/4831/4392/files/web_-_aaron.png?v=1787272036",
+  "price": "187.00",
+  "currency": "AUD",
+  "published_at": "2026-08-20T11:17:03+10:00",
+  "product_type": "Dresses",
+  "tags": [
+   "badge-new",
+   "mini-dress",
+   "REPLEN",
+   "Sep-26"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Robes",
+  "colors": [],
+  "has_vision": false
+ },
+ {
   "id": "bec-bridge:7424298844215",
   "brand": "Bec + Bridge",
   "brand_id": "bec-bridge",
@@ -13068,6 +14813,95 @@
   ],
   "first_seen": "2026-10-31T13:20:12+00:00",
   "type": "Pantalons",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "benni:10325515206936",
+  "brand": "BENNI",
+  "brand_id": "benni",
+  "name": "Arlo Maxi Skirt",
+  "url": "https://benni.com.au/products/arlo-maxi-skirt-1",
+  "image": "https://cdn.shopify.com/s/files/1/0745/4831/4392/files/ProductImageCrop_1.jpg?v=1789955703",
+  "price": "130.00",
+  "currency": "AUD",
+  "published_at": "2026-08-18T16:39:12+10:00",
+  "product_type": "Skirts",
+  "tags": [
+   "badge-new",
+   "Sep-26",
+   "sets-and-coords"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Jupes",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "benni:10320099180824",
+  "brand": "BENNI",
+  "brand_id": "benni",
+  "name": "Amelie Blazer",
+  "url": "https://benni.com.au/products/amelie-blazer",
+  "image": "https://cdn.shopify.com/s/files/1/0745/4831/4392/files/Amalie-Image-_-Full-Body-Crop-_-1720-x-2284-px.jpg?v=1791779088",
+  "price": "216.00",
+  "currency": "AUD",
+  "published_at": "2026-08-18T16:39:02+10:00",
+  "product_type": "Blazers",
+  "tags": [
+   "badge-new",
+   "jackets",
+   "Sep-26",
+   "sets-and-coords"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Manteaux",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "benni:10320036462872",
+  "brand": "BENNI",
+  "brand_id": "benni",
+  "name": "Archie Maxi Dress",
+  "url": "https://benni.com.au/products/archie-maxi-dress-1",
+  "image": "https://cdn.shopify.com/s/files/1/0745/4831/4392/files/Archie-Maxi--Image-_-Full-Body-Crop-_-1720-x-2284-px.jpg?v=1789614070",
+  "price": "201.00",
+  "currency": "AUD",
+  "published_at": "2026-08-18T16:38:48+10:00",
+  "product_type": "Dresses",
+  "tags": [
+   "badge-new",
+   "REPLEN",
+   "Sep-26"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Robes",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "benni:10319993635096",
+  "brand": "BENNI",
+  "brand_id": "benni",
+  "name": "Alex Mini Dress",
+  "url": "https://benni.com.au/products/alex-mini-dress",
+  "image": "https://cdn.shopify.com/s/files/1/0745/4831/4392/files/Alex-Blue-Check-Image-_-Full-Body-Crop-_-1720-x-2284-px_f836cecf-21b4-41e3-9df4-3fe88f1bd06d.jpg?v=1791779281",
+  "price": "173.00",
+  "currency": "AUD",
+  "published_at": "2026-08-18T16:38:42+10:00",
+  "product_type": "Dresses",
+  "tags": [
+   "badge-new",
+   "mini-dress",
+   "Sep-26"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Robes",
   "colors": [],
   "has_vision": false
  },
@@ -13308,6 +15142,94 @@
    "ourlet roulé"
   ],
   "attrs_v": 2
+ },
+ {
+  "id": "venroy:7717237948503",
+  "brand": "Venroy",
+  "brand_id": "venroy",
+  "name": "Bias Wool Drawstring Pant - Black",
+  "url": "https://venroy.com.au/products/bias-wool-drawstring-pant-black",
+  "image": "https://cdn.shopify.com/s/files/1/2129/8823/files/SP26_-_D1_-_Womens_-_45052_-_Bias_Wool_Drawstring_Pant_-_Black_0153.jpg?v=1786515556",
+  "price": "183.00",
+  "currency": "AUD",
+  "published_at": "2026-08-14T16:52:05+10:00",
+  "product_type": "Pants",
+  "tags": [
+   "Colour-Black",
+   "Fabric-Wool",
+   "Group-Bias Wool Drawstring Pant Womens",
+   "SizeGuide-Womens",
+   "SizeGuideType–Pant-Elastic-Waist",
+   "SP26",
+   "SP26 D1",
+   "Womens",
+   "Womens Bottoms",
+   "Womens New Arrivals",
+   "Womens Pants"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Pantalons",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "henne:15132633596267",
+  "brand": "Henne",
+  "brand_id": "henne",
+  "name": "Anisa Jumper",
+  "url": "https://henne.com.au/products/anisa-jumper-cream",
+  "image": "https://cdn.shopify.com/s/files/1/0483/8778/4853/files/HE-1526-ANISA-JUMPER-CREAM-5.jpg?v=1786410655",
+  "price": "185.00",
+  "currency": "AUD",
+  "published_at": "2026-08-12T16:31:56+10:00",
+  "product_type": "Knitwear",
+  "tags": [
+   "Collection_Bowery",
+   "Colour_White",
+   "Edit: Street Style",
+   "inc",
+   "Launch_Date:26/08/2026",
+   "Model_ Annalise",
+   "Neutrals_Edit_12_8_2026",
+   "pfs-label-New Arrival",
+   "Style_Filter:Jumpers_Knitwear"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Autres",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "henne:15129119162731",
+  "brand": "Henne",
+  "brand_id": "henne",
+  "name": "Alexa Tank",
+  "url": "https://henne.com.au/products/alexa-tank-cream",
+  "image": "https://cdn.shopify.com/s/files/1/0483/8778/4853/files/HE-1698-ALEXA-TANK-CREAM-5.jpg?v=1786413172",
+  "price": "97.00",
+  "currency": "AUD",
+  "published_at": "2026-08-12T16:31:41+10:00",
+  "product_type": "Tank Top",
+  "tags": [
+   "Collection: Summer Edit",
+   "Collection:Tanks",
+   "Collection_Bowery",
+   "Colour_White",
+   "inc",
+   "Launch_Date:02/09/2026",
+   "Model_ Annalise",
+   "Neutrals_Edit_12_8_2026",
+   "pfs-label-New Arrival",
+   "SEP_OCT_FOCUS_AND_KEYLOOKS",
+   "Style_Filter:Tanks_Tops"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Hauts",
+  "colors": [],
+  "has_vision": false
  },
  {
   "id": "bayse:8476509667498",
@@ -13589,6 +15511,26 @@
   "has_vision": false
  },
  {
+  "id": "benni:10318915633432",
+  "brand": "BENNI",
+  "brand_id": "benni",
+  "name": "Adela Top",
+  "url": "https://benni.com.au/products/adela-top-1",
+  "image": "https://cdn.shopify.com/s/files/1/0745/4831/4392/files/S6-BEN889_-_Adela_Top_-_Cream-26415-Benni-0134.jpg?v=1791894293",
+  "price": "94.00",
+  "currency": "AUD",
+  "published_at": "2026-07-21T13:42:32+10:00",
+  "product_type": "Tops",
+  "tags": [
+   "Aug-26"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Hauts",
+  "colors": [],
+  "has_vision": false
+ },
+ {
   "id": "bec-bridge:7441158078519",
   "brand": "Bec + Bridge",
   "brand_id": "bec-bridge",
@@ -13683,6 +15625,290 @@
   ],
   "has_vision": true,
   "attrs_v": 2
+ },
+ {
+  "id": "henne:15057190388075",
+  "brand": "Henne",
+  "brand_id": "henne",
+  "name": "Anisa Jumper",
+  "url": "https://henne.com.au/products/anisa-jumper-ice-blue",
+  "image": "https://cdn.shopify.com/s/files/1/0483/8778/4853/files/HE-1526-ANISA-JUMPER-ICE-BLUE-1.jpg?v=1784105180",
+  "price": "185.00",
+  "currency": "AUD",
+  "published_at": "2026-07-15T18:46:44+10:00",
+  "product_type": "Knitwear",
+  "tags": [
+   "collection:Aug_Lookbook_2",
+   "Collection:Reflections_Aug'26",
+   "Colour_Blue",
+   "inc",
+   "Launch_Date:19/08/2026",
+   "Model: Karsha",
+   "NEW:AUG'26",
+   "Style_Filter:Jumpers_Knitwear",
+   "Style_Filter:Longsleeves_Tops"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Autres",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "henne:15057189732715",
+  "brand": "Henne",
+  "brand_id": "henne",
+  "name": "Aiden Jean",
+  "url": "https://henne.com.au/products/aiden-jean-vintage-blue-wash",
+  "image": "https://cdn.shopify.com/s/files/1/0483/8778/4853/files/HE-1485-AIDEN-JEAN-VINTAGE-BLUE-1.jpg?v=1792121086",
+  "price": "225.00",
+  "currency": "AUD",
+  "published_at": "2026-07-15T14:29:26+10:00",
+  "product_type": "Denim Jean",
+  "tags": [
+   "Collection:Aug_Lookbook_1",
+   "Collection:Aug_Lookbook_2",
+   "Collection:Reflections_Aug'26",
+   "collection_stillair_2026",
+   "Colour_Blue",
+   "colour_vintage_blue_wash",
+   "Fibre_Filter: Cotton",
+   "inc",
+   "Launch_Date:18/11/2026",
+   "Launch_Date:19/08/2026",
+   "Model: Karsha",
+   "NEW:AUG'26",
+   "november_marketing_gifting_focus_products",
+   "november_marketing_gifting_full_collection",
+   "pdp_update_sizedowninimage_05/08/2026",
+   "pdp_update_sizedowninseo_16/07/2026",
+   "pfs-label-Restocking Soon",
+   "Product Focus: August",
+   "Sophia_Model_Reshoot_16/10/2026",
+   "Style_Filter:Jeans_Denim",
+   "Style_Filter:Jeans_Pants",
+   "Style_Filter:Lightwash_Denim",
+   "Style_Filter:Lowrise_Denim",
+   "Style_Filter:Midrise_Denim",
+   "Style_Filter:Standard_Denim",
+   "Style_Filter:Straight_Denim",
+   "Style_Filter:Zipper_Denim"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Pantalons",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "benni:10290240749848",
+  "brand": "BENNI",
+  "brand_id": "benni",
+  "name": "Archie Maxi Dress",
+  "url": "https://benni.com.au/products/archie-maxi-dress",
+  "image": "https://cdn.shopify.com/s/files/1/0745/4831/4392/files/NEW-2-Archie-Maxi-Choc-Image-_-Full-Body-Crop-_-1720-x-2284-px.jpg?v=1784602630",
+  "price": "201.00",
+  "currency": "AUD",
+  "published_at": "2026-07-13T13:25:06+10:00",
+  "product_type": "Dresses",
+  "tags": [
+   "Aug-26"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Robes",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "benni:10283675189528",
+  "brand": "BENNI",
+  "brand_id": "benni",
+  "name": "Adela Top",
+  "url": "https://benni.com.au/products/adela-top",
+  "image": "https://cdn.shopify.com/s/files/1/0745/4831/4392/files/S6-BEN889-AdelaTop-PowderBlue-26415-Benni-0134.jpg?v=1783912020",
+  "price": "94.00",
+  "currency": "AUD",
+  "published_at": "2026-07-13T13:24:47+10:00",
+  "product_type": "Tops",
+  "tags": [
+   "Aug-26"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Hauts",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "benni:10283673125144",
+  "brand": "BENNI",
+  "brand_id": "benni",
+  "name": "Arabella Capri",
+  "url": "https://benni.com.au/products/arabella-capri",
+  "image": "https://cdn.shopify.com/s/files/1/0745/4831/4392/files/S17-BEN784-ArabellaTop-Powderblue-26415-Benni-0325.jpg?v=1783912073",
+  "price": "115.00",
+  "currency": "AUD",
+  "published_at": "2026-07-13T13:24:41+10:00",
+  "product_type": "Pants",
+  "tags": [
+   "Aug-26",
+   "sets-and-coords"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Pantalons",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "benni:10283672305944",
+  "brand": "BENNI",
+  "brand_id": "benni",
+  "name": "Arabella Top",
+  "url": "https://benni.com.au/products/arabella-top",
+  "image": "https://cdn.shopify.com/s/files/1/0745/4831/4392/files/S17-BEN784-ArabellaTop-Powderblue-26415-Benni-0332_d71454bb-7bb8-475a-af63-a89936930f21.jpg?v=1783912094",
+  "price": "101.00",
+  "currency": "AUD",
+  "published_at": "2026-07-13T13:24:40+10:00",
+  "product_type": "Tops",
+  "tags": [
+   "Aug-26",
+   "sets-and-coords"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Hauts",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "benni:10283665686808",
+  "brand": "BENNI",
+  "brand_id": "benni",
+  "name": "Archie Bodysuit",
+  "url": "https://benni.com.au/products/archie-bodysuit",
+  "image": "https://cdn.shopify.com/s/files/1/0745/4831/4392/files/S12-BEN782-Archiebodysuit-Chocolate-26415-Benni-0252.jpg?v=1783912129",
+  "price": "94.00",
+  "currency": "AUD",
+  "published_at": "2026-07-13T13:24:38+10:00",
+  "product_type": "Tops",
+  "tags": [
+   "Aug-26",
+   "sets-and-coords"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Hauts",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "benni:10268366766360",
+  "brand": "BENNI",
+  "brand_id": "benni",
+  "name": "Acacia Knit Short",
+  "url": "https://benni.com.au/products/acacia-knit-short-1",
+  "image": "https://cdn.shopify.com/s/files/1/0745/4831/4392/files/S29-BEN777-AcaciaKnit-Cream-26415-Benni-0475_7266e7ea-23f2-43f3-95a1-6efed01e1fba.jpg?v=1783911983",
+  "price": "101.00",
+  "currency": "AUD",
+  "published_at": "2026-07-13T13:24:13+10:00",
+  "product_type": "Shorts",
+  "tags": [
+   "Aug-26",
+   "sets-and-coords"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Pantalons",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "benni:10268363456792",
+  "brand": "BENNI",
+  "brand_id": "benni",
+  "name": "Acacia Knit Short",
+  "url": "https://benni.com.au/products/acacia-knit-short",
+  "image": "https://cdn.shopify.com/s/files/1/0745/4831/4392/files/S27-BEN777-AcaciaKnit-PowderBlue-26415-Benni-0531.jpg?v=1783911912",
+  "price": "101.00",
+  "currency": "AUD",
+  "published_at": "2026-07-13T13:24:11+10:00",
+  "product_type": "Shorts",
+  "tags": [
+   "Aug-26",
+   "sets-and-coords"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Pantalons",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "benni:10268359983384",
+  "brand": "BENNI",
+  "brand_id": "benni",
+  "name": "Acacia Knit Jacket",
+  "url": "https://benni.com.au/products/acacia-knit-jacket-1",
+  "image": "https://cdn.shopify.com/s/files/1/0745/4831/4392/files/Acacina--Image-_-Full-Body-Crop-_-1720-x-2284-px.jpg?v=1789708727",
+  "price": "144.00",
+  "currency": "AUD",
+  "published_at": "2026-07-13T13:24:10+10:00",
+  "product_type": "Jackets",
+  "tags": [
+   "Aug-26",
+   "jackets",
+   "sets-and-coords"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Manteaux",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "benni:10268355395864",
+  "brand": "BENNI",
+  "brand_id": "benni",
+  "name": "Acacia Knit Jacket",
+  "url": "https://benni.com.au/products/acacia-knit-jacket",
+  "image": "https://cdn.shopify.com/s/files/1/0745/4831/4392/files/S27-BEN777-AcaciaKnit-PowderBlue-26415-Benni-0520.jpg?v=1783911912",
+  "price": "144.00",
+  "currency": "AUD",
+  "published_at": "2026-07-13T13:24:08+10:00",
+  "product_type": "Jackets",
+  "tags": [
+   "Aug-26",
+   "jackets",
+   "sets-and-coords"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Manteaux",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "benni:10183949091096",
+  "brand": "BENNI",
+  "brand_id": "benni",
+  "name": "Amber Cape Top",
+  "url": "https://benni.com.au/products/amber-cape-top",
+  "image": "https://cdn.shopify.com/s/files/1/0745/4831/4392/files/S18-BEN809-AmberCapeTop-Powderblue-26415-Benni-0366.jpg?v=1783912047",
+  "price": "87.00",
+  "currency": "AUD",
+  "published_at": "2026-07-13T13:24:06+10:00",
+  "product_type": "Tops",
+  "tags": [
+   "Aug-26",
+   "sets-and-coords"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Hauts",
+  "colors": [],
+  "has_vision": false
  },
  {
   "id": "dissh:15129406275952",
@@ -14054,6 +16280,37 @@
   "attrs_v": 2
  },
  {
+  "id": "venroy:7648786841687",
+  "brand": "Venroy",
+  "brand_id": "venroy",
+  "name": "Applique Border Silk Linen Shirt - Off White/Cream",
+  "url": "https://venroy.com.au/products/applique-border-silk-linen-shirt-off-white-cream",
+  "image": "https://cdn.shopify.com/s/files/1/2129/8823/files/D3AppliqueBorderSilkLinenShirtOffWhiteCream_0999_R.jpg?v=1782973012",
+  "price": "209.00",
+  "currency": "AUD",
+  "published_at": "2026-07-03T15:12:59+10:00",
+  "product_type": "Shirts",
+  "tags": [
+   "Colour-Off White/Cream",
+   "ES26",
+   "ES26 D3",
+   "Fabric-Silk",
+   "Group-Applique Border Silk Linen Shirt Mens",
+   "Mens",
+   "Mens Linen Essentials",
+   "Mens Linen Tops",
+   "Mens Shirts",
+   "Mens Tops",
+   "Mens Vacation Edit",
+   "SizeGuideType–Shirt-M-Short-Sleeve"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Hauts",
+  "colors": [],
+  "has_vision": false
+ },
+ {
   "id": "bec-bridge:7389425958967",
   "brand": "Bec + Bridge",
   "brand_id": "bec-bridge",
@@ -14221,6 +16478,711 @@
   "attrs_v": 2
  },
  {
+  "id": "benni:10255186592024",
+  "brand": "BENNI",
+  "brand_id": "benni",
+  "name": "Aria Skort",
+  "url": "https://benni.com.au/products/aria-skort",
+  "image": "https://cdn.shopify.com/s/files/1/0745/4831/4392/files/Aria-Product-Image-_-Full-Body-Crop-_-1720-x-2284-px.jpg?v=1783379309",
+  "price": "86.00",
+  "currency": "AUD",
+  "published_at": "2026-06-16T10:49:40+10:00",
+  "product_type": "Skirts",
+  "tags": [
+   "bridal",
+   "Jul-26",
+   "SALE",
+   "sets-and-coords"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Jupes",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "benni:10255186297112",
+  "brand": "BENNI",
+  "brand_id": "benni",
+  "name": "Aria Top",
+  "url": "https://benni.com.au/products/aria-top",
+  "image": "https://cdn.shopify.com/s/files/1/0745/4831/4392/files/Aria-Top-Product-Image-_-Full-Body-Crop-_-1720-x-2284-px.jpg?v=1783379363",
+  "price": "86.00",
+  "currency": "AUD",
+  "published_at": "2026-06-16T10:49:38+10:00",
+  "product_type": "Tops",
+  "tags": [
+   "bridal",
+   "Jul-26",
+   "SALE",
+   "sets-and-coords"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Hauts",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "benni:10255185543448",
+  "brand": "BENNI",
+  "brand_id": "benni",
+  "name": "Aaron Mini Dress",
+  "url": "https://benni.com.au/products/aaron-mini-dress",
+  "image": "https://cdn.shopify.com/s/files/1/0745/4831/4392/files/Aaron-Product-Image-_-Full-Body-Crop-_-1720-x-2284-px.jpg?v=1783379242",
+  "price": "187.00",
+  "currency": "AUD",
+  "published_at": "2026-06-16T10:49:36+10:00",
+  "product_type": "Dresses",
+  "tags": [
+   "bridal"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Robes",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "venroy:7648799391831",
+  "brand": "Venroy",
+  "brand_id": "venroy",
+  "name": "Canvas Traveller Pouch - Washed Pink",
+  "url": "https://venroy.com.au/products/canvas-traveller-pouch-washed-pink",
+  "image": "https://cdn.shopify.com/s/files/1/2129/8823/files/VenroyFlatLay-D2-Unisex-CanvasTravellerPouch-WashedPink2.jpg?v=1779266511",
+  "price": "46.00",
+  "currency": "AUD",
+  "published_at": "2026-06-14T14:13:07+10:00",
+  "product_type": "Accessories",
+  "tags": [
+   "Accessories",
+   "Colour-Washed Pink",
+   "Destination Merch Unisex",
+   "ES26",
+   "ES26 D2",
+   "Fabric-Cotton",
+   "Group-Canvas Traveller Pouch",
+   "Mens",
+   "Mens Vacation Edit",
+   "Vacation Edit Womens",
+   "Womens",
+   "Womens Accessories"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Accessoires",
+  "colors": [],
+  "has_vision": false,
+  "attrs_v": 2
+ },
+ {
+  "id": "venroy:7648603340887",
+  "brand": "Venroy",
+  "brand_id": "venroy",
+  "name": "Beaded Silk Side Tie Mini Skirt - Ivy Green/Beading",
+  "url": "https://venroy.com.au/products/beaded-silk-side-tie-mini-skirt-ivy-green-beading",
+  "image": "https://cdn.shopify.com/s/files/1/2129/8823/files/D2BeadedSilkSideTieMiniSkirtIvyGreenBeading_0558.jpg?v=1781144300",
+  "price": "163.00",
+  "currency": "AUD",
+  "published_at": "2026-06-12T17:27:40+10:00",
+  "product_type": "Skirts",
+  "tags": [
+   "Colour-Ivy Green/Beading",
+   "DisplayTag-Back in Stock",
+   "ES26",
+   "ES26 D2",
+   "Fabric-Silk",
+   "Group-Beaded Silk Side Tie Mini Skirt Womens",
+   "SizeGuide-Womens",
+   "SizeGuideType–Skirts-Mini",
+   "Womens",
+   "Womens Best Sellers WK 37",
+   "Womens Bottoms",
+   "Womens Event Dressing",
+   "Womens Sets",
+   "Womens Skirts",
+   "Womens Vacation Edit"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Jupes",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "venroy:7648600424535",
+  "brand": "Venroy",
+  "brand_id": "venroy",
+  "name": "Asymmetric Ruffle Halter Mini Dress - Pale Yellow",
+  "url": "https://venroy.com.au/products/asymmetric-ruffle-halter-mini-dress-pale-yellow",
+  "image": "https://cdn.shopify.com/s/files/1/2129/8823/files/D2AsymmetricRuffleHalterMiniDressPaleYellow_1120.jpg?v=1781143788",
+  "price": "157.00",
+  "currency": "AUD",
+  "published_at": "2026-06-12T17:27:20+10:00",
+  "product_type": "Dresses",
+  "tags": [
+   "Colour-Pale Yellow",
+   "ES26",
+   "ES26 D2",
+   "Event Dresses",
+   "Fabric-Silk",
+   "Group-Asymmetric Ruffle Halter Mini Dress Womens",
+   "Mini Dresses",
+   "SizeGuide-Womens",
+   "SizeGuideType–Dress-Sleeveless",
+   "Womens",
+   "Womens Dresses",
+   "Womens Event Dressing",
+   "Womens Vacation Edit"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Robes",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "venroy:7648595771479",
+  "brand": "Venroy",
+  "brand_id": "venroy",
+  "name": "Beaded Silk Halter Scarf Top - Ivy Green/Beading",
+  "url": "https://venroy.com.au/products/beaded-silk-halter-scarf-top-ivy-green-beading",
+  "image": "https://cdn.shopify.com/s/files/1/2129/8823/files/D2BeadedSilkHalterScarfTopIvyGreenBeading_0605copy.jpg?v=1781144210",
+  "price": "157.00",
+  "currency": "AUD",
+  "published_at": "2026-06-12T17:27:10+10:00",
+  "product_type": "Tops",
+  "tags": [
+   "Colour-Ivy Green/Beading",
+   "DisplayTag-Back in Stock",
+   "ES26",
+   "ES26 D2",
+   "Fabric-Silk",
+   "Going Out Tops Edit",
+   "Group-Beaded Silk Halter Scarf Top Womens",
+   "SizeGuide-Womens",
+   "SizeGuideType–Top-Sleeveless",
+   "Womens",
+   "Womens Best Sellers WK 37",
+   "Womens Event Dressing",
+   "Womens Sets",
+   "Womens Tops",
+   "Womens Vacation Edit"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Hauts",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "venroy:7648593150039",
+  "brand": "Venroy",
+  "brand_id": "venroy",
+  "name": "Asymmetric Ruffle Halter Top - Pink",
+  "url": "https://venroy.com.au/products/asymmetric-ruffle-halter-top-pink",
+  "image": "https://cdn.shopify.com/s/files/1/2129/8823/files/D2SilkWrapSkirtAncientGreekPinkSunset_0499.jpg?v=1781143942",
+  "price": "105.00",
+  "currency": "AUD",
+  "published_at": "2026-06-12T17:27:03+10:00",
+  "product_type": "Tops",
+  "tags": [
+   "Colour-Pink",
+   "ES26",
+   "ES26 D2",
+   "Fabric-Silk",
+   "Going Out Tops Edit",
+   "Group-Asymmetric Ruffle Halter Top Womens",
+   "SizeGuide-Womens",
+   "SizeGuideType–Top-Sleeveless",
+   "Womens",
+   "Womens Event Dressing",
+   "Womens Sets",
+   "Womens Tops",
+   "Womens Vacation Edit"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Hauts",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "henne:14984744436075",
+  "brand": "Henne",
+  "brand_id": "henne",
+  "name": "Akia Jacket",
+  "url": "https://henne.com.au/products/akia-jacket-1",
+  "image": "https://cdn.shopify.com/s/files/1/0483/8778/4853/files/HE-1510-AKIA-JACKET-BLACK_8.jpg?v=1779752491",
+  "price": "380.00",
+  "currency": "AUD",
+  "published_at": "2026-06-10T10:02:10+10:00",
+  "product_type": "Jacket",
+  "tags": [
+   "Collection: Odile",
+   "Collection:Nadia's_Edit",
+   "Colour_Black",
+   "inc",
+   "Launch_Date:15/07/2026",
+   "Model: Montana",
+   "Style_Filter:Bomber_Jackets/Coats",
+   "Style_Filter:Leather_Jackets"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Manteaux",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "henne:14961354801515",
+  "brand": "Henne",
+  "brand_id": "henne",
+  "name": "Anisa Jumper",
+  "url": "https://henne.com.au/products/anisa-jumper-3",
+  "image": "https://cdn.shopify.com/s/files/1/0483/8778/4853/files/HE-1526-ANISA-JUMPER-CHOCOLATE_1.jpg?v=1779752650",
+  "price": "185.00",
+  "currency": "AUD",
+  "published_at": "2026-06-10T10:01:40+10:00",
+  "product_type": "Knitwear",
+  "tags": [
+   "Collection: Chocolate",
+   "Collection: Odile",
+   "Colour_Chocolate",
+   "inc",
+   "Launch_Date:01/07/2026",
+   "Model: Montana",
+   "Neutrals_Edit_12_8_2026",
+   "Style_Filter:Jumpers_Knitwear",
+   "Style_Filter:Longsleeves_Tops",
+   "Work Edit"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Autres",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "henne:14961254105451",
+  "brand": "Henne",
+  "brand_id": "henne",
+  "name": "Aria Trouser",
+  "url": "https://henne.com.au/products/aria-trouser",
+  "image": "https://cdn.shopify.com/s/files/1/0483/8778/4853/files/HE-1601-ANIA-TROUSER-OAT_7.jpg?v=1779753205",
+  "price": "265.00",
+  "currency": "AUD",
+  "published_at": "2026-06-10T10:01:26+10:00",
+  "product_type": "Pant",
+  "tags": [
+   "Collection: Odile",
+   "Colour_Neutrals",
+   "inc",
+   "Launch_Date:24/06/2026",
+   "Model: Montana",
+   "Style_Filter:Pants_Pants",
+   "Style_Filter:Tailored_Pants"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Pantalons",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "venroy:7648785432663",
+  "brand": "Venroy",
+  "brand_id": "venroy",
+  "name": "Beaded Silk Linen Camp Collar Shirt - Off White/Ivy Green",
+  "url": "https://venroy.com.au/products/beaded-silk-linen-camp-collar-shirt-off-white-ivy-green",
+  "image": "https://cdn.shopify.com/s/files/1/2129/8823/files/D1BeadedSilkLinenCampCollarShirtOffWhiteIvyGreen_1054.jpg?v=1779781014",
+  "price": "209.00",
+  "currency": "AUD",
+  "published_at": "2026-05-27T15:00:53+10:00",
+  "product_type": "Shirts",
+  "tags": [
+   "Colour-Off White/Ivy Green",
+   "ES26",
+   "ES26 D1",
+   "Fabric-Silk",
+   "Group-Beaded Silk Linen Camp Collar Shirt Mens",
+   "Mens",
+   "Mens Best Sellers - June",
+   "Mens Linen Essentials",
+   "Mens Linen Tops",
+   "Mens Shirts",
+   "Mens Tops",
+   "SizeGuide-Mens",
+   "SizeGuideType–Shirt-M-Short-Sleeve"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Hauts",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "venroy:7648650526807",
+  "brand": "Venroy",
+  "brand_id": "venroy",
+  "name": "Boucle Open Knit Polo - Off White",
+  "url": "https://venroy.com.au/products/boucle-open-knit-polo-off-white",
+  "image": "https://cdn.shopify.com/s/files/1/2129/8823/files/D1BoucleOpenKnitPoloOffWhite_1135.jpg?v=1779767535",
+  "price": "105.00",
+  "currency": "AUD",
+  "published_at": "2026-05-27T15:00:06+10:00",
+  "product_type": "Polos",
+  "tags": [
+   "Colour-Off White",
+   "ES26",
+   "ES26 D1",
+   "Fabric-Cotton",
+   "Group-Boucle Open Knit Polo Mens",
+   "Mens",
+   "Mens Polos",
+   "Mens Tops",
+   "Mens Vacation Edit",
+   "SizeGuideType–Polo"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Hauts",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "venroy:7648603963479",
+  "brand": "Venroy",
+  "brand_id": "venroy",
+  "name": "Beaded Wrap Mini Skirt - Bright Blue/Beading",
+  "url": "https://venroy.com.au/products/beaded-wrap-mini-skirt-bright-blue-beading",
+  "image": "https://cdn.shopify.com/s/files/1/2129/8823/files/D1BeadedWrapMiniSkirtBrightBlueBeading_0310.jpg?v=1779776537",
+  "price": "118.00",
+  "currency": "AUD",
+  "published_at": "2026-05-27T14:58:11+10:00",
+  "product_type": "Skirts",
+  "tags": [
+   "Colour-Bright Blue/Beading",
+   "DisplayTag-Back in Stock",
+   "ES26",
+   "ES26 D1",
+   "Fabric-Silk",
+   "Group-Beaded Wrap Mini Skirt Womens",
+   "SizeGuide-Womens",
+   "SizeGuideType–Skirts-Mini",
+   "Vacation Edit Womens",
+   "Womens",
+   "Womens Bottoms",
+   "Womens Event Dressing",
+   "Womens Skirts"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Jupes",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "benni:10246139642136",
+  "brand": "BENNI",
+  "brand_id": "benni",
+  "name": "Anastasia Pant",
+  "url": "https://benni.com.au/products/anastasia-pant",
+  "image": "https://cdn.shopify.com/s/files/1/0745/4831/4392/files/NEW-CROP-1Product-Image-_-Full-Body-Crop-_-1720-x-2284-px.jpg?v=1778728072",
+  "price": "165.00",
+  "currency": "AUD",
+  "published_at": "2026-05-19T14:35:21+10:00",
+  "product_type": "Pants",
+  "tags": [
+   "Jun-26"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Pantalons",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "benni:10183951778072",
+  "brand": "BENNI",
+  "brand_id": "benni",
+  "name": "Agnes Mini Dress",
+  "url": "https://benni.com.au/products/agnes-mini-dress-1",
+  "image": "https://cdn.shopify.com/s/files/1/0745/4831/4392/files/NEW-CROP-2Product-Image-_-Full-Body-Crop-_-1720-x-2284-px_bbd2ef59-e9eb-4798-a4d6-7beb0492edce.jpg?v=1778728694",
+  "price": "126.00",
+  "currency": "AUD",
+  "published_at": "2026-05-19T14:35:14+10:00",
+  "product_type": "Dresses",
+  "tags": [
+   "Drop 1",
+   "Jun-26",
+   "mini-dress",
+   "SALE"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Robes",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "benni:10183950336280",
+  "brand": "BENNI",
+  "brand_id": "benni",
+  "name": "Agnes Long Sleeve Top",
+  "url": "https://benni.com.au/products/agnes-long-sleeve-top-2",
+  "image": "https://cdn.shopify.com/s/files/1/0745/4831/4392/files/NEW-CROP-Product-Image-_-Full-Body-Crop-_-1720-x-2284-px_4de96a24-84ef-4847-aeed-52b08cf7be2d.jpg?v=1778727971",
+  "price": "108.00",
+  "currency": "AUD",
+  "published_at": "2026-05-19T14:35:13+10:00",
+  "product_type": "Tops",
+  "tags": [
+   "Drop 1",
+   "Jun-26"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Hauts",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "benni:10183945879832",
+  "brand": "BENNI",
+  "brand_id": "benni",
+  "name": "Arlo Maxi Skirt",
+  "url": "https://benni.com.au/products/arlo-maxi-skirt",
+  "image": "https://cdn.shopify.com/s/files/1/0745/4831/4392/files/NEW-CROP-2Product-Image-_-Full-Body-Crop-_-1720-x-2284-px_0406f105-8d3c-49e0-a63a-47b976a88d51.jpg?v=1778728149",
+  "price": "130.00",
+  "currency": "AUD",
+  "published_at": "2026-05-19T14:35:10+10:00",
+  "product_type": "Skirts",
+  "tags": [
+   "Jun-26",
+   "sets-and-coords"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Jupes",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "benni:10183876935960",
+  "brand": "BENNI",
+  "brand_id": "benni",
+  "name": "Arlo Tee",
+  "url": "https://benni.com.au/products/arlo-tee",
+  "image": "https://cdn.shopify.com/s/files/1/0745/4831/4392/files/ProductImageCrop_2.jpg?v=1789955780",
+  "price": "94.00",
+  "currency": "AUD",
+  "published_at": "2026-05-19T14:35:06+10:00",
+  "product_type": "Tops",
+  "tags": [
+   "Drop 1",
+   "Jun-26",
+   "sets-and-coords"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Hauts",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "henne:14959555248491",
+  "brand": "Henne",
+  "brand_id": "henne",
+  "name": "Alora Knit",
+  "url": "https://henne.com.au/products/alora-knit",
+  "image": "https://cdn.shopify.com/s/files/1/0483/8778/4853/files/HE-1543-ALORA-KNIT-ARMY_2.jpg?v=1778564208",
+  "price": "245.00",
+  "currency": "AUD",
+  "published_at": "2026-05-13T15:38:45+10:00",
+  "product_type": "Knitwear",
+  "tags": [
+   "Collection: Odile",
+   "Collection:Natural_Fibres",
+   "Fibre_Filter: Wool",
+   "inc",
+   "Launch_Date:03/06/2026",
+   "Model: Montana",
+   "Style_Filter:Longsleeves_Tops"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Hauts",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "henne:14959551119723",
+  "brand": "Henne",
+  "brand_id": "henne",
+  "name": "Amelie Dress",
+  "url": "https://henne.com.au/products/amelie-dress-1",
+  "image": "https://cdn.shopify.com/s/files/1/0483/8778/4853/files/HE-1497-AMELIE-DRESS-BLACK_2.jpg?v=1778563766",
+  "price": "225.00",
+  "currency": "AUD",
+  "published_at": "2026-05-13T15:38:37+10:00",
+  "product_type": "Maxi Dress",
+  "tags": [
+   "Collection: Odile",
+   "inc",
+   "Launch_Date:03/06/2026",
+   "Model: Montana",
+   "Style_Filter:Maxi_Dresses"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Robes",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "henne:14959549972843",
+  "brand": "Henne",
+  "brand_id": "henne",
+  "name": "Anisa Jumper",
+  "url": "https://henne.com.au/products/anisa-jumper-2",
+  "image": "https://cdn.shopify.com/s/files/1/0483/8778/4853/files/HE-1526-ANISA-JUMPER-CANOPY_2.jpg?v=1778563852",
+  "price": "185.00",
+  "currency": "AUD",
+  "published_at": "2026-05-13T15:38:34+10:00",
+  "product_type": "Knitwear",
+  "tags": [
+   "Collection: Odile",
+   "inc",
+   "Launch_Date:27/05/2026",
+   "Model: Montana",
+   "Style_Filter:Longsleeves_Tops",
+   "Style_Filter:Tops_Knitwear"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Autres",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "henne:14959543714155",
+  "brand": "Henne",
+  "brand_id": "henne",
+  "name": "Anisa Jumper",
+  "url": "https://henne.com.au/products/anisa-jumper-1",
+  "image": "https://cdn.shopify.com/s/files/1/0483/8778/4853/files/HE-1526-ANISA-JUMPER-BLACK_2.jpg?v=1778562372",
+  "price": "185.00",
+  "currency": "AUD",
+  "published_at": "2026-05-13T15:38:29+10:00",
+  "product_type": "Knitwear",
+  "tags": [
+   "Collection: Odile",
+   "Colour_Black",
+   "inc",
+   "Launch_Date:27/05/2026",
+   "Model: Montana",
+   "Style_Filter:Longsleeves_Tops",
+   "Style_Filter:Tops_Knitwear"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Autres",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "venroy:7561765912663",
+  "brand": "Venroy",
+  "brand_id": "venroy",
+  "name": "Bias Wool Drawstring Pant - Chocolate",
+  "url": "https://venroy.com.au/products/bias-wool-drawstring-pant-chocolate",
+  "image": "https://cdn.shopify.com/s/files/1/2129/8823/files/14130SilkCowlBustierCoffee_0658_8ae756ff-6bd9-4f98-a272-72ec91e55db9.jpg?v=1775004064",
+  "price": "183.00",
+  "currency": "AUD",
+  "published_at": "2026-04-24T13:12:53+10:00",
+  "product_type": "Pants",
+  "tags": [
+   "Colour-Chocolate",
+   "DisplayTag-Back in Stock",
+   "Fabric-Wool",
+   "Group-Bias Wool Drawstring Pant Womens",
+   "SizeGuide-Womens",
+   "SizeGuideType–Pant-Elastic",
+   "Winter 26",
+   "Winter 26 D2",
+   "Womens",
+   "Womens Event Dressing",
+   "Womens Sets"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Pantalons",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "venroy:7561765683287",
+  "brand": "Venroy",
+  "brand_id": "venroy",
+  "name": "Bias Satin Tank Dress - Silver/Grey Marl",
+  "url": "https://venroy.com.au/products/bias-satin-tank-dress-silver-grey-marl",
+  "image": "https://cdn.shopify.com/s/files/1/2129/8823/files/47102SilkSatinMaxiDressGrey_0423.jpg?v=1774997788",
+  "price": "144.00",
+  "currency": "AUD",
+  "published_at": "2026-04-24T13:12:38+10:00",
+  "product_type": "Dresses",
+  "tags": [
+   "Colour-Silver/Grey Marl",
+   "DisplayTag-Back in Stock",
+   "Event Dresses",
+   "Fabric-Silk",
+   "Full Length Dresses",
+   "Group-Bias Satin Tank Dress Womens",
+   "SizeGuide-Womens",
+   "SizeGuideType–Dress-Sleeveless",
+   "Winter 26",
+   "Winter 26 D2",
+   "Womens",
+   "Womens Best Sellers - July 2",
+   "Womens Best Sellers WK 37",
+   "Womens Event Dressing"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Robes",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "venroy:7561765617751",
+  "brand": "Venroy",
+  "brand_id": "venroy",
+  "name": "Boucle Knit Bomber - Chocolate",
+  "url": "https://venroy.com.au/products/boucle-knit-bomber-chocolate",
+  "image": "https://cdn.shopify.com/s/files/1/2129/8823/files/43093BoucleKnitBomberChocolate_0675.jpg?v=1774939595",
+  "price": "157.00",
+  "currency": "AUD",
+  "published_at": "2026-04-24T13:12:31+10:00",
+  "product_type": "Coats & Jackets",
+  "tags": [
+   "Colour-Chocolate",
+   "Fabric-Wool",
+   "Group-Boucle Knit Bomber Womens",
+   "SizeGuide-Womens",
+   "SizeGuideType–Trench-Coat",
+   "Winter 26",
+   "Winter 26 D2",
+   "Womens",
+   "Womens Knitwear",
+   "Womens Outerwear"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Manteaux",
+  "colors": [],
+  "has_vision": false
+ },
+ {
   "id": "bec-bridge:7415912071223",
   "brand": "Bec + Bridge",
   "brand_id": "bec-bridge",
@@ -14264,6 +17226,205 @@
    "transparence"
   ],
   "attrs_v": 2
+ },
+ {
+  "id": "henne:14945164984683",
+  "brand": "Henne",
+  "brand_id": "henne",
+  "name": "Aiden Jean",
+  "url": "https://henne.com.au/products/aiden-jean",
+  "image": "https://cdn.shopify.com/s/files/1/0483/8778/4853/files/HE-1485-AIDEN-JEAN-VEILED-BLUE-WASH-7_da030752-a51a-46a7-bdb5-c8b8c8d6eb09.jpg?v=1786583221",
+  "price": "225.00",
+  "currency": "AUD",
+  "published_at": "2026-04-22T18:42:30+10:00",
+  "product_type": "Denim Jean",
+  "tags": [
+   "Collection: Cosi",
+   "Collection:Aug_Lookbook_1",
+   "Collection:Aug_Lookbook_2",
+   "Collection:Nadia's_Edit",
+   "Collection:Natural_Fibres",
+   "Collection:Reflections_Aug'26",
+   "collection_stillair_2026",
+   "Colour_Blue",
+   "colour_Veiled_Blue_Wash",
+   "FF_Update:07_07_2026",
+   "FF_Update:27_07_2026",
+   "Fibre_Filter: Cotton",
+   "inc",
+   "Launch_Date:05/08/2026",
+   "Launch_Date:11/11/2026",
+   "Launch_Date:13/05/2026",
+   "Marketingcollection: Denim Defined",
+   "Model: Karsha",
+   "november_marketing_gifting_focus_products",
+   "november_marketing_gifting_full_collection",
+   "pdp_update_sizedowninimage_05/08/2026",
+   "pdp_update_sizedowninseo_16/07/2026",
+   "pfs-label-Restocking Soon",
+   "Product Focus: August",
+   "Style_Filter:Jeans_Denim",
+   "Style_Filter:Jeans_Pants",
+   "Style_Filter:Lowrise_Denim",
+   "Style_Filter:Midrise_Denim",
+   "Style_Filter:Midwash_Denim",
+   "Style_Filter:Standard_Denim",
+   "Style_Filter:Straight_Denim",
+   "Style_Filter:Zipper_Denim"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Pantalons",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "henne:14941411246443",
+  "brand": "Henne",
+  "brand_id": "henne",
+  "name": "Amia Sheer Turtleneck",
+  "url": "https://henne.com.au/products/amia-sheer-turtleneck",
+  "image": "https://cdn.shopify.com/s/files/1/0483/8778/4853/files/HE-1461-AMIA-SHEER-TURTLENECK-CREAM_1.jpg?v=1776813637",
+  "price": "185.00",
+  "currency": "AUD",
+  "published_at": "2026-04-22T18:42:19+10:00",
+  "product_type": "Knitwear",
+  "tags": [
+   "Collection: Cosi",
+   "Collection: Merino Wool",
+   "Colour_White",
+   "inc",
+   "Launch_Date:20/05/2026",
+   "Marketingcollection: Denim Defined",
+   "Model: Montana",
+   "pfs-label-100% Merino Wool",
+   "Style_Filter:Highneck_Merino",
+   "Style_Filter:Longsleeve_Merino",
+   "Style_Filter:Longsleeves_Tops"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Autres",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "henne:14935088202091",
+  "brand": "Henne",
+  "brand_id": "henne",
+  "name": "Anika Long Sleeve Top",
+  "url": "https://henne.com.au/products/anika-long-sleeve-top",
+  "image": "https://cdn.shopify.com/s/files/1/0483/8778/4853/files/HE-1380-ANIKA-LONG-SLEEVE-BLACK-1.jpg?v=1776042217",
+  "price": "195.00",
+  "currency": "AUD",
+  "published_at": "2026-04-15T15:23:59+10:00",
+  "product_type": "Long Sleeve Top",
+  "tags": [
+   "Collection: Cosi",
+   "Colour_Black",
+   "HS_CODE",
+   "inc",
+   "Launch_Date:29/04/2026",
+   "Marketingcollection: Denim Defined",
+   "Model: Montana",
+   "Style_Filter:Longsleeves_Tops"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Hauts",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "venroy:7561762472023",
+  "brand": "Venroy",
+  "brand_id": "venroy",
+  "name": "Alpaca Mohair Crewneck Sweater - Pebble",
+  "url": "https://venroy.com.au/products/alpaca-mohair-crewneck-sweater-pebble",
+  "image": "https://cdn.shopify.com/s/files/1/2129/8823/files/33086AlpacaMohairCrewneckSweaterBeige_0426.jpg?v=1774929622",
+  "price": "183.00",
+  "currency": "AUD",
+  "published_at": "2026-04-10T08:01:04+10:00",
+  "product_type": "Sweaters",
+  "tags": [
+   "Colour-Pebble",
+   "Fabric-Alpaca",
+   "Group-Alpaca Mohair Crewneck Sweater Mens",
+   "Mens",
+   "Mens Knitwear",
+   "Mens Sweaters",
+   "Mens Tops",
+   "SizeGuideType–Knitwear-M",
+   "Winter 26",
+   "Winter 26 D1"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Hauts",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "venroy:7561766010967",
+  "brand": "Venroy",
+  "brand_id": "venroy",
+  "name": "Bias Wool Drawstring Pant - Off White",
+  "url": "https://venroy.com.au/products/bias-wool-drawstring-pant-off-white",
+  "image": "https://cdn.shopify.com/s/files/1/2129/8823/files/42134LayeredSilkBustierCream_0307_491ca58e-5167-456c-af9c-00fd795e1f6c.jpg?v=1775004393",
+  "price": "183.00",
+  "currency": "AUD",
+  "published_at": "2026-04-02T17:19:50+11:00",
+  "product_type": "Pants",
+  "tags": [
+   "Colour-Off White",
+   "DisplayTag-Back in Stock",
+   "Fabric-Wool",
+   "Group-Bias Wool Drawstring Pant Womens",
+   "SizeGuide-Womens",
+   "SizeGuideType–Pant-Elastic",
+   "Winter 26",
+   "Winter 26 D1",
+   "Womens",
+   "Womens Event Dressing",
+   "Womens Sets"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Pantalons",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "venroy:7561762504791",
+  "brand": "Venroy",
+  "brand_id": "venroy",
+  "name": "Baggy Denim Jean - Dark Vintage Wash",
+  "url": "https://venroy.com.au/products/baggy-denim-jean-dark-vintage-wash",
+  "image": "https://cdn.shopify.com/s/files/1/2129/8823/files/35067BaggyDenimJeanMidBlue_0236.jpg?v=1774930133",
+  "price": "144.00",
+  "currency": "AUD",
+  "published_at": "2026-04-02T17:18:05+11:00",
+  "product_type": "Pants",
+  "tags": [
+   "Colour-Dark Vintage Wash",
+   "DisplayTag-Back in Stock",
+   "Fabric-Cotton",
+   "Group-Baggy Denim Jean Mens",
+   "Mens",
+   "Mens Best Sellers - July 2",
+   "Mens Best Sellers - June",
+   "Mens Bottoms",
+   "Mens Denim",
+   "Mens Pants",
+   "SizeGuideType–Pant-Fixed-Waist",
+   "Winter 26",
+   "Winter 26 D1"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Pantalons",
+  "colors": [],
+  "has_vision": false
  },
  {
   "id": "bec-bridge:7358499618871",
@@ -14359,5 +17520,1108 @@
    "taille basse"
   ],
   "attrs_v": 2
+ },
+ {
+  "id": "benni:9976561533208",
+  "brand": "BENNI",
+  "brand_id": "benni",
+  "name": "Amalie Blazer",
+  "url": "https://benni.com.au/products/amalie-blazer",
+  "image": "https://cdn.shopify.com/s/files/1/0745/4831/4392/files/S13-BEN702-AmelieBlazer-NavyPinstripe-26145-Benni-0200.jpg?v=1791894462",
+  "price": "173.00",
+  "currency": "AUD",
+  "published_at": "2026-03-16T09:47:12+11:00",
+  "product_type": "Blazers",
+  "tags": [
+   "Apr-26",
+   "jackets",
+   "SALE"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Manteaux",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "henne:14907138670955",
+  "brand": "Henne",
+  "brand_id": "henne",
+  "name": "Akia Jacket",
+  "url": "https://henne.com.au/products/akia-jacket",
+  "image": "https://cdn.shopify.com/s/files/1/0483/8778/4853/files/HE-1510-AKIA-JACKET-CAROB-2.jpg?v=1773197492",
+  "price": "380.00",
+  "currency": "AUD",
+  "published_at": "2026-03-11T15:32:13+11:00",
+  "product_type": "Jacket",
+  "tags": [
+   "Collection: Chocolate",
+   "Collection: Cosi",
+   "Collection: Odile",
+   "Collection:Nadia's_Edit",
+   "Colour_Chocolate",
+   "HS_CODE",
+   "inc",
+   "Launch_Date:01/04/2026",
+   "Launch_Date:24/06/2026",
+   "Model: Montana",
+   "Style_Filter:Leather_Jackets"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Manteaux",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "henne:14907138703723",
+  "brand": "Henne",
+  "brand_id": "henne",
+  "name": "Amelie Dress",
+  "url": "https://henne.com.au/products/amelie-dress",
+  "image": "https://cdn.shopify.com/s/files/1/0483/8778/4853/files/HE-1497-AMELIE-DRESS-TAUPE-2.jpg?v=1773113322",
+  "price": "225.00",
+  "currency": "AUD",
+  "published_at": "2026-03-11T15:32:13+11:00",
+  "product_type": "Midi Dress",
+  "tags": [
+   "Collection: Cosi",
+   "Collection: Odile",
+   "Colour_Neutrals",
+   "HS_CODE",
+   "inc",
+   "Launch_Date:01/04/2026",
+   "Launch_Date:03/06/2026",
+   "Model: Montana",
+   "Style_Filter:Maxi_Dresses"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Robes",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "henne:14889115386219",
+  "brand": "Henne",
+  "brand_id": "henne",
+  "name": "Arlena Skirt",
+  "url": "https://henne.com.au/products/arlena-skirt",
+  "image": "https://cdn.shopify.com/s/files/1/0483/8778/4853/files/HE-1282-BRIA-JERSEY-TEE-CREAM-1.jpg?v=1784164525",
+  "price": "185.00",
+  "currency": "AUD",
+  "published_at": "2026-02-25T15:57:12+11:00",
+  "product_type": "Midi Skirt",
+  "tags": [
+   "Collection: Afterlight",
+   "Collection: Chocolate",
+   "Collection: Odile",
+   "collection:Aug_Lookbook_2",
+   "Collection:Reflections_Aug'26",
+   "Colour_Chocolate",
+   "FF_Update:07_07_2026",
+   "HS_CODE",
+   "inc",
+   "Launch_Date:03/06/2026",
+   "Launch_Date:11/03/2026",
+   "Launch_Date:12/08/2026",
+   "Model: Karsha",
+   "Model: Montana",
+   "Style_Filter:Midi_Skirt"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Jupes",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "henne:14889127477611",
+  "brand": "Henne",
+  "brand_id": "henne",
+  "name": "Arlena Top",
+  "url": "https://henne.com.au/products/arlena-top",
+  "image": "https://cdn.shopify.com/s/files/1/0483/8778/4853/files/HE-1511-ARLENA-TOP-CHOCOLATE-2.jpg?v=1771995415",
+  "price": "185.00",
+  "currency": "AUD",
+  "published_at": "2026-02-25T15:57:05+11:00",
+  "product_type": "Tops",
+  "tags": [
+   "Collection: Afterlight",
+   "Colour_Chocolate",
+   "HS_CODE",
+   "inc",
+   "Launch_Date:11/03/2026",
+   "Model: Montana"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Hauts",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "henne:14889120563563",
+  "brand": "Henne",
+  "brand_id": "henne",
+  "name": "Atlas Pant",
+  "url": "https://henne.com.au/products/atlas-pant-1",
+  "image": "https://cdn.shopify.com/s/files/1/0483/8778/4853/files/HE-1155-ATLAS-PANT-BLACK-1.jpg?v=1783486813",
+  "price": "140.00",
+  "currency": "AUD",
+  "published_at": "2026-02-25T13:01:50+11:00",
+  "product_type": "Pant",
+  "tags": [
+   "Collection: Afterlight",
+   "Colour_Black",
+   "FF_Update:07_07_2026",
+   "HS_CODE",
+   "inc",
+   "Launch_Date:25/02/2026",
+   "Model: Karsha",
+   "Model_Montana"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Pantalons",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "henne:14889127543147",
+  "brand": "Henne",
+  "brand_id": "henne",
+  "name": "Arlo Jean",
+  "url": "https://henne.com.au/products/arlo-jean-1",
+  "image": "https://cdn.shopify.com/s/files/1/0483/8778/4853/files/HE-1484-ARLO-JEAN-HERITAGEINDIGOWASH_2.jpg?v=1770785671",
+  "price": "265.00",
+  "currency": "AUD",
+  "published_at": "2026-02-11T18:21:37+11:00",
+  "product_type": "Denim Jean",
+  "tags": [
+   "Collection: Afterlight",
+   "Collection:Natural_Fibres",
+   "Colour_Blue",
+   "Denim Collection: Barrel Leg",
+   "Fibre_Filter: Cotton",
+   "HS_CODE",
+   "inc",
+   "Launch_Date:11/03/2026",
+   "Marketingcollection: Denim Defined",
+   "Marketingcollection: Denim Defined Signatures",
+   "Model: Montana",
+   "Style_Filter:Barrel_Denim",
+   "Style_Filter:Jeans_Denim",
+   "Style_Filter:Lowrise_Denim",
+   "Style_Filter:Midrise_Denim",
+   "Style_Filter:Midwash_Denim",
+   "Style_Filter:Standard_Denim",
+   "Style_Filter:Wide_Denim",
+   "Style_Filter:Zipper_Denim"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Pantalons",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "henne:14889127510379",
+  "brand": "Henne",
+  "brand_id": "henne",
+  "name": "Arlo Shirt",
+  "url": "https://henne.com.au/products/arlo-shirt",
+  "image": "https://cdn.shopify.com/s/files/1/0483/8778/4853/files/HE-1498-ARLO-SHIRT-HERITAGEINDIGOWASH_2.jpg?v=1771202616",
+  "price": "225.00",
+  "currency": "AUD",
+  "published_at": "2026-02-11T18:21:35+11:00",
+  "product_type": "Shirt",
+  "tags": [
+   "Collection: Afterlight",
+   "Collection:Natural_Fibres",
+   "Colour_Blue",
+   "Fibre_Filter: Cotton",
+   "HS_CODE",
+   "inc",
+   "Launch_Date:11/03/2026",
+   "Marketingcollection: Denim Defined",
+   "Marketingcollection: Denim Defined Signatures",
+   "Model: Montana",
+   "Style_Filter:Denim_Jackets/Coats",
+   "Style_Filter:Midwash_Denim",
+   "Style_Filter:Outerwear_Denim",
+   "Style_Filter:Shirts_Tops"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Hauts",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "henne:14878830788971",
+  "brand": "Henne",
+  "brand_id": "henne",
+  "name": "Ardelle Tank",
+  "url": "https://henne.com.au/products/ardelle-tank",
+  "image": "https://cdn.shopify.com/s/files/1/0483/8778/4853/files/HE-1419-ARDELLE-TANK-SHADOW_2.jpg?v=1770759739",
+  "price": "165.00",
+  "currency": "AUD",
+  "published_at": "2026-02-11T18:20:45+11:00",
+  "product_type": "Tank Top",
+  "tags": [
+   "Collection: Afterlight",
+   "Collection:Tanks",
+   "Colour_Grey",
+   "HS_CODE",
+   "inc",
+   "Launch_Date:25/02/2026",
+   "Model: Montana",
+   "Style_Filter:Tanks_Tops"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Hauts",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "benni:9978297516312",
+  "brand": "BENNI",
+  "brand_id": "benni",
+  "name": "Aaron Top",
+  "url": "https://benni.com.au/products/aaron-top",
+  "image": "https://cdn.shopify.com/s/files/1/0745/4831/4392/files/S29-BEN741-AaronTop-Black-26014-Benni-0870.jpg?v=1791894268",
+  "price": "72.00",
+  "currency": "AUD",
+  "published_at": "2026-01-30T11:34:59+11:00",
+  "product_type": "Tops",
+  "tags": [
+   "Mar-26",
+   "SALE",
+   "sets-and-coords"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Hauts",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "benni:9978298401048",
+  "brand": "BENNI",
+  "brand_id": "benni",
+  "name": "Aaron Top",
+  "url": "https://benni.com.au/products/aaron-top-1",
+  "image": "https://cdn.shopify.com/s/files/1/0745/4831/4392/files/Tony-Aaton-2--Image-_-Full-Body-Crop-_-1720-x-2284-px.jpg?v=1789709072",
+  "price": "72.00",
+  "currency": "AUD",
+  "published_at": "2026-01-30T11:34:59+11:00",
+  "product_type": "Tops",
+  "tags": [
+   "Mar-26",
+   "SALE",
+   "sets-and-coords"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Hauts",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "benni:9987938877720",
+  "brand": "BENNI",
+  "brand_id": "benni",
+  "name": "Agnes Long Sleeve Top",
+  "url": "https://benni.com.au/products/agnes-long-sleeve-top-1",
+  "image": "https://cdn.shopify.com/s/files/1/0745/4831/4392/files/S36-BEN752-AgnesLongSleeveTop-Black-26014-Benni-1063.jpg?v=1791894368",
+  "price": "76.00",
+  "currency": "AUD",
+  "published_at": "2026-01-30T11:34:56+11:00",
+  "product_type": "Tops",
+  "tags": [
+   "Mar-26",
+   "SALE"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Hauts",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "henne:14873705644395",
+  "brand": "Henne",
+  "brand_id": "henne",
+  "name": "Anisa Jumper",
+  "url": "https://henne.com.au/products/anisa-jumper",
+  "image": "https://cdn.shopify.com/s/files/1/0483/8778/4853/files/ANISSA_JUMPER_1_Updated.jpg?v=1780292287",
+  "price": "185.00",
+  "currency": "AUD",
+  "published_at": "2026-01-14T14:56:56+11:00",
+  "product_type": "Knitwear",
+  "tags": [
+   "Collection: Afterlight",
+   "Collection: Odile",
+   "Collection:Reflections_Aug'26",
+   "Colour_Khaki",
+   "HS_CODE",
+   "inc",
+   "Launch_Date:05/08/2026",
+   "Launch_Date:18/02/2026",
+   "Launch_Date:27/05/2026",
+   "Model_Montana",
+   "pfs-label-Back In Stock",
+   "Style_Filter:Longsleeves_Tops"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Autres",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "henne:14873705054571",
+  "brand": "Henne",
+  "brand_id": "henne",
+  "name": "Anika Mini Dress",
+  "url": "https://henne.com.au/products/anika-mini-dress",
+  "image": "https://cdn.shopify.com/s/files/1/0483/8778/4853/files/HE-1525-ANIKA-MINI-KHAKI_1.jpg?v=1770590845",
+  "price": "245.00",
+  "currency": "AUD",
+  "published_at": "2026-01-14T14:56:45+11:00",
+  "product_type": "Mini Dress",
+  "tags": [
+   "Collection: Afterlight",
+   "Colour_Khaki",
+   "HS_CODE",
+   "inc",
+   "Launch_Date:11/02/2026",
+   "Model_Montana",
+   "Style_Filter:Mini_Dresses"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Robes",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "venroy:7538141593687",
+  "brand": "Venroy",
+  "brand_id": "venroy",
+  "name": "Asymmetric Ruffle Halter Top - Bright Blue",
+  "url": "https://venroy.com.au/products/asymmetric-ruffle-halter-top-bright-blue",
+  "image": "https://cdn.shopify.com/s/files/1/2129/8823/files/AsymmetricRuffleHalterTop-BrightBlue_0838_crop.jpg?v=1767847134",
+  "price": "105.00",
+  "currency": "AUD",
+  "published_at": "2026-01-08T15:14:26+11:00",
+  "product_type": "Tops",
+  "tags": [
+   "Colour-Bright Blue",
+   "Event Dressing",
+   "fabric-Silk",
+   "HS26",
+   "HS26 DROP 1",
+   "SizeGuide-Womens",
+   "SizeGuideType–Top-Sleeveless",
+   "US LAUNCH MAR",
+   "Womens",
+   "Womens Tops"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Hauts",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "venroy:7538138906711",
+  "brand": "Venroy",
+  "brand_id": "venroy",
+  "name": "Asymmetric Draped Jersey Tank Dress - White",
+  "url": "https://venroy.com.au/products/asymmetric-draped-jersey-tank-dress-white",
+  "image": "https://cdn.shopify.com/s/files/1/2129/8823/files/AsymmetricDrapedJerseyTankDress-White_0500.jpg?v=1767825945",
+  "price": "118.00",
+  "currency": "AUD",
+  "published_at": "2026-01-08T15:12:39+11:00",
+  "product_type": "Dresses",
+  "tags": [
+   "Casual Dresses",
+   "Colour-White",
+   "DisplayTag-Back in Stock",
+   "fabric-Cotton",
+   "HS26",
+   "HS26 DROP 1",
+   "HS26BLOCK",
+   "Mini Dresses",
+   "SizeGuide-Womens",
+   "SizeGuideType–Dress-Sleeveless",
+   "US LAUNCH MAR",
+   "Vacation Edit Womens",
+   "Womens",
+   "Womens Best Sellers - April",
+   "Womens Best Sellers - June",
+   "Womens Best Sellers WK 37"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Robes",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "venroy:7538137628759",
+  "brand": "Venroy",
+  "brand_id": "venroy",
+  "name": "Baggy Denim Jean - Light Blue",
+  "url": "https://venroy.com.au/products/baggy-denim-jean-light-blue",
+  "image": "https://cdn.shopify.com/s/files/1/2129/8823/files/BaggyDenimJean-LightBlue_0431.jpg?v=1767821669",
+  "price": "144.00",
+  "currency": "AUD",
+  "published_at": "2026-01-08T15:01:00+11:00",
+  "product_type": "Pants",
+  "tags": [
+   "Colour-Light Blue",
+   "fabric-Cotton",
+   "Group-Baggy Denim Jean Mens",
+   "HS26",
+   "HS26 DROP 1",
+   "Mens",
+   "Mens Best Sellers - April",
+   "Mens Bottoms",
+   "Mens Denim",
+   "SizeGuideType–Pant-Fixed-Waist",
+   "US LAUNCH MAR"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Pantalons",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "henne:14782036050283",
+  "brand": "Henne",
+  "brand_id": "henne",
+  "name": "Amaris Sheer Pant",
+  "url": "https://henne.com.au/products/amaris-sheer-pant",
+  "image": "https://cdn.shopify.com/s/files/1/0483/8778/4853/files/HE-1365-AMARIS-PANT-CAPER_1.jpg?v=1766536175",
+  "price": "225.00",
+  "currency": "AUD",
+  "published_at": "2025-12-24T13:59:06+11:00",
+  "product_type": "Pant",
+  "tags": [
+   "Collection: Courtside Impermance Edit",
+   "Collection: Summer Edit",
+   "Colour_Khaki",
+   "HS_CODE",
+   "inc",
+   "Launch_Date:21/01/2026",
+   "Model_Montana"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Pantalons",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "henne:14782035984747",
+  "brand": "Henne",
+  "brand_id": "henne",
+  "name": "Amaris Asymmetrical Top",
+  "url": "https://henne.com.au/products/amaris-asymmetrical-top",
+  "image": "https://cdn.shopify.com/s/files/1/0483/8778/4853/files/HE-1372-AMARIS-TOP-CAPER_2.jpg?v=1766536327",
+  "price": "185.00",
+  "currency": "AUD",
+  "published_at": "2025-12-24T13:59:04+11:00",
+  "product_type": "Tops",
+  "tags": [
+   "Collection: Courtside Impermance Edit",
+   "Collection: Summer Edit",
+   "Colour_Khaki",
+   "HS_CODE",
+   "inc",
+   "Launch_Date:21/01/2026",
+   "Model_Montana"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Hauts",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "benni:9941007073560",
+  "brand": "BENNI",
+  "brand_id": "benni",
+  "name": "Ariel Mini Dress",
+  "url": "https://benni.com.au/products/ariel-mini-dress-2",
+  "image": "https://cdn.shopify.com/s/files/1/0745/4831/4392/files/S19-BEN520-ArielMiniDress-Shell-25995-Benni-0565.jpg?v=1791893426",
+  "price": "115.00",
+  "currency": "AUD",
+  "published_at": "2025-12-09T16:30:37+11:00",
+  "product_type": "Dresses",
+  "tags": [
+   "AFTERPAYMAR26",
+   "APRIL26SUMMERMD",
+   "ATSDJS",
+   "Dec-25",
+   "mini-dress",
+   "SALE"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Robes",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "benni:9838930264344",
+  "brand": "BENNI",
+  "brand_id": "benni",
+  "name": "Alfie Knit Mini Dress",
+  "url": "https://benni.com.au/products/alfie-knit-mini-dress",
+  "image": "https://cdn.shopify.com/s/files/1/0745/4831/4392/files/S14-BEN551-AlfieKnitMiniDress-Red-25850-Benni-0356.jpg?v=1791893147",
+  "price": "87.00",
+  "currency": "AUD",
+  "published_at": "2025-10-31T16:10:16+11:00",
+  "product_type": "Dresses",
+  "tags": [
+   "AFTERPAYMAR26",
+   "APRIL26SUMMERMD",
+   "knit",
+   "mini-dress",
+   "Nov-25",
+   "SALE"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Robes",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "benni:9887387058456",
+  "brand": "BENNI",
+  "brand_id": "benni",
+  "name": "Alma Maxi Dress",
+  "url": "https://benni.com.au/products/alma-maxi-dress",
+  "image": "https://cdn.shopify.com/s/files/1/0745/4831/4392/files/S26-BEN597-AlmaMaxiDress-Seafoam-25850-Benni-0755.jpg?v=1791894411",
+  "price": "122.00",
+  "currency": "AUD",
+  "published_at": "2025-10-31T16:10:16+11:00",
+  "product_type": "Dresses",
+  "tags": [
+   "AFTERPAYMAR26",
+   "APRIL26SUMMERMD",
+   "Nov-25",
+   "SALE"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Robes",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "benni:9887388926232",
+  "brand": "BENNI",
+  "brand_id": "benni",
+  "name": "Alma Mini Dress",
+  "url": "https://benni.com.au/products/alma-mini-dress",
+  "image": "https://cdn.shopify.com/s/files/1/0745/4831/4392/files/S27-BEN596-AlmaMiniDress-Citrus-25850-Benni-0775.jpg?v=1791894433",
+  "price": "108.00",
+  "currency": "AUD",
+  "published_at": "2025-10-31T16:10:16+11:00",
+  "product_type": "Dresses",
+  "tags": [
+   "AFTERPAYMAR26",
+   "APRIL26SUMMERMD",
+   "mini-dress",
+   "Nov-25",
+   "SALE"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Robes",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "benni:9846914646296",
+  "brand": "BENNI",
+  "brand_id": "benni",
+  "name": "Ariel Mini Dress",
+  "url": "https://benni.com.au/products/ariel-mini-dress-1",
+  "image": "https://cdn.shopify.com/s/files/1/0745/4831/4392/files/11.25_-_mikaylaklewer___UGC___Image___Earned___Ariel_Mini_Dress___Aperol.jpg?v=1776990508",
+  "price": "115.00",
+  "currency": "AUD",
+  "published_at": "2025-09-29T12:24:58+10:00",
+  "product_type": "Dresses",
+  "tags": [
+   "AFTERPAYMAR26",
+   "APRIL26SUMMERMD",
+   "ATSDJS",
+   "BENNI",
+   "mini-dress",
+   "Oct-25",
+   "SALE"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Robes",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "henne:14716246851947",
+  "brand": "Henne",
+  "brand_id": "henne",
+  "name": "Ari Short",
+  "url": "https://henne.com.au/products/ari-short-2",
+  "image": "https://cdn.shopify.com/s/files/1/0483/8778/4853/files/HE-1089-ARI-SHORT-WHITE-5.jpg?v=1786505861",
+  "price": "165.00",
+  "currency": "AUD",
+  "published_at": "2025-09-19T13:09:19+10:00",
+  "product_type": "Midi Short",
+  "tags": [
+   "Collection: Cosi",
+   "Collection: Courtside Impermance Edit",
+   "Collection: Entre Lieux",
+   "Collection: Monochrome",
+   "Collection: Sept/Oct",
+   "Collection: Summer Edit",
+   "Collection: Transeasonal Layers '25",
+   "collection:Aug_Lookbook_2",
+   "Collection_Bowery",
+   "collection_stillair_2026",
+   "Colour_White",
+   "gifting_marketing_december2025",
+   "HS_CODE",
+   "inc",
+   "Karsha_Model_Reshoot_11/8/2026",
+   "Launch_Date:04/01/2026",
+   "Launch_Date:18/11/2026",
+   "Launch_Date:22/04/2026",
+   "Launch_Date:26/08/2026",
+   "Launch_Date:28/09/2025",
+   "Model: Liv",
+   "pfs-label-Restocking Soon",
+   "Product_Focus_October",
+   "Style_Filter:Midi_Shorts"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Pantalons",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "venroy:7462906363991",
+  "brand": "Venroy",
+  "brand_id": "venroy",
+  "name": "Boxy Cotton Knit T Shirt - Off White",
+  "url": "https://venroy.com.au/products/boxy-cotton-knit-t-shirt-off-white",
+  "image": "https://cdn.shopify.com/s/files/1/2129/8823/files/BoxyCottonKnitTShirtOffWhite_0880.jpg?v=1755478393",
+  "price": "98.00",
+  "currency": "AUD",
+  "published_at": "2025-09-04T14:58:54+10:00",
+  "product_type": "T-Shirts",
+  "tags": [
+   "Colour-Off White",
+   "Fabric-Cotton",
+   "Group-Boxy Cotton Knit T Shirt Mens",
+   "MAR26-50%",
+   "Mens",
+   "Mens T Shirts",
+   "Mens Tops",
+   "new-website",
+   "sale-knitwear",
+   "sale-tops-mens",
+   "sale-tshirtsandtanks-mens",
+   "SALEMAR26",
+   "SizeGuideType–T-Shirts",
+   "SP25",
+   "SP25 - Drop 2"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Hauts",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "henne:14742192980331",
+  "brand": "Henne",
+  "brand_id": "henne",
+  "name": "Arch Earring",
+  "url": "https://henne.com.au/products/arch-earring-1",
+  "image": "https://cdn.shopify.com/s/files/1/0483/8778/4853/files/ARchEarring.jpg?v=1755666632",
+  "price": "87.00",
+  "currency": "AUD",
+  "published_at": "2025-09-03T13:17:34+10:00",
+  "product_type": "Earrings",
+  "tags": [
+   "Anna_Rossi",
+   "Colour_Silver",
+   "HS_CODE",
+   "inc",
+   "pfs-label-Anna Rossi",
+   "WK6_2026_AR"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Accessoires",
+  "colors": [],
+  "has_vision": false,
+  "attrs_v": 2
+ },
+ {
+  "id": "henne:14742192882027",
+  "brand": "Henne",
+  "brand_id": "henne",
+  "name": "Arch Earring",
+  "url": "https://henne.com.au/products/arch-earring",
+  "image": "https://cdn.shopify.com/s/files/1/0483/8778/4853/files/GOLDARCEARRINGS_EDIT.jpg?v=1756869192",
+  "price": "87.00",
+  "currency": "AUD",
+  "published_at": "2025-09-03T13:17:32+10:00",
+  "product_type": "Earrings",
+  "tags": [
+   "Anna_Rossi",
+   "Colour_Gold",
+   "HS_CODE",
+   "inc",
+   "pfs-label-Anna Rossi",
+   "WK6_2026_AR"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Accessoires",
+  "colors": [],
+  "has_vision": false,
+  "attrs_v": 2
+ },
+ {
+  "id": "henne:14716246229355",
+  "brand": "Henne",
+  "brand_id": "henne",
+  "name": "Anella Top",
+  "url": "https://henne.com.au/products/anella-top-5",
+  "image": "https://cdn.shopify.com/s/files/1/0483/8778/4853/files/ANELLA-TOP-DUSTY-BLUE_580.jpg?v=1756029823",
+  "price": "165.00",
+  "currency": "AUD",
+  "published_at": "2025-08-25T14:36:17+10:00",
+  "product_type": "Tops",
+  "tags": [
+   "Collection: Entre Lieux",
+   "Collection: Sept/Oct",
+   "Collection: Story Swipe Ups",
+   "Collection: Transeasonal Layers '25",
+   "Colour_Blue",
+   "HS_CODE",
+   "inc",
+   "Launch_Date:14/09/2025",
+   "Launch_Date:WK7_2026",
+   "Model: Liv",
+   "Style_Filter:Tops_Knitwear"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Hauts",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "venroy:7462965739607",
+  "brand": "Venroy",
+  "brand_id": "venroy",
+  "name": "Asymmetric Low Back Silk Ruffle Dress - Yellow Gold",
+  "url": "https://venroy.com.au/products/asymmetric-low-back-silk-ruffle-dress-yellow-gold",
+  "image": "https://cdn.shopify.com/s/files/1/2129/8823/files/AsymmetricLowBackSilkRuffleDressYellowGold_0245_109a288c-9352-4de8-95e6-699fa98d0abe.jpg?v=1755477534",
+  "price": "248.00",
+  "currency": "AUD",
+  "published_at": "2025-08-18T17:31:52+10:00",
+  "product_type": "Dresses",
+  "tags": [
+   "Colour-Yellow Gold",
+   "Event Dresses",
+   "Fabric-Silk",
+   "Full Length Dresses",
+   "Group-Asymmetric Low Back Silk Ruffle Dress Womens",
+   "MAR26-50%",
+   "new-website",
+   "sale-dresses-womens",
+   "SALEMAR26",
+   "SizeGuide-Womens",
+   "SizeGuideType–Dress-Sleeveless-Long",
+   "SP25",
+   "SP25 - Drop 1",
+   "Womens",
+   "Womens Dresses",
+   "Womens Event Dressing"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Robes",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "venroy:7462966231127",
+  "brand": "Venroy",
+  "brand_id": "venroy",
+  "name": "Asymmetric Low Back Silk Ruffle Dress - Black/White Lily",
+  "url": "https://venroy.com.au/products/asymmetric-low-back-silk-ruffle-dress-black-white-lily",
+  "image": "https://cdn.shopify.com/s/files/1/2129/8823/files/AsymmetricLowBackSilkRuffleDressBlack_WhiteLily_0439.jpg?v=1755479414",
+  "price": "261.00",
+  "currency": "AUD",
+  "published_at": "2025-08-18T17:31:50+10:00",
+  "product_type": "Dresses",
+  "tags": [
+   "Colour-Black/White Lily",
+   "Event Dresses",
+   "Fabric-Silk",
+   "Full Length Dresses",
+   "Group-Asymmetric Low Back Silk Ruffle Dress Womens",
+   "MAR26-50%",
+   "new-website",
+   "sale-dresses-womens",
+   "SALEMAR26",
+   "SizeGuide-Womens",
+   "SizeGuideType–Dress-Sleeveless-Long",
+   "SP25",
+   "SP25 - Drop 1",
+   "Vacation Edit",
+   "Vacation Edit Womens",
+   "Womens",
+   "Womens Dresses",
+   "Womens Event Dressing",
+   "Womens Vacation Edit"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Robes",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "henne:7937644363925",
+  "brand": "Henne",
+  "brand_id": "henne",
+  "name": "Ari Vest",
+  "url": "https://henne.com.au/products/remi-vest",
+  "image": "https://cdn.shopify.com/s/files/1/0483/8778/4853/files/EMBER-SKIRT-WHITE-2_a26ee555-9a65-43d4-9ae2-d1dea710733c.jpg?v=1754452179",
+  "price": "165.00",
+  "currency": "AUD",
+  "published_at": "2025-08-05T14:07:58+10:00",
+  "product_type": "Vest",
+  "tags": [
+   "Collection: Entre Lieux",
+   "Collection:Event_Ready_Essentials",
+   "Colour_White",
+   "HS_CODE",
+   "inc",
+   "Launch_Date:01/11/2023",
+   "Launch_Date:28/09/2025",
+   "Style_Filter:Vests_Tops"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Hauts",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "henne:8616181432469",
+  "brand": "Henne",
+  "brand_id": "henne",
+  "name": "Ari Short",
+  "url": "https://henne.com.au/products/ari-short-1",
+  "image": "https://cdn.shopify.com/s/files/1/0483/8778/4853/files/HE-1089-ARI-SHORT-BLACK-5.jpg?v=1786505790",
+  "price": "165.00",
+  "currency": "AUD",
+  "published_at": "2024-09-17T10:20:36+10:00",
+  "product_type": "Suit Short",
+  "tags": [
+   "Collection: Cosi",
+   "Collection: Entre Lieux",
+   "Collection: Monochrome",
+   "Collection: Sept/Oct",
+   "Collection: Summer Edit",
+   "Collection: Transeasonal Layers '25",
+   "collection:Aug_Lookbook_2",
+   "Collection:Reflections_Aug'26",
+   "Collection_Bowery",
+   "collection_stillair_2026",
+   "Colour_Black",
+   "Edit: Street Style",
+   "FF_Update:24_08_2025",
+   "gifting_marketing_december2025",
+   "HS_CODE",
+   "inc",
+   "Karsha_Model_Reshoot_11/8/2026",
+   "Launch_Date:04/01/2026",
+   "Launch_Date:05/08/2026",
+   "Launch_Date:18/11/2026",
+   "Launch_Date:22/04/2026",
+   "Launch_Date:23/10/2024",
+   "Launch_Date:26/08/2026",
+   "Launch_Date:27/10/2024",
+   "Launch_Date:28/09/2025",
+   "Model: Liv",
+   "pfs-label-Restocking Soon",
+   "Product_Focus_October",
+   "Style_Filter:Midi_Shorts"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Pantalons",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "henne:8089143214229",
+  "brand": "Henne",
+  "brand_id": "henne",
+  "name": "Argo Rib Top",
+  "url": "https://henne.com.au/products/argo-rib-top-9",
+  "image": "https://cdn.shopify.com/s/files/1/0483/8778/4853/files/ARGO-TOP-DARKTAUPE_1_Recolour.jpg?v=1779402739",
+  "price": "120.00",
+  "currency": "AUD",
+  "published_at": "2024-03-04T11:32:47+11:00",
+  "product_type": "Tops",
+  "tags": [
+   "Black_Friday_2025",
+   "Colour_Neutrals",
+   "FF_Update:13_05_2026",
+   "HS_CODE",
+   "inc",
+   "Launch_Date:03/07/2019",
+   "Launch_Date:03/11/2024",
+   "Launch_Date:04/05/2025",
+   "Launch_Date:08/04/2026",
+   "Launch_Date:08/05/2024",
+   "Launch_Date:10/07/2024",
+   "Launch_Date:18/07/2024",
+   "Launch_Date:25/09/2024",
+   "Launch_Date:28/10/2024",
+   "Style_Filter:Longsleeves_Tops"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Hauts",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "henne:8150107685013",
+  "brand": "Henne",
+  "brand_id": "henne",
+  "name": "Anella Top",
+  "url": "https://henne.com.au/products/anella-top-1",
+  "image": "https://cdn.shopify.com/s/files/1/0483/8778/4853/files/HE-778-BLACK-ANELLA-2.jpg?v=1745386698",
+  "price": "165.00",
+  "currency": "AUD",
+  "published_at": "2024-02-05T09:26:22+11:00",
+  "product_type": "Tank Top",
+  "tags": [
+   "APRIL '25",
+   "Colour_Black",
+   "FF_Update:23_04_2025",
+   "HS_CODE",
+   "inc",
+   "Launch_Date:01/09/2024",
+   "Launch_Date:03/11/2024",
+   "Launch_Date:14/09/2025",
+   "Launch_Date:15/09/2024",
+   "Launch_Date:16/03/2025",
+   "Launch_Date:20/11/2024",
+   "Launch_Date:21/02/2024",
+   "Launch_Date:26/05/2024",
+   "Launch_Date:28/05/2025"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Hauts",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "henne:7989978398869",
+  "brand": "Henne",
+  "brand_id": "henne",
+  "name": "Anella Top",
+  "url": "https://henne.com.au/products/anella-top",
+  "image": "https://cdn.shopify.com/s/files/1/0483/8778/4853/files/HE-1406-SYLVIE-JORT-WHITE_2.jpg?v=1766544525",
+  "price": "165.00",
+  "currency": "AUD",
+  "published_at": "2023-10-27T10:22:58+11:00",
+  "product_type": "Tank Top",
+  "tags": [
+   "Collection: Courtside Impermance Edit",
+   "Collection: Summer Edit",
+   "Colour_White",
+   "FF_Update:23_04_2025",
+   "HS_CODE",
+   "inc",
+   "Launch_Date:01/09/2024",
+   "Launch_Date:03/11/2024",
+   "Launch_Date:07/01/2025",
+   "Launch_Date:13/12/2023",
+   "Launch_Date:14/01/2026",
+   "Launch_Date:14/09/2025",
+   "Launch_Date:15/09/2024",
+   "Launch_Date:20/11/2024",
+   "Launch_Date:21/02/2024",
+   "Launch_Date:26/05/2024",
+   "Launch_Date:28/05/2025"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Hauts",
+  "colors": [],
+  "has_vision": false
+ },
+ {
+  "id": "henne:6603271241877",
+  "brand": "Henne",
+  "brand_id": "henne",
+  "name": "Argo Rib Top",
+  "url": "https://henne.com.au/products/argo-rib-top-4",
+  "image": "https://cdn.shopify.com/s/files/1/0483/8778/4853/files/ARGO-TOP-BLACK_1155.jpg?v=1753914155",
+  "price": "120.00",
+  "currency": "AUD",
+  "published_at": "2021-04-08T09:06:35+10:00",
+  "product_type": "Tops",
+  "tags": [
+   "Black_Friday_2025",
+   "Colour_Black",
+   "HS_CODE",
+   "inc",
+   "Launch_Date:03/07/2019",
+   "Launch_Date:03/07/2024",
+   "Launch_Date:06/03/2024",
+   "Launch_Date:06/06/2024",
+   "Launch_Date:07/07/2023",
+   "Launch_Date:09/12/2023",
+   "Launch_Date:12/09/2023",
+   "Launch_Date:14/08/2024",
+   "Launch_Date:15/06/2023",
+   "Launch_Date:19/11/2023",
+   "Launch_Date:20/03/2024",
+   "Launch_Date:21/10/2024",
+   "Launch_Date:23/10/2024",
+   "Launch_Date:28/03/2025",
+   "Style_Filter:Longsleeves_Tops"
+  ],
+  "source": "shopify",
+  "first_seen": "2026-10-31T13:36:40+00:00",
+  "type": "Hauts",
+  "colors": [],
+  "has_vision": false
  }
 ]

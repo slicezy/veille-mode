@@ -1,11 +1,11 @@
 {
  "title": "Noir, maille et coupes fluides dominent les nouveautés",
- "summary": "Sur les nouveautés de 11 marques, les hauts (41 %) et les robes (24 %) concentrent l'offre. Le noir mène la palette (25 %), suivi de l'ivoire (13 %) et du marron (11 %), et la maille est la matière la plus citée (11 %), avec noir, maille, marron, cropped et col haut repérés chez 7 marques. Les coupes ajustée, fluide et droite coexistent aussi chez 7 marques, et l'échantillon montre, chez BENNI, beaucoup de robes maxi et mini drapées, tandis que Henne mise sur des hauts en maille fine à manches longues.",
+ "summary": "Les hauts (41 %) et les robes (23 %) concentrent l'essentiel des nouveautés, dans une palette où le noir (25 %), l'ivoire (16 %) et le blanc (12 %) pèsent lourd, suivis du marron (11 %). La maille (11 %) est la matière la plus relevée, et noir, maille, marron, col rond et cropped reviennent chacun chez 8 marques sur 11, tout comme les coupes ajustée, fluide et droite. Dans l'échantillon, le drapé et la transparence apparaissent chez Bec + Bridge et VRG GRL, et les robes maxi en satin ou en soie chez Reformation et Bec + Bridge.",
  "tags": [
+  "noir",
   "maille",
-  "noir et marron",
   "coupes fluides",
-  "robes drapées"
+  "drapé"
  ],
  "palette": [
   {
@@ -16,7 +16,12 @@
   {
    "name": "Ivoire",
    "hex": "#EFE8D8",
-   "share": 13
+   "share": 16
+  },
+  {
+   "name": "Blanc",
+   "hex": "#F7F6F2",
+   "share": 12
   },
   {
    "name": "Marron",
@@ -24,16 +29,11 @@
    "share": 11
   },
   {
-   "name": "Blanc",
-   "hex": "#F7F6F2",
-   "share": 10
-  },
-  {
-   "name": "Bleu",
-   "hex": "#4A6FA5",
-   "share": 9
+   "name": "Gris",
+   "hex": "#9A9A98",
+   "share": 6
   }
  ],
  "week_label": "Semaine du 26 octobre",
- "generated_at": "2026-10-31T13:30:00+00:00"
+ "generated_at": "2026-10-31T13:47:14+00:00"
 }
