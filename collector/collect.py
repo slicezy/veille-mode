@@ -52,6 +52,15 @@ def get(url: str) -> requests.Response:
 # --------------------------------------------------------------------------
 # Stratégie 1 : Shopify (/collections/<handle>/products.json)
 # --------------------------------------------------------------------------
+TAG_RE = re.compile(r"<[^>]+>")
+
+
+def clean_description(html: str | None, limit: int = 700) -> str:
+    """Texte brut de la description (non fiable : jamais affiché tel quel, lu seulement par des règles)."""
+    text = unescape(TAG_RE.sub(" ", html or ""))
+    return re.sub(r"\s+", " ", text).strip()[:limit]
+
+
 def shopify_item(brand: dict, site: str, p: dict) -> dict:
     variants = p.get("variants") or []
     images = p.get("images") or []
@@ -66,7 +75,9 @@ def shopify_item(brand: dict, site: str, p: dict) -> dict:
         "url": f"{site}/products/{p['handle']}",
         "image": images[0].get("src") if images else None,
         "price": variants[0].get("price") if variants else None,
+        "compare_at_price": variants[0].get("compare_at_price") if variants else None,
         "currency": brand.get("currency"),
+        "description": clean_description(p.get("body_html")),
         "published_at": p.get("published_at") or p.get("created_at"),
         "product_type": p.get("product_type") or "",
         "tags": tags,
@@ -422,7 +433,7 @@ def main() -> None:
         for item in found:
             if item["id"] in items:
                 items[item["id"]].update(
-                    {k: item[k] for k in ("name", "url", "image", "price") if item.get(k)}
+                    {k: item[k] for k in ("name", "url", "image", "price", "compare_at_price", "description") if item.get(k)}
                 )
             else:
                 item["first_seen"] = now_iso

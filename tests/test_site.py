@@ -48,6 +48,26 @@ STATS = {
         {"name": "Dissh", "count": 5, "currency": "AUD", "median_price": 189.0, "min_price": 99.0, "max_price": 320.0},
         {"name": "<b>Evil</b>", "count": 1, "currency": "ZZZ!"},
     ],
+    "fx": {"source": "Banque du Canada", "rates": {"AUD": 0.91}, "date": "2026-10-30", "stale": True, "missing": ["EUR"]},
+    "prices": {
+        "on_sale_excluded": 3,
+        "types": [
+            {"type": "Robes", "n": 20, "enough": True, "median_cad": 345.5, "mean_cad": 360.0, "p25_cad": 210.0, "p75_cad": 480.0,
+             "native": [{"currency": "AUD", "n": 20, "median": 380.0, "mean": 395.0}],
+             "bands": [{"label": "moins de 100", "share": 5}, {"label": "100 à 200", "share": 20}, {"label": "200 à 400", "share": 45}, {"label": "400 et plus", "share": 30}]},
+            {"type": "Hauts", "n": 3, "enough": False, "native": []},
+        ],
+        "matrix": {"brands": ["Dissh", "<b>Evil</b>"], "types": ["Robes", "Hauts"],
+                   "cells": {"Dissh": {"Robes": {"n": 5, "median_cad": 250.0}, "Hauts": {"n": 1, "median_cad": None}},
+                             "<b>Evil</b>": {"Robes": {"n": 4, "median_cad": 99.0}, "Hauts": {"n": 0, "median_cad": None}}}},
+        "sale": [{"name": "Dissh", "n": 10, "on_sale": 4, "share": 40}],
+    },
+    "materials_by_type": [
+        {"type": "Robes", "of": 20, "known": 16, "rows": [{"name": "satin", "count": 8, "share": 50, "brands": 3, "median_cad": 410.0},
+                                                          {"name": "<img src=x onerror=window.__pwned=1>", "count": 2, "share": 12, "brands": 1}]},
+        {"type": "Hauts", "of": 3, "known": 0, "rows": []},
+    ],
+    "fibres_by_type": [{"type": "Robes", "of": 20, "known": 0, "rows": []}],
     "trends": [
         {"kind": "matière", "value": "satin", "brands": 3, "brand_names": ["Dissh", "Kookaï", "Sir."], "count": 7, "share": 58,
          "delta": 12, "new": False},
@@ -56,9 +76,11 @@ STATS = {
     ],
 }
 WEEKLY = {
-    "depart": {"label": "30 oct.", "items": 12, "types": {"Robes": 6, "Hauts": 4, "Accessoires": 2}, "brands": {}},
+    "depart": {"label": "30 oct.", "items": 12, "types": {"Robes": 6, "Hauts": 4, "Accessoires": 2}, "brands": {},
+               "price_by_type": {"Robes": {"n": 6, "median_cad": 320.0}}},
     "weeks": [
-        {"label": "26 oct.", "current": False, "items": 4, "types": {"Robes": 1, "Hauts": 3}, "brands": {"Dissh": {"new": 4}}},
+        {"label": "26 oct.", "current": False, "items": 4, "types": {"Robes": 1, "Hauts": 3}, "brands": {"Dissh": {"new": 4}},
+         "price_by_type": {"Robes": {"n": 4, "median_cad": 301.0}}},
         {"label": "2 nov.", "current": True, "items": 5, "types": {"Robes": 4, "Hauts": 1}, "brands": {"Dissh": {"new": 2}}},
     ],
 }
@@ -180,12 +202,23 @@ def main():
         check("[object" not in body, "chiffres : texte '[object ...]' affiché")
         check("Répartition par type" in body and "Rythme et prix par marque" in body, "sections des chiffres attendues")
         check("Accessoires" not in body.replace("Les accessoires ne sont pas comptés", ""), "accessoires comptés dans les chiffres")
-        check(page.locator(".bar-row").count() == 2, "2 types (sans accessoires) attendus")
+        check(page.locator("#types .bar-row").count() == 2, "2 types (sans accessoires) attendus")
         check("départ" in page.inner_text("#evolution").lower() and "en cours" in page.inner_text("#evolution").lower(), "colonnes départ et semaine en cours attendues")
         check(page.locator("#evolution tbody tr").count() == 7, "6 types + ligne des produits attendus")
         check("satin" in page.inner_text("#trends") and "+12 pts" in page.inner_text("#trends"), "tendance et écart attendus")
         check("nouveau" in page.inner_text("#trends"), "tendance nouvelle attendue")
         check("Kookaï, Sir." in page.inner_text("#trends") or "Dissh, Kookaï, Sir." in page.inner_text("#trends"), "marques de la tendance attendues")
+        check("346" in page.inner_text("#prices") and "AUD 380 (20)" in page.inner_text("#prices"), "prix par type en CAD et en devise locale attendus")
+        check("trop peu de produits" in page.inner_text("#prices").lower(), "type sans assez de produits signalé")
+        check("1 AUD = 0.910 CAD" in page.inner_text("#prices") and "dernier taux connu" in page.inner_text("#prices"), "taux et avertissement de taux périmé attendus")
+        check("EUR" in page.inner_text("#prices") and "3 produits soldés" in page.inner_text("#prices"), "devise sans taux et soldés exclus signalés")
+        check("45 %" in page.inner_text("#prices"), "tranches de prix attendues")
+        check("250" in page.inner_text("#matrix") and "99" in page.inner_text("#matrix"), "matrice marque × type attendue")
+        check("40 %" in page.inner_text("#sale"), "part de produits soldés attendue")
+        check("satin" in page.inner_text("#materials") and "410" in page.inner_text("#materials"), "matières par type avec prix attendues")
+        check("aucune composition" in page.inner_text("#fibres").lower(), "message sans composition attendu")
+        check("320" in page.inner_text("#priceevo") and "301" in page.inner_text("#priceevo"), "évolution des prix attendue")
+        check(page.locator("#matrix b, #materials img, #materials b").count() == 0, "HTML injecté dans les nouvelles sections")
         check("189" in page.inner_text("#brands") and "AUD" in page.inner_text("#brands"), "prix attendus avec devise")
         check(page.locator("#trends img, #brands b").count() == 0, "HTML injecté dans les chiffres")
         check(page.evaluate("window.__pwned") is None, "chiffres : code injecté exécuté")

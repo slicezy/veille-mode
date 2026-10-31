@@ -303,6 +303,159 @@ class TrendTests(unittest.TestCase):
         self.assertEqual(rows["A"]["currency"], "AUD")
 
 
+FX = {"source": "Banque du Canada", "rates": {"AUD": {"rate": 0.9, "date": "2026-10-30"}, "USD": {"rate": 1.4, "date": "2026-10-30"}}}
+
+
+def priced(i, brand, type_, price, cur="AUD", **kw):
+    base = {"id": f"{brand}:{i}", "brand": brand, "type": type_, "price": str(price), "currency": cur,
+            "attrs_v": analyze.ATTRS_VERSION, "first_seen": "2026-10-30T10:00:00+00:00"}
+    base.update(kw)
+    return base
+
+
+class FxTests(unittest.TestCase):
+    def test_fetch_and_convert(self):
+        def get(url):
+            self.assertIn("FXAUDCAD", url)
+            return {"observations": [{"d": "2026-10-29", "FXAUDCAD": {"v": "0.90"}}, {"d": "2026-10-30", "FXAUDCAD": {"v": "0.91"}}]}
+        fx = analyze.update_rates({"AUD", "CAD", None, "bad!"}, get=get)
+        self.assertEqual(fx["rates"], {"AUD": {"rate": 0.91, "date": "2026-10-30"}})
+        self.assertAlmostEqual(analyze.to_cad(100, "AUD", fx), 91.0)
+        self.assertEqual(analyze.to_cad(100, "CAD", fx), 100)
+        self.assertIsNone(analyze.to_cad(100, "EUR", fx))
+        self.assertIsNone(analyze.to_cad(None, "AUD", fx))
+
+    def test_source_down_keeps_last_known_rate_marked_stale(self):
+        def get(url):
+            raise OSError("réseau")
+        fx = analyze.update_rates({"AUD", "EUR"}, FX, get=get)
+        self.assertTrue(fx["rates"]["AUD"]["stale"])
+        self.assertEqual(fx["rates"]["AUD"]["rate"], 0.9)
+        self.assertNotIn("EUR", fx["rates"])
+        summary = analyze.fx_summary([{"currency": "AUD"}, {"currency": "EUR"}], fx)
+        self.assertEqual((summary["stale"], summary["missing"]), (True, ["EUR"]))
+
+    def test_absurd_rate_is_rejected(self):
+        fx = analyze.update_rates({"AUD"}, get=lambda u: {"observations": [{"d": "x", "FXAUDCAD": {"v": "0"}}]})
+        self.assertEqual(fx["rates"], {})
+
+
+class CompositionTests(unittest.TestCase):
+    def test_parse_and_main_fibre(self):
+        cases = {
+            "Fabric: 95% Viscose, 5% Elastane": ("viscose", {"viscose": 95, "élasthanne": 5}),
+            "100% Recycled Polyester": ("polyester", {"polyester": 100}),
+            "100% silk": ("soie", {"soie": 100}),
+            "50% cotton 50% linen": ("mélange", {"coton": 50, "lin": 50}),
+            "40% wool 30% acrylic 30% nylon": ("mélange", {"laine": 40, "acrylique": 30, "nylon": 30}),
+            "Shell 100% silk. Lining 100% polyester": ("soie", {"soie": 100, "polyester": 100}),
+            "100% Cuir d'agneau": ("cuir", {"cuir": 100}),
+            "Soft and flowy, runs true to size": ("", {}),
+            "": ("", {}),
+        }
+        for text, (fibre, totals) in cases.items():
+            self.assertEqual(analyze.parse_composition(text), totals, text)
+            self.assertEqual(analyze.main_fibre(analyze.parse_composition(text)), fibre, text)
+
+    def test_unknown_words_and_silly_percentages_ignored(self):
+        self.assertEqual(analyze.parse_composition("150% cotton, 30% happiness"), {})
+
+    def test_enrich_sets_fibre_sale_and_composition(self):
+        items = [{"id": "a", "price": "80", "compare_at_price": "120", "description": "100% linen dress"},
+                 {"id": "b", "price": "80", "compare_at_price": "80"},
+                 {"id": "c", "price": "80", "compare_at_price": "0.00"}]
+        analyze.enrich_text_fields(items)
+        self.assertEqual((items[0]["on_sale"], items[0]["fibre"], items[0]["composition"]), (True, "lin", "lin 100 %"))
+        self.assertEqual([items[1]["on_sale"], items[2]["on_sale"]], [False, False])
+        self.assertNotIn("fibre", items[1])  # pas de description : on ne devine pas
+
+
+class PriceSectionTests(unittest.TestCase):
+    def scope(self):
+        items = [priced(i, "A", "Robes", 100 + 10 * i) for i in range(10)]            # 100..190 AUD
+        items += [priced(20 + i, "B", "Robes", 300 + i) for i in range(4)]             # 300..303 AUD
+        items += [priced(40, "A", "Robes", 50, on_sale=True)]                          # soldée : hors médiane
+        items += [priced(50 + i, "A", "Hauts", 40) for i in range(3)]                  # trop peu pour un type
+        items += [priced(60, "C", "Robes", 100, "USD")]                                # devise différente
+        items += [priced(70, "A", "Accessoires", 20)]                                  # hors types comparés
+        return items
+
+    def test_type_stats_in_cad_and_native(self):
+        s = analyze.price_section(self.scope(), FX)
+        robes = next(r for r in s["types"] if r["type"] == "Robes")
+        self.assertTrue(robes["enough"])
+        self.assertEqual(robes["n"], 15)  # soldée exclue
+        self.assertGreater(robes["p75_cad"], robes["p25_cad"])
+        self.assertEqual(sum(b["share"] for b in robes["bands"]), 100)
+        self.assertIn({"currency": "AUD", "n": 14, "median": 165.0, "mean": robes["native"][0]["mean"]}, robes["native"])
+        hauts = next(r for r in s["types"] if r["type"] == "Hauts")
+        self.assertFalse(hauts["enough"])
+        self.assertNotIn("median_cad", hauts)
+        self.assertEqual(s["on_sale_excluded"], 1)
+
+    def test_sale_excluded_from_median(self):
+        with_sale = self.scope()
+        without = [i for i in with_sale if not i.get("on_sale")]
+        a = next(r for r in analyze.price_section(with_sale, FX)["types"] if r["type"] == "Robes")
+        b = next(r for r in analyze.price_section(without, FX)["types"] if r["type"] == "Robes")
+        self.assertEqual(a["median_cad"], b["median_cad"])
+
+    def test_matrix_needs_three_products_per_cell(self):
+        m = analyze.price_section(self.scope(), FX)["matrix"]
+        self.assertEqual(m["cells"]["A"]["Robes"]["n"], 10)
+        self.assertIsNotNone(m["cells"]["A"]["Robes"]["median_cad"])
+        self.assertIsNone(m["cells"]["C"]["Robes"]["median_cad"])  # une seule pièce
+        self.assertEqual(m["cells"]["A"]["Hauts"]["n"], 3)
+
+    def test_sale_share_per_brand(self):
+        items = [priced(i, "A", "Robes", 100, compare_at_price="150", on_sale=(i < 2)) for i in range(5)]
+        sale = analyze.price_section(items, FX)["sale"]
+        self.assertEqual(sale, [{"name": "A", "n": 5, "on_sale": 2, "share": 40}])
+
+    def test_without_rate_cad_stats_are_skipped_not_wrong(self):
+        s = analyze.price_section(self.scope(), None)
+        robes = next(r for r in s["types"] if r["type"] == "Robes")
+        self.assertFalse(robes["enough"])  # aucune devise convertible, pas de chiffre inventé
+        self.assertTrue(robes["native"])  # le prix local reste disponible
+
+    def test_brand_rows_adds_cad_and_ignores_sale(self):
+        rows = analyze.brand_rows([priced(1, "A", "Robes", 100), priced(2, "A", "Robes", 300), priced(3, "A", "Robes", 10, on_sale=True)], FX)
+        self.assertEqual((rows[0]["median_price"], rows[0]["median_cad"]), (200.0, 180.0))
+
+
+class AttributeByTypeTests(unittest.TestCase):
+    def test_top_materials_per_type_with_price(self):
+        items = [priced(i, "AB"[i % 2], "Robes", 100, material="satin") for i in range(6)]
+        items += [priced(10 + i, "A", "Robes", 200, material="jersey") for i in range(2)]
+        items += [priced(30, "A", "Robes", 90)]  # matière inconnue
+        rows = next(r for r in analyze.attribute_by_type(items, "material", FX) if r["type"] == "Robes")
+        self.assertEqual((rows["of"], rows["known"]), (9, 8))
+        self.assertEqual(rows["rows"][0]["name"], "satin")
+        self.assertEqual((rows["rows"][0]["count"], rows["rows"][0]["share"], rows["rows"][0]["brands"]), (6, 75, 2))
+        self.assertEqual(rows["rows"][0]["median_cad"], 90.0)
+        self.assertNotIn("median_cad", rows["rows"][1])  # 2 produits : trop peu pour un prix
+
+    def test_types_without_data_are_present_but_empty(self):
+        out = analyze.attribute_by_type([], "fibre", FX)
+        self.assertEqual([r["type"] for r in out], analyze.PRICE_TYPES)
+        self.assertTrue(all(r["known"] == 0 and r["rows"] == [] for r in out))
+
+
+class WeeklyPriceTests(unittest.TestCase):
+    def test_weekly_price_and_materials_by_type(self):
+        entries = [att(i, "A", "10-06", type="Robes", price=100.0 + i, material="satin") for i in range(4)]
+        agg = analyze.aggregate(entries, FX)
+        self.assertEqual(agg["materials_by_type"]["Robes"], {"satin": 4})
+        self.assertEqual(agg["price_by_type"]["Robes"]["n"], 4)
+        self.assertAlmostEqual(agg["price_by_type"]["Robes"]["median_cad"], 0.9 * 101.5, places=2)
+        self.assertNotIn("Hauts", agg["price_by_type"])
+
+    def test_archive_keeps_fibre_and_sale_flag(self):
+        entry = analyze.slim(item(1, fibre="soie", on_sale=True, price="10", currency="AUD"))
+        self.assertEqual((entry["fibre"], entry["on_sale"]), ("soie", True))
+        self.assertNotIn("description", entry)
+
+
 class DigestTests(unittest.TestCase):
     def test_digest_uses_computed_palette_not_model_palette(self):
         items = [item(1, type="Robes", colors=["noir"], has_vision=True, material="satin", length="midi")]

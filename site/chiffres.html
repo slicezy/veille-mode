@@ -20,7 +20,13 @@
   <section class="stats-head" id="head"></section>
   <section class="panel" id="types"></section>
   <section class="panel" id="evolution"></section>
+  <section class="panel" id="prices"></section>
+  <section class="panel" id="matrix"></section>
   <section class="panel" id="brands"></section>
+  <section class="panel" id="sale"></section>
+  <section class="panel" id="materials"></section>
+  <section class="panel" id="fibres"></section>
+  <section class="panel" id="priceevo"></section>
   <section class="panel" id="trends"></section>
 
   <footer id="footer"></footer>
@@ -138,13 +144,130 @@
         : "—";
       return h("tr", {}, h("td", {}, r.name), h("td", { class: "num" }, num(r.count)),
         h("td", {}, rhythm, avg == null ? null : h("div", { class: "note" }, "moy. " + avg + " / sem.")),
-        h("td", { class: "num" }, money(r.median_price, r.currency)),
+        h("td", { class: "num" }, money(r.median_price, r.currency),
+          typeof r.median_cad === "number" ? h("div", { class: "note" }, "≈ " + money(r.median_cad, "CAD")) : null),
         h("td", { class: "num" }, typeof r.min_price === "number" ? money(r.min_price, r.currency) + " – " + money(r.max_price, r.currency) : "—"));
     });
     el.append(h("div", { class: "tablewrap" }, h("table", {},
       h("thead", {}, h("tr", {}, h("th", {}, "Marque"), h("th", { class: "num" }, "Produits"), h("th", {}, "Rythme (4 sem.)"), h("th", { class: "num" }, "Prix médian"), h("th", { class: "num" }, "Fourchette"))),
       h("tbody", {}, body))));
     if (!weeks.length) el.append(h("p", { class: "hint" }, "Le rythme se calcule à partir de la deuxième semaine de suivi."));
+  }
+
+
+  function cad(v) { return typeof v === "number" ? money(v, "CAD") : "—"; }
+
+  function fxNote(stats) {
+    var fx = stats.fx || {};
+    var rates = fx.rates || {};
+    var parts = Object.keys(rates).map(function (c) { return "1 " + c + " = " + Number(rates[c]).toFixed(3) + " CAD"; });
+    var text = parts.length ? "Taux " + (fx.date ? "du " + fmtDate(fx.date) : "") + " (" + (fx.source || "Banque du Canada") + ") : " + parts.join(" · ") + "." : "Aucun taux de change disponible pour l'instant.";
+    if (fx.stale) text += " Attention : le dernier taux connu est utilisé, la source n'a pas répondu.";
+    if ((fx.missing || []).length) text += " Sans taux, exclues des montants en CAD : " + fx.missing.join(", ") + ".";
+    return text;
+  }
+
+  function renderPrices(stats) {
+    var P = stats.prices || {};
+    var el = panel("prices", "Prix par type",
+      "Prix courants des produits de la période, hors produits soldés, convertis en CAD. La médiane est le chiffre à regarder : la moyenne est tirée vers le haut par quelques pièces très chères. « Fourchette typique » : la moitié centrale des produits.");
+    var rows = P.types || [];
+    if (!rows.length) { empty(el, "Pas encore de données."); return; }
+    var body = rows.map(function (r) {
+      var local = (r.native || []).map(function (n) { return n.currency + " " + Math.round(n.median) + " (" + n.n + ")"; }).join(" · ") || "—";
+      if (!r.enough) {
+        return h("tr", {}, h("td", {}, r.type), h("td", { class: "num" }, num(r.n)),
+          h("td", { colspan: "3", class: "note" }, "Trop peu de produits pour une médiane fiable"), h("td", { class: "num" }, local));
+      }
+      return h("tr", {}, h("td", {}, r.type), h("td", { class: "num" }, num(r.n)), h("td", { class: "num" }, cad(r.median_cad)),
+        h("td", { class: "num" }, cad(r.mean_cad)), h("td", { class: "num" }, cad(r.p25_cad) + " – " + cad(r.p75_cad)),
+        h("td", { class: "num" }, local));
+    });
+    el.append(h("div", { class: "tablewrap" }, h("table", {},
+      h("thead", {}, h("tr", {}, h("th", {}, "Type"), h("th", { class: "num" }, "Produits"), h("th", { class: "num" }, "Médiane"),
+        h("th", { class: "num" }, "Moyenne"), h("th", { class: "num" }, "Fourchette typique"), h("th", { class: "num" }, "Médiane en devise locale"))),
+      h("tbody", {}, body))));
+    var enough = rows.filter(function (r) { return r.enough && r.bands; });
+    if (enough.length) {
+      el.append(h("h3", { class: "sub" }, "Répartition par tranche de prix (CAD)"));
+      var labels = enough[0].bands.map(function (b) { return b.label; });
+      el.append(h("div", { class: "tablewrap" }, h("table", {},
+        h("thead", {}, h("tr", {}, h("th", {}, "Type"), labels.map(function (l) { return h("th", {}, l); }))),
+        h("tbody", {}, enough.map(function (r) {
+          return h("tr", {}, h("td", {}, r.type), r.bands.map(function (b) {
+            return h("td", {}, h("div", { class: "cell" }, h("i", { style: "width:" + pct(b.share) + "%" }), h("span", {}, num(b.share) + " %")));
+          }));
+        })))));
+    }
+    el.append(h("p", { class: "hint" }, fxNote(stats) + (P.on_sale_excluded ? " " + P.on_sale_excluded + " produits soldés ne sont pas comptés." : "")));
+  }
+
+  function renderMatrix(stats) {
+    var M = (stats.prices || {}).matrix || {};
+    var el = panel("matrix", "Prix par marque et par type",
+      "Prix médian en CAD de chaque marque dans chaque type, pour voir où elle se situe par rapport aux autres. Il faut au moins 3 produits dans une case.");
+    var brands = M.brands || [], types = M.types || [];
+    if (!brands.length) { empty(el, "Pas encore de données."); return; }
+    el.append(h("div", { class: "tablewrap" }, h("table", {},
+      h("thead", {}, h("tr", {}, h("th", {}, "Marque"), types.map(function (t) { return h("th", { class: "num" }, t); }))),
+      h("tbody", {}, brands.map(function (b) {
+        return h("tr", {}, h("td", {}, b), types.map(function (t) {
+          var c = ((M.cells || {})[b] || {})[t] || {};
+          return h("td", { class: "num", title: (c.n || 0) + " produits" }, typeof c.median_cad === "number" ? cad(c.median_cad) : "—");
+        }));
+      })))));
+  }
+
+  function renderSale(stats) {
+    var rows = (stats.prices || {}).sale || [];
+    var el = panel("sale", "Produits soldés par marque",
+      "Part des produits suivis qui sont vendus sous leur prix barré. Utile pour repérer les marques qui bradent déjà la saison (au moins 5 produits avec prix).");
+    if (!rows.length) { empty(el, "Pas encore de données."); return; }
+    el.append(h("div", { class: "bars" }, rows.map(function (r) {
+      return h("div", { class: "bar-row" }, h("span", {}, r.name),
+        h("div", { class: "bar-track" }, h("div", { class: "bar-fill", style: "width:" + pct(r.share) + "%" })),
+        h("span", { class: "bar-val" }, num(r.on_sale) + " sur " + num(r.n) + " · " + num(r.share) + " %"));
+    })));
+  }
+
+  function renderAttrByType(id, title, hint, data, emptyText) {
+    var el = panel(id, title, hint);
+    var known = (data || []).reduce(function (s, t) { return s + num(t.known); }, 0);
+    var of = (data || []).reduce(function (s, t) { return s + num(t.of); }, 0);
+    if (!known) { empty(el, emptyText); return; }
+    el.append(h("p", { class: "hint" }, known + " produits sur " + of + " renseignés."));
+    el.append(h("div", { class: "blocks" }, data.filter(function (t) { return t.rows && t.rows.length; }).map(function (t) {
+      return h("div", { class: "block" },
+        h("h3", {}, t.type, h("span", { class: "kind" }, t.known + " / " + t.of)),
+        h("div", { class: "bars" }, t.rows.map(function (r) {
+          var extra = num(r.count) + " · " + num(r.share) + " % · " + num(r.brands) + (r.brands > 1 ? " marques" : " marque") +
+            (typeof r.median_cad === "number" ? " · " + cad(r.median_cad) : "");
+          return h("div", { class: "bar-row wide" }, h("span", {}, r.name),
+            h("div", { class: "bar-track" }, h("div", { class: "bar-fill", style: "width:" + pct(r.share) + "%" })),
+            h("span", { class: "bar-val" }, extra));
+        })));
+    })));
+  }
+
+  function renderPriceEvolution(weekly) {
+    var el = panel("priceevo", "Évolution des prix par type",
+      "Prix médian en CAD des produits repérés chaque semaine, au taux actuel pour toutes les semaines : ainsi une variation du change n'est pas prise pour une hausse de prix. Soldes exclus, au moins 3 produits par case.");
+    var buckets = [];
+    if (weekly && weekly.depart) buckets.push({ label: "Départ", sub: weekly.depart.label, data: weekly.depart });
+    (weekly && Array.isArray(weekly.weeks) ? weekly.weeks.slice(-MAX_WEEKS) : []).forEach(function (w) {
+      buckets.push({ label: w.label, sub: w.current ? "en cours" : "", data: w });
+    });
+    if (!buckets.length) { empty(el, "Pas encore de données."); return; }
+    var types = ["Robes", "Hauts", "Pantalons", "Jupes", "Manteaux"];
+    el.append(h("div", { class: "tablewrap" }, h("table", {},
+      h("thead", {}, h("tr", {}, h("th", {}, "Type"), buckets.map(function (b) { return h("th", { class: "num" }, b.label, b.sub ? h("div", { class: "note" }, b.sub) : null); }))),
+      h("tbody", {}, types.map(function (t) {
+        return h("tr", {}, h("td", {}, t), buckets.map(function (b) {
+          var c = (b.data.price_by_type || {})[t];
+          return h("td", { class: "num" }, c ? cad(c.median_cad) : "—");
+        }));
+      })))));
+    if (buckets.length < 2) el.append(h("p", { class: "hint" }, "Un seul relevé pour l'instant : les semaines suivantes s'ajouteront ici."));
   }
 
   function renderTrends(stats) {
@@ -180,7 +303,17 @@
     renderHead(stats, weekly);
     renderTypes(stats);
     renderEvolution(weekly);
+    renderPrices(stats);
+    renderMatrix(stats);
     renderBrands(stats, weekly);
+    renderSale(stats);
+    renderAttrByType("materials", "Matières par type",
+      "Matière dominante vue sur la photo (satin, maille, jersey…), par type, avec le nombre de marques et le prix médian en CAD quand il y a au moins 4 produits. La matière est estimée à l'œil : elle peut confondre satin et soie.",
+      stats.materials_by_type, "Pas encore de données.");
+    renderAttrByType("fibres", "Fibres déclarées par type",
+      "Fibre principale lue dans la composition indiquée sur la fiche produit (par exemple « 95 % viscose, 5 % élasthanne »). Seuls les produits dont la fiche donne la composition sont comptés ; « mélange » = aucune fibre à 50 % ou plus.",
+      stats.fibres_by_type, "Aucune composition lue pour l'instant : elle sera relevée à la prochaine collecte.");
+    renderPriceEvolution(weekly);
     renderTrends(stats);
   });
 })();

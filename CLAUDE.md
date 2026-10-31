@@ -39,6 +39,12 @@ Outil de veille pour une designer de mode (manager) : suivre les nouveautés de 
 - Dates sur les cartes : « Mis en ligne » = date donnée par la marque (Shopify) ; « Repéré » = premier jour où l'outil a vu le produit (Reformation n'a pas de date). Ce n'est pas la date de sortie.
 - Site : `index.html` (nouveautés) et `chiffres.html` partagent `style.css`.
 
+## Prix, taux de change, matières et fibres
+- Taux : `data/fx.json`, taux officiel de la Banque du Canada (API Valet, séries `FX<DEVISE>CAD`, sans clé), relu à chaque exécution ; si la source ne répond pas, le dernier taux connu est gardé et marqué périmé. Pas de taux = pas de montant en CAD (jamais inventé). Les noms de séries n'ont pas pu être vérifiés depuis l'environnement de développement : confirmer avec `data/fx.json` après la première exécution.
+- `stats.json` > `prices` : par type (Robes, Hauts, Pantalons, Jupes, Manteaux) médiane, moyenne, fourchette typique (25 à 75 %), tranches (< 100, 100-200, 200-400, 400+ CAD) et médiane en devise locale ; matrice marque × type (case affichée à partir de 3 produits, type à partir de 8) ; part de produits soldés par marque (à partir de 5 produits). Les produits soldés (prix barré > prix) sont exclus des médianes.
+- `stats.json` > `materials_by_type` (matière vue sur la photo) et `fibres_by_type` (fibre principale lue dans la composition de la fiche). La composition est lue par des règles (`parse_composition`), pas par Claude : « 95 % viscose, 5 % élasthanne » donne viscose ; aucune fibre à 50 % ou plus donne « mélange ». Seules les marques Shopify fournissent la description (`description` dans items.json, 700 caractères, texte brut).
+- `weekly.json` : `price_by_type` en CAD au taux actuel pour toutes les semaines (la variation du change ne fausse pas l'évolution) et `materials_by_type` par semaine.
+
 ## Prochaines étapes
 1. Laisser tourner 2 semaines pour avoir un historique, vérifier que les photos s'affichent (certains CDN bloquent le hotlinking) sinon télécharger les images dans le dépôt.
 2. Format de présentation des tendances à valider avec la designer (présentations, planches, fiches techniques). Vérifier que les 6 nouvelles marques se collectent.

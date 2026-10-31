@@ -84,5 +84,10 @@ th:last-child,td:last-child{padding-right:0}
 .trend .who{grid-column:1/-1;font-size:13px;color:var(--muted)}
 .trend .num{font-size:14px;text-align:right;font-variant-numeric:tabular-nums}
 .delta{font-weight:500}
+.sub{font-family:'Inter',system-ui,sans-serif;font-size:13px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:10px 0 0}
+.blocks{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:28px 36px}
+.block{display:flex;flex-direction:column;gap:12px;min-width:0}
+.block h3{font-size:16px;display:flex;align-items:baseline;gap:8px}
+.bar-row.wide{grid-template-columns:96px 1fr 235px}
 .empty-panel{font-size:14px;color:var(--muted);line-height:1.6}
-@media (max-width:560px){.trend{grid-template-columns:1fr}.trend .num{text-align:left}.bar-row{grid-template-columns:72px 1fr 150px;font-size:13px}}
+@media (max-width:560px){.blocks{grid-template-columns:1fr}.bar-row.wide{grid-template-columns:72px 1fr 170px;font-size:12px}.trend{grid-template-columns:1fr}.trend .num{text-align:left}.bar-row{grid-template-columns:72px 1fr 150px;font-size:13px}}

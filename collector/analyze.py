@@ -62,6 +62,14 @@ NECKLINES = [
     "col rond", "col V", "carré", "bustier", "bretelles fines", "dos nu", "col haut",
     "col chemise", "asymétrique", "décolleté plongeant",
 ]
+PRICE_TYPES = ["Robes", "Hauts", "Pantalons", "Jupes", "Manteaux"]  # types pour lesquels on compare les prix
+BANDS = [(0, 100, "moins de 100"), (100, 200, "100 à 200"), (200, 400, "200 à 400"), (400, None, "400 et plus")]  # en CAD
+MIN_TYPE_ITEMS = 8  # en dessous, pas de médiane par type
+MIN_CELL_ITEMS = 3  # en dessous, pas de médiane pour une marque dans un type
+MIN_ATTR_PRICE_ITEMS = 4  # en dessous, pas de prix médian pour une matière dans un type
+MIN_SALE_ITEMS = 5
+FX_SOURCE = "Banque du Canada"
+FX_URL = "https://www.bankofcanada.ca/valet/observations/FX{cur}CAD/json?recent=1"
 MONTHS_SHORT = ["janv.", "févr.", "mars", "avr.", "mai", "juin", "juil.", "août", "sept.", "oct.", "nov.", "déc."]
 MONTHS = [
     "janvier", "février", "mars", "avril", "mai", "juin",
@@ -395,18 +403,204 @@ def median(values: list[float]) -> float:
     return v[mid] if len(v) % 2 else (v[mid - 1] + v[mid]) / 2
 
 
-def brand_rows(scope: list[dict]) -> list[dict]:
+# --- taux de change, composition, soldes ----------------------------------------
+
+
+def fetch_rate(currency: str, get=None) -> tuple[float, str]:
+    """Dernier taux officiel de la Banque du Canada : combien de CAD pour 1 unité de la devise."""
+    if get is None:
+        import requests
+
+        def get(url):
+            return requests.get(url, timeout=20, headers={"User-Agent": "veille-mode/1.0"}).json()
+
+    obs = get(FX_URL.format(cur=currency))["observations"][-1]
+    rate = float(obs[f"FX{currency}CAD"]["v"])
+    if not 0 < rate < 10000:
+        raise ValueError("taux invraisemblable")
+    return rate, str(obs["d"])
+
+
+def update_rates(currencies, previous: dict | None = None, get=None) -> dict:
+    """Taux du jour ; si la source ne répond pas, on garde le dernier taux connu (marqué périmé)."""
+    old = (previous or {}).get("rates", {})
+    rates: dict = {}
+    for cur in sorted({c for c in currencies if c and c != "CAD" and re.fullmatch(r"[A-Z]{3}", str(c))}):
+        try:
+            rate, day = fetch_rate(cur, get)
+            rates[cur] = {"rate": rate, "date": day}
+        except Exception as exc:
+            print(f"  taux {cur} indisponible ({type(exc).__name__})")
+            if cur in old:
+                rates[cur] = {**old[cur], "stale": True}
+    return {"source": FX_SOURCE, "base": "CAD", "rates": rates}
+
+
+def rate_of(currency, fx: dict | None) -> float | None:
+    if currency == "CAD":
+        return 1.0
+    entry = ((fx or {}).get("rates") or {}).get(currency)
+    return entry["rate"] if entry else None
+
+
+def to_cad(price, currency, fx: dict | None) -> float | None:
+    rate = rate_of(currency, fx)
+    return None if price is None or rate is None else price * rate
+
+
+def fx_summary(items: list[dict], fx: dict | None) -> dict:
+    used = sorted({i.get("currency") for i in items if i.get("currency")})
+    rates = {c: (fx or {}).get("rates", {}).get(c) for c in used if c != "CAD"}
+    return {
+        "source": FX_SOURCE,
+        "rates": {c: r["rate"] for c, r in rates.items() if r},
+        "date": max((r["date"] for r in rates.values() if r and r.get("date")), default=None),
+        "stale": any(r.get("stale") for r in rates.values() if r),
+        "missing": [c for c, r in rates.items() if not r],
+    }
+
+
+def is_on_sale(item: dict) -> bool:
+    regular, price = parse_price(item.get("compare_at_price")), parse_price(item.get("price"))
+    return bool(regular and price and regular > price * 1.01)
+
+
+FIBRE_WORDS = {
+    "silk": "soie", "soie": "soie", "cotton": "coton", "coton": "coton", "linen": "lin", "lin": "lin", "flax": "lin",
+    "viscose": "viscose", "rayon": "viscose", "ecovero": "viscose", "lyocell": "lyocell", "tencel": "lyocell",
+    "modal": "modal", "polyester": "polyester", "nylon": "nylon", "polyamide": "nylon", "acrylic": "acrylique",
+    "elastane": "élasthanne", "elastan": "élasthanne", "spandex": "élasthanne", "lycra": "élasthanne",
+    "wool": "laine", "merino": "laine", "laine": "laine", "cashmere": "cachemire", "cachemire": "cachemire",
+    "leather": "cuir", "cuir": "cuir",
+}
+COMP_RE = re.compile(r"(\d{1,3})\s*%\s*([A-Za-zÀ-ÿ\-]+(?:\s+[A-Za-zÀ-ÿ\-]+)?)")
+
+
+def parse_composition(text: str) -> dict:
+    """Fibres et pourcentages lus dans « 95 % viscose, 5 % élasthanne » (dans l'ordre de mention)."""
+    totals: dict = {}
+    for pct, words in COMP_RE.findall(text or ""):
+        n = int(pct)
+        fibre = next((FIBRE_WORDS[w] for w in re.split(r"[\s\-]+", words.lower()) if w in FIBRE_WORDS), None)
+        if fibre and 0 < n <= 100:
+            totals[fibre] = totals.get(fibre, 0) + n
+    return totals
+
+
+def main_fibre(totals: dict) -> str:
+    if not totals:
+        return ""
+    if sum(totals.values()) > 105:  # plusieurs couches (doublure...) : on retient la première mentionnée
+        return next(iter(totals))
+    top = max(totals.values())
+    leaders = [f for f, v in totals.items() if v == top]
+    if len(leaders) > 1 or (top < 50 and len(totals) > 1):
+        return "mélange"
+    return leaders[0]
+
+
+def enrich_text_fields(items: list[dict]) -> None:
+    """Soldes et composition déclarée, lus par des règles : pas d'appel à Claude, rien de deviné."""
+    for item in items:
+        item["on_sale"] = is_on_sale(item)
+        if item.get("description"):
+            totals = parse_composition(item["description"])
+            item["fibre"] = main_fibre(totals)
+            top = sorted(totals.items(), key=lambda kv: -kv[1])[:3]
+            item["composition"] = ", ".join(f"{f} {v} %" for f, v in top)
+
+
+def percentile(values: list[float], q: float) -> float:
+    v = sorted(values)
+    pos = (len(v) - 1) * q
+    lo = int(pos)
+    hi = min(lo + 1, len(v) - 1)
+    return v[lo] + (v[hi] - v[lo]) * (pos - lo)
+
+
+def brand_rows(scope: list[dict], fx: dict | None = None) -> list[dict]:
     """Par marque : nombre de produits et prix (dans la devise de la marque)."""
     rows = []
     for brand in sorted({i["brand"] for i in scope if i.get("brand")}):
         mine = [i for i in scope if i.get("brand") == brand]
-        prices = [p for p in (parse_price(i.get("price")) for i in mine) if p]
+        full = [i for i in mine if not i.get("on_sale")] or mine
+        prices = [p for p in (parse_price(i.get("price")) for i in full) if p]
         currencies = Counter(i.get("currency") for i in mine if i.get("currency"))
-        row = {"name": brand, "count": len(mine), "currency": currencies.most_common(1)[0][0] if currencies else None}
+        cur = currencies.most_common(1)[0][0] if currencies else None
+        row = {"name": brand, "count": len(mine), "currency": cur}
         if prices:
             row.update({"median_price": round(median(prices), 2), "min_price": min(prices), "max_price": max(prices)})
+            cad = to_cad(median(prices), cur, fx)
+            if cad is not None and cur != "CAD":
+                row["median_cad"] = round(cad, 2)
         rows.append(row)
     return sorted(rows, key=lambda r: -r["count"])
+
+
+def price_section(scope: list[dict], fx: dict | None) -> dict:
+    """Prix par type (CAD et devise locale), tranches, marque × type et soldes. Les soldés ne comptent pas dans les médianes."""
+    rows = []
+    for i in scope:
+        p = parse_price(i.get("price"))
+        if p is not None and i.get("type") in PRICE_TYPES:
+            rows.append((i, p, to_cad(p, i.get("currency"), fx)))
+    full = [r for r in rows if not r[0].get("on_sale")]
+    types = []
+    for t in PRICE_TYPES:
+        mine = [r for r in full if r[0]["type"] == t]
+        cad = sorted(r[2] for r in mine if r[2] is not None)
+        row: dict = {"type": t, "n": len(mine), "enough": len(cad) >= MIN_TYPE_ITEMS}
+        if row["enough"]:
+            row.update({
+                "median_cad": round(median(cad), 2), "mean_cad": round(sum(cad) / len(cad), 2),
+                "p25_cad": round(percentile(cad, 0.25), 2), "p75_cad": round(percentile(cad, 0.75), 2),
+                "bands": [
+                    {"label": label, "share": round(100 * sum(1 for x in cad if x >= lo and (hi is None or x < hi)) / len(cad))}
+                    for lo, hi, label in BANDS
+                ],
+            })
+        native = []
+        for cur in sorted({r[0].get("currency") for r in mine if r[0].get("currency")}):
+            vals = [r[1] for r in mine if r[0].get("currency") == cur]
+            if len(vals) >= MIN_CELL_ITEMS:
+                native.append({"currency": cur, "n": len(vals), "median": round(median(vals), 2), "mean": round(sum(vals) / len(vals), 2)})
+        row["native"] = native
+        types.append(row)
+    brands = [b for b, _ in Counter(r[0]["brand"] for r in full).most_common()]
+    cells: dict = {}
+    for b in brands:
+        cells[b] = {}
+        for t in PRICE_TYPES:
+            cad = [r[2] for r in full if r[0]["brand"] == b and r[0]["type"] == t and r[2] is not None]
+            cells[b][t] = {"n": len(cad), "median_cad": round(median(cad), 2) if len(cad) >= MIN_CELL_ITEMS else None}
+    sale = []
+    for b in sorted({r[0]["brand"] for r in rows}):
+        mine = [r for r in rows if r[0]["brand"] == b]
+        if len(mine) >= MIN_SALE_ITEMS:
+            k = sum(1 for r in mine if r[0].get("on_sale"))
+            sale.append({"name": b, "n": len(mine), "on_sale": k, "share": round(100 * k / len(mine))})
+    sale.sort(key=lambda r: -r["share"])
+    return {"types": types, "matrix": {"brands": brands, "types": PRICE_TYPES, "cells": cells}, "sale": sale,
+            "on_sale_excluded": len(rows) - len(full)}
+
+
+def attribute_by_type(scope: list[dict], key: str, fx: dict | None, size: int = 5) -> list[dict]:
+    """Pour chaque type : les valeurs les plus fréquentes d'un attribut (matière, fibre), avec le prix médian si assez de produits."""
+    out = []
+    for t in PRICE_TYPES:
+        mine = [i for i in scope if i.get("type") == t]
+        known = [i for i in mine if i.get(key)]
+        rows = []
+        for name, c in Counter(i[key] for i in known).most_common(size):
+            sel = [i for i in known if i[key] == name]
+            cad = [to_cad(parse_price(i.get("price")), i.get("currency"), fx) for i in sel if not i.get("on_sale")]
+            cad = [x for x in cad if x]
+            row = {"name": name, "count": c, "share": round(100 * c / len(known)), "brands": len({i["brand"] for i in sel})}
+            if len(cad) >= MIN_ATTR_PRICE_ITEMS:
+                row["median_cad"] = round(median(cad), 2)
+            rows.append(row)
+        out.append({"type": t, "of": len(mine), "known": len(known), "rows": rows})
+    return out
 
 
 TREND_KINDS = [
@@ -459,7 +653,7 @@ def compute_trends(scope: list[dict], prev: list[dict] | None = None, size: int 
     return rows[:size]
 
 
-def compute_stats(items: list[dict], now: dt.datetime, baseline=frozenset()) -> dict:
+def compute_stats(items: list[dict], now: dt.datetime, baseline=frozenset(), fx: dict | None = None) -> dict:
     scope, window = select_scope(items, now, baseline)
     prev: list[dict] = []
     if window:
@@ -493,7 +687,11 @@ def compute_stats(items: list[dict], now: dt.datetime, baseline=frozenset()) -> 
         "details": ranked(details, n, 10),
         "palette": compute_palette(scope),
         "trends": compute_trends(scope, prev),
-        "brands": brand_rows(scope),
+        "brands": brand_rows(scope, fx),
+        "prices": price_section(scope, fx),
+        "fx": fx_summary(scope, fx),
+        "materials_by_type": attribute_by_type(scope, "material", fx),
+        "fibres_by_type": attribute_by_type(scope, "fibre", fx),
         "color_hex": {k: v for k, v in COLORS.items() if v},
     }
 
@@ -501,7 +699,7 @@ def compute_stats(items: list[dict], now: dt.datetime, baseline=frozenset()) -> 
 # --- historique ---------------------------------------------------------------
 
 ARCHIVE_FIELDS = ("id", "brand", "type", "colors", "material", "length", "cut", "neckline",
-                  "details", "currency", "first_seen", "has_vision", "attrs_v")
+                  "details", "currency", "first_seen", "has_vision", "attrs_v", "fibre", "on_sale")
 
 
 def slim(item: dict) -> dict:
@@ -528,7 +726,7 @@ def update_archive(archive: list[dict], items: list[dict]) -> list[dict]:
     return list(by_id.values())
 
 
-def aggregate(entries: list[dict]) -> dict:
+def aggregate(entries: list[dict], fx: dict | None = None) -> dict:
     out = {
         "items": len(entries),
         "analysed": sum(1 for e in entries if e.get("attrs_v") == ATTRS_VERSION),
@@ -540,7 +738,16 @@ def aggregate(entries: list[dict]) -> dict:
         "necklines": dict(Counter(e["neckline"] for e in entries if e.get("neckline"))),
         "details": dict(Counter(d for e in entries for d in e.get("details", []))),
         "brands": {},
+        "materials_by_type": {t: dict(Counter(e["material"] for e in entries if e.get("type") == t and e.get("material")))
+                              for t in PRICE_TYPES},
+        "price_by_type": {},
     }
+    for t in PRICE_TYPES:  # prix au taux actuel pour toutes les semaines : la variation du change ne fausse pas l'évolution
+        cad = [to_cad(e["price"], e.get("currency"), fx) for e in entries
+               if e.get("type") == t and e.get("price") and not e.get("on_sale")]
+        cad = [x for x in cad if x]
+        if len(cad) >= MIN_CELL_ITEMS:
+            out["price_by_type"][t] = {"n": len(cad), "median_cad": round(median(cad), 2)}
     for brand in sorted({e["brand"] for e in entries if e.get("brand")}):
         mine = [e for e in entries if e.get("brand") == brand]
         prices = [e["price"] for e in mine if e.get("price")]
@@ -552,7 +759,7 @@ def aggregate(entries: list[dict]) -> dict:
     return out
 
 
-def build_weekly(archive: list[dict], baseline, now: dt.datetime) -> dict:
+def build_weekly(archive: list[dict], baseline, now: dt.datetime, fx: dict | None = None) -> dict:
     """Agrégats par semaine (lundi-dimanche) selon le jour où chaque produit a été repéré.
 
     Le catalogue de départ (premier jour de suivi d'une marque) est à part : c'est un état des lieux, pas une semaine de sorties.
@@ -579,13 +786,13 @@ def build_weekly(archive: list[dict], baseline, now: dt.datetime) -> dict:
                 "start": day.isoformat(),
                 "label": f"{day.day} {MONTHS_SHORT[day.month - 1]}",
                 "current": day == this_monday,
-                **aggregate(weeks.get(day, [])),
+                **aggregate(weeks.get(day, []), fx),
             })
             day += dt.timedelta(days=7)
     out = {"generated_at": now.isoformat(timespec="seconds"), "depart": None, "weeks": result}
     if depart:
         first = min(item_date(e) for e in depart).date()
-        out["depart"] = {"start": first.isoformat(), "label": f"{first.day} {MONTHS_SHORT[first.month - 1]}", **aggregate(depart)}
+        out["depart"] = {"start": first.isoformat(), "label": f"{first.day} {MONTHS_SHORT[first.month - 1]}", **aggregate(depart, fx)}
     return out
 
 
@@ -631,6 +838,9 @@ def build_digest(client, items: list[dict], stats: dict, scope: list[dict] | Non
         f"Longueurs : {_fmt(stats['lengths'])}\n"
         f"Encolures : {_fmt(stats['necklines'])}\n"
         f"Détails : {_fmt(stats['details'])}\n"
+        "Prix médians par type (CAD, hors soldes) : "
+        + (", ".join(f"{r['type']} {round(r['median_cad'])}" for r in stats.get("prices", {}).get("types", []) if r.get("enough")) or "non disponibles")
+        + "\n"
         f"Tendances chez au moins {TREND_MIN_BRANDS} marques : "
         + (", ".join(f"{t['value']} ({t['kind']}, {t['brands']} marques)" for t in stats.get("trends", [])[:8]) or "aucune pour l'instant")
         + "\n\n"
@@ -677,15 +887,21 @@ def main() -> None:
     items_path.write_text(json.dumps(items, ensure_ascii=False, indent=1), encoding="utf-8")
 
     now = dt.datetime.now(dt.timezone.utc)
+    enrich_text_fields(items)
+    items_path.write_text(json.dumps(items, ensure_ascii=False, indent=1), encoding="utf-8")
+    fx_path = DATA / "fx.json"
+    previous_fx = json.loads(fx_path.read_text(encoding="utf-8")) if fx_path.exists() else None
+    fx = update_rates({i.get("currency") for i in items}, previous_fx)
+    fx_path.write_text(json.dumps(fx, ensure_ascii=False, indent=1), encoding="utf-8")
     archive_path = DATA / "archive.json"
     archive = json.loads(archive_path.read_text(encoding="utf-8")) if archive_path.exists() else []
     archive = update_archive(archive, items)
     archive_path.write_text(json.dumps(archive, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     baseline = baseline_ids(archive)
     (DATA / "weekly.json").write_text(
-        json.dumps(build_weekly(archive, baseline, now), ensure_ascii=False, indent=1), encoding="utf-8"
+        json.dumps(build_weekly(archive, baseline, now, fx), ensure_ascii=False, indent=1), encoding="utf-8"
     )
-    stats = compute_stats(items, now, baseline)
+    stats = compute_stats(items, now, baseline, fx)
     (DATA / "stats.json").write_text(json.dumps(stats, ensure_ascii=False, indent=1), encoding="utf-8")
 
     digest = build_digest(client, items, stats, select_scope(items, now, baseline)[0])

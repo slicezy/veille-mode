@@ -61,6 +61,20 @@ class ShopifyAllTests(unittest.TestCase):
         self.assertFalse(info["ok"])
 
 
+class ShopifyFieldsTests(unittest.TestCase):
+    def test_description_and_compare_at_price(self):
+        p = product(1, "Silk Dress")
+        p["body_html"] = "<p>Soft &amp; flowy.</p><ul><li>100% Silk</li></ul><script>alert(1)</script>"
+        p["variants"] = [{"price": "80.00", "compare_at_price": "120.00"}]
+        item = collect.shopify_item(BRAND, "https://venroy.example", p)
+        self.assertEqual(item["compare_at_price"], "120.00")
+        self.assertIn("100% Silk", item["description"])
+        self.assertIn("Soft & flowy.", item["description"])
+        self.assertNotIn("<", item["description"])
+        self.assertLessEqual(len(collect.clean_description("x" * 5000)), 700)
+        self.assertEqual(collect.clean_description(None), "")
+
+
 class SitemapDateTests(unittest.TestCase):
     def test_lastmod_is_not_a_publication_date(self):
         xml = '<urlset><url><loc>https://x.example/products/a</loc><lastmod>2026-11-01T00:00:00Z</lastmod></url></urlset>'
