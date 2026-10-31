@@ -1,0 +1,55 @@
+{
+ "generated_at": "2026-10-31T02:25:17+00:00",
+ "brands": {
+  "reformation": {
+   "ok": false,
+   "strategy": null,
+   "count": 0,
+   "errors": [
+    "shopify: 404 Client Error: Not Found for url: https://www.thereformation.com/collections/new/products.json?limit=40",
+    "jsonld: 404 Client Error: Not Found for url: https://www.thereformation.com/new-arrivals",
+    "sitemap: 404 Client Error: Not Found for url: https://www.thereformation.com/sitemap.xml"
+   ],
+   "new": 0
+  },
+  "dissh": {
+   "ok": true,
+   "strategy": "shopify",
+   "count": 40,
+   "errors": [],
+   "new": 40
+  },
+  "kookai": {
+   "ok": true,
+   "strategy": "shopify",
+   "count": 40,
+   "errors": [],
+   "new": 40
+  },
+  "sir": {
+   "ok": true,
+   "strategy": "shopify",
+   "count": 40,
+   "errors": [],
+   "new": 40
+  },
+  "bec-bridge": {
+   "ok": true,
+   "strategy": "shopify",
+   "count": 40,
+   "errors": [],
+   "new": 40
+  },
+  "meshki": {
+   "ok": false,
+   "strategy": null,
+   "count": 0,
+   "errors": [
+    "shopify: 403 Client Error: Forbidden for url: https://www.meshki.com.au/collections/new/products.json?limit=40",
+    "jsonld: 403 Client Error: Forbidden for url: https://www.meshki.com.au/collections/new-arrivals",
+    "sitemap: 403 Client Error: Forbidden for url: https://www.meshki.com.au/sitemap.xml"
+   ],
+   "new": 0
+  }
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "title": "Noir, ivoire et argent : fluidité et dentelle",
+ "summary": "Bec + Bridge s'appuie sur les robes maxi drapées, asymétriques ou bustier, en argent, ivoire et crème, avec quelques pièces noires comme la robe Kira ou le legging Aranya. Dissh travaille la dentelle blanche ou ivoire, la soie noire, la ramie minérale et une veste en fausse fourrure latte. Kookaï décline des jupes mini et midi, des tops et débardeurs simples, des pantalons taille basse (flare, bootleg) en marron, beige et noir. Sir. complète avec des boucles d'oreilles argentées.",
+ "tags": [
+  "robes maxi",
+  "dentelle",
+  "monochrome",
+  "métallisé"
+ ],
+ "palette": [
+  {
+   "name": "noir",
+   "hex": "#111111"
+  },
+  {
+   "name": "ivoire",
+   "hex": "#F5F0E1"
+  },
+  {
+   "name": "argent",
+   "hex": "#C0C0C5"
+  },
+  {
+   "name": "marron chocolat",
+   "hex": "#5C3A2B"
+  },
+  {
+   "name": "beige latte",
+   "hex": "#C9B197"
+  }
+ ],
+ "week_label": "Semaine du 26 octobre",
+ "generated_at": "2026-10-31T02:27:18+00:00"
+}
