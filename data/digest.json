@@ -1,39 +1,39 @@
 {
- "title": "Noir, blanc et mini : une veille sobre et ajustée",
- "summary": "Les nouveautés des 11 marques sont dominées par les hauts (41 %) et les robes (23 %), dans une palette très neutre : noir 24 %, blanc 22 % et gris 17 %. Le noir est repéré chez 8 marques, le mini chez 7 et la coupe ajustée chez 6, tandis que la maille (5 marques) et le col rond (5 marques) s'installent. L'échantillon montre aussi de l'ivoire et de l'argent chez Bec + Bridge, ainsi que des jupes midi en soie chez Reformation, avec des prix médians de 353 CAD pour les robes et 152 CAD pour les hauts.",
+ "title": "Noir, maille et coupes fluides dominent les nouveautés",
+ "summary": "Les hauts (41 %) et les robes (24 %) pèsent l'essentiel des nouveautés, dans une palette dominée par le noir (26 %), le blanc (15 %) et l'ivoire (14 %). Le col rond (7 marques), la coupe fluide, la coupe droite et le mini (7 marques chacun) sont les tendances les plus partagées, tandis que la maille est la matière la plus citée (16 %, 6 marques). Dans l'échantillon, le drapé et les bretelles fines reviennent souvent, notamment chez Bec + Bridge et VRG GRL, avec des prix médians allant de 126 CAD pour les hauts à 333 CAD pour les manteaux.",
  "tags": [
-  "palette neutre",
-  "mini",
+  "noir",
   "maille",
-  "ajusté"
+  "col rond",
+  "mini"
  ],
  "palette": [
   {
    "name": "Noir",
    "hex": "#1F1E1C",
-   "share": 24
+   "share": 26
   },
   {
    "name": "Blanc",
    "hex": "#F7F6F2",
-   "share": 22
+   "share": 15
+  },
+  {
+   "name": "Ivoire",
+   "hex": "#EFE8D8",
+   "share": 14
   },
   {
    "name": "Gris",
    "hex": "#9A9A98",
-   "share": 17
+   "share": 8
   },
   {
-   "name": "Beige",
-   "hex": "#D8C8AE",
-   "share": 7
-  },
-  {
-   "name": "Argent",
-   "hex": "#C0C0C4",
-   "share": 7
+   "name": "Marron",
+   "hex": "#6B4A36",
+   "share": 8
   }
  ],
  "week_label": "Semaine du 26 octobre",
- "generated_at": "2026-10-31T15:49:53+00:00"
+ "generated_at": "2026-10-31T16:04:01+00:00"
 }
