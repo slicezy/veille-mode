@@ -58,3 +58,5 @@ Outil de veille pour une designer de mode (manager) : suivre les nouveautés de 
 - Rester poli avec les sites : 2 s entre requêtes, pages publiques seulement. Un 403 ou un défi anti-robots veut dire d'arrêter, pas de contourner.
 - Instagram : pas de scraping (contraire aux conditions de Meta). Passer par l'API Business Discovery ou un service tiers si on y revient.
 - Tests : `python -m unittest discover -s tests` (hors ligne) et `python tests/test_site.py` (site, nécessite Playwright et Chrome).
+
+- Page « Chiffres » : prix en CAD uniquement (plus de devise locale). Page « Nouveautés » : filtres séparés « Marque » (pastilles arrondies carrées) et « Type » ; Favoris à part, en haut à droite.

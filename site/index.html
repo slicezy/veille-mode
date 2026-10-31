@@ -23,10 +23,10 @@
   <section class="filters">
     <div class="filters-top">
       <h2>Nouveautés</h2>
-      <span class="meta" id="count"></span>
+      <div class="top-right"><span class="meta" id="count"></span><span id="favs"></span></div>
     </div>
-    <div class="row" id="brands"></div>
-    <div class="row" id="types"></div>
+    <div class="filter-group"><span class="filter-label">Marque</span><div class="row" id="brands"></div></div>
+    <div class="filter-group"><span class="filter-label">Type</span><div class="row" id="types"></div></div>
   </section>
 
   <section id="grid-area"></section>
@@ -88,8 +88,8 @@
     s.innerHTML = HEART.replace("FILL", filled ? "var(--accent)" : "none").replace("STROKE", filled ? "var(--accent)" : "#1F1E1C");
     return s;
   }
-  function pill(label, active, onclick, extra, count) {
-    return h("button", { type: "button", class: "pill", "aria-pressed": String(active), onclick: onclick }, extra || null, label,
+  function pill(label, active, onclick, extra, count, cls) {
+    return h("button", { type: "button", class: "pill" + (cls ? " " + cls : ""), "aria-pressed": String(active), onclick: onclick }, extra || null, label,
       count == null ? null : h("span", { class: "n" }, String(count)));
   }
   function colorHex(name) {
@@ -139,7 +139,7 @@
     state.items.forEach(function (i) { if (brands.indexOf(i.brand) === -1) brands.push(i.brand); });
     document.getElementById("brands").replaceChildren.apply(
       document.getElementById("brands"),
-      brands.map(function (b) { return pill(b, state.brand === b, function () { state.brand = b; render(); }); })
+      brands.map(function (b) { return pill(b, state.brand === b, function () { state.brand = b; render(); }, null, null, "brand"); })
     );
     var inBrand = function (i) { return state.brand === "Toutes" || i.brand === state.brand; };
     var favCount = Object.keys(state.favs).filter(function (k) { return state.favs[k]; }).length;
@@ -148,8 +148,9 @@
       var n = countItems(function (i) { return inBrand(i) && i.type === t; });
       if (n || state.type === t) typePills.push(pill(t, state.type === t, function () { state.type = t; render(); }, null, n));
     });
-    typePills.push(pill("Favoris (" + favCount + ")", state.onlyFavs, function () { state.onlyFavs = !state.onlyFavs; render(); }, heartIcon(false)));
     document.getElementById("types").replaceChildren.apply(document.getElementById("types"), typePills);
+    document.getElementById("favs").replaceChildren(
+      pill("Favoris (" + favCount + ")", state.onlyFavs, function () { state.onlyFavs = !state.onlyFavs; render(); }, heartIcon(false), null, "fav"));
   }
 
   function visibleItems() {

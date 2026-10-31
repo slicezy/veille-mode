@@ -129,7 +129,7 @@
 
   function renderBrands(stats, weekly) {
     var el = panel("brands", "Rythme et prix par marque",
-      "Rythme : nouveautés repérées chaque semaine (hors catalogue de départ). Prix : médiane et fourchette dans la devise de la marque, sur les produits de la période.");
+      "Rythme : nouveautés repérées chaque semaine (hors catalogue de départ). Prix : médiane et fourchette en CAD, hors produits soldés, sur les produits de la période.");
     var rows = stats.brands || [];
     if (!rows.length) { empty(el, "Pas encore de données."); return; }
     var weeks = weekly && Array.isArray(weekly.weeks) ? weekly.weeks.slice(-4) : [];
@@ -144,9 +144,8 @@
         : "—";
       return h("tr", {}, h("td", {}, r.name), h("td", { class: "num" }, num(r.count)),
         h("td", {}, rhythm, avg == null ? null : h("div", { class: "note" }, "moy. " + avg + " / sem.")),
-        h("td", { class: "num" }, money(r.median_price, r.currency),
-          typeof r.median_cad === "number" ? h("div", { class: "note" }, "≈ " + money(r.median_cad, "CAD")) : null),
-        h("td", { class: "num" }, typeof r.min_price === "number" ? money(r.min_price, r.currency) + " – " + money(r.max_price, r.currency) : "—"));
+        h("td", { class: "num" }, cad(r.median_cad)),
+        h("td", { class: "num" }, typeof r.min_cad === "number" ? cad(r.min_cad) + " – " + cad(r.max_cad) : "—"));
     });
     el.append(h("div", { class: "tablewrap" }, h("table", {},
       h("thead", {}, h("tr", {}, h("th", {}, "Marque"), h("th", { class: "num" }, "Produits"), h("th", {}, "Rythme (4 sem.)"), h("th", { class: "num" }, "Prix médian"), h("th", { class: "num" }, "Fourchette"))),
@@ -174,18 +173,16 @@
     var rows = P.types || [];
     if (!rows.length) { empty(el, "Pas encore de données."); return; }
     var body = rows.map(function (r) {
-      var local = (r.native || []).map(function (n) { return n.currency + " " + Math.round(n.median) + " (" + n.n + ")"; }).join(" · ") || "—";
       if (!r.enough) {
         return h("tr", {}, h("td", {}, r.type), h("td", { class: "num" }, num(r.n)),
-          h("td", { colspan: "3", class: "note" }, "Trop peu de produits pour une médiane fiable"), h("td", { class: "num" }, local));
+          h("td", { colspan: "3", class: "note" }, "Trop peu de produits pour une médiane fiable"));
       }
       return h("tr", {}, h("td", {}, r.type), h("td", { class: "num" }, num(r.n)), h("td", { class: "num" }, cad(r.median_cad)),
-        h("td", { class: "num" }, cad(r.mean_cad)), h("td", { class: "num" }, cad(r.p25_cad) + " – " + cad(r.p75_cad)),
-        h("td", { class: "num" }, local));
+        h("td", { class: "num" }, cad(r.mean_cad)), h("td", { class: "num" }, cad(r.p25_cad) + " – " + cad(r.p75_cad)));
     });
     el.append(h("div", { class: "tablewrap" }, h("table", {},
       h("thead", {}, h("tr", {}, h("th", {}, "Type"), h("th", { class: "num" }, "Produits"), h("th", { class: "num" }, "Médiane"),
-        h("th", { class: "num" }, "Moyenne"), h("th", { class: "num" }, "Fourchette typique"), h("th", { class: "num" }, "Médiane en devise locale"))),
+        h("th", { class: "num" }, "Moyenne"), h("th", { class: "num" }, "Fourchette typique"))),
       h("tbody", {}, body))));
     var enough = rows.filter(function (r) { return r.enough && r.bands; });
     if (enough.length) {

@@ -530,9 +530,10 @@ def brand_rows(scope: list[dict], fx: dict | None = None) -> list[dict]:
         row = {"name": brand, "count": len(mine), "currency": cur}
         if prices:
             row.update({"median_price": round(median(prices), 2), "min_price": min(prices), "max_price": max(prices)})
-            cad = to_cad(median(prices), cur, fx)
-            if cad is not None and cur != "CAD":
-                row["median_cad"] = round(cad, 2)
+            for key, value in (("median_cad", median(prices)), ("min_cad", min(prices)), ("max_cad", max(prices))):
+                converted = to_cad(value, cur, fx)
+                if converted is not None:
+                    row[key] = round(converted, 2)
         rows.append(row)
     return sorted(rows, key=lambda r: -r["count"])
 
@@ -559,12 +560,6 @@ def price_section(scope: list[dict], fx: dict | None) -> dict:
                     for lo, hi, label in BANDS
                 ],
             })
-        native = []
-        for cur in sorted({r[0].get("currency") for r in mine if r[0].get("currency")}):
-            vals = [r[1] for r in mine if r[0].get("currency") == cur]
-            if len(vals) >= MIN_CELL_ITEMS:
-                native.append({"currency": cur, "n": len(vals), "median": round(median(vals), 2), "mean": round(sum(vals) / len(vals), 2)})
-        row["native"] = native
         types.append(row)
     brands = [b for b, _ in Counter(r[0]["brand"] for r in full).most_common()]
     cells: dict = {}

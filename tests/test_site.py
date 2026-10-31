@@ -45,7 +45,7 @@ STATS = {
         {"name": "Accessoires", "count": 2, "share": 17, "brands": 1},
     ],
     "brands": [
-        {"name": "Dissh", "count": 5, "currency": "AUD", "median_price": 189.0, "min_price": 99.0, "max_price": 320.0},
+        {"name": "Dissh", "count": 5, "currency": "AUD", "median_price": 189.0, "min_price": 99.0, "max_price": 320.0, "median_cad": 172.0, "min_cad": 90.0, "max_cad": 291.0},
         {"name": "<b>Evil</b>", "count": 1, "currency": "ZZZ!"},
     ],
     "fx": {"source": "Banque du Canada", "rates": {"AUD": 0.91}, "date": "2026-10-30", "stale": True, "missing": ["EUR"]},
@@ -53,9 +53,8 @@ STATS = {
         "on_sale_excluded": 3,
         "types": [
             {"type": "Robes", "n": 20, "enough": True, "median_cad": 345.5, "mean_cad": 360.0, "p25_cad": 210.0, "p75_cad": 480.0,
-             "native": [{"currency": "AUD", "n": 20, "median": 380.0, "mean": 395.0}],
              "bands": [{"label": "moins de 100", "share": 5}, {"label": "100 à 200", "share": 20}, {"label": "200 à 400", "share": 45}, {"label": "400 et plus", "share": 30}]},
-            {"type": "Hauts", "n": 3, "enough": False, "native": []},
+            {"type": "Hauts", "n": 3, "enough": False},
         ],
         "matrix": {"brands": ["Dissh", "<b>Evil</b>"], "types": ["Robes", "Hauts"],
                    "cells": {"Dissh": {"Robes": {"n": 5, "median_cad": 250.0}, "Hauts": {"n": 1, "median_cad": None}},
@@ -169,8 +168,9 @@ def main():
         check("mis en ligne 12 oct" in text.lower(), "date « Mis en ligne » attendue")
         check("repéré 30 oct" in text.lower(), "date « Repéré » attendue")
         check(page.locator(".nav a").count() == 2, "navigation attendue")
-        check(page.locator("#brands .pill").count() == 4, "Toutes + 3 marques attendues")
-        check(page.locator("#types .pill").count() == 5, "Tout + 3 types + Favoris attendus")
+        check(page.locator("#brands .pill.brand").count() == 4, "Toutes + 3 marques attendues")
+        check("marque" in page.inner_text(".filters").lower() and page.locator(".filter-label").count() == 2, "libellés Marque et Type attendus")
+        check(page.locator("#types .pill").count() == 4 and page.locator("#favs .pill").count() == 1, "Tout + 3 types, Favoris à part attendus")
         check("Robes" in page.inner_text("#types") and "Sortie produit" not in page.inner_text("body"), "types attendus, plus d'ancienne catégorie")
         check("40 %" in page.inner_text(".palette-card") and "12 photos" in page.inner_text(".palette-card"), "parts de palette et base attendues")
         check(page.locator(".dot").count() >= len(items), "pastilles de couleur attendues")
@@ -190,7 +190,7 @@ def main():
         check(page.locator(".card").count() == 3, "filtre Jupes : 3 cartes attendues")
         page.locator("#types .pill", has_text="Tout").first.click()
         page.locator(".heart").first.click()
-        check("Favoris (1)" in page.inner_text("#types"), "compteur de favoris attendu")
+        check("Favoris (1)" in page.inner_text("#favs"), "compteur de favoris attendu")
         page.get_by_role("button", name="Favoris (1)").click()
         check(page.locator(".card").count() == 1, "filtre favoris : 1 carte attendue")
         check(not errors, f"erreurs JavaScript : {errors}")
@@ -208,7 +208,7 @@ def main():
         check("satin" in page.inner_text("#trends") and "+12 pts" in page.inner_text("#trends"), "tendance et écart attendus")
         check("nouveau" in page.inner_text("#trends"), "tendance nouvelle attendue")
         check("Kookaï, Sir." in page.inner_text("#trends") or "Dissh, Kookaï, Sir." in page.inner_text("#trends"), "marques de la tendance attendues")
-        check("346" in page.inner_text("#prices") and "AUD 380 (20)" in page.inner_text("#prices"), "prix par type en CAD et en devise locale attendus")
+        check("346" in page.inner_text("#prices") and "AUD" not in page.inner_text("#prices").replace("1 AUD = 0.910 CAD", ""), "prix par type en CAD seulement")
         check("trop peu de produits" in page.inner_text("#prices").lower(), "type sans assez de produits signalé")
         check("1 AUD = 0.910 CAD" in page.inner_text("#prices") and "dernier taux connu" in page.inner_text("#prices"), "taux et avertissement de taux périmé attendus")
         check("EUR" in page.inner_text("#prices") and "3 produits soldés" in page.inner_text("#prices"), "devise sans taux et soldés exclus signalés")
@@ -219,7 +219,7 @@ def main():
         check("aucune composition" in page.inner_text("#fibres").lower(), "message sans composition attendu")
         check("320" in page.inner_text("#priceevo") and "301" in page.inner_text("#priceevo"), "évolution des prix attendue")
         check(page.locator("#matrix b, #materials img, #materials b").count() == 0, "HTML injecté dans les nouvelles sections")
-        check("189" in page.inner_text("#brands") and "AUD" in page.inner_text("#brands"), "prix attendus avec devise")
+        check("172" in page.inner_text("#brands") and "AUD" not in page.inner_text("#brands"), "prix de marque en CAD seulement")
         check(page.locator("#trends img, #brands b").count() == 0, "HTML injecté dans les chiffres")
         check(page.evaluate("window.__pwned") is None, "chiffres : code injecté exécuté")
         check(page.locator(".nav a[aria-current=page]").inner_text() == "Chiffres", "page courante attendue")

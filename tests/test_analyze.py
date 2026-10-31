@@ -387,7 +387,7 @@ class PriceSectionTests(unittest.TestCase):
         self.assertEqual(robes["n"], 15)  # soldée exclue
         self.assertGreater(robes["p75_cad"], robes["p25_cad"])
         self.assertEqual(sum(b["share"] for b in robes["bands"]), 100)
-        self.assertIn({"currency": "AUD", "n": 14, "median": 165.0, "mean": robes["native"][0]["mean"]}, robes["native"])
+        self.assertNotIn("native", robes)
         hauts = next(r for r in s["types"] if r["type"] == "Hauts")
         self.assertFalse(hauts["enough"])
         self.assertNotIn("median_cad", hauts)
@@ -416,7 +416,6 @@ class PriceSectionTests(unittest.TestCase):
         s = analyze.price_section(self.scope(), None)
         robes = next(r for r in s["types"] if r["type"] == "Robes")
         self.assertFalse(robes["enough"])  # aucune devise convertible, pas de chiffre inventé
-        self.assertTrue(robes["native"])  # le prix local reste disponible
 
     def test_brand_rows_adds_cad_and_ignores_sale(self):
         rows = analyze.brand_rows([priced(1, "A", "Robes", 100), priced(2, "A", "Robes", 300), priced(3, "A", "Robes", 10, on_sale=True)], FX)
