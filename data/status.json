@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-31T13:36:40+00:00",
+ "generated_at": "2026-10-31T13:52:47+00:00",
  "brands": {
   "reformation": {
    "ok": true,
@@ -51,14 +51,14 @@
    "strategy": "shopify",
    "count": 40,
    "errors": [],
-   "new": 40
+   "new": 0
   },
   "henne": {
    "ok": true,
    "strategy": "shopify",
    "count": 40,
    "errors": [],
-   "new": 40
+   "new": 0
   },
   "elka-collective": {
    "ok": true,
@@ -86,7 +86,7 @@
    "strategy": "shopify",
    "count": 40,
    "errors": [],
-   "new": 40
+   "new": 0
   }
  }
 }

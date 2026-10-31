@@ -1,27 +1,27 @@
 {
- "title": "Noir, maille et coupes fluides dominent les nouveautés",
- "summary": "Les hauts (41 %) et les robes (23 %) concentrent l'essentiel des nouveautés, dans une palette où le noir (25 %), l'ivoire (16 %) et le blanc (12 %) pèsent lourd, suivis du marron (11 %). La maille (11 %) est la matière la plus relevée, et noir, maille, marron, col rond et cropped reviennent chacun chez 8 marques sur 11, tout comme les coupes ajustée, fluide et droite. Dans l'échantillon, le drapé et la transparence apparaissent chez Bec + Bridge et VRG GRL, et les robes maxi en satin ou en soie chez Reformation et Bec + Bridge.",
+ "title": "Noir dominant, mini et drapés fluides",
+ "summary": "Les hauts (41 %) et les robes (23 %) concentrent les nouveautés, dans une palette dominée par le noir (24 %), l'ivoire (14 %) et le blanc (13 %), avec le marron et le bleu présents chez 10 marques sur 11. Les coupes fluides et droites ressortent chez 10 marques, la mini chez 10 également, et le col rond chez 9, tandis que la maille (13 %) mène les matières. Dans l'échantillon, le drapé et la transparence reviennent chez Bec + Bridge et VRG GRL, et la mini apparaît chez Kookaï et Venroy ; les robes ont un prix médian de 265 CAD et les manteaux de 333 CAD.",
  "tags": [
   "noir",
+  "mini",
   "maille",
-  "coupes fluides",
   "drapé"
  ],
  "palette": [
   {
    "name": "Noir",
    "hex": "#1F1E1C",
-   "share": 25
+   "share": 24
   },
   {
    "name": "Ivoire",
    "hex": "#EFE8D8",
-   "share": 16
+   "share": 14
   },
   {
    "name": "Blanc",
    "hex": "#F7F6F2",
-   "share": 12
+   "share": 13
   },
   {
    "name": "Marron",
@@ -29,11 +29,11 @@
    "share": 11
   },
   {
-   "name": "Gris",
-   "hex": "#9A9A98",
-   "share": 6
+   "name": "Bleu",
+   "hex": "#4A6FA5",
+   "share": 8
   }
  ],
  "week_label": "Semaine du 26 octobre",
- "generated_at": "2026-10-31T13:47:14+00:00"
+ "generated_at": "2026-10-31T14:03:57+00:00"
 }

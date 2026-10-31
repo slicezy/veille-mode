@@ -1,0 +1,10 @@
+{
+ "source": "Banque du Canada",
+ "base": "CAD",
+ "rates": {
+  "AUD": {
+   "rate": 0.9813,
+   "date": "2026-10-30"
+  }
+ }
+}
