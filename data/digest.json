@@ -1,37 +1,32 @@
 {
- "title": "Noir et ivoire, coupes fluides et habillées",
- "summary": "Les hauts (41 %) et les robes (24 %) dominent les nouveautés, dans une palette où le noir (22 %), le blanc (18 %) et l'ivoire (11 %) pèsent le plus ; noir et ivoire ressortent chacun chez 7 marques. La coupe fluide est la tendance la plus répandue (9 marques), devant le style habillé (8) et le décontracté (7), et la maille est la matière la plus citée (18 %). Côté formes, le col rond (16 %) et le maxi (14 %) arrivent en tête, le col V est relevé chez 7 marques, et l'échantillon montre de l'ivoire drapé chez Bec + Bridge.",
+ "title": "Décontracté et habillé, en noir et ivoire",
+ "summary": "Les hauts (41 %) et les robes (24 %) dominent les nouveautés des 11 marques, avec le noir en tête de palette (25 %), devant le blanc (16 %) et l'ivoire (11 %). La maille est la matière la plus relevée (18 %), le maxi la longueur la plus fréquente (14 %) et le col rond l'encolure principale (16 %). Côté style, le décontracté et le fluide ressortent chez les 11 marques, l'habillé chez 10, avec un prix médian de 255 CAD pour les robes.",
  "tags": [
   "noir",
   "ivoire",
-  "fluide",
-  "maille"
+  "maille",
+  "fluide"
  ],
  "en": {
-  "title": "Black and ivory, fluid and dressed-up cuts",
-  "summary": "Tops (41%) and dresses (24%) dominate the new arrivals, in a palette where black (22%), white (18%) and ivory (11%) weigh the most; black and ivory each stand out at 7 brands. Fluid cuts are the most widespread trend (9 brands), ahead of dressy style (8) and casual (7), and knit is the most frequent material (18%). In terms of shapes, the round neckline (16%) and maxi length (14%) lead, the V-neck appears at 7 brands, and the sample shows draped ivory pieces at Bec + Bridge.",
+  "title": "Casual meets dressy, in black and ivory",
+  "summary": "Tops (41%) and dresses (24%) dominate the new arrivals from the 11 brands, with black leading the palette (25%), ahead of white (16%) and ivory (11%). Knit is the most frequently spotted material (18%), maxi the most common length (14%) and the crew neck the main neckline (16%). On style, casual and fluid stand out across all 11 brands and dressy across 10, with a median price of 255 CAD for dresses.",
   "tags": [
    "black",
    "ivory",
-   "fluid",
-   "knit"
+   "knit",
+   "fluid"
   ]
  },
  "palette": [
   {
    "name": "Noir",
    "hex": "#1F1E1C",
-   "share": 22
+   "share": 25
   },
   {
    "name": "Blanc",
    "hex": "#F7F6F2",
-   "share": 18
-  },
-  {
-   "name": "Marron",
-   "hex": "#6B4A36",
-   "share": 12
+   "share": 16
   },
   {
    "name": "Ivoire",
@@ -39,12 +34,17 @@
    "share": 11
   },
   {
+   "name": "Marron",
+   "hex": "#6B4A36",
+   "share": 10
+  },
+  {
    "name": "Bleu",
    "hex": "#4A6FA5",
-   "share": 7
+   "share": 8
   }
  ],
  "week_label": "Semaine du 26 octobre",
  "week_label_en": "Week of October 26",
- "generated_at": "2026-10-31T17:38:53+00:00"
+ "generated_at": "2026-10-31T18:03:15+00:00"
 }
