@@ -1,39 +1,50 @@
 {
- "title": "Noir, ivoire et fluidité : une silhouette épurée",
- "summary": "Les hauts (41 %) et les robes (24 %) dominent les nouveautés, avec une palette de noir (25 %), de blanc (16 %) et d'ivoire (12 %) ; le noir et l'ivoire reviennent chacun chez 7 marques sur 11. La coupe fluide est la tendance la plus partagée (9 marques), devant le col rond, le cropped et le mini (8 marques chacun), et la maille est la matière la plus présente (17 %). Dans l'échantillon, Bec + Bridge décline l'ivoire et l'argent en drapés, et le prix médian des robes est de 255 CAD contre 126 CAD pour les hauts.",
+ "title": "Maille, noir et ivoire : hauts et robes dominent",
+ "summary": "Les hauts (41 %) et les robes (24 %) dominent les nouveautés, dans une palette de noir (22 %), ivoire (16 %), blanc (13 %) et beige (10 %). La maille est la matière la plus présente (18 %) et reste une tendance chez 6 des 11 marques, avec des coupes droites (7 marques) et fluides (6 marques) et le col rond à 16 %. Les robes ont un prix médian de 255 CAD contre 126 CAD pour les hauts, et le maxi (14 %) devance le cropped et le mini (12 % chacun).",
  "tags": [
-  "coupe fluide",
+  "maille",
   "noir et ivoire",
-  "cropped et mini",
-  "maille"
+  "coupe droite",
+  "col rond"
  ],
+ "en": {
+  "title": "Knit, black and ivory: tops and dresses lead",
+  "summary": "Tops (41%) and dresses (24%) dominate the new arrivals, in a palette of black (22%), ivory (16%), white (13%) and beige (10%). Knit is the most common material (18%) and remains a trend at 6 of the 11 brands, alongside straight cuts (7 brands) and fluid cuts (6 brands), with the crew neck at 16%. Dresses have a median price of CAD 255 versus CAD 126 for tops, and maxi length (14%) edges out cropped and mini (12% each).",
+  "tags": [
+   "knit",
+   "black and ivory",
+   "straight cut",
+   "crew neck"
+  ]
+ },
  "palette": [
   {
    "name": "Noir",
    "hex": "#1F1E1C",
-   "share": 25
-  },
-  {
-   "name": "Blanc",
-   "hex": "#F7F6F2",
-   "share": 16
+   "share": 22
   },
   {
    "name": "Ivoire",
    "hex": "#EFE8D8",
-   "share": 12
+   "share": 16
+  },
+  {
+   "name": "Blanc",
+   "hex": "#F7F6F2",
+   "share": 13
+  },
+  {
+   "name": "Beige",
+   "hex": "#D8C8AE",
+   "share": 10
   },
   {
    "name": "Marron",
    "hex": "#6B4A36",
-   "share": 11
-  },
-  {
-   "name": "Bleu",
-   "hex": "#4A6FA5",
-   "share": 7
+   "share": 8
   }
  ],
  "week_label": "Semaine du 26 octobre",
- "generated_at": "2026-10-31T16:19:10+00:00"
+ "week_label_en": "Week of October 26",
+ "generated_at": "2026-10-31T17:23:55+00:00"
 }
