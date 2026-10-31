@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille mode · Chiffres</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">Veille</div>
+    <div class="head-right">
+      <nav class="nav"><a href="index.html">Nouveautés</a><a href="chiffres.html" aria-current="page">Chiffres</a></nav>
+      <div class="meta" id="meta"></div>
+    </div>
+  </header>
+
+  <section class="stats-head" id="head"></section>
+  <section class="panel" id="types"></section>
+  <section class="panel" id="evolution"></section>
+  <section class="panel" id="brands"></section>
+  <section class="panel" id="trends"></section>
+
+  <footer id="footer"></footer>
+</div>
+
+<script>
+(function () {
+  // Toutes les données viennent de fichiers produits par la collecte : elles sont écrites avec textContent uniquement.
+  var TYPES = ["Robes", "Hauts", "Pantalons", "Jupes", "Manteaux", "Autres"];
+  var MAX_WEEKS = 8;
+
+  function h(tag, props) {
+    var n = document.createElement(tag);
+    Object.keys(props || {}).forEach(function (k) {
+      var v = props[k];
+      if (k === "class") n.className = v;
+      else if (k === "style") n.style.cssText = v;
+      else n.setAttribute(k, v);
+    });
+    function add(kid) {
+      if (kid == null) return;
+      if (Array.isArray(kid)) { kid.forEach(add); return; }
+      n.append(kid.nodeType ? kid : document.createTextNode(String(kid)));
+    }
+    for (var i = 2; i < arguments.length; i++) add(arguments[i]);
+    return n;
+  }
+  function pct(x) { return Math.max(0, Math.min(100, Number(x) || 0)); }
+  function num(x) { return Number(x) || 0; }
+  function fmtDate(iso) {
+    var d = new Date(iso);
+    return isNaN(d) ? "" : d.toLocaleDateString("fr-CA", { day: "numeric", month: "short" });
+  }
+  function money(v, cur) {
+    if (typeof v !== "number") return "—";
+    try {
+      return new Intl.NumberFormat("fr-CA", { style: "currency", currency: /^[A-Z]{3}$/.test(cur || "") ? cur : "USD", currencyDisplay: "code", maximumFractionDigits: 0 }).format(v);
+    } catch (e) { return String(Math.round(v)); }
+  }
+  function panel(id, title, hint) {
+    var el = document.getElementById(id);
+    el.replaceChildren(h("h2", {}, title), hint ? h("p", { class: "hint" }, hint) : null);
+    return el;
+  }
+  function empty(el, text) { el.append(h("div", { class: "empty-panel" }, text)); }
+
+  function renderHead(stats, weekly) {
+    var weeksCount = weekly && Array.isArray(weekly.weeks) ? weekly.weeks.length : 0;
+    var scope = stats.window_days
+      ? "Les " + stats.window_days + " derniers jours : " + stats.total + " nouveautés repérées (hors catalogue de départ)."
+      : "Pour l'instant, tous les produits suivis (" + stats.total + "), faute d'assez de nouveautés sur 7 jours. La vue passera d'elle-même à la semaine.";
+    document.getElementById("head").replaceChildren(
+      h("div", { class: "eyebrow" }, "Chiffres"),
+      h("h1", {}, "Ce qui sort, et à quel rythme"),
+      h("p", {}, scope + " " + (stats.with_photo_analysis || 0) + " ont été décrits à partir de leur photo. Les accessoires ne sont pas comptés."),
+      weeksCount ? null : h("p", {}, "Historique en construction : l'évolution d'une semaine à l'autre apparaîtra à partir de la deuxième semaine de suivi.")
+    );
+    document.getElementById("meta").textContent = stats.generated_at ? "Mise à jour " + fmtDate(stats.generated_at) : "";
+  }
+
+  function renderTypes(stats) {
+    var el = panel("types", "Répartition par type", "Part de chaque type dans les produits de la période.");
+    var rows = (stats.types || []).filter(function (t) { return t.name !== "Accessoires"; });
+    if (!rows.length) { empty(el, "Pas encore de données."); return; }
+    el.append(h("div", { class: "bars" }, rows.map(function (t) {
+      return h("div", { class: "bar-row" },
+        h("span", {}, t.name),
+        h("div", { class: "bar-track" }, h("div", { class: "bar-fill", style: "width:" + pct(t.share) + "%" })),
+        h("span", { class: "bar-val" }, num(t.count) + " · " + num(t.share) + " %" + (t.brands ? " · " + t.brands + " marques" : "")));
+    })));
+  }
+
+  function bucketTotal(b) {
+    return TYPES.reduce(function (sum, t) { return sum + num((b.types || {})[t]); }, 0);
+  }
+
+  function renderEvolution(weekly) {
+    var el = panel("evolution", "Évolution d'une semaine à l'autre",
+      "Part de chaque type parmi les nouveautés repérées chaque semaine. Le « départ » est le catalogue existant le premier jour de suivi : c'est un état des lieux, pas une semaine de sorties.");
+    var buckets = [];
+    if (weekly && weekly.depart) buckets.push({ label: "Départ", sub: weekly.depart.label, data: weekly.depart });
+    var weeks = weekly && Array.isArray(weekly.weeks) ? weekly.weeks.slice(-MAX_WEEKS) : [];
+    weeks.forEach(function (w) { buckets.push({ label: w.label, sub: w.current ? "en cours" : "", data: w }); });
+    if (!buckets.length) { empty(el, "Pas encore de données."); return; }
+    var head = h("tr", {}, h("th", {}, "Type"), buckets.map(function (b) {
+      return h("th", {}, b.label, b.sub ? h("div", { class: "note" }, b.sub) : null);
+    }));
+    var body = TYPES.map(function (t) {
+      return h("tr", {}, h("td", {}, t), buckets.map(function (b) {
+        var total = bucketTotal(b.data);
+        if (!total) return h("td", {}, "—");
+        var share = Math.round(100 * num((b.data.types || {})[t]) / total);
+        return h("td", {}, h("div", { class: "cell" }, h("i", { style: "width:" + pct(share) + "%" }), h("span", {}, share + " %")));
+      }));
+    });
+    var totals = h("tr", {}, h("td", { class: "note" }, "Produits"), buckets.map(function (b) { return h("td", { class: "note" }, bucketTotal(b.data)); }));
+    el.append(h("div", { class: "tablewrap" }, h("table", {}, h("thead", {}, head), h("tbody", {}, body, totals))));
+    if (!weeks.length) el.append(h("p", { class: "hint" }, "Un seul relevé pour l'instant. Les semaines suivantes s'ajouteront ici."));
+  }
+
+  function renderBrands(stats, weekly) {
+    var el = panel("brands", "Rythme et prix par marque",
+      "Rythme : nouveautés repérées chaque semaine (hors catalogue de départ). Prix : médiane et fourchette dans la devise de la marque, sur les produits de la période.");
+    var rows = stats.brands || [];
+    if (!rows.length) { empty(el, "Pas encore de données."); return; }
+    var weeks = weekly && Array.isArray(weekly.weeks) ? weekly.weeks.slice(-4) : [];
+    var done = weekly && Array.isArray(weekly.weeks) ? weekly.weeks.filter(function (w) { return !w.current; }) : [];
+    var maxNew = 1;
+    weeks.forEach(function (w) { Object.keys(w.brands || {}).forEach(function (b) { maxNew = Math.max(maxNew, num(w.brands[b].new)); }); });
+    var body = rows.map(function (r) {
+      var series = weeks.map(function (w) { return num(((w.brands || {})[r.name] || {}).new); });
+      var avg = done.length ? Math.round(10 * done.reduce(function (s, w) { return s + num(((w.brands || {})[r.name] || {}).new); }, 0) / done.length) / 10 : null;
+      var rhythm = weeks.length
+        ? h("div", { class: "mini", title: series.join(" · ") }, series.map(function (v) { return h("i", { style: "height:" + Math.max(6, Math.round(100 * v / maxNew)) + "%" }); }))
+        : "—";
+      return h("tr", {}, h("td", {}, r.name), h("td", { class: "num" }, num(r.count)),
+        h("td", {}, rhythm, avg == null ? null : h("div", { class: "note" }, "moy. " + avg + " / sem.")),
+        h("td", { class: "num" }, money(r.median_price, r.currency)),
+        h("td", { class: "num" }, typeof r.min_price === "number" ? money(r.min_price, r.currency) + " – " + money(r.max_price, r.currency) : "—"));
+    });
+    el.append(h("div", { class: "tablewrap" }, h("table", {},
+      h("thead", {}, h("tr", {}, h("th", {}, "Marque"), h("th", { class: "num" }, "Produits"), h("th", {}, "Rythme (4 sem.)"), h("th", { class: "num" }, "Prix médian"), h("th", { class: "num" }, "Fourchette"))),
+      h("tbody", {}, body))));
+    if (!weeks.length) el.append(h("p", { class: "hint" }, "Le rythme se calcule à partir de la deuxième semaine de suivi."));
+  }
+
+  function renderTrends(stats) {
+    var el = panel("trends", "Tendances chez 3 marques ou plus",
+      "Une couleur, matière, longueur, coupe, encolure ou un détail qu'on retrouve chez au moins 3 marques différentes sur la période, et sur au moins 3 produits.");
+    var rows = stats.trends || [];
+    if (!rows.length) { empty(el, "Aucune tendance pour l'instant : il faut le même attribut chez 3 marques et sur 3 produits."); return; }
+    el.append(h("div", {}, rows.map(function (t) {
+      var delta = "";
+      if (typeof t.delta === "number") delta = t.new ? "nouveau" : (t.delta > 0 ? "+" : "") + t.delta + " pts";
+      return h("div", { class: "trend" },
+        h("h3", {}, h("span", { class: "kind" }, t.kind), t.value),
+        h("div", { class: "num" }, num(t.brands) + " marques · " + num(t.count) + " produits · " + num(t.share) + " %",
+          delta ? h("span", { class: "delta" }, " · " + delta) : null),
+        h("div", { class: "who" }, (t.brand_names || []).join(", ")));
+    })));
+    if (!rows.some(function (t) { return typeof t.delta === "number"; })) {
+      el.append(h("p", { class: "hint" }, "Pour l'instant, ce sont les attributs les plus répandus chez les marques suivies. L'écart avec la semaine précédente (points, ou « nouveau ») apparaîtra dès la deuxième semaine, et c'est lui qui signale une vraie tendance."));
+    }
+  }
+
+  function load(path) {
+    return fetch(path, { cache: "no-store" }).then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; });
+  }
+
+  Promise.all([load("data/stats.json"), load("data/weekly.json")]).then(function (res) {
+    var stats = res[0], weekly = res[1];
+    document.getElementById("footer").textContent = "Les chiffres sont calculés à chaque mise à jour à partir des produits suivis. Les dates sont celles où chaque produit a été repéré.";
+    if (!stats) {
+      document.getElementById("head").replaceChildren(h("h1", {}, "Chiffres"), h("p", {}, "Aucune donnée pour l'instant. Lance le workflow « Veille quotidienne »."));
+      return;
+    }
+    renderHead(stats, weekly);
+    renderTypes(stats);
+    renderEvolution(weekly);
+    renderBrands(stats, weekly);
+    renderTrends(stats);
+  });
+})();
+</script>
+</body>
+</html>

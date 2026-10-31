@@ -13,6 +13,7 @@ Outil de veille pour une designer de mode (manager) : suivre les nouveautés de 
 ## État des marques (vérifié par les exécutions GitHub Actions)
 - Dissh, Kookaï, Sir., Bec + Bridge : Shopify, collecte OK (stratégie `shopify`, 40 produits chacune).
 - Reformation : Salesforce Commerce Cloud (pas Shopify). Stratégie `jsonld_pdp` : la liste `/new/this-week` donne les adresses des produits en JSON-LD (ItemList), puis chaque fiche fournit nom, photo, prix. Écrite à partir d'un rapport de diagnostic ; à confirmer par `data/status.json` après la première exécution.
+- Venroy, Henne, Elka Collective, VRG GRL : ajoutées d'après la liste « Brands We Love » de la designer (stratégie `shopify` essayée en premier ; plateforme à confirmer par `data/status.json` après la première exécution). Bayse et BENNI : désactivées, adresse du site à confirmer.
 - Meshki : désactivée (`"enabled": false`). Cloudflare renvoie 403 sur tout, sites AU et US. Ne pas chercher à contourner. Pistes légitimes : infolettre, flux officiel fourni par la marque, ajout manuel par capture d'écran.
 
 ## Outils de diagnostic
@@ -27,9 +28,18 @@ Outil de veille pour une designer de mode (manager) : suivre les nouveautés de 
 - Les adresses de photos sont refusées si ce n'est pas du http(s) public.
 - À vérifier après une exécution : répartition des types, part de produits avec photo lue, palette plausible.
 
+## Historique et page « Chiffres »
+- Accessoires : ne sont ni affichés ni comptés (`EXCLUDED_TYPES`). Ceux dont le nom est évident (sac, collants...) ne passent pas par Claude (`is_plain_accessory`). Ils restent dans `items.json` pour ne pas être recollectés comme nouveaux.
+- `data/archive.json` : copie allégée de chaque produit (sans nom, adresse ni photo), jamais purgée. `items.json` garde 60 jours.
+- Catalogue de départ : les produits repérés le premier jour de suivi d'une marque (`baseline_ids`) sont un état des lieux, pas des sorties. Ils sont exclus du rythme et de la vue « 7 derniers jours » (qui n'est utilisée qu'à partir de `MIN_WINDOW_ITEMS` nouveautés).
+- `data/weekly.json` : agrégats par semaine (lundi-dimanche) selon le jour où chaque produit a été repéré, plus le « départ ». Alimente l'évolution et le rythme par marque.
+- `data/stats.json` : ajoute `trends` (attribut chez au moins 3 marques et 3 produits, avec écart en points avec la semaine précédente quand elle a au moins 12 produits) et `brands` (nombre, prix médian et fourchette, dans la devise de la marque).
+- Dates sur les cartes : « Mis en ligne » = date donnée par la marque (Shopify) ; « Repéré » = premier jour où l'outil a vu le produit (Reformation n'a pas de date). Ce n'est pas la date de sortie.
+- Site : `index.html` (nouveautés) et `chiffres.html` partagent `style.css`.
+
 ## Prochaines étapes
 1. Laisser tourner 2 semaines pour avoir un historique, vérifier que les photos s'affichent (certains CDN bloquent le hotlinking) sinon télécharger les images dans le dépôt.
-2. Format de présentation des tendances à valider avec la designer (présentations, planches, fiches techniques). Puis une page « Chiffres » (évolution semaine après semaine, tendances chez 3 marques ou plus) et un résumé hebdomadaire enregistré pour l'historique.
+2. Format de présentation des tendances à valider avec la designer (présentations, planches, fiches techniques). Confirmer les adresses de Bayse et BENNI. Vérifier que les 4 nouvelles marques se collectent.
 3. Planches thématiques et exports (PDF/images), ajout de pièces par capture d'écran, brief de design généré à partir d'une tendance.
 4. Sources en amont : défilés via titres et liens publics (flux RSS), sans identifiants. Ne jamais mettre d'identifiants de comptes (Vogue ou autres) dans le dépôt ni les utiliser dans la collecte automatique.
 5. Ensuite seulement : influenceurs / Instagram, passage à 50 marques.

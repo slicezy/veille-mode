@@ -35,7 +35,11 @@ IMAGE_DELAY = 2.0  # secondes entre deux téléchargements de photos
 IMAGE_MAX_SIDE = 640
 IMAGE_MAX_BYTES = 8_000_000
 WINDOW_DAYS = 7
-MIN_WINDOW_ITEMS = 12  # en dessous, les chiffres portent sur tous les produits gardés
+MIN_WINDOW_ITEMS = 24  # en dessous, les chiffres portent sur tous les produits gardés
+EXCLUDED_TYPES = {"Accessoires"}  # classés (pour ne pas les compter à tort) mais jamais affichés ni comptés
+TREND_MIN_BRANDS = 3  # une tendance apparaît chez au moins 3 marques
+TREND_MIN_ITEMS = 3
+MIN_PREV_ITEMS = 12  # produits nécessaires la semaine précédente pour comparer
 MIN_VISION_ITEMS = 10  # en dessous, la palette utilise aussi les couleurs déduites du texte
 
 TYPES = ["Robes", "Hauts", "Pantalons", "Jupes", "Manteaux", "Accessoires", "Autres"]
@@ -58,6 +62,7 @@ NECKLINES = [
     "col rond", "col V", "carré", "bustier", "bretelles fines", "dos nu", "col haut",
     "col chemise", "asymétrique", "décolleté plongeant",
 ]
+MONTHS_SHORT = ["janv.", "févr.", "mars", "avr.", "mai", "juin", "juil.", "août", "sept.", "oct.", "nov.", "déc."]
 MONTHS = [
     "janvier", "février", "mars", "avril", "mai", "juin",
     "juillet", "août", "septembre", "octobre", "novembre", "décembre",
@@ -79,9 +84,9 @@ TYPE_RULES = [
     ("Pantalons", r"pant(s)?|trouser(s)?|jean(s)?|short(s)?|legging(s)?|denim|pantalon(s)?"),
     (
         "Accessoires",
-        r"bag(s)?|clutch(es)?|tote|belt(s)?|scarf|scarves|hat(s)?|cap|shoe(s)?|boot(s)?|sandal(s)?|"
-        r"mule(s)?|heel(s)?|flat(s)?|sneaker(s)?|jewel(l)?ery|earring(s)?|necklace(s)?|bracelet(s)?|"
-        r"ring(s)?|sunglass(es)?|sock(s)?|wallet|accessor(y|ies)|sac(s)?|ceinture(s)?",
+        r"bag(s)?|clutch(es)?|tote|belt(s)?|scarf|scarves|hat(s)?|caps|shoe(s)?|boot(s)?|sandal(s)?|"
+        r"mule(s)?|heel(s)?|sneaker(s)?|jewel(l)?ery|earring(s)?|necklace(s)?|bracelet(s)?|"
+        r"sunglass(es)?|sock(s)?|tights|stocking(s)?|hosiery|wallet|accessor(y|ies)|sac(s)?|ceinture(s)?",
     ),
     (
         "Hauts",
@@ -99,6 +104,14 @@ def heuristic_type(item: dict) -> str:
             if rx.search(text or ""):
                 return label
     return "Autres"
+
+
+def is_plain_accessory(item: dict) -> bool:
+    """Accessoire évident d'après le nom : pas besoin de photo ni d'appel à Claude."""
+    if heuristic_type(item) != "Accessoires":
+        return False
+    text = f"{item.get('name', '')} {item.get('product_type', '')}"
+    return not any(rx.search(text) for label, rx in TYPE_REGEXES if label != "Accessoires")
 
 
 def extract_json(text: str, want: type | None = None):
@@ -239,15 +252,25 @@ def build_item_prompt(item: dict, has_vision: bool) -> str:
     )
 
 
-def analyze_item(client, item: dict, image: dict | None) -> dict:
-    has_vision = image is not None
-    text = ask(client, ATTR_MODEL, build_item_prompt(item, has_vision), 600, image)
+def _read_attrs(text: str) -> dict:
     try:
-        raw = extract_json(text, dict)
+        return extract_json(text, dict)
     except ValueError:
         # Garde le début de la réponse dans le journal pour comprendre ce qui ne va pas.
         raise ValueError(f"réponse illisible : {text[:160]!r}") from None
-    return normalize(raw, item, has_vision)
+
+
+def analyze_item(client, item: dict, image: dict | None) -> dict:
+    has_vision = image is not None
+    try:
+        text = ask(client, ATTR_MODEL, build_item_prompt(item, has_vision), 600, image)
+        return normalize(_read_attrs(text), item, has_vision)
+    except ValueError as exc:
+        if not has_vision:
+            raise
+        print(f"  {item.get('id')} : {exc} ; nouvel essai sans photo")
+    text = ask(client, ATTR_MODEL, build_item_prompt(item, False), 600)
+    return normalize(_read_attrs(text), item, False)
 
 
 def analyze_items(client, items: list[dict], loader=load_image, limit: int = MAX_PER_RUN, sleep=time.sleep) -> int:
@@ -258,6 +281,9 @@ def analyze_items(client, items: list[dict], loader=load_image, limit: int = MAX
     todo = [i for i in items if i.get("attrs_v") != ATTRS_VERSION]
     done = 0
     for item in todo:
+        if is_plain_accessory(item):
+            item.update({"type": "Accessoires", "colors": [], "has_vision": False, "attrs_v": ATTRS_VERSION})
+            continue
         if client and done < limit:
             image = None
             if item.get("image"):
@@ -297,12 +323,41 @@ def item_date(item: dict) -> dt.datetime | None:
     return None
 
 
-def week_items(items: list[dict], now: dt.datetime) -> tuple[list[dict], int | None]:
+def counted(items: list[dict]) -> list[dict]:
+    """Produits pris en compte dans les chiffres : tout sauf les accessoires."""
+    return [i for i in items if i.get("type") not in EXCLUDED_TYPES]
+
+
+def baseline_ids(entries: list[dict]) -> set:
+    """Produits de départ : ceux repérés le tout premier jour où une marque a été suivie.
+
+    Ce n'est pas un rythme de sorties mais le catalogue existant : on les met à part.
+    """
+    first: dict = {}
+    seen: dict = {}
+    for e in entries:
+        d = item_date(e)
+        if d is None or "id" not in e:
+            continue
+        seen[e["id"]] = (e.get("brand"), d.date())
+        b = e.get("brand")
+        if b not in first or d.date() < first[b]:
+            first[b] = d.date()
+    return {i for i, (b, day) in seen.items() if day == first[b]}
+
+
+def select_scope(items: list[dict], now: dt.datetime, baseline=frozenset()) -> tuple[list[dict], int | None]:
+    """Produits de la semaine (hors départ) s'il y en a assez, sinon tous les produits suivis."""
+    pool = counted(items)
     cutoff = now - dt.timedelta(days=WINDOW_DAYS)
-    recent = [i for i in items if (item_date(i) or now) >= cutoff]
+    recent = [i for i in pool if i.get("id") not in baseline and (item_date(i) or now) >= cutoff]
     if len(recent) >= MIN_WINDOW_ITEMS:
         return recent, WINDOW_DAYS
-    return list(items), None
+    return pool, None
+
+
+def week_items(items: list[dict], now: dt.datetime) -> tuple[list[dict], int | None]:
+    return select_scope(items, now)
 
 
 def compute_palette(items: list[dict], size: int = 5) -> list[dict]:
@@ -326,8 +381,90 @@ def ranked(counter: Counter, total: int, size: int = 8) -> list[dict]:
     return [{"name": n, "count": c, "share": round(100 * c / total)} for n, c in counter.most_common(size)] if total else []
 
 
-def compute_stats(items: list[dict], now: dt.datetime) -> dict:
-    scope, window = week_items(items, now)
+def parse_price(raw) -> float | None:
+    try:
+        value = float(str(raw).replace(",", "."))
+    except (TypeError, ValueError):
+        return None
+    return value if 0 < value < 100000 else None
+
+
+def median(values: list[float]) -> float:
+    v = sorted(values)
+    mid = len(v) // 2
+    return v[mid] if len(v) % 2 else (v[mid - 1] + v[mid]) / 2
+
+
+def brand_rows(scope: list[dict]) -> list[dict]:
+    """Par marque : nombre de produits et prix (dans la devise de la marque)."""
+    rows = []
+    for brand in sorted({i["brand"] for i in scope if i.get("brand")}):
+        mine = [i for i in scope if i.get("brand") == brand]
+        prices = [p for p in (parse_price(i.get("price")) for i in mine) if p]
+        currencies = Counter(i.get("currency") for i in mine if i.get("currency"))
+        row = {"name": brand, "count": len(mine), "currency": currencies.most_common(1)[0][0] if currencies else None}
+        if prices:
+            row.update({"median_price": round(median(prices), 2), "min_price": min(prices), "max_price": max(prices)})
+        rows.append(row)
+    return sorted(rows, key=lambda r: -r["count"])
+
+
+TREND_KINDS = [
+    ("couleur", "colors"), ("matière", "material"), ("longueur", "length"),
+    ("coupe", "cut"), ("encolure", "neckline"), ("détail", "details"),
+]
+
+
+def _values(item: dict, key: str) -> list[str]:
+    v = item.get(key)
+    return [x for x in v if x] if isinstance(v, list) else ([v] if v else [])
+
+
+def attribute_counts(items: list[dict]) -> tuple[dict, dict]:
+    count: Counter = Counter()
+    brands: dict = {}
+    for item in items:
+        if item.get("attrs_v") != ATTRS_VERSION:
+            continue
+        for kind, key in TREND_KINDS:
+            for value in set(_values(item, key)):
+                count[(kind, value)] += 1
+                brands.setdefault((kind, value), set()).add(item.get("brand"))
+    return count, brands
+
+
+def compute_trends(scope: list[dict], prev: list[dict] | None = None, size: int = 15) -> list[dict]:
+    """Attributs présents chez au moins 3 marques (et 3 produits), avec l'écart à la semaine d'avant si possible."""
+    analysed = [i for i in scope if i.get("attrs_v") == ATTRS_VERSION]
+    n = len(analysed)
+    if not n:
+        return []
+    count, brands = attribute_counts(analysed)
+    prev_analysed = [i for i in (prev or []) if i.get("attrs_v") == ATTRS_VERSION]
+    prev_count = attribute_counts(prev_analysed)[0] if len(prev_analysed) >= MIN_PREV_ITEMS else None
+    rows = []
+    for key, c in count.items():
+        names = sorted(b for b in brands[key] if b)
+        if len(names) < TREND_MIN_BRANDS or c < TREND_MIN_ITEMS:
+            continue
+        row = {"kind": key[0], "value": key[1], "brands": len(names), "brand_names": names,
+               "count": c, "share": round(100 * c / n)}
+        if prev_count is not None:
+            before = prev_count.get(key, 0)
+            row["delta"] = round(100 * c / n - 100 * before / len(prev_analysed))
+            row["new"] = before == 0
+        rows.append(row)
+    # avec une semaine de comparaison, ce qui monte passe devant ce qui est simplement répandu
+    rows.sort(key=lambda r: (-r.get("delta", 0), -r["brands"], -r["count"], r["value"]))
+    return rows[:size]
+
+
+def compute_stats(items: list[dict], now: dt.datetime, baseline=frozenset()) -> dict:
+    scope, window = select_scope(items, now, baseline)
+    prev: list[dict] = []
+    if window:
+        lo, hi = now - dt.timedelta(days=2 * WINDOW_DAYS), now - dt.timedelta(days=WINDOW_DAYS)
+        prev = [i for i in counted(items) if i.get("id") not in baseline and lo <= (item_date(i) or now) < hi]
     n = len(scope)
     types = Counter(i.get("type") for i in scope if i.get("type"))
     brands_by_type: dict = {}
@@ -355,8 +492,101 @@ def compute_stats(items: list[dict], now: dt.datetime) -> dict:
         "necklines": ranked(necklines, n),
         "details": ranked(details, n, 10),
         "palette": compute_palette(scope),
+        "trends": compute_trends(scope, prev),
+        "brands": brand_rows(scope),
         "color_hex": {k: v for k, v in COLORS.items() if v},
     }
+
+
+# --- historique ---------------------------------------------------------------
+
+ARCHIVE_FIELDS = ("id", "brand", "type", "colors", "material", "length", "cut", "neckline",
+                  "details", "currency", "first_seen", "has_vision", "attrs_v")
+
+
+def slim(item: dict) -> dict:
+    """Ce qu'on garde d'un produit pour toujours : pas de nom, d'adresse ni de photo."""
+    entry = {k: item[k] for k in ARCHIVE_FIELDS if item.get(k) not in (None, "", [])}
+    price = parse_price(item.get("price"))
+    if price:
+        entry["price"] = price
+    return entry
+
+
+def update_archive(archive: list[dict], items: list[dict]) -> list[dict]:
+    """Ajoute et met à jour sans jamais purger ; les accessoires n'y entrent pas."""
+    by_id = {a["id"]: a for a in archive if "id" in a}
+    for item in items:
+        if item.get("type") in EXCLUDED_TYPES:
+            by_id.pop(item["id"], None)
+            continue
+        entry = slim(item)
+        old = by_id.get(item["id"])
+        if old and old.get("first_seen") and (not entry.get("first_seen") or old["first_seen"] < entry["first_seen"]):
+            entry["first_seen"] = old["first_seen"]
+        by_id[item["id"]] = entry
+    return list(by_id.values())
+
+
+def aggregate(entries: list[dict]) -> dict:
+    out = {
+        "items": len(entries),
+        "analysed": sum(1 for e in entries if e.get("attrs_v") == ATTRS_VERSION),
+        "types": dict(Counter(e["type"] for e in entries if e.get("type"))),
+        "colors": dict(Counter(c for e in entries for c in e.get("colors", []))),
+        "materials": dict(Counter(e["material"] for e in entries if e.get("material"))),
+        "lengths": dict(Counter(e["length"] for e in entries if e.get("length"))),
+        "cuts": dict(Counter(e["cut"] for e in entries if e.get("cut"))),
+        "necklines": dict(Counter(e["neckline"] for e in entries if e.get("neckline"))),
+        "details": dict(Counter(d for e in entries for d in e.get("details", []))),
+        "brands": {},
+    }
+    for brand in sorted({e["brand"] for e in entries if e.get("brand")}):
+        mine = [e for e in entries if e.get("brand") == brand]
+        prices = [e["price"] for e in mine if e.get("price")]
+        cur = Counter(e.get("currency") for e in mine if e.get("currency"))
+        row = {"new": len(mine), "currency": cur.most_common(1)[0][0] if cur else None}
+        if prices:
+            row["median_price"] = round(median(prices), 2)
+        out["brands"][brand] = row
+    return out
+
+
+def build_weekly(archive: list[dict], baseline, now: dt.datetime) -> dict:
+    """Agrégats par semaine (lundi-dimanche) selon le jour où chaque produit a été repéré.
+
+    Le catalogue de départ (premier jour de suivi d'une marque) est à part : c'est un état des lieux, pas une semaine de sorties.
+    """
+    depart: list[dict] = []
+    weeks: dict = {}
+    for e in archive:
+        d = item_date(e)
+        if d is None:
+            continue
+        if e["id"] in baseline:
+            depart.append(e)
+        else:
+            monday = d.date() - dt.timedelta(days=d.date().weekday())
+            weeks.setdefault(monday, []).append(e)
+    this_monday = now.date() - dt.timedelta(days=now.date().weekday())
+    result = []
+    if weeks:
+        day = min(weeks)
+        while day <= max(max(weeks), this_monday):
+            year, num, _ = day.isocalendar()
+            result.append({
+                "week": f"{year}-W{num:02d}",
+                "start": day.isoformat(),
+                "label": f"{day.day} {MONTHS_SHORT[day.month - 1]}",
+                "current": day == this_monday,
+                **aggregate(weeks.get(day, [])),
+            })
+            day += dt.timedelta(days=7)
+    out = {"generated_at": now.isoformat(timespec="seconds"), "depart": None, "weeks": result}
+    if depart:
+        first = min(item_date(e) for e in depart).date()
+        out["depart"] = {"start": first.isoformat(), "label": f"{first.day} {MONTHS_SHORT[first.month - 1]}", **aggregate(depart)}
+    return out
 
 
 # --- synthèse ---------------------------------------------------------------
@@ -380,11 +610,11 @@ def _fmt(rows: list[dict], size: int = 6) -> str:
     return ", ".join(f"{r['name']} {r['share']} %" for r in rows[:size]) or "non disponible"
 
 
-def build_digest(client, items: list[dict], stats: dict) -> dict:
+def build_digest(client, items: list[dict], stats: dict, scope: list[dict] | None = None) -> dict:
     digest = fallback_digest(stats)
     if not client or not items:
         return digest
-    scope, _ = week_items(items, dt.datetime.now(dt.timezone.utc))
+    scope = counted(scope if scope is not None else items)
     lines = [
         " | ".join(
             [i["brand"], i["name"], i.get("type", ""), ", ".join(i.get("colors", [])), i.get("material", ""), i.get("length", ""), ", ".join(i.get("details", []))]
@@ -400,7 +630,10 @@ def build_digest(client, items: list[dict], stats: dict) -> dict:
         f"Matières : {_fmt(stats['materials'])}\n"
         f"Longueurs : {_fmt(stats['lengths'])}\n"
         f"Encolures : {_fmt(stats['necklines'])}\n"
-        f"Détails : {_fmt(stats['details'])}\n\n"
+        f"Détails : {_fmt(stats['details'])}\n"
+        f"Tendances chez au moins {TREND_MIN_BRANDS} marques : "
+        + (", ".join(f"{t['value']} ({t['kind']}, {t['brands']} marques)" for t in stats.get("trends", [])[:8]) or "aucune pour l'instant")
+        + "\n\n"
         "Produits (marque | nom | type | couleurs | matière | longueur | détails) :\n"
         + "\n".join(lines)
         + "\n\nRenvoie uniquement un objet JSON avec :\n"
@@ -444,10 +677,18 @@ def main() -> None:
     items_path.write_text(json.dumps(items, ensure_ascii=False, indent=1), encoding="utf-8")
 
     now = dt.datetime.now(dt.timezone.utc)
-    stats = compute_stats(items, now)
+    archive_path = DATA / "archive.json"
+    archive = json.loads(archive_path.read_text(encoding="utf-8")) if archive_path.exists() else []
+    archive = update_archive(archive, items)
+    archive_path.write_text(json.dumps(archive, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    baseline = baseline_ids(archive)
+    (DATA / "weekly.json").write_text(
+        json.dumps(build_weekly(archive, baseline, now), ensure_ascii=False, indent=1), encoding="utf-8"
+    )
+    stats = compute_stats(items, now, baseline)
     (DATA / "stats.json").write_text(json.dumps(stats, ensure_ascii=False, indent=1), encoding="utf-8")
 
-    digest = build_digest(client, items, stats)
+    digest = build_digest(client, items, stats, select_scope(items, now, baseline)[0])
     digest["week_label"] = week_label(dt.date.today())
     digest["generated_at"] = now.isoformat(timespec="seconds")
     (DATA / "digest.json").write_text(json.dumps(digest, ensure_ascii=False, indent=1), encoding="utf-8")

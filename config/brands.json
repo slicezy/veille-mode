@@ -6,7 +6,9 @@
       "name": "Reformation",
       "site": "https://www.thereformation.com",
       "currency": "USD",
-      "strategies": ["jsonld_pdp"],
+      "strategies": [
+        "jsonld_pdp"
+      ],
       "new_path": "/new/this-week",
       "max_enrich": 30,
       "note": "Salesforce Commerce Cloud (pas Shopify). La liste /new/this-week donne les adresses des produits (JSON-LD ItemList) ; chaque fiche fournit nom, photo et prix. Les produits au-delà de max_enrich gardent le nom tiré de l'adresse, sans photo."
@@ -16,8 +18,15 @@
       "name": "Dissh",
       "site": "https://www.dissh.com",
       "currency": "AUD",
-      "strategies": ["shopify", "jsonld", "sitemap"],
-      "collections": ["new-arrivals", "new"],
+      "strategies": [
+        "shopify",
+        "jsonld",
+        "sitemap"
+      ],
+      "collections": [
+        "new-arrivals",
+        "new"
+      ],
       "new_path": "/collections/new-arrivals"
     },
     {
@@ -25,8 +34,15 @@
       "name": "Kookaï",
       "site": "https://www.kookai.com.au",
       "currency": "AUD",
-      "strategies": ["shopify", "jsonld", "sitemap"],
-      "collections": ["new-arrivals", "new"],
+      "strategies": [
+        "shopify",
+        "jsonld",
+        "sitemap"
+      ],
+      "collections": [
+        "new-arrivals",
+        "new"
+      ],
       "new_path": "/new-arrivals"
     },
     {
@@ -34,8 +50,15 @@
       "name": "Sir.",
       "site": "https://www.sirthelabel.com",
       "currency": "AUD",
-      "strategies": ["shopify", "jsonld", "sitemap"],
-      "collections": ["new-arrivals", "new"],
+      "strategies": [
+        "shopify",
+        "jsonld",
+        "sitemap"
+      ],
+      "collections": [
+        "new-arrivals",
+        "new"
+      ],
       "new_path": "/collections/new-arrivals"
     },
     {
@@ -43,8 +66,15 @@
       "name": "Bec + Bridge",
       "site": "https://www.becandbridge.com",
       "currency": "AUD",
-      "strategies": ["shopify", "jsonld", "sitemap"],
-      "collections": ["new-arrivals", "new"],
+      "strategies": [
+        "shopify",
+        "jsonld",
+        "sitemap"
+      ],
+      "collections": [
+        "new-arrivals",
+        "new"
+      ],
       "new_path": "/collections/new-arrivals"
     },
     {
@@ -54,9 +84,138 @@
       "currency": "AUD",
       "enabled": false,
       "note": "Désactivée : le site (AU et US) bloque les accès automatiques avec Cloudflare (403). À suivre autrement, par exemple par infolettre.",
-      "strategies": ["shopify", "jsonld", "sitemap"],
-      "collections": ["new-arrivals", "new"],
+      "strategies": [
+        "shopify",
+        "jsonld",
+        "sitemap"
+      ],
+      "collections": [
+        "new-arrivals",
+        "new"
+      ],
       "new_path": "/collections/new-arrivals"
+    },
+    {
+      "id": "venroy",
+      "name": "Venroy",
+      "site": "https://venroy.com.au",
+      "currency": "AUD",
+      "strategies": [
+        "shopify",
+        "jsonld",
+        "sitemap"
+      ],
+      "collections": [
+        "new-arrivals",
+        "new",
+        "new-in",
+        "just-in",
+        "latest"
+      ],
+      "new_path": "/collections/new-arrivals",
+      "note": "Ajoutée d'après la liste « Brands We Love ». Adresse trouvée par recherche ; plateforme à confirmer par data/status.json."
+    },
+    {
+      "id": "henne",
+      "name": "Henne",
+      "site": "https://henne.com.au",
+      "currency": "AUD",
+      "strategies": [
+        "shopify",
+        "jsonld",
+        "sitemap"
+      ],
+      "collections": [
+        "new-arrivals",
+        "new",
+        "new-in",
+        "just-in",
+        "latest"
+      ],
+      "new_path": "/collections/new-arrivals",
+      "note": "Ajoutée d'après la liste « Brands We Love ». Plateforme à confirmer par data/status.json."
+    },
+    {
+      "id": "elka-collective",
+      "name": "Elka Collective",
+      "site": "https://elkacollective.com",
+      "currency": "AUD",
+      "strategies": [
+        "shopify",
+        "jsonld",
+        "sitemap"
+      ],
+      "collections": [
+        "new-arrivals",
+        "new",
+        "new-in",
+        "just-in",
+        "latest"
+      ],
+      "new_path": "/collections/new-arrivals",
+      "note": "Ajoutée d'après la liste « Brands We Love ». Plateforme à confirmer par data/status.json."
+    },
+    {
+      "id": "vrg-grl",
+      "name": "VRG GRL",
+      "site": "https://vrggrl.com",
+      "currency": "AUD",
+      "strategies": [
+        "shopify",
+        "jsonld",
+        "sitemap"
+      ],
+      "collections": [
+        "new-arrivals",
+        "new",
+        "new-in",
+        "just-in",
+        "latest"
+      ],
+      "new_path": "/collections/new-arrivals",
+      "note": "Ajoutée d'après la liste « Brands We Love ». Plateforme à confirmer par data/status.json."
+    },
+    {
+      "id": "bayse",
+      "name": "Bayse",
+      "site": "",
+      "currency": "AUD",
+      "strategies": [
+        "shopify",
+        "jsonld",
+        "sitemap"
+      ],
+      "collections": [
+        "new-arrivals",
+        "new",
+        "new-in",
+        "just-in",
+        "latest"
+      ],
+      "new_path": "/collections/new-arrivals",
+      "enabled": false,
+      "note": "Désactivée : adresse officielle du site à confirmer (non trouvée avec certitude). Renseigner « site » puis retirer « enabled »."
+    },
+    {
+      "id": "benni",
+      "name": "BENNI",
+      "site": "",
+      "currency": "AUD",
+      "strategies": [
+        "shopify",
+        "jsonld",
+        "sitemap"
+      ],
+      "collections": [
+        "new-arrivals",
+        "new",
+        "new-in",
+        "just-in",
+        "latest"
+      ],
+      "new_path": "/collections/new-arrivals",
+      "enabled": false,
+      "note": "Désactivée : adresse officielle du site à confirmer (non trouvée avec certitude). Renseigner « site » puis retirer « enabled »."
     }
   ]
 }
