@@ -1,16 +1,12 @@
 {
- "generated_at": "2026-10-31T02:37:34+00:00",
+ "generated_at": "2026-10-31T03:12:54+00:00",
  "brands": {
   "reformation": {
-   "ok": false,
-   "strategy": null,
-   "count": 0,
-   "errors": [
-    "shopify: 404 Client Error: Not Found for url: https://www.thereformation.com/collections/new/products.json?limit=40",
-    "jsonld: 404 Client Error: Not Found for url: https://www.thereformation.com/new-arrivals",
-    "sitemap: 404 Client Error: Not Found for url: https://www.thereformation.com/sitemap.xml"
-   ],
-   "new": 0
+   "ok": true,
+   "strategy": "jsonld_pdp",
+   "count": 16,
+   "errors": [],
+   "new": 16
   },
   "dissh": {
    "ok": true,
@@ -42,12 +38,11 @@
   },
   "meshki": {
    "ok": false,
+   "disabled": true,
    "strategy": null,
    "count": 0,
    "errors": [
-    "shopify: 403 Client Error: Forbidden for url: https://www.meshki.com.au/collections/new/products.json?limit=40",
-    "jsonld: 403 Client Error: Forbidden for url: https://www.meshki.com.au/collections/new-arrivals",
-    "sitemap: 403 Client Error: Forbidden for url: https://www.meshki.com.au/sitemap.xml"
+    "Désactivée : le site (AU et US) bloque les accès automatiques avec Cloudflare (403). À suivre autrement, par exemple par infolettre."
    ],
    "new": 0
   }
