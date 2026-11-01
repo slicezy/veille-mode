@@ -1,0 +1,6 @@
+# Site privé sur Cloudflare (Workers + fichiers statiques), publié par GitHub Actions après chaque collecte.
+name = "veille-mode"
+compatibility_date = "2026-10-01"
+
+[assets]
+directory = "./_site"

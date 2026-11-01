@@ -61,6 +61,12 @@ Outil de veille pour une designer de mode (manager) : suivre les nouveautés de 
 - Planches : `board.py --lang en`, ou l'option « langue » du workflow ; les traductions viennent de `labels.json`.
 - Tendances : longueur et forme sont qualifiées par le type (« Jupes · midi »).
 
+## Site privé (Cloudflare)
+- Cible : site privé derrière une connexion par courriel (Cloudflare Access, Zero Trust gratuit, 2 adresses : Clem et Lauranne), dépôt GitHub passé en privé, GitHub Pages désactivé. Compte Cloudflare créé ; équipe Zero Trust créée.
+- `wrangler.toml` : Worker « veille-mode » avec fichiers statiques (`_site`). `daily.yml` le publie après chaque collecte si les secrets `CLOUDFLARE_API_TOKEN` et `CLOUDFLARE_ACCOUNT_ID` existent (sinon ignoré). Adresse : `veille-mode.<sous-domaine>.workers.dev`.
+- Jamais de jeton ni de mot de passe dans le dépôt ni dans une conversation : uniquement des secrets GitHub.
+- Suite prévue : « Atelier » (corrections de Lauranne, photo à la une, structure de planche en 3 niveaux max) enregistré côté Cloudflare, lu par le workflow de planche ; déclencheur planifié côté Cloudflare (GitHub a sauté les exécutions planifiées).
+
 ## Prochaines étapes
 1. Laisser tourner 2 semaines pour avoir un historique, vérifier que les photos s'affichent (certains CDN bloquent le hotlinking) sinon télécharger les images dans le dépôt.
 2. Format de présentation des tendances à valider avec la designer (présentations, planches, fiches techniques). Vérifier que les 6 nouvelles marques se collectent.
