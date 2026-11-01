@@ -1,20 +1,20 @@
 {
  "title": "Bayse : noir, satin et asymétrie en vedette",
- "summary": "Chez Bayse, seule marque analysée, les hauts représentent 52 % des nouveautés et le noir domine la palette (40 %), devant le blanc et l'ivoire (16 % chacun). Le satin est la matière la plus présente (28 %), avec des silhouettes plutôt longues (32 %) et des détails récurrents : col montant (20 %) et ourlet asymétrique (12 %). Le prix médian des hauts est de 80 CAD, et aucune tendance n'est partagée par au moins 3 marques, puisqu'une seule est suivie.",
+ "summary": "Chez Bayse, seule marque analysée, les hauts représentent 52 % des nouveautés et les pantalons 24 %, dans une palette dominée par le noir (40 %), avec du blanc et de l'ivoire (16 % chacun). Le satin arrive en tête des matières (28 %) et les longueurs longues (32 %) devancent les coupes aux hanches (24 %). Côté détails, le col montant (20 %) et l'ourlet asymétrique (12 %) ressortent ; aucune tendance commune à au moins 3 marques n'est identifiée, et le prix médian des hauts est de 80 CAD.",
  "tags": [
-  "noir",
+  "noir dominant",
   "satin",
-  "asymétrie",
-  "col montant"
+  "col montant",
+  "ourlet asymétrique"
  ],
  "en": {
-  "title": "Bayse: black, satin and asymmetry take the lead",
-  "summary": "At Bayse, the only brand analyzed, tops make up 52% of new arrivals and black dominates the palette (40%), ahead of white and ivory (16% each). Satin is the most common fabric (28%), with mostly long silhouettes (32%) and recurring details: stand collar (20%) and asymmetric hem (12%). The median price for tops is 80 CAD, and no trend is shared by at least 3 brands, since only one is tracked.",
+  "title": "Bayse: black, satin and asymmetry lead",
+  "summary": "At Bayse, the only brand analyzed, tops make up 52% of new arrivals and pants 24%, in a palette dominated by black (40%), with white and ivory (16% each). Satin is the top fabric (28%), and long lengths (32%) lead over hip-length cuts (24%). In terms of details, the high neck (20%) and asymmetric hem (12%) stand out; no trend shared by at least 3 brands is identified, and the median price for tops is 80 CAD.",
   "tags": [
-   "black",
+   "black dominant",
    "satin",
-   "asymmetry",
-   "stand collar"
+   "high neck",
+   "asymmetric hem"
   ]
  },
  "palette": [
@@ -46,5 +46,5 @@
  ],
  "week_label": "Semaine du 26 octobre",
  "week_label_en": "Week of October 26",
- "generated_at": "2026-11-01T16:02:18+00:00"
+ "generated_at": "2026-11-01T16:22:49+00:00"
 }
