@@ -135,7 +135,8 @@
   "encolure": "neckline",
   "détail": "detail",
   "forme": "shape",
-  "style": "style"
+  "style": "style",
+  "short": "short"
  },
  "ui": {
   "Nouveautés": "New arrivals",

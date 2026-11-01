@@ -146,8 +146,9 @@ class VocabularyTests(unittest.TestCase):
 
 class NewVocabularyTests(unittest.TestCase):
     def test_types_and_lengths_depend_on_type(self):
-        short = analyze.normalize({"type": "Shorts", "length": "bermuda", "shape": "crayon"}, {"name": "x"}, True)
-        self.assertEqual((short["type"], short["length"], short["shape"]), ("Shorts", "bermuda", ""))  # « crayon » n'est pas une forme de short
+        short = analyze.normalize({"type": "Shorts", "length": "bermuda", "shape": "large"}, {"name": "x"}, True)
+        self.assertEqual((short["type"], short["length"], short["shape"]), ("Shorts", "bermuda", ""))  # un short : short ou bermuda, pas de forme
+        self.assertEqual(analyze.normalize({"type": "Jupes", "length": "genou"}, {"name": "x"}, True)["length"], "")  # jupes : mini, midi, maxi
         pant = analyze.normalize({"type": "Pantalons", "length": "7/8", "shape": "palazzo"}, {"name": "x"}, True)
         self.assertEqual((pant["length"], pant["shape"]), ("7/8", "palazzo"))
         skirt = analyze.normalize({"type": "Jupes", "length": "bermuda", "shape": "crayon", "rise": "haute"}, {"name": "x"}, True)
@@ -162,6 +163,15 @@ class NewVocabularyTests(unittest.TestCase):
                  "Tailored Blazer": "Blazers", "Wool Coat": "Manteaux", "Wide Leg Pant": "Pantalons", "Denim Jacket": "Manteaux"}
         for name, expected in rules.items():
             self.assertEqual(analyze.heuristic_type({"name": name}), expected, name)
+
+    def test_old_values_are_migrated(self):
+        old = [{"type": "Shorts", "length": "mi-cuisse", "shape": "large"}, {"type": "Shorts", "length": "micro", "shape": "droit"},
+               {"type": "Jupes", "length": "genou", "shape": "crayon"}, {"type": "Robes", "length": "genou"}]
+        for item in old:
+            analyze.migrate_item(item)
+            analyze.migrate_item(item)  # idempotent
+        self.assertEqual([(i["length"], i.get("shape", "")) for i in old],
+                         [("bermuda", ""), ("short", ""), ("midi", "crayon"), ("genou", "")][:4])
 
     def test_details_have_english_twins(self):
         out = analyze.normalize({"type": "Robes", "details": ["Volants", "fente"], "details_en": ["Ruffles"]}, {"name": "x"}, True)

@@ -27,7 +27,7 @@ BOARD_TYPES = ["Pantalons", "Jeans", "Shorts", "Jupes", "Hauts", "Robes", "Blaze
 DIMS = {
     "Pantalons": ["shape", "length", "rise", "style", "closure"],
     "Jeans": ["shape", "length", "rise"],
-    "Shorts": ["shape", "length", "rise"],
+    "Shorts": ["length", "rise"],
     "Jupes": ["shape", "length", "rise", "style"],
     "Hauts": ["shape", "length", "style", "neckline"],
     "Robes": ["cut", "length", "style", "neckline"],
@@ -36,6 +36,7 @@ DIMS = {
 }
 FIRST_REQUIRED = {t: "shape" for t in BOARD_TYPES}
 FIRST_REQUIRED["Robes"] = "cut"
+FIRST_REQUIRED["Shorts"] = "length"
 IMAGE_DELAY = 1.0
 LABELS_PATH = ROOT / "site" / "labels.json"
 LANG = "fr"
@@ -97,6 +98,7 @@ def candidates(items: list[dict], days: int, now: dt.datetime | None = None) -> 
     cutoff = now - dt.timedelta(days=days) if days else None
     out = []
     for i in items:
+        analyze.migrate_item(i)
         if i.get("type") not in BOARD_TYPES or i.get("attrs_v") != analyze.ATTRS_VERSION or not i.get("has_vision"):
             continue
         if not analyze.public_http_url(i.get("image")):

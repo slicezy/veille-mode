@@ -32,6 +32,8 @@ DIGEST_MODEL = "claude-sonnet-5-5"
 ATTRS_VERSION = 4  # change quand le vocabulaire change : les produits sont réanalysés
 MAX_PER_RUN = 80  # produits analysés par exécution ; le reste est repris le lendemain
 ATTR_MAX_TOKENS = 2000  # marge : une réponse coupée donnait un JSON illisible
+# Anciennes valeurs ramenées au vocabulaire actuel (évite de réanalyser les produits déjà faits)
+LENGTH_MIGRATION = {"Shorts": {"micro": "short", "court": "short", "mi-cuisse": "bermuda"}, "Jupes": {"genou": "midi"}}
 PHOTO_ATTEMPTS = 3  # essais de téléchargement par photo (erreurs temporaires seulement)
 PHOTO_RETRY_DELAY = 4.0
 PHOTO_MAX_TRIES = 2  # exécutions pendant lesquelles on réessaie une photo avant d'analyser sans elle
@@ -63,10 +65,10 @@ MATERIALS = [
 # Longueurs selon le type (ce que veut dire « long » change d'un vêtement à l'autre)
 LENGTHS_BY_TYPE = {
     "Robes": ["mini", "genou", "midi", "maxi"],
-    "Jupes": ["mini", "genou", "midi", "maxi"],
+    "Jupes": ["mini", "midi", "maxi"],
     "Pantalons": ["cropped", "7/8", "long", "traînant"],
     "Jeans": ["cropped", "7/8", "long", "traînant"],
-    "Shorts": ["micro", "court", "mi-cuisse", "bermuda"],
+    "Shorts": ["short", "bermuda"],
     "Hauts": ["cropped", "taille", "hanches", "tunique"],
     "Blazers": ["court", "hanches", "mi-cuisse", "long"],
     "Manteaux": ["court", "hanches", "mi-cuisse", "long"],
@@ -81,7 +83,6 @@ NECKLINES = [
 SHAPES = {
     "Pantalons": ["slim", "droit", "large", "évasé", "barrel", "cargo", "jogger", "palazzo", "legging"],
     "Jeans": ["skinny", "slim", "droit", "évasé", "large", "barrel", "baggy"],
-    "Shorts": ["ajusté", "droit", "large", "cargo", "tailleur"],
     "Jupes": ["crayon", "droite", "trapèze", "évasée", "portefeuille", "plissée", "biais", "drapée", "volants", "cargo"],
     "Hauts": ["ajusté", "droit", "boxy", "oversize", "dolman", "drapé", "cache-cœur"],
     "Blazers": ["ajusté", "droit", "oversize", "croisé", "cintré"],
@@ -291,6 +292,16 @@ def normalize(raw: dict, item: dict, has_vision: bool) -> dict:
     }
 
 
+def migrate_item(item: dict) -> None:
+    """Met un produit déjà analysé au vocabulaire actuel (idempotent)."""
+    kind = item.get("type")
+    if kind == "Shorts":
+        item["shape"] = ""  # un short se range par longueur : short ou bermuda
+    mapped = LENGTH_MIGRATION.get(kind, {}).get(item.get("length"))
+    if mapped:
+        item["length"] = mapped
+
+
 def build_item_prompt(item: dict, has_vision: bool) -> str:
     info = {
         "nom": item.get("name", ""),
@@ -311,13 +322,13 @@ def build_item_prompt(item: dict, has_vision: bool) -> str:
         f'- "colors" : 1 ou 2 couleurs dominantes du vêtement lui-même (pas du fond), parmi {list(COLORS)}\n'
         f'- "material" : un parmi {MATERIALS}\n'
         f'- "length" : une valeur de la liste du type choisi, jugée sur la photo : {LENGTHS_BY_TYPE}. '
-        "Repères : jupes et robes (mini = haut de cuisse, genou, midi = mi-mollet, maxi = cheville ou sol) ; "
+        "Repères : jupes (mini = haut de cuisse, midi = du genou à mi-mollet, maxi = cheville ou sol) ; robes (mini, genou, midi, maxi) ; "
         "pantalons et jeans (cropped = mollet ou au-dessus de la cheville, 7/8 = cheville dégagée, long = effleure la cheville ou la chaussure, "
-        "traînant = couvre le pied ou traîne au sol) ; shorts (micro = sous les fesses, court = haut de cuisse, mi-cuisse, bermuda = au genou) ; "
+        "traînant = couvre le pied ou traîne au sol) ; shorts (short = au-dessus du genou, bermuda = au genou ou presque) ; "
         "hauts (cropped = au-dessus de la taille, taille, hanches, tunique = sous les hanches) ; blazers et manteaux (court, hanches, mi-cuisse, long = sous le genou)\n"
         f'- "cut" : un parmi {CUTS} (silhouette générale)\n'
         f'- "neckline" : un parmi {NECKLINES} (hauts et robes)\n'
-        f'- "shape" : la forme précise, une valeur de la liste du type choisi : {SHAPES} (laisse "" pour Robes et Autres). '
+        f'- "shape" : la forme précise, une valeur de la liste du type choisi : {SHAPES} (laisse "" pour Robes, Shorts et Autres). '
         "Pour les jupes : crayon = ajustée, étroite jusqu'au bas ; droite = coupe droite non serrée ; trapèze = s'évase régulièrement ; "
         "évasée = très ample (cloche, cercle) ; en biais = coupée dans le biais, fluide. Ne classe pas une jupe crayon dans droite ou trapèze\n"
         f'- "rise" : hauteur de taille, seulement pour pantalons, jeans, shorts et jupes : {RISES}\n'
@@ -356,6 +367,7 @@ def analyze_items(client, items: list[dict], loader=load_image, limit: int = MAX
     for item in items:  # anciens champs de la première version
         item.pop("category", None)
         item.pop("silhouette", None)
+        migrate_item(item)
     for item in items:  # analyses sans photo faites avant les nouveaux essais : on les reprend une fois
         if (item.get("attrs_v") == ATTRS_VERSION and not item.get("has_vision") and "photo_tries" not in item
                 and item.get("type") not in EXCLUDED_TYPES and public_http_url(item.get("image"))):
