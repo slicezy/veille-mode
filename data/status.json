@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-31T21:10:22+00:00",
+ "generated_at": "2026-11-01T14:53:56+00:00",
  "brands": {
   "reformation": {
    "ok": true,
@@ -79,7 +79,7 @@
    "strategy": "shopify",
    "count": 40,
    "errors": [],
-   "new": 0
+   "new": 25
   },
   "benni": {
    "ok": true,

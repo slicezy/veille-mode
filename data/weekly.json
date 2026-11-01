@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-10-31T21:21:06+00:00",
+ "generated_at": "2026-11-01T14:58:36+00:00",
  "depart": {
   "start": "2026-10-31",
   "label": "31 oct.",
   "items": 401,
-  "analysed": 400,
+  "analysed": 401,
   "types": {
    "Hauts": 173,
    "Robes": 98,
@@ -17,7 +17,7 @@
    "Blazers": 5
   },
   "colors": {
-   "noir": 106,
+   "noir": 107,
    "bordeaux": 4,
    "beige": 25,
    "marron": 55,
@@ -37,7 +37,7 @@
    "bleu marine": 3
   },
   "materials": {
-   "maille": 86,
+   "maille": 87,
    "satin": 41,
    "cuir": 3,
    "soie": 29,
@@ -55,23 +55,24 @@
    "laine": 9
   },
   "lengths": {
-   "hanches": 77,
-   "midi": 16,
+   "hanches": 78,
+   "midi": 27,
    "maxi": 61,
    "taille": 59,
-   "genou": 14,
    "long": 32,
    "mini": 51,
    "tunique": 7,
    "cropped": 38,
-   "bermuda": 3,
+   "bermuda": 11,
    "7/8": 2,
-   "court": 15,
-   "mi-cuisse": 9,
-   "traînant": 6
+   "genou": 3,
+   "short": 8,
+   "traînant": 6,
+   "court": 7,
+   "mi-cuisse": 1
   },
   "cuts": {
-   "ajustée": 151,
+   "ajustée": 152,
    "évasée": 6,
    "fluide": 123,
    "droite": 67,
@@ -83,7 +84,7 @@
    "col haut": 39,
    "col rond": 86,
    "bustier": 7,
-   "asymétrique": 22,
+   "asymétrique": 23,
    "bretelles fines": 15,
    "col chemise": 16,
    "décolleté plongeant": 28,
@@ -95,7 +96,7 @@
    "paillettes": 2,
    "maille ajourée": 3,
    "encolure halter": 8,
-   "manches longues": 12,
+   "manches longues": 13,
    "bas évasé": 3,
    "manches courtes": 28,
    "boutons": 19,
@@ -196,7 +197,7 @@
    "dos ouvert": 7,
    "plissé": 3,
    "taille froncée": 2,
-   "côtes": 23,
+   "côtes": 24,
    "col roulé": 2,
    "anneau central": 1,
    "fronces décolleté": 1,
@@ -333,7 +334,7 @@
    "ourlet irrégulier": 1,
    "effet croco": 1,
    "boucle": 1,
-   "boutons pression": 3,
+   "boutons pression": 4,
    "bas froncé": 1,
    "empiècement satin": 1,
    "épaules structurées": 5,
@@ -523,7 +524,7 @@
     "dentelle": 1
    },
    "Hauts": {
-    "maille": 66,
+    "maille": 67,
     "satin": 10,
     "mousseline": 5,
     "coton": 22,
@@ -620,5 +621,152 @@
    }
   }
  },
- "weeks": []
+ "weeks": [
+  {
+   "week": "2026-W44",
+   "start": "2026-10-26",
+   "label": "26 oct.",
+   "current": true,
+   "items": 25,
+   "analysed": 25,
+   "types": {
+    "Hauts": 13,
+    "Pantalons": 6,
+    "Blazers": 1,
+    "Jupes": 2,
+    "Jeans": 2,
+    "Robes": 1
+   },
+   "colors": {
+    "blanc": 4,
+    "noir": 10,
+    "marron": 3,
+    "bleu marine": 1,
+    "ivoire": 4,
+    "gris": 3,
+    "kaki": 1
+   },
+   "materials": {
+    "jersey": 3,
+    "coton": 4,
+    "crêpe": 1,
+    "laine": 1,
+    "satin": 7,
+    "denim": 2,
+    "maille": 2
+   },
+   "lengths": {
+    "taille": 2,
+    "hanches": 6,
+    "cropped": 3,
+    "long": 8,
+    "maxi": 1,
+    "tunique": 3,
+    "midi": 1,
+    "mini": 1
+   },
+   "cuts": {
+    "ajustée": 4,
+    "droite": 6,
+    "oversize": 3,
+    "évasée": 1,
+    "cintrée": 1,
+    "fluide": 10
+   },
+   "necklines": {
+    "col haut": 6,
+    "col V": 4,
+    "col chemise": 1,
+    "col rond": 2
+   },
+   "details": {
+    "col montant": 5,
+    "manches courtes": 1,
+    "manches évasées": 1,
+    "col v": 3,
+    "manches larges": 2,
+    "épaules tombantes": 1,
+    "bord-côte": 1,
+    "col noué": 1,
+    "boutons aux manches": 1,
+    "épaulettes": 2,
+    "nœud": 1,
+    "boutons de manchette": 1,
+    "drapé": 2,
+    "fente": 1,
+    "taille asymétrique": 1,
+    "bouton": 1,
+    "sans manches": 2,
+    "taille élastique": 1,
+    "pan asymétrique": 1,
+    "poches avant": 2,
+    "braguette zippée": 1,
+    "coutures contrastées": 1,
+    "bouton de taille": 1,
+    "encolure halter": 1,
+    "double manches": 1,
+    "manches longues": 3,
+    "taille élastiquée": 1,
+    "poches": 1,
+    "jambe galbée": 1,
+    "col drapé": 1,
+    "ourlet asymétrique": 3,
+    "pan drapé": 1,
+    "épaules structurées": 1,
+    "franges": 2,
+    "coupe asymétrique": 1,
+    "drapé croisé": 1,
+    "poches obliques": 1,
+    "passants": 1,
+    "drapé asymétrique": 1,
+    "plis": 1,
+    "braguette": 1,
+    "ceinture": 1
+   },
+   "brands": {
+    "Bayse": {
+     "new": 25,
+     "currency": "AUD",
+     "median_price": 155.0
+    }
+   },
+   "materials_by_type": {
+    "Robes": {
+     "coton": 1
+    },
+    "Hauts": {
+     "jersey": 3,
+     "coton": 2,
+     "satin": 4,
+     "maille": 2
+    },
+    "Pantalons": {
+     "crêpe": 1,
+     "satin": 2
+    },
+    "Jeans": {
+     "denim": 2
+    },
+    "Shorts": {},
+    "Jupes": {
+     "coton": 1,
+     "satin": 1
+    },
+    "Blazers": {
+     "laine": 1
+    },
+    "Manteaux": {}
+   },
+   "price_by_type": {
+    "Hauts": {
+     "n": 13,
+     "median_cad": 80.47
+    },
+    "Pantalons": {
+     "n": 6,
+     "median_cad": 152.1
+    }
+   }
+  }
+ ]
 }
