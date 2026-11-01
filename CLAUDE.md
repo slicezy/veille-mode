@@ -63,7 +63,7 @@ Outil de veille pour une designer de mode (manager) : suivre les nouveautés de 
 
 ## Site privé (Cloudflare)
 - Cible : site privé derrière une connexion par courriel (Cloudflare Access, Zero Trust gratuit, 2 adresses : Clem et Lauranne), dépôt GitHub passé en privé, GitHub Pages désactivé. Compte Cloudflare créé ; équipe Zero Trust créée.
-- `wrangler.toml` : Worker « veille-mode » avec fichiers statiques (`_site`). `daily.yml` le publie après chaque collecte si les secrets `CLOUDFLARE_API_TOKEN` et `CLOUDFLARE_ACCOUNT_ID` existent (sinon ignoré). Adresse : `veille-mode.<sous-domaine>.workers.dev`.
+- `wrangler.toml` : Worker « veille-mode » avec fichiers statiques (`_site`). `daily.yml` le publie après chaque collecte si le secret `CLOUDFLARE_API_TOKEN` existe (sinon ignoré) ; l'identifiant de compte est fixé dans le workflow (pas un secret). Adresse : `veille-mode.<sous-domaine>.workers.dev`.
 - Jamais de jeton ni de mot de passe dans le dépôt ni dans une conversation : uniquement des secrets GitHub.
 - Suite prévue : « Atelier » (corrections de Lauranne, photo à la une, structure de planche en 3 niveaux max) enregistré côté Cloudflare, lu par le workflow de planche ; déclencheur planifié côté Cloudflare (GitHub a sauté les exécutions planifiées).
 

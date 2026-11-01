@@ -62,12 +62,14 @@ jobs:
         continue-on-error: true  # un échec ici ne doit pas empêcher le reste
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          # L'identifiant de compte n'est pas un secret : on le fixe ici pour éviter une erreur de copie.
+          CLOUDFLARE_ACCOUNT_ID: 4e2fe53a618ca335fb5b79bff4a8e2c6
         run: |
-          if [ -z "$CLOUDFLARE_API_TOKEN" ] || [ -z "$CLOUDFLARE_ACCOUNT_ID" ]; then
-            echo "Secrets Cloudflare absents : publication ignorée."
+          if [ -z "$CLOUDFLARE_API_TOKEN" ]; then
+            echo "Secret CLOUDFLARE_API_TOKEN absent : publication ignorée."
             exit 0
           fi
+          npx --yes wrangler@4 whoami || true   # diagnostic : comptes visibles par ce jeton
           npx --yes wrangler@4 deploy
 
   deploy:
