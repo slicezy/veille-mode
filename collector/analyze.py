@@ -40,12 +40,12 @@ PHOTO_MAX_TRIES = 2  # exécutions pendant lesquelles on réessaie une photo ava
 IMAGE_DELAY = 2.0  # secondes entre deux téléchargements de photos
 IMAGE_MAX_SIDE = 640
 IMAGE_MAX_BYTES = 8_000_000
-WINDOW_DAYS = 7
-MIN_WINDOW_ITEMS = 24  # en dessous, les chiffres portent sur tous les produits gardés
+WINDOW_DAYS = 14
+MIN_WINDOW_ITEMS = 40  # en dessous, les chiffres portent sur tous les produits gardés
 EXCLUDED_TYPES = {"Accessoires"}  # classés (pour ne pas les compter à tort) mais jamais affichés ni comptés
 TREND_MIN_BRANDS = 3  # une tendance apparaît chez au moins 3 marques
 TREND_MIN_ITEMS = 3
-MIN_PREV_ITEMS = 12  # produits nécessaires la semaine précédente pour comparer
+MIN_PREV_ITEMS = 20  # produits nécessaires la période précédente pour comparer
 MIN_VISION_ITEMS = 10  # en dessous, la palette utilise aussi les couleurs déduites du texte
 
 TYPES = ["Robes", "Hauts", "Pantalons", "Jeans", "Shorts", "Jupes", "Blazers", "Manteaux", "Accessoires", "Autres"]

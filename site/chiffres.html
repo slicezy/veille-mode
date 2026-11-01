@@ -80,7 +80,7 @@
     var weeksCount = weekly && Array.isArray(weekly.weeks) ? weekly.weeks.length : 0;
     var scope = stats.window_days
       ? t("Les {days} derniers jours : {n} nouveautés repérées (hors catalogue de départ).", { days: stats.window_days, n: stats.total })
-      : t("Pour l'instant, tous les produits suivis ({n}), faute d'assez de nouveautés sur 7 jours. La vue passera d'elle-même à la semaine.", { n: stats.total });
+      : t("Pour l'instant, tous les produits suivis ({n}), faute d'assez de nouveautés sur {days} jours. La vue passera d'elle-même à la fenêtre de {days} jours.", { n: stats.total, days: 14 });
     document.getElementById("head").replaceChildren(
       h("div", { class: "eyebrow" }, t("Chiffres")),
       h("h1", {}, t("Ce qui sort, et à quel rythme")),
@@ -288,7 +288,7 @@
         h("div", { class: "who" }, (tr.brand_names || []).join(", ")));
     })));
     if (!rows.some(function (t) { return typeof t.delta === "number"; })) {
-      el.append(h("p", { class: "hint" }, t("Pour l'instant, ce sont les attributs les plus répandus chez les marques suivies. L'écart avec la semaine précédente (points, ou « nouveau ») apparaîtra dès la deuxième semaine, et c'est lui qui signale une vraie tendance.")));
+      el.append(h("p", { class: "hint" }, t("Pour l'instant, ce sont les attributs les plus répandus chez les marques suivies. L'écart avec la période précédente (points, ou « nouveau ») apparaîtra dès la deuxième période, et c'est lui qui signale une vraie tendance.")));
     }
   }
 

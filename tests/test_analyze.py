@@ -184,12 +184,12 @@ class StatsTests(unittest.TestCase):
         for n, it in enumerate(old):
             it["id"] = f"o{n}"
             it["first_seen"] = "2026-08-01T00:00:00+00:00"
-        recent = self.make(30, type="Robes")
+        recent = self.make(45, type="Robes")
         for n, it in enumerate(recent):
             it["id"] = f"r{n}"
         stats = analyze.compute_stats(old + recent, NOW)
-        self.assertEqual(stats["window_days"], 7)
-        self.assertEqual(stats["total"], 30)
+        self.assertEqual(stats["window_days"], 14)
+        self.assertEqual(stats["total"], 45)
         self.assertEqual(stats["types"][0]["name"], "Robes")
         # trop peu de produits récents : on compte tout
         few = analyze.compute_stats(old + recent[:3], NOW)
@@ -203,9 +203,9 @@ class StatsTests(unittest.TestCase):
 
 class WindowTests(unittest.TestCase):
     def test_window_uses_first_seen_even_if_published_long_ago(self):
-        items = [item(i, published_at="2026-03-01T00:00:00+00:00", type="Robes") for i in range(30)]
+        items = [item(i, published_at="2026-03-01T00:00:00+00:00", type="Robes") for i in range(45)]
         stats = analyze.compute_stats(items, NOW)
-        self.assertEqual((stats["window_days"], stats["total"]), (7, 30))
+        self.assertEqual((stats["window_days"], stats["total"]), (14, 45))
 
 
 class AccessoryTests(unittest.TestCase):
@@ -277,11 +277,11 @@ class HistoryTests(unittest.TestCase):
         self.assertTrue(weekly["weeks"][-1]["current"])
 
     def test_scope_after_first_week_excludes_baseline(self):
-        entries = [att(i, "A", "10-01") for i in range(40)] + [att(100 + i, "A", "10-28") for i in range(30)]
+        entries = [att(i, "A", "10-01") for i in range(40)] + [att(100 + i, "A", "10-28") for i in range(45)]
         base = analyze.baseline_ids(entries)
         now = dt.datetime(2026, 10, 30, tzinfo=dt.timezone.utc)
         scope, window = analyze.select_scope(entries, now, base)
-        self.assertEqual((window, len(scope)), (7, 30))
+        self.assertEqual((window, len(scope)), (14, 45))
 
 
 class TrendTests(unittest.TestCase):
@@ -297,15 +297,15 @@ class TrendTests(unittest.TestCase):
         scope = [att(i, b, "10-29", material="satin") for i, b in enumerate("AAABBB")]
         self.assertEqual([r for r in analyze.compute_trends(scope) if r["kind"] == "matière"], [])
 
-    def test_delta_vs_previous_week(self):
-        brands = "ABC" * 6
+    def test_delta_vs_previous_period(self):
+        brands = "ABC" * 8
         scope = [att(i, b, "10-29", material="satin") for i, b in enumerate(brands)]
-        prev = [att(100 + i, b, "10-22", material="satin" if i < 6 else "lin") for i, b in enumerate(brands)]
+        prev = [att(100 + i, b, "10-22", material="satin" if i < 8 else "lin") for i, b in enumerate(brands)]
         row = next(r for r in analyze.compute_trends(scope, prev) if r["value"] == "satin")
         self.assertEqual(row["delta"], 67)  # 100 % contre 33 %
         self.assertFalse(row["new"])
-        short = analyze.compute_trends(scope, prev[:5])
-        self.assertNotIn("delta", short[0])  # pas assez de produits la semaine d'avant
+        short = analyze.compute_trends(scope, prev[:15])
+        self.assertNotIn("delta", short[0])  # pas assez de produits la période d'avant
 
     def test_brand_rows_prices(self):
         scope = [att(1, "A", "10-29", price=100.0), att(2, "A", "10-29", price=300.0), att(3, "B", "10-29")]
