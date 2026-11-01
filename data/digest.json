@@ -1,37 +1,32 @@
 {
- "title": "Bayse : noir, satin et asymétrie en vedette",
- "summary": "Chez Bayse, seule marque analysée, les hauts représentent 52 % des nouveautés et les pantalons 24 %, dans une palette dominée par le noir (40 %), avec du blanc et de l'ivoire (16 % chacun). Le satin arrive en tête des matières (28 %) et les longueurs longues (32 %) devancent les coupes aux hanches (24 %). Côté détails, le col montant (20 %) et l'ourlet asymétrique (12 %) ressortent ; aucune tendance commune à au moins 3 marques n'est identifiée, et le prix médian des hauts est de 80 CAD.",
+ "title": "Noir, maille et drapé : le quotidien habillé",
+ "summary": "Les nouveautés se concentrent sur les hauts (44 %) et les robes (23 %), dans une palette dominée par le noir (25 %), devant le blanc (14 %), le marron et l'ivoire (12 % chacun). La maille (21 %), le jersey (13 %) et le satin (11 %) mènent côté matières, avec le col rond (21 %) en tête des encolures et le drapé (10 %) comme détail le plus fréquent, notamment chez Bec + Bridge dans l'échantillon. Les styles décontracté et habillé, ainsi que les coupes ajustée et fluide, apparaissent chez les 11 marques ; le prix médian est de 255 CAD pour les robes contre 127 CAD pour les hauts.",
  "tags": [
-  "noir dominant",
-  "satin",
-  "col montant",
-  "ourlet asymétrique"
+  "noir",
+  "maille",
+  "drapé",
+  "col rond"
  ],
  "en": {
-  "title": "Bayse: black, satin and asymmetry lead",
-  "summary": "At Bayse, the only brand analyzed, tops make up 52% of new arrivals and pants 24%, in a palette dominated by black (40%), with white and ivory (16% each). Satin is the top fabric (28%), and long lengths (32%) lead over hip-length cuts (24%). In terms of details, the high neck (20%) and asymmetric hem (12%) stand out; no trend shared by at least 3 brands is identified, and the median price for tops is 80 CAD.",
+  "title": "Black, knit and drape: dressed-up everyday",
+  "summary": "New arrivals focus on tops (44%) and dresses (23%), in a palette led by black (25%), ahead of white (14%), brown and ivory (12% each). Knit (21%), jersey (13%) and satin (11%) lead the materials, with the round neckline (21%) the most common and draping (10%) the most frequent detail, notably at Bec + Bridge in the sample. Casual and dressy styles, as well as fitted and fluid cuts, appear across all 11 brands; median price is CAD 255 for dresses versus CAD 127 for tops.",
   "tags": [
-   "black dominant",
-   "satin",
-   "high neck",
-   "asymmetric hem"
+   "black",
+   "knit",
+   "drape",
+   "round neck"
   ]
  },
  "palette": [
   {
    "name": "Noir",
    "hex": "#1F1E1C",
-   "share": 40
+   "share": 25
   },
   {
    "name": "Blanc",
    "hex": "#F7F6F2",
-   "share": 16
-  },
-  {
-   "name": "Ivoire",
-   "hex": "#EFE8D8",
-   "share": 16
+   "share": 14
   },
   {
    "name": "Marron",
@@ -39,12 +34,17 @@
    "share": 12
   },
   {
-   "name": "Gris",
-   "hex": "#9A9A98",
+   "name": "Ivoire",
+   "hex": "#EFE8D8",
+   "share": 12
+  },
+  {
+   "name": "Bleu",
+   "hex": "#4A6FA5",
    "share": 10
   }
  ],
  "week_label": "Semaine du 26 octobre",
  "week_label_en": "Week of October 26",
- "generated_at": "2026-11-01T16:22:49+00:00"
+ "generated_at": "2026-11-01T17:13:51+00:00"
 }
