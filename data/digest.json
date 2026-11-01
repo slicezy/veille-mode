@@ -1,20 +1,20 @@
 {
  "title": "Bayse : noir, satin et asymétrie en vedette",
- "summary": "Chez Bayse, seule marque analysée, les hauts dominent les nouveautés (52 %), devant les pantalons (24 %), et le noir représente 40 % de la palette, avec du blanc et de l'ivoire à 16 % chacun. Le satin (28 %) mène les matières, et les coupes longues (32 %) sont les plus fréquentes. Côté détails, le col montant (20 %) et l'ourlet asymétrique (12 %) ressortent ; aucune tendance n'est confirmée sur au moins 3 marques, et le prix médian des hauts est de 80 CAD.",
+ "summary": "Chez Bayse, seule marque analysée, les hauts représentent 52 % des nouveautés et le noir domine la palette (40 %), devant le blanc et l'ivoire (16 % chacun). Le satin est la matière la plus présente (28 %), avec des silhouettes plutôt longues (32 %) et des détails récurrents : col montant (20 %) et ourlet asymétrique (12 %). Le prix médian des hauts est de 80 CAD, et aucune tendance n'est partagée par au moins 3 marques, puisqu'une seule est suivie.",
  "tags": [
   "noir",
   "satin",
-  "col montant",
-  "asymétrie"
+  "asymétrie",
+  "col montant"
  ],
  "en": {
   "title": "Bayse: black, satin and asymmetry take the lead",
-  "summary": "At Bayse, the only brand analyzed, tops dominate new arrivals (52%), ahead of pants (24%), and black makes up 40% of the palette, with white and ivory at 16% each. Satin (28%) leads the fabrics, and long lengths (32%) are the most common. In terms of details, the high neck (20%) and asymmetric hem (12%) stand out; no trend is confirmed across at least 3 brands, and the median price for tops is 80 CAD.",
+  "summary": "At Bayse, the only brand analyzed, tops make up 52% of new arrivals and black dominates the palette (40%), ahead of white and ivory (16% each). Satin is the most common fabric (28%), with mostly long silhouettes (32%) and recurring details: stand collar (20%) and asymmetric hem (12%). The median price for tops is 80 CAD, and no trend is shared by at least 3 brands, since only one is tracked.",
   "tags": [
    "black",
    "satin",
-   "high neck",
-   "asymmetry"
+   "asymmetry",
+   "stand collar"
   ]
  },
  "palette": [
@@ -46,5 +46,5 @@
  ],
  "week_label": "Semaine du 26 octobre",
  "week_label_en": "Week of October 26",
- "generated_at": "2026-11-01T14:58:36+00:00"
+ "generated_at": "2026-11-01T16:02:18+00:00"
 }
