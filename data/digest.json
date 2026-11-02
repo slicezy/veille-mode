@@ -1,50 +1,50 @@
 {
- "title": "Noir, maille et drapé : le quotidien habillé",
- "summary": "Les nouveautés se concentrent sur les hauts (44 %) et les robes (23 %), dans une palette dominée par le noir (25 %), devant le blanc (14 %), le marron et l'ivoire (12 % chacun). La maille (21 %), le jersey (13 %) et le satin (11 %) mènent côté matières, avec le col rond (21 %) en tête des encolures et le drapé (10 %) comme détail le plus fréquent, notamment chez Bec + Bridge dans l'échantillon. Les styles décontracté et habillé, ainsi que les coupes ajustée et fluide, apparaissent chez les 11 marques ; le prix médian est de 255 CAD pour les robes contre 127 CAD pour les hauts.",
+ "title": "Noir, satin et cols hauts dominent les nouveautés",
+ "summary": "Les hauts représentent 52 % des nouveautés, le noir 30 % de la palette, et le satin (22 %) devance la maille (18 %). Les longueurs hanches (35 %), les manches longues (22 %) et les cols hauts (20 % des encolures) ressortent ; dans l'échantillon, Bayse décline noir, blanc et ivoire avec cols montants et ourlets asymétriques, tandis que Reformation propose maille et laine dans des tons plus colorés (violet, rouge, bordeaux). Aucune tendance commune à au moins 3 marques n'apparaît pour l'instant.",
  "tags": [
   "noir",
-  "maille",
-  "drapé",
-  "col rond"
+  "satin",
+  "col montant",
+  "hauts"
  ],
  "en": {
-  "title": "Black, knit and drape: dressed-up everyday",
-  "summary": "New arrivals focus on tops (44%) and dresses (23%), in a palette led by black (25%), ahead of white (14%), brown and ivory (12% each). Knit (21%), jersey (13%) and satin (11%) lead the materials, with the round neckline (21%) the most common and draping (10%) the most frequent detail, notably at Bec + Bridge in the sample. Casual and dressy styles, as well as fitted and fluid cuts, appear across all 11 brands; median price is CAD 255 for dresses versus CAD 127 for tops.",
+  "title": "Black, satin and high necks lead new arrivals",
+  "summary": "Tops make up 52% of new arrivals and black 30% of the palette, with satin (22%) ahead of knit (18%). Hip lengths (35%), long sleeves (22%) and high necklines (20% of necklines) stand out; in the sample, Bayse offers black, white and ivory with mock necks and asymmetric hems, while Reformation shows knit and wool in more colorful shades (purple, red, burgundy). No trend shared by at least 3 brands appears yet.",
   "tags": [
    "black",
-   "knit",
-   "drape",
-   "round neck"
+   "satin",
+   "mock neck",
+   "tops"
   ]
  },
  "palette": [
   {
    "name": "Noir",
    "hex": "#1F1E1C",
-   "share": 25
-  },
-  {
-   "name": "Blanc",
-   "hex": "#F7F6F2",
-   "share": 14
+   "share": 30
   },
   {
    "name": "Marron",
    "hex": "#6B4A36",
-   "share": 12
+   "share": 11
+  },
+  {
+   "name": "Blanc",
+   "hex": "#F7F6F2",
+   "share": 11
   },
   {
    "name": "Ivoire",
    "hex": "#EFE8D8",
-   "share": 12
+   "share": 10
   },
   {
-   "name": "Bleu",
-   "hex": "#4A6FA5",
-   "share": 10
+   "name": "Gris",
+   "hex": "#9A9A98",
+   "share": 6
   }
  ],
- "week_label": "Semaine du 26 octobre",
- "week_label_en": "Week of October 26",
- "generated_at": "2026-11-01T17:13:51+00:00"
+ "week_label": "Semaine du 2 novembre",
+ "week_label_en": "Week of November 2",
+ "generated_at": "2026-11-02T20:53:43+00:00"
 }

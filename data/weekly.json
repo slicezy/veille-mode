@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-01T17:13:51+00:00",
+ "generated_at": "2026-11-02T20:53:43+00:00",
  "depart": {
   "start": "2026-10-31",
   "label": "31 oct.",
@@ -505,7 +505,7 @@
    "Venroy": {
     "new": 37,
     "currency": "AUD",
-    "median_price": 144.0
+    "median_price": 143.0
    }
   },
   "materials_by_type": {
@@ -597,7 +597,7 @@
    },
    "Pantalons": {
     "n": 26,
-    "median_cad": 197.73
+    "median_cad": 197.24
    },
    "Jeans": {
     "n": 12,
@@ -613,7 +613,7 @@
    },
    "Blazers": {
     "n": 4,
-    "median_cad": 244.83
+    "median_cad": 244.34
    },
    "Manteaux": {
     "n": 16,
@@ -626,7 +626,7 @@
    "week": "2026-W44",
    "start": "2026-10-26",
    "label": "26 oct.",
-   "current": true,
+   "current": false,
    "items": 25,
    "analysed": 25,
    "types": {
@@ -765,6 +765,135 @@
     "Pantalons": {
      "n": 6,
      "median_cad": 152.1
+    }
+   }
+  },
+  {
+   "week": "2026-W45",
+   "start": "2026-11-02",
+   "label": "2 nov.",
+   "current": true,
+   "items": 15,
+   "analysed": 15,
+   "types": {
+    "Robes": 6,
+    "Hauts": 8,
+    "Manteaux": 1
+   },
+   "colors": {
+    "violet": 2,
+    "noir": 3,
+    "rouge": 2,
+    "bordeaux": 3,
+    "beige": 2,
+    "marron": 2,
+    "kaki": 1,
+    "blanc": 1,
+    "rose": 2,
+    "or": 1
+   },
+   "materials": {
+    "maille": 5,
+    "satin": 2,
+    "soie": 1,
+    "mousseline": 1,
+    "laine": 4,
+    "cuir": 1,
+    "velours": 1
+   },
+   "lengths": {
+    "maxi": 4,
+    "hanches": 8,
+    "cropped": 1,
+    "midi": 1,
+    "mini": 1
+   },
+   "cuts": {
+    "ajustée": 5,
+    "fluide": 5,
+    "oversize": 4,
+    "droite": 1
+   },
+   "necklines": {
+    "décolleté plongeant": 1,
+    "bretelles fines": 1,
+    "col chemise": 1,
+    "col V": 3,
+    "col rond": 5,
+    "col haut": 2,
+    "asymétrique": 1
+   },
+   "details": {
+    "manches courtes": 2,
+    "bas évasé": 1,
+    "fronces à la taille": 1,
+    "large ceinture": 1,
+    "boutons": 1,
+    "manches longues": 6,
+    "ornement métallique": 1,
+    "col v profond": 1,
+    "épaules tombantes": 3,
+    "imprimé fleuri": 1,
+    "bordure festonnée": 1,
+    "jacquard": 1,
+    "bords côtelés": 2,
+    "col côtelé": 1,
+    "coupe courte": 1,
+    "col montant": 1,
+    "poches zippées": 1,
+    "fermeture éclair": 1,
+    "ceinture brodée": 1,
+    "maille texturée": 1,
+    "rayures": 1,
+    "écharpe": 1,
+    "découpe col": 1,
+    "bordure dentelle": 1,
+    "bretelles fines": 1,
+    "appliqués dentelle": 1,
+    "ceinture nouée": 1,
+    "manches élastiquées": 1,
+    "encolure froncée": 1,
+    "bords côtes": 1,
+    "fil métallisé": 1,
+    "transparence": 1
+   },
+   "brands": {
+    "Reformation": {
+     "new": 15,
+     "currency": "USD",
+     "median_price": 228.0
+    }
+   },
+   "materials_by_type": {
+    "Robes": {
+     "maille": 3,
+     "satin": 1,
+     "mousseline": 1,
+     "velours": 1
+    },
+    "Hauts": {
+     "soie": 1,
+     "maille": 2,
+     "laine": 4,
+     "satin": 1
+    },
+    "Pantalons": {},
+    "Jeans": {},
+    "Shorts": {},
+    "Jupes": {},
+    "Blazers": {},
+    "Manteaux": {
+     "cuir": 1
+    }
+   },
+   "price_by_type": {
+    "Robes": {
+     "n": 6,
+     "median_cad": 360.17
+    },
+    "Hauts": {
+     "n": 8,
+     "median_cad": 318.29
     }
    }
   }
