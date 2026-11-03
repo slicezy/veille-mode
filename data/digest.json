@@ -1,50 +1,50 @@
 {
- "title": "Noir, satin et cols hauts dominent les nouveautés",
- "summary": "Les hauts représentent 52 % des nouveautés, le noir 30 % de la palette, et le satin (22 %) devance la maille (18 %). Les longueurs hanches (35 %), les manches longues (22 %) et les cols hauts (20 % des encolures) ressortent ; dans l'échantillon, Bayse décline noir, blanc et ivoire avec cols montants et ourlets asymétriques, tandis que Reformation propose maille et laine dans des tons plus colorés (violet, rouge, bordeaux). Aucune tendance commune à au moins 3 marques n'apparaît pour l'instant.",
+ "title": "Hauts noirs à hanches, entre décontracté et habillé",
+ "summary": "Les hauts représentent 55 % des nouveautés, surtout à longueur hanches (35 %), et le noir domine la palette (34 %), devant l'ivoire (13 %) et le blanc (10 %). Le satin (18 %), le coton (16 %) et la maille (14 %) mènent les matières, et le col V (20 %, à égalité avec le col rond) apparaît chez 3 marques. Les 4 marques mêlent styles décontracté et habillé, avec des coupes fluides et ajustées (3 marques) ; les prix médians sont de 152 CAD pour les hauts et 305 CAD pour les robes.",
  "tags": [
+  "hauts",
   "noir",
-  "satin",
-  "col montant",
-  "hauts"
+  "col V",
+  "satin"
  ],
  "en": {
-  "title": "Black, satin and high necks lead new arrivals",
-  "summary": "Tops make up 52% of new arrivals and black 30% of the palette, with satin (22%) ahead of knit (18%). Hip lengths (35%), long sleeves (22%) and high necklines (20% of necklines) stand out; in the sample, Bayse offers black, white and ivory with mock necks and asymmetric hems, while Reformation shows knit and wool in more colorful shades (purple, red, burgundy). No trend shared by at least 3 brands appears yet.",
+  "title": "Black hip-length tops, between casual and dressy",
+  "summary": "Tops make up 55% of new arrivals, mostly hip-length (35%), and black dominates the palette (34%), ahead of ivory (13%) and white (10%). Satin (18%), cotton (16%) and knit (14%) lead the fabrics, and the V-neck (20%, tied with the round neck) appears at 3 brands. All 4 brands mix casual and dressy styles, with both fluid and fitted cuts (3 brands); median prices are CAD 152 for tops and CAD 305 for dresses.",
   "tags": [
+   "tops",
    "black",
-   "satin",
-   "mock neck",
-   "tops"
+   "V-neck",
+   "satin"
   ]
  },
  "palette": [
   {
    "name": "Noir",
    "hex": "#1F1E1C",
-   "share": 30
-  },
-  {
-   "name": "Marron",
-   "hex": "#6B4A36",
-   "share": 11
-  },
-  {
-   "name": "Blanc",
-   "hex": "#F7F6F2",
-   "share": 11
+   "share": 34
   },
   {
    "name": "Ivoire",
    "hex": "#EFE8D8",
+   "share": 13
+  },
+  {
+   "name": "Blanc",
+   "hex": "#F7F6F2",
    "share": 10
   },
   {
-   "name": "Gris",
-   "hex": "#9A9A98",
-   "share": 6
+   "name": "Marron",
+   "hex": "#6B4A36",
+   "share": 9
+  },
+  {
+   "name": "Rouge",
+   "hex": "#A62B2B",
+   "share": 5
   }
  ],
  "week_label": "Semaine du 2 novembre",
  "week_label_en": "Week of November 2",
- "generated_at": "2026-11-02T20:53:43+00:00"
+ "generated_at": "2026-11-03T18:32:46+00:00"
 }

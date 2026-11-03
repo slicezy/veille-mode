@@ -1,19 +1,19 @@
 {
- "generated_at": "2026-11-02T20:50:21+00:00",
+ "generated_at": "2026-11-03T18:29:45+00:00",
  "brands": {
   "reformation": {
    "ok": true,
    "strategy": "jsonld_pdp",
    "count": 16,
    "errors": [],
-   "new": 15
+   "new": 0
   },
   "dissh": {
    "ok": true,
    "strategy": "shopify",
    "count": 40,
    "errors": [],
-   "new": 0
+   "new": 6
   },
   "kookai": {
    "ok": true,
@@ -27,7 +27,7 @@
    "strategy": "shopify",
    "count": 40,
    "errors": [],
-   "new": 0
+   "new": 6
   },
   "bec-bridge": {
    "ok": true,
