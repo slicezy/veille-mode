@@ -1,50 +1,50 @@
 {
- "title": "Hauts noirs à hanches, entre décontracté et habillé",
- "summary": "Les hauts représentent 55 % des nouveautés, surtout à longueur hanches (35 %), et le noir domine la palette (34 %), devant l'ivoire (13 %) et le blanc (10 %). Le satin (18 %), le coton (16 %) et la maille (14 %) mènent les matières, et le col V (20 %, à égalité avec le col rond) apparaît chez 3 marques. Les 4 marques mêlent styles décontracté et habillé, avec des coupes fluides et ajustées (3 marques) ; les prix médians sont de 152 CAD pour les hauts et 305 CAD pour les robes.",
+ "title": "Hauts en noir et satin, entre décontracté et habillé",
+ "summary": "Les hauts représentent 44 % des nouveautés, loin devant les robes (16 %), et le noir domine la palette avec 33 %, suivi de l'ivoire à 10 %. Le satin arrive en tête des matières (19 %), devant la maille, le coton et le denim (11 % chacun) ; les longueurs aux hanches pèsent 30 % et les hauts cropped ressortent chez 4 marques. Les robes affichent un prix médian de 305 CAD, contre 160 CAD pour les hauts, pantalons et jupes, et les styles décontracté et habillé sont présents chez les 5 marques.",
  "tags": [
-  "hauts",
   "noir",
-  "col V",
-  "satin"
+  "satin",
+  "hauts",
+  "longueur hanches"
  ],
  "en": {
-  "title": "Black hip-length tops, between casual and dressy",
-  "summary": "Tops make up 55% of new arrivals, mostly hip-length (35%), and black dominates the palette (34%), ahead of ivory (13%) and white (10%). Satin (18%), cotton (16%) and knit (14%) lead the fabrics, and the V-neck (20%, tied with the round neck) appears at 3 brands. All 4 brands mix casual and dressy styles, with both fluid and fitted cuts (3 brands); median prices are CAD 152 for tops and CAD 305 for dresses.",
+  "title": "Black and satin tops, casual meets dressy",
+  "summary": "Tops make up 44% of new arrivals, well ahead of dresses (16%), and black dominates the palette at 33%, followed by ivory at 10%. Satin leads the materials (19%), ahead of knit, cotton and denim (11% each); hip-length cuts account for 30% and cropped tops stand out at 4 brands. Dresses have a median price of CAD 305, versus CAD 160 for tops, pants and skirts, and both casual and dressy styles appear at all 5 brands.",
   "tags": [
-   "tops",
    "black",
-   "V-neck",
-   "satin"
+   "satin",
+   "tops",
+   "hip length"
   ]
  },
  "palette": [
   {
    "name": "Noir",
    "hex": "#1F1E1C",
-   "share": 34
+   "share": 33
   },
   {
    "name": "Ivoire",
    "hex": "#EFE8D8",
-   "share": 13
-  },
-  {
-   "name": "Blanc",
-   "hex": "#F7F6F2",
    "share": 10
   },
   {
    "name": "Marron",
    "hex": "#6B4A36",
-   "share": 9
+   "share": 8
   },
   {
    "name": "Rouge",
    "hex": "#A62B2B",
-   "share": 5
+   "share": 8
+  },
+  {
+   "name": "Gris",
+   "hex": "#9A9A98",
+   "share": 8
   }
  ],
  "week_label": "Semaine du 2 novembre",
  "week_label_en": "Week of November 2",
- "generated_at": "2026-11-03T18:32:46+00:00"
+ "generated_at": "2026-11-04T18:48:01+00:00"
 }
