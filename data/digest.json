@@ -1,50 +1,50 @@
 {
- "title": "Hauts aux hanches, noir et satin en tête",
- "summary": "Les hauts représentent 43 % des nouveautés, loin devant les robes (17 %), avec la longueur hanches en tête (26 %) et un noir très présent (29 %), suivi du marron (11 %) et de l'ivoire (9 %). Le satin (20 %) devance le jersey (13 %) et la maille (12 %). Les styles habillé et décontracté se retrouvent chez les 6 marques, les coupes fluide et ajustée chez 5, avec des prix médians de 304 CAD pour les robes contre 152 CAD pour les hauts.",
+ "title": "Hauts longueur hanches, noir et marron dominent",
+ "summary": "Les hauts représentent 48 % des nouveautés, loin devant les robes (17 %), avec une longueur hanches (25 %) et un col rond (18 %) en tête. Le noir (28 %) et le marron (14 %) dominent la palette, chacun relevé chez 6 marques, tandis que satin, maille et jersey se tiennent entre 16 et 17 %. Le style habillé apparaît chez les 8 marques et le décontracté chez 7, avec des coupes ajustées et fluides chez 6 marques chacune.",
  "tags": [
   "hauts",
-  "noir",
-  "satin",
-  "longueur hanches"
+  "noir et marron",
+  "satin et maille",
+  "habillé-décontracté"
  ],
  "en": {
-  "title": "Hip-length tops, black and satin lead",
-  "summary": "Tops account for 43% of new arrivals, well ahead of dresses (17%), with hip length leading (26%) and black very present (29%), followed by brown (11%) and ivory (9%). Satin (20%) comes ahead of jersey (13%) and knit (12%). Dressy and casual styles appear across all 6 brands, flowing and fitted cuts across 5, with median prices of CAD 304 for dresses versus CAD 152 for tops.",
+  "title": "Hip-length tops, black and brown lead",
+  "summary": "Tops make up 48% of new arrivals, well ahead of dresses (17%), with hip length (25%) and round necks (18%) in front. Black (28%) and brown (14%) dominate the palette, each spotted at 6 brands, while satin, knit and jersey sit between 16% and 17%. Dressy style appears at all 8 brands and casual at 7, with fitted and fluid cuts each at 6 brands.",
   "tags": [
    "tops",
-   "black",
-   "satin",
-   "hip length"
+   "black and brown",
+   "satin and knit",
+   "dressy-casual"
   ]
  },
  "palette": [
   {
    "name": "Noir",
    "hex": "#1F1E1C",
-   "share": 29
+   "share": 28
   },
   {
    "name": "Marron",
    "hex": "#6B4A36",
-   "share": 11
+   "share": 14
   },
   {
    "name": "Ivoire",
    "hex": "#EFE8D8",
-   "share": 9
+   "share": 10
   },
   {
-   "name": "Rose",
-   "hex": "#E5A9B5",
-   "share": 8
+   "name": "Bleu",
+   "hex": "#4A6FA5",
+   "share": 7
   },
   {
-   "name": "Rouge",
-   "hex": "#A62B2B",
+   "name": "Blanc",
+   "hex": "#F7F6F2",
    "share": 7
   }
  ],
  "week_label": "Semaine du 2 novembre",
  "week_label_en": "Week of November 2",
- "generated_at": "2026-11-05T18:56:26+00:00"
+ "generated_at": "2026-11-06T18:14:49+00:00"
 }
