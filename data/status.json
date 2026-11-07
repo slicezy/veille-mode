@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-11-06T18:08:28+00:00",
+ "generated_at": "2026-11-07T16:55:37+00:00",
  "brands": {
   "reformation": {
    "ok": true,
    "strategy": "jsonld_pdp",
    "count": 16,
    "errors": [],
-   "new": 7
+   "new": 0
   },
   "dissh": {
    "ok": true,
@@ -20,7 +20,7 @@
    "strategy": "shopify",
    "count": 40,
    "errors": [],
-   "new": 11
+   "new": 0
   },
   "sir": {
    "ok": true,
@@ -34,7 +34,7 @@
    "strategy": "shopify",
    "count": 40,
    "errors": [],
-   "new": 1
+   "new": 0
   },
   "meshki": {
    "ok": false,
@@ -51,7 +51,7 @@
    "strategy": "shopify",
    "count": 40,
    "errors": [],
-   "new": 6
+   "new": 0
   },
   "henne": {
    "ok": true,
@@ -79,7 +79,7 @@
    "strategy": "shopify",
    "count": 21,
    "errors": [],
-   "new": 21
+   "new": 0
   },
   "benni": {
    "ok": true,
