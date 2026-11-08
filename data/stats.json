@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-07T16:57:27+00:00",
+ "generated_at": "2026-11-08T17:10:24+00:00",
  "window_days": 14,
- "total": 156,
- "with_photo_analysis": 156,
+ "total": 157,
+ "with_photo_analysis": 157,
  "types": [
   {
    "name": "Hauts",
@@ -36,9 +36,9 @@
   },
   {
    "name": "Shorts",
-   "count": 6,
+   "count": 7,
    "share": 4,
-   "brands": 3
+   "brands": 4
   },
   {
    "name": "Jeans",
@@ -174,7 +174,7 @@
    "share": 5
   },
   {
-   "name": "tunique",
+   "name": "short",
    "count": 5,
    "share": 3
   }
@@ -183,7 +183,7 @@
   {
    "name": "ajustée",
    "count": 62,
-   "share": 40
+   "share": 39
   },
   {
    "name": "fluide",
@@ -192,7 +192,7 @@
   },
   {
    "name": "droite",
-   "count": 23,
+   "count": 24,
    "share": 15
   },
   {
@@ -450,13 +450,13 @@
   "encolure fendue": "split neckline",
   "dos dégagé": "open back",
   "encolure plongeante": "plunging neckline",
+  "broderie": "embroidery",
   "broderie festonnée": "scalloped embroidery",
   "emmanchures festonnées": "scalloped armholes",
   "bordure en dentelle": "lace trim",
   "ourlet en dentelle": "lace hem",
   "encolure brodée": "embroidered neckline",
   "dentelle": "lace trim",
-  "broderie": "embroidery",
   "cordon de serrage": "drawstring",
   "col revers": "notched collar",
   "boutonnage caché": "hidden placket",
@@ -529,7 +529,7 @@
   {
    "name": "Marron",
    "hex": "#6B4A36",
-   "share": 14
+   "share": 13
   },
   {
    "name": "Ivoire",
@@ -578,7 +578,7 @@
     "Sir.",
     "Venroy"
    ],
-   "count": 67,
+   "count": 68,
    "share": 43
   },
   {
@@ -594,7 +594,7 @@
     "Venroy"
    ],
    "count": 62,
-   "share": 40
+   "share": 39
   },
   {
    "kind": "coupe",
@@ -699,6 +699,20 @@
    "share": 16
   },
   {
+   "kind": "coupe",
+   "value": "droite",
+   "brands": 5,
+   "brand_names": [
+    "Bayse",
+    "Dissh",
+    "Kookaï",
+    "Reformation",
+    "Venroy"
+   ],
+   "count": 24,
+   "share": 15
+  },
+  {
    "kind": "couleur",
    "value": "ivoire",
    "brands": 5,
@@ -753,20 +767,6 @@
    ],
    "count": 12,
    "share": 8
-  },
-  {
-   "kind": "détail",
-   "value": "drapé",
-   "brands": 5,
-   "brand_names": [
-    "Bayse",
-    "Kookaï",
-    "Reformation",
-    "Sir.",
-    "Venroy"
-   ],
-   "count": 12,
-   "share": 8
   }
  ],
  "brands": [
@@ -805,13 +805,13 @@
   },
   {
    "name": "Dissh",
-   "count": 6,
+   "count": 7,
    "currency": "AUD",
-   "median_price": 254.5,
-   "min_price": 147.0,
+   "median_price": 249.0,
+   "min_price": 113.0,
    "max_price": 260.0,
-   "median_cad": 246.76,
-   "min_cad": 142.53,
+   "median_cad": 241.43,
+   "min_cad": 109.56,
    "max_cad": 252.1
   },
   {
@@ -949,7 +949,7 @@
    },
    {
     "type": "Shorts",
-    "n": 6,
+    "n": 7,
     "enough": false
    },
    {
@@ -1132,7 +1132,7 @@
       "median_cad": null
      },
      "Shorts": {
-      "n": 0,
+      "n": 1,
       "median_cad": null
      },
      "Jupes": {
@@ -1295,7 +1295,7 @@
    },
    {
     "name": "Dissh",
-    "n": 6,
+    "n": 7,
     "on_sale": 0,
     "share": 0
    },
@@ -1461,7 +1461,7 @@
   },
   {
    "type": "Shorts",
-   "of": 6,
+   "of": 7,
    "known": 3,
    "rows": [
     {
@@ -1634,7 +1634,7 @@
   },
   {
    "type": "Shorts",
-   "of": 6,
+   "of": 7,
    "known": 1,
    "rows": [
     {

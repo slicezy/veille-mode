@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-07T16:57:27+00:00",
+ "generated_at": "2026-11-08T17:10:24+00:00",
  "depart": {
   "start": "2026-10-31",
   "label": "31 oct.",
@@ -773,8 +773,8 @@
    "start": "2026-11-02",
    "label": "2 nov.",
    "current": true,
-   "items": 131,
-   "analysed": 131,
+   "items": 132,
+   "analysed": 132,
    "types": {
     "Robes": 25,
     "Hauts": 62,
@@ -782,13 +782,13 @@
     "Pantalons": 10,
     "Jupes": 17,
     "Blazers": 2,
-    "Shorts": 6,
+    "Shorts": 7,
     "Jeans": 2
    },
    "colors": {
     "violet": 2,
     "noir": 37,
-    "rouge": 9,
+    "rouge": 10,
     "bordeaux": 5,
     "beige": 11,
     "marron": 22,
@@ -833,13 +833,13 @@
     "traînant": 1,
     "court": 2,
     "mi-cuisse": 1,
-    "short": 4
+    "short": 5
    },
    "cuts": {
     "ajustée": 58,
     "fluide": 37,
     "oversize": 14,
-    "droite": 17,
+    "droite": 18,
     "évasée": 3,
     "cintrée": 2
    },
@@ -865,7 +865,7 @@
     "col v profond": 1,
     "épaules tombantes": 4,
     "imprimé fleuri": 1,
-    "bordure festonnée": 2,
+    "bordure festonnée": 3,
     "jacquard": 1,
     "bords côtelés": 2,
     "col côtelé": 1,
@@ -893,7 +893,7 @@
     "ourlet en dentelle": 1,
     "encolure brodée": 1,
     "dentelle": 1,
-    "broderie": 1,
+    "broderie": 2,
     "sans manches": 11,
     "cordon de serrage": 3,
     "taille élastique": 2,
@@ -1066,9 +1066,9 @@
      "median_price": 400.0
     },
     "Dissh": {
-     "new": 6,
+     "new": 7,
      "currency": "AUD",
-     "median_price": 254.5
+     "median_price": 249.0
     },
     "Kookaï": {
      "new": 34,
@@ -1155,7 +1155,7 @@
      "median_cad": 194.89
     },
     "Shorts": {
-     "n": 6,
+     "n": 7,
      "median_cad": 145.44
     },
     "Jupes": {

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-07T16:55:37+00:00",
+ "generated_at": "2026-11-08T17:08:30+00:00",
  "brands": {
   "reformation": {
    "ok": true,
@@ -13,7 +13,7 @@
    "strategy": "shopify",
    "count": 40,
    "errors": [],
-   "new": 0
+   "new": 1
   },
   "kookai": {
    "ok": true,

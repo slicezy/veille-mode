@@ -1,20 +1,20 @@
 {
- "title": "Hauts aux hanches, noir et marron dominent",
- "summary": "Les hauts représentent 48 % des nouveautés (robes 17 %), avec une longueur aux hanches en tête (25 %) et le col rond comme encolure la plus fréquente (18 %). Le noir (28 %) et le marron (14 %) mènent la palette, tous deux relevés chez 6 marques, tandis que satin et maille atteignent 17 % chacun, devant le jersey (16 %). Les styles habillé (8 marques) et décontracté (7 marques) coexistent, avec des coupes ajustée et fluide chez 6 marques chacune.",
+ "title": "Hauts aux hanches, noir et marron dominants",
+ "summary": "Les hauts représentent 48 % des nouveautés, loin devant les robes (17 %), avec la longueur hanches en tête (25 %) et le col rond comme encolure la plus fréquente (18 %). La palette s'appuie sur le noir (28 %), le marron (13 %) et l'ivoire (10 %), travaillés surtout en satin et en maille (17 % chacun) et en jersey (16 %). Les styles habillé (8 marques) et décontracté (7 marques) coexistent, avec un prix médian de 233 CAD pour les robes contre 142 CAD pour les hauts.",
  "tags": [
   "hauts",
   "noir et marron",
   "satin et maille",
-  "habillé-décontracté"
+  "col rond"
  ],
  "en": {
   "title": "Hip-length tops, black and brown lead",
-  "summary": "Tops make up 48% of new arrivals (dresses 17%), with hip length leading (25%) and the round neck as the most frequent neckline (18%). Black (28%) and brown (14%) top the palette, both spotted at 6 brands, while satin and knit each reach 17%, ahead of jersey (16%). Dressy (8 brands) and casual (7 brands) styles coexist, with fitted and fluid cuts at 6 brands each.",
+  "summary": "Tops make up 48% of new arrivals, well ahead of dresses (17%), with hip length leading (25%) and the round neck as the most common neckline (18%). The palette rests on black (28%), brown (13%) and ivory (10%), worked mainly in satin and knit (17% each) and jersey (16%). Dressy (8 brands) and casual (7 brands) styles coexist, with a median price of CAD 233 for dresses versus CAD 142 for tops.",
   "tags": [
    "tops",
    "black and brown",
    "satin and knit",
-   "dressy-casual"
+   "round neck"
   ]
  },
  "palette": [
@@ -26,7 +26,7 @@
   {
    "name": "Marron",
    "hex": "#6B4A36",
-   "share": 14
+   "share": 13
   },
   {
    "name": "Ivoire",
@@ -46,5 +46,5 @@
  ],
  "week_label": "Semaine du 2 novembre",
  "week_label_en": "Week of November 2",
- "generated_at": "2026-11-07T16:57:27+00:00"
+ "generated_at": "2026-11-08T17:10:24+00:00"
 }
