@@ -1,27 +1,27 @@
 {
- "title": "Hauts aux hanches, noir et marron dominants",
- "summary": "Les hauts représentent 48 % des nouveautés, loin devant les robes (17 %), avec la longueur hanches en tête (25 %) et le col rond comme encolure la plus fréquente (18 %). La palette s'appuie sur le noir (28 %), le marron (13 %) et l'ivoire (10 %), travaillés surtout en satin et en maille (17 % chacun) et en jersey (16 %). Les styles habillé (8 marques) et décontracté (7 marques) coexistent, avec un prix médian de 233 CAD pour les robes contre 142 CAD pour les hauts.",
+ "title": "Noir, marron et jersey : les hauts en tête",
+ "summary": "Les hauts dominent les nouveautés (43 %), devant les robes (19 %), avec une palette centrée sur le noir (27 %) et le marron (13 %), deux couleurs en tendance chez 6 marques sur 8. Le satin (16 %), la maille et le jersey (15 % chacun) mènent côté matières, et les hauts longueur hanches (22 % des longueurs) ressortent chez 6 marques. Le registre est double : habillé chez 8 marques, décontracté chez 7, avec un prix médian de 280 CAD pour les robes contre 142 CAD pour les hauts.",
  "tags": [
-  "hauts",
-  "noir et marron",
-  "satin et maille",
-  "col rond"
+  "noir",
+  "marron",
+  "satin et jersey",
+  "hauts hanches"
  ],
  "en": {
-  "title": "Hip-length tops, black and brown lead",
-  "summary": "Tops make up 48% of new arrivals, well ahead of dresses (17%), with hip length leading (25%) and the round neck as the most common neckline (18%). The palette rests on black (28%), brown (13%) and ivory (10%), worked mainly in satin and knit (17% each) and jersey (16%). Dressy (8 brands) and casual (7 brands) styles coexist, with a median price of CAD 233 for dresses versus CAD 142 for tops.",
+  "title": "Black, brown and jersey: tops lead",
+  "summary": "Tops dominate the new arrivals (43%), ahead of dresses (19%), with a palette built around black (27%) and brown (13%), both trending at 6 of the 8 brands. Satin (16%), knit and jersey (15% each) lead the fabrics, and hip-length tops (hip length is 22% of lengths) stand out at 6 brands. The register is twofold: dressy at 8 brands, casual at 7, with a median price of CAD 280 for dresses versus CAD 142 for tops.",
   "tags": [
-   "tops",
-   "black and brown",
-   "satin and knit",
-   "round neck"
+   "black",
+   "brown",
+   "satin and jersey",
+   "hip-length tops"
   ]
  },
  "palette": [
   {
    "name": "Noir",
    "hex": "#1F1E1C",
-   "share": 28
+   "share": 27
   },
   {
    "name": "Marron",
@@ -31,20 +31,20 @@
   {
    "name": "Ivoire",
    "hex": "#EFE8D8",
-   "share": 10
+   "share": 11
+  },
+  {
+   "name": "Beige",
+   "hex": "#D8C8AE",
+   "share": 7
   },
   {
    "name": "Bleu",
    "hex": "#4A6FA5",
    "share": 7
-  },
-  {
-   "name": "Blanc",
-   "hex": "#F7F6F2",
-   "share": 7
   }
  ],
- "week_label": "Semaine du 2 novembre",
- "week_label_en": "Week of November 2",
- "generated_at": "2026-11-08T17:10:24+00:00"
+ "week_label": "Semaine du 9 novembre",
+ "week_label_en": "Week of November 9",
+ "generated_at": "2026-11-09T21:34:02+00:00"
 }

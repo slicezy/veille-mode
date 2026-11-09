@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-08T17:10:24+00:00",
+ "generated_at": "2026-11-09T21:34:02+00:00",
  "depart": {
   "start": "2026-10-31",
   "label": "31 oct.",
@@ -455,7 +455,7 @@
    "BENNI": {
     "new": 40,
     "currency": "AUD",
-    "median_price": 113.0
+    "median_price": 114.0
    },
    "Bayse": {
     "new": 41,
@@ -505,7 +505,7 @@
    "Venroy": {
     "new": 37,
     "currency": "AUD",
-    "median_price": 141.0
+    "median_price": 142.0
    }
   },
   "materials_by_type": {
@@ -589,35 +589,35 @@
   "price_by_type": {
    "Robes": {
     "n": 92,
-    "median_cad": 249.67
+    "median_cad": 252.24
    },
    "Hauts": {
     "n": 169,
-    "median_cad": 132.84
+    "median_cad": 133.68
    },
    "Pantalons": {
     "n": 26,
-    "median_cad": 193.92
+    "median_cad": 195.16
    },
    "Jeans": {
     "n": 12,
-    "median_cad": 175.98
+    "median_cad": 177.11
    },
    "Shorts": {
     "n": 19,
-    "median_cad": 142.53
+    "median_cad": 143.44
    },
    "Jupes": {
     "n": 47,
-    "median_cad": 174.53
+    "median_cad": 175.64
    },
    "Blazers": {
     "n": 4,
-    "median_cad": 241.43
+    "median_cad": 242.97
    },
    "Manteaux": {
     "n": 16,
-    "median_cad": 358.75
+    "median_cad": 365.93
    }
   }
  },
@@ -760,11 +760,11 @@
    "price_by_type": {
     "Hauts": {
      "n": 13,
-     "median_cad": 79.51
+     "median_cad": 80.02
     },
     "Pantalons": {
      "n": 6,
-     "median_cad": 150.29
+     "median_cad": 151.25
     }
    }
   },
@@ -772,7 +772,7 @@
    "week": "2026-W45",
    "start": "2026-11-02",
    "label": "2 nov.",
-   "current": true,
+   "current": false,
    "items": 132,
    "analysed": 132,
    "types": {
@@ -1053,7 +1053,7 @@
     "BENNI": {
      "new": 3,
      "currency": "AUD",
-     "median_price": 120.0
+     "median_price": 121.0
     },
     "Bayse": {
      "new": 33,
@@ -1088,7 +1088,7 @@
     "Venroy": {
      "new": 5,
      "currency": "AUD",
-     "median_price": 115.0
+     "median_price": 116.0
     }
    },
    "materials_by_type": {
@@ -1144,27 +1144,173 @@
    "price_by_type": {
     "Robes": {
      "n": 25,
-     "median_cad": 252.1
+     "median_cad": 253.71
     },
     "Hauts": {
      "n": 62,
-     "median_cad": 142.05
+     "median_cad": 142.95
     },
     "Pantalons": {
      "n": 10,
-     "median_cad": 194.89
+     "median_cad": 196.14
     },
     "Shorts": {
      "n": 7,
-     "median_cad": 145.44
+     "median_cad": 146.37
     },
     "Jupes": {
      "n": 17,
-     "median_cad": 141.56
+     "median_cad": 142.47
     },
     "Manteaux": {
      "n": 7,
-     "median_cad": 604.04
+     "median_cad": 604.46
+    }
+   }
+  },
+  {
+   "week": "2026-W46",
+   "start": "2026-11-09",
+   "label": "9 nov.",
+   "current": true,
+   "items": 20,
+   "analysed": 19,
+   "types": {
+    "Robes": 8,
+    "Autres": 8,
+    "Jupes": 1,
+    "Pantalons": 1,
+    "Blazers": 1,
+    "Hauts": 1
+   },
+   "colors": {
+    "bordeaux": 5,
+    "orange": 3,
+    "beige": 4,
+    "ivoire": 3,
+    "or": 1,
+    "noir": 5,
+    "jaune": 1,
+    "marron": 1,
+    "kaki": 1
+   },
+   "materials": {
+    "soie": 3,
+    "satin": 1,
+    "paillettes": 1,
+    "maille": 1,
+    "jersey": 2,
+    "mousseline": 2
+   },
+   "lengths": {
+    "maxi": 6,
+    "mini": 2,
+    "midi": 1,
+    "long": 1,
+    "mi-cuisse": 1,
+    "tunique": 1
+   },
+   "cuts": {
+    "fluide": 9,
+    "ajustée": 1,
+    "évasée": 1,
+    "oversize": 1
+   },
+   "necklines": {
+    "bretelles fines": 2,
+    "col haut": 1,
+    "décolleté plongeant": 1,
+    "col V": 1,
+    "col rond": 1
+   },
+   "details": {
+    "manches longues": 1,
+    "drapé": 1,
+    "palmiers": 2,
+    "oiseaux": 2,
+    "bordure": 1,
+    "broderie": 1,
+    "cygne": 1,
+    "éventail": 1,
+    "boa": 1,
+    "bretelles": 1,
+    "paillettes brodées": 1,
+    "fente latérale": 1,
+    "bretelles fines": 2,
+    "cygnes": 1,
+    "motifs floraux": 1,
+    "angles coupés": 1,
+    "imprimé animal": 1,
+    "encolure montante": 1,
+    "bordure festonnée": 1,
+    "petits points": 1,
+    "tigre": 1,
+    "bande damier": 1,
+    "motif tigre": 1,
+    "nœud torsadé": 1,
+    "écharpe détachée": 1,
+    "manches dolman": 1,
+    "bordure fleurie": 1,
+    "deux boutons": 1,
+    "revers cranté": 1,
+    "poches à rabat": 1,
+    "épaules drapées": 1,
+    "coupe en biais": 1,
+    "manches évasées": 1,
+    "transparence": 2,
+    "froncé à la taille": 1,
+    "ourlet": 1,
+    "cordon": 1,
+    "fronces": 1,
+    "taille froncée": 1
+   },
+   "brands": {
+    "Bayse": {
+     "new": 2,
+     "currency": "AUD",
+     "median_price": 164.0
+    },
+    "Bec + Bridge": {
+     "new": 1,
+     "currency": "AUD",
+     "median_price": 380.0
+    },
+    "Dissh": {
+     "new": 1,
+     "currency": "AUD",
+     "median_price": 260.0
+    },
+    "Reformation": {
+     "new": 16,
+     "currency": "USD",
+     "median_price": 498.0
+    }
+   },
+   "materials_by_type": {
+    "Robes": {
+     "soie": 1,
+     "satin": 1,
+     "paillettes": 1,
+     "maille": 1,
+     "jersey": 2,
+     "mousseline": 2
+    },
+    "Hauts": {
+     "soie": 1
+    },
+    "Pantalons": {},
+    "Jeans": {},
+    "Shorts": {},
+    "Jupes": {
+     "soie": 1
+    },
+    "Blazers": {},
+    "Manteaux": {}
+   },
+   "price_by_type": {
+    "Robes": {
+     "n": 8,
+     "median_cad": 381.71
     }
    }
   }
