@@ -1,32 +1,32 @@
 {
- "title": "Noir, marron et jersey : les hauts en tête",
- "summary": "Les hauts dominent les nouveautés (43 %), devant les robes (19 %), avec une palette centrée sur le noir (27 %) et le marron (13 %), deux couleurs en tendance chez 6 marques sur 8. Le satin (16 %), la maille et le jersey (15 % chacun) mènent côté matières, et les hauts longueur hanches (22 % des longueurs) ressortent chez 6 marques. Le registre est double : habillé chez 8 marques, décontracté chez 7, avec un prix médian de 280 CAD pour les robes contre 142 CAD pour les hauts.",
+ "title": "Noir, ivoire et blanc : des basiques fluides",
+ "summary": "Les hauts représentent 42 % des nouveautés, devant les robes (19 %), et la palette est dominée par le noir (22 %), le marron (12 %), l'ivoire (11 %) et le blanc (10 %). Noir, ivoire et blanc ressortent chacun chez 8 des 10 marques, comme la coupe fluide et la coupe ajustée, tandis que les styles habillé (10 marques) et décontracté (9 marques) coexistent. Le satin (15 %) passe devant la maille et le jersey (12 % chacun), et les prix médians hors soldes sont de 135 CAD pour les hauts et de 258 CAD pour les robes.",
  "tags": [
-  "noir",
-  "marron",
-  "satin et jersey",
-  "hauts hanches"
+  "neutres",
+  "satin",
+  "hauts",
+  "fluide"
  ],
  "en": {
-  "title": "Black, brown and jersey: tops lead",
-  "summary": "Tops dominate the new arrivals (43%), ahead of dresses (19%), with a palette built around black (27%) and brown (13%), both trending at 6 of the 8 brands. Satin (16%), knit and jersey (15% each) lead the fabrics, and hip-length tops (hip length is 22% of lengths) stand out at 6 brands. The register is twofold: dressy at 8 brands, casual at 7, with a median price of CAD 280 for dresses versus CAD 142 for tops.",
+  "title": "Black, ivory and white: fluid essentials",
+  "summary": "Tops make up 42% of new arrivals, ahead of dresses (19%), and the palette is led by black (22%), brown (12%), ivory (11%) and white (10%). Black, ivory and white each appear at 8 of the 10 brands, as do fluid and fitted cuts, while dressy (10 brands) and casual (9 brands) styles coexist. Satin (15%) edges ahead of knit and jersey (12% each), and median full-price prices are CAD 135 for tops and CAD 258 for dresses.",
   "tags": [
-   "black",
-   "brown",
-   "satin and jersey",
-   "hip-length tops"
+   "neutrals",
+   "satin",
+   "tops",
+   "fluid"
   ]
  },
  "palette": [
   {
    "name": "Noir",
    "hex": "#1F1E1C",
-   "share": 27
+   "share": 22
   },
   {
    "name": "Marron",
    "hex": "#6B4A36",
-   "share": 13
+   "share": 12
   },
   {
    "name": "Ivoire",
@@ -34,9 +34,9 @@
    "share": 11
   },
   {
-   "name": "Beige",
-   "hex": "#D8C8AE",
-   "share": 7
+   "name": "Blanc",
+   "hex": "#F7F6F2",
+   "share": 10
   },
   {
    "name": "Bleu",
@@ -46,5 +46,5 @@
  ],
  "week_label": "Semaine du 9 novembre",
  "week_label_en": "Week of November 9",
- "generated_at": "2026-11-09T21:34:02+00:00"
+ "generated_at": "2026-11-10T18:51:31+00:00"
 }
