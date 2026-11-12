@@ -1,20 +1,20 @@
 {
- "title": "Noir, marron, ivoire : la palette des nouveautés",
- "summary": "Les hauts représentent 40 % des nouveautés et les robes 21 %, avec une palette dominée par le noir (21 %), le marron (13 %), le blanc (11 %) et l'ivoire (10 %). Le satin (16 %), la maille (13 %) et le jersey (12 %) arrivent en tête des matières, et les longueurs hanches (18 %) et maxi (17 %) sont les plus fréquentes ; les styles habillé et décontracté sont relevés chez les 10 marques. Le prix médian des robes est de 281 CAD, contre 134 CAD pour les hauts.",
+ "title": "Hauts en force, palette noir, marron et ivoire",
+ "summary": "Les hauts représentent 40 % des nouveautés et les robes 21 %, avec un prix médian de 286 CAD pour les robes contre 139 CAD pour les hauts. Le noir (21 %) devance le marron (13 %), le blanc (11 %) et l'ivoire (10 %), tandis que le satin (16 %) précède la maille (14 %) et le jersey (12 %). Les coupes ajustée (9 marques), fluide et droite (8 marques chacune) coexistent ; dans l'échantillon, on voit des robes maxi en satin chez Reformation et des tons chocolat chez Elka Collective.",
  "tags": [
+  "hauts",
   "noir",
-  "marron",
   "satin",
-  "maxi"
+  "marron"
  ],
  "en": {
-  "title": "Black, brown, ivory: the new-arrivals palette",
-  "summary": "Tops make up 40% of new arrivals and dresses 21%, with a palette led by black (21%), brown (13%), white (11%) and ivory (10%). Satin (16%), knit (13%) and jersey (12%) are the top fabrics, and hip-length (18%) and maxi (17%) are the most frequent lengths; dressy and casual styles are both seen across all 10 brands. The median dress price is 281 CAD, versus 134 CAD for tops.",
+  "title": "Tops lead, with black, brown and ivory palette",
+  "summary": "Tops account for 40% of new arrivals and dresses for 21%, with a median price of CAD 286 for dresses versus CAD 139 for tops. Black (21%) leads brown (13%), white (11%) and ivory (10%), while satin (16%) comes ahead of knit (14%) and jersey (12%). Fitted (9 brands), fluid and straight (8 brands each) cuts coexist; the sample shows satin maxi dresses at Reformation and chocolate tones at Elka Collective.",
   "tags": [
+   "tops",
    "black",
-   "brown",
    "satin",
-   "maxi"
+   "brown"
   ]
  },
  "palette": [
@@ -46,5 +46,5 @@
  ],
  "week_label": "Semaine du 9 novembre",
  "week_label_en": "Week of November 9",
- "generated_at": "2026-11-11T18:51:49+00:00"
+ "generated_at": "2026-11-12T19:02:58+00:00"
 }
