@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-11-12T18:59:46+00:00",
+ "generated_at": "2026-11-13T18:36:42+00:00",
  "brands": {
   "reformation": {
    "ok": true,
    "strategy": "jsonld_pdp",
    "count": 16,
    "errors": [],
-   "new": 16
+   "new": 0
   },
   "dissh": {
    "ok": true,
@@ -20,7 +20,7 @@
    "strategy": "shopify",
    "count": 40,
    "errors": [],
-   "new": 0
+   "new": 2
   },
   "sir": {
    "ok": true,
@@ -77,9 +77,9 @@
   "bayse": {
    "ok": true,
    "strategy": "shopify",
-   "count": 40,
+   "count": 36,
    "errors": [],
-   "new": 0
+   "new": 7
   },
   "benni": {
    "ok": true,

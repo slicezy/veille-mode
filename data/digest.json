@@ -1,27 +1,27 @@
 {
- "title": "Hauts en force, palette noir, marron et ivoire",
- "summary": "Les hauts représentent 40 % des nouveautés et les robes 21 %, avec un prix médian de 286 CAD pour les robes contre 139 CAD pour les hauts. Le noir (21 %) devance le marron (13 %), le blanc (11 %) et l'ivoire (10 %), tandis que le satin (16 %) précède la maille (14 %) et le jersey (12 %). Les coupes ajustée (9 marques), fluide et droite (8 marques chacune) coexistent ; dans l'échantillon, on voit des robes maxi en satin chez Reformation et des tons chocolat chez Elka Collective.",
+ "title": "Noir, satin et drapés : l'habillé-décontracté domine",
+ "summary": "Les hauts (40 %) et les robes (21 %) structurent les nouveautés, avec une palette dominée par le noir (22 %), suivi du marron (13 %), du blanc et de l'ivoire (11 % chacun). Le satin (17 %) devance la maille (15 %) et le jersey (11 %), tandis que les longueurs hanches (19 %) et maxi (17 %) ressortent, avec des coupes ajustées (9 marques), fluides et droites (8 marques chacune). Les styles habillé et décontracté sont présents chez les 10 marques ; dans l'échantillon, Reformation et Bayse montrent beaucoup de satin et de drapés, et les robes affichent un prix médian de 350 CAD contre 145 CAD pour les hauts.",
  "tags": [
-  "hauts",
   "noir",
   "satin",
-  "marron"
+  "drapé",
+  "maxi"
  ],
  "en": {
-  "title": "Tops lead, with black, brown and ivory palette",
-  "summary": "Tops account for 40% of new arrivals and dresses for 21%, with a median price of CAD 286 for dresses versus CAD 139 for tops. Black (21%) leads brown (13%), white (11%) and ivory (10%), while satin (16%) comes ahead of knit (14%) and jersey (12%). Fitted (9 brands), fluid and straight (8 brands each) cuts coexist; the sample shows satin maxi dresses at Reformation and chocolate tones at Elka Collective.",
+  "title": "Black, satin and draping: dressy meets casual",
+  "summary": "Tops (40%) and dresses (21%) structure the new arrivals, with a palette led by black (22%), followed by brown (13%), and white and ivory (11% each). Satin (17%) leads knit (15%) and jersey (11%), while hip (19%) and maxi (17%) lengths stand out, with fitted cuts (9 brands), flowing and straight cuts (8 brands each). Dressy and casual styles appear across all 10 brands; in the sample, Reformation and Bayse show plenty of satin and draping, and dresses have a median price of CAD 350 versus CAD 145 for tops.",
   "tags": [
-   "tops",
    "black",
    "satin",
-   "brown"
+   "draping",
+   "maxi"
   ]
  },
  "palette": [
   {
    "name": "Noir",
    "hex": "#1F1E1C",
-   "share": 21
+   "share": 22
   },
   {
    "name": "Marron",
@@ -36,7 +36,7 @@
   {
    "name": "Ivoire",
    "hex": "#EFE8D8",
-   "share": 10
+   "share": 11
   },
   {
    "name": "Bleu",
@@ -46,5 +46,5 @@
  ],
  "week_label": "Semaine du 9 novembre",
  "week_label_en": "Week of November 9",
- "generated_at": "2026-11-12T19:02:58+00:00"
+ "generated_at": "2026-11-13T18:39:31+00:00"
 }
