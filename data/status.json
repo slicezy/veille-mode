@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-13T18:36:42+00:00",
+ "generated_at": "2026-11-14T17:12:59+00:00",
  "brands": {
   "reformation": {
    "ok": true,
@@ -20,7 +20,7 @@
    "strategy": "shopify",
    "count": 40,
    "errors": [],
-   "new": 2
+   "new": 0
   },
   "sir": {
    "ok": true,
@@ -77,9 +77,9 @@
   "bayse": {
    "ok": true,
    "strategy": "shopify",
-   "count": 36,
+   "count": 35,
    "errors": [],
-   "new": 7
+   "new": 0
   },
   "benni": {
    "ok": true,

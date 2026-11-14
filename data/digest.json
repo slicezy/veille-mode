@@ -1,20 +1,20 @@
 {
- "title": "Noir, satin et drapés : l'habillé-décontracté domine",
- "summary": "Les hauts (40 %) et les robes (21 %) structurent les nouveautés, avec une palette dominée par le noir (22 %), suivi du marron (13 %), du blanc et de l'ivoire (11 % chacun). Le satin (17 %) devance la maille (15 %) et le jersey (11 %), tandis que les longueurs hanches (19 %) et maxi (17 %) ressortent, avec des coupes ajustées (9 marques), fluides et droites (8 marques chacune). Les styles habillé et décontracté sont présents chez les 10 marques ; dans l'échantillon, Reformation et Bayse montrent beaucoup de satin et de drapés, et les robes affichent un prix médian de 350 CAD contre 145 CAD pour les hauts.",
+ "title": "Satin, noir et marron : hauts et robes dominent",
+ "summary": "Les hauts (40 %) et les robes (21 %) structurent les nouveautés, dans une palette menée par le noir (22 %), le marron (13 %), le blanc et l'ivoire (11 % chacun). Le satin (17 %) devance la maille (15 %) et le jersey (11 %), avec des longueurs aux hanches (19 %) et maxi (17 %), tandis que le drapé et les bretelles fines pèsent 6 % chacun. Les styles habillé et décontracté apparaissent chez les 10 marques, la coupe ajustée chez 9 et la coupe fluide chez 8 ; dans l'échantillon, Elka Collective décline le marron « chocolat » sur plusieurs pièces.",
  "tags": [
-  "noir",
   "satin",
-  "drapé",
-  "maxi"
+  "noir et marron",
+  "robes",
+  "drapé"
  ],
  "en": {
-  "title": "Black, satin and draping: dressy meets casual",
-  "summary": "Tops (40%) and dresses (21%) structure the new arrivals, with a palette led by black (22%), followed by brown (13%), and white and ivory (11% each). Satin (17%) leads knit (15%) and jersey (11%), while hip (19%) and maxi (17%) lengths stand out, with fitted cuts (9 brands), flowing and straight cuts (8 brands each). Dressy and casual styles appear across all 10 brands; in the sample, Reformation and Bayse show plenty of satin and draping, and dresses have a median price of CAD 350 versus CAD 145 for tops.",
+  "title": "Satin, black and brown: tops and dresses lead",
+  "summary": "Tops (40%) and dresses (21%) anchor the new arrivals, in a palette led by black (22%), brown (13%), white and ivory (11% each). Satin (17%) edges out knit (15%) and jersey (11%), with hip-length (19%) and maxi (17%) lengths, while draping and thin straps each account for 6%. Dressy and casual styles appear across all 10 brands, a fitted cut at 9 and a fluid cut at 8; in the sample, Elka Collective runs \"chocolate\" brown across several pieces.",
   "tags": [
-   "black",
    "satin",
-   "draping",
-   "maxi"
+   "black and brown",
+   "dresses",
+   "draping"
   ]
  },
  "palette": [
@@ -46,5 +46,5 @@
  ],
  "week_label": "Semaine du 9 novembre",
  "week_label_en": "Week of November 9",
- "generated_at": "2026-11-13T18:39:31+00:00"
+ "generated_at": "2026-11-14T17:14:48+00:00"
 }

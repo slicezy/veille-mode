@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-13T18:39:31+00:00",
+ "generated_at": "2026-11-14T17:14:48+00:00",
  "window_days": 14,
  "total": 289,
  "with_photo_analysis": 287,
@@ -923,23 +923,23 @@
    "name": "Reformation",
    "count": 83,
    "currency": "USD",
-   "median_price": 283.0,
+   "median_price": 248.0,
    "min_price": 128.0,
    "max_price": 5000.0,
-   "median_cad": 403.42,
-   "min_cad": 182.46,
-   "max_cad": 7127.5
+   "median_cad": 353.57,
+   "min_cad": 182.49,
+   "max_cad": 7128.5
   },
   {
    "name": "Bayse",
    "count": 67,
    "currency": "AUD",
-   "median_price": 155.0,
+   "median_price": 146.0,
    "min_price": 55.0,
    "max_price": 210.0,
-   "median_cad": 150.49,
-   "min_cad": 53.4,
-   "max_cad": 203.89
+   "median_cad": 141.15,
+   "min_cad": 53.17,
+   "max_cad": 203.03
   },
   {
    "name": "Kookaï",
@@ -948,9 +948,9 @@
    "median_price": 150.0,
    "min_price": 70.0,
    "max_price": 480.0,
-   "median_cad": 145.63,
-   "min_cad": 67.96,
-   "max_cad": 466.03
+   "median_cad": 145.02,
+   "min_cad": 67.68,
+   "max_cad": 464.06
   },
   {
    "name": "VRG GRL",
@@ -959,31 +959,31 @@
    "median_price": 129.0,
    "min_price": 79.0,
    "max_price": 239.0,
-   "median_cad": 125.25,
-   "min_cad": 76.7,
-   "max_cad": 232.05
+   "median_cad": 124.72,
+   "min_cad": 76.38,
+   "max_cad": 231.07
   },
   {
    "name": "Elka Collective",
    "count": 12,
    "currency": "AUD",
-   "median_price": 332.5,
-   "min_price": 125.0,
-   "max_price": 465.0,
-   "median_cad": 322.82,
-   "min_cad": 121.36,
-   "max_cad": 451.47
+   "median_price": 214.0,
+   "min_price": 79.0,
+   "max_price": 299.0,
+   "median_cad": 206.9,
+   "min_cad": 76.38,
+   "max_cad": 289.07
   },
   {
    "name": "Dissh",
    "count": 10,
    "currency": "AUD",
-   "median_price": 307.5,
-   "min_price": 147.0,
-   "max_price": 360.0,
-   "median_cad": 298.55,
-   "min_cad": 142.72,
-   "max_cad": 349.52
+   "median_price": 221.0,
+   "min_price": 113.0,
+   "max_price": 260.0,
+   "median_cad": 213.66,
+   "min_cad": 109.25,
+   "max_cad": 251.37
   },
   {
    "name": "Bec + Bridge",
@@ -992,20 +992,20 @@
    "median_price": 380.0,
    "min_price": 260.0,
    "max_price": 400.0,
-   "median_cad": 368.94,
-   "min_cad": 252.43,
-   "max_cad": 388.36
+   "median_cad": 367.38,
+   "min_cad": 251.37,
+   "max_cad": 386.72
   },
   {
    "name": "BENNI",
    "count": 5,
    "currency": "AUD",
-   "median_price": 168.0,
-   "min_price": 129.0,
-   "max_price": 168.0,
-   "median_cad": 163.11,
-   "min_cad": 125.25,
-   "max_cad": 163.11
+   "median_price": 118.0,
+   "min_price": 90.0,
+   "max_price": 118.0,
+   "median_cad": 114.08,
+   "min_cad": 87.01,
+   "max_cad": 114.08
   },
   {
    "name": "Sir.",
@@ -1014,20 +1014,20 @@
    "median_price": 120.0,
    "min_price": 90.0,
    "max_price": 390.0,
-   "median_cad": 116.51,
-   "min_cad": 87.38,
-   "max_cad": 378.65
+   "median_cad": 116.02,
+   "min_cad": 87.01,
+   "max_cad": 377.05
   },
   {
    "name": "Venroy",
    "count": 5,
    "currency": "AUD",
-   "median_price": 270.0,
-   "min_price": 180.0,
-   "max_price": 510.0,
-   "median_cad": 262.14,
-   "min_cad": 174.76,
-   "max_cad": 495.16
+   "median_price": 113.0,
+   "min_price": 76.0,
+   "max_price": 214.0,
+   "median_cad": 109.25,
+   "min_cad": 73.48,
+   "max_cad": 206.9
   }
  ],
  "prices": {
@@ -1036,10 +1036,10 @@
     "type": "Robes",
     "n": 61,
     "enough": true,
-    "median_cad": 349.52,
-    "mean_cad": 330.74,
-    "p25_cad": 167.97,
-    "p75_cad": 424.8,
+    "median_cad": 282.29,
+    "mean_cad": 297.86,
+    "p25_cad": 164.36,
+    "p75_cad": 396.34,
     "bands": [
      {
       "label": "moins de 100",
@@ -1047,15 +1047,15 @@
      },
      {
       "label": "100 à 200",
-      "share": 28
+      "share": 31
      },
      {
       "label": "200 à 400",
-      "share": 34
+      "share": 43
      },
      {
       "label": "400 et plus",
-      "share": 36
+      "share": 25
      }
     ]
    },
@@ -1063,26 +1063,26 @@
     "type": "Hauts",
     "n": 117,
     "enough": true,
-    "median_cad": 144.66,
-    "mean_cad": 178.54,
-    "p25_cad": 96.12,
-    "p75_cad": 239.48,
+    "median_cad": 135.35,
+    "mean_cad": 163.43,
+    "p25_cad": 87.01,
+    "p75_cad": 211.0,
     "bands": [
      {
       "label": "moins de 100",
-      "share": 26
+      "share": 30
      },
      {
       "label": "100 à 200",
-      "share": 45
+      "share": 44
      },
      {
       "label": "200 à 400",
-      "share": 24
+      "share": 22
      },
      {
       "label": "400 et plus",
-      "share": 5
+      "share": 4
      }
     ]
    },
@@ -1090,10 +1090,10 @@
     "type": "Pantalons",
     "n": 24,
     "enough": true,
-    "median_cad": 169.42,
-    "mean_cad": 192.2,
-    "p25_cad": 150.49,
-    "p75_cad": 213.6,
+    "median_cad": 158.56,
+    "mean_cad": 185.12,
+    "p25_cad": 149.85,
+    "p75_cad": 212.7,
     "bands": [
      {
       "label": "moins de 100",
@@ -1122,22 +1122,22 @@
     "type": "Shorts",
     "n": 19,
     "enough": true,
-    "median_cad": 145.63,
-    "mean_cad": 148.96,
-    "p25_cad": 91.26,
-    "p75_cad": 165.05,
+    "median_cad": 142.12,
+    "mean_cad": 123.23,
+    "p25_cad": 86.05,
+    "p75_cad": 149.85,
     "bands": [
      {
       "label": "moins de 100",
-      "share": 32
+      "share": 37
      },
      {
       "label": "100 à 200",
-      "share": 53
+      "share": 63
      },
      {
       "label": "200 à 400",
-      "share": 16
+      "share": 0
      },
      {
       "label": "400 et plus",
@@ -1149,10 +1149,10 @@
     "type": "Jupes",
     "n": 36,
     "enough": true,
-    "median_cad": 164.08,
-    "mean_cad": 208.27,
-    "p25_cad": 144.66,
-    "p75_cad": 243.05,
+    "median_cad": 156.62,
+    "mean_cad": 186.69,
+    "p25_cad": 130.76,
+    "p75_cad": 197.65,
     "bands": [
      {
       "label": "moins de 100",
@@ -1160,15 +1160,15 @@
      },
      {
       "label": "100 à 200",
-      "share": 72
+      "share": 75
      },
      {
       "label": "200 à 400",
-      "share": 19
+      "share": 25
      },
      {
       "label": "400 et plus",
-      "share": 8
+      "share": 0
      }
     ]
    },
@@ -1181,10 +1181,10 @@
     "type": "Manteaux",
     "n": 10,
     "enough": true,
-    "median_cad": 538.07,
-    "mean_cad": 778.42,
-    "p25_cad": 210.93,
-    "p75_cad": 717.03,
+    "median_cad": 444.46,
+    "mean_cad": 759.44,
+    "p25_cad": 210.04,
+    "p75_cad": 717.13,
     "bands": [
      {
       "label": "moins de 100",
@@ -1232,15 +1232,15 @@
     "Reformation": {
      "Robes": {
       "n": 26,
-      "median_cad": 424.8
+      "median_cad": 424.86
      },
      "Hauts": {
       "n": 26,
-      "median_cad": 296.5
+      "median_cad": 282.29
      },
      "Pantalons": {
       "n": 3,
-      "median_cad": 325.01
+      "median_cad": 325.06
      },
      "Jeans": {
       "n": 1,
@@ -1252,33 +1252,33 @@
      },
      "Jupes": {
       "n": 7,
-      "median_cad": 353.52
+      "median_cad": 353.57
      },
      "Blazers": {
       "n": 4,
-      "median_cad": 460.44
+      "median_cad": 460.5
      },
      "Manteaux": {
       "n": 5,
-      "median_cad": 752.66
+      "median_cad": 752.77
      }
     },
     "Bayse": {
      "Robes": {
       "n": 6,
-      "median_cad": 154.86
+      "median_cad": 149.85
      },
      "Hauts": {
       "n": 33,
-      "median_cad": 130.1
+      "median_cad": 115.05
      },
      "Pantalons": {
       "n": 10,
-      "median_cad": 159.23
+      "median_cad": 149.85
      },
      "Jeans": {
       "n": 4,
-      "median_cad": 176.7
+      "median_cad": 175.96
      },
      "Shorts": {
       "n": 2,
@@ -1286,7 +1286,7 @@
      },
      "Jupes": {
       "n": 8,
-      "median_cad": 159.71
+      "median_cad": 141.15
      },
      "Blazers": {
       "n": 1,
@@ -1294,21 +1294,21 @@
      },
      "Manteaux": {
       "n": 3,
-      "median_cad": 176.7
+      "median_cad": 175.96
      }
     },
     "Kookaï": {
      "Robes": {
       "n": 9,
-      "median_cad": 165.05
+      "median_cad": 164.36
      },
      "Hauts": {
       "n": 25,
-      "median_cad": 116.51
+      "median_cad": 116.02
      },
      "Pantalons": {
       "n": 5,
-      "median_cad": 213.6
+      "median_cad": 212.7
      },
      "Jeans": {
       "n": 1,
@@ -1316,11 +1316,11 @@
      },
      "Shorts": {
       "n": 4,
-      "median_cad": 145.63
+      "median_cad": 145.02
      },
      "Jupes": {
       "n": 10,
-      "median_cad": 160.2
+      "median_cad": 159.52
      },
      "Blazers": {
       "n": 0,
@@ -1334,15 +1334,15 @@
     "VRG GRL": {
      "Robes": {
       "n": 6,
-      "median_cad": 154.37
+      "median_cad": 153.72
      },
      "Hauts": {
       "n": 16,
-      "median_cad": 105.83
+      "median_cad": 105.38
      },
      "Pantalons": {
       "n": 5,
-      "median_cad": 134.96
+      "median_cad": 134.39
      },
      "Jeans": {
       "n": 0,
@@ -1350,11 +1350,11 @@
      },
      "Shorts": {
       "n": 7,
-      "median_cad": 86.41
+      "median_cad": 86.05
      },
      "Jupes": {
       "n": 5,
-      "median_cad": 134.96
+      "median_cad": 134.39
      },
      "Blazers": {
       "n": 0,
@@ -1368,11 +1368,11 @@
     "Elka Collective": {
      "Robes": {
       "n": 4,
-      "median_cad": 427.2
+      "median_cad": 274.57
      },
      "Hauts": {
       "n": 5,
-      "median_cad": 300.98
+      "median_cad": 192.39
      },
      "Pantalons": {
       "n": 0,
@@ -1406,7 +1406,7 @@
      },
      "Hauts": {
       "n": 5,
-      "median_cad": 334.96
+      "median_cad": 240.73
      },
      "Pantalons": {
       "n": 1,
@@ -1436,7 +1436,7 @@
     "Bec + Bridge": {
      "Robes": {
       "n": 6,
-      "median_cad": 368.94
+      "median_cad": 367.38
      },
      "Hauts": {
       "n": 1,
@@ -1508,7 +1508,7 @@
      },
      "Hauts": {
       "n": 4,
-      "median_cad": 116.51
+      "median_cad": 116.02
      },
      "Pantalons": {
       "n": 0,
@@ -1558,7 +1558,7 @@
      },
      "Jupes": {
       "n": 3,
-      "median_cad": 163.11
+      "median_cad": 114.08
      },
      "Blazers": {
       "n": 0,
@@ -1638,10 +1638,10 @@
  "fx": {
   "source": "Banque du Canada",
   "rates": {
-   "AUD": 0.9709,
-   "USD": 1.4255
+   "AUD": 0.9668,
+   "USD": 1.4257
   },
-  "date": "2026-11-12",
+  "date": "2026-11-13",
   "stale": false,
   "missing": []
  },
@@ -1656,35 +1656,35 @@
      "count": 13,
      "share": 22,
      "brands": 4,
-     "median_cad": 424.8
+     "median_cad": 396.34
     },
     {
      "name": "jersey",
      "count": 12,
      "share": 21,
      "brands": 5,
-     "median_cad": 165.05
+     "median_cad": 164.36
     },
     {
      "name": "maille",
      "count": 8,
      "share": 14,
      "brands": 2,
-     "median_cad": 282.25
+     "median_cad": 282.29
     },
     {
      "name": "mousseline",
      "count": 6,
      "share": 10,
      "brands": 4,
-     "median_cad": 396.87
+     "median_cad": 396.12
     },
     {
      "name": "coton",
      "count": 5,
      "share": 9,
      "brands": 3,
-     "median_cad": 193.21
+     "median_cad": 186.59
     }
    ]
   },
@@ -1698,35 +1698,35 @@
      "count": 27,
      "share": 26,
      "brands": 5,
-     "median_cad": 116.51
+     "median_cad": 116.02
     },
     {
      "name": "satin",
      "count": 14,
      "share": 14,
      "brands": 3,
-     "median_cad": 154.86
+     "median_cad": 149.85
     },
     {
      "name": "coton",
      "count": 14,
      "share": 14,
      "brands": 4,
-     "median_cad": 116.02
+     "median_cad": 105.38
     },
     {
      "name": "jersey",
      "count": 13,
      "share": 13,
      "brands": 5,
-     "median_cad": 77.67
+     "median_cad": 77.34
     },
     {
      "name": "laine",
      "count": 10,
      "share": 10,
      "brands": 2,
-     "median_cad": 389.16
+     "median_cad": 389.22
     }
    ]
   },
@@ -1740,14 +1740,14 @@
      "count": 7,
      "share": 50,
      "brands": 3,
-     "median_cad": 213.6
+     "median_cad": 212.7
     },
     {
      "name": "satin",
      "count": 5,
      "share": 36,
      "brands": 3,
-     "median_cad": 133.01
+     "median_cad": 132.45
     },
     {
      "name": "mousseline",
@@ -1773,7 +1773,7 @@
      "count": 6,
      "share": 100,
      "brands": 3,
-     "median_cad": 176.7
+     "median_cad": 175.96
     }
    ]
   },
@@ -1787,7 +1787,7 @@
      "count": 4,
      "share": 33,
      "brands": 2,
-     "median_cad": 84.47
+     "median_cad": 84.11
     },
     {
      "name": "satin",
@@ -1825,21 +1825,21 @@
      "count": 10,
      "share": 31,
      "brands": 4,
-     "median_cad": 207.12
+     "median_cad": 206.77
     },
     {
      "name": "jersey",
      "count": 8,
      "share": 25,
      "brands": 3,
-     "median_cad": 129.62
+     "median_cad": 125.68
     },
     {
      "name": "maille",
      "count": 6,
      "share": 19,
      "brands": 3,
-     "median_cad": 170.88
+     "median_cad": 149.85
     },
     {
      "name": "paillettes",

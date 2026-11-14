@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-13T18:39:31+00:00",
+ "generated_at": "2026-11-14T17:14:48+00:00",
  "depart": {
   "start": "2026-10-31",
   "label": "31 oct.",
@@ -455,7 +455,7 @@
    "BENNI": {
     "new": 40,
     "currency": "AUD",
-    "median_price": 148.0
+    "median_price": 111.0
    },
    "Bayse": {
     "new": 41,
@@ -470,17 +470,17 @@
    "Dissh": {
     "new": 40,
     "currency": "AUD",
-    "median_price": 262.5
+    "median_price": 193.0
    },
    "Elka Collective": {
     "new": 40,
     "currency": "AUD",
-    "median_price": 310.0
+    "median_price": 229.0
    },
    "Henne": {
     "new": 38,
     "currency": "AUD",
-    "median_price": 240.0
+    "median_price": 180.0
    },
    "Kookaï": {
     "new": 40,
@@ -505,7 +505,7 @@
    "Venroy": {
     "new": 37,
     "currency": "AUD",
-    "median_price": 330.0
+    "median_price": 139.0
    }
   },
   "materials_by_type": {
@@ -589,35 +589,35 @@
   "price_by_type": {
    "Robes": {
     "n": 92,
-    "median_cad": 320.4
+    "median_cad": 247.5
    },
    "Hauts": {
     "n": 169,
-    "median_cad": 143.69
+    "median_cad": 132.45
    },
    "Pantalons": {
     "n": 26,
-    "median_cad": 244.67
+    "median_cad": 190.94
    },
    "Jeans": {
     "n": 12,
-    "median_cad": 296.12
+    "median_cad": 175.47
    },
    "Shorts": {
     "n": 19,
-    "median_cad": 193.21
+    "median_cad": 142.12
    },
    "Jupes": {
     "n": 47,
-    "median_cad": 198.0
+    "median_cad": 174.02
    },
    "Blazers": {
     "n": 4,
-    "median_cad": 337.39
+    "median_cad": 240.73
    },
    "Manteaux": {
     "n": 16,
-    "median_cad": 410.21
+    "median_cad": 352.88
    }
   }
  },
@@ -760,11 +760,11 @@
    "price_by_type": {
     "Hauts": {
      "n": 13,
-     "median_cad": 79.61
+     "median_cad": 79.28
     },
     "Pantalons": {
      "n": 6,
-     "median_cad": 150.49
+     "median_cad": 149.85
     }
    }
   },
@@ -1053,12 +1053,12 @@
     "BENNI": {
      "new": 3,
      "currency": "AUD",
-     "median_price": 168.0
+     "median_price": 118.0
     },
     "Bayse": {
      "new": 33,
      "currency": "AUD",
-     "median_price": 155.0
+     "median_price": 146.0
     },
     "Bec + Bridge": {
      "new": 1,
@@ -1068,7 +1068,7 @@
     "Dissh": {
      "new": 7,
      "currency": "AUD",
-     "median_price": 345.0
+     "median_price": 249.0
     },
     "Kookaï": {
      "new": 34,
@@ -1088,7 +1088,7 @@
     "Venroy": {
      "new": 5,
      "currency": "AUD",
-     "median_price": 270.0
+     "median_price": 113.0
     }
    },
    "materials_by_type": {
@@ -1144,27 +1144,27 @@
    "price_by_type": {
     "Robes": {
      "n": 25,
-     "median_cad": 310.76
+     "median_cad": 251.37
     },
     "Hauts": {
      "n": 62,
-     "median_cad": 148.06
+     "median_cad": 141.64
     },
     "Pantalons": {
      "n": 10,
-     "median_cad": 195.15
+     "median_cad": 194.33
     },
     "Shorts": {
      "n": 7,
-     "median_cad": 150.49
+     "median_cad": 145.02
     },
     "Jupes": {
      "n": 17,
-     "median_cad": 163.11
+     "median_cad": 141.15
     },
     "Manteaux": {
      "n": 7,
-     "median_cad": 610.11
+     "median_cad": 610.2
     }
    }
   },
@@ -1449,12 +1449,12 @@
     "BENNI": {
      "new": 2,
      "currency": "AUD",
-     "median_price": 143.5
+     "median_price": 100.5
     },
     "Bayse": {
      "new": 9,
      "currency": "AUD",
-     "median_price": 165.0
+     "median_price": 155.0
     },
     "Bec + Bridge": {
      "new": 6,
@@ -1464,12 +1464,12 @@
     "Dissh": {
      "new": 3,
      "currency": "AUD",
-     "median_price": 205.0
+     "median_price": 147.0
     },
     "Elka Collective": {
      "new": 12,
      "currency": "AUD",
-     "median_price": 332.5
+     "median_price": 214.0
     },
     "Kookaï": {
      "new": 21,
@@ -1551,27 +1551,27 @@
    "price_by_type": {
     "Robes": {
      "n": 35,
-     "median_cad": 368.94
+     "median_cad": 289.07
     },
     "Hauts": {
      "n": 42,
-     "median_cad": 130.1
+     "median_cad": 125.2
     },
     "Pantalons": {
      "n": 8,
-     "median_cad": 154.37
+     "median_cad": 153.72
     },
     "Shorts": {
      "n": 12,
-     "median_cad": 100.97
+     "median_cad": 100.55
     },
     "Jupes": {
      "n": 17,
-     "median_cad": 170.88
+     "median_cad": 163.39
     },
     "Manteaux": {
      "n": 3,
-     "median_cad": 466.03
+     "median_cad": 424.86
     }
    }
   }
